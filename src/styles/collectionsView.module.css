@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.collectionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+}
+
+.collectionInfo {
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--surface);
+  padding-bottom: 24px;
+}
+
+.collectionTitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.collectionDesc {
+  color: var(--text-secondary);
+  max-width: 800px;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}

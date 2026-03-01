@@ -1,0 +1,12 @@
+.link {
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-bottom 0.2s ease;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+
+.link:hover {
+  border-bottom-color: var(--accent);
+}

@@ -1,0 +1,50 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.empty {
+  padding: 120px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.browseBtn {
+  display: inline-block;
+  margin-top: 32px;
+  background-color: white;
+  color: black;
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s;
+}
+
+.browseBtn:hover {
+  background-color: var(--accent);
+}

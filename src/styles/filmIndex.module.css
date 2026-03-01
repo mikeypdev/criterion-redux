@@ -1,0 +1,117 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search {
+  padding: 12px 20px;
+  background-color: var(--surface);
+  border: 1px solid #333;
+  color: white;
+  border-radius: 4px;
+  min-width: 350px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+.search:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.clearBtn {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+
+.clearBtn:hover {
+  background-color: var(--accent);
+  color: black;
+}
+
+.filtersBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 8px;
+  border: 1px solid var(--surface);
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+.select {
+  padding: 10px 16px;
+  background-color: var(--background);
+  border: 1px solid #333;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 160px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23A0A0A0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+.select:hover {
+  border-color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 50px 40px;
+  justify-items: center;
+}
+
+.noResults {
+  grid-column: 1 / -1;
+  padding: 100px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 18px;
+}

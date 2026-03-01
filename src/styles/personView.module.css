@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 60px;
+  border-bottom: 1px solid var(--surface);
+  padding-bottom: 40px;
+}
+
+.name {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.bio {
+  max-width: 800px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}

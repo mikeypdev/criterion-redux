@@ -1,0 +1,145 @@
+.root {
+  min-width: 340px;
+  max-width: 340px;
+  scroll-snap-align: start;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+.root:hover {
+  transform: scale(1.1) translateY(-10px);
+  z-index: 100;
+}
+
+.thumbnailWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--accent);
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+
+.watchlistBadge {
+  left: auto;
+  right: 10px;
+  background-color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 100%);
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlayVisible {
+  opacity: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 1.1;
+  color: white;
+}
+
+.meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.director, .cast {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.synopsis {
+  font-size: 13px;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.genreTag {
+  font-size: 10px;
+  padding: 2px 6px;
+  border: 1px solid var(--surface);
+  color: var(--text-secondary);
+  border-radius: 4px;
+}
+
+.watchlistBtn {
+  margin-top: 16px;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.watchlistBtn:hover {
+  background-color: var(--accent);
+}
+
+.isSaved {
+  background-color: var(--surface);
+  color: white;
+  border: 1px solid #444;
+}
+
+.isSaved:hover {
+  background-color: #333;
+}
