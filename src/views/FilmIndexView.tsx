@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
-import { mockFilms } from '../data/mockData';
+import { useData } from '../context/DataContext';
+import type { Film } from '../types';
 import styles from '../styles/filmIndex.module.css';
 
 const FilmIndexView: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const { catalog, isLoading } = useData();
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
   const [selectedDecade, setSelectedDecade] = useState<string>('');
   const [selectedCountry, setSelectedCountry] = useState<string>('');
@@ -20,37 +22,47 @@ const FilmIndexView: React.FC = () => {
   useEffect(() => {
     const query = searchParams.get('search');
     if (query !== null) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSearchTerm(query);
+    }
+    const genre = searchParams.get('genre');
+    if (genre !== null) {
+      setSelectedGenre(genre);
     }
   }, [searchParams]);
 
   useEffect(() => {
-    if (searchTerm) {
-      setSearchParams({ search: searchTerm }, { replace: true });
-    } else {
-      setSearchParams({}, { replace: true });
+    const params: Record<string, string> = {};
+    if (searchTerm) params.search = searchTerm;
+    if (selectedGenre) params.genre = selectedGenre;
+    
+    // Only update if they differ from current to avoid loops
+    const currentSearch = searchParams.get('search') || '';
+    const currentGenre = searchParams.get('genre') || '';
+    
+    if (searchTerm !== currentSearch || selectedGenre !== currentGenre) {
+      setSearchParams(params, { replace: true });
     }
-  }, [searchTerm, setSearchParams]);
+  }, [searchTerm, selectedGenre, setSearchParams, searchParams]);
 
   // Reset limit when filters or sort change
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLimit(48);
   }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedColor, sortBy]);
 
   // Extract unique filter options from the dataset
-  const decades = React.useMemo(() => Array.from(new Set(mockFilms.map(f => Math.floor(f.year / 10) * 10))).filter(d => d > 0).sort((a, b) => b - a), []);
-  const countries = React.useMemo(() => Array.from(new Set(mockFilms.flatMap(f => f.countries))).filter(Boolean).sort(), []);
-  const genres = React.useMemo(() => Array.from(new Set(mockFilms.flatMap(f => f.genres))).filter(Boolean).sort(), []);
-  const languages = React.useMemo(() => Array.from(new Set(mockFilms.flatMap(f => f.languages))).filter(Boolean).sort(), []);
+  const decades = React.useMemo(() => Array.from(new Set(catalog.map(f => Math.floor(f.year / 10) * 10))).filter(d => d > 0).sort((a, b) => b - a), [catalog]);
+  const countries = React.useMemo(() => Array.from(new Set(catalog.flatMap(f => f.countries))).filter(Boolean).sort(), [catalog]);
+  const genres = React.useMemo(() => Array.from(new Set(catalog.flatMap(f => f.genres))).filter(Boolean).sort(), [catalog]);
+  const languages = React.useMemo(() => Array.from(new Set(catalog.flatMap(f => f.languages))).filter(Boolean).sort(), [catalog]);
 
   const filteredFilms = React.useMemo(() => {
-    return mockFilms.filter(film => {
+    const q = searchTerm.toLowerCase();
+    return catalog.filter(film => {
       const isSpecificID = searchTerm === film.id;
       const matchesSearch = isSpecificID || 
-                           film.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           film.directors.some(d => d.name.toLowerCase().includes(searchTerm.toLowerCase()));
+                           film.title.toLowerCase().includes(q) ||
+                           film.directors.some(d => d.name.toLowerCase().includes(q)) ||
+                           film.cast.some(c => c.name.toLowerCase().includes(q));
       
       const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
       const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;
@@ -60,7 +72,7 @@ const FilmIndexView: React.FC = () => {
       
       return matchesSearch && matchesDecade && matchesCountry && matchesGenre && matchesLanguage && matchesColor;
     });
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedColor]);
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedColor, catalog]);
 
   // Infinite Scroll logic
   useEffect(() => {

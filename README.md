@@ -9,19 +9,21 @@ A modern, high-performance front-end redesign for the **Criterion Channel** stre
 The goal of this redesign is to solve common navigation friction points by surfacing deep metadata (synopses, cast, runtimes) directly in the browsing experience and providing a lightning-fast, virtualized index for the entire collection.
 
 ### Key Features
-- **3,300+ Real Titles:** Scraped directly from the Criterion index.
-- **Infinite Scroll Discovery:** High-performance grid that handles the massive library smoothly at 60fps.
-- **Deep Metadata:** Playwright-based enrichment pipeline for synopses, cast, and runtimes.
-- **Cinematic Detail Views:** Dedicated landing pages for every film with hero layouts and direct links to the original service.
-- **Advanced Discovery:** Real-time filtering by Genre, Language, Decade, and Country.
+- **3,300+ Real Titles:** Scraped directly from the Criterion index and enriched via TMDB.
+- **Cinematic Trailers:** Integrated YouTube trailer support with modal playback.
+- **Deep Discovery:** Search by Actor or Director and explore dedicated filmography pages.
+- **Rich Technical Metadata:** Synopses, cast lists, and technical specs like aspect ratios.
+- **Infinite Scroll:** High-performance grid that handles the massive library smoothly.
+- **Curated Collections:** Live-synced collections from the Criterion browse rows.
 - **Persistence:** Global Watchlist state persisted in `localStorage`.
 
 ## 🛠 Tech Stack
 
 - **Framework:** React 19 (TypeScript)
 - **Routing:** React Router 7
+- **Data Model:** Runtime-fetched JSON datasets via `DataContext`.
 - **Styling:** Vanilla CSS (CSS Modules) for a bespoke "Criterion Noir" aesthetic.
-- **Automation:** Node.js + Playwright for data scraping and enrichment.
+- **Automation:** Node.js + Playwright for Criterion crawling and TMDB API enrichment.
 - **Tooling:** Vite 7, ESLint.
 
 ## 🚀 Getting Started
@@ -37,27 +39,24 @@ npm run dev
 ```
 
 ### 3. Data Sync (The Pipeline)
-The app comes with a pre-scraped `catalog.json`. To refresh or further enrich the metadata:
+The app uses runtime-fetched data from `public/data/`. To refresh or further enrich:
 ```bash
-# Basic enrichment batch (10 films)
+# Basic enrichment (Criterion crawl only)
 npm run sync
 
-# Larger batch enrichment
-LIMIT=100 npm run sync
+# Gap-filler enrichment (Uses TMDB for missing synopses, cast, and trailers)
+TMDB_API_KEY=your_key npm run sync
 
-# Continuous enrichment (until library is 100% full)
+# Continuous mode (Processes entire catalog in batches)
 CONTINUOUS=true npm run sync
-
-# Use TMDB API for high-speed enrichment (requires key)
-TMDB_API_KEY=your_key LIMIT=500 npm run sync
 ```
 
 ## 📂 Project Structure
 
 - `src/components/`: Reusable UI elements (FilmCard, Search, Layout).
 - `src/views/`: Main page layouts (Home, Index, FilmDetail, Collections, Person).
-- `src/data/`: The `catalog.json` database and mock definitions.
-- `scripts/`: Unified data pipeline utilities (Scraper, Enricher, Local Sync).
+- `public/data/`: High-performance JSON datasets (catalog, collections).
+- `scripts/`: Unified data pipeline utilities (Scraper, Enricher, Collections Sync).
 - `src/styles/`: Global variables and component-specific CSS modules.
 
 ## 🚢 Deployment

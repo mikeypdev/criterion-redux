@@ -1,0 +1,351 @@
+[
+  {
+    "id": "stunts-",
+    "title": "Stunts!",
+    "description": "A curated selection from the Stunts! series.",
+    "filmIds": [
+      "new-collections",
+      "stunts",
+      "mervyn-leroy-s-pre-code-films",
+      "wuthering-heights-x2",
+      "celebrate-black-history",
+      "vhs-forever",
+      "three-starring-gwyneth-paltrow",
+      "romanian-new-wave",
+      "two-short-films-by-charlie-kaufman-and-eva-h-d",
+      "directed-by-monika-treut",
+      "three-short-films-by-ja-tovia-gary",
+      "directed-by-william-klein",
+      "yearning-1"
+    ]
+  },
+  {
+    "id": "hotels-on-film",
+    "title": "Hotels on Film",
+    "description": "A curated selection from the Hotels on Film series.",
+    "filmIds": [
+      "top-stories",
+      "hotels-on-film",
+      "black-debutantes",
+      "directed-by-joachim-trier",
+      "directed-by-werner-herzog-2",
+      "yearning-1",
+      "mervyn-leroy-s-pre-code-films",
+      "stunts",
+      "the-90s-do-the-70s",
+      "fresh-starts",
+      "nordic-noir",
+      "directed-by-atom-egoyan",
+      "wong-kar-wai-s-cinema"
+    ]
+  },
+  {
+    "id": "cloud",
+    "title": "Cloud",
+    "description": "A curated selection from the Cloud series.",
+    "filmIds": [
+      "exclusive-streaming-premieres",
+      "cloud",
+      "union",
+      "caught-by-the-tides",
+      "the-shrouds",
+      "how-to-shoot-a-ghost",
+      "mistress-dispeller",
+      "happyend",
+      "peter-hujar-s-day",
+      "the-ballad-of-suzanne-cesaire",
+      "megadoc",
+      "carol-joy",
+      "goodbye-horses-the-many-lives-of-q-lazzarus"
+    ]
+  },
+  {
+    "id": "kiss-of-the-spider-woman",
+    "title": "Kiss of the Spider Woman",
+    "description": "A curated selection from the Kiss of the Spider Woman series.",
+    "filmIds": [
+      "criterion-editions",
+      "kiss-of-the-spider-woman",
+      "safety-last",
+      "werckmeister-harmonies",
+      "the-ice-storm",
+      "the-fisher-king",
+      "tiny-furniture",
+      "drive-my-car",
+      "4-months-3-weeks-and-2-days",
+      "gomorrah",
+      "all-that-heaven-allows",
+      "the-age-of-innocence",
+      "drugstore-cowboy"
+    ]
+  },
+  {
+    "id": "little-caesar",
+    "title": "Little Caesar",
+    "description": "A curated selection from the Little Caesar series.",
+    "filmIds": [
+      "popular-now",
+      "little-caesar",
+      "ben-hur",
+      "hard-boiled",
+      "gold-diggers-of-1933",
+      "to-live-and-die-in-l-a",
+      "the-hunted",
+      "wuthering-heights",
+      "the-age-of-innocence",
+      "happyend",
+      "my-own-private-idaho",
+      "peter-hujar-s-day",
+      "death-proof"
+    ]
+  },
+  {
+    "id": "two-documentaries-by-anupama-srinivasan-and-anirban-dutta",
+    "title": "Two Documentaries by Anupama Srinivasan and Anirban Dutta",
+    "description": "A curated selection from the Two Documentaries by Anupama Srinivasan and Anirban Dutta series.",
+    "filmIds": [
+      "recent-collections",
+      "two-documentaries-by-anupama-srinivasan-and-anirban-dutta",
+      "directed-by-william-lustig",
+      "starring-terence-stamp",
+      "written-by-dorothy-parker",
+      "directed-by-robert-bresson",
+      "directed-by-monika-treut",
+      "three-short-films-by-ja-tovia-gary",
+      "directed-by-william-klein",
+      "celebrate-black-history",
+      "directed-by-hector-babenco",
+      "dag-johan-haugerud-s-oslo-trilogy",
+      "sudanese-film-group"
+    ]
+  },
+  {
+    "id": "the-hunted",
+    "title": "The Hunted",
+    "description": "A curated selection from the The Hunted series.",
+    "filmIds": [
+      "hollywood-hits",
+      "the-hunted",
+      "boogie-nights",
+      "dead-presidents",
+      "before-the-devil-knows-you-re-dead",
+      "cruel-intentions",
+      "the-ring-1",
+      "a-perfect-murder",
+      "little-caesar",
+      "ben-hur",
+      "gold-diggers-of-1933",
+      "death-proof",
+      "big-city-blues"
+    ]
+  },
+  {
+    "id": "cane-river",
+    "title": "Cane River",
+    "description": "A curated selection from the Cane River series.",
+    "filmIds": [
+      "american-independents",
+      "cane-river",
+      "summer-of-sam",
+      "bob-carol-ted-alice",
+      "my-blueberry-nights",
+      "clerks",
+      "two-lovers",
+      "remote-control",
+      "we-re-all-going-to-the-world-s-fair",
+      "slc-punk",
+      "to-live-and-die-in-l-a",
+      "my-own-private-idaho",
+      "a-different-image"
+    ]
+  },
+  {
+    "id": "guillermo-del-toro-s-adventures-in-moviegoing",
+    "title": "Guillermo del Toro’s Adventures in Moviegoing",
+    "description": "A curated selection from the Guillermo del Toro’s Adventures in Moviegoing series.",
+    "filmIds": [
+      "oscar-nominees",
+      "guillermo-del-toro-s-adventures-in-moviegoing",
+      "directed-by-jafar-panahi-1",
+      "josh-and-benny-safdie-s-adventures-in-moviegoing",
+      "the-craft-of-acting-ethan-hawke",
+      "perfectly-a-strangeness",
+      "three-by-kleber-mendonca-filho",
+      "how-to-shoot-a-ghost",
+      "directed-by-joachim-trier",
+      "drive-my-car",
+      "foreign-language-oscar-winners"
+    ]
+  },
+  {
+    "id": "ghost-in-the-shell-stand-alone-complex",
+    "title": "Ghost in the Shell: Stand Alone Complex",
+    "description": "A curated selection from the Ghost in the Shell: Stand Alone Complex series.",
+    "filmIds": [
+      "anime",
+      "ghost-in-the-shell-stand-alone-complex",
+      "tamala-2010-a-punk-cat-in-space",
+      "gunbuster-the-movie"
+    ]
+  },
+  {
+    "id": "spotlight-on-within-our-gates-with-racquel-gates",
+    "title": "Spotlight on WITHIN OUR GATES with Racquel Gates",
+    "description": "A curated selection from the Spotlight on WITHIN OUR GATES with Racquel Gates series.",
+    "filmIds": [
+      "criterion-originals",
+      "spotlight-on-within-our-gates-with-racquel-gates",
+      "yakima-canutt-on-stagecoach",
+      "wyatt-cenac-on-in-the-mood-for-love",
+      "noah-baumbach-s-adventures-in-moviegoing",
+      "ethan-hawke-on-4-months-3-weeks-and-2-days",
+      "cheryl-dunye-interview",
+      "paul-dano-on-a-man-escaped",
+      "richard-linklater-on-l-argent",
+      "the-craft-of-acting-ethan-hawke",
+      "joachim-trier-interview",
+      "buddy-joe-hooker-interview",
+      "ira-sachs-interview"
+    ]
+  },
+  {
+    "id": "how-to-shoot-a-ghost",
+    "title": "How to Shoot a Ghost",
+    "description": "A curated selection from the How to Shoot a Ghost series.",
+    "filmIds": [
+      "newly-added",
+      "how-to-shoot-a-ghost",
+      "who-killed-teddy-bear",
+      "videodrome",
+      "we-re-all-going-to-the-world-s-fair",
+      "the-ring-1",
+      "a-perfect-murder",
+      "bleeder",
+      "cruel-intentions",
+      "clerks",
+      "12-08-east-of-bucharest",
+      "videoheaven",
+      "gunbuster-the-movie"
+    ]
+  },
+  {
+    "id": "summer-of-sam",
+    "title": "Summer of Sam",
+    "description": "A curated selection from the Summer of Sam series.",
+    "filmIds": [
+      "leaving-march-31",
+      "summer-of-sam",
+      "dead-ringers",
+      "the-others",
+      "reprise",
+      "bright-star",
+      "ben-hur",
+      "the-ice-storm",
+      "boogie-nights",
+      "heat-lightning",
+      "maurice",
+      "fascination",
+      "i-am-a-fugitive-from-a-chain-gang"
+    ]
+  },
+  {
+    "id": "police-story",
+    "title": "Police Story",
+    "description": "A curated selection from the Police Story series.",
+    "filmIds": [
+      "all-time-favorites",
+      "police-story",
+      "in-the-mood-for-love",
+      "the-virgin-suicides",
+      "paper-moon",
+      "videodrome",
+      "lost-highway",
+      "the-devil-probably",
+      "the-watermelon-woman",
+      "stagecoach",
+      "daughters-of-the-dust",
+      "the-bitter-tears-of-petra-von-kant",
+      "paris-is-burning"
+    ]
+  },
+  {
+    "id": "blossoms-shanghai-episode-7",
+    "title": "BLOSSOMS SHANGHAI: Episode 7",
+    "description": "A curated selection from the BLOSSOMS SHANGHAI: Episode 7 series.",
+    "filmIds": [
+      "blossoms-shanghai-2",
+      "blossoms-shanghai-episode-7",
+      "blossoms-shanghai-episode-8",
+      "blossoms-shanghai-episode-9",
+      "blossoms-shanghai-episode-10",
+      "blossoms-shanghai",
+      "blossoms-shanghai-trailer",
+      "blossoms-shanghai-episode-1",
+      "blossoms-shanghai-episode-2",
+      "blossoms-shanghai-episode-3",
+      "blossoms-shanghai-episode-4",
+      "blossoms-shanghai-episode-5",
+      "blossoms-shanghai-episode-6"
+    ]
+  },
+  {
+    "id": "three-by-kleber-mendon-a-filho",
+    "title": "Three by Kleber Mendonça Filho",
+    "description": "A curated selection from the Three by Kleber Mendonça Filho series.",
+    "filmIds": [
+      "directed-by-1",
+      "three-by-kleber-mendonca-filho",
+      "directed-by-atom-egoyan",
+      "directed-by-hlynur-palmason",
+      "directed-by-maya-deren",
+      "directed-by-monika-treut",
+      "directed-by-robert-bresson",
+      "three-short-films-by-ja-tovia-gary",
+      "directed-by-william-klein",
+      "mervyn-leroy-s-pre-code-films",
+      "dag-johan-haugerud-s-oslo-trilogy",
+      "directed-by-hector-babenco",
+      "directed-by-william-lustig"
+    ]
+  },
+  {
+    "id": "starring-alain-delon",
+    "title": "Starring Alain Delon",
+    "description": "A curated selection from the Starring Alain Delon series.",
+    "filmIds": [
+      "stars",
+      "starring-alain-delon",
+      "starring-michelle-yeoh",
+      "harold-lloyd-1",
+      "starring-isabelle-huppert",
+      "three-starring-gwyneth-paltrow",
+      "starring-ben-whishaw",
+      "starring-terence-stamp",
+      "starring-vicky-krieps",
+      "sammo-hung-kicks-ass",
+      "starring-kristen-stewart",
+      "starring-gena-rowlands",
+      "marcello-mastroianni-at-100"
+    ]
+  },
+  {
+    "id": "we-were-here",
+    "title": "We Were Here",
+    "description": "A curated selection from the We Were Here series.",
+    "filmIds": [
+      "true-stories-1",
+      "we-were-here",
+      "the-taste-of-mango",
+      "and-towards-happy-alleys",
+      "directed-by-rob-nilsson-and-john-hanson",
+      "the-storms-of-jeremy-thomas",
+      "american-dharma",
+      "talking-about-trees",
+      "two-documentaries-by-anupama-srinivasan-and-anirban-dutta",
+      "sudanese-film-group",
+      "actresses-unfiltered",
+      "100-years-of-olympic-films-1912-2012",
+      "carol-joy"
+    ]
+  }
+]

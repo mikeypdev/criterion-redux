@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { mockFilms } from '../data/mockData';
+import { useData } from '../context/DataContext';
+import type { Film } from '../types';
 import styles from '../styles/search.module.css';
 
 const Search: React.FC = () => {
@@ -8,16 +9,20 @@ const Search: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const searchRef = useRef<HTMLDivElement>(null);
+  
+  const { catalog: films } = useData();
 
   const results = React.useMemo(() => {
     if (query.length > 1) {
-      return mockFilms.filter(f => 
-        f.title.toLowerCase().includes(query.toLowerCase()) ||
-        f.directors.some(d => d.name.toLowerCase().includes(query.toLowerCase()))
+      const q = query.toLowerCase();
+      return films.filter(f => 
+        f.title.toLowerCase().includes(q) ||
+        f.directors.some(d => d.name.toLowerCase().includes(q)) ||
+        f.cast.some(c => c.name.toLowerCase().includes(q))
       ).slice(0, 5);
     }
     return [];
-  }, [query]);
+  }, [query, films]);
 
   useEffect(() => {
     setIsOpen(results.length > 0);

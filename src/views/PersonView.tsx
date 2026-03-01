@@ -1,32 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
-import { mockFilms, mockPersons } from '../data/mockData';
+import { useData } from '../context/DataContext';
+import type { Person, Film } from '../types';
 import styles from '../styles/personView.module.css';
 
 const PersonView: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const { catalog, isLoading } = useData();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  if (isLoading) {
+    return <div className={styles.loading}>Searching the archives...</div>;
+  }
   
-  // First try to find in curated mockPersons
-  let person = mockPersons.find(p => p.id === id);
-  
-  // If not found, try to find in the entire film dataset (scraped directors/cast)
-  if (!person) {
-    for (const film of mockFilms) {
-      const foundDirector = film.directors.find(d => d.id === id);
-      if (foundDirector) {
-        person = foundDirector;
-        break;
-      }
-      const foundCast = film.cast.find(c => c.id === id);
-      if (foundCast) {
-        person = foundCast;
-        break;
-      }
+  // Find person in the entire film dataset (scraped directors/cast)
+  let person: Person | undefined;
+  for (const film of catalog) {
+    const foundDirector = film.directors.find(d => d.id === id);
+    if (foundDirector) {
+      person = foundDirector;
+      break;
+    }
+    const foundCast = film.cast.find(c => c.id === id);
+    if (foundCast) {
+      person = foundCast;
+      break;
     }
   }
 
-  const films = mockFilms.filter(f => 
+  const films = catalog.filter(f => 
     f.directors.some(d => d.id === id) || 
     f.cast.some(c => c.id === id)
   );
@@ -45,7 +51,19 @@ const PersonView: React.FC = () => {
       <header className={styles.header}>
         <div className={styles.info}>
           <h1 className={styles.name}>{person.name}</h1>
-          <p className={styles.role}>{person.role.toUpperCase()}</p>
+          <div className={styles.metaRow}>
+            <p className={styles.role}>{person.role.toUpperCase()}</p>
+            {person.tmdbId && (
+              <a 
+                href={`https://www.themoviedb.org/person/${person.tmdbId}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.tmdbLink}
+              >
+                View on TMDB ↗
+              </a>
+            )}
+          </div>
           {person.bio && <p className={styles.bio}>{person.bio}</p>}
         </div>
       </header>

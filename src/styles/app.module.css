@@ -36,11 +36,41 @@
   display: flex;
   gap: 30px;
   overflow-x: auto;
-  padding: 20px 40px; /* Give space for scale effect */
-  margin: -20px -40px;
+  /* Vertical padding for scale, horizontal padding for the 'margin' effect */
+  padding: 40px 0 40px 60px; 
+  /* Negative margin only on top/bottom/right to allow bleed, 
+     but NOT on the left so it respects the container/padding */
+  margin: -40px -40px -40px 0; 
   scroll-snap-type: x mandatory;
 }
 
 .carousel::-webkit-scrollbar {
   display: none; /* Hide scrollbar for a cleaner look */
 }
+
+.loadingContainer {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+

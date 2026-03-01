@@ -1,85 +1,61 @@
 # Criterion Channel Redesign Specification
 
 ## 1. Project Overview
-The goal is to build a modern, high-performance front-end for the Criterion Channel that prioritizes film discovery and curation. The redesign aims to solve the "clunky" navigation issues of the current Vimeo-based platform by surface-level metadata and intuitive filtering.
+The goal is to build a modern, high-performance front-end for the Criterion Channel that prioritizes film discovery and curation. The redesign solves the "clunky" navigation issues of the current platform by surfacing deep metadata and intuitive filtering. This is a fully data-driven application using a real-world library of over 3,300 titles.
 
 ## 2. Core UX Principles
 - **Discoverability First:** High-priority content (Leaving Soon, New Additions) is moved to the top.
 - **Surface Metadata:** Minimize clicks by showing film details (blurb, year, runtime) on hover.
 - **Deeply Linked Information:** Every entity (Director, Actor, Genre, Country) is a clickable link leading to a filtered view or a dedicated person page.
-- **Cinematic Aesthetic:** A "Criterion Noir" theme using deep blacks, subtle grays, and elegant typography (favoring high-contrast serifs for titles and clean sans-serifs for metadata).
+- **Cinematic Aesthetic:** A "Criterion Noir" theme using deep blacks, subtle grays, and elegant typography.
 
 ## 3. Key Features
 
 ### 3.1. The "High-Urgency" Dashboard
-- **"Leaving at the End of the Month":** The very first row on the home page.
-- **"Newly Added":** The second row.
+- **"Leaving Soon":** Curated films scheduled to depart the service.
+- **"Newly Added":** The latest arrivals to the library.
+- **Curated Series:** Dynamic rows synced from the Criterion browse page.
 
 ### 3.2. Global Film Index (The "Power" Tool)
-- A unified grid view of all available titles.
-- **Advanced Filtering:** Real-time filtering by:
-    - Decade (1920s, 1930s, etc.)
-    - Country
-    - Director
-    - Genre (Noir, Western, Avant-Garde)
-- **Sorting:** Sort by Release Date (New/Old), Date Added, or Alphabetical.
+- A unified grid view of all available titles with infinite scroll.
+- **Advanced Filtering:** Real-time filtering by Decade, Country, Language, Genre, and Format (Color/BW).
+- **Sorting:** Sort by Release Date, Date Added, or Alphabetical.
 
-### 3.3. Linked Metadata & Person Pages
-- **Interactive Credits:** Clicking a director or actor's name opens a filtered view showing all their films currently on the service.
-- **Rich Context:** Brief bios for major directors sourced from metadata or placeholders.
+### 3.3. Rich Technical Metadata & Trailers
+- **Technical Specs:** Display of aspect ratios (e.g., 1.37:1, 1.85:1) and high-res 640x360 artwork.
+- **Cinematic Trailers:** One-click YouTube trailer integration with modal presentation.
 
-### 3.4. Metadata "Quick Look" Cards
-- Hovering over a film thumbnail reveals a card containing:
-    - Full Title
-    - Director(s)
-    - Year & Runtime
-    - Short Synopsis
-    - "Add to Watchlist" toggle
-
-## 4. Visual Language
-- **Color Palette:**
-    - Background: `#0A0A0A` (Deep Black)
-    - Surface: `#1A1A1A` (Dark Gray)
-    - Primary Text: `#FFFFFF`
-    - Secondary Text: `#A0A0A0` (Muted Gray)
-    - Accent: `#DAA520` (Goldenrod for "Leaving Soon" warnings or highlights)
-- **Typography:**
-    - Headings: Elegant Serif (e.g., Playfair Display or similar)
-    - UI/Metadata: Minimal Sans-Serif (e.g., Inter or Roboto)
-
-## 5. Information Architecture
-- **Home:** Curated carousels and urgent collections.
-- **Film Index:** The searchable database.
-- **Collections:** Dedicated pages for "The Criterion Edition," "Saturday Matinee," etc.
-- **Person Detail:** A landing page for specific directors/actors showing their filmography.
+### 3.4. Person Profiles & Filmographies
+- **Discovery Pages:** Dedicated landing pages for directors and actors showing their entire available body of work.
+- **External Links:** Direct integration with TMDB for full actor biographies.
 
 ## 6. Technical Stack
-- **Framework:** React (TypeScript)
-- **Tooling:** Vite
+- **Framework:** React 19 (TypeScript)
+- **Tooling:** Vite 7
+- **Data Model:** Runtime-fetched JSON datasets via `DataContext` (catalog.json, collections.json).
+- **Automation:** Node.js + Playwright for deep-crawling and TMDB API for enrichment.
 - **Styling:** Vanilla CSS (CSS Modules)
-- **Data:** Mock JSON structure mirroring the Criterion API/Index.
 
 ## 7. Implementation Roadmap
-1. **Phase 1: Architecture & Mock Data.** Define types and initial JSON structure for films and persons. (Completed)
-2. **Phase 2: Layout & Navigation.** Build the persistent header and side navigation. (Completed)
-3. **Phase 3: The "Urgent" Home Page.** Implement the top-priority carousels. (Completed)
-4. **Phase 4: The Filterable Index.** Build the grid and filtering logic. (Completed)
-5. **Phase 5: Linked Metadata.** Implement the detail views and cross-linking logic. (Completed)
-6. **Phase 6: Polish & Interactions.** Add hover states, transitions, and "Watchlist" persistence. (Completed)
-7. **Phase 7: Routing & Search.** Implement global search and client-side routing. (Completed)
+1. **Phase 1: Architecture & Scraper.** Define data structures and build the base Criterion scraper. (Completed)
+2. **Phase 2: Enrichment Engine.** Implement TMDB integration for synopses, cast, and trailers. (Completed)
+3. **Phase 3: High-Performance Grid.** Build the infinite scroll film index with multi-faceted filtering. (Completed)
+4. **Phase 4: Cinematic Detail Views.** Implement hero layouts with trailer support and technical metadata. (Completed)
+5. **Phase 5: Discovery Logic.** Link persons, genres, and collections for a deeply interconnected UX. (Completed)
+6. **Phase 6: Runtime Data Fetching.** Decouple datasets from the JS bundle for instant loading. (Completed)
+7. **Phase 7: Final Polish.** Finalize "Criterion Noir" theme and persistent watchlist logic. (Completed)
 
 ## 8. Real Data Strategy (The "Criterion Data Connector")
 
 ### 8.1. Extraction (The Scraper)
-- **Target:** `https://www.criterionchannel.com/browse/all-films`
-- **Tooling:** Node.js with `Cheerio` or `Playwright`.
-- **Extraction Logic:** Parse the film grid for Title, Director, Year, Country, and High-Res Thumbnail URLs.
+- **Target:** `https://films.criterionchannel.com/`
+- **Tooling:** Node.js with `Cheerio` and `Playwright`.
+- **Extraction Logic:** Unified pipeline (`sync.js`) that scrapes the master list and then deep-crawls individual pages for metadata.
 
 ### 8.2. Enrichment (The Enhancer)
-- **Metadata Sources:** Integrate with **TMDB API** to fetch deep cast lists, high-res backdrops, and expanded genres.
-- **Sitemap Crawling:** Programmatically parse `criterion.com/films.xml` to ensure 100% coverage of the library.
+- **Metadata Sources:** Hybrid model using Criterion for blurbs/aspect ratios and **TMDB API** for cast, runtimes, and YouTube trailers.
+- **Pruning Logic:** Automated detection of dead redirects to ensure the catalog only contains playable titles.
 
 ### 8.3. Integration (The Data Sync)
-- **Storage:** Export enriched data to `src/data/catalog.json`.
-- **Automation:** Implement a daily sync via GitHub Actions to keep "Leaving Soon" and "Newly Added" sections current.
-- **Dynamic Service:** Create a `CatalogService` in React to handle large-scale data loading and real-time filtering.
+- **Storage:** Export enriched data to `public/data/catalog.json`.
+- **Hydration:** Global `DataProvider` fetches datasets on application load for high-performance client-side filtering.

@@ -1,12 +1,24 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { mockCollections } from '../data/mockData';
+import { useData } from '../context/DataContext';
+import type { Film } from '../types';
 import FilmCard from '../components/FilmCard';
 import styles from '../styles/collectionsView.module.css';
 
 const CollectionDetailView: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const collection = mockCollections.find(c => c.id === id);
+  const { collections, catalog, isLoading } = useData();
+  
+  if (isLoading) {
+    return <div className={styles.loading}>Assembling collection...</div>;
+  }
+
+  const collection = collections.find(c => c.id === id);
+  const collectionFilms = collection 
+    ? collection.filmIds
+        .map(fId => catalog.find(f => f.id === fId))
+        .filter((f): f is Film => !!f)
+    : [];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,11 +39,11 @@ const CollectionDetailView: React.FC = () => {
         <Link to="/collections" className={styles.backLink}>← All Collections</Link>
         <h1 className={styles.detailTitle}>{collection.title}</h1>
         <p className={styles.detailDescription}>{collection.description}</p>
-        <div className={styles.count}>{collection.films.length} Titles</div>
+        <div className={styles.count}>{collectionFilms.length} Titles</div>
       </header>
 
       <div className={styles.grid}>
-        {collection.films.map(film => (
+        {collectionFilms.map(film => (
           <FilmCard key={film.id} film={film} />
         ))}
       </div>

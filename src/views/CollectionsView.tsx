@@ -1,27 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { mockCollections } from '../data/mockData';
+import { useData } from '../context/DataContext';
+import type { Collection, Film } from '../types';
 import styles from '../styles/collectionsView.module.css';
 
 const CollectionsView: React.FC = () => {
+  const { collections, catalog, isLoading } = useData();
+
+  if (isLoading) {
+    return <div className={styles.loading}>Curating collections...</div>;
+  }
+
+  const getFilmThumbnail = (filmId: string) => {
+    const film = catalog.find(f => f.id === filmId);
+    return film ? film.thumbnailUrl : null;
+  };
+
   return (
     <div className={styles.root}>
       <h1 className={styles.title}>Collections</h1>
       <p className={styles.subtitle}>Curated cinematic experiences, exclusively for you.</p>
 
       <div className={styles.collectionsList}>
-        {mockCollections.map(collection => (
+        {collections.map(collection => (
           <Link key={collection.id} to={`/collections/${collection.id}`} className={styles.collectionLink}>
             <section className={styles.collection}>
               <div className={styles.collectionInfo}>
                 <h2 className={styles.collectionTitle}>{collection.title}</h2>
                 <p className={styles.collectionDesc}>{collection.description}</p>
-                <div className={styles.count}>{collection.films.length} Titles</div>
+                <div className={styles.count}>{collection.filmIds.length} Titles</div>
               </div>
               <div className={styles.previewGrid}>
-                {collection.films.slice(0, 4).map(film => (
-                  <img key={film.id} src={film.thumbnailUrl} alt="" className={styles.previewImg} />
-                ))}
+                {collection.filmIds.slice(0, 4).map(id => {
+                  const thumb = getFilmThumbnail(id);
+                  return thumb ? (
+                    <img key={id} src={thumb} alt="" className={styles.previewImg} />
+                  ) : null;
+                })}
               </div>
             </section>
           </Link>

@@ -52,10 +52,46 @@
 }
 
 .footer {
-  padding: 40px;
+  padding: 60px 40px;
   background-color: var(--background);
   border-top: 1px solid var(--surface);
   color: var(--text-secondary);
   font-size: 12px;
-  text-align: center;
 }
+
+.footerContent {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.tmdbAttribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 300px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 11px;
+}
+
+.tmdbLogo {
+  width: 100px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.tmdbLogo:hover {
+  opacity: 1;
+}
+
+.copyright {
+  text-align: center;
+  letter-spacing: 1px;
+  opacity: 0.6;
+}
+

@@ -71,7 +71,16 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
             
             <div className={styles.genres}>
               {film.genres.slice(0, 2).map(genre => (
-                <span key={genre} className={styles.genreTag}>{genre}</span>
+                <span 
+                  key={genre} 
+                  className={styles.genreTag}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate(`/index?genre=${encodeURIComponent(genre)}`);
+                  }}
+                >
+                  {genre}
+                </span>
               ))}
             </div>
 

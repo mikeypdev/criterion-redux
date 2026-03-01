@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { mockFilms } from '../data/mockData';
+import { useData } from '../context/DataContext';
+import type { Film } from '../types';
 import PersonLink from '../components/PersonLink';
 import { useWatchlist } from '../context/WatchlistContext';
 import styles from '../styles/filmDetailView.module.css';
@@ -9,13 +10,19 @@ const FilmDetailView: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { addToWatchlist, removeFromWatchlist, isInWatchlist } = useWatchlist();
+  const { catalog, isLoading } = useData();
+  const [showTrailer, setShowTrailer] = React.useState(false);
 
-  const film = mockFilms.find(f => f.id === id);
+  const film = catalog.find(f => f.id === id);
   const isSaved = film ? isInWatchlist(film.id) : false;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
+
+  if (isLoading) {
+    return <div className={styles.loading}>Loading film details...</div>;
+  }
 
   if (!film) {
     return (
@@ -36,10 +43,27 @@ const FilmDetailView: React.FC = () => {
 
   return (
     <div className={styles.root}>
+      {showTrailer && film.trailerKey && (
+        <div className={styles.trailerModal} onClick={() => setShowTrailer(false)}>
+          <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+            <button className={styles.closeModal} onClick={() => setShowTrailer(false)}>✕</button>
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src={`https://www.youtube.com/embed/${film.trailerKey}?autoplay=1`} 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
+
       <header className={styles.hero}>
         <div className={styles.backdropWrapper}>
           <img 
-            src={film.thumbnailUrl} // We can use thumbnailUrl as a fallback
+            src={film.thumbnailUrl} 
             alt="" 
             className={styles.backdrop} 
           />
@@ -56,7 +80,7 @@ const FilmDetailView: React.FC = () => {
           <div className={styles.metaLine}>
             <span>{film.year}</span>
             <span>{film.runtime > 0 ? `${film.runtime} MIN` : ''}</span>
-            <span>{film.countries.join(', ')}</span>
+            <span>{film.aspectRatio}</span>
             {film.isColor ? <span>Color</span> : <span>B&W</span>}
           </div>
 
@@ -73,6 +97,13 @@ const FilmDetailView: React.FC = () => {
             ) : (
               <button className={styles.playBtn} disabled>▶ Unavailable</button>
             )}
+            
+            {film.trailerKey && (
+              <button className={styles.trailerBtn} onClick={() => setShowTrailer(true)}>
+                🎬 Trailer
+              </button>
+            )}
+
             <button 
               className={`${styles.watchlistBtn} ${isSaved ? styles.isSaved : ''}`}
               onClick={toggleWatchlist}
@@ -115,7 +146,14 @@ const FilmDetailView: React.FC = () => {
                 <h3 className={styles.creditLabel}>Genres</h3>
                 <div className={styles.genres}>
                   {film.genres.map(g => (
-                    <span key={g} className={styles.genreTag}>{g}</span>
+                    <span 
+                      key={g} 
+                      className={styles.genreTag}
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => navigate(`/index?genre=${encodeURIComponent(g)}`)}
+                    >
+                      {g}
+                    </span>
                   ))}
                 </div>
               </div>

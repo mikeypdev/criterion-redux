@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const TARGET_URL = 'https://films.criterionchannel.com/';
-const OUTPUT_PATH = path.resolve('src/data/catalog.json');
+const OUTPUT_PATH = path.resolve('public/data/catalog.json');
 
 async function scrapeFilms() {
   try {
@@ -23,7 +23,11 @@ async function scrapeFilms() {
 
       const $cells = $(row).find('td');
       if ($cells.length >= 5) {
-        const thumbnailUrl = $cells.eq(0).find('img').attr('src');
+        let thumbnailUrl = $cells.eq(0).find('img').attr('src');
+        if (thumbnailUrl) {
+          // Upgrade from 250x140 to 640x360 for high-DPI displays
+          thumbnailUrl = thumbnailUrl.replace('h=140', 'h=360').replace('w=250', 'w=640');
+        }
         const $titleLink = $cells.eq(1).find('a');
         const title = $titleLink.text().trim();
         const link = $titleLink.attr('href');

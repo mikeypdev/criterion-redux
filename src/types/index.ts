@@ -4,6 +4,7 @@ export interface Person {
   role: 'director' | 'actor' | 'both';
   bio?: string;
   imageUrl?: string;
+  tmdbId?: number;
 }
 
 export interface Film {
@@ -22,11 +23,14 @@ export interface Film {
   thumbnailUrl: string;
   dateAdded: string; // ISO format
   leavingSoon: boolean;
+  enriched?: boolean;
+  aspectRatio?: string;
+  trailerKey?: string;
 }
 
 export interface Collection {
   id: string;
   title: string;
   description: string;
-  films: Film[];
+  filmIds: string[];
 }

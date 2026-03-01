@@ -48,3 +48,13 @@
 .browseBtn:hover {
   background-color: var(--accent);
 }
+
+.loading {
+  padding: 100px;
+  text-align: center;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+

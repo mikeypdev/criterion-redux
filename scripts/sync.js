@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const SCRIPTS_DIR = './scripts';
-const CATALOG_PATH = './src/data/catalog.json';
+const CATALOG_PATH = './public/data/catalog.json';
 
 async function runSync() {
   const limit = process.env.LIMIT || '50';
@@ -28,23 +28,28 @@ async function runSync() {
       console.log('Running in continuous mode. Press Ctrl+C to stop.');
       while (true) {
         execSync(`LIMIT=${limit} node scripts/enricher.js`, { stdio: 'inherit' });
+        console.log('Finalizing batch with local enrichment...');
+        execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
         console.log('Batch completed. Starting next batch in 5 seconds...');
         execSync('sleep 5'); // Give it a breather
       }
     } else {
       execSync(`LIMIT=${limit} node scripts/enricher.js`, { stdio: 'inherit' });
+      console.log('Step 3: Running local enrichment and cleanup...');
+      execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
     }
   } catch (err) {
     if (continuous) {
       console.log('Continuous sync interrupted.');
     } else {
       console.warn('Enrichment batch interrupted or failed, continuing to local sync...');
+      execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
     }
   }
 
-  // 3. Local Enrichment (Genres, Languages, Fallbacks)
-  console.log('Step 3: Running local enrichment and cleanup...');
-  execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
+  // 3. Collections Sync
+  console.log('Step 3: Syncing curated collections...');
+  execSync('node scripts/scrape_collections.js', { stdio: 'inherit' });
 
   console.log('--- SYNC COMPLETED SUCCESSFULLY ---');
 }

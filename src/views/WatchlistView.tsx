@@ -1,14 +1,19 @@
 import React from 'react';
 import { useWatchlist } from '../context/WatchlistContext';
-import { mockFilms } from '../data/mockData';
+import { useData } from '../context/DataContext';
 import FilmCard from '../components/FilmCard';
 import styles from '../styles/watchlistView.module.css';
 import { Link } from 'react-router-dom';
 
 const WatchlistView: React.FC = () => {
   const { watchlist } = useWatchlist();
+  const { catalog, isLoading } = useData();
   
-  const savedFilms = mockFilms.filter(film => watchlist.includes(film.id));
+  if (isLoading) {
+    return <div className={styles.loading}>Retrieving your watchlist...</div>;
+  }
+
+  const savedFilms = catalog.filter(film => watchlist.includes(film.id));
 
   return (
     <div className={styles.root}>

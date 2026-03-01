@@ -47,7 +47,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <footer className={styles.footer}>
-        © 2026 CRITERION REDUX. ALL RIGHTS RESERVED. FOR DEMONSTRATION PURPOSES ONLY.
+        <div className={styles.footerContent}>
+          <div className={styles.tmdbAttribution}>
+            <img 
+              src="/tmdb-logo.svg" 
+              alt="The Movie Database" 
+              className={styles.tmdbLogo}
+            />
+            <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          </div>
+          <div className={styles.copyright}>
+            © 2026 CRITERION REDUX. ALL RIGHTS RESERVED. FOR DEMONSTRATION PURPOSES ONLY.
+          </div>
+        </div>
       </footer>
     </div>
   );

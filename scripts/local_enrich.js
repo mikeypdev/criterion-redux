@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const CATALOG_PATH = path.resolve('src/data/catalog.json');
+const CATALOG_PATH = path.resolve('public/data/catalog.json');
 
 const commonGenres = [
   'Noir', 'Comedy', 'Drama', 'Western', 'Thriller', 'Horror', 'Sci-Fi', 
