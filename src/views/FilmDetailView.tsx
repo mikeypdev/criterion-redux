@@ -63,7 +63,7 @@ const FilmDetailView: React.FC = () => {
       <header className={styles.hero}>
         <div className={styles.backdropWrapper}>
           <img 
-            src={film.thumbnailUrl} 
+            src={film.posterUrl || film.thumbnailUrl} 
             alt="" 
             className={styles.backdrop} 
           />
@@ -100,8 +100,19 @@ const FilmDetailView: React.FC = () => {
             
             {film.trailerKey && (
               <button className={styles.trailerBtn} onClick={() => setShowTrailer(true)}>
-                🎬 Trailer
+                🎬 YouTube Trailer
               </button>
+            )}
+
+            {film.trailerLink && (
+              <a 
+                href={film.trailerLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={styles.trailerBtn}
+              >
+                🎬 Criterion Trailer
+              </a>
             )}
 
             <button 

@@ -1,351 +1,263 @@
 [
   {
-    "id": "stunts-",
-    "title": "Stunts!",
-    "description": "A curated selection from the Stunts! series.",
+    "id": "vhs-forever",
+    "title": "Vhs Forever",
+    "description": "Curated collection: VHS Forever",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a0f031ad-0c38-4e79-9286-62c7150ed47d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/vhs-forever",
     "filmIds": [
-      "new-collections",
-      "stunts",
-      "mervyn-leroy-s-pre-code-films",
-      "wuthering-heights-x2",
-      "celebrate-black-history",
-      "vhs-forever",
-      "three-starring-gwyneth-paltrow",
-      "romanian-new-wave",
-      "two-short-films-by-charlie-kaufman-and-eva-h-d",
-      "directed-by-monika-treut",
-      "three-short-films-by-ja-tovia-gary",
-      "directed-by-william-klein",
-      "yearning-1"
-    ]
-  },
-  {
-    "id": "hotels-on-film",
-    "title": "Hotels on Film",
-    "description": "A curated selection from the Hotels on Film series.",
-    "filmIds": [
-      "top-stories",
-      "hotels-on-film",
-      "black-debutantes",
-      "directed-by-joachim-trier",
-      "directed-by-werner-herzog-2",
-      "yearning-1",
-      "mervyn-leroy-s-pre-code-films",
-      "stunts",
-      "the-90s-do-the-70s",
-      "fresh-starts",
-      "nordic-noir",
-      "directed-by-atom-egoyan",
-      "wong-kar-wai-s-cinema"
-    ]
-  },
-  {
-    "id": "cloud",
-    "title": "Cloud",
-    "description": "A curated selection from the Cloud series.",
-    "filmIds": [
-      "exclusive-streaming-premieres",
-      "cloud",
-      "union",
-      "caught-by-the-tides",
-      "the-shrouds",
-      "how-to-shoot-a-ghost",
-      "mistress-dispeller",
-      "happyend",
-      "peter-hujar-s-day",
-      "the-ballad-of-suzanne-cesaire",
-      "megadoc",
-      "carol-joy",
-      "goodbye-horses-the-many-lives-of-q-lazzarus"
-    ]
-  },
-  {
-    "id": "kiss-of-the-spider-woman",
-    "title": "Kiss of the Spider Woman",
-    "description": "A curated selection from the Kiss of the Spider Woman series.",
-    "filmIds": [
-      "criterion-editions",
-      "kiss-of-the-spider-woman",
-      "safety-last",
-      "werckmeister-harmonies",
-      "the-ice-storm",
+      "videoheaven",
+      "body-double",
+      "videodrome",
+      "the-ring-1",
+      "ring",
+      "clerks",
+      "bleeder",
+      "re-wind",
+      "remote-control",
+      "the-big-hit",
       "the-fisher-king",
-      "tiny-furniture",
-      "drive-my-car",
-      "4-months-3-weeks-and-2-days",
-      "gomorrah",
-      "all-that-heaven-allows",
-      "the-age-of-innocence",
-      "drugstore-cowboy"
+      "52-pick-up",
+      "speaking-parts",
+      "the-watermelon-woman",
+      "lost-highway",
+      "benny-s-video"
     ]
   },
   {
-    "id": "little-caesar",
-    "title": "Little Caesar",
-    "description": "A curated selection from the Little Caesar series.",
+    "id": "three-starring-gwyneth-paltrow",
+    "title": "Three Starring Gwyneth Paltrow",
+    "description": "Curated collection: Three Starring Gwyneth Paltrow",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ef6c7b6e-37bb-4808-8010-012d5d4f338f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/three-starring-gwyneth-paltrow",
     "filmIds": [
-      "popular-now",
-      "little-caesar",
-      "ben-hur",
-      "hard-boiled",
-      "gold-diggers-of-1933",
-      "to-live-and-die-in-l-a",
-      "the-hunted",
-      "wuthering-heights",
-      "the-age-of-innocence",
-      "happyend",
+      "a-perfect-murder",
+      "two-lovers",
+      "sliding-doors"
+    ]
+  },
+  {
+    "id": "romanian-new-wave",
+    "title": "Romanian New Wave",
+    "description": "Curated collection: Romanian New Wave",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/876f2780-281f-46d1-8d14-06c4443e44b2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/romanian-new-wave",
+    "filmIds": [
+      "romanian-new-wave-teasaer",
+      "12-08-east-of-bucharest",
+      "aurora",
+      "the-death-of-mr-lazarescu",
+      "sieranevada",
+      "4-months-3-weeks-and-2-days",
+      "police-adjective",
+      "tuesday-after-christmas"
+    ]
+  },
+  {
+    "id": "directed-by-monika-treut",
+    "title": "Directed By Monika Treut",
+    "description": "Curated collection: Directed by Monika Treut",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6b54eeab-6902-496d-922c-0f80f4fc9c3e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/directed-by-monika-treut",
+    "filmIds": [
+      "seduction-the-cruel-woman",
+      "virgin-machine",
+      "my-father-is-coming",
+      "female-misbehavior",
+      "didn-t-do-it-for-love",
+      "gendernauts-a-journey-through-shifting-identities",
+      "genderation",
+      "max"
+    ]
+  },
+  {
+    "id": "three-short-films-by-ja-tovia-gary",
+    "title": "Three Short Films By Ja’tovia Gary",
+    "description": "Curated collection: Three Short Films by Ja’Tovia Gary",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/475a0cd7-421e-423f-a4fa-b2b4d9e77665.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/three-short-films-by-ja-tovia-gary",
+    "filmIds": [
+      "an-ecstatic-experience",
+      "quiet-as-it-s-kept",
+      "the-giverny-document"
+    ]
+  },
+  {
+    "id": "directed-by-william-klein",
+    "title": "Directed By William Klein",
+    "description": "Curated collection: Directed by William Klein",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9dd44974-2e69-4dd0-bb1d-72160d4398e0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/directed-by-william-klein",
+    "filmIds": [
+      "who-are-you-polly-maggoo",
+      "the-model-couple",
+      "mr-freedom",
+      "muhammad-ali-the-greatest",
+      "eldridge-cleaver-black-panther"
+    ]
+  },
+  {
+    "id": "yearning-1",
+    "title": "Yearning",
+    "description": "Curated collection: Yearning",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9554e0a0-012f-41de-a859-25f5167fd883.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/yearning-1",
+    "filmIds": [
+      "all-that-heaven-allows",
       "my-own-private-idaho",
-      "peter-hujar-s-day",
-      "death-proof"
+      "the-age-of-innocence",
+      "bright-star",
+      "god-s-own-country",
+      "preparations-to-be-together-for-an-unknown-period-of-time",
+      "the-deep-blue-sea",
+      "pandora-and-the-flying-dutchman",
+      "maurice",
+      "brideshead-revisited",
+      "the-passionate-friends",
+      "in-the-mood-for-love-alternate-version",
+      "the-bitter-tears-of-petra-von-kant"
+    ]
+  },
+  {
+    "id": "stunts",
+    "title": "Stunts!",
+    "description": "Curated collection: Stunts!",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/14967c7c-ece8-44a2-978a-720179c2299c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/stunts",
+    "filmIds": [
+      "buddy-joe-hooker-interview",
+      "35623-death-proof",
+      "ben-hur",
+      "to-live-and-die-in-l-a",
+      "bullitt",
+      "gone-in-60-seconds",
+      "hooper",
+      "the-hunted",
+      "safety-last",
+      "the-general",
+      "steamboat-bill-jr",
+      "stagecoach",
+      "police-story",
+      "hard-boiled"
+    ]
+  },
+  {
+    "id": "mervyn-leroy-s-pre-code-films",
+    "title": "Mervyn Leroy’s Pre-code Films",
+    "description": "Curated collection: Mervyn LeRoy’s Pre-Code Films",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5e06f1b8-e5c6-4a20-8c36-f4389c73018e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/mervyn-leroy-s-pre-code-films",
+    "filmIds": [
+      "five-star-final",
+      "little-caesar",
+      "big-city-blues",
+      "high-pressure",
+      "i-am-a-fugitive-from-a-chain-gang",
+      "three-on-a-match",
+      "gold-diggers-of-1933",
+      "hard-to-handle",
+      "heat-lightning",
+      "hi-nellie"
+    ]
+  },
+  {
+    "id": "wuthering-heights-x2",
+    "title": "Wuthering Heights X2",
+    "description": "Curated collection: Wuthering Heights x2",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ede8ed75-f2b1-471b-bbe8-dd2af70d1f54.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/wuthering-heights-x2",
+    "filmIds": [
+      "wuthering-heights",
+      "wuthering-heights-1"
+    ]
+  },
+  {
+    "id": "celebrate-black-history",
+    "title": "Celebrate Black History",
+    "description": "Curated collection: Celebrate Black History",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/caf06d7b-194c-4ded-881c-45b44e2e7eba.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/celebrate-black-history",
+    "filmIds": [
+      "i-am-somebody",
+      "a-different-image",
+      "will",
+      "integration-report-1",
+      "cane-river",
+      "killer-of-sheep",
+      "compensation",
+      "within-our-gates",
+      "the-blood-of-jesus",
+      "nothing-but-a-man",
+      "a-time-for-burning",
+      "drylongso",
+      "portrait-of-jason",
+      "you-got-to-move",
+      "losing-ground",
+      "say-amen-somebody",
+      "paris-is-burning-1",
+      "daughters-of-the-dust",
+      "alma-s-rainbow",
+      "the-watermelon-woman",
+      "baldwin-s-nigger",
+      "black-panthers",
+      "to-be-free"
+    ]
+  },
+  {
+    "id": "directed-by-hector-babenco",
+    "title": "Directed By Héctor Babenco",
+    "description": "Curated collection: Directed by Héctor Babenco",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0cbfb46-4454-4aea-877a-0b8393ae54bd.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/directed-by-hector-babenco",
+    "filmIds": [
+      "pixote",
+      "lucio-flavio",
+      "kiss-of-the-spider-woman",
+      "king-of-the-night",
+      "foolish-heart",
+      "the-past",
+      "babenco-tell-me-when-i-die"
+    ]
+  },
+  {
+    "id": "sudanese-film-group",
+    "title": "Sudanese Film Group",
+    "description": "Curated collection: Sudanese Film Group",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6acc9f4c-a179-4cb1-9f37-5fa5a1f45381.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/sudanese-film-group",
+    "filmIds": [
+      "hunting-party",
+      "the-tomb",
+      "it-still-rotates",
+      "africa-the-jungle-drums-and-revolution",
+      "four-times-for-children",
+      "a-camel",
+      "the-rope",
+      "the-station",
+      "talking-about-trees"
+    ]
+  },
+  {
+    "id": "dag-johan-haugerud-s-oslo-trilogy",
+    "title": "Dag Johan Haugerud’s Oslo Trilogy",
+    "description": "Curated collection: Dag Johan Haugerud’s OSLO TRILOGY",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b82601c7-a6bd-47b1-80fd-b6997d35bfcc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/dag-johan-haugerud-s-oslo-trilogy",
+    "filmIds": [
+      "love",
+      "sex",
+      "dreams-1"
     ]
   },
   {
     "id": "two-documentaries-by-anupama-srinivasan-and-anirban-dutta",
-    "title": "Two Documentaries by Anupama Srinivasan and Anirban Dutta",
-    "description": "A curated selection from the Two Documentaries by Anupama Srinivasan and Anirban Dutta series.",
+    "title": "Two Documentaries By Anupama Srinivasan And Anirban Dutta",
+    "description": "Curated collection: Two Documentaries by Anupama Srinivasan and Anirban Dutta",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/81fe1b39-657a-49cf-acd1-1196de8f8927.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/two-documentaries-by-anupama-srinivasan-and-anirban-dutta",
     "filmIds": [
-      "recent-collections",
-      "two-documentaries-by-anupama-srinivasan-and-anirban-dutta",
-      "directed-by-william-lustig",
-      "starring-terence-stamp",
-      "written-by-dorothy-parker",
-      "directed-by-robert-bresson",
-      "directed-by-monika-treut",
-      "three-short-films-by-ja-tovia-gary",
-      "directed-by-william-klein",
-      "celebrate-black-history",
-      "directed-by-hector-babenco",
-      "dag-johan-haugerud-s-oslo-trilogy",
-      "sudanese-film-group"
-    ]
-  },
-  {
-    "id": "the-hunted",
-    "title": "The Hunted",
-    "description": "A curated selection from the The Hunted series.",
-    "filmIds": [
-      "hollywood-hits",
-      "the-hunted",
-      "boogie-nights",
-      "dead-presidents",
-      "before-the-devil-knows-you-re-dead",
-      "cruel-intentions",
-      "the-ring-1",
-      "a-perfect-murder",
-      "little-caesar",
-      "ben-hur",
-      "gold-diggers-of-1933",
-      "death-proof",
-      "big-city-blues"
-    ]
-  },
-  {
-    "id": "cane-river",
-    "title": "Cane River",
-    "description": "A curated selection from the Cane River series.",
-    "filmIds": [
-      "american-independents",
-      "cane-river",
-      "summer-of-sam",
-      "bob-carol-ted-alice",
-      "my-blueberry-nights",
-      "clerks",
-      "two-lovers",
-      "remote-control",
-      "we-re-all-going-to-the-world-s-fair",
-      "slc-punk",
-      "to-live-and-die-in-l-a",
-      "my-own-private-idaho",
-      "a-different-image"
-    ]
-  },
-  {
-    "id": "guillermo-del-toro-s-adventures-in-moviegoing",
-    "title": "Guillermo del Toro’s Adventures in Moviegoing",
-    "description": "A curated selection from the Guillermo del Toro’s Adventures in Moviegoing series.",
-    "filmIds": [
-      "oscar-nominees",
-      "guillermo-del-toro-s-adventures-in-moviegoing",
-      "directed-by-jafar-panahi-1",
-      "josh-and-benny-safdie-s-adventures-in-moviegoing",
-      "the-craft-of-acting-ethan-hawke",
-      "perfectly-a-strangeness",
-      "three-by-kleber-mendonca-filho",
-      "how-to-shoot-a-ghost",
-      "directed-by-joachim-trier",
-      "drive-my-car",
-      "foreign-language-oscar-winners"
-    ]
-  },
-  {
-    "id": "ghost-in-the-shell-stand-alone-complex",
-    "title": "Ghost in the Shell: Stand Alone Complex",
-    "description": "A curated selection from the Ghost in the Shell: Stand Alone Complex series.",
-    "filmIds": [
-      "anime",
-      "ghost-in-the-shell-stand-alone-complex",
-      "tamala-2010-a-punk-cat-in-space",
-      "gunbuster-the-movie"
-    ]
-  },
-  {
-    "id": "spotlight-on-within-our-gates-with-racquel-gates",
-    "title": "Spotlight on WITHIN OUR GATES with Racquel Gates",
-    "description": "A curated selection from the Spotlight on WITHIN OUR GATES with Racquel Gates series.",
-    "filmIds": [
-      "criterion-originals",
-      "spotlight-on-within-our-gates-with-racquel-gates",
-      "yakima-canutt-on-stagecoach",
-      "wyatt-cenac-on-in-the-mood-for-love",
-      "noah-baumbach-s-adventures-in-moviegoing",
-      "ethan-hawke-on-4-months-3-weeks-and-2-days",
-      "cheryl-dunye-interview",
-      "paul-dano-on-a-man-escaped",
-      "richard-linklater-on-l-argent",
-      "the-craft-of-acting-ethan-hawke",
-      "joachim-trier-interview",
-      "buddy-joe-hooker-interview",
-      "ira-sachs-interview"
-    ]
-  },
-  {
-    "id": "how-to-shoot-a-ghost",
-    "title": "How to Shoot a Ghost",
-    "description": "A curated selection from the How to Shoot a Ghost series.",
-    "filmIds": [
-      "newly-added",
-      "how-to-shoot-a-ghost",
-      "who-killed-teddy-bear",
-      "videodrome",
-      "we-re-all-going-to-the-world-s-fair",
-      "the-ring-1",
-      "a-perfect-murder",
-      "bleeder",
-      "cruel-intentions",
-      "clerks",
-      "12-08-east-of-bucharest",
-      "videoheaven",
-      "gunbuster-the-movie"
-    ]
-  },
-  {
-    "id": "summer-of-sam",
-    "title": "Summer of Sam",
-    "description": "A curated selection from the Summer of Sam series.",
-    "filmIds": [
-      "leaving-march-31",
-      "summer-of-sam",
-      "dead-ringers",
-      "the-others",
-      "reprise",
-      "bright-star",
-      "ben-hur",
-      "the-ice-storm",
-      "boogie-nights",
-      "heat-lightning",
-      "maurice",
-      "fascination",
-      "i-am-a-fugitive-from-a-chain-gang"
-    ]
-  },
-  {
-    "id": "police-story",
-    "title": "Police Story",
-    "description": "A curated selection from the Police Story series.",
-    "filmIds": [
-      "all-time-favorites",
-      "police-story",
-      "in-the-mood-for-love",
-      "the-virgin-suicides",
-      "paper-moon",
-      "videodrome",
-      "lost-highway",
-      "the-devil-probably",
-      "the-watermelon-woman",
-      "stagecoach",
-      "daughters-of-the-dust",
-      "the-bitter-tears-of-petra-von-kant",
-      "paris-is-burning"
-    ]
-  },
-  {
-    "id": "blossoms-shanghai-episode-7",
-    "title": "BLOSSOMS SHANGHAI: Episode 7",
-    "description": "A curated selection from the BLOSSOMS SHANGHAI: Episode 7 series.",
-    "filmIds": [
-      "blossoms-shanghai-2",
-      "blossoms-shanghai-episode-7",
-      "blossoms-shanghai-episode-8",
-      "blossoms-shanghai-episode-9",
-      "blossoms-shanghai-episode-10",
-      "blossoms-shanghai",
-      "blossoms-shanghai-trailer",
-      "blossoms-shanghai-episode-1",
-      "blossoms-shanghai-episode-2",
-      "blossoms-shanghai-episode-3",
-      "blossoms-shanghai-episode-4",
-      "blossoms-shanghai-episode-5",
-      "blossoms-shanghai-episode-6"
-    ]
-  },
-  {
-    "id": "three-by-kleber-mendon-a-filho",
-    "title": "Three by Kleber Mendonça Filho",
-    "description": "A curated selection from the Three by Kleber Mendonça Filho series.",
-    "filmIds": [
-      "directed-by-1",
-      "three-by-kleber-mendonca-filho",
-      "directed-by-atom-egoyan",
-      "directed-by-hlynur-palmason",
-      "directed-by-maya-deren",
-      "directed-by-monika-treut",
-      "directed-by-robert-bresson",
-      "three-short-films-by-ja-tovia-gary",
-      "directed-by-william-klein",
-      "mervyn-leroy-s-pre-code-films",
-      "dag-johan-haugerud-s-oslo-trilogy",
-      "directed-by-hector-babenco",
-      "directed-by-william-lustig"
-    ]
-  },
-  {
-    "id": "starring-alain-delon",
-    "title": "Starring Alain Delon",
-    "description": "A curated selection from the Starring Alain Delon series.",
-    "filmIds": [
-      "stars",
-      "starring-alain-delon",
-      "starring-michelle-yeoh",
-      "harold-lloyd-1",
-      "starring-isabelle-huppert",
-      "three-starring-gwyneth-paltrow",
-      "starring-ben-whishaw",
-      "starring-terence-stamp",
-      "starring-vicky-krieps",
-      "sammo-hung-kicks-ass",
-      "starring-kristen-stewart",
-      "starring-gena-rowlands",
-      "marcello-mastroianni-at-100"
-    ]
-  },
-  {
-    "id": "we-were-here",
-    "title": "We Were Here",
-    "description": "A curated selection from the We Were Here series.",
-    "filmIds": [
-      "true-stories-1",
-      "we-were-here",
-      "the-taste-of-mango",
-      "and-towards-happy-alleys",
-      "directed-by-rob-nilsson-and-john-hanson",
-      "the-storms-of-jeremy-thomas",
-      "american-dharma",
-      "talking-about-trees",
-      "two-documentaries-by-anupama-srinivasan-and-anirban-dutta",
-      "sudanese-film-group",
-      "actresses-unfiltered",
-      "100-years-of-olympic-films-1912-2012",
-      "carol-joy"
+      "flickering-lights",
+      "nocturnes"
     ]
   }
 ]

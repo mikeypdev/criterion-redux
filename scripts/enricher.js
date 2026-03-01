@@ -60,6 +60,7 @@ async function runTMDBEnrichment(catalog, maxItems) {
         params: { query: film.title, primary_release_year: film.year }
       }));
 
+      const results = searchRes.data.results;
       if (results?.length > 0) {
         const detailRes = await tmdbLimiter.schedule(() => apiClient.get(`/movie/${results[0].id}`, {
           params: { append_to_response: 'credits,videos' }
@@ -83,6 +84,16 @@ async function runTMDBEnrichment(catalog, maxItems) {
             tmdbId: c.id
           }));
         }
+
+        // technical spec gaps
+        if (!film.languages || film.languages.length === 0) {
+          if (data.spoken_languages) {
+            film.languages = data.spoken_languages.map(l => l.english_name);
+          }
+        }
+
+        // Note: TMDB doesn't directly provide aspect ratios in the basic movie detail, 
+        // it's usually in 'images' but that's overkill. We can stick to languages/runtimes for now.
 
         // Try to update Director tmdbId as well
         if (data.credits?.crew) {
@@ -136,6 +147,45 @@ async function runDeepCrawl(catalog, maxItems) {
         continue;
       }
 
+      // Extract native assets from landing page
+      const assets = await page.evaluate(() => {
+        const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
+        const trailerAnchor = anchors.find(a => a.href.includes('-trailer'));
+        
+        // Try to find a large hero/poster image
+        const img = document.querySelector('.collection-img, .hero-img, img[src*="vhx.imgix.net/criterionchannelchartersu/assets/"]');
+        let highResPoster = img ? img.getAttribute('src') : null;
+        if (highResPoster) {
+          // Force maximum resolution and quality
+          highResPoster = highResPoster
+            .replace(/h=\d+/, 'h=2160') // Target 4K height
+            .replace(/w=\d+/, 'w=3840') // Target 4K width
+            .replace(/q=\d+/, 'q=100')  // Maximum quality
+            .replace(/fit=[^&]+/, 'fit=max'); // No cropping, max size
+        }
+
+        return {
+          trailerLink: trailerAnchor ? trailerAnchor.href : null,
+          posterUrl: highResPoster
+        };
+      });
+
+      if (assets.trailerLink) film.trailerLink = assets.trailerLink;
+      if (assets.posterUrl) film.posterUrl = assets.posterUrl;
+
+      // Check for deeper video page (avoid trailers)
+      const videoLink = await page.evaluate(() => {
+        const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
+        const filmAnchor = anchors.find(a => !a.href.includes('-trailer'));
+        return filmAnchor ? filmAnchor.href : null;
+      });
+
+      if (videoLink) {
+        console.log(`  - Navigating to video page for technical specs: ${videoLink}`);
+        await page.goto(videoLink, { waitUntil: 'domcontentloaded', timeout: 30000 });
+        await page.waitForTimeout(1000);
+      }
+
       const metadata = await page.evaluate(() => {
         const hPattern = /(\d+)\s*h\s*(\d+)?\s*m/i;
         const mPattern = /(\d+)\s*m(in)?/i;
@@ -146,23 +196,25 @@ async function runDeepCrawl(catalog, maxItems) {
         
         let runtimeCandidates = [];
         let aspectCandidates = [];
+        let languagesFound = [];
         
-        const elements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, li, span, p, .time'));
+        const fullText = document.body.innerText;
+        const pageAspectMatch = fullText.match(aspectPattern);
+        if (pageAspectMatch) aspectCandidates.push(pageAspectMatch[0]);
+        if (fullText.includes('English')) languagesFound.push('English');
+
+        const elements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, li, span, p, .time, .description'));
         for (const el of elements) {
           const t = el.innerText.trim();
           
-          // Look for Aspect Ratio
           const aspectMatch = t.match(aspectPattern);
-          if (aspectMatch) {
-            aspectCandidates.push(aspectMatch[0]);
-          }
+          if (aspectMatch) aspectCandidates.push(aspectMatch[0]);
 
-          // Look for Runtime
           const hm = t.match(hPattern); if (hm) runtimeCandidates.push((parseInt(hm[1], 10) * 60) + parseInt(hm[2] || 0, 10));
           const m = t.match(mPattern); if (m) runtimeCandidates.push(parseInt(m[1], 10));
           
           const tp = t.match(timePattern);
-          if (tp && !t.match(aspectPattern)) { // If it matches our strict aspect ratio, it's not a runtime
+          if (tp && !t.match(aspectPattern)) { 
             const h = parseInt(tp[1] || 0, 10);
             const m = parseInt(tp[2] || 0, 10);
             runtimeCandidates.push((h * 60) + m);
@@ -171,12 +223,16 @@ async function runDeepCrawl(catalog, maxItems) {
         
         return {
           runtime: runtimeCandidates.length ? Math.max(...runtimeCandidates) : null,
-          aspectRatio: aspectCandidates.length ? aspectCandidates[0] : null
+          aspectRatio: aspectCandidates.length ? aspectCandidates[0] : null,
+          languages: languagesFound
         };
       });
 
       if (metadata.runtime) film.runtime = metadata.runtime;
       if (metadata.aspectRatio) film.aspectRatio = metadata.aspectRatio;
+      if (metadata.languages.length > 0) {
+        film.languages = Array.from(new Set([...(film.languages || []), ...metadata.languages]));
+      }
 
       const metaSynopsis = await page.getAttribute('meta[name="description"]', 'content') || 
                            await page.getAttribute('meta[property="og:description"]', 'content');

@@ -30,13 +30,20 @@ const CollectionsView: React.FC = () => {
                 <p className={styles.collectionDesc}>{collection.description}</p>
                 <div className={styles.count}>{collection.filmIds.length} Titles</div>
               </div>
-              <div className={styles.previewGrid}>
-                {collection.filmIds.slice(0, 4).map(id => {
-                  const thumb = getFilmThumbnail(id);
-                  return thumb ? (
-                    <img key={id} src={thumb} alt="" className={styles.previewImg} />
-                  ) : null;
-                })}
+              
+              <div className={styles.visualWrapper}>
+                {collection.imageUrl ? (
+                  <img src={collection.imageUrl} alt="" className={styles.collectionImage} />
+                ) : (
+                  <div className={styles.previewGrid}>
+                    {collection.filmIds.slice(0, 4).map(id => {
+                      const thumb = getFilmThumbnail(id);
+                      return thumb ? (
+                        <img key={id} src={thumb} alt="" className={styles.previewImg} />
+                      ) : null;
+                    })}
+                  </div>
+                )}
               </div>
             </section>
           </Link>

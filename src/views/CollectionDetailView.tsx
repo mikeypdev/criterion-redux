@@ -35,17 +35,28 @@ const CollectionDetailView: React.FC = () => {
 
   return (
     <div className={styles.detailRoot}>
-      <header className={styles.detailHeader}>
-        <Link to="/collections" className={styles.backLink}>← All Collections</Link>
-        <h1 className={styles.detailTitle}>{collection.title}</h1>
-        <p className={styles.detailDescription}>{collection.description}</p>
-        <div className={styles.count}>{collectionFilms.length} Titles</div>
+      <header className={`${styles.detailHeader} ${collection.imageUrl ? styles.hasImage : ''}`}>
+        {collection.imageUrl && (
+          <div className={styles.detailHero}>
+            <img src={collection.imageUrl} alt="" className={styles.heroImage} />
+            <div className={styles.heroOverlay} />
+          </div>
+        )}
+        
+        <div className={styles.detailContent}>
+          <Link to="/collections" className={styles.backLink}>← All Collections</Link>
+          <h1 className={styles.detailTitle}>{collection.title}</h1>
+          <p className={styles.detailDescription}>{collection.description}</p>
+          <div className={styles.count}>{collectionFilms.length} Titles</div>
+        </div>
       </header>
 
-      <div className={styles.grid}>
-        {collectionFilms.map(film => (
-          <FilmCard key={film.id} film={film} />
-        ))}
+      <div className={styles.gridContainer}>
+        <div className={styles.grid}>
+          {collectionFilms.map(film => (
+            <FilmCard key={film.id} film={film} />
+          ))}
+        </div>
       </div>
     </div>
   );

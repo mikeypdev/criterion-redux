@@ -26,7 +26,10 @@ async function scrapeFilms() {
         let thumbnailUrl = $cells.eq(0).find('img').attr('src');
         if (thumbnailUrl) {
           // Upgrade from 250x140 to 640x360 for high-DPI displays
-          thumbnailUrl = thumbnailUrl.replace('h=140', 'h=360').replace('w=250', 'w=640');
+          thumbnailUrl = thumbnailUrl
+            .replace('h=140', 'h=360')
+            .replace('w=250', 'w=640')
+            .replace('q=100', 'q=90'); // 90 is a good balance for thumbnails
         }
         const $titleLink = $cells.eq(1).find('a');
         const title = $titleLink.text().trim();

@@ -26,6 +26,8 @@ export interface Film {
   enriched?: boolean;
   aspectRatio?: string;
   trailerKey?: string;
+  trailerLink?: string;
+  posterUrl?: string;
 }
 
 export interface Collection {
@@ -33,4 +35,5 @@ export interface Collection {
   title: string;
   description: string;
   filmIds: string[];
+  imageUrl?: string;
 }
