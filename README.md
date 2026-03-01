@@ -64,6 +64,10 @@ TMDB_API_KEY=your_key LIMIT=500 npm run sync
 
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for full instructions on deploying to **Vercel**, **Netlify**, or **GitHub Pages**, including setting up automated daily data syncs via GitHub Actions.
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
 *Disclaimer: This is a fan-made prototype redesign and is not affiliated with The Criterion Collection or Janus Films.*
