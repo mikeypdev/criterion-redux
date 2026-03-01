@@ -2,7 +2,7 @@
 
 A modern, high-performance front-end redesign for the **Criterion Channel** streaming service. This project prioritizes film discovery and navigation through a metadata-rich interface, featuring a library of over 3,300 real-world titles.
 
-![Cinematic Redesign](https://via.placeholder.com/1200x600/0A0A0A/FFFFFF?text=Criterion+Channel+Redux)
+![Cinematic Redesign](https://placehold.co/1200x600/0a0a0a/ffffff?text=Criterion+Channel+Redux)
 
 ## 🎥 Project Overview
 
