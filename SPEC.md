@@ -22,18 +22,19 @@ The goal is to build a modern, high-performance front-end for the Criterion Chan
 - **Sorting:** Sort by Release Date, Date Added, or Alphabetical.
 
 ### 3.3. Rich Technical Metadata & Trailers
-- **Technical Specs:** Display of aspect ratios (e.g., 1.37:1, 1.85:1) and high-res 640x360 artwork.
-- **Cinematic Trailers:** One-click YouTube trailer integration with modal presentation.
+- **Technical Specs:** Display of aspect ratios (e.g., 1.37:1, 1.85:1) and high-res 1080p artwork.
+- **High-Fidelity Assets:** Implementation of a 4K 'billboard' system (`posterUrl`) for high-impact film presentation.
+- **Cinematic Trailers:** Integrated support for both YouTube and direct Criterion trailers with modal presentation.
 
 ### 3.4. Person Profiles & Filmographies
 - **Discovery Pages:** Dedicated landing pages for directors and actors showing their entire available body of work.
-- **External Links:** Direct integration with TMDB for full actor biographies.
+- **External Links:** Direct integration with TMDB for full actor biographies and external profile linking.
 
 ## 6. Technical Stack
 - **Framework:** React 19 (TypeScript)
 - **Tooling:** Vite 7
 - **Data Model:** Runtime-fetched JSON datasets via `DataContext` (catalog.json, collections.json).
-- **Automation:** Node.js + Playwright for deep-crawling and TMDB API for enrichment.
+- **Automation:** Node.js + Playwright for deep-crawling (landing and video pages) and TMDB API for enrichment.
 - **Styling:** Vanilla CSS (CSS Modules)
 
 ## 7. Implementation Roadmap
@@ -43,14 +44,14 @@ The goal is to build a modern, high-performance front-end for the Criterion Chan
 4. **Phase 4: Cinematic Detail Views.** Implement hero layouts with trailer support and technical metadata. (Completed)
 5. **Phase 5: Discovery Logic.** Link persons, genres, and collections for a deeply interconnected UX. (Completed)
 6. **Phase 6: Runtime Data Fetching.** Decouple datasets from the JS bundle for instant loading. (Completed)
-7. **Phase 7: Final Polish.** Finalize "Criterion Noir" theme and persistent watchlist logic. (Completed)
+7. **Phase 7: Final Polish.** Finalize "Criterion Noir" theme, 4K artwork integration, and persistent watchlist logic. (Completed)
 
 ## 8. Real Data Strategy (The "Criterion Data Connector")
 
 ### 8.1. Extraction (The Scraper)
-- **Target:** `https://films.criterionchannel.com/`
+- **Target:** `https://films.criterionchannel.com/` and `https://www.criterionchannel.com/new-collections`
 - **Tooling:** Node.js with `Cheerio` and `Playwright`.
-- **Extraction Logic:** Unified pipeline (`sync.js`) that scrapes the master list and then deep-crawls individual pages for metadata.
+- **Extraction Logic:** Unified pipeline (`sync.js`) that scrapes the master list and then deep-crawls individual pages, video sub-pages, and curated series for comprehensive metadata.
 
 ### 8.2. Enrichment (The Enhancer)
 - **Metadata Sources:** Hybrid model using Criterion for blurbs/aspect ratios and **TMDB API** for cast, runtimes, and YouTube trailers.

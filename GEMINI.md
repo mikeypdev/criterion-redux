@@ -20,10 +20,10 @@ This project is a modern front-end redesign for the **Criterion Channel** stream
 
 ## Current Status
 - **Architecture Finalized:** Application uses a high-performance runtime data fetching model via `DataContext`, decoupling the massive 3,300+ film dataset from the main JS bundle.
-- **Enrichment Engine:** Advanced `sync.js` pipeline implements Criterion deep-crawling, TMDB gap-filling (synopsis, cast, trailers), and automatic pruning of dead redirects.
-- **Rich Technical Metadata:** Extraction of technical specs (aspect ratios) and integration of high-resolution (640x360) artwork.
-- **Discovery Features:** Fully functional curated collections sync, searchable cast members, and dedicated filmography pages with external TMDB linking.
-- **Media Integration:** YouTube trailer support with cinematic modal presentation.
+- **Enrichment Engine:** Advanced `sync.js` pipeline implements Criterion deep-crawling (including video sub-pages), TMDB gap-filling, and automatic pruning of dead redirects.
+- **High-Fidelity Assets:** Extraction of 4K billboard artwork (`posterUrl`) and deep technical specs (aspect ratios, languages).
+- **Discovery Features:** Curated collections sync from individual series pages, searchable cast members, and dedicated filmography pages with external TMDB profile linking.
+- **Media Integration:** YouTube and direct Criterion trailer support with cinematic modal presentation.
 - **Project Verified:** Production build verified with type safety and optimized bundle size.
 
 ## Final Summary

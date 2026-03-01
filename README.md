@@ -9,12 +9,13 @@ A modern, high-performance front-end redesign for the **Criterion Channel** stre
 The goal of this redesign is to solve common navigation friction points by surfacing deep metadata (synopses, cast, runtimes) directly in the browsing experience and providing a lightning-fast, virtualized index for the entire collection.
 
 ### Key Features
-- **3,300+ Real Titles:** Scraped directly from the Criterion index and enriched via TMDB.
-- **Cinematic Trailers:** Integrated YouTube trailer support with modal playback.
+- **3,300+ Real Titles:** Scraped from the Criterion index and enriched via hybrid deep-crawling.
+- **High-Fidelity Assets:** 4K billboard-style artwork and high-res posters throughout the app.
+- **Cinematic Trailers:** Integrated support for both YouTube and direct Criterion trailers.
 - **Deep Discovery:** Search by Actor or Director and explore dedicated filmography pages.
-- **Rich Technical Metadata:** Synopses, cast lists, and technical specs like aspect ratios.
-- **Infinite Scroll:** High-performance grid that handles the massive library smoothly.
-- **Curated Collections:** Live-synced collections from the Criterion browse rows.
+- **Rich Technical Metadata:** Aspect ratios, languages, and exhaustive cast lists.
+- **Infinite Scroll:** High-performance grid that handles the massive library at 60fps.
+- **Curated Collections:** Live-synced series rows with high-impact billboard imagery.
 - **Persistence:** Global Watchlist state persisted in `localStorage`.
 
 ## 🛠 Tech Stack
