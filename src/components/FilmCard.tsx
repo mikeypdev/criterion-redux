@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { Film } from '../types';
 import PersonLink from './PersonLink';
 import styles from '../styles/filmCard.module.css';
@@ -11,10 +12,12 @@ interface FilmCardProps {
 const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
   const [isHovered, setIsHovered] = useState(false);
   const { addToWatchlist, removeFromWatchlist, isInWatchlist } = useWatchlist();
+  const navigate = useNavigate();
 
   const isSaved = isInWatchlist(film.id);
 
   const toggleWatchlist = (e: React.MouseEvent) => {
+    e.preventDefault();
     e.stopPropagation();
     if (isSaved) {
       removeFromWatchlist(film.id);
@@ -23,11 +26,16 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
     }
   };
 
+  const handleCardClick = () => {
+    navigate(`/film/${film.id}`);
+  };
+
   return (
     <div 
       className={styles.root}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleCardClick}
     >
       <div className={styles.thumbnailWrapper}>
         <img src={film.thumbnailUrl} alt={film.title} className={styles.thumbnail} />
@@ -37,7 +45,7 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
         <div className={`${styles.overlay} ${isHovered ? styles.overlayVisible : ''}`}>
           <div className={styles.content}>
             <h3 className={styles.title}>{film.title}</h3>
-            <p className={styles.meta}>{film.year} • {film.runtime} min</p>
+            <p className={styles.meta}>{film.year} • {film.runtime > 0 ? `${film.runtime} min` : ''}</p>
             
             <div className={styles.director}>
               Dir: {film.directors.map((d, i) => (
@@ -50,18 +58,19 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
 
             <div className={styles.cast}>
               {film.cast.length > 0 && 'Cast: '}
-              {film.cast.map((p, i) => (
+              {film.cast.slice(0, 3).map((p, i) => (
                 <React.Fragment key={p.id}>
                   <PersonLink person={p} />
-                  {i < film.cast.length - 1 && ', '}
+                  {i < Math.min(film.cast.length, 3) - 1 && ', '}
                 </React.Fragment>
               ))}
+              {film.cast.length > 3 && '...'}
             </div>
 
             <p className={styles.synopsis}>{film.synopsis}</p>
             
             <div className={styles.genres}>
-              {film.genres.map(genre => (
+              {film.genres.slice(0, 2).map(genre => (
                 <span key={genre} className={styles.genreTag}>{genre}</span>
               ))}
             </div>

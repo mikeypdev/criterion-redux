@@ -7,7 +7,25 @@ import styles from '../styles/personView.module.css';
 const PersonView: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   
-  const person = mockPersons.find(p => p.id === id);
+  // First try to find in curated mockPersons
+  let person = mockPersons.find(p => p.id === id);
+  
+  // If not found, try to find in the entire film dataset (scraped directors/cast)
+  if (!person) {
+    for (const film of mockFilms) {
+      const foundDirector = film.directors.find(d => d.id === id);
+      if (foundDirector) {
+        person = foundDirector;
+        break;
+      }
+      const foundCast = film.cast.find(c => c.id === id);
+      if (foundCast) {
+        person = foundCast;
+        break;
+      }
+    }
+  }
+
   const films = mockFilms.filter(f => 
     f.directors.some(d => d.id === id) || 
     f.cast.some(c => c.id === id)

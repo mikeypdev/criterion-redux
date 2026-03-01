@@ -1,29 +1,27 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { mockFilms } from '../data/mockData';
-import type { Film } from '../types';
 import styles from '../styles/search.module.css';
 
 const Search: React.FC = () => {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<Film[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const searchRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  const results = React.useMemo(() => {
     if (query.length > 1) {
-      const filtered = mockFilms.filter(f => 
+      return mockFilms.filter(f => 
         f.title.toLowerCase().includes(query.toLowerCase()) ||
         f.directors.some(d => d.name.toLowerCase().includes(query.toLowerCase()))
       ).slice(0, 5);
-      setResults(filtered);
-      setIsOpen(true);
-    } else {
-      setResults([]);
-      setIsOpen(false);
     }
+    return [];
   }, [query]);
+
+  useEffect(() => {
+    setIsOpen(results.length > 0);
+  }, [results]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -38,10 +36,7 @@ const Search: React.FC = () => {
   const handleSelect = (filmId: string) => {
     setQuery('');
     setIsOpen(false);
-    // In a real app, this might go to a Detail page. 
-    // For now, we'll navigate to the index and filter (or just log)
-    console.log(`Navigating to film: ${filmId}`);
-    navigate(`/index?search=${filmId}`);
+    navigate(`/film/${filmId}`);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {

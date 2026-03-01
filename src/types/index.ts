@@ -9,6 +9,7 @@ export interface Person {
 export interface Film {
   id: string;
   title: string;
+  link?: string;
   year: number;
   runtime: number; // in minutes
   directors: Person[];

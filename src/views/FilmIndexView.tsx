@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import { mockFilms } from '../data/mockData';
@@ -13,10 +13,14 @@ const FilmIndexView: React.FC = () => {
   const [selectedLanguage, setSelectedLanguage] = useState<string>('');
   const [selectedColor, setSelectedColor] = useState<string>('');
   const [sortBy, setSortBy] = useState<string>('title-asc');
+  
+  const [limit, setLimit] = useState(48);
+  const observerTarget = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const query = searchParams.get('search');
     if (query !== null) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSearchTerm(query);
     }
   }, [searchParams]);
@@ -29,45 +33,81 @@ const FilmIndexView: React.FC = () => {
     }
   }, [searchTerm, setSearchParams]);
 
+  // Reset limit when filters or sort change
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setLimit(48);
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedColor, sortBy]);
+
   // Extract unique filter options from the dataset
-  const decades = Array.from(new Set(mockFilms.map(f => Math.floor(f.year / 10) * 10))).sort((a, b) => b - a);
-  const countries = Array.from(new Set(mockFilms.flatMap(f => f.countries))).sort();
-  const genres = Array.from(new Set(mockFilms.flatMap(f => f.genres))).sort();
-  const languages = Array.from(new Set(mockFilms.flatMap(f => f.languages))).sort();
+  const decades = React.useMemo(() => Array.from(new Set(mockFilms.map(f => Math.floor(f.year / 10) * 10))).filter(d => d > 0).sort((a, b) => b - a), []);
+  const countries = React.useMemo(() => Array.from(new Set(mockFilms.flatMap(f => f.countries))).filter(Boolean).sort(), []);
+  const genres = React.useMemo(() => Array.from(new Set(mockFilms.flatMap(f => f.genres))).filter(Boolean).sort(), []);
+  const languages = React.useMemo(() => Array.from(new Set(mockFilms.flatMap(f => f.languages))).filter(Boolean).sort(), []);
 
-  const filteredFilms = mockFilms.filter(film => {
-    // If searchTerm is a specific film ID (passed from search dropdown)
-    const isSpecificID = searchTerm === film.id;
-    
-    const matchesSearch = isSpecificID || 
-                         film.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         film.directors.some(d => d.name.toLowerCase().includes(searchTerm.toLowerCase()));
-    
-    const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
-    const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;
-    const matchesGenre = selectedGenre ? film.genres.includes(selectedGenre) : true;
-    const matchesLanguage = selectedLanguage ? film.languages.includes(selectedLanguage) : true;
-    const matchesColor = selectedColor === 'color' ? film.isColor : selectedColor === 'bw' ? !film.isColor : true;
-    
-    return matchesSearch && matchesDecade && matchesCountry && matchesGenre && matchesLanguage && matchesColor;
-  });
+  const filteredFilms = React.useMemo(() => {
+    return mockFilms.filter(film => {
+      const isSpecificID = searchTerm === film.id;
+      const matchesSearch = isSpecificID || 
+                           film.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           film.directors.some(d => d.name.toLowerCase().includes(searchTerm.toLowerCase()));
+      
+      const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
+      const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;
+      const matchesGenre = selectedGenre ? film.genres.includes(selectedGenre) : true;
+      const matchesLanguage = selectedLanguage ? film.languages.includes(selectedLanguage) : true;
+      const matchesColor = selectedColor === 'color' ? film.isColor : selectedColor === 'bw' ? !film.isColor : true;
+      
+      return matchesSearch && matchesDecade && matchesCountry && matchesGenre && matchesLanguage && matchesColor;
+    });
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedColor]);
 
-  const sortedFilms = [...filteredFilms].sort((a, b) => {
-    switch (sortBy) {
-      case 'title-asc':
-        return a.title.localeCompare(b.title);
-      case 'title-desc':
-        return b.title.localeCompare(a.title);
-      case 'year-newest':
-        return b.year - a.year;
-      case 'year-oldest':
-        return a.year - b.year;
-      case 'added-newest':
-        return new Date(b.dateAdded).getTime() - new Date(a.dateAdded).getTime();
-      default:
-        return 0;
+  // Infinite Scroll logic
+  useEffect(() => {
+    const target = observerTarget.current;
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          setLimit(prev => prev + 48);
+        }
+      },
+      { threshold: 1.0, rootMargin: '400px' }
+    );
+
+    if (target) {
+      observer.observe(target);
     }
-  });
+
+    return () => {
+      if (target) {
+        observer.unobserve(target);
+      }
+    };
+  }, [filteredFilms.length]); // Observe when filter results change
+
+  const sortedFilms = React.useMemo(() => {
+    return [...filteredFilms].sort((a, b) => {
+      switch (sortBy) {
+        case 'title-asc':
+          return a.title.localeCompare(b.title);
+        case 'title-desc':
+          return b.title.localeCompare(a.title);
+        case 'year-newest':
+          return b.year - a.year;
+        case 'year-oldest':
+          return a.year - b.year;
+        case 'added-newest': {
+          const dateA = a.dateAdded ? new Date(a.dateAdded).getTime() : 0;
+          const dateB = b.dateAdded ? new Date(b.dateAdded).getTime() : 0;
+          return dateB - dateA;
+        }
+        default:
+          return 0;
+      }
+    });
+  }, [filteredFilms, sortBy]);
+
+  const displayedFilms = sortedFilms.slice(0, limit);
 
   const clearFilters = () => {
     setSelectedDecade('');
@@ -83,7 +123,7 @@ const FilmIndexView: React.FC = () => {
   return (
     <div className={styles.root}>
       <header className={styles.header}>
-        <h1 className={styles.title}>All Films</h1>
+        <h1 className={styles.title}>All Films ({sortedFilms.length})</h1>
         <div className={styles.searchWrapper}>
           <input 
             type="text" 
@@ -100,7 +140,7 @@ const FilmIndexView: React.FC = () => {
 
       <div className={styles.filtersBar}>
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Decade</label>
+          <label className={styles.label}>Decade ({decades.length})</label>
           <select 
             className={styles.select}
             value={selectedDecade}
@@ -112,7 +152,7 @@ const FilmIndexView: React.FC = () => {
         </div>
 
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Country</label>
+          <label className={styles.label}>Country ({countries.length})</label>
           <select 
             className={styles.select}
             value={selectedCountry}
@@ -124,7 +164,7 @@ const FilmIndexView: React.FC = () => {
         </div>
 
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Genre</label>
+          <label className={styles.label}>Genre ({genres.length})</label>
           <select 
             className={styles.select}
             value={selectedGenre}
@@ -136,7 +176,7 @@ const FilmIndexView: React.FC = () => {
         </div>
 
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Language</label>
+          <label className={styles.label}>Language ({languages.length})</label>
           <select 
             className={styles.select}
             value={selectedLanguage}
@@ -177,12 +217,19 @@ const FilmIndexView: React.FC = () => {
       </div>
 
       <div className={styles.grid}>
-        {sortedFilms.length > 0 ? (
-          sortedFilms.map(film => <FilmCard key={film.id} film={film} />)
+        {displayedFilms.length > 0 ? (
+          displayedFilms.map(film => <FilmCard key={film.id} film={film} />)
         ) : (
           <div className={styles.noResults}>No films match your criteria.</div>
         )}
       </div>
+
+      {sortedFilms.length > limit && (
+        <div ref={observerTarget} className={styles.loader}>
+          <div className={styles.spinner}></div>
+          <span>Loading more...</span>
+        </div>
+      )}
     </div>
   );
 };

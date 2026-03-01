@@ -5,8 +5,10 @@ import { mockFilms, mockCollections } from '../data/mockData';
 import styles from '../styles/app.module.css';
 
 const HomeView: React.FC = () => {
-  const leavingSoon = mockFilms.filter(film => film.leavingSoon);
-  const newlyAdded = [...mockFilms].sort((a, b) => new Date(b.dateAdded).getTime() - new Date(a.dateAdded).getTime());
+  const leavingSoon = mockFilms.filter(film => film.leavingSoon).slice(0, 15);
+  const newlyAdded = [...mockFilms]
+    .sort((a, b) => new Date(b.dateAdded).getTime() - new Date(a.dateAdded).getTime())
+    .slice(0, 15);
 
   return (
     <>

@@ -14,7 +14,6 @@ The goal is to build a modern, high-performance front-end for the Criterion Chan
 ### 3.1. The "High-Urgency" Dashboard
 - **"Leaving at the End of the Month":** The very first row on the home page.
 - **"Newly Added":** The second row.
-- **"Continue Watching":** With a "Remove from List" button.
 
 ### 3.2. Global Film Index (The "Power" Tool)
 - A unified grid view of all available titles.
