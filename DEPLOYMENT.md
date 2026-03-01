@@ -48,7 +48,7 @@ To keep the library current (Newly Added, Leaving Soon), the data sync should be
 *   **TMDB (High-Speed):** Uses the The Movie Database API. Requires a `TMDB_API_KEY`. Much faster for bulk processing.
 
 ### GitHub Actions (Daily Sync)
-Set up a GitHub Action to run the sync utility every 24 hours.
+Set up a GitHub Action to run the sync utility every 24 hours. This keeps "Leaving Soon" and "Newly Added" categories accurate.
 
 **Sample Workflow File (`.github/workflows/sync.yml`):**
 ```yaml
@@ -72,28 +72,27 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Run Sync
         env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }} # Optional: Switch to high-speed mode
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           LIMIT: 100
         run: npm run sync
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/catalog.json
+          git add public/data/*.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated data sync" && git push)
 ```
 
 ---
 
-## 3. Production Optimizations
+## 3. Production Architecture
 
-### Externalize the Catalog
-Currently, `catalog.json` (~2MB) is bundled into the main JavaScript file. 
-*   **Action:** Move `catalog.json` from `src/data/` to the `public/` folder.
-*   **Benefit:** Reduces the initial "Time to Interactive" (TTI) by allowing the browser to download the data in parallel with the code and cache it independently.
+### Externalized Data (Implemented)
+The application uses a high-performance runtime data fetching model. `catalog.json` and `collections.json` reside in the `public/data/` folder and are fetched asynchronously via the `DataProvider` on application load.
+*   **Benefit:** Decouples the massive 3,300+ film dataset from the main JavaScript bundle, allowing for near-instant initial page loads and independent caching of data.
 
 ### Image Proxying
-The app links directly to Criterion's `vhx.imgix.net` images.
+The app links directly to Criterion's `vhx.imgix.net` images at 640x360 resolution.
 *   **Action:** If performance lags, use an image optimization service like **Cloudinary** or **Vercel Image Optimization** to resize and webp-format images on the fly.
 
 ---
@@ -103,6 +102,5 @@ The app links directly to Criterion's `vhx.imgix.net` images.
 1.  **Repository Setup:** Push the current code to GitHub.
 2.  **Configure Hosting:** Connect the repo to Vercel/Netlify.
 3.  **Setup SPA Routing:** Add the necessary redirect rules (`vercel.json` or `_redirects`).
-4.  **Implement External Data:** (Optional) Refactor the app to `fetch('/catalog.json')` instead of importing it.
-5.  **Enable Automation:** Add the GitHub Action for daily syncing.
-6.  **Full Enrichment:** Run a large batch enrichment manually or via the continuous sync mode to populate the majority of the library.
+4.  **Enable Automation:** Add the GitHub Action for daily syncing to keep metadata and collections fresh.
+5.  **Full Enrichment:** Use the `CONTINUOUS=true` mode locally or via a manual GitHub Action trigger to finish populating trailers and technical specs for the entire library.
