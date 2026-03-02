@@ -39,7 +39,12 @@ npm install
 npm run dev
 ```
 
-### 3. Data Sync (The Pipeline)
+### 3. Deploy to GitHub Pages
+```bash
+npm run deploy
+```
+
+### 4. Data Sync (The Pipeline)
 The app uses runtime-fetched data from `public/data/`. To refresh or further enrich:
 ```bash
 # Basic enrichment (Criterion crawl only)

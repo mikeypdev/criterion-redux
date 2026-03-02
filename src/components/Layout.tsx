@@ -50,7 +50,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className={styles.footerContent}>
           <div className={styles.tmdbAttribution}>
             <img 
-              src="/tmdb-logo.svg" 
+              src={`${import.meta.env.BASE_URL}tmdb-logo.svg`} 
               alt="The Movie Database" 
               className={styles.tmdbLogo}
             />

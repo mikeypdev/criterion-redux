@@ -11,31 +11,18 @@ The application is a Vite-based Single Page Application (SPA). It should be depl
 *   **Netlify:** Excellent choice with simple "drag and drop" or GitHub-linked deploys.
 *   **GitHub Pages:** Free and reliable. Use the `gh-pages` branch method for simple deployment.
 
-### Deployment via GitHub Pages (`gh-pages` branch)
-If you prefer to host on GitHub Pages, use the `gh-pages` utility to automate the process:
+### Deployment via GitHub Pages (Implemented)
+The project is configured for automated deployment to GitHub Pages using the `gh-pages` utility:
 
-1.  **Install the package:** `npm install gh-pages --save-dev`
-2.  **Update `package.json` scripts:**
-    ```json
-    "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist"
-    }
-    ```
-3.  **Set the `base` in `vite.config.ts`:**
-    Ensure `base: '/your-repo-name/'` is set in your Vite configuration so assets load correctly from the sub-path.
-4.  **Run `npm run deploy`:** This builds the app and pushes the `dist` folder to the `gh-pages` branch. GitHub will then serve your site from that branch.
+1.  **Package installed:** `gh-pages` is included in `devDependencies`.
+2.  **Scripts updated:** `package.json` includes `predeploy` and `deploy` commands.
+3.  **Base path set:** `vite.config.ts` uses `base: '/criterion-redux/'` for correct asset loading.
+4.  **Run deployment:** Simply execute `npm run deploy`. This builds the app and pushes the `dist` folder to the `gh-pages` branch.
 
-### Critical Configuration: SPA Routing
-Since this app uses `react-router-dom`, the hosting provider must be configured to redirect all 404 requests to `index.html`.
-*   **Vercel:** Create a `vercel.json` in the root:
-    ```json
-    { "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
-    ```
-*   **Netlify:** Create a `_redirects` file in `public/`:
-    ```text
-    /*  /index.html  200
-    ```
+### Critical Configuration: SPA Routing (Important)
+Since this app uses `react-router-dom` with `BrowserRouter`, GitHub Pages may return a 404 when refreshing deep-linked pages (e.g., `/film/81-2`).
+*   **Fix:** Ensure you have a `404.html` in your `public/` directory that is a copy of `index.html`, or use a custom script to redirect 404s back to the main app.
+*   **Alternative:** The project can be switched to `HashRouter` in `App.tsx` if 404 redirects are not available.
 
 ---
 

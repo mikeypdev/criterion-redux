@@ -22,10 +22,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsLoading(true);
         setError(null);
         
-        console.log('Fetching cinematic data...');
+        const baseUrl = import.meta.env.BASE_URL || '/';
+        console.log(`Fetching cinematic data from ${baseUrl}...`);
+        
         const [catalogRes, collectionsRes] = await Promise.all([
-          fetch('/data/catalog.json'),
-          fetch('/data/collections.json')
+          fetch(`${baseUrl}data/catalog.json`),
+          fetch(`${baseUrl}data/collections.json`)
         ]);
 
         if (!catalogRes.ok) throw new Error(`Catalog not found (Status: ${catalogRes.status})`);

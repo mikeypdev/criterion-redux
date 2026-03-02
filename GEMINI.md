@@ -34,4 +34,5 @@ The Criterion Channel Redesign successfully addresses discovery issues through a
 - **Unified Sync:** `npm run sync` (Run with `TMDB_API_KEY=...` for full enrichment)
 - **Development Server:** `npm run dev`
 - **Production Build:** `npm run build`
+- **Deploy to GitHub Pages:** `npm run deploy`
 - **Linting:** `npm run lint`
