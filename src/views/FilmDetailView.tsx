@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
-import type { Film } from '../types';
 import PersonLink from '../components/PersonLink';
 import { useWatchlist } from '../context/WatchlistContext';
 import styles from '../styles/filmDetailView.module.css';
@@ -76,12 +75,13 @@ const FilmDetailView: React.FC = () => {
           </button>
           
           <h1 className={styles.title}>{film.title}</h1>
+          {film.originalTitle && <h2 className={styles.originalTitle}>{film.originalTitle}</h2>}
+          {film.tagline && <p className={styles.tagline}>“{film.tagline}”</p>}
           
           <div className={styles.metaLine}>
             <span>{film.year}</span>
-            <span>{film.runtime > 0 ? `${film.runtime} MIN` : ''}</span>
-            <span>{film.aspectRatio}</span>
-            {film.isColor ? <span>Color</span> : <span>B&W</span>}
+            {film.runtime > 0 && <span>{film.runtime} MIN</span>}
+            {film.aspectRatio && <span>{film.aspectRatio}</span>}
           </div>
 
           <div className={styles.actions}>
@@ -115,6 +115,17 @@ const FilmDetailView: React.FC = () => {
               </a>
             )}
 
+            {film.imdbId && (
+              <a 
+                href={`https://www.imdb.com/title/${film.imdbId}`} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={styles.imdbLink}
+              >
+                IMDb
+              </a>
+            )}
+
             <button 
               className={`${styles.watchlistBtn} ${isSaved ? styles.isSaved : ''}`}
               onClick={toggleWatchlist}
@@ -128,7 +139,12 @@ const FilmDetailView: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.mainContent}>
           <section className={styles.description}>
-            <p className={styles.synopsis}>{film.synopsis || 'No synopsis available for this title.'}</p>
+            <p className={styles.synopsis}>
+              {film.synopsis || 'No synopsis available for this title.'}
+              {film.synopsisSource && (
+                <span className={styles.sourceBadge}>Source: {film.synopsisSource.toUpperCase()}</span>
+              )}
+            </p>
           </section>
 
           <section className={styles.credits}>
@@ -140,6 +156,28 @@ const FilmDetailView: React.FC = () => {
                 ))}
               </div>
             </div>
+
+            {film.cinematographers && film.cinematographers.length > 0 && (
+              <div className={styles.creditGroup}>
+                <h3 className={styles.creditLabel}>Cinematography</h3>
+                <div className={styles.creditNames}>
+                  {film.cinematographers.map(c => (
+                    <PersonLink key={c.id} person={c} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {film.composers && film.composers.length > 0 && (
+              <div className={styles.creditGroup}>
+                <h3 className={styles.creditLabel}>Original Score</h3>
+                <div className={styles.creditNames}>
+                  {film.composers.map(c => (
+                    <PersonLink key={c.id} person={c} />
+                  ))}
+                </div>
+              </div>
+            )}
 
             {film.cast.length > 0 && (
               <div className={styles.creditGroup}>

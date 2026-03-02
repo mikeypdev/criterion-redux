@@ -40,9 +40,6 @@ async function scrapeFilms() {
 
         if (!title) return;
 
-        // Generate a simple ID from the link slug
-        const id = link ? link.split('/').pop() : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-
         // Map to our Film type (with placeholders for now)
         films.push({
           id,
@@ -60,7 +57,6 @@ async function scrapeFilms() {
           genres: [], // Placeholder
           countries: [country],
           languages: [], // Placeholder
-          isColor: true, // Default to true
           thumbnailUrl: thumbnailUrl || '',
           dateAdded: new Date().toISOString().split('T')[0], // Placeholder
           leavingSoon: false, // Placeholder

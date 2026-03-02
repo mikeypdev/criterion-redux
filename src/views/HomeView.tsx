@@ -18,11 +18,20 @@ const HomeView: React.FC = () => {
   }
 
   // For the home page, we only want to show high-quality enriched films
-  const enrichedFilms = catalog.filter(f => f.synopsis && f.synopsis.length > 50);
+  let enrichedFilms = catalog.filter(f => f.synopsis && f.synopsis.length > 50);
+  
+  // Fallback if no enrichment has happened yet
+  if (enrichedFilms.length === 0) {
+    enrichedFilms = catalog.slice(0, 50);
+  }
 
   const leavingSoon = enrichedFilms.filter(film => film.leavingSoon).slice(0, 15);
   const newlyAdded = [...enrichedFilms]
-    .sort((a, b) => new Date(b.dateAdded).getTime() - new Date(a.dateAdded).getTime())
+    .sort((a, b) => {
+      const dateA = a.dateAdded ? new Date(a.dateAdded).getTime() : 0;
+      const dateB = b.dateAdded ? new Date(b.dateAdded).getTime() : 0;
+      return dateB - dateA;
+    })
     .slice(0, 15);
 
   return (

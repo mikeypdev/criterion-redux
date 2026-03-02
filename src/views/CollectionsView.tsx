@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
-import type { Collection, Film } from '../types';
 import styles from '../styles/collectionsView.module.css';
 
 const CollectionsView: React.FC = () => {

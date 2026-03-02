@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import { useData } from '../context/DataContext';
-import type { Person, Film } from '../types';
+import type { Person } from '../types';
 import styles from '../styles/personView.module.css';
 
 const PersonView: React.FC = () => {

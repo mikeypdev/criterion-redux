@@ -2,18 +2,16 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import { useData } from '../context/DataContext';
-import type { Film } from '../types';
 import styles from '../styles/filmIndex.module.css';
 
 const FilmIndexView: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { catalog, isLoading } = useData();
+  const { catalog } = useData();
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
   const [selectedDecade, setSelectedDecade] = useState<string>('');
   const [selectedCountry, setSelectedCountry] = useState<string>('');
   const [selectedGenre, setSelectedGenre] = useState<string>('');
   const [selectedLanguage, setSelectedLanguage] = useState<string>('');
-  const [selectedColor, setSelectedColor] = useState<string>('');
   const [sortBy, setSortBy] = useState<string>('title-asc');
   
   const [limit, setLimit] = useState(48);
@@ -47,7 +45,7 @@ const FilmIndexView: React.FC = () => {
   // Reset limit when filters or sort change
   useEffect(() => {
     setLimit(48);
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedColor, sortBy]);
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, sortBy]);
 
   // Extract unique filter options from the dataset
   const decades = React.useMemo(() => Array.from(new Set(catalog.map(f => Math.floor(f.year / 10) * 10))).filter(d => d > 0).sort((a, b) => b - a), [catalog]);
@@ -68,11 +66,10 @@ const FilmIndexView: React.FC = () => {
       const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;
       const matchesGenre = selectedGenre ? film.genres.includes(selectedGenre) : true;
       const matchesLanguage = selectedLanguage ? film.languages.includes(selectedLanguage) : true;
-      const matchesColor = selectedColor === 'color' ? film.isColor : selectedColor === 'bw' ? !film.isColor : true;
       
-      return matchesSearch && matchesDecade && matchesCountry && matchesGenre && matchesLanguage && matchesColor;
+      return matchesSearch && matchesDecade && matchesCountry && matchesGenre && matchesLanguage;
     });
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedColor, catalog]);
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, catalog]);
 
   // Infinite Scroll logic
   useEffect(() => {
@@ -126,7 +123,6 @@ const FilmIndexView: React.FC = () => {
     setSelectedCountry('');
     setSelectedGenre('');
     setSelectedLanguage('');
-    setSelectedColor('');
     setSearchTerm('');
     setSearchParams({}, { replace: true });
     setSortBy('title-asc');
@@ -144,7 +140,7 @@ const FilmIndexView: React.FC = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          {(searchTerm || selectedDecade || selectedCountry || selectedGenre || selectedLanguage || selectedColor) && (
+          {(searchTerm || selectedDecade || selectedCountry || selectedGenre || selectedLanguage) && (
             <button className={styles.clearBtn} onClick={clearFilters}>Clear All</button>
           )}
         </div>
@@ -196,19 +192,6 @@ const FilmIndexView: React.FC = () => {
           >
             <option value="">All Languages</option>
             {languages.map(l => <option key={l} value={l}>{l}</option>)}
-          </select>
-        </div>
-
-        <div className={styles.filterGroup}>
-          <label className={styles.label}>Format</label>
-          <select 
-            className={styles.select}
-            value={selectedColor}
-            onChange={(e) => setSelectedColor(e.target.value)}
-          >
-            <option value="">All Formats</option>
-            <option value="color">Color</option>
-            <option value="bw">Black & White</option>
           </select>
         </div>
 

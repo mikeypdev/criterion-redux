@@ -74,11 +74,48 @@
   font-size: 58px;
   line-height: 0.95;
   letter-spacing: -1.5px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   font-family: serif;
   color: white;
 }
+
+.originalTitle {
+  font-size: 24px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-family: serif;
+}
+
+.tagline {
+  font-size: 18px;
+  color: var(--accent);
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  font-style: italic;
+  max-width: 800px;
+}
+
+.imdbLink {
+  background-color: rgba(255,255,255,0.05);
+  color: #f5c518; /* IMDB Yellow */
+  border: 1px solid rgba(245, 197, 24, 0.3);
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.imdbLink:hover {
+  background-color: rgba(245, 197, 24, 0.1);
+  border-color: #f5c518;
+}
+
 
 .trailerBtn {
   background-color: rgba(255,255,255,0.1);
@@ -144,7 +181,9 @@
 
 .metaLine {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -152,9 +191,14 @@
   margin-bottom: 40px;
 }
 
+.metaLine span {
+  display: flex;
+  align-items: center;
+}
+
 .metaLine span:not(:last-child)::after {
   content: '•';
-  margin-left: 20px;
+  margin-left: 12px;
   opacity: 0.3;
 }
 
@@ -223,7 +267,19 @@
   color: var(--text-primary);
   margin-bottom: 60px;
   white-space: pre-line;
+  position: relative;
 }
+
+.sourceBadge {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
 
 .creditGroup {
   margin-bottom: 40px;

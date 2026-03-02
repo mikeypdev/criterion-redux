@@ -12,6 +12,24 @@ const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 const deepCrawlLimiter = new Bottleneck({ minTime: 2000 }); // 2s for web scraping
 const tmdbLimiter = new Bottleneck({ minTime: 250 });      // 4 req/s for TMDB API
 
+const GENERIC_SYNOPSIS = "Classics and discoveries from around the world";
+
+function decodeEntities(text) {
+  if (!text) return '';
+  return text
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'")
+    .replace(/&ldquo;/g, '"')
+    .replace(/&rdquo;/g, '"')
+    .replace(/&ndash;/g, '-')
+    .replace(/&mdash;/g, '--');
+}
+
 async function enrichCatalog(maxItems = 10) {
   let catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8'));
   const originalCount = catalog.length;
@@ -50,9 +68,9 @@ async function runTMDBEnrichment(catalog, maxItems) {
 
   for (let i = 0; i < catalog.length && updatedCount < maxItems; i++) {
     const film = catalog[i];
-    // Gap-filler logic: Only skip if we have the "Big Three" metadata points
-    const hasFullMetadata = film.synopsis && film.runtime > 0 && (film.cast?.length || 0) > 0;
-    if (hasFullMetadata && film.enriched) continue;
+    
+    // Skip if we already tried TMDB in this cycle
+    if (film.tmdbAttempted) continue;
 
     try {
       console.log(`[${i+1}/${catalog.length}] TMDB Search: ${film.title} (${film.year})`);
@@ -67,15 +85,19 @@ async function runTMDBEnrichment(catalog, maxItems) {
         }));
         const data = detailRes.data;
         
-        // ONLY update if currently empty or placeholder
-        if (!film.synopsis || film.synopsis.includes("Classics and discoveries")) {
-          film.synopsis = data.overview || film.synopsis;
+        // 1. Basic Info
+        if (!film.synopsis || film.synopsis.includes(GENERIC_SYNOPSIS)) {
+          film.synopsis = decodeEntities(data.overview) || film.synopsis;
+          if (data.overview) film.synopsisSource = 'tmdb';
         }
-        
         if (!film.runtime || film.runtime === 0) {
           film.runtime = data.runtime || film.runtime;
         }
+        film.tagline = decodeEntities(data.tagline) || film.tagline;
+        film.originalTitle = data.original_title !== film.title ? data.original_title : undefined;
+        film.imdbId = data.imdb_id;
 
+        // 2. Cast
         if ((!film.cast || film.cast.length === 0) && data.credits?.cast) {
           film.cast = data.credits.cast.slice(0, 5).map(c => ({
             id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
@@ -85,25 +107,37 @@ async function runTMDBEnrichment(catalog, maxItems) {
           }));
         }
 
-        // technical spec gaps
+        // 3. Technical Crew
+        if (data.credits?.crew) {
+          const crew = data.credits.crew;
+          const mainDirector = crew.find(c => c.job === 'Director');
+          if (mainDirector && film.directors?.length > 0) {
+            film.directors[0].tmdbId = mainDirector.id;
+          }
+          const dps = crew.filter(c => c.job === 'Director of Photography').map(c => ({
+            id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+            name: c.name,
+            role: 'both',
+            tmdbId: c.id
+          }));
+          if (dps.length > 0) film.cinematographers = dps;
+          const composers = crew.filter(c => c.job === 'Original Music Composer').map(c => ({
+            id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+            name: c.name,
+            role: 'both',
+            tmdbId: c.id
+          }));
+          if (composers.length > 0) film.composers = composers;
+        }
+
+        // 4. Technical Specs Fallback
         if (!film.languages || film.languages.length === 0) {
           if (data.spoken_languages) {
             film.languages = data.spoken_languages.map(l => l.english_name);
           }
         }
 
-        // Note: TMDB doesn't directly provide aspect ratios in the basic movie detail, 
-        // it's usually in 'images' but that's overkill. We can stick to languages/runtimes for now.
-
-        // Try to update Director tmdbId as well
-        if (data.credits?.crew) {
-          const mainDirector = data.credits.crew.find(c => c.job === 'Director');
-          if (mainDirector && film.directors.length > 0) {
-            film.directors[0].tmdbId = mainDirector.id;
-          }
-        }
-
-        // Extract Trailer Key
+        // 5. Trailers
         if (data.videos?.results) {
           const trailer = data.videos.results.find(v => v.site === 'YouTube' && v.type === 'Trailer');
           if (trailer) {
@@ -111,10 +145,13 @@ async function runTMDBEnrichment(catalog, maxItems) {
           }
         }
       }
-      film.enriched = true;
+      
+      film.tmdbAttempted = true;
       updatedCount++;
     } catch (err) {
       console.error(`  - TMDB error for ${film.title}:`, err.message);
+      film.tmdbAttempted = true;
+      updatedCount++;
     }
   }
 }
@@ -126,11 +163,9 @@ async function runDeepCrawl(catalog, maxItems) {
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
   let updatedCount = 0;
-  const GENERIC_SYNOPSIS = "Classics and discoveries from around the world";
 
   for (let i = 0; i < catalog.length && updatedCount < maxItems; i++) {
     const film = catalog[i];
-    // Don't skip if it has the generic synopsis
     const hasRealSynopsis = film.synopsis && !film.synopsis.includes(GENERIC_SYNOPSIS);
     if (film.enriched || (hasRealSynopsis && film.runtime > 0 && (film.genres?.length || 0) > 0)) continue;
     if (!film.link) continue;
@@ -147,33 +182,25 @@ async function runDeepCrawl(catalog, maxItems) {
         continue;
       }
 
-      // Extract native assets from landing page
-      const assets = await page.evaluate(() => {
+      // 1. Check landing page for assets
+      const landingData = await page.evaluate(() => {
         const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
         const trailerAnchor = anchors.find(a => a.href.includes('-trailer'));
-        
-        // Try to find a large hero/poster image
         const img = document.querySelector('.collection-img, .hero-img, img[src*="vhx.imgix.net/criterionchannelchartersu/assets/"]');
         let highResPoster = img ? img.getAttribute('src') : null;
         if (highResPoster) {
-          // Force maximum resolution and quality
-          highResPoster = highResPoster
-            .replace(/h=\d+/, 'h=2160') // Target 4K height
-            .replace(/w=\d+/, 'w=3840') // Target 4K width
-            .replace(/q=\d+/, 'q=100')  // Maximum quality
-            .replace(/fit=[^&]+/, 'fit=max'); // No cropping, max size
+          highResPoster = highResPoster.replace(/h=\d+/, 'h=2160').replace(/w=\d+/, 'w=3840').replace(/q=\d+/, 'q=100').replace(/fit=[^&]+/, 'fit=max');
         }
-
         return {
           trailerLink: trailerAnchor ? trailerAnchor.href : null,
           posterUrl: highResPoster
         };
       });
 
-      if (assets.trailerLink) film.trailerLink = assets.trailerLink;
-      if (assets.posterUrl) film.posterUrl = assets.posterUrl;
+      if (landingData.trailerLink) film.trailerLink = landingData.trailerLink;
+      if (landingData.posterUrl) film.posterUrl = landingData.posterUrl;
 
-      // Check for deeper video page (avoid trailers)
+      // 2. Check for deeper video page
       const videoLink = await page.evaluate(() => {
         const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
         const filmAnchor = anchors.find(a => !a.href.includes('-trailer'));
@@ -186,33 +213,26 @@ async function runDeepCrawl(catalog, maxItems) {
         await page.waitForTimeout(1000);
       }
 
+      // 3. Extract technical metadata
       const metadata = await page.evaluate(() => {
         const hPattern = /(\d+)\s*h\s*(\d+)?\s*m/i;
         const mPattern = /(\d+)\s*m(in)?/i;
         const timePattern = /(?<!\d:)(?:(\d+):)?([0-5]?\d):([0-5]\d)(?!\d)/;
-        
-        // Strict aspect ratio pattern: e.g., 1.33:1, 2.39:1 OR 16:9, 4:3
         const aspectPattern = /\b(?:\d\.\d{2}:1|16:9|4:3|1\.37:1|1\.66:1|1\.85:1|2\.35:1|2\.39:1|2\.40:1)\b/;
-        
         let runtimeCandidates = [];
         let aspectCandidates = [];
         let languagesFound = [];
-        
         const fullText = document.body.innerText;
         const pageAspectMatch = fullText.match(aspectPattern);
         if (pageAspectMatch) aspectCandidates.push(pageAspectMatch[0]);
         if (fullText.includes('English')) languagesFound.push('English');
-
         const elements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, li, span, p, .time, .description'));
         for (const el of elements) {
           const t = el.innerText.trim();
-          
           const aspectMatch = t.match(aspectPattern);
           if (aspectMatch) aspectCandidates.push(aspectMatch[0]);
-
           const hm = t.match(hPattern); if (hm) runtimeCandidates.push((parseInt(hm[1], 10) * 60) + parseInt(hm[2] || 0, 10));
           const m = t.match(mPattern); if (m) runtimeCandidates.push(parseInt(m[1], 10));
-          
           const tp = t.match(timePattern);
           if (tp && !t.match(aspectPattern)) { 
             const h = parseInt(tp[1] || 0, 10);
@@ -220,7 +240,6 @@ async function runDeepCrawl(catalog, maxItems) {
             runtimeCandidates.push((h * 60) + m);
           }
         }
-        
         return {
           runtime: runtimeCandidates.length ? Math.max(...runtimeCandidates) : null,
           aspectRatio: aspectCandidates.length ? aspectCandidates[0] : null,
@@ -234,18 +253,21 @@ async function runDeepCrawl(catalog, maxItems) {
         film.languages = Array.from(new Set([...(film.languages || []), ...metadata.languages]));
       }
 
+      // 4. Capture synopsis
       const metaSynopsis = await page.getAttribute('meta[name="description"]', 'content') || 
                            await page.getAttribute('meta[property="og:description"]', 'content');
 
       if (metaSynopsis && !metaSynopsis.includes(GENERIC_SYNOPSIS)) {
-        film.synopsis = metaSynopsis.replace(/^Directed by[^•]+•[^•]+•[^\n]+(?:\n|$)/i, '').trim();
+        film.synopsis = decodeEntities(metaSynopsis.replace(/^Directed by[^•]+•[^•]+•[^\n]+(?:\n|$)/i, '').trim());
+        film.synopsisSource = 'criterion';
         if (metaSynopsis.toLowerCase().includes('starring')) {
           const castMatch = metaSynopsis.match(/starring\s+([^•\.\n]+)/i);
           if (castMatch) {
             film.cast = castMatch[1].split(/,|and/).map(n => ({
               id: n.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-'),
               name: n.trim().replace(/\.$/, ''),
-              role: 'actor'
+              role: 'actor',
+              tmdbId: undefined
             })).filter(c => c.name.length > 2);
           }
         }
