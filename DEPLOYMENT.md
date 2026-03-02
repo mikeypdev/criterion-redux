@@ -70,11 +70,12 @@ jobs:
         run: npm install
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
-      - name: Run Sync
+      - name: Run Sync (Pass 1: Criterion Deep-Crawl)
+        run: LIMIT=100 npm run sync
+      - name: Run Sync (Pass 2: TMDB Gap-Filling)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-          LIMIT: 100
-        run: npm run sync
+        run: LIMIT=500 npm run sync
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"

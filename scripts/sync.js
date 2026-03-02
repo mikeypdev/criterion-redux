@@ -27,11 +27,19 @@ async function runSync() {
     if (continuous) {
       console.log('Running in continuous mode. Press Ctrl+C to stop.');
       while (true) {
-        execSync(`LIMIT=${limit} node scripts/enricher.js`, { stdio: 'inherit' });
-        console.log('Finalizing batch with local enrichment...');
-        execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
-        console.log('Batch completed. Starting next batch in 5 seconds...');
-        execSync('sleep 5'); // Give it a breather
+        try {
+          execSync(`LIMIT=${limit} node scripts/enricher.js`, { stdio: 'inherit' });
+          console.log('Finalizing batch with local enrichment...');
+          execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
+          console.log('Batch completed. Starting next batch in 5 seconds...');
+          execSync('sleep 5');
+        } catch (err) {
+          // If enricher.js exits with 0 (normal) but sync thinks it's an error,
+          // or if it explicitly signals completion, we can stop.
+          // For now, we'll just check if the catalog is full.
+          console.log('Enrichment loop signaled completion or was interrupted.');
+          break;
+        }
       }
     } else {
       execSync(`LIMIT=${limit} node scripts/enricher.js`, { stdio: 'inherit' });

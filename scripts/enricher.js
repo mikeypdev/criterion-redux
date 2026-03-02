@@ -33,13 +33,14 @@ function decodeEntities(text) {
 async function enrichCatalog(maxItems = 10) {
   let catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8'));
   const originalCount = catalog.length;
+  let attemptedCount = 0;
   
   if (TMDB_API_KEY) {
     console.log(`>>> Using TMDB API Enrichment (Speed: Fast)`);
-    await runTMDBEnrichment(catalog, maxItems);
+    attemptedCount = await runTMDBEnrichment(catalog, maxItems);
   } else {
     console.log(`>>> Using Playwright Deep-Crawl (Speed: Respectful)`);
-    await runDeepCrawl(catalog, maxItems);
+    attemptedCount = await runDeepCrawl(catalog, maxItems);
   }
 
   // Prune films marked for removal (dead links/redirects)
@@ -51,6 +52,10 @@ async function enrichCatalog(maxItems = 10) {
   }
 
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(finalCatalog, null, 2));
+  
+  // Return true if we actually ATTEMPTED anything. 
+  // If attemptedCount is 0, it means the entire library is already enriched.
+  return attemptedCount > 0;
 }
 
 /**
@@ -58,6 +63,7 @@ async function enrichCatalog(maxItems = 10) {
  */
 async function runTMDBEnrichment(catalog, maxItems) {
   let updatedCount = 0;
+  let attemptedCount = 0;
   const isBearer = TMDB_API_KEY.includes('.'); // Simple check for JWT/Bearer token
   
   const apiClient = axios.create({
@@ -73,6 +79,7 @@ async function runTMDBEnrichment(catalog, maxItems) {
     if (film.tmdbAttempted) continue;
 
     try {
+      attemptedCount++;
       console.log(`[${i+1}/${catalog.length}] TMDB Search: ${film.title} (${film.year})`);
       const searchRes = await tmdbLimiter.schedule(() => apiClient.get('/search/movie', {
         params: { query: film.title, primary_release_year: film.year }
@@ -154,6 +161,7 @@ async function runTMDBEnrichment(catalog, maxItems) {
       updatedCount++;
     }
   }
+  return attemptedCount;
 }
 
 /**
@@ -163,6 +171,7 @@ async function runDeepCrawl(catalog, maxItems) {
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
   let updatedCount = 0;
+  let attemptedCount = 0;
 
   for (let i = 0; i < catalog.length && updatedCount < maxItems; i++) {
     const film = catalog[i];
@@ -171,6 +180,7 @@ async function runDeepCrawl(catalog, maxItems) {
     if (!film.link) continue;
 
     try {
+      attemptedCount++;
       console.log(`[${i+1}/${catalog.length}] Deep-Crawl: ${film.title}`);
       await deepCrawlLimiter.schedule(() => page.goto(film.link, { waitUntil: 'domcontentloaded', timeout: 30000 }));
       await page.waitForTimeout(1000);
@@ -258,7 +268,13 @@ async function runDeepCrawl(catalog, maxItems) {
                            await page.getAttribute('meta[property="og:description"]', 'content');
 
       if (metaSynopsis && !metaSynopsis.includes(GENERIC_SYNOPSIS)) {
-        film.synopsis = decodeEntities(metaSynopsis.replace(/^Directed by[^•]+•[^•]+•[^\n]+(?:\n|$)/i, '').trim());
+        let cleanSynopsis = metaSynopsis.replace(/^Directed by[^•]+•[^•]+•[^\n]+(?:\n|$)/i, '').trim();
+        cleanSynopsis = cleanSynopsis
+          .replace(/This film is part of the Criterion Channel’s permanent collection\.?/gi, '')
+          .replace(/This film is only available to stream in the United States and Canada\.?/gi, '')
+          .trim();
+
+        film.synopsis = decodeEntities(cleanSynopsis);
         film.synopsisSource = 'criterion';
         if (metaSynopsis.toLowerCase().includes('starring')) {
           const castMatch = metaSynopsis.match(/starring\s+([^•\.\n]+)/i);
@@ -279,7 +295,13 @@ async function runDeepCrawl(catalog, maxItems) {
     }
   }
   await browser.close();
+  return attemptedCount;
 }
 
 const limit = parseInt(process.env.LIMIT || '10', 10);
-enrichCatalog(limit);
+enrichCatalog(limit).then(hasMore => {
+  if (!hasMore) {
+    console.log('--- ENTIRE CATALOG COMPLETED ---');
+    process.exit(0);
+  }
+});
