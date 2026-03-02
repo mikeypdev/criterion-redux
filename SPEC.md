@@ -38,7 +38,7 @@ The goal is to build a modern, high-performance front-end for the Criterion Chan
 - **Styling:** Vanilla CSS (CSS Modules)
 
 ## 7. Implementation Roadmap
-1. **Phase 1: Architecture & Scraper.** Define data structures and build the base Criterion scraper. (Completed)
+1. **Phase 1: Architecture & Sync.** Define data structures and build the base Criterion scraper. (Completed)
 2. **Phase 2: Enrichment Engine.** Implement TMDB integration for synopses, cast, and trailers. (Completed)
 3. **Phase 3: High-Performance Grid.** Build the infinite scroll film index with multi-faceted filtering. (Completed)
 4. **Phase 4: Cinematic Detail Views.** Implement hero layouts with trailer support and technical metadata. (Completed)
@@ -48,10 +48,10 @@ The goal is to build a modern, high-performance front-end for the Criterion Chan
 
 ## 8. Real Data Strategy (The "Criterion Data Connector")
 
-### 8.1. Extraction (The Scraper)
+### 8.1. Extraction
 - **Target:** `https://films.criterionchannel.com/` and `https://www.criterionchannel.com/new-collections`
 - **Tooling:** Node.js with `Cheerio` and `Playwright`.
-- **Extraction Logic:** Unified pipeline (`sync.js`) that scrapes the master list and then deep-crawls individual pages, video sub-pages, and curated series for comprehensive metadata.
+- **Extraction Logic:** Unified pipeline (`sync.js`) that syncs the master list and then deep-crawls individual pages, video sub-pages, and curated series for comprehensive metadata.
 
 ### 8.2. Enrichment (The Enhancer)
 - **Metadata Sources:** Hybrid model using Criterion for blurbs/aspect ratios and **TMDB API** for cast, runtimes, and YouTube trailers.
