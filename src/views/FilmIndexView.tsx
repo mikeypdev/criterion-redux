@@ -60,7 +60,9 @@ const FilmIndexView: React.FC = () => {
       const matchesSearch = isSpecificID || 
                            film.title.toLowerCase().includes(q) ||
                            film.directors.some(d => d.name.toLowerCase().includes(q)) ||
-                           film.cast.some(c => c.name.toLowerCase().includes(q));
+                           film.cast.some(c => c.name.toLowerCase().includes(q)) ||
+                           film.cinematographers?.some(c => c.name.toLowerCase().includes(q)) ||
+                           film.composers?.some(c => c.name.toLowerCase().includes(q));
       
       const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
       const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;

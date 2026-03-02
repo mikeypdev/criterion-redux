@@ -17,24 +17,27 @@ const PersonView: React.FC = () => {
     return <div className={styles.loading}>Searching the archives...</div>;
   }
   
-  // Find person in the entire film dataset (scraped directors/cast)
+  // Find person in the entire film dataset
   let person: Person | undefined;
   for (const film of catalog) {
     const foundDirector = film.directors.find(d => d.id === id);
-    if (foundDirector) {
-      person = foundDirector;
-      break;
-    }
+    if (foundDirector) { person = foundDirector; break; }
+    
     const foundCast = film.cast.find(c => c.id === id);
-    if (foundCast) {
-      person = foundCast;
-      break;
-    }
+    if (foundCast) { person = foundCast; break; }
+
+    const foundDP = film.cinematographers?.find(c => c.id === id);
+    if (foundDP) { person = foundDP; break; }
+
+    const foundComposer = film.composers?.find(c => c.id === id);
+    if (foundComposer) { person = foundComposer; break; }
   }
 
   const films = catalog.filter(f => 
     f.directors.some(d => d.id === id) || 
-    f.cast.some(c => c.id === id)
+    f.cast.some(c => c.id === id) ||
+    f.cinematographers?.some(c => c.id === id) ||
+    f.composers?.some(c => c.id === id)
   );
 
   if (!person) {

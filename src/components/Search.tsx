@@ -17,7 +17,9 @@ const Search: React.FC = () => {
       return films.filter(f => 
         f.title.toLowerCase().includes(q) ||
         f.directors.some(d => d.name.toLowerCase().includes(q)) ||
-        f.cast.some(c => c.name.toLowerCase().includes(q))
+        f.cast.some(c => c.name.toLowerCase().includes(q)) ||
+        f.cinematographers?.some(c => c.name.toLowerCase().includes(q)) ||
+        f.composers?.some(c => c.name.toLowerCase().includes(q))
       ).slice(0, 5);
     }
     return [];
