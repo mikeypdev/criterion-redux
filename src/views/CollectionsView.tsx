@@ -10,6 +10,19 @@ const CollectionsView: React.FC = () => {
     return <div className={styles.loading}>Curating collections...</div>;
   }
 
+  const leavingSoonFilms = catalog.filter(f => f.leavingSoon);
+  
+  const allCollections = [...collections];
+  if (leavingSoonFilms.length > 0) {
+    allCollections.unshift({
+      id: 'leaving-soon',
+      title: 'Leaving Soon',
+      description: 'Your last chance to catch these titles before they leave the service at the end of the month.',
+      filmIds: leavingSoonFilms.map(f => f.id),
+      imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl
+    });
+  }
+
   const getFilmThumbnail = (filmId: string) => {
     const film = catalog.find(f => f.id === filmId);
     return film ? film.thumbnailUrl : null;
@@ -21,7 +34,7 @@ const CollectionsView: React.FC = () => {
       <p className={styles.subtitle}>Curated cinematic experiences, exclusively for you.</p>
 
       <div className={styles.collectionsList}>
-        {collections.map(collection => (
+        {allCollections.map(collection => (
           <Link key={collection.id} to={`/collections/${collection.id}`} className={styles.collectionLink}>
             <section className={styles.collection}>
               <div className={styles.collectionInfo}>

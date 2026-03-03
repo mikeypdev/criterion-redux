@@ -9,20 +9,35 @@ const CollectionDetailView: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { collections, catalog, isLoading } = useData();
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   if (isLoading) {
     return <div className={styles.loading}>Assembling collection...</div>;
   }
 
-  const collection = collections.find(c => c.id === id);
+  let collection = collections.find(c => c.id === id);
+  
+  // Handle virtual 'Leaving Soon' collection
+  if (!collection && id === 'leaving-soon') {
+    const leavingSoonFilms = catalog.filter(f => f.leavingSoon);
+    if (leavingSoonFilms.length > 0) {
+      collection = {
+        id: 'leaving-soon',
+        title: 'Leaving Soon',
+        description: 'Your last chance to catch these titles before they leave the service at the end of the month.',
+        filmIds: leavingSoonFilms.map(f => f.id),
+        imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl
+      };
+    }
+  }
+
   const collectionFilms = collection 
     ? collection.filmIds
         .map(fId => catalog.find(f => f.id === fId))
         .filter((f): f is Film => !!f)
     : [];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [id]);
 
   if (!collection) {
     return (

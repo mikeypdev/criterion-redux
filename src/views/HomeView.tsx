@@ -26,6 +26,29 @@ const HomeView: React.FC = () => {
   }
 
   const leavingSoon = enrichedFilms.filter(film => film.leavingSoon).slice(0, 15);
+
+  // Daily-stable shuffle for featured films
+  const getFeaturedFilms = (films: Film[]) => {
+    const today = new Date().toISOString().split('T')[0];
+    const seed = today.split('-').reduce((acc, part) => acc + parseInt(part, 10), 0);
+    
+    // Sort by: has posterUrl first, then a deterministic shuffle based on seed
+    return [...films]
+      .sort((a, b) => {
+        // Prioritize films with high-quality billboards
+        if (a.posterUrl && !b.posterUrl) return -1;
+        if (!a.posterUrl && b.posterUrl) return 1;
+        
+        // Deterministic shuffle
+        const scoreA = (a.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) * seed) % 1000;
+        const scoreB = (b.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) * seed) % 1000;
+        return scoreA - scoreB;
+      })
+      .slice(0, 15);
+  };
+
+  const featuredFilms = getFeaturedFilms(enrichedFilms);
+
   const newlyAdded = [...enrichedFilms]
     .sort((a, b) => {
       const dateA = a.dateAdded ? new Date(a.dateAdded).getTime() : 0;
@@ -36,17 +59,27 @@ const HomeView: React.FC = () => {
 
   return (
     <>
+      {leavingSoon.length > 0 && (
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Leaving Soon</h2>
+            <Link to="/collections" className={styles.seeAll}>See All Collections</Link>
+          </div>
+          <div className={styles.carousel}>
+            {leavingSoon.map(film => <FilmCard key={film.id} film={film} />)}
+          </div>
+        </section>
+      )}
+
       <section className={styles.section}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Leaving Soon</h2>
-          <Link to="/collections" className={styles.seeAll}>See All Collections</Link>
+          <h2 className={styles.sectionTitle}>Featured Films</h2>
+          <Link to="/index" className={styles.seeAll}>See All Films</Link>
         </div>
         <div className={styles.carousel}>
-          {leavingSoon.length > 0 ? (
-            leavingSoon.map(film => <FilmCard key={film.id} film={film} />)
-          ) : (
-            enrichedFilms.slice(10, 25).map(film => <FilmCard key={film.id} film={film} />)
-          )}
+          {featuredFilms.map(film => (
+            <FilmCard key={film.id} film={film} />
+          ))}
         </div>
       </section>
 

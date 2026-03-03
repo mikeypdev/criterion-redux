@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomeView from './views/HomeView';
 import FilmIndexView from './views/FilmIndexView';
@@ -15,7 +15,7 @@ const App: React.FC = () => {
   return (
     <DataProvider>
       <WatchlistProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Layout>
             <Routes>
               <Route path="/" element={<HomeView />} />
@@ -27,7 +27,7 @@ const App: React.FC = () => {
               <Route path="/watchlist" element={<WatchlistView />} />
             </Routes>
           </Layout>
-        </BrowserRouter>
+        </HashRouter>
       </WatchlistProvider>
     </DataProvider>
   );

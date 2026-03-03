@@ -17,6 +17,8 @@ async function scrapeFilms() {
 
     const $ = cheerio.load(data);
     const films = [];
+    const existingCatalog = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf-8')) : [];
+    const existingMap = new Map(existingCatalog.map(f => [f.id, f]));
 
     $('tr').each((i, row) => {
       if (i === 0) return; // Skip header
@@ -40,26 +42,32 @@ async function scrapeFilms() {
 
         if (!title) return;
 
+        const id = link ? link.split('/').pop() : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        const existingFilm = existingMap.get(id);
+
         // Map to our Film type (with placeholders for now)
         films.push({
           id,
           title,
           link,
           year: isNaN(year) ? 0 : year,
-          runtime: 0, // Placeholder
+          runtime: existingFilm?.runtime || 0,
           directors: [{
             id: directorName.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
             name: directorName,
             role: 'director'
           }],
-          cast: [], // Placeholder
-          synopsis: '', // Placeholder
-          genres: [], // Placeholder
+          cast: existingFilm?.cast || [],
+          synopsis: existingFilm?.synopsis || '',
+          genres: existingFilm?.genres || [],
           countries: [country],
-          languages: [], // Placeholder
+          languages: existingFilm?.languages || [],
           thumbnailUrl: thumbnailUrl || '',
-          dateAdded: new Date().toISOString().split('T')[0], // Placeholder
-          leavingSoon: false, // Placeholder
+          dateAdded: existingFilm?.dateAdded || new Date().toISOString().split('T')[0],
+          leavingSoon: existingFilm?.leavingSoon || false,
+          enriched: existingFilm?.enriched || false,
+          tmdbAttempted: existingFilm?.tmdbAttempted || false,
+          posterUrl: existingFilm?.posterUrl
         });
       }
     });

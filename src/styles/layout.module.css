@@ -95,3 +95,19 @@
   opacity: 0.6;
 }
 
+.githubLink {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  font-size: 14px;
+}
+
+.githubLink:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+

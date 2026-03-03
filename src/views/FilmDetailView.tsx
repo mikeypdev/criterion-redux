@@ -212,8 +212,12 @@ const FilmDetailView: React.FC = () => {
 
         <aside className={styles.sidebar}>
           <div className={styles.editionInfo}>
-            <h3 className={styles.sidebarTitle}>The Criterion Redux</h3>
-            <p>This title is available as part of our permanent library. Subtitles available in English.</p>
+            <h3 className={styles.sidebarTitle}>Criterion Redux</h3>
+            {film.leavingSoon ? (
+              <p>This title is a <strong>Limited Engagement</strong>. Subtitles available in English.</p>
+            ) : (
+              <p>This title is available as part of Criterion Channel's permanent library. Subtitles available in English.</p>
+            )}
           </div>
           {film.leavingSoon && (
             <div className={styles.urgencyBox}>

@@ -107,11 +107,6 @@ const FilmIndexView: React.FC = () => {
           return b.year - a.year;
         case 'year-oldest':
           return a.year - b.year;
-        case 'added-newest': {
-          const dateA = a.dateAdded ? new Date(a.dateAdded).getTime() : 0;
-          const dateB = b.dateAdded ? new Date(b.dateAdded).getTime() : 0;
-          return dateB - dateA;
-        }
         default:
           return 0;
       }
@@ -208,7 +203,6 @@ const FilmIndexView: React.FC = () => {
             <option value="title-desc">Title (Z-A)</option>
             <option value="year-newest">Release Date (Newest)</option>
             <option value="year-oldest">Release Date (Oldest)</option>
-            <option value="added-newest">Date Added (Newest)</option>
           </select>
         </div>
       </div>
