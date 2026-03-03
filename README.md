@@ -1,20 +1,18 @@
-# Criterion Channel Redesign
+# Criterion Redux
 
 A modern, high-performance front-end redesign for the **Criterion Channel** streaming service. This project prioritizes film discovery and navigation through a metadata-rich interface.
 
-![Cinematic Redesign](https://placehold.co/1200x600/0a0a0a/ffffff?text=Criterion+Channel+Redux)
+![Criterion Redux](https://placehold.co/1200x600/0a0a0a/ffffff?text=Criterion+Channel+Redux)
 
 ## 🎥 Project Overview
 
-I love [Criterion Channel](criterionchannel.com). For just $100/year, it’s got the best collection of some of the best films ever made. For such a great streaming service, especially one directed at cinemaphiles, the usability of their web site and app is very poor. Search doesn’t reliably return what you’re looking for. Impossible to browse by director. No way to follow links between films with the same actor. Missing info about cinematographers, composers, etc. And above all, it’s just plain slow.
+[Criterion Channel](criterionchannel.com) has an amazing collection of some of the best films ever made. For such a great streaming service, especially one directed at cinemaphiles, the usability of their web site is very poor.
 
-So I decided to make a useable front-end. This web app syncs the list of films from Criterion Channel and presents them in a fast, searchable web site with additional info augmented by TheMovieDB. You can quickly find all films from a particular director. You can click on the name of an actor and see all of their films. You can search by cinematographer, etc. Basically, this web app makes Criterion Channel look and feel like a modern movie streaming service.
+Criterion Redux is a better and more useable front-end. It syncs the list of films from Criterion Channel and presents them in a fast, searchable, easy-to-navigate web site with additional info augmented by [The Movie DB](themoviedb.org). Basically, this front-end makes Criterion Channel look and feel like a modern movie streaming service.
 
-It should go without saying that you *must have a subscription* to Criterion Channel to watch any of the flims. This app is **not** a replacement for their excellent streaming service - it’s only an improved presentation and better way to find their films.
+***You must have a subscription*** to Criterion Channel to watch any of the flims. This app is **not** a replacement for their streaming service - it’s only an improved presentation and better way to find their films.
 
-**You should subscribe to Criterion Channel.**
-
-This a fan project. It’s open source. **This project is not affliated with Criterion. All of the content shown in this app is property of the respective copyright holders.** And if someone from Criterion sees this, please take it and use it to make a better service!
+This an open source fan project. **This project is not affliated with Criterion. All of the content shown in this app is property of the respective copyright holders.**
 
 ## 🛠 Tech Stack
 
