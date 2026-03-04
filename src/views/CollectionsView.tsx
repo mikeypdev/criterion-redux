@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
+import type { Collection, Film } from '../types';
 import styles from '../styles/collectionsView.module.css';
 
 const CollectionsView: React.FC = () => {
@@ -12,19 +13,20 @@ const CollectionsView: React.FC = () => {
 
   const leavingSoonFilms = catalog.filter(f => f.leavingSoon);
   
-  const allCollections = [...collections];
+  const allCollections: Collection[] = [...collections];
   if (leavingSoonFilms.length > 0) {
     allCollections.unshift({
       id: 'leaving-soon',
       title: 'Leaving Soon',
       description: 'Your last chance to catch these titles before they leave the service at the end of the month.',
       filmIds: leavingSoonFilms.map(f => f.id),
-      imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl
+      imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl,
+      link: '#'
     });
   }
 
   const getFilmThumbnail = (filmId: string) => {
-    const film = catalog.find(f => f.id === filmId);
+    const film = catalog.find((f: Film) => f.id === filmId);
     return film ? film.thumbnailUrl : null;
   };
 
@@ -34,7 +36,7 @@ const CollectionsView: React.FC = () => {
       <p className={styles.subtitle}>Curated cinematic experiences, exclusively for you.</p>
 
       <div className={styles.collectionsList}>
-        {allCollections.map(collection => (
+        {allCollections.map((collection: Collection) => (
           <Link key={collection.id} to={`/collections/${collection.id}`} className={styles.collectionLink}>
             <section className={styles.collection}>
               <div className={styles.collectionInfo}>
@@ -48,7 +50,7 @@ const CollectionsView: React.FC = () => {
                   <img src={collection.imageUrl} alt="" className={styles.collectionImage} />
                 ) : (
                   <div className={styles.previewGrid}>
-                    {collection.filmIds.slice(0, 4).map(id => {
+                    {collection.filmIds.slice(0, 4).map((id: string) => {
                       const thumb = getFilmThumbnail(id);
                       return thumb ? (
                         <img key={id} src={thumb} alt="" className={styles.previewImg} />

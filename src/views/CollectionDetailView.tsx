@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
-import type { Film } from '../types';
+import type { Film, Collection } from '../types';
 import FilmCard from '../components/FilmCard';
 import styles from '../styles/collectionsView.module.css';
 
@@ -17,7 +17,7 @@ const CollectionDetailView: React.FC = () => {
     return <div className={styles.loading}>Assembling collection...</div>;
   }
 
-  let collection = collections.find(c => c.id === id);
+  let collection: Collection | undefined = collections.find(c => (c as any).id === id);
   
   // Handle virtual 'Leaving Soon' collection
   if (!collection && id === 'leaving-soon') {
@@ -28,15 +28,16 @@ const CollectionDetailView: React.FC = () => {
         title: 'Leaving Soon',
         description: 'Your last chance to catch these titles before they leave the service at the end of the month.',
         filmIds: leavingSoonFilms.map(f => f.id),
-        imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl
+        imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl,
+        link: '#'
       };
     }
   }
 
-  const collectionFilms = collection 
-    ? collection.filmIds
-        .map(fId => catalog.find(f => f.id === fId))
-        .filter((f): f is Film => !!f)
+  const collectionFilms: Film[] = collection 
+    ? (collection.filmIds as string[])
+        .map((fId: string) => catalog.find((f: Film) => f.id === fId))
+        .filter((f: Film | undefined): f is Film => !!f)
     : [];
 
   if (!collection) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import { useData } from '../context/DataContext';
-import type { Film } from '../types';
+import type { Film, Collection } from '../types';
 import styles from '../styles/app.module.css';
 
 const HomeView: React.FC = () => {
@@ -95,10 +95,10 @@ const HomeView: React.FC = () => {
         </div>
       </section>
 
-      {collections.slice(0, 5).map(collection => {
+      {collections.slice(0, 5).map((collection: Collection) => {
         const collectionFilms = collection.filmIds
-          .map(fId => catalog.find(f => f.id === fId))
-          .filter((f): f is Film => !!f)
+          .map((fId: string) => catalog.find((f: Film) => f.id === fId))
+          .filter((f: Film | undefined): f is Film => !!f)
           .slice(0, 15);
 
         if (collectionFilms.length === 0) return null;
