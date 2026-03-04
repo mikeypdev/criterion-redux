@@ -7,40 +7,46 @@ import styles from '../styles/filmIndex.module.css';
 const FilmIndexView: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { catalog } = useData();
+  
+  // Initial state from URL params
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
-  const [selectedDecade, setSelectedDecade] = useState<string>('');
-  const [selectedCountry, setSelectedCountry] = useState<string>('');
-  const [selectedGenre, setSelectedGenre] = useState<string>('');
-  const [selectedLanguage, setSelectedLanguage] = useState<string>('');
-  const [sortBy, setSortBy] = useState<string>('title-asc');
+  const [selectedDecade, setSelectedDecade] = useState<string>(searchParams.get('decade') || '');
+  const [selectedCountry, setSelectedCountry] = useState<string>(searchParams.get('country') || '');
+  const [selectedGenre, setSelectedGenre] = useState<string>(searchParams.get('genre') || '');
+  const [selectedLanguage, setSelectedLanguage] = useState<string>(searchParams.get('language') || '');
+  const [sortBy, setSortBy] = useState<string>(searchParams.get('sort') || 'title-asc');
   
   const [limit, setLimit] = useState(48);
   const observerTarget = useRef<HTMLDivElement>(null);
 
+  // Sync state from URL when URL changes (e.g. browser back button)
   useEffect(() => {
-    const query = searchParams.get('search');
-    if (query !== null) {
-      setSearchTerm(query);
-    }
-    const genre = searchParams.get('genre');
-    if (genre !== null) {
-      setSelectedGenre(genre);
-    }
+    setSearchTerm(searchParams.get('search') || '');
+    setSelectedDecade(searchParams.get('decade') || '');
+    setSelectedCountry(searchParams.get('country') || '');
+    setSelectedGenre(searchParams.get('genre') || '');
+    setSelectedLanguage(searchParams.get('language') || '');
+    setSortBy(searchParams.get('sort') || 'title-asc');
   }, [searchParams]);
 
+  // Update URL params when state changes
   useEffect(() => {
     const params: Record<string, string> = {};
     if (searchTerm) params.search = searchTerm;
+    if (selectedDecade) params.decade = selectedDecade;
+    if (selectedCountry) params.country = selectedCountry;
     if (selectedGenre) params.genre = selectedGenre;
+    if (selectedLanguage) params.language = selectedLanguage;
+    if (sortBy && sortBy !== 'title-asc') params.sort = sortBy;
     
-    // Only update if they differ from current to avoid loops
-    const currentSearch = searchParams.get('search') || '';
-    const currentGenre = searchParams.get('genre') || '';
+    // Compare current params with new params to avoid redundant updates
+    const currentParams = Object.fromEntries(searchParams.entries());
+    const hasChanged = JSON.stringify(params) !== JSON.stringify(currentParams);
     
-    if (searchTerm !== currentSearch || selectedGenre !== currentGenre) {
+    if (hasChanged) {
       setSearchParams(params, { replace: true });
     }
-  }, [searchTerm, selectedGenre, setSearchParams, searchParams]);
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, sortBy, setSearchParams, searchParams]);
 
   // Reset limit when filters or sort change
   useEffect(() => {

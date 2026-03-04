@@ -1,9 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import type { Film, Collection } from '../types';
+import type { Film, Collection, SyncStatus } from '../types';
 
 interface DataContextType {
   catalog: Film[];
   collections: Collection[];
+  status: SyncStatus | null;
   isLoading: boolean;
   error: string | null;
 }
@@ -13,6 +14,7 @@ const DataContext = createContext<DataContextType | undefined>(undefined);
 export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [catalog, setCatalog] = useState<Film[]>([]);
   const [collections, setCollections] = useState<Collection[]>([]);
+  const [status, setStatus] = useState<SyncStatus | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -25,9 +27,10 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const baseUrl = import.meta.env.BASE_URL || '/';
         console.log(`Fetching cinematic data from ${baseUrl}...`);
         
-        const [catalogRes, collectionsRes] = await Promise.all([
+        const [catalogRes, collectionsRes, statusRes] = await Promise.all([
           fetch(`${baseUrl}data/catalog.json`),
-          fetch(`${baseUrl}data/collections.json`)
+          fetch(`${baseUrl}data/collections.json`),
+          fetch(`${baseUrl}data/status.json`).catch(() => null) // Optional
         ]);
 
         if (!catalogRes.ok) throw new Error(`Catalog not found (Status: ${catalogRes.status})`);
@@ -35,16 +38,15 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         const catalogData = await catalogRes.json();
         const collectionsData = await collectionsRes.json();
+        const statusData = statusRes && statusRes.ok ? await statusRes.json() : null;
 
         if (!Array.isArray(catalogData) || catalogData.length === 0) {
           throw new Error('Catalog data is empty or invalid.');
         }
         
-        console.log('Sample Film:', catalogData[0]);
-        console.log('Sample Collection:', collectionsData[0]);
-        
         setCatalog(catalogData);
         setCollections(collectionsData);
+        setStatus(statusData);
         console.log(`Data loaded: ${catalogData.length} films, ${collectionsData.length} collections.`);
       } catch (err: any) {
         console.error('Data loading error:', err);
@@ -92,7 +94,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }
 
   return (
-    <DataContext.Provider value={{ catalog, collections, isLoading, error }}>
+    <DataContext.Provider value={{ catalog, collections, status, isLoading, error }}>
       {children}
     </DataContext.Provider>
   );

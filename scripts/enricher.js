@@ -81,11 +81,22 @@ async function runTMDBEnrichment(catalog, maxItems) {
     try {
       attemptedCount++;
       console.log(`[${i+1}/${catalog.length}] TMDB Search: ${film.title} (${film.year})`);
-      const searchRes = await tmdbLimiter.schedule(() => apiClient.get('/search/movie', {
+      let searchRes = await tmdbLimiter.schedule(() => apiClient.get('/search/movie', {
         params: { query: film.title, primary_release_year: film.year }
       }));
 
-      const results = searchRes.data.results;
+      let results = searchRes.data.results;
+      
+      // Fallback: If no results with year, try without year
+      if (results?.length === 0) {
+        console.log(`    - No results with year ${film.year}, trying without year...`);
+        searchRes = await tmdbLimiter.schedule(() => apiClient.get('/search/movie', {
+          params: { query: film.title }
+        }));
+        results = searchRes.data.results;
+      }
+
+      console.log(`    - Found ${results?.length || 0} results for ${film.title}`);
       if (results?.length > 0) {
         const detailRes = await tmdbLimiter.schedule(() => apiClient.get(`/movie/${results[0].id}`, {
           params: { append_to_response: 'credits,videos' }
@@ -100,13 +111,20 @@ async function runTMDBEnrichment(catalog, maxItems) {
         if (!film.runtime || film.runtime === 0) {
           film.runtime = data.runtime || film.runtime;
         }
+        film.aspectRatio = film.aspectRatio || data.aspect_ratio; // TMDB doesn't usually have this but just in case
         film.tagline = decodeEntities(data.tagline) || film.tagline;
         film.originalTitle = data.original_title !== film.title ? data.original_title : undefined;
         film.imdbId = data.imdb_id;
 
+        // 1.5 Genres
+        if (data.genres) {
+          film.genres = data.genres.map(g => g.name);
+        }
+
         // 2. Cast
-        if ((!film.cast || film.cast.length === 0) && data.credits?.cast) {
-          film.cast = data.credits.cast.slice(0, 5).map(c => ({
+        const needsCastEnrichment = !film.cast || film.cast.length === 0 || film.cast.some(c => !c.tmdbId);
+        if (needsCastEnrichment && data.credits?.cast) {
+          film.cast = data.credits.cast.slice(0, 10).map(c => ({
             id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
             name: c.name,
             role: 'actor',
@@ -145,8 +163,11 @@ async function runTMDBEnrichment(catalog, maxItems) {
         }
 
         // 5. Trailers
-        if (data.videos?.results) {
-          const trailer = data.videos.results.find(v => v.site === 'YouTube' && v.type === 'Trailer');
+        if (data.videos?.results && !film.trailerKey && !film.trailerLink) {
+          const videos = data.videos.results;
+          const trailer = videos.find(v => v.site === 'YouTube' && v.type === 'Trailer') ||
+                          videos.find(v => v.site === 'YouTube' && v.type === 'Teaser') ||
+                          videos.find(v => v.site === 'YouTube' && v.type === 'Clip');
           if (trailer) {
             film.trailerKey = trailer.key;
           }

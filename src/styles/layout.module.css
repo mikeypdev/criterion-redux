@@ -111,3 +111,10 @@
   transform: translateY(-2px);
 }
 
+.lastUpdated {
+  opacity: 0.4;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+

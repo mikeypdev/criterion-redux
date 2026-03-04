@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useData } from '../context/DataContext';
 import styles from '../styles/layout.module.css';
 import Search from './Search';
 
@@ -8,6 +9,23 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const { status } = useData();
+
+  const formatLastUpdated = (isoString: string) => {
+    try {
+      const date = new Date(isoString);
+      return date.toLocaleDateString(undefined, { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+    } catch (e) {
+      return isoString;
+    }
+  };
+
   return (
     <div className={styles.root}>
       <header className={styles.header}>
@@ -74,6 +92,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className={styles.copyright}>
             © 2026 CRITERION REDUX FAN PROJECT. FOR DEMONSTRATION PURPOSES ONLY. NOT AFFILIATED WITH CRITERION CHANNEL.
           </div>
+          {status && (
+            <div className={styles.lastUpdated}>
+              Library synced: {formatLastUpdated(status.lastUpdated)} ({status.filmCount} films)
+            </div>
+          )}
         </div>
       </footer>
     </div>

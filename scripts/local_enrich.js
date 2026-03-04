@@ -59,23 +59,16 @@ function localEnrich() {
   for (const film of catalog) {
     const text = (film.title + ' ' + (film.synopsis || '')).toLowerCase();
     
-    // 1. Extract Genres
+    // 1. Logic-based Genres
     const foundGenres = [];
-    for (const g of commonGenres) {
-      if (text.includes(g.toLowerCase())) {
-        foundGenres.push(g);
-      }
-    }
-
-    // 2. Logic-based Genres
-    if (film.year < 1930 && film.year > 0 && !foundGenres.includes('Silent')) {
+    if (film.year < 1930 && film.year > 0 && !(film.genres || []).includes('Silent')) {
       foundGenres.push('Silent');
     }
-    if (film.runtime > 0 && film.runtime < 45 && !foundGenres.includes('Short')) {
+    if (film.runtime > 0 && film.runtime < 45 && !(film.genres || []).includes('Short')) {
       foundGenres.push('Short');
     }
     if (film.title.toLowerCase().includes('interview') || film.title.toLowerCase().includes('conversation')) {
-      if (!foundGenres.includes('Interview')) foundGenres.push('Interview');
+      if (!(film.genres || []).includes('Interview')) foundGenres.push('Interview');
     }
     
     if (foundGenres.length > 0) {
@@ -83,7 +76,7 @@ function localEnrich() {
       genreCount++;
     }
 
-    // 3. Language Fallback based on country
+    // 2. Language Fallback based on country
     if (!film.languages || film.languages.length === 0) {
       const country = film.countries && film.countries[0];
       if (country && countryToLanguage[country]) {

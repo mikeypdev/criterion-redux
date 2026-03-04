@@ -36,10 +36,7 @@ export interface Film {
   composers?: Person[];
 }
 
-export interface Collection {
-  id: string;
-  title: string;
-  description: string;
-  filmIds: string[];
-  imageUrl?: string;
+export interface SyncStatus {
+  lastUpdated: string;
+  filmCount: number;
 }
