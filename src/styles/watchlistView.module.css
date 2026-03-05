@@ -21,9 +21,32 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 40px;
   justify-items: center;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .empty {
+    padding: 60px 20px;
+  }
 }
 
 .empty {

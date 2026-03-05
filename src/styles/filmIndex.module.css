@@ -103,9 +103,49 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 50px 40px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 50px 30px;
   justify-items: center;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .search {
+    min-width: 100%;
+  }
+  
+  .searchWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+  
+  .filtersBar {
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .select {
+    min-width: 100%;
+  }
+  
+  .filterGroup {
+    width: 100%;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 .noResults {

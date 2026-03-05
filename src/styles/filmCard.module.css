@@ -1,10 +1,17 @@
 .root {
-  min-width: 340px;
-  max-width: 340px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 280px;
   scroll-snap-align: start;
   position: relative;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .root {
+    min-width: 100%;
+  }
 }
 
 .root:hover {

@@ -65,6 +65,59 @@
   transition: transform 0.3s ease, border-color 0.2s;
 }
 
+@media (max-width: 900px) {
+  .collection {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .subtitle {
+    margin-bottom: 30px;
+  }
+  
+  .detailTitle {
+    font-size: 32px;
+  }
+  
+  .hasImage {
+    padding: 30px 40px;
+    height: auto;
+    min-height: 30vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .collectionTitle {
+    font-size: 18px;
+  }
+  
+  .detailTitle {
+    font-size: 24px;
+  }
+  
+  .detailDescription {
+    font-size: 14px;
+  }
+  
+  .hasImage {
+    padding: 20px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .collection:hover {
   transform: translateY(-5px);
   border-color: var(--accent);

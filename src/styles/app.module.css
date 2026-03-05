@@ -18,6 +18,28 @@
   padding-left: 16px;
 }
 
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 20px;
+  }
+  
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    padding-left: 20px;
+    margin-right: -20px;
+  }
+  
+  .section {
+    margin-bottom: 50px;
+  }
+}
+
 .seeAll {
   color: var(--accent);
   font-size: 12px;
