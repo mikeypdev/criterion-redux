@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import { useData } from '../context/DataContext';
+import { fuzzyIncludes } from '../utils/searchUtils';
 import styles from '../styles/filmIndex.module.css';
 
 const FilmIndexView: React.FC = () => {
@@ -60,15 +61,14 @@ const FilmIndexView: React.FC = () => {
   const languages = React.useMemo(() => Array.from(new Set(catalog.flatMap(f => f.languages))).filter(Boolean).sort(), [catalog]);
 
   const filteredFilms = React.useMemo(() => {
-    const q = searchTerm.toLowerCase();
     return catalog.filter(film => {
       const isSpecificID = searchTerm === film.id;
       const matchesSearch = isSpecificID || 
-                           film.title.toLowerCase().includes(q) ||
-                           film.directors.some(d => d.name.toLowerCase().includes(q)) ||
-                           film.cast.some(c => c.name.toLowerCase().includes(q)) ||
-                           film.cinematographers?.some(c => c.name.toLowerCase().includes(q)) ||
-                           film.composers?.some(c => c.name.toLowerCase().includes(q));
+                           fuzzyIncludes(film.title, searchTerm) ||
+                           film.directors.some(d => fuzzyIncludes(d.name, searchTerm)) ||
+                           film.cast.some(c => fuzzyIncludes(c.name, searchTerm)) ||
+                           film.cinematographers?.some(c => fuzzyIncludes(c.name, searchTerm)) ||
+                           film.composers?.some(c => fuzzyIncludes(c.name, searchTerm));
       
       const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
       const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;

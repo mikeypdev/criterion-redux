@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
+import { fuzzyIncludes } from '../utils/searchUtils';
 import styles from '../styles/search.module.css';
 
 const Search: React.FC = () => {
@@ -13,13 +14,12 @@ const Search: React.FC = () => {
 
   const results = React.useMemo(() => {
     if (query.length > 1) {
-      const q = query.toLowerCase();
       return films.filter(f => 
-        f.title.toLowerCase().includes(q) ||
-        f.directors.some(d => d.name.toLowerCase().includes(q)) ||
-        f.cast.some(c => c.name.toLowerCase().includes(q)) ||
-        f.cinematographers?.some(c => c.name.toLowerCase().includes(q)) ||
-        f.composers?.some(c => c.name.toLowerCase().includes(q))
+        fuzzyIncludes(f.title, query) ||
+        f.directors.some(d => fuzzyIncludes(d.name, query)) ||
+        f.cast.some(c => fuzzyIncludes(c.name, query)) ||
+        f.cinematographers?.some(c => fuzzyIncludes(c.name, query)) ||
+        f.composers?.some(c => fuzzyIncludes(c.name, query))
       ).slice(0, 5);
     }
     return [];
