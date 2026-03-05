@@ -6,9 +6,7 @@ A modern, high-performance front-end redesign for the **Criterion Channel** stre
 
 ## 🎥 Project Overview
 
-[Criterion Channel](criterionchannel.com) has an amazing collection of some of the best films ever made. For such a great streaming service, especially one directed at cinemaphiles, the usability of their web site is very poor.
-
-Criterion Redux is a better and more useable front-end. It syncs the list of films from Criterion Channel and presents them in a fast, searchable, easy-to-navigate web site with additional info augmented by [The Movie DB](themoviedb.org). Basically, this front-end makes Criterion Channel look and feel like a modern movie streaming service.
+Criterion Redux is a better and more useable front-end for [Criterion Channel](criterionchannel.com). It syncs the list of films from Criterion Channel and presents them in a fast, searchable, easy-to-navigate web site with additional info augmented by [The Movie DB](themoviedb.org). Basically, this front-end makes Criterion Channel look and feel like a modern movie streaming service.
 
 ***You must have a subscription*** to Criterion Channel to watch any of the flims. This app is **not** a replacement for their streaming service - it’s only an improved presentation and better way to find their films.
 
