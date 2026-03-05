@@ -11,8 +11,10 @@ export const normalizeString = (str: string): string => {
 
 /**
  * Checks if the target string includes the query string, after normalizing both.
+ * Returns true if query is empty.
  */
 export const fuzzyIncludes = (target: string, query: string): boolean => {
-  if (!target || !query) return false;
+  if (!query) return true;
+  if (!target) return false;
   return normalizeString(target).includes(normalizeString(query));
 };
