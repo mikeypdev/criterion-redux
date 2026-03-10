@@ -213,10 +213,32 @@ async function runDeepCrawl(catalog, maxItems) {
         continue;
       }
 
-      // 1. Check landing page for assets
+      // 1. Check landing page for assets and supplemental content
       const landingData = await page.evaluate(() => {
+        const cards = Array.from(document.querySelectorAll('.browse-item-card'));
         const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
         const trailerAnchor = anchors.find(a => a.href.includes('-trailer'));
+        
+        const supplemental = cards.map(card => {
+          const linkEl = card.querySelector('a.browse-item-link');
+          const imgEl = card.querySelector('img');
+          const titleEl = card.querySelector('.browse-item-title strong');
+          const durationEl = card.querySelector('.duration-container');
+          
+          if (!linkEl || !titleEl) return null;
+          
+          const href = linkEl.href;
+          if (href.includes('-trailer')) return null;
+          
+          return {
+            id: href.split('/').pop(),
+            title: titleEl.innerText.trim(),
+            link: href,
+            thumbnailUrl: imgEl ? imgEl.src : '',
+            runtime: durationEl ? Math.round(parseInt(durationEl.innerText.replace(/\D/g, ''), 10) / 60) : undefined
+          };
+        }).filter(Boolean);
+
         const img = document.querySelector('.collection-img, .hero-img, img[src*="vhx.imgix.net/criterionchannelchartersu/assets/"]');
         let highResPoster = img ? img.getAttribute('src') : null;
         if (highResPoster) {
@@ -224,12 +246,18 @@ async function runDeepCrawl(catalog, maxItems) {
         }
         return {
           trailerLink: trailerAnchor ? trailerAnchor.href : null,
-          posterUrl: highResPoster
+          posterUrl: highResPoster,
+          supplemental
         };
       });
 
       if (landingData.trailerLink) film.trailerLink = landingData.trailerLink;
       if (landingData.posterUrl) film.posterUrl = landingData.posterUrl;
+      
+      // Filter supplemental to remove the main film itself
+      if (landingData.supplemental && landingData.supplemental.length > 0) {
+        film.supplemental = landingData.supplemental.filter(s => s.id !== film.id);
+      }
 
       // 2. Check for deeper video page
       const videoLink = await page.evaluate(() => {

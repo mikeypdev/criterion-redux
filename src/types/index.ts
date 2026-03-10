@@ -7,6 +7,14 @@ export interface Person {
   tmdbId?: number;
 }
 
+export interface SupplementalContent {
+  id: string;
+  title: string;
+  link: string;
+  thumbnailUrl: string;
+  runtime?: number;
+}
+
 export interface Film {
   id: string;
   title: string;
@@ -34,6 +42,7 @@ export interface Film {
   imdbId?: string;
   cinematographers?: Person[];
   composers?: Person[];
+  supplemental?: SupplementalContent[];
 }
 
 export interface SyncStatus {
@@ -41,11 +50,10 @@ export interface SyncStatus {
   filmCount: number;
 }
 
-export interface Collection {
-  id: string;
-  title: string;
-  description: string;
-  imageUrl: string;
-  link: string;
-  filmIds: string[];
+export interface SupplementalResult {
+  type: 'supplement';
+  supplement: SupplementalContent;
+  parentFilm: Film;
 }
+
+export type SearchResult = { type: 'film'; film: Film } | SupplementalResult;

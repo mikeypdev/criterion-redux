@@ -1,85 +1,104 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
+import SupplementalCard from '../components/SupplementalCard';
 import { useData } from '../context/DataContext';
 import { fuzzyIncludes } from '../utils/searchUtils';
 import styles from '../styles/filmIndex.module.css';
+import type { SearchResult, Film, SupplementalResult } from '../types';
 
 const FilmIndexView: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { catalog } = useData();
+  const { catalog, isLoading } = useData();
   
-  // Initial state from URL params
-  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
-  const [selectedDecade, setSelectedDecade] = useState<string>(searchParams.get('decade') || '');
-  const [selectedCountry, setSelectedCountry] = useState<string>(searchParams.get('country') || '');
-  const [selectedGenre, setSelectedGenre] = useState<string>(searchParams.get('genre') || '');
-  const [selectedLanguage, setSelectedLanguage] = useState<string>(searchParams.get('language') || '');
-  const [sortBy, setSortBy] = useState<string>(searchParams.get('sort') || 'title-asc');
+  // Single source of truth from URL
+  const searchTerm = searchParams.get('search') || '';
+  const selectedDecade = searchParams.get('decade') || '';
+  const selectedCountry = searchParams.get('country') || '';
+  const selectedGenre = searchParams.get('genre') || '';
+  const selectedLanguage = searchParams.get('language') || '';
+  const sortBy = searchParams.get('sort') || 'title-asc';
   
-  const [limit, setLimit] = useState(48);
+  const [limit, setLimit] = React.useState(48);
   const observerTarget = useRef<HTMLDivElement>(null);
 
-  // Sync state from URL when URL changes (e.g. browser back button)
-  useEffect(() => {
-    setSearchTerm(searchParams.get('search') || '');
-    setSelectedDecade(searchParams.get('decade') || '');
-    setSelectedCountry(searchParams.get('country') || '');
-    setSelectedGenre(searchParams.get('genre') || '');
-    setSelectedLanguage(searchParams.get('language') || '');
-    setSortBy(searchParams.get('sort') || 'title-asc');
-  }, [searchParams]);
-
-  // Update URL params when state changes
-  useEffect(() => {
-    const params: Record<string, string> = {};
-    if (searchTerm) params.search = searchTerm;
-    if (selectedDecade) params.decade = selectedDecade;
-    if (selectedCountry) params.country = selectedCountry;
-    if (selectedGenre) params.genre = selectedGenre;
-    if (selectedLanguage) params.language = selectedLanguage;
-    if (sortBy && sortBy !== 'title-asc') params.sort = sortBy;
-    
-    // Compare current params with new params to avoid redundant updates
-    const currentParams = Object.fromEntries(searchParams.entries());
-    const hasChanged = JSON.stringify(params) !== JSON.stringify(currentParams);
-    
-    if (hasChanged) {
-      setSearchParams(params, { replace: true });
-    }
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, sortBy, setSearchParams, searchParams]);
-
-  // Reset limit when filters or sort change
+  // Reset limit only when filters change
   useEffect(() => {
     setLimit(48);
   }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, sortBy]);
 
-  // Extract unique filter options from the dataset
-  const decades = React.useMemo(() => Array.from(new Set(catalog.map(f => Math.floor(f.year / 10) * 10))).filter(d => d > 0).sort((a, b) => b - a), [catalog]);
-  const countries = React.useMemo(() => Array.from(new Set(catalog.flatMap(f => f.countries))).filter(Boolean).sort(), [catalog]);
-  const genres = React.useMemo(() => Array.from(new Set(catalog.flatMap(f => f.genres))).filter(Boolean).sort(), [catalog]);
-  const languages = React.useMemo(() => Array.from(new Set(catalog.flatMap(f => f.languages))).filter(Boolean).sort(), [catalog]);
+  const updateParam = (key: string, value: string) => {
+    const newParams = new URLSearchParams(searchParams);
+    if (value) {
+      newParams.set(key, value);
+    } else {
+      newParams.delete(key);
+    }
+    setSearchParams(newParams, { replace: true });
+  };
 
-  const filteredFilms = React.useMemo(() => {
-    return catalog.filter(film => {
+  // Extract unique filter options
+  const filterOptions = useMemo(() => {
+    return {
+      decades: Array.from(new Set(catalog.map(f => Math.floor(f.year / 10) * 10))).filter(d => d > 1800 && d < 2100).sort((a, b) => b - a),
+      countries: Array.from(new Set(catalog.flatMap(f => f.countries))).filter(Boolean).sort(),
+      genres: Array.from(new Set(catalog.flatMap(f => f.genres))).filter(Boolean).sort(),
+      languages: Array.from(new Set(catalog.flatMap(f => f.languages))).filter(Boolean).sort(),
+    };
+  }, [catalog]);
+
+  const { filmResults, supplementalResults } = useMemo(() => {
+    const films: Film[] = [];
+    const supplements: SupplementalResult[] = [];
+    const isSearching = searchTerm.trim().length > 0;
+
+    catalog.forEach(film => {
       const isSpecificID = searchTerm === film.id;
-      const matchesSearch = isSpecificID || 
-                           fuzzyIncludes(film.title, searchTerm) ||
-                           film.directors.some(d => fuzzyIncludes(d.name, searchTerm)) ||
-                           film.cast.some(c => fuzzyIncludes(c.name, searchTerm)) ||
-                           film.cinematographers?.some(c => fuzzyIncludes(c.name, searchTerm)) ||
-                           film.composers?.some(c => fuzzyIncludes(c.name, searchTerm));
+      const filmMatches = isSpecificID || 
+                         fuzzyIncludes(film.title, searchTerm) ||
+                         film.directors.some(d => fuzzyIncludes(d.name, searchTerm)) ||
+                         film.cast.some(c => fuzzyIncludes(c.name, searchTerm)) ||
+                         film.cinematographers?.some(c => fuzzyIncludes(c.name, searchTerm)) ||
+                         film.composers?.some(c => fuzzyIncludes(c.name, searchTerm));
       
       const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
       const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;
       const matchesGenre = selectedGenre ? film.genres.includes(selectedGenre) : true;
       const matchesLanguage = selectedLanguage ? film.languages.includes(selectedLanguage) : true;
       
-      return matchesSearch && matchesDecade && matchesCountry && matchesGenre && matchesLanguage;
-    });
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, catalog]);
+      const baseMatches = matchesDecade && matchesCountry && matchesGenre && matchesLanguage;
 
-  // Infinite Scroll logic
+      if (filmMatches && baseMatches) {
+        films.push(film);
+      }
+
+      if (isSearching && baseMatches) {
+        film.supplemental?.forEach(sup => {
+          if (fuzzyIncludes(sup.title, searchTerm)) {
+            supplements.push({ type: 'supplement', supplement: sup, parentFilm: film });
+          }
+        });
+      }
+    });
+
+    // Sort films
+    films.sort((a, b) => {
+      switch (sortBy) {
+        case 'title-asc': return a.title.localeCompare(b.title);
+        case 'title-desc': return b.title.localeCompare(a.title);
+        case 'year-newest': return b.year - a.year;
+        case 'year-oldest': return a.year - b.year;
+        default: return 0;
+      }
+    });
+
+    // Sort supplements by title
+    supplements.sort((a, b) => a.supplement.title.localeCompare(b.supplement.title));
+
+    return { filmResults: films, supplementalResults: supplements };
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, sortBy, catalog]);
+
+  // Infinite Scroll
   useEffect(() => {
     const target = observerTarget.current;
     const observer = new IntersectionObserver(
@@ -90,58 +109,32 @@ const FilmIndexView: React.FC = () => {
       },
       { threshold: 1.0, rootMargin: '400px' }
     );
+    if (target) observer.observe(target);
+    return () => { if (target) observer.unobserve(target); };
+  }, [filmResults.length, supplementalResults.length]);
 
-    if (target) {
-      observer.observe(target);
-    }
+  if (isLoading) {
+    return <div className={styles.loading}>Opening the vaults...</div>;
+  }
 
-    return () => {
-      if (target) {
-        observer.unobserve(target);
-      }
-    };
-  }, [filteredFilms.length]); // Observe when filter results change
+  const clearFilters = () => setSearchParams({}, { replace: true });
 
-  const sortedFilms = React.useMemo(() => {
-    return [...filteredFilms].sort((a, b) => {
-      switch (sortBy) {
-        case 'title-asc':
-          return a.title.localeCompare(b.title);
-        case 'title-desc':
-          return b.title.localeCompare(a.title);
-        case 'year-newest':
-          return b.year - a.year;
-        case 'year-oldest':
-          return a.year - b.year;
-        default:
-          return 0;
-      }
-    });
-  }, [filteredFilms, sortBy]);
-
-  const displayedFilms = sortedFilms.slice(0, limit);
-
-  const clearFilters = () => {
-    setSelectedDecade('');
-    setSelectedCountry('');
-    setSelectedGenre('');
-    setSelectedLanguage('');
-    setSearchTerm('');
-    setSearchParams({}, { replace: true });
-    setSortBy('title-asc');
-  };
+  const displayedFilms = filmResults.slice(0, limit);
 
   return (
     <div className={styles.root}>
       <header className={styles.header}>
-        <h1 className={styles.title}>All Films ({sortedFilms.length})</h1>
+        <h1 className={styles.title}>
+          {searchTerm ? `Results for "${searchTerm}"` : 'All Films'}
+          <span className={styles.countBadge}>{filmResults.length + supplementalResults.length}</span>
+        </h1>
         <div className={styles.searchWrapper}>
           <input 
             type="text" 
-            placeholder="Search films, directors..." 
+            placeholder="Search films, directors, extras..." 
             className={styles.search}
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={(e) => updateParam('search', e.target.value)}
           />
           {(searchTerm || selectedDecade || selectedCountry || selectedGenre || selectedLanguage) && (
             <button className={styles.clearBtn} onClick={clearFilters}>Clear All</button>
@@ -151,60 +144,40 @@ const FilmIndexView: React.FC = () => {
 
       <div className={styles.filtersBar}>
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Decade ({decades.length})</label>
-          <select 
-            className={styles.select}
-            value={selectedDecade}
-            onChange={(e) => setSelectedDecade(e.target.value)}
-          >
+          <label className={styles.label}>Decade</label>
+          <select className={styles.select} value={selectedDecade} onChange={(e) => updateParam('decade', e.target.value)}>
             <option value="">All Decades</option>
-            {decades.map(d => <option key={d} value={d}>{d}s</option>)}
+            {filterOptions.decades.map(d => <option key={d} value={d}>{d}s</option>)}
           </select>
         </div>
 
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Country ({countries.length})</label>
-          <select 
-            className={styles.select}
-            value={selectedCountry}
-            onChange={(e) => setSelectedCountry(e.target.value)}
-          >
+          <label className={styles.label}>Country</label>
+          <select className={styles.select} value={selectedCountry} onChange={(e) => updateParam('country', e.target.value)}>
             <option value="">All Countries</option>
-            {countries.map(c => <option key={c} value={c}>{c}</option>)}
+            {filterOptions.countries.map(c => <option key={c} value={c}>{c}</option>)}
           </select>
         </div>
 
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Genre ({genres.length})</label>
-          <select 
-            className={styles.select}
-            value={selectedGenre}
-            onChange={(e) => setSelectedGenre(e.target.value)}
-          >
+          <label className={styles.label}>Genre</label>
+          <select className={styles.select} value={selectedGenre} onChange={(e) => updateParam('genre', e.target.value)}>
             <option value="">All Genres</option>
-            {genres.map(g => <option key={g} value={g}>{g}</option>)}
+            {filterOptions.genres.map(g => <option key={g} value={g}>{g}</option>)}
           </select>
         </div>
 
         <div className={styles.filterGroup}>
-          <label className={styles.label}>Language ({languages.length})</label>
-          <select 
-            className={styles.select}
-            value={selectedLanguage}
-            onChange={(e) => setSelectedLanguage(e.target.value)}
-          >
+          <label className={styles.label}>Language</label>
+          <select className={styles.select} value={selectedLanguage} onChange={(e) => updateParam('language', e.target.value)}>
             <option value="">All Languages</option>
-            {languages.map(l => <option key={l} value={l}>{l}</option>)}
+            {filterOptions.languages.map(l => <option key={l} value={l}>{l}</option>)}
           </select>
         </div>
 
         <div className={styles.filterGroup}>
           <label className={styles.label}>Sort By</label>
-          <select 
-            className={styles.select}
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-          >
+          <select className={styles.select} value={sortBy} onChange={(e) => updateParam('sort', e.target.value)}>
             <option value="title-asc">Title (A-Z)</option>
             <option value="title-desc">Title (Z-A)</option>
             <option value="year-newest">Release Date (Newest)</option>
@@ -213,15 +186,33 @@ const FilmIndexView: React.FC = () => {
         </div>
       </div>
 
-      <div className={styles.grid}>
-        {displayedFilms.length > 0 ? (
-          displayedFilms.map(film => <FilmCard key={film.id} film={film} />)
-        ) : (
-          <div className={styles.noResults}>No films match your criteria.</div>
-        )}
-      </div>
+      <section className={styles.resultsSection}>
+        {supplementalResults.length > 0 && searchTerm && <h2 className={styles.resultsSubTitle}>Films</h2>}
+        <div className={styles.grid}>
+          {displayedFilms.length > 0 ? (
+            displayedFilms.map(film => <FilmCard key={film.id} film={film} />)
+          ) : (
+            <div className={styles.noResults}>No films match your criteria.</div>
+          )}
+        </div>
+      </section>
 
-      {sortedFilms.length > limit && (
+      {supplementalResults.length > 0 && searchTerm && (
+        <section className={styles.resultsSection}>
+          <h2 className={styles.resultsSubTitle}>Special Features</h2>
+          <div className={styles.grid}>
+            {supplementalResults.map((result, idx) => (
+              <SupplementalCard 
+                key={`sup-${result.parentFilm.id}-${result.supplement.id}-${idx}`} 
+                supplement={result.supplement} 
+                parentFilm={result.parentFilm} 
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {filmResults.length > limit && (
         <div ref={observerTarget} className={styles.loader}>
           <div className={styles.spinner}></div>
           <span>Loading more...</span>

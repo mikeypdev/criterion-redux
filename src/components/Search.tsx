@@ -19,7 +19,8 @@ const Search: React.FC = () => {
         f.directors.some(d => fuzzyIncludes(d.name, query)) ||
         f.cast.some(c => fuzzyIncludes(c.name, query)) ||
         f.cinematographers?.some(c => fuzzyIncludes(c.name, query)) ||
-        f.composers?.some(c => fuzzyIncludes(c.name, query))
+        f.composers?.some(c => fuzzyIncludes(c.name, query)) ||
+        f.supplemental?.some(s => fuzzyIncludes(s.title, query))
       ).slice(0, 5);
     }
     return [];

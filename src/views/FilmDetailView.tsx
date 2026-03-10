@@ -226,6 +226,29 @@ const FilmDetailView: React.FC = () => {
             </div>
           )}
         </aside>
+
+        {film.supplemental && film.supplemental.length > 0 && (
+          <section className={styles.supplementalSection}>
+            <h3 className={styles.sectionTitle}>Special Features</h3>
+            <div className={styles.supplementalGrid}>
+              {film.supplemental.map(s => (
+                <a 
+                  key={s.id} 
+                  href={s.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={styles.supplementalCard}
+                >
+                  <div className={styles.supplementalThumbWrapper}>
+                    <img src={s.thumbnailUrl} alt={s.title} className={styles.supplementalThumb} />
+                    {s.runtime && <span className={styles.supplementalRuntime}>{s.runtime} MIN</span>}
+                  </div>
+                  <div className={styles.supplementalTitle}>{s.title}</div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );

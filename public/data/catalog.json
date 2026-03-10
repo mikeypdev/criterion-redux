@@ -31568,7 +31568,65 @@
     "tmdbAttempted": true,
     "trailerLink": "https://www.criterionchannel.com/breathless/videos/breathless-trailer",
     "posterUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4ae5c77e-f06d-4b11-8319-eeec6d34954d.jpg?auto=format%2Ccompress&fit=max&h=2160&q=100&w=3840",
-    "enriched": false
+    "enriched": true,
+    "supplemental": [
+      {
+        "id": "spotlight-on-breathless",
+        "title": "Spotlight on BREATHLESS",
+        "link": "https://www.criterionchannel.com/breathless/videos/spotlight-on-breathless",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/023c504c-3997-4e7a-9f81-aab01529c7a7.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 7
+      },
+      {
+        "id": "breathless-archival-interviews",
+        "title": "BREATHLESS: Archival Interviews",
+        "link": "https://www.criterionchannel.com/breathless/videos/breathless-archival-interviews",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6adb8ebe-c4e3-4715-9b16-0e0e1d6d9379-9091af35.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 45
+      },
+      {
+        "id": "coutard-and-rissient-on-breathless",
+        "title": "Coutard and Rissient on BREATHLESS",
+        "link": "https://www.criterionchannel.com/breathless/videos/coutard-and-rissient-on-breathless",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/37528d80-c0da-4bc1-963c-9d36cf2c08b9.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 37
+      },
+      {
+        "id": "pennebaker-on-breathless",
+        "title": "Pennebaker on BREATHLESS",
+        "link": "https://www.criterionchannel.com/breathless/videos/pennebaker-on-breathless",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/489e6396-9920-4391-88d6-65e7e7cbff1f.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 17
+      },
+      {
+        "id": "breathless-as-criticism",
+        "title": "BREATHLESS as Criticism",
+        "link": "https://www.criterionchannel.com/breathless/videos/breathless-as-criticism",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a7e2030a-fbd5-41d8-95ca-99dd6eb8ffec.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 19
+      },
+      {
+        "id": "jean-seberg",
+        "title": "Jean Seberg: A Video Essay by Mark Rappaport",
+        "link": "https://www.criterionchannel.com/breathless/videos/jean-seberg",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/372f05f5-5971-475f-8f88-7f8e64de1a8f.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 32
+      },
+      {
+        "id": "chambre-12-hotel-de-suede",
+        "title": "Chambre 12, hôtel de Suède",
+        "link": "https://www.criterionchannel.com/breathless/videos/chambre-12-hotel-de-suede",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/52197212-f7d4-44d2-ac28-ac29400293ef.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 197
+      },
+      {
+        "id": "what-they-said-jean-seberg",
+        "title": "Jean Seberg on BREATHLESS",
+        "link": "https://www.criterionchannel.com/breathless/videos/what-they-said-jean-seberg",
+        "thumbnailUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1ce17821-9a02-4321-a944-3ae26f591e6b-ed743a48.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640",
+        "runtime": 2
+      }
+    ]
   },
   {
     "id": "brideshead-revisited",
@@ -88991,7 +89049,7 @@
     "id": "ghost-in-the-shell-stand-alone-complex-episode-17",
     "title": "GHOST IN THE SHELL: STAND ALONE COMPLEX: Episode 17",
     "link": "https://www.criterionchannel.com/videos/ghost-in-the-shell-stand-alone-complex-episode-17",
-    "year": 20032,
+    "year": 2003,
     "runtime": 25,
     "directors": [
       {
