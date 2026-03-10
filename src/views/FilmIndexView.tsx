@@ -5,7 +5,7 @@ import SupplementalCard from '../components/SupplementalCard';
 import { useData } from '../context/DataContext';
 import { fuzzyIncludes } from '../utils/searchUtils';
 import styles from '../styles/filmIndex.module.css';
-import type { SearchResult, Film, SupplementalResult } from '../types';
+import type { Film, SupplementalResult } from '../types';
 
 const FilmIndexView: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();

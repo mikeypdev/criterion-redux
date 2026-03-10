@@ -50,6 +50,15 @@ export interface SyncStatus {
   filmCount: number;
 }
 
+export interface Collection {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  link: string;
+  filmIds: string[];
+}
+
 export interface SupplementalResult {
   type: 'supplement';
   supplement: SupplementalContent;

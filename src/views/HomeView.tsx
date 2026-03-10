@@ -110,7 +110,7 @@ const HomeView: React.FC = () => {
               <Link to={`/collections/${collection.id}`} className={styles.seeAll}>More from this series</Link>
             </div>
             <div className={styles.carousel}>
-              {collectionFilms.map(film => (
+              {collectionFilms.map((film: Film) => (
                 <FilmCard key={film.id} film={film} />
               ))}
             </div>
