@@ -196,8 +196,7 @@ async function runDeepCrawl(catalog, maxItems) {
 
   for (let i = 0; i < catalog.length && updatedCount < maxItems; i++) {
     const film = catalog[i];
-    const hasRealSynopsis = film.synopsis && !film.synopsis.includes(GENERIC_SYNOPSIS);
-    if (film.enriched || (hasRealSynopsis && film.runtime > 0 && (film.genres?.length || 0) > 0)) continue;
+    if (film.enriched) continue;
     if (!film.link) continue;
 
     try {
