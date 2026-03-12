@@ -221535,35 +221535,20 @@
       {
         "id": "kris-bidenko",
         "name": "Kris Bidenko",
-        "role": "actor",
-        "tmdbId": 187164
+        "role": "actor"
       },
       {
         "id": "emma-coles",
         "name": "Emma Coles",
-        "role": "actor",
-        "tmdbId": 1078602
+        "role": "actor"
       },
       {
         "id": "kris-mcquade",
         "name": "Kris McQuade",
-        "role": "actor",
-        "tmdbId": 110008
-      },
-      {
-        "id": "peter-hehir",
-        "name": "Peter Hehir",
-        "role": "actor",
-        "tmdbId": 75716
-      },
-      {
-        "id": "kerry-dwyer",
-        "name": "Kerry Dwyer",
-        "role": "actor",
-        "tmdbId": 1565622
+        "role": "actor"
       }
     ],
-    "synopsis": "The story of the end of a friendship between two teenage girls, told backwards over the course of nine months.",
+    "synopsis": "Starring Kris Bidenko, Emma Coles, Kris McQuade\n\nThis ambitious TV movie by Jane Campion was heralded at the 1986 Cannes Film Festival as the arrival of a major new filmmaking voice. TWO FRIENDS’s screenplay, by renowned Australian novelist Helen Garner, is articulate, assured, and enthralling. The film begins in the present, when teenage friends Louise and Kelly, once inseparable, have already grown apart. Louise is in high school, gets good grades, and has a typical love-hate relationship with her divorced mother. Kelly, in bleached hair and punk gear, lives with friends at the beach and is experimenting with drugs and casual relationships. Campion then takes the film backward in time over the past year in the girls’ friendship. In five episodes, the film reveals the subtle changes that sent the two on their different paths. With the humor, fierce honesty, and passionate sense of humanity that are the hallmarks of Campion’s best work, she tells a story of missed opportunities and minor traumas that take on profound new meanings with the passage of time.",
     "genres": [
       "Drama",
       "TV Movie"
@@ -221578,7 +221563,7 @@
     "dateAdded": "2026-03-02",
     "leavingSoon": false,
     "tagline": "",
-    "synopsisSource": "tmdb",
+    "synopsisSource": "criterion",
     "imdbId": "tt0092123",
     "cinematographers": [
       {
@@ -221598,7 +221583,9 @@
     ],
     "trailerKey": "WWWZYp_DARQ",
     "tmdbAttempted": true,
-    "enriched": false
+    "enriched": true,
+    "posterUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2ef158c6-1a3a-4d71-9d1b-f28b8b4a9a0c.jpg?auto=format%2Ccompress&fit=max&h=2160&q=100&w=3840",
+    "supplemental": []
   },
   {
     "id": "two-girls-on-the-street",
