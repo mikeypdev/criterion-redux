@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
-import { useData } from '../context/DataContext';
+import { useData } from '../context/useData';
 import type { Film, Collection } from '../types';
 import styles from '../styles/app.module.css';
 

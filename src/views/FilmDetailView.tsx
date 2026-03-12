@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { useData } from '../context/DataContext';
+import { useData } from '../context/useData';
 import PersonLink from '../components/PersonLink';
 import { useWatchlist } from '../context/WatchlistContext';
 import styles from '../styles/filmDetailView.module.css';

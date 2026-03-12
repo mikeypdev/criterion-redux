@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { useData } from '../context/DataContext';
+import { useData } from '../context/useData';
 import type { Film, Collection } from '../types';
 import FilmCard from '../components/FilmCard';
 import styles from '../styles/collectionsView.module.css';
@@ -17,7 +17,7 @@ const CollectionDetailView: React.FC = () => {
     return <div className={styles.loading}>Assembling collection...</div>;
   }
 
-  let collection: Collection | undefined = collections.find(c => (c as any).id === id);
+  let collection: Collection | undefined = collections.find(c => c.id === id);
   
   // Handle virtual 'Leaving Soon' collection
   if (!collection && id === 'leaving-soon') {

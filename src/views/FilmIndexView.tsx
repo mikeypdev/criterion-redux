@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import SupplementalCard from '../components/SupplementalCard';
-import { useData } from '../context/DataContext';
+import { useData } from '../context/useData';
 import { fuzzyIncludes } from '../utils/searchUtils';
 import styles from '../styles/filmIndex.module.css';
 import type { Film, SupplementalResult } from '../types';
@@ -22,11 +22,6 @@ const FilmIndexView: React.FC = () => {
   const [limit, setLimit] = React.useState(48);
   const observerTarget = useRef<HTMLDivElement>(null);
 
-  // Reset limit only when filters change
-  useEffect(() => {
-    setLimit(48);
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, sortBy]);
-
   const updateParam = (key: string, value: string) => {
     const newParams = new URLSearchParams(searchParams);
     if (value) {
@@ -34,6 +29,7 @@ const FilmIndexView: React.FC = () => {
     } else {
       newParams.delete(key);
     }
+    setLimit(48);
     setSearchParams(newParams, { replace: true });
   };
 
@@ -117,7 +113,10 @@ const FilmIndexView: React.FC = () => {
     return <div className={styles.loading}>Opening the vaults...</div>;
   }
 
-  const clearFilters = () => setSearchParams({}, { replace: true });
+  const clearFilters = () => {
+    setLimit(48);
+    setSearchParams({}, { replace: true });
+  };
 
   const displayedFilms = filmResults.slice(0, limit);
 

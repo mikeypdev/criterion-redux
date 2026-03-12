@@ -1,6 +1,6 @@
 import React from 'react';
 import { useWatchlist } from '../context/WatchlistContext';
-import { useData } from '../context/DataContext';
+import { useData } from '../context/useData';
 import FilmCard from '../components/FilmCard';
 import styles from '../styles/watchlistView.module.css';
 import { Link } from 'react-router-dom';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useData } from '../context/DataContext';
+import { useData } from '../context/useData';
 import styles from '../styles/layout.module.css';
 import Search from './Search';
 

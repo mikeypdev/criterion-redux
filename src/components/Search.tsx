@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useData } from '../context/DataContext';
+import { useData } from '../context/useData';
 import { fuzzyIncludes } from '../utils/searchUtils';
 import styles from '../styles/search.module.css';
 
