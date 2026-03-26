@@ -59,13 +59,17 @@ async function runSync() {
   console.log('Step 3: Syncing curated collections...');
   execSync('node scripts/scrape_collections.js', { stdio: 'inherit' });
 
-  // 4. Update Status (Timestamp)
+  // 4. Genre Sync
+  console.log('Step 4: Syncing Criterion genres...');
+  execSync('node scripts/scrape_genres.js', { stdio: 'inherit' });
+
+  // 5. Update Status (Timestamp)
   const status = {
     lastUpdated: new Date().toISOString(),
     filmCount: JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8')).length
   };
   fs.writeFileSync('./public/data/status.json', JSON.stringify(status, null, 2));
-  console.log(`Step 4: Updated status.json with timestamp: ${status.lastUpdated}`);
+  console.log(`Step 5: Updated status.json with timestamp: ${status.lastUpdated}`);
 
   console.log('--- SYNC COMPLETED SUCCESSFULLY ---');
 }
