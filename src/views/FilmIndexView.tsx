@@ -17,6 +17,7 @@ const FilmIndexView: React.FC = () => {
   const selectedCountry = searchParams.get('country') || '';
   const selectedGenre = searchParams.get('genre') || '';
   const selectedLanguage = searchParams.get('language') || '';
+  const selectedDuration = searchParams.get('duration') || '';
   const sortBy = searchParams.get('sort') || 'title-asc';
   
   const [limit, setLimit] = React.useState(48);
@@ -40,6 +41,13 @@ const FilmIndexView: React.FC = () => {
       countries: Array.from(new Set(catalog.flatMap(f => f.countries))).filter(Boolean).sort(),
       genres: Array.from(new Set(catalog.flatMap(f => f.genres))).filter(Boolean).sort(),
       languages: Array.from(new Set(catalog.flatMap(f => f.languages))).filter(Boolean).sort(),
+      durations: [
+        { label: 'Short (Under 60m)', value: '0-60' },
+        { label: 'Feature (60-90m)', value: '60-90' },
+        { label: 'Feature (90-120m)', value: '90-120' },
+        { label: 'Epic (120-180m)', value: '120-180' },
+        { label: 'Mega Epic (Over 180m)', value: '180-9999' },
+      ]
     };
   }, [catalog]);
 
@@ -62,7 +70,13 @@ const FilmIndexView: React.FC = () => {
       const matchesGenre = selectedGenre ? film.genres.includes(selectedGenre) : true;
       const matchesLanguage = selectedLanguage ? film.languages.includes(selectedLanguage) : true;
       
-      const baseMatches = matchesDecade && matchesCountry && matchesGenre && matchesLanguage;
+      let matchesDuration = true;
+      if (selectedDuration) {
+        const [min, max] = selectedDuration.split('-').map(Number);
+        matchesDuration = film.runtime >= min && film.runtime < max;
+      }
+      
+      const baseMatches = matchesDecade && matchesCountry && matchesGenre && matchesLanguage && matchesDuration;
 
       if (filmMatches && baseMatches) {
         films.push(film);
@@ -84,6 +98,8 @@ const FilmIndexView: React.FC = () => {
         case 'title-desc': return b.title.localeCompare(a.title);
         case 'year-newest': return b.year - a.year;
         case 'year-oldest': return a.year - b.year;
+        case 'duration-asc': return a.runtime - b.runtime;
+        case 'duration-desc': return b.runtime - a.runtime;
         default: return 0;
       }
     });
@@ -92,7 +108,7 @@ const FilmIndexView: React.FC = () => {
     supplements.sort((a, b) => a.supplement.title.localeCompare(b.supplement.title));
 
     return { filmResults: films, supplementalResults: supplements };
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, sortBy, catalog]);
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedDuration, sortBy, catalog]);
 
   // Infinite Scroll
   useEffect(() => {
@@ -135,7 +151,7 @@ const FilmIndexView: React.FC = () => {
             value={searchTerm}
             onChange={(e) => updateParam('search', e.target.value)}
           />
-          {(searchTerm || selectedDecade || selectedCountry || selectedGenre || selectedLanguage) && (
+          {(searchTerm || selectedDecade || selectedCountry || selectedGenre || selectedLanguage || selectedDuration) && (
             <button className={styles.clearBtn} onClick={clearFilters}>Clear All</button>
           )}
         </div>
@@ -175,12 +191,22 @@ const FilmIndexView: React.FC = () => {
         </div>
 
         <div className={styles.filterGroup}>
+          <label className={styles.label}>Duration</label>
+          <select className={styles.select} value={selectedDuration} onChange={(e) => updateParam('duration', e.target.value)}>
+            <option value="">Any Length</option>
+            {filterOptions.durations.map(d => <option key={d.value} value={d.value}>{d.label}</option>)}
+          </select>
+        </div>
+
+        <div className={styles.filterGroup}>
           <label className={styles.label}>Sort By</label>
           <select className={styles.select} value={sortBy} onChange={(e) => updateParam('sort', e.target.value)}>
             <option value="title-asc">Title (A-Z)</option>
             <option value="title-desc">Title (Z-A)</option>
             <option value="year-newest">Release Date (Newest)</option>
             <option value="year-oldest">Release Date (Oldest)</option>
+            <option value="duration-asc">Duration (Shortest)</option>
+            <option value="duration-desc">Duration (Longest)</option>
           </select>
         </div>
       </div>

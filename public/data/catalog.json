@@ -25360,9 +25360,10 @@
         "role": "actor"
       },
       {
-        "id": "frances-mcdorm",
-        "name": "Frances McDorm",
-        "role": "actor"
+        "id": "frances-mcdormand",
+        "name": "Frances McDormand",
+        "role": "actor",
+        "tmdbId": 10297
       },
       {
         "id": "dan-hedaya",
@@ -74815,7 +74816,7 @@
     "title": "Fires on the Plain",
     "link": "https://www.criterionchannel.com/fires-on-the-plain",
     "year": 1959,
-    "runtime": 1959,
+    "runtime": 104,
     "directors": [
       {
         "id": "kon-ichikawa",
@@ -85616,7 +85617,7 @@
     "title": "Gigi (from 9 to 5)",
     "link": "https://www.criterionchannel.com/gigi-from-9-to-5",
     "year": 2001,
-    "runtime": 2001,
+    "runtime": 8,
     "directors": [
       {
         "id": "joanne-nucho",
@@ -102177,7 +102178,7 @@
     "title": "House",
     "link": "https://www.criterionchannel.com/house-1",
     "year": 1977,
-    "runtime": 1977,
+    "runtime": 88,
     "directors": [
       {
         "id": "nobuhiko-obayashi",
@@ -122398,7 +122399,7 @@
     "title": "Late Autumn",
     "link": "https://www.criterionchannel.com/late-autumn",
     "year": 1960,
-    "runtime": 1949,
+    "runtime": 128,
     "directors": [
       {
         "id": "yasujiro-ozu",
@@ -161527,7 +161528,7 @@
     "title": "Original Cast Album: “Company”",
     "link": "https://www.criterionchannel.com/original-cast-album-company",
     "year": 1970,
-    "runtime": 1970,
+    "runtime": 53,
     "directors": [
       {
         "id": "d-a-pennebaker",
@@ -183852,7 +183853,7 @@
     "title": "The Rope",
     "link": "https://www.criterionchannel.com/the-rope",
     "year": 1984,
-    "runtime": 1822,
+    "runtime": 31,
     "directors": [
       {
         "id": "ibrahim-shaddad",
@@ -222869,7 +222870,7 @@
     "title": "Turumba",
     "link": "https://www.criterionchannel.com/turumba",
     "year": 1981,
-    "runtime": 1972,
+    "runtime": 95,
     "directors": [
       {
         "id": "kidlat-tahimik",
@@ -225331,7 +225332,7 @@
     "title": "Une chambre en ville",
     "link": "https://www.criterionchannel.com/une-chambre-en-ville",
     "year": 1982,
-    "runtime": 1987,
+    "runtime": 90,
     "directors": [
       {
         "id": "jacques-demy",
@@ -226768,7 +226769,7 @@
     "title": "Vampyr",
     "link": "https://www.criterionchannel.com/vampyr",
     "year": 1932,
-    "runtime": 1932,
+    "runtime": 75,
     "directors": [
       {
         "id": "carl-th-dreyer",
@@ -229577,7 +229578,7 @@
     "title": "Visions of Eight",
     "link": "https://www.criterionchannel.com/visions-of-eight",
     "year": 1973,
-    "runtime": 1972,
+    "runtime": 110,
     "directors": [
       {
         "id": "juri-ozerov-mai-zetterling-arthur-penn-michael-pfleghar-kon-ichikawa-milo-forman-claude-lelouch-and-john-schlesinger",
