@@ -6,6 +6,13 @@ import path from 'path';
 const TARGET_URL = 'https://films.criterionchannel.com/';
 const OUTPUT_PATH = path.resolve('public/data/catalog.json');
 
+function normalizeString(str) {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+}
+
 async function scrapeFilms() {
   try {
     console.log(`Fetching ${TARGET_URL}...`);

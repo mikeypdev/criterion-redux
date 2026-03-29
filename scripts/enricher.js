@@ -13,13 +13,20 @@ const deepCrawlLimiter = new Bottleneck({ minTime: 2000 }); // 2s for web scrapi
 const tmdbLimiter = new Bottleneck({ minTime: 250 });      // 4 req/s for TMDB API
 
 const GENERIC_SYNOPSIS = "Classics and discoveries from around the world";
+function normalizeString(str) {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+}
 
 function decodeEntities(text) {
   if (!text) return '';
   return text
     .replace(/&#39;/g, "'")
     .replace(/&quot;/g, '"')
-    .replace(/&amp;/g, '&')
+    .replace(/&amp;/g, '&');
+}
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&rsquo;/g, "'")
@@ -327,8 +334,8 @@ async function runDeepCrawl(catalog, maxItems) {
         if (metaSynopsis.toLowerCase().includes('starring')) {
           const castMatch = metaSynopsis.match(/starring\s+([^•\.\n]+)/i);
           if (castMatch) {
-            film.cast = castMatch[1].split(/,|and/).map(n => ({
-              id: n.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+            film.cast = decodedCast.split(/,|\band\b/i).map(n => ({
+              id: normalizeString(n.trim()).replace(/[^a-z0-9]+/g, '-'),
               name: n.trim().replace(/\.$/, ''),
               role: 'actor',
               tmdbId: undefined
