@@ -1,5 +1,93 @@
 [
   {
+    "id": "corporate-thrillers",
+    "title": "Corporate Thrillers",
+    "description": "Curated collection: Corporate Thrillers",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fb844509-7727-4a6c-91bd-3f83e89f9f78.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/corporate-thrillers",
+    "filmIds": [
+      "wall-street",
+      "the-firm",
+      "disclosure",
+      "michael-clayton",
+      "primal-fear",
+      "the-devil-s-advocate",
+      "antitrust",
+      "the-deal",
+      "the-international",
+      "arbitrage"
+    ]
+  },
+  {
+    "id": "three-noirs-by-jacques-tourneur",
+    "title": "Three Noirs By Jacques Tourneur",
+    "description": "Curated collection: Three Noirs by Jacques Tourneur",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fa9c6b12-7350-4b15-9cf4-05aee9cb5f22.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/three-noirs-by-jacques-tourneur",
+    "filmIds": [
+      "out-of-the-past",
+      "berlin-express",
+      "nightfall"
+    ]
+  },
+  {
+    "id": "mary-bronstein-s-adventures-in-moviegoing",
+    "title": "Mary Bronstein’s Adventures In Moviegoing",
+    "description": "Curated collection: Mary Bronstein’s Adventures in Moviegoing",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/66821477-9763-48c1-aa9f-4d6a087389cf.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/mary-bronstein-s-adventures-in-moviegoing",
+    "filmIds": [
+      "mary-bronstein-in-conversation",
+      "mary-bronstein-on-smithereens",
+      "smithereens",
+      "mary-bronstein-on-portrait-of-jason",
+      "portrait-of-jason",
+      "mary-bronstein-on-news-from-home",
+      "news-from-home",
+      "mary-bronstein-on-night-of-the-living-dead",
+      "night-of-the-living-dead",
+      "channel-c058850-amg-marybronstein-frownland",
+      "frownland-a-film-by-ronand-bronstein"
+    ]
+  },
+  {
+    "id": "directed-by-emile-de-antonio",
+    "title": "Directed By Emile De Antonio",
+    "description": "Curated collection: Directed by Emile de Antonio",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2ec6a3ef-7e18-4b09-b978-a446339b994b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/directed-by-emile-de-antonio",
+    "filmIds": [
+      "point-of-order",
+      "painters-painting",
+      "rush-to-judgment",
+      "millhouse",
+      "in-the-year-of-the-pig",
+      "underground",
+      "in-the-king-of-prussia",
+      "mr-hoover-and-i"
+    ]
+  },
+  {
+    "id": "tramps-troublemakers-and-trailblazers-trans-filmmakers",
+    "title": "Tramps, Troublemakers, And Trailblazers: Trans Filmmakers",
+    "description": "Curated collection: Tramps, Troublemakers, and Trailblazers: Trans Filmmakers",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7813dabd-69ee-47f4-9725-cb98d680cbff.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/tramps-troublemakers-and-trailblazers-trans-filmmakers",
+    "filmIds": [
+      "we-re-all-going-to-the-world-s-fair",
+      "castration-movie-anthology-i-traps",
+      "lingua-franca",
+      "no-ordinary-man",
+      "dog-movie",
+      "maggots-and-men",
+      "so-pretty",
+      "gender-troublemakers",
+      "rupert-remembers",
+      "drunktown-s-finest",
+      "queens-of-drama"
+    ]
+  },
+  {
     "id": "vhs-forever",
     "title": "Vhs Forever",
     "description": "Curated collection: VHS Forever",
@@ -8,7 +96,6 @@
     "filmIds": [
       "videoheaven",
       "body-double",
-      "videodrome",
       "the-ring-1",
       "ring",
       "clerks",
@@ -22,18 +109,6 @@
       "the-watermelon-woman",
       "lost-highway",
       "benny-s-video"
-    ]
-  },
-  {
-    "id": "three-starring-gwyneth-paltrow",
-    "title": "Three Starring Gwyneth Paltrow",
-    "description": "Curated collection: Three Starring Gwyneth Paltrow",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ef6c7b6e-37bb-4808-8010-012d5d4f338f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/three-starring-gwyneth-paltrow",
-    "filmIds": [
-      "a-perfect-murder",
-      "two-lovers",
-      "sliding-doors"
     ]
   },
   {
@@ -51,6 +126,17 @@
       "4-months-3-weeks-and-2-days",
       "police-adjective",
       "tuesday-after-christmas"
+    ]
+  },
+  {
+    "id": "two-short-films-by-charlie-kaufman-and-eva-h-d",
+    "title": "Two Short Films By Charlie Kaufman And Eva H.d.",
+    "description": "Curated collection: Two Short Films by Charlie Kaufman and Eva H.D.",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a7fbdc09-e210-4ddf-b2aa-dbd65d43f89b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/two-short-films-by-charlie-kaufman-and-eva-h-d",
+    "filmIds": [
+      "jackals-fireflies",
+      "how-to-shoot-a-ghost"
     ]
   },
   {
@@ -104,15 +190,10 @@
     "link": "https://www.criterionchannel.com/yearning-1",
     "filmIds": [
       "all-that-heaven-allows",
-      "my-own-private-idaho",
       "the-age-of-innocence",
-      "bright-star",
       "god-s-own-country",
       "preparations-to-be-together-for-an-unknown-period-of-time",
       "the-deep-blue-sea",
-      "pandora-and-the-flying-dutchman",
-      "maurice",
-      "brideshead-revisited",
       "the-passionate-friends",
       "in-the-mood-for-love-alternate-version",
       "the-bitter-tears-of-petra-von-kant"
@@ -127,37 +208,14 @@
     "filmIds": [
       "buddy-joe-hooker-interview",
       "35623-death-proof",
-      "ben-hur",
       "to-live-and-die-in-l-a",
-      "bullitt",
       "gone-in-60-seconds",
-      "hooper",
-      "the-hunted",
       "safety-last",
       "the-general",
       "steamboat-bill-jr",
       "stagecoach",
       "police-story",
       "hard-boiled"
-    ]
-  },
-  {
-    "id": "mervyn-leroy-s-pre-code-films",
-    "title": "Mervyn Leroy’s Pre-code Films",
-    "description": "Curated collection: Mervyn LeRoy’s Pre-Code Films",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5e06f1b8-e5c6-4a20-8c36-f4389c73018e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/mervyn-leroy-s-pre-code-films",
-    "filmIds": [
-      "five-star-final",
-      "little-caesar",
-      "big-city-blues",
-      "high-pressure",
-      "i-am-a-fugitive-from-a-chain-gang",
-      "three-on-a-match",
-      "gold-diggers-of-1933",
-      "hard-to-handle",
-      "heat-lightning",
-      "hi-nellie"
     ]
   },
   {
