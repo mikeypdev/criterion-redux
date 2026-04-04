@@ -51,10 +51,12 @@ const countryToLanguage = {
 
 function localEnrich() {
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8'));
+  const collections = JSON.parse(fs.readFileSync(path.resolve('public/data/collections.json'), 'utf-8'));
   console.log(`Locally enriching ${catalog.length} films...`);
 
   let genreCount = 0;
   let langCount = 0;
+  let linkCount = 0;
 
   for (const film of catalog) {
     const text = (film.title + ' ' + (film.synopsis || '')).toLowerCase();
@@ -86,10 +88,30 @@ function localEnrich() {
     }
   }
 
+  // 3. Link collection episodes (year=0) to their parent collection
+  const filmMap = new Map(catalog.map(f => [f.id, f]));
+  const episodeCollections = new Map();
+  for (const coll of collections) {
+    for (const fid of coll.filmIds || []) {
+      const film = filmMap.get(fid);
+      if (film && (!film.year || film.year === 0) && coll.link) {
+        episodeCollections.set(fid, (episodeCollections.get(fid) || []).concat(coll));
+      }
+    }
+  }
+  for (const [fid, colls] of episodeCollections) {
+    const film = filmMap.get(fid);
+    const best = colls.length === 1 ? colls[0] : colls.reduce((a, b) => a.id.length >= b.id.length ? a : b);
+    film.link = best.link;
+    film.enriched = true;
+    linkCount++;
+  }
+
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2));
   console.log(`Local enrichment complete.`);
   console.log(`- Updated genres for ${genreCount} films.`);
   console.log(`- Updated languages for ${langCount} films.`);
+  console.log(`- Linked ${linkCount} collection episodes to parent collections.`);
 }
 
 localEnrich();

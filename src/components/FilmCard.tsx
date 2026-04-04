@@ -45,7 +45,7 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
         <div className={`${styles.overlay} ${isHovered ? styles.overlayVisible : ''}`}>
           <div className={styles.content}>
             <h3 className={styles.title}>{film.title}</h3>
-            <p className={styles.meta}>{film.year} • {film.runtime > 0 ? `${film.runtime} min` : ''}</p>
+            <p className={styles.meta}>{film.year > 0 ? `${film.year} • ` : ''}{film.runtime > 0 ? `${film.runtime} min` : ''}</p>
             
             <div className={styles.director}>
               Dir: {film.directors.map((d, i) => (

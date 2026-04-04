@@ -79,7 +79,7 @@ const FilmDetailView: React.FC = () => {
           {film.tagline && <p className={styles.tagline}>“{film.tagline}”</p>}
           
           <div className={styles.metaLine}>
-            <span>{film.year}</span>
+            {film.year > 0 && <span>{film.year}</span>}
             {film.runtime > 0 && <span>{film.runtime} MIN</span>}
             {film.aspectRatio && <span>{film.aspectRatio}</span>}
           </div>

@@ -25,8 +25,7 @@ function decodeEntities(text) {
   return text
     .replace(/&#39;/g, "'")
     .replace(/&quot;/g, '"')
-    .replace(/&amp;/g, '&');
-}
+    .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&rsquo;/g, "'")
@@ -213,8 +212,13 @@ async function runDeepCrawl(catalog, maxItems) {
       await page.waitForTimeout(1000);
 
       if (page.url().includes('/browse') && !film.link.includes('/browse')) {
-        console.warn(`  - Redirect detected for ${film.title}. Marking for removal.`);
-        film._remove = true;
+        if (film.year === 0 || !film.year) {
+          console.warn(`  - Redirect detected for ${film.title} (collection episode). Preserving without enrichment.`);
+          film.enriched = true;
+        } else {
+          console.warn(`  - Redirect detected for ${film.title}. Marking for removal.`);
+          film._remove = true;
+        }
         updatedCount++;
         continue;
       }
@@ -241,7 +245,7 @@ async function runDeepCrawl(catalog, maxItems) {
             title: titleEl.innerText.trim(),
             link: href,
             thumbnailUrl: imgEl ? imgEl.src : '',
-            runtime: durationEl ? Math.round(parseInt(durationEl.innerText.replace(/\D/g, ''), 10) / 60) : undefined
+            runtime: durationEl ? Math.max(1, Math.round(parseInt(durationEl.innerText.replace(/\D/g, ''), 10) / 60)) : undefined
           };
         }).filter(Boolean);
 
@@ -334,6 +338,7 @@ async function runDeepCrawl(catalog, maxItems) {
         if (metaSynopsis.toLowerCase().includes('starring')) {
           const castMatch = metaSynopsis.match(/starring\s+([^•\.\n]+)/i);
           if (castMatch) {
+            const decodedCast = decodeEntities(castMatch[1]);
             film.cast = decodedCast.split(/,|\band\b/i).map(n => ({
               id: normalizeString(n.trim()).replace(/[^a-z0-9]+/g, '-'),
               name: n.trim().replace(/\.$/, ''),
