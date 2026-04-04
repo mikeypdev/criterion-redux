@@ -11,13 +11,9 @@ async function runSync() {
 
   console.log('--- STARTING CRITERION DATA SYNC ---');
 
-  // 1. Base Scrape (Optional or if catalog missing)
-  if (fullScrape || !fs.existsSync(CATALOG_PATH)) {
-    console.log('Step 1: Running base scraper...');
-    execSync('node scripts/scraper.js', { stdio: 'inherit' });
-  } else {
-    console.log('Step 1: Skipping base scrape (use FULL_SCRAPE=true to force).');
-  }
+  // 1. Base Scrape (Always run - it's fast and updates new arrivals)
+  console.log('Step 1: Running base scraper to catch new arrivals...');
+  execSync('node scripts/scraper.js', { stdio: 'inherit' });
 
   // 2. Metadata Enrichment
   const continuous = process.env.CONTINUOUS === 'true';

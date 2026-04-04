@@ -16,13 +16,32 @@ function normalizeString(str) {
 async function scrapeFilms() {
   try {
     console.log(`Fetching ${TARGET_URL}...`);
-    const { data } = await axios.get(TARGET_URL, {
+    const { data: indexData } = await axios.get(TARGET_URL, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
       },
     });
 
-    const $ = cheerio.load(data);
+    // 0. Pre-fetch the home page to see what is TRULY new
+    const homeUrl = 'https://www.criterionchannel.com/';
+    console.log(`Checking Criterion home page for new arrivals...`);
+    const { data: homeData } = await axios.get(homeUrl);
+    const $home = cheerio.load(homeData);
+    
+    // Find the 'Newly Added' section
+    const newlyAddedIds = new Set();
+    $home('section').each((i, section) => {
+      const title = $home(section).find('h2').text().toLowerCase();
+      if (title.includes('newly added')) {
+        $home(section).find('a[href*="/videos/"]').each((j, link) => {
+          const id = $home(link).attr('href').split('/').filter(Boolean).pop();
+          if (id) newlyAddedIds.add(id);
+        });
+      }
+    });
+    console.log(`Found ${newlyAddedIds.size} truly new films on the home page.`);
+
+    const $ = cheerio.load(indexData);
     const films = [];
     const existingCatalog = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf-8')) : [];
     const existingMap = new Map(existingCatalog.map(f => [f.id, f]));
@@ -52,14 +71,20 @@ async function scrapeFilms() {
         const id = link ? link.split('/').pop() : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
         const existingFilm = existingMap.get(id);
 
-        // Map to our Film type (with placeholders for now)
+        // Date Logic: If it's on the home page as 'Newly Added', force a fresh date
+        let dateAdded = existingFilm?.dateAdded || new Date().toISOString().split('T')[0];
+        if (newlyAddedIds.has(id)) {
+          dateAdded = new Date().toISOString().split('T')[0];
+        }
+
+        // Map to our Film type (ensuring we merge EVERYTHING from enrichment)
         films.push({
           id,
           title,
           link,
           year: isNaN(year) ? 0 : year,
           runtime: existingFilm?.runtime || 0,
-          directors: [{
+          directors: existingFilm?.directors || [{
             id: directorName.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
             name: directorName,
             role: 'director'
@@ -67,14 +92,24 @@ async function scrapeFilms() {
           cast: existingFilm?.cast || [],
           synopsis: existingFilm?.synopsis || '',
           genres: existingFilm?.genres || [],
-          countries: [country],
+          countries: existingFilm?.countries || [country],
           languages: existingFilm?.languages || [],
-          thumbnailUrl: thumbnailUrl || '',
-          dateAdded: existingFilm?.dateAdded || new Date().toISOString().split('T')[0],
+          thumbnailUrl: thumbnailUrl || existingFilm?.thumbnailUrl || '',
+          dateAdded,
           leavingSoon: existingFilm?.leavingSoon || false,
           enriched: existingFilm?.enriched || false,
           tmdbAttempted: existingFilm?.tmdbAttempted || false,
-          posterUrl: existingFilm?.posterUrl
+          posterUrl: existingFilm?.posterUrl,
+          // Technical specs and media
+          aspectRatio: existingFilm?.aspectRatio,
+          trailerLink: existingFilm?.trailerLink,
+          trailerKey: existingFilm?.trailerKey,
+          synopsisSource: existingFilm?.synopsisSource,
+          originalTitle: existingFilm?.originalTitle,
+          imdbId: existingFilm?.imdbId,
+          cinematographers: existingFilm?.cinematographers,
+          composers: existingFilm?.composers,
+          supplemental: existingFilm?.supplemental || []
         });
       }
     });

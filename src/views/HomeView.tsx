@@ -17,20 +17,23 @@ const HomeView: React.FC = () => {
     );
   }
 
-  // For the home page, we only want to show high-quality enriched films
-  let enrichedFilms = catalog.filter(f => f.synopsis && f.synopsis.length > 50);
+  // For the home page, we only want to show high-quality enriched films for general segments
+  const highQualityFilms = catalog.filter(f => f.synopsis && f.synopsis.length > 50);
   
-  // Fallback if no enrichment has happened yet
-  if (enrichedFilms.length === 0) {
-    enrichedFilms = catalog.slice(0, 50);
+  // Fallback for general segments if no enrichment has happened yet
+  let workingFilms = highQualityFilms;
+  if (workingFilms.length === 0) {
+    workingFilms = catalog.slice(0, 50);
   }
 
-  const leavingSoon = enrichedFilms.filter(film => film.leavingSoon).slice(0, 15);
+  const leavingSoon = workingFilms.filter(film => film.leavingSoon).slice(0, 15);
 
-  // Daily-stable shuffle for featured films
+  // Daily-stable shuffle for featured films (rotates every 6 hours)
   const getFeaturedFilms = (films: Film[]) => {
-    const today = new Date().toISOString().split('T')[0];
-    const seed = today.split('-').reduce((acc, part) => acc + parseInt(part, 10), 0);
+    const now = new Date();
+    const today = now.toISOString().split('T')[0];
+    const hourBlock = Math.floor(now.getHours() / 6); // 0, 1, 2, 3
+    const seed = today.split('-').reduce((acc, part) => acc + parseInt(part, 10), 0) + hourBlock;
     
     // Sort by: has posterUrl first, then a deterministic shuffle based on seed
     return [...films]
@@ -39,21 +42,28 @@ const HomeView: React.FC = () => {
         if (a.posterUrl && !b.posterUrl) return -1;
         if (!a.posterUrl && b.posterUrl) return 1;
         
-        // Deterministic shuffle
+        // Deterministic shuffle based on seed and film ID
         const scoreA = (a.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) * seed) % 1000;
         const scoreB = (b.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) * seed) % 1000;
-        return scoreA - scoreB;
+        
+        if (scoreA !== scoreB) return scoreA - scoreB;
+        return a.id.localeCompare(b.id);
       })
       .slice(0, 15);
   };
 
-  const featuredFilms = getFeaturedFilms(enrichedFilms);
+  const featuredFilms = getFeaturedFilms(workingFilms);
 
-  const newlyAdded = [...enrichedFilms]
+  const newlyAdded = [...workingFilms]
     .sort((a, b) => {
       const dateA = a.dateAdded ? new Date(a.dateAdded).getTime() : 0;
       const dateB = b.dateAdded ? new Date(b.dateAdded).getTime() : 0;
-      return dateB - dateA;
+      
+      if (dateB !== dateA) return dateB - dateA;
+      
+      // If same date, sort by release year (newer first) then ID
+      if (a.year !== b.year) return b.year - a.year;
+      return a.id.localeCompare(b.id);
     })
     .slice(0, 15);
 
