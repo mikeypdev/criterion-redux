@@ -47,14 +47,16 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
             <h3 className={styles.title}>{film.title}</h3>
             <p className={styles.meta}>{film.year > 0 ? `${film.year} • ` : ''}{film.runtime > 0 ? `${film.runtime} min` : ''}</p>
             
-            <div className={styles.director}>
-              Dir: {film.directors.map((d, i) => (
-                <React.Fragment key={d.id}>
-                  <PersonLink person={d} />
-                  {i < film.directors.length - 1 && ', '}
-                </React.Fragment>
-              ))}
-            </div>
+            {film.directors.length > 0 && (
+              <div className={styles.director}>
+                Dir: {film.directors.map((d, i) => (
+                  <React.Fragment key={d.id}>
+                    <PersonLink person={d} />
+                    {i < film.directors.length - 1 && ', '}
+                  </React.Fragment>
+                ))}
+              </div>
+            )}
 
             <div className={styles.cast}>
               {film.cast.length > 0 && 'Cast: '}

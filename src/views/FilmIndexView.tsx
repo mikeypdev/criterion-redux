@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useMemo } from 'react';
+import React, { useEffect, useRef, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import SupplementalCard from '../components/SupplementalCard';
 import { useData } from '../context/useData';
-import { fuzzyIncludes } from '../utils/searchUtils';
+import { fuzzyIncludes, normalizeString } from '../utils/searchUtils';
 import styles from '../styles/filmIndex.module.css';
 import type { Film, SupplementalResult } from '../types';
 
@@ -21,7 +21,13 @@ const FilmIndexView: React.FC = () => {
   const sortBy = searchParams.get('sort') || 'title-asc';
   
   const [limit, setLimit] = React.useState(48);
+  const [localSearch, setLocalSearch] = useState(searchTerm);
   const observerTarget = useRef<HTMLDivElement>(null);
+
+  // Sync local search with URL if URL changes externally (e.g. title bar search)
+  useEffect(() => {
+    setLocalSearch(searchTerm);
+  }, [searchTerm]);
 
   const updateParam = (key: string, value: string) => {
     const newParams = new URLSearchParams(searchParams);
@@ -33,6 +39,16 @@ const FilmIndexView: React.FC = () => {
     setLimit(48);
     setSearchParams(newParams, { replace: true });
   };
+
+  // Debounced search update to URL
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (localSearch !== searchTerm) {
+        updateParam('search', localSearch);
+      }
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [localSearch]);
 
   // Extract unique filter options
   const filterOptions = useMemo(() => {
@@ -55,6 +71,7 @@ const FilmIndexView: React.FC = () => {
     const films: Film[] = [];
     const supplements: SupplementalResult[] = [];
     const isSearching = searchTerm.trim().length > 0;
+    const normSearch = normalizeString(searchTerm);
 
     // Filter catalog to only include primary films (those with a year > 0)
     // Non-film content (extras, interviews) added by scrape_collections.js have year: 0
@@ -63,11 +80,11 @@ const FilmIndexView: React.FC = () => {
     primaryFilms.forEach(film => {
       const isSpecificID = searchTerm === film.id;
       const filmMatches = isSpecificID || 
-                         fuzzyIncludes(film.title, searchTerm) ||
-                         film.directors.some(d => fuzzyIncludes(d.name, searchTerm)) ||
-                         film.cast.some(c => fuzzyIncludes(c.name, searchTerm)) ||
-                         film.cinematographers?.some(c => fuzzyIncludes(c.name, searchTerm)) ||
-                         film.composers?.some(c => fuzzyIncludes(c.name, searchTerm));
+                         normalizeString(film.title).includes(normSearch) ||
+                         film.directors.some(d => normalizeString(d.name).includes(normSearch)) ||
+                         film.cast.some(c => normalizeString(c.name).includes(normSearch)) ||
+                         film.cinematographers?.some(c => normalizeString(c.name).includes(normSearch)) ||
+                         film.composers?.some(c => normalizeString(c.name).includes(normSearch));
       
       const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
       const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;
@@ -88,7 +105,7 @@ const FilmIndexView: React.FC = () => {
 
       if (isSearching && baseMatches) {
         film.supplemental?.forEach(sup => {
-          if (fuzzyIncludes(sup.title, searchTerm)) {
+          if (normalizeString(sup.title).includes(normSearch)) {
             supplements.push({ type: 'supplement', supplement: sup, parentFilm: film });
           }
         });
@@ -152,10 +169,10 @@ const FilmIndexView: React.FC = () => {
             type="text" 
             placeholder="Search films, directors, extras..." 
             className={styles.search}
-            value={searchTerm}
-            onChange={(e) => updateParam('search', e.target.value)}
+            value={localSearch}
+            onChange={(e) => setLocalSearch(e.target.value)}
           />
-          {(searchTerm || selectedDecade || selectedCountry || selectedGenre || selectedLanguage || selectedDuration) && (
+          {(localSearch || selectedDecade || selectedCountry || selectedGenre || selectedLanguage || selectedDuration) && (
             <button className={styles.clearBtn} onClick={clearFilters}>Clear All</button>
           )}
         </div>

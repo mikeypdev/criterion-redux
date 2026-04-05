@@ -142,8 +142,24 @@ async function runTMDBEnrichment(catalog, maxItems) {
         if (data.credits?.crew) {
           const crew = data.credits.crew;
           const mainDirector = crew.find(c => c.job === 'Director');
-          if (mainDirector && film.directors?.length > 0) {
-            film.directors[0].tmdbId = mainDirector.id;
+          if (mainDirector) {
+            const directorObj = {
+              id: mainDirector.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+              name: mainDirector.name,
+              role: 'director',
+              tmdbId: mainDirector.id
+            };
+            
+            if (!film.directors || film.directors.length === 0) {
+              film.directors = [directorObj];
+            } else {
+              film.directors[0].tmdbId = mainDirector.id;
+              // Update name/id if they were missing or generic
+              if (!film.directors[0].name || film.directors[0].name.length < 2) {
+                film.directors[0].name = directorObj.name;
+                film.directors[0].id = directorObj.id;
+              }
+            }
           }
           const dps = crew.filter(c => c.job === 'Director of Photography').map(c => ({
             id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
@@ -225,29 +241,59 @@ async function runDeepCrawl(catalog, maxItems) {
 
       // 1. Check landing page for assets and supplemental content
       const landingData = await page.evaluate(() => {
-        const cards = Array.from(document.querySelectorAll('.browse-item-card'));
         const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
         const trailerAnchor = anchors.find(a => a.href.includes('-trailer'));
         
-        const supplemental = cards.map(card => {
+        // Find all unique video links
+        const videoLinks = anchors.map(a => a.href);
+        
+        const supplementalMap = {};
+        
+        // Use cards for better metadata if available
+        const cards = Array.from(document.querySelectorAll('.browse-item-card'));
+        cards.forEach(card => {
           const linkEl = card.querySelector('a.browse-item-link');
           const imgEl = card.querySelector('img');
-          const titleEl = card.querySelector('.browse-item-title strong');
+          const titleEl = card.querySelector('.browse-item-title strong') || card.querySelector('.browse-item-title');
           const durationEl = card.querySelector('.duration-container');
           
-          if (!linkEl || !titleEl) return null;
+          if (!linkEl || !linkEl.href || !titleEl) return;
           
           const href = linkEl.href;
-          if (href.includes('-trailer')) return null;
-          
-          return {
-            id: href.split('/').pop(),
-            title: titleEl.innerText.trim(),
-            link: href,
-            thumbnailUrl: imgEl ? imgEl.src : '',
-            runtime: durationEl ? Math.max(1, Math.round(parseInt(durationEl.innerText.replace(/\D/g, ''), 10) / 60)) : undefined
-          };
-        }).filter(Boolean);
+          if (!href) return;
+          const sid = href.split('/').filter(Boolean).pop();
+          if (sid) {
+            let runtime;
+            if (durationEl) {
+              const parts = durationEl.innerText.trim().split(':').map(p => parseInt(p.replace(/\D/g, ''), 10));
+              if (parts.length === 3) runtime = (parts[0] * 60) + parts[1];
+              else if (parts.length === 2) runtime = parts[0];
+              else if (parts.length === 1) runtime = Math.round(parts[0] / 60);
+              if (runtime === 0) runtime = 1;
+            }
+            supplementalMap[sid] = {
+              id: sid,
+              title: titleEl.innerText.trim(),
+              link: href,
+              thumbnailUrl: imgEl ? imgEl.src : '',
+              runtime: runtime || undefined
+            };
+          }
+        });
+
+        // Add any video links NOT in cards
+        videoLinks.forEach(href => {
+          const sid = href.split('/').filter(Boolean).pop();
+          if (sid && !supplementalMap[sid]) {
+            supplementalMap[sid] = {
+              id: sid,
+              title: sid.replace(/-/g, ' '),
+              link: href
+            };
+          }
+        });
+
+        const supplemental = Object.values(supplementalMap);
 
         const img = document.querySelector('.collection-img, .hero-img, img[src*="vhx.imgix.net/criterionchannelchartersu/assets/"]');
         let highResPoster = img ? img.getAttribute('src') : null;
@@ -263,66 +309,13 @@ async function runDeepCrawl(catalog, maxItems) {
 
       if (landingData.trailerLink) film.trailerLink = landingData.trailerLink;
       if (landingData.posterUrl) film.posterUrl = landingData.posterUrl;
-      
+
       // Filter supplemental to remove the main film itself
       if (landingData.supplemental && landingData.supplemental.length > 0) {
         film.supplemental = landingData.supplemental.filter(s => s.id !== film.id);
       }
 
-      // 2. Check for deeper video page
-      const videoLink = await page.evaluate(() => {
-        const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
-        const filmAnchor = anchors.find(a => !a.href.includes('-trailer'));
-        return filmAnchor ? filmAnchor.href : null;
-      });
-
-      if (videoLink) {
-        console.log(`  - Navigating to video page for technical specs: ${videoLink}`);
-        await page.goto(videoLink, { waitUntil: 'domcontentloaded', timeout: 30000 });
-        await page.waitForTimeout(1000);
-      }
-
-      // 3. Extract technical metadata
-      const metadata = await page.evaluate(() => {
-        const hPattern = /(\d+)\s*h\s*(\d+)?\s*m/i;
-        const mPattern = /(\d+)\s*m(in)?/i;
-        const timePattern = /(?<!\d:)(?:(\d+):)?([0-5]?\d):([0-5]\d)(?!\d)/;
-        const aspectPattern = /\b(?:\d\.\d{2}:1|16:9|4:3|1\.37:1|1\.66:1|1\.85:1|2\.35:1|2\.39:1|2\.40:1)\b/;
-        let runtimeCandidates = [];
-        let aspectCandidates = [];
-        let languagesFound = [];
-        const fullText = document.body.innerText;
-        const pageAspectMatch = fullText.match(aspectPattern);
-        if (pageAspectMatch) aspectCandidates.push(pageAspectMatch[0]);
-        if (fullText.includes('English')) languagesFound.push('English');
-        const elements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, li, span, p, .time, .description'));
-        for (const el of elements) {
-          const t = el.innerText.trim();
-          const aspectMatch = t.match(aspectPattern);
-          if (aspectMatch) aspectCandidates.push(aspectMatch[0]);
-          const hm = t.match(hPattern); if (hm) runtimeCandidates.push((parseInt(hm[1], 10) * 60) + parseInt(hm[2] || 0, 10));
-          const m = t.match(mPattern); if (m) runtimeCandidates.push(parseInt(m[1], 10));
-          const tp = t.match(timePattern);
-          if (tp && !t.match(aspectPattern)) { 
-            const h = parseInt(tp[1] || 0, 10);
-            const m = parseInt(tp[2] || 0, 10);
-            runtimeCandidates.push((h * 60) + m);
-          }
-        }
-        return {
-          runtime: runtimeCandidates.length ? Math.max(...runtimeCandidates) : null,
-          aspectRatio: aspectCandidates.length ? aspectCandidates[0] : null,
-          languages: languagesFound
-        };
-      });
-
-      if (metadata.runtime) film.runtime = metadata.runtime;
-      if (metadata.aspectRatio) film.aspectRatio = metadata.aspectRatio;
-      if (metadata.languages.length > 0) {
-        film.languages = Array.from(new Set([...(film.languages || []), ...metadata.languages]));
-      }
-
-      // 4. Capture synopsis
+      // Capture synopsis, director, cast from LANDING page metadata
       const metaSynopsis = await page.getAttribute('meta[name="description"]', 'content') || 
                            await page.getAttribute('meta[property="og:description"]', 'content');
 
@@ -333,9 +326,22 @@ async function runDeepCrawl(catalog, maxItems) {
           .replace(/This film is only available to stream in the United States and Canada\.?/gi, '')
           .trim();
 
-        film.synopsis = decodeEntities(cleanSynopsis);
-        film.synopsisSource = 'criterion';
-        if (metaSynopsis.toLowerCase().includes('starring')) {
+        if (!film.synopsis || film.synopsis.length < 20 || film.synopsis.includes(GENERIC_SYNOPSIS)) {
+          film.synopsis = decodeEntities(cleanSynopsis);
+          film.synopsisSource = 'criterion';
+        }
+
+        const directedByMatch = metaSynopsis.match(/Directed by\s+([^•\.\n]+)/i);
+        if (directedByMatch && (!film.directors || film.directors.length === 0)) {
+          const names = decodeEntities(directedByMatch[1]).split(/,|\band\b/i);
+          film.directors = names.map(n => ({
+            id: normalizeString(n.trim()).replace(/[^a-z0-9]+/g, '-'),
+            name: n.trim(),
+            role: 'director'
+          })).filter(d => d.name.length > 2);
+        }
+
+        if (metaSynopsis.toLowerCase().includes('starring') && (!film.cast || film.cast.length === 0)) {
           const castMatch = metaSynopsis.match(/starring\s+([^•\.\n]+)/i);
           if (castMatch) {
             const decodedCast = decodeEntities(castMatch[1]);
@@ -348,6 +354,116 @@ async function runDeepCrawl(catalog, maxItems) {
           }
         }
       }
+
+      // 2. Check for deeper video pages (plural)
+      const videoLinks = await page.evaluate(() => {
+        const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
+        // Keep unique paths
+        const paths = anchors.map(a => a.href);
+        return Array.from(new Set(paths));
+      });
+
+      for (const videoLink of videoLinks) {
+        console.log(`  - Navigating to video page: ${videoLink}`);
+        try {
+          await page.goto(videoLink, { waitUntil: 'domcontentloaded', timeout: 30000 });
+          await page.waitForTimeout(1000);
+
+          // Extract supplemental and metadata from EACH video page
+          const pageData = await page.evaluate(() => {
+            const hPattern = /(\d+)\s*h\s*(\d+)?\s*m/i;
+            const mPattern = /(\d+)\s*m(in)?/i;
+            const timePattern = /(?<!\d:)(?:(\d+):)?([0-5]?\d):([0-5]\d)(?!\d)/;
+            const aspectPattern = /\b(?:\d\.\d{2}:1|16:9|4:3|1\.37:1|1\.66:1|1\.85:1|2\.35:1|2\.39:1|2\.40:1)\b/;
+            
+            let rCandidates = [];
+            let aCandidates = [];
+            let langs = [];
+            const fullText = document.body.innerText;
+            const pAspect = fullText.match(aspectPattern);
+            if (pAspect) aCandidates.push(pAspect[0]);
+            if (fullText.includes('English')) langs.push('English');
+
+            const elements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, li, span, p, .time, .description'));
+            for (const el of elements) {
+              const t = el.innerText.trim();
+              const am = t.match(aspectPattern); if (am) aCandidates.push(am[0]);
+              const hm = t.match(hPattern); if (hm) rCandidates.push((parseInt(hm[1], 10) * 60) + parseInt(hm[2] || 0, 10));
+              const m = t.match(mPattern); if (m) rCandidates.push(parseInt(m[1], 10));
+              const tp = t.match(timePattern);
+              if (tp && !t.match(aspectPattern)) { 
+                rCandidates.push((parseInt(tp[1] || 0, 10) * 60) + parseInt(tp[2] || 0, 10));
+              }
+            }
+
+            // Supplemental cards
+            const sMap = {};
+            const cards = Array.from(document.querySelectorAll('.browse-item-card'));
+            cards.forEach(card => {
+              const linkEl = card.querySelector('a.browse-item-link');
+              const imgEl = card.querySelector('img');
+              const titleEl = card.querySelector('.browse-item-title strong') || card.querySelector('.browse-item-title');
+              const durationEl = card.querySelector('.duration-container');
+              if (linkEl && linkEl.href && titleEl) {
+                const sid = linkEl.href.split('/').filter(Boolean).pop();
+                let runtime;
+                if (durationEl) {
+                  const parts = durationEl.innerText.trim().split(':').map(p => parseInt(p.replace(/\D/g, ''), 10));
+                  if (parts.length === 3) runtime = (parts[0] * 60) + parts[1];
+                  else if (parts.length === 2) runtime = parts[0];
+                  else if (parts.length === 1) runtime = Math.round(parts[0] / 60);
+                  if (runtime === 0) runtime = 1;
+                }
+                sMap[sid] = {
+                  id: sid,
+                  title: titleEl.innerText.trim(),
+                  link: linkEl.href,
+                  thumbnailUrl: imgEl ? imgEl.src : '',
+                  runtime: runtime || undefined
+                };
+              }
+            });
+
+            const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
+            const videoLinks = anchors.filter(a => !a.href.includes('-trailer'));
+            videoLinks.forEach(a => {
+              const sid = a.href.split('/').filter(Boolean).pop();
+              if (sid && !sMap[sid]) {
+                sMap[sid] = {
+                  id: sid,
+                  title: a.innerText.trim() || sid.replace(/-/g, ' '),
+                  link: a.href
+                };
+              }
+            });
+
+            return {
+              runtime: rCandidates.length ? Math.max(...rCandidates) : null,
+              aspectRatio: aCandidates.length ? aCandidates[0] : null,
+              languages: langs,
+              supplemental: Object.values(sMap)
+            };
+          });
+
+          if (pageData.runtime) {
+            if (!film.runtime || pageData.runtime > film.runtime) {
+              film.runtime = pageData.runtime;
+            }
+          }
+          if (pageData.aspectRatio && !film.aspectRatio) film.aspectRatio = pageData.aspectRatio;
+          if (pageData.languages.length > 0 && (!film.languages || film.languages.length === 0)) {
+            film.languages = Array.from(new Set([...(film.languages || []), ...pageData.languages]));
+          }
+          if (pageData.supplemental.length > 0) {
+            const existingIds = new Set((film.supplemental || []).map(s => s.id));
+            const newSupp = pageData.supplemental.filter(s => s.id !== film.id && !existingIds.has(s.id));
+            film.supplemental = [...(film.supplemental || []), ...newSupp];
+          }
+        } catch (e) {
+          console.warn(`  - Error scanning video page ${videoLink}: ${e.message}`);
+        }
+      }
+
       film.enriched = true;
       updatedCount++;
     } catch (err) {

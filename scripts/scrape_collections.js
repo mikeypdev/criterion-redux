@@ -10,6 +10,11 @@ async function scrapeCollections() {
 
   // Load catalog to check for missing films
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8'));
+  
+  // Reset leavingSoon status for all films - we'll re-apply it based on found "Leaving Soon" collections
+  catalog.forEach(f => f.leavingSoon = false);
+  const todayStr = new Date().toISOString().split('T')[0];
+
   const catalogMap = new Map(catalog.map(f => [f.id, f]));
   let newFilmsAdded = 0;
 
@@ -161,14 +166,31 @@ async function scrapeCollections() {
         col.filmIds = Array.from(new Set(filmIds));
         console.log(`    - Found ${col.filmIds.length} unique films.`);
 
+        // 3. Mark films as "Leaving Soon" or "Newly Added" based on collection titles
+        const lowerTitle = col.title.toLowerCase();
+        const isLeavingSoonColl = lowerTitle.includes('leaving') && (
+            lowerTitle.includes('january') || lowerTitle.includes('february') || lowerTitle.includes('march') || 
+            lowerTitle.includes('april') || lowerTitle.includes('may') || lowerTitle.includes('june') || 
+            lowerTitle.includes('july') || lowerTitle.includes('august') || lowerTitle.includes('september') || 
+            lowerTitle.includes('october') || lowerTitle.includes('november') || lowerTitle.includes('december')
+        );
+        const isNewlyAddedColl = lowerTitle.includes('newly added');
+
+        if (isLeavingSoonColl) {
+            console.log(`    - Flagging ${col.filmIds.length} films as "Leaving Soon" based on collection title.`);
+        }
+        if (isNewlyAddedColl) {
+            console.log(`    - Flagging ${col.filmIds.length} films as "Newly Added" based on collection title.`);
+        }
+
         // Auto-discover missing films and add placeholders to catalog
         for (const fId of col.filmIds) {
           const cardData = collectionsData[fId];
-          const existing = catalogMap.get(fId);
+          let film = catalogMap.get(fId);
           
-          if (!existing) {
+          if (!film) {
             console.log(`      * NEW FILM DISCOVERED: ${fId}`);
-            const newFilm = {
+            film = {
               id: fId,
               title: cardData?.title || fId.replace(/-/g, ' ').split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
               link: `https://www.criterionchannel.com/${fId}`,
@@ -181,16 +203,28 @@ async function scrapeCollections() {
               languages: [],
               synopsis: '',
               thumbnailUrl: cardData?.thumbnailUrl || '',
-              dateAdded: new Date().toISOString().split('T')[0],
-              enriched: false
+              dateAdded: isNewlyAddedColl ? todayStr : new Date().toISOString().split('T')[0],
+              enriched: false,
+              tmdbAttempted: false,
+              leavingSoon: isLeavingSoonColl,
+              supplemental: []
             };
-            catalog.push(newFilm);
-            catalogMap.set(fId, newFilm);
+            catalog.push(film);
+            catalogMap.set(fId, film);
             newFilmsAdded++;
-          } else if (!existing.thumbnailUrl && cardData?.thumbnailUrl) {
-            // Update existing with thumbnail if missing
-            existing.thumbnailUrl = cardData.thumbnailUrl;
-            newFilmsAdded++; // Trigger save
+          } else {
+            if (!film.thumbnailUrl && cardData?.thumbnailUrl) {
+                film.thumbnailUrl = cardData.thumbnailUrl;
+                newFilmsAdded++; // Trigger save
+            }
+            if (isLeavingSoonColl) {
+                film.leavingSoon = true;
+                newFilmsAdded++; // Force a save to update flags
+            }
+            if (isNewlyAddedColl) {
+                film.dateAdded = todayStr;
+                newFilmsAdded++;
+            }
           }
         }
       } catch (e) {

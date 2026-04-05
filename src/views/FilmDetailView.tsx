@@ -148,14 +148,16 @@ const FilmDetailView: React.FC = () => {
           </section>
 
           <section className={styles.credits}>
-            <div className={styles.creditGroup}>
-              <h3 className={styles.creditLabel}>Directed by</h3>
-              <div className={styles.creditNames}>
-                {film.directors.map(d => (
-                  <PersonLink key={d.id} person={d} />
-                ))}
+            {film.directors.length > 0 && (
+              <div className={styles.creditGroup}>
+                <h3 className={styles.creditLabel}>Directed by</h3>
+                <div className={styles.creditNames}>
+                  {film.directors.map(d => (
+                    <PersonLink key={d.id} person={d} />
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {film.cinematographers && film.cinematographers.length > 0 && (
               <div className={styles.creditGroup}>
@@ -213,11 +215,19 @@ const FilmDetailView: React.FC = () => {
         <aside className={styles.sidebar}>
           <div className={styles.editionInfo}>
             <h3 className={styles.sidebarTitle}>Criterion Redux</h3>
-            {film.leavingSoon ? (
-              <p>This title is a <strong>Limited Engagement</strong>. Subtitles available in English.</p>
-            ) : (
-              <p>This title is available as part of Criterion Channel's permanent library. Subtitles available in English.</p>
-            )}
+            <p>
+              {film.leavingSoon ? (
+                <>This title is a <strong>Limited Engagement</strong>. </>
+              ) : (
+                <>This title is available as part of Criterion Channel's permanent library. </>
+              )}
+              {film.countries.length > 0 && `Produced in ${film.countries.join(', ')}. `}
+              {film.languages.length > 0 ? (
+                <>Presented in {film.languages.join(', ')} with English subtitles where necessary.</>
+              ) : (
+                <>Subtitles available in English.</>
+              )}
+            </p>
           </div>
           {film.leavingSoon && (
             <div className={styles.urgencyBox}>
