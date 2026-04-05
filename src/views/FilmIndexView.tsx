@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import SupplementalCard from '../components/SupplementalCard';
 import { useData } from '../context/useData';
-import { fuzzyIncludes, normalizeString } from '../utils/searchUtils';
+import { normalizeString } from '../utils/searchUtils';
 import styles from '../styles/filmIndex.module.css';
 import type { Film, SupplementalResult } from '../types';
 
