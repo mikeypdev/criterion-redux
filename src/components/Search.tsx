@@ -14,14 +14,16 @@ const Search: React.FC = () => {
 
   const results = React.useMemo(() => {
     if (query.length > 1) {
-      return films.filter(f => 
-        fuzzyIncludes(f.title, query) ||
-        f.directors.some(d => fuzzyIncludes(d.name, query)) ||
-        f.cast.some(c => fuzzyIncludes(c.name, query)) ||
-        f.cinematographers?.some(c => fuzzyIncludes(c.name, query)) ||
-        f.composers?.some(c => fuzzyIncludes(c.name, query)) ||
-        f.supplemental?.some(s => fuzzyIncludes(s.title, query))
-      ).slice(0, 5);
+      return films
+        .filter(f => f.year > 0) // Only show primary films in quick search
+        .filter(f => 
+          fuzzyIncludes(f.title, query) ||
+          f.directors.some(d => fuzzyIncludes(d.name, query)) ||
+          f.cast.some(c => fuzzyIncludes(c.name, query)) ||
+          f.cinematographers?.some(c => fuzzyIncludes(c.name, query)) ||
+          f.composers?.some(c => fuzzyIncludes(c.name, query)) ||
+          f.supplemental?.some(s => fuzzyIncludes(s.title, query))
+        ).slice(0, 5);
     }
     return [];
   }, [query, films]);

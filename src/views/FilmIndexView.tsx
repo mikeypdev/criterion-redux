@@ -56,7 +56,11 @@ const FilmIndexView: React.FC = () => {
     const supplements: SupplementalResult[] = [];
     const isSearching = searchTerm.trim().length > 0;
 
-    catalog.forEach(film => {
+    // Filter catalog to only include primary films (those with a year > 0)
+    // Non-film content (extras, interviews) added by scrape_collections.js have year: 0
+    const primaryFilms = catalog.filter(f => f.year > 0);
+
+    primaryFilms.forEach(film => {
       const isSpecificID = searchTerm === film.id;
       const filmMatches = isSpecificID || 
                          fuzzyIncludes(film.title, searchTerm) ||
