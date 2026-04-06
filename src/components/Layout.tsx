@@ -90,7 +90,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             RIGHTS OF THEIR RESPECTIVE OWNERS.
           </div>
           <div className={styles.copyright}>
-            © 2026 CRITERION REDUX FAN PROJECT. FOR DEMONSTRATION PURPOSES ONLY. NOT AFFILIATED WITH CRITERION CHANNEL.
+            This an open source fan project, made with love. This project is not affiliated with Criterion. A subscription to Criterion Channel is REQUIRED in order to watch any content.
           </div>
           {status && (
             <div className={styles.lastUpdated}>
