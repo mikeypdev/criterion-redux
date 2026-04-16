@@ -536,6 +536,17 @@
     "description": "The formally adventurous and psychologically intricate films of ever-fascinating Canadian auteur Atom Egoyan unfold according to complex, time-scrambling structures that heighten their searing emotional impact. Exploring issues of identity (including his own Armenian heritage), loss, alienation, and technology, Egoyan’s films frequently revolve around people struggling to make sense of their own shattered sense of self in the wake of profound personal tragedies. His provocative themes and elliptical style are on display in early critical triumphs like FAMILY VIEWING and SPEAKING PARTS and reach new heights of virtuosity in the riveting psychological dramas FELICIA’S JOURNEY, EXOTICA, and THE SWEET HEREAFTER, the last of which has been hailed as one of the greatest Canadian films of all time."
   },
   {
+    "id": "peter-hujar-s-day",
+    "title": "Peter Hujar’s Day",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c648c9bc-2819-4064-96d2-b26e8c7f5f9a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/peter-hujar-s-day",
+    "filmIds": [
+      "peter-hujar-s-day",
+      "ira-sachs-interview"
+    ],
+    "description": "Directed by Ira Sachs • 2025 • United States\nStarring Ben Whishaw, Rebecca Hall\n\nA loving snapshot of a vanished New York, Ira Sachs’s captivating cultural time capsule is a warm, witty, graceful re-creation of a real-life conversation that took place between photographer Peter Hujar (Ben Whishaw) and writer Linda Rosenkrantz (Rebecca Hall) in 1974. PETER HUJAR’S DAY eavesdrops on the two friends’ leisurely, affectionate hangout as Hujar recounts his previous day’s activities, offering insights into both his art and his everyday life. What emerges is a touching celebration of creativity, connection, and simply being present, made exceptionally vivid by director Ira Sachs’s cinematic flourishes and wonderfully tender performances from Whishaw and Hall, whose chemistry gives the film its heart and soul."
+  },
+  {
     "id": "the-ballad-of-suzanne-cesaire",
     "title": "The Ballad Of Suzanne Césaire",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3c68a049-5cb9-453f-a738-5de5e433ba80.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -566,16 +577,6 @@
     "description": "Directed by Nathan Silver • 2025 • United States\nStarring Carol Kane, Joy Kane\n\nShot on wonderfully warm, light-filled 16 mm with the intimacy of a home movie, this vibrant documentary snapshot captures beloved actor Carol Kane (reuniting with BETWEEN THE TEMPLES director Nathan Silver) and her mother, ninety-eight-year-old music teacher and former dancer Joy Kane, during a lively afternoon in the Upper West Side apartment they share. As visitors drop by and music fills the home, Joy reflects on nearly one hundred years of living on her own uncompromising terms, while Carol discusses the influence her mother’s iconoclastic spirit has had on her own life."
   },
   {
-    "id": "goodbye-horses-the-many-lives-of-q-lazzarus",
-    "title": "Goodbye Horses: The Many Lives Of Q Lazzarus",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/cc6f0342-1588-4a58-b2ed-8b216b6e86cc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/goodbye-horses-the-many-lives-of-q-lazzarus",
-    "filmIds": [
-      "goodbye-horses-the-many-lives-of-q-lazzarus"
-    ],
-    "description": "Directed by Eva Aridjis Fuentes • 2025 • United States, Mexico\n\nIn the early 1990s, Diane Luckey—known by her stage name Q Lazzarus—seemed poised for stardom when her darkly ravishing synth-pop anthem “Goodbye Horses” was featured to unforgettable effect in the pop-culture sensation THE SILENCE OF THE LAMBS. Instead, as a Black woman rock singer who defied genre expectations, Q faced a series of setbacks that led to her virtual disappearance from the public eye. Narrated through Q’s own words, lyrics, and music, this poignant documentary at last reveals the untold story of an exceptionally talented but unjustly overlooked musician, paving the way for a new appreciation of her artistry."
-  },
-  {
     "id": "magellan",
     "title": "Magellan",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4fd3c71b-24ba-4b62-8bf0-4a3c8d28b6ed.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -584,7 +585,7 @@
       "magellan",
       "lav-diaz-interview"
     ],
-    "description": "COMING TO THE CRITERION CHANNEL ON APRIL 14 AT 8 P.M. ET\n\nDirected by Lav Diaz • 2025 • Philippines, Spain, Portugal\nStarring Gael García Bernal, Ângela Azevedo, Amado Arjay Babon\n\nA hypnotic journey engraved in images of staggering beauty and horror, this monumental achievement from acclaimed Filipino auteur Lav Diaz boldly rewrites the imperialist mythmaking of the Age of Discovery. Elegantly minimalist yet overpowering in its scale and impact, MAGELLAN follows the sixteenth-century Portuguese explorer Ferdinand Magellan (Gael García Bernal) as he embarks on his epochal quest to cross the Pacific—a voyage that spirals into zealotry and violence when he attempts to impose Christianity upon the people of the Philippines. Abetted by Bernal’s radically antiheroic portrayal, Diaz composes a stark vision of the brutality at the heart of European conquest and a haunting elegy for a lost precolonial past."
+    "description": "Directed by Lav Diaz • 2025 • Philippines, Spain, Portugal\nStarring Gael García Bernal, Ângela Azevedo, Amado Arjay Babon\n\nA hypnotic journey engraved in images of staggering beauty and horror, this monumental achievement from acclaimed Filipino auteur Lav Diaz boldly rewrites the imperialist mythmaking of the Age of Discovery. Elegantly minimalist yet overpowering in its scale and impact, MAGELLAN follows the sixteenth-century Portuguese explorer Ferdinand Magellan (Gael García Bernal) as he embarks on his epochal quest to cross the Pacific—a voyage that spirals into zealotry and violence when he attempts to impose Christianity upon the people of the Philippines. Abetted by Bernal’s radically antiheroic portrayal, Diaz composes a stark vision of the brutality at the heart of European conquest and a haunting elegy for a lost precolonial past."
   },
   {
     "id": "flickering-ghosts-of-loves-gone-by",
@@ -625,17 +626,6 @@
       "happyend"
     ],
     "description": "Directed by Neo Sora • 2024 • Japan, United States\nStarring Hayato Kurihara, Yukito Hidaka, Yuta Hayashi\n\nA heartfelt coming-of-age anthem and a mesmerizing vision of resistance, rebellion, and the irrepressible spirit of youth, the at once humorous and incisive feature debut from director Neo Sora imagines the high school experience in a dystopian near-future Tokyo. There, after best friends Yuta (Hayato Kurihara) and Kou (Yukito Hidaka) pull an audacious prank on their principal, the school responds by installing an elaborate surveillance system. Between the oppressive new security measures, a darkening national political climate, and the omnipresent threat of catastrophic earthquakes, the increasingly disillusioned Kou finds himself inspired to take a stand as an activist, while the passive Yuta remains seemingly unaware of what is going on around him. For the first time in their lifelong friendship, the two are forced to reckon with differences they had never confronted before."
-  },
-  {
-    "id": "peter-hujar-s-day",
-    "title": "Peter Hujar’s Day",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c648c9bc-2819-4064-96d2-b26e8c7f5f9a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/peter-hujar-s-day",
-    "filmIds": [
-      "peter-hujar-s-day",
-      "ira-sachs-interview"
-    ],
-    "description": "Directed by Ira Sachs • 2025 • United States\nStarring Ben Whishaw, Rebecca Hall\n\nA loving snapshot of a vanished New York, Ira Sachs’s captivating cultural time capsule is a warm, witty, graceful re-creation of a real-life conversation that took place between photographer Peter Hujar (Ben Whishaw) and writer Linda Rosenkrantz (Rebecca Hall) in 1974. PETER HUJAR’S DAY eavesdrops on the two friends’ leisurely, affectionate hangout as Hujar recounts his previous day’s activities, offering insights into both his art and his everyday life. What emerges is a touching celebration of creativity, connection, and simply being present, made exceptionally vivid by director Ira Sachs’s cinematic flourishes and wonderfully tender performances from Whishaw and Hall, whose chemistry gives the film its heart and soul."
   },
   {
     "id": "high-noon",
@@ -3087,6 +3077,81 @@
     "description": "Directed by Hasse Ekman • 1950 • Sweden\nStarring Eva Henning, Ulf Palme, Anders Ek\n\nOne of the most acclaimed Swedish films of all time (heralded as a masterpiece by no less than Ingmar Bergman), this moody, masterfully crafted psychological mystery unfolds in a tantalizing series of CITIZEN KANE–esque flashbacks as the neighbors of an enigmatic young woman (Eva Henning) who committed suicide attempt to piece together the truth about what drove her to such a tragic end. It builds to a startling final revelation that, in its sensitivity and daring empathy, marks this heartbreaking study of loneliness and isolation as an important milestone in queer cinema."
   },
   {
+    "id": "the-runner",
+    "title": "The Runner",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7717e9a8-671b-4b2b-8a13-e469f13090f4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-runner",
+    "filmIds": [
+      "the-runner",
+      "amir-naderi-and-ramin-bahrani-1",
+      "madjid-niroumand-and-amir-naderi",
+      "waiting",
+      "waiting-afterword",
+      "where-do-you-stand-today-amir-naderi-1"
+    ],
+    "description": "Directed by Amir Naderi • 1984 • Iran\nStarring Madjid Niroumand, Moussa Torkizadeh, Abbas Nazeri\n\nChildhood takes on mythic dimensions in one of the defining works of postrevolutionary Iranian cinema. Inspired by director Amir Naderi’s own boyhood, THE RUNNER is lit from within by Madjid Niroumand’s electrifying performance as a young orphan fending for himself on the streets of a port city, determined to rise above his circumstances—working odd jobs, passing time with friends, learning to read—and running, always running, toward the future. Water, fire, the human body in motion: in hypnotic images of lyrical power, Naderi finds unexpected glory in the world of a boy suspended between modernity and elemental natural forces as he chases his own path forward."
+  },
+  {
+    "id": "mandabi",
+    "title": "Mandabi",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/44b6c388-58fe-430f-b3f6-e00239403fa1-fc84dc0a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/mandabi",
+    "filmIds": [
+      "mandabi",
+      "aboubakar-sanogo-on-mandabi",
+      "boubakar-boris-diop-and-marie-angelique-savane-on-mandabi",
+      "tauw",
+      "praise-song"
+    ],
+    "description": "Directed by Ousmane Sembène • 1968 • Senegal\nStarring Makuredia Guey, Yunus Ndiaye, Isseu Niang\n\nThis second feature by Ousmane Sembène was the first movie ever made in the Wolof language—a major step toward the realization of the trailblazing Senegalese filmmaker’s dream of creating a cinema by, about, and for Africans. After jobless Ibrahima Dieng receives a money order for 25,000 francs from a nephew who works in Paris, news of his windfall quickly spreads among his neighbors, who flock to him for loans even as he finds his attempts to cash the order stymied in a maze of bureaucracy, and new troubles rain down on his head. One of Sembène’s most coruscatingly funny and indignant films, MANDABI—an adaptation of a novella by the director himself—is a bitterly ironic depiction of a society scarred by colonialism and plagued by corruption, greed, and poverty."
+  },
+  {
+    "id": "victims-of-sin",
+    "title": "Victims Of Sin",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/77b7815f-7c27-4bce-bb29-76ced9b8784b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/victims-of-sin",
+    "filmIds": [
+      "victims-of-sin",
+      "viviana-garcia-besne",
+      "rodrigo-prieto-on-gabriel-figueroa",
+      "those-who-made-our-cinema"
+    ],
+    "description": "Directed by Emilio Fernández • 1951 • Mexico\nStarring Ninón Sevilla, Tito Junco, Rodolfo Acosta\n\nA treasure of Mexico’s cinematic golden age, this deliriously plotted blend of gritty crime film, heart-tugging maternal melodrama, and mambo musical is a dazzling showcase for iconic star Ninón Sevilla. She brings fierce charisma and fiery strength to her role as a rumbera—a female nightclub dancer—who gives up everything to raise an abandoned boy, whom she must protect from his ruthless gangster father. Directed at a dizzying pace by filmmaking titan Emilio Fernández, and shot in stylish chiaroscuro by renowned cinematographer Gabriel Figueroa amid smoky dance halls and atmospherically seedy underworld haunts, VICTIMS OF SIN is a ferociously entertaining female-powered noir pulsing with the intoxicating rhythms of some of Latin America’s most legendary musical stars."
+  },
+  {
+    "id": "kenji-misumi-s-sword-trilogy",
+    "title": "Kenji Misumi’s Sword Trilogy",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/827c3c0f-2309-4f1a-a6cd-42bff4cf06f2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/kenji-misumi-s-sword-trilogy",
+    "filmIds": [
+      "kiru",
+      "ken",
+      "kenki"
+    ],
+    "description": "Originator of the hugely popular ZATOICHI and LONE WOLF AND CUB franchises, Kenji Misumi was a master of the chanbara (“sword fighting”) genre who brought thrilling stylistic flourishes and unique psychological and emotional depth to his many classic films. Among his finest achievements, the three thematically linked works that make up his so-called Sword Trilogy—all starring Raizo Ichikawa—combine breathtaking visuals with complex explorations of family, tradition, heroism, masculinity, and violence."
+  },
+  {
+    "id": "ikarie-xb-1",
+    "title": "Ikarie Xb 1",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8391bd05-cdbb-4a61-b822-d7d57127ca94.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/ikarie-xb-1",
+    "filmIds": [
+      "ikarie-xb-1"
+    ],
+    "description": "Directed by Jindřich Polák • 1963 • Czechoslovakia\nStarring Zdeněk Štěpánek, František Smolík, Dana Medřická\n\nA visionary work of Eastern Bloc science fiction, this mesmerizing Czechoslovak adaptation of a novel by Stanisław Lem melds Cold War ideology and utopian futurism into a tour de force of space-age modernism. In the year 2163, a band of astronauts embarks on a fifteen-year voyage deep into outer space, in hopes of discovering life in another galaxy. It’s a perilous journey during which they will confront the wreckage of the twentieth century, the chilling vastness of the cosmos, and their own mortality. A triumph of avant-garde production design that served as a model for Stanley Kubrick’s 2001: A SPACE ODYSSEY, IKARIE XB 1—long known internationally only through a mangled and dubbed reedit—is a singular sci-fi landmark that finds both terror and wonder in the unknown."
+  },
+  {
+    "id": "joan-the-maid",
+    "title": "Joan The Maid",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9fbda758-673d-4c36-b7a2-75c3adfa7517.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/joan-the-maid",
+    "filmIds": [
+      "joan-the-maid-i-the-battles",
+      "joan-the-maid-ii-the-prisons"
+    ],
+    "description": "Jacques Rivette puts his own inimitable stamp on the immortal story of Joan of Arc with this sprawling, two-part study, which brings a new perspective to her much-mythologized life by forgoing lofty spirituality in favor of a strikingly earthy, grounded approach. As Joan, an extraordinary Sandrine Bonnaire gets at the reality behind the legend, showing the matter-of-fact courage and vulnerability of a teenage girl thrust into extraordinary circumstances as she leads French forces into battle against the English only to find herself betrayed and accused of heresy."
+  },
+  {
     "id": "a-better-tomorrow-the-trilogy",
     "title": "A Better Tomorrow: The Trilogy",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5c2de7db-ea49-4475-8c35-93928596183a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -3099,121 +3164,54 @@
     "description": "Released in 1986, John Woo’s A BETTER TOMORROW sent shockwaves through the Hong Kong film industry, launching a wave of so-called heroic bloodshed films that emulated its combination of balletic gunplay and emotionally charged storytelling. Tracing the relationship between two brothers on opposite sides of the law, A BETTER TOMORROW and its two sequels pushed action cinema to new heights of bullet-riddled excess, while establishing breakout star Chow Yun-fat as an international icon of cool."
   },
   {
-    "id": "ceddo",
-    "title": "Ceddo",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dd4981ee-fc90-46ae-9fbc-a384ed6376d5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/ceddo",
+    "id": "come-back-africa",
+    "title": "Come Back, Africa",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1a824d77-5783-44c8-922b-6aeddf1676c7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/come-back-africa",
     "filmIds": [
-      "ceddo"
+      "come-back-africa"
     ],
-    "description": "Directed by Ousmane Sembène • 1977 • Senegal\nStarring Mamadou Dioumé, Ousmane Sembène, Tabata Ndiaye\n\nIn precolonial Senegal, members of the Ceddo (or “outsiders”) kidnap Princess Dior Yacine (Tabata Ndiaye) after her father, the king, pledges loyalty to an ascendant Islamic faction that plans to convert the entire clan to its faith. Attempts to recapture her fail, provoking further division and eventual war between the animistic Ceddo and the fundamentalist Muslims, with Christian missionaries and slave traders from Europe also playing a role in the conflict. Banned in Senegal upon its release, CEDDO is an ambitious, multilayered epic that explores the combustible tensions among ancient tradition, religious colonization, political expediency, and individual freedom."
+    "description": "Directed by Lionel Rogosin • 1959 • United States\nStarring Miriam Makeba, Vinah Makeba, Zachria Makeba\n\nOne of the bravest and most powerful political films ever made, Lionel Rogosin’s urgent indictment of racial injustice—filmed in secret in 1950s Johannesburg, South Africa—follows a young Zulu man’s struggles to provide for his family under the crushing burden of apartheid. As in his previous docufiction landmark ON THE BOWERY, Rogosin immersed himself in the world of his subjects, in this case in the Black cultural hub of Sophiatown, a vibrant center of music, art, literature, and politics that was soon to be razed by the government to make way for a whites-only suburb. Largely improvised by a nonprofessional cast that includes legendary singer and activist Miriam Makeba, Come Back, Africa reveals both the cruelty of apartheid and the vitality of a community struggling for equality."
   },
   {
-    "id": "black-god-white-devil",
-    "title": "Black God, White Devil",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dc70d3c0-bbb4-40af-b213-415cbfc3c364.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/black-god-white-devil",
+    "id": "ratcatcher",
+    "title": "Ratcatcher",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/721da764-b84c-4c7d-a5ee-7e1807312e8a-0e4248a2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/ratcatcher",
     "filmIds": [
-      "trailer-8",
-      "black-god-white-devil-commentary",
-      "richard-pena-on-white-god-black-devil",
-      "memoria-do-cangaco",
-      "glauber-the-movie-labyrinth-of-brazil"
+      "ratcatcher",
+      "lynne-ramsay-on-ratcatcher-2002",
+      "lynne-ramsay-on-ratcatcher-2021",
+      "small-deaths",
+      "kill-the-day",
+      "gasman",
+      "alwin-kuchler-on-ratcatcher"
     ],
-    "description": "Directed by Glauber Rocha • 1964 • Brazil Starring Geraldo Del Rey, Yoná Magalhães, Othon Bastos\n\nMyth, mysticism, and revolution collide in a blistering existential western from Glauber Rocha, a pioneer of Brazil’s socially committed Cinema Novo movement. After killing his swindling boss, ranch hand Manoel (Geraldo Del Rey) goes on the run with his wife, Rosa (Yoná Magalhães). In the stark hinterlands, they join forces with armed bandits and pledge allegiance to a self-styled holy man who preaches revolt against rich landowners while perpetrating unspeakable acts of violence against the innocent. Suffused with antiauthoritarian fervor and the intensity of life in the desert, this landmark work of radical cinema is a scorched-earth allegory about mindless fanaticism and the allure of dead-end ideologies."
+    "description": "Directed by Lynne Ramsay • 1999 • United Kingdom\nStarring Tommy Flanagan, Mandy Matthews, William Eadie\n\nIn her breathtaking and assured debut feature, Lynne Ramsay creates a haunting evocation of a troubled Glasgow childhood. Set during Scotland’s national garbage strike of the mid-1970s, RATCATCHER explores the experiences of a poor adolescent boy as he struggles to reconcile his dreams and his guilt with the abjection that surrounds him. Utilizing beautiful, elusive imagery, candid performances, and unexpected humor, Ramsay deftly contrasts urban decay with a rich interior landscape of hope and perseverance, resulting in a work at once raw and deeply poetic."
   },
   {
-    "id": "van-gogh",
-    "title": "Van Gogh",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/bf4c3b52-bb16-43a1-bfe5-224d0def2810.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/van-gogh",
+    "id": "lucio-flavio",
+    "title": "Lúcio Flávio",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ec1b9ad2-b019-4004-958c-92fde6891ad8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/lucio-flavio",
     "filmIds": [
-      "van-gogh"
+      "lucio-flavio"
     ],
-    "description": "Directed by Maurice Pialat • 1991 • France\nStarring Jacques Dutronc, Alexandra London, Bernard Le Coq\n\nMaurice Pialat’s visually stunning penultimate work is an epic, masterful dramatization of the final months in the life of the troubled painter (played by musician Jacques Dutronc in a César-winning performance) that focuses less on his creative genius and more on his complicated personal relationships with those in his orbit, including his brother Theo (Bernard Le Coq), doctor Paul Gachet (Gérard Séty), and the physician’s daughter Marguerite (Alexandra London) who becomes Vincent’s lover. Pialat’s sober, defiantly unsensational approach illuminates the human side of an artist whose legend has often obscured the complex, nuanced reality of his life."
+    "description": "Directed by Héctor Babenco • 1977 • Brazil\nStarring Reginaldo Faria, Ana Maria Magalhães, Paulo César Peréio\n\nAn enormous box-office success in Brazil, Héctor Babenco’s second feature electrified audiences with its gritty, gut-punching evocation of a corrupt world where the line between criminals and law enforcement has become virtually invisible. Based on the true story of an infamous bandit, LÚCIO FLÁVIO stars Reginaldo Faria as the titular outlaw, whose charisma and audacious bank-robbing exploits make him a media sensation. Throughout, Babenco entwines Flávio’s story with the operations of Brazil’s notorious Esquadrão da Morte (Death Squad), revealing the systemic violence operating on all levels of society."
   },
   {
-    "id": "peking-opera-blues",
-    "title": "Peking Opera Blues",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f788cd74-9665-48db-8aa0-01091e365989.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/peking-opera-blues",
+    "id": "the-adventures-of-antoine-doinel",
+    "title": "The Adventures Of Antoine Doinel",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2d0d714a-f2ba-440c-8de6-979ee54b428d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-adventures-of-antoine-doinel",
     "filmIds": [
-      "peking-opera-blues"
+      "the-400-blows",
+      "antoine-and-colette",
+      "stolen-kisses",
+      "bed-and-board",
+      "love-on-the-run"
     ],
-    "description": "Directed by Tsui Hark • 1986 • Hong Kong\nStarring Brigitte Lin, Sally Yeh, Cherie Chung\n\nIn the aftermath of China’s first democratic revolution, three high-spirited young women (Brigitte Lin, Cherie Chung, Sally Yeh) from very different backgrounds cross paths on a quest for liberation. Fate finds the trio joining forces to discover their respective warriors within. Elegantly blending action, comedy, and social satire into a sparkling, fast-paced whirlwind as bright and colorful as Peking opera itself, this classic of Hong Kong cinema showcases the charms of its three leads as well as the energetic filmmaking style of legendary director Tsui Hark at his height."
-  },
-  {
-    "id": "lan-yu",
-    "title": "Lan Yu",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/90973413-65e6-4b4c-9aeb-dc7d6b14f02a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/lan-yu",
-    "filmIds": [
-      "lan-yu",
-      "yang-yin-gender-in-chinese-cinema"
-    ],
-    "description": "Directed by Stanley Kwan • 2001 • Hong Kong, China\nStarring Liu Ye, Hu Jun, Huatong Li\n\nFilmed in secret in Beijing, this tender gay romance by Stanley Kwan combines the timeless conventions of classic melodrama with a radically frank depiction of queer intimacy as it traces, over the course of years, the relationship between a wealthy businessman (Hu Jun) and a young architecture student (Liu Ye) as they come together, fall apart over the former’s fear of commitment, and gradually realize that they are fated to be together. Kwan’s expressive visuals and the sensitive lead performances yield a daring, deeply affecting love story that doubles as a haunting reflection on life in post-Mao China in the wake of the Tiananmen Square massacre."
-  },
-  {
-    "id": "bullet-in-the-head",
-    "title": "Bullet In The Head",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0ba7a73-968e-40b3-abcb-9b3f394dd48c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/bullet-in-the-head",
-    "filmIds": [
-      "bullet-in-the-head"
-    ],
-    "description": "Directed by John Woo • 1990 • Hong Kong\nStarring Tony Leung Chiu-wai, Jacky Cheung, Simon Yam\n\nOne of director John Woo’s most ambitious and emotionally charged films, this intense action epic follows the fates of three friends—gangsters Ben (Tony Leung Chiu-wai), Frank (Jacky Cheung), and Paul (Waise Lee)—as they leave behind 1960s Hong Kong to pull off a smuggling job in war-torn Vietnam, only to find their loyalties to one another tested when they are taken prisoner by the Vietcong. The most expensive Hong Kong film ever made at the time of its production—an arduous undertaking that drove Woo to the brink to realize his vision—BULLET IN THE HEAD blends the filmmaker’s celebrated action spectacle with a harrowing depiction of the POW experience that has earned it comparisons to THE DEER HUNTER."
-  },
-  {
-    "id": "riki-oh-the-story-of-ricky",
-    "title": "Riki-oh: The Story Of Ricky",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0956c17d-3c70-4756-a3f3-0eae3130cfd0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/riki-oh-the-story-of-ricky",
-    "filmIds": [
-      "riki-oh-the-story-of-ricky",
-      "riki-oh-english-dub"
-    ],
-    "description": "Directed by Lam Nai-choi • 1991 • Hong Kong\nStarring Fan Siu-Wong, Gloria Yip, Yukari Oshima\n\nThe ultimate Hong Kong black-comic gorefest, this live-action adaptation of the cult manga is a blood feast of entrail-wreathed splatter and literally eye-popping ultraviolence. After he’s sentenced to a corrupt private prison for taking revenge on the shadowy gangsters who killed his girlfriend, the seemingly indestructible Ricky Ho (Fan Siu-wong) must fight his way out past a litany of enemies and unsavory figures using his superhuman ability to punch through any object (including the human body). Channeling the kinetic, hyperstylized spirit of the manga source material, writer-director Lam Nai-choi delivers a blast of pure cinema so outrageously over the top it’s nearly avant-garde."
-  },
-  {
-    "id": "a-real-young-girl",
-    "title": "A Real Young Girl",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7ebc8188-43d0-4227-bbec-ab666deb01b3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/a-real-young-girl",
-    "filmIds": [
-      "a-real-young-girl"
-    ],
-    "description": "Directed by Catherine Breillat • 1976 • France\nStarring Charlotte Alexandra, Hiram Keller, Rita Maiden\n\nFilmed in 1976 but not released until 2000, A REAL YOUNG GIRL is Catherine Breillat’s taboo-busting directorial debut and one of the boldest explorations of female sexuality ever committed to celluloid. In adapting her own novel, Breillat unflinchingly depicts the dark desires of Alice (Charlotte Alexandra), a rural adolescent whose uninhibited sexual experimentation troubles her parents (Rita Maiden and Bruno Balp) and augurs doom for her first lover (Hiram Keller). Originally withheld from theaters due to censorship concerns, GIRL proved itself to be not only ahead of its time but also an audacious trial run for Breillat’s core strategies and themes, including the connection between transgressive fantasy and sober reality."
-  },
-  {
-    "id": "late-august-early-september",
-    "title": "Late August, Early September",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/efff57c9-3e46-424d-8616-e846db36424a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/late-august-early-september",
-    "filmIds": [
-      "late-august-early-september"
-    ],
-    "description": "Directed by Olivier Assayas • 1998 • France\nStarring Mathieu Amalric, Virginie Ledoyen, François Cluzet\n\nHaving chronicled the heady abandon of adolescence in COLD WATER, renowned French auteur Olivier Assayas turned his attention to another in-between stage of life: the moment when the seemingly endless possibilities of young adulthood begin to give way to the anxieties of middle age. A cast of Gallic luminaries—including Mathieu Amalric, Jeanne Balibar, Virginie Ledoyen, Alex Descas, and future director Mia Hansen-Løve (in her film debut)—play a coterie of friends and lovers swirling around the Parisian publishing industry whose romantic, professional, and personal crises are amplified when one of their companions, a neglected novelist (François Cluzet), falls seriously ill. Unfolding in a handheld-shot rush of richly impressionistic images and set to the seductive rhythms of Ali Farka Touré, LATE AUGUST, EARLY SEPTEMBER masterfully charts the delicate shifts in relationships that occur as subtly and inexorably as the changing of the seasons."
-  },
-  {
-    "id": "mr-vampire",
-    "title": "Mr. Vampire",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/183f52ed-194b-46a5-9806-39b6e3bc4c89.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/mr-vampire",
-    "filmIds": [
-      "mr-vampire",
-      "mr-vampire-english-dub"
-    ],
-    "description": "Directed by Ricky Lau • 1985 • Hong Kong\nStarring Lam Ching-Ying, Ricky Hui, Chin Siu-Ho\n\nThe film that, along with producer Sammo Hung’s SPOOKY ENCOUNTERS, launched an entire hopping-vampire horror-comedy subgenre is Hong Kong cinema at its most gleefully inventive and gloriously unrestrained. The franchise’s recurring star Lam Ching-Ying plays a unibrowed Taoist priest who, when a bloodthirsty revivified corpse pogoes its way out of the grave and begins terrorizing his town, must use a mix of magic and kung fu to stop the mayhem. Unfortunately, his two bumbling assistants (Ricky Hui and Chin Siu-Ho) cause nearly as much trouble as the bouncing bloodsucker."
-  },
-  {
-    "id": "fitzcarraldo",
-    "title": "Fitzcarraldo",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1c4007e4-8ae1-41e8-9ca7-4b86b435433a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/fitzcarraldo",
-    "filmIds": [
-      "fitzcarraldo"
-    ],
-    "description": "Directed by Werner Herzog • 1982 • West Germany\nStarring Klaus Kinski, Claudia Cardinale\n\nWerner Herzog’s infamously arduous productions were already legendary when he outdid himself with FITZCARRALDO, a feat as utterly quixotic and improbable as its protagonist. Klaus Kinski stars as the wild-eyed turn-of-the-century Irishman Brian Sweeney Fitzgerald who, before he can realize his dream of building an opera house in the Peruvian jungle, must complete an equally monumental undertaking: hauling an enormous riverboat across a mountain, a spectacle achieved by Herzog and his crew not with models and special effects but through sheer Herculean will. Graced with images of breathtaking poetic beauty, FITZCARRALDO stands as a monument to the audacity of uncompromising artistic vision."
+    "description": "The irrepressible Jean-Pierre Léaud stars as François Truffaut’s alter ego across four landmark films of the French New Wave."
   },
   {
     "id": "kalpana",
@@ -3518,31 +3516,50 @@
     "description": "Directed by Miranda July • 2005 • United States\nStarring John Hawkes, Miranda July, Miles Thompson\n\nWith this compassionate, startling comedy that could have come from no other artistic sensibility, the brilliant Miranda July reveals a world both familiar and strange—an original vision of creativity, sexuality, childhood, and loneliness that emerges from a series of braided vignettes around a pair of potential lovers: Richard, a newly single shoe salesman and father of two (John Hawkes), and Christine, a lonely video artist and “Eldercab” driver (July). While they take hesitant steps toward romance, Richard’s sons follow their own curiosity toward their first sexual experiences, online and in real life, venturing into uncharted territories in their attempts to connect with others. Playful and profoundly transgressive, ME AND YOU AND EVERYONE WE KNOW is a poetic look at the tortuous routes we take to intimacy in an isolating world, and the moments of magic and redemption that unite us."
   },
   {
-    "id": "a-nous-la-liberte",
-    "title": "À Nous La Liberté",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/08c30ef8-ffce-485f-99d1-366ba04c2f5c-0b708ca4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/a-nous-la-liberte",
+    "id": "daisies",
+    "title": "Daisies",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dc83829d-2b60-493a-86f3-7d236c7e68eb-5feb4d56.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/daisies",
     "filmIds": [
-      "a-nous-la-liberte",
-      "the-magic-park",
-      "the-singing-flower",
-      "bronja-clair-on-rene-clair",
-      "the-tobis-v-chaplin-affair",
-      "entr-acte"
+      "daisies",
+      "daisies-commentary",
+      "motifs-of-destruction-in-daisies",
+      "naughty-young-people-chytilova-kucera-krumbachova",
+      "journey-a-portrait-of-vera-chytilova",
+      "irena-kovarova-1",
+      "a-bagful-of-fleas",
+      "ceiling"
     ],
-    "description": "Directed by René Clair • 1931 • France\nStarring Raymond Cordy, Henri Marchand, Rolla France\n\nOne of the all-time comedy classics, René Clair’s À NOUS LA LIBERTÉ tells the story of Louis, an escaped convict who becomes a wealthy industrialist. Unfortunately, his past returns (in the form of old jail pal Emile) to upset his carefully laid plans. Featuring lighthearted wit, tremendous visual innovation, and masterful manipulation of sound, À NOUS LA LIBERTÉ is both a potent indictment of mechanized modern society and an uproarious comic delight."
+    "description": "Directed by Věra Chytilová • 1966 • Czechoslovakia\nStarring Ivana Karbanová, Jitka Cerhová, Marie Češková\n\nIf the entire world is bad, why shouldn’t we be? Adopting this insolent attitude as their guiding philosophy, a pair of hedonistic young women (Ivana Karbanová and Jitka Cerhová), both named Marie, embark on a gleefully debauched odyssey of gluttony, giddy destruction, and antipatriarchal resistance, in which nothing is safe from their nihilistic pursuit of pleasure. But what happens when the fun is over? Matching her anarchic message with an equally radical aesthetic, director Věra Chytilová, with the close collaboration of cinematographer Jaroslav Kučera, unleashes an optical storm of fluctuating film stocks, kaleidoscopic montages, cartoonish stop-motion cutouts, and surreal costumes designed by Ester Krumbachová, who also cowrote the script. The result is DAISIES, the most defiant provocation of the Czechoslovak New Wave, an exuberant call to rebellion aimed squarely at those who uphold authoritarian oppression in any form."
   },
   {
-    "id": "i-knew-her-well",
-    "title": "I Knew Her Well",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/272b3ea7-5404-447f-9c10-2ed31e20c297-c3ffb805.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/i-knew-her-well",
+    "id": "seven-samurai",
+    "title": "Seven Samurai",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ef35f942-3100-45c0-bebe-036aab454a2a-5fcca74b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/seven-samurai",
     "filmIds": [
-      "i-knew-her-well",
-      "stefania-sandrelli-on-i-knew-her-well",
-      "luca-barattoni-on-antonio-pietrangeli",
-      "stefania-sandrelli-s-i-knew-her-well-audition"
+      "seven-samurai",
+      "seven-samurai-commentary-1",
+      "seven-samurai-commentary-2",
+      "seven-samurai-origins-and-influences",
+      "john-turturro-on-seven-samurai",
+      "kareem-abdul-jabbar-on-seven-samurai"
     ],
-    "description": "Directed by Antonio Pietrangeli • 1965 • Italy\nStarring Stefania Sandrelli, Mario Adorf, Jean-Claude Brialy\n\nFollowing the gorgeous, seemingly liberated Adriana (DIVORCE ITALIAN STYLE’s Stefania Sandrelli) as she chases her dreams in the Rome of LA DOLCE VITA, I KNEW HER WELL is at once a delightful immersion in the popular music and style of Italy in the sixties and a biting critique of its sexual politics and the culture of celebrity. Over a series of intimate episodes, just about every one featuring a different man, a new hairstyle, and an outfit to match, the unsung Italian master Antonio Pietrangeli, working from a script he cowrote with Ettore Scola, composes a deft, seriocomic character study that never strays from its complicated central figure. I KNEW HER WELL is a thrilling rediscovery, by turns funny, tragic, and altogether jaw-dropping."
+    "description": "Directed by Akira Kurosawa • 1954 • Japan\nStarring Toshiro Mifune, Takashi Shimura, Keiko Tsushima\n\nOne of the most thrilling movie epics of all time, SEVEN SAMURAI (SHICHININ NO SAMURAI) tells the story of a sixteenth-century village whose desperate inhabitants hire the eponymous warriors to protect them from invading bandits. This three-hour ride from Akira Kurosawa, featuring legendary actors Toshiro Mifune and Takashi Shimura, seamlessly weaves philosophy and entertainment, delicate human emotions and relentless action, into a rich, evocative, and unforgettable tale of courage and hope."
+  },
+  {
+    "id": "sansho-the-bailiff",
+    "title": "Sansho The Bailiff",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a0d7f4f5-9d09-4990-8e2b-e4b78dd6f5b9-8f002dc7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/sansho-the-bailiff",
+    "filmIds": [
+      "sansho-the-bailiff",
+      "ari-aster-on-sansho-the-bailiff",
+      "sansho-the-bailiff-commentary",
+      "kyoko-kagawa-on-sansho-the-bailiff",
+      "tokuzo-tanaka-on-sansho-the-bailiff",
+      "tadao-sato-on-sansho-the-bailiff"
+    ],
+    "description": "Directed by Kenji Mizoguchi • 1954 • Japan\nStarring Kinuyo Tanaka, Yoshiaki Hanayagi, Kyoko Kagawa\n\nWhen an idealistic governor disobeys the reigning feudal lord, he is cast into exile, his wife and children left to fend for themselves and eventually wrenched apart by vicious slave traders. Under Kenji Mizoguchi’s dazzling direction, this classic Japanese story became one of cinema’s greatest masterpieces, a monumental, empathetic expression of human resilience in the face of evil."
   }
 ]
