@@ -320,41 +320,6 @@
     "description": "Two recent documentaries by filmmaking duo Anupama Srinivasan and Anirban Dutta, made in far-flung corners of the world, reveal a shared commitment to patient, empathetic observation. FLICKERING LIGHTS follows villagers on the India-Myanmar border who have spent decades awaiting electricity, capturing their hopes, anxieties, and daily struggles when light finally arrives. NOCTURNES plunges viewers into the Himalayan night, where scientists studying hawk moths prompt a deeper reflection on the fragile balance between humans, other species, and a warming planet, building into a quiet meditation on how we see, listen, and connect."
   },
   {
-    "id": "ghost-in-the-shell-stand-alone-complex",
-    "title": "Watch Now",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7027fa3c-e861-45ec-b247-6e520b14f2a3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/ghost-in-the-shell-stand-alone-complex",
-    "filmIds": [
-      "ghost-in-the-shell-stand-alone-complex-episode-1",
-      "ghost-in-the-shell-stand-alone-complex-episode-2",
-      "ghost-in-the-shell-stand-alone-complex-episode-3",
-      "ghost-in-the-shell-stand-alone-complex-episode-4",
-      "ghost-in-the-shell-stand-alone-complex-episode-5",
-      "ghost-in-the-shell-stand-alone-complex-episode-6",
-      "ghost-in-the-shell-stand-alone-complex-episode-7",
-      "ghost-in-the-shell-stand-alone-complex-episode-8",
-      "ghost-in-the-shell-stand-alone-complex-episode-9",
-      "ghost-in-the-shell-stand-alone-complex-episode-10",
-      "ghost-in-the-shell-stand-alone-complex-episode-11",
-      "ghost-in-the-shell-stand-alone-complex-episode-12",
-      "ghost-in-the-shell-stand-alone-complex-episode-13",
-      "ghost-in-the-shell-stand-alone-complex-episode-14",
-      "ghost-in-the-shell-stand-alone-complex-episode-15",
-      "ghost-in-the-shell-stand-alone-complex-episode-16",
-      "ghost-in-the-shell-stand-alone-complex-episode-17",
-      "ghost-in-the-shell-stand-alone-complex-episode-18",
-      "ghost-in-the-shell-stand-alone-complex-episode-19",
-      "ghost-in-the-shell-stand-alone-complex-episode-20",
-      "ghost-in-the-shell-stand-alone-complex-episode-21",
-      "ghost-in-the-shell-stand-alone-complex-episode-22",
-      "ghost-in-the-shell-stand-alone-complex-episode-23",
-      "ghost-in-the-shell-stand-alone-complex-episode-24",
-      "ghost-in-the-shell-stand-alone-complex-episode-25",
-      "ghost-in-the-shell-stand-alone-complex-episode-26"
-    ],
-    "description": "Directed by Kenji Kamiyama • 2002–2003 • Japan\nStarring Atsuko Tanaka, Akio Otsuka, Osamu Saka\n\nOf the myriad adaptations of the foundational cyberpunk manga “Ghost in the Shell,” the animated TV series GHOST IN THE SHELL: STAND ALONE COMPLEX arguably comes closest to capturing the breadth, vision, and thematic complexity of the original. The twenty-six-episode first season unfolds as a riveting science-fiction crime procedural, following the members of the specialized police unit known as Public Security Section 9 as they investigate high-profile cyberterrorism incidents in a future where humans have increasingly become cybernetic hybrids. Their work ultimately leads them into the case of the Laughing Man, an elusive hacktivist whose attempts to expose a vast web of corporate and political corruption threaten to destabilize powerful institutions. Combining sleek visuals with provocative themes surrounding the dissolving boundaries between humans and technology, STAND ALONE COMPLEX remains a thrilling high point in the art of anime: absorbing, intelligent, and often unsettlingly prescient."
-  },
-  {
     "id": "short-films-by-sophy-romvari",
     "title": "Watch Now",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/691d81fc-ba67-4993-8dce-e275aea32d7d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -1227,6 +1192,41 @@
       "gatchaman-the-movie"
     ],
     "description": "Directed by Hisayuki Toriumi • 1978 • Japan\nStarring Katsuji Mori, Isao Sasaki, Kazuko Sugiyama\n\nFans of classic anime will delight in this awesomely retro sci-fi extravaganza teeming with pop-psychedelic visuals and whiz-bang-pow action. Assembled from a selection of episodes from the popular 1970s Japanese television series, GATCHAMAN: THE MOVIE brings together the original color-coded teenage superheroes known as Gatchaman, bird-suited ninja warriors who must fight to save the Earth from an intergalactic terrorist organization threatening world peace. With its comic-book verve, this touchstone of golden-age anime helped shape the team-superhero genre for decades to come."
+  },
+  {
+    "id": "ghost-in-the-shell-stand-alone-complex",
+    "title": "Ghost In The Shell: Stand Alone Complex",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7027fa3c-e861-45ec-b247-6e520b14f2a3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/ghost-in-the-shell-stand-alone-complex",
+    "filmIds": [
+      "ghost-in-the-shell-stand-alone-complex-episode-1",
+      "ghost-in-the-shell-stand-alone-complex-episode-2",
+      "ghost-in-the-shell-stand-alone-complex-episode-3",
+      "ghost-in-the-shell-stand-alone-complex-episode-4",
+      "ghost-in-the-shell-stand-alone-complex-episode-5",
+      "ghost-in-the-shell-stand-alone-complex-episode-6",
+      "ghost-in-the-shell-stand-alone-complex-episode-7",
+      "ghost-in-the-shell-stand-alone-complex-episode-8",
+      "ghost-in-the-shell-stand-alone-complex-episode-9",
+      "ghost-in-the-shell-stand-alone-complex-episode-10",
+      "ghost-in-the-shell-stand-alone-complex-episode-11",
+      "ghost-in-the-shell-stand-alone-complex-episode-12",
+      "ghost-in-the-shell-stand-alone-complex-episode-13",
+      "ghost-in-the-shell-stand-alone-complex-episode-14",
+      "ghost-in-the-shell-stand-alone-complex-episode-15",
+      "ghost-in-the-shell-stand-alone-complex-episode-16",
+      "ghost-in-the-shell-stand-alone-complex-episode-17",
+      "ghost-in-the-shell-stand-alone-complex-episode-18",
+      "ghost-in-the-shell-stand-alone-complex-episode-19",
+      "ghost-in-the-shell-stand-alone-complex-episode-20",
+      "ghost-in-the-shell-stand-alone-complex-episode-21",
+      "ghost-in-the-shell-stand-alone-complex-episode-22",
+      "ghost-in-the-shell-stand-alone-complex-episode-23",
+      "ghost-in-the-shell-stand-alone-complex-episode-24",
+      "ghost-in-the-shell-stand-alone-complex-episode-25",
+      "ghost-in-the-shell-stand-alone-complex-episode-26"
+    ],
+    "description": "Directed by Kenji Kamiyama • 2002–2003 • Japan\nStarring Atsuko Tanaka, Akio Otsuka, Osamu Saka\n\nOf the myriad adaptations of the foundational cyberpunk manga “Ghost in the Shell,” the animated TV series GHOST IN THE SHELL: STAND ALONE COMPLEX arguably comes closest to capturing the breadth, vision, and thematic complexity of the original. The twenty-six-episode first season unfolds as a riveting science-fiction crime procedural, following the members of the specialized police unit known as Public Security Section 9 as they investigate high-profile cyberterrorism incidents in a future where humans have increasingly become cybernetic hybrids. Their work ultimately leads them into the case of the Laughing Man, an elusive hacktivist whose attempts to expose a vast web of corporate and political corruption threaten to destabilize powerful institutions. Combining sleek visuals with provocative themes surrounding the dissolving boundaries between humans and technology, STAND ALONE COMPLEX remains a thrilling high point in the art of anime: absorbing, intelligent, and often unsettlingly prescient."
   },
   {
     "id": "tamala-2010-a-punk-cat-in-space",
@@ -3077,34 +3077,14 @@
     "description": "Directed by Hasse Ekman • 1950 • Sweden\nStarring Eva Henning, Ulf Palme, Anders Ek\n\nOne of the most acclaimed Swedish films of all time (heralded as a masterpiece by no less than Ingmar Bergman), this moody, masterfully crafted psychological mystery unfolds in a tantalizing series of CITIZEN KANE–esque flashbacks as the neighbors of an enigmatic young woman (Eva Henning) who committed suicide attempt to piece together the truth about what drove her to such a tragic end. It builds to a startling final revelation that, in its sensitivity and daring empathy, marks this heartbreaking study of loneliness and isolation as an important milestone in queer cinema."
   },
   {
-    "id": "late-august-early-september",
-    "title": "Late August, Early September",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/efff57c9-3e46-424d-8616-e846db36424a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/late-august-early-september",
+    "id": "possession",
+    "title": "Possession",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/006a9dd0-fd85-4e0d-9fc4-45f562d36c13.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/possession",
     "filmIds": [
-      "late-august-early-september"
+      "possession"
     ],
-    "description": "Directed by Olivier Assayas • 1998 • France\nStarring Mathieu Amalric, Virginie Ledoyen, François Cluzet\n\nHaving chronicled the heady abandon of adolescence in COLD WATER, renowned French auteur Olivier Assayas turned his attention to another in-between stage of life: the moment when the seemingly endless possibilities of young adulthood begin to give way to the anxieties of middle age. A cast of Gallic luminaries—including Mathieu Amalric, Jeanne Balibar, Virginie Ledoyen, Alex Descas, and future director Mia Hansen-Løve (in her film debut)—play a coterie of friends and lovers swirling around the Parisian publishing industry whose romantic, professional, and personal crises are amplified when one of their companions, a neglected novelist (François Cluzet), falls seriously ill. Unfolding in a handheld-shot rush of richly impressionistic images and set to the seductive rhythms of Ali Farka Touré, LATE AUGUST, EARLY SEPTEMBER masterfully charts the delicate shifts in relationships that occur as subtly and inexorably as the changing of the seasons."
-  },
-  {
-    "id": "millennium-mambo",
-    "title": "Millennium Mambo",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/45512860-c1d0-4811-9da0-d471fcb18e08.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/millennium-mambo",
-    "filmIds": [
-      "millennium-mambo"
-    ],
-    "description": "Directed by Hou Hsiao-hsien • 2001 • Taiwan\nStarring Shu Qi, Jack Kao, Duan Chun-hao\n\nHou Hsiao-hsien’s neon-splashed reverie is a dreamlike drift through the night world of early-2000s Taipei. From the year 2011, the wayward Vicky (Shu Qi)—a bar hostess caught between a jealously possessive boyfriend and a gangster—looks back on her life ten years earlier, rendered in flashback as a transfixing, narcotic haze of trancy techno, sumptuous slo-mo, and ravishing iridescent imagery, tempered by an undercurrent of inescapable ennui."
-  },
-  {
-    "id": "bullet-in-the-head",
-    "title": "Bullet In The Head",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0ba7a73-968e-40b3-abcb-9b3f394dd48c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/bullet-in-the-head",
-    "filmIds": [
-      "bullet-in-the-head"
-    ],
-    "description": "Directed by John Woo • 1990 • Hong Kong\nStarring Tony Leung Chiu-wai, Jacky Cheung, Simon Yam\n\nOne of director John Woo’s most ambitious and emotionally charged films, this intense action epic follows the fates of three friends—gangsters Ben (Tony Leung Chiu-wai), Frank (Jacky Cheung), and Paul (Waise Lee)—as they leave behind 1960s Hong Kong to pull off a smuggling job in war-torn Vietnam, only to find their loyalties to one another tested when they are taken prisoner by the Vietcong. The most expensive Hong Kong film ever made at the time of its production—an arduous undertaking that drove Woo to the brink to realize his vision—BULLET IN THE HEAD blends the filmmaker’s celebrated action spectacle with a harrowing depiction of the POW experience that has earned it comparisons to THE DEER HUNTER."
+    "description": "Directed by Andrzej Żuławski • 1981 • France, West Germany\nStarring Isabelle Adjani, Sam Neill, Heinz Bennent\n\nAndrzej Żuławski’s stunningly choreographed nightmare of a marriage unraveling is an experience unlike any other. Professional spy Mark (Sam Neill) returns to his West Berlin home to find his wife Anna (Isabelle Adjani, in a role that earned her Best Actress at both Cannes and the César Awards) intent on a divorce. As Anna’s frenzied behavior becomes ever more alarming, Mark discovers a truth far more sinister than his wildest suspicions. With its pulsating score, visceral imagery, and some of the most intense performances ever captured on-screen, POSSESSION is cinematic delirium at its most intoxicating."
   },
   {
     "id": "golden-balls",
@@ -3117,74 +3097,146 @@
     "description": "Directed by Bigas Luna • 1993 • Spain, Italy, France\nStarring Javier Bardem, Maribel Verdú, Benicio Del Toro\n\nBigas Luna’s follow-up to his international hit JAMÓN JAMÓN is a deliriously libidinous, scathingly satirical takedown of toxic machismo and capitalist excess. A superbly earthy Javier Bardem stars as Benito González, the unabashedly tacky, supremely cocky womanizer and wannabe industrialist whose dreams of building an enormous skyscraper—an appropriately phallic ode to his monumental ego—come crashing down spectacularly. Luna cranks up the sexually supercharged hothouse atmosphere while gleefully cutting the “great man” myth down to size."
   },
   {
-    "id": "anatomy-of-hell",
-    "title": "Anatomy Of Hell",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/79441dcd-d6e3-4e56-b218-e307f9fb1ffc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/anatomy-of-hell",
+    "id": "hiroshima-mon-amour",
+    "title": "Hiroshima Mon Amour",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/39f58618-c676-4c3b-b4f8-9240e98da13a-dff65c3c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/hiroshima-mon-amour",
     "filmIds": [
-      "anatomy-of-hell"
+      "hiroshima-mon-amour",
+      "hiroshima-mon-amour-commentary",
+      "alain-resnais-on-hiroshima-mon-amour",
+      "alain-resnais-on-hiroshima-mon-amour-1",
+      "ari-aster-on-hiroshima-mon-amour",
+      "emmanuelle-riva-on-hiroshima-mon-amour",
+      "emmanuelle-riva-on-hiroshima-mon-amour-1",
+      "francois-thomas-on-hiroshima-mon-amour",
+      "memory-and-meaning-the-music-of-hiroshima-mon-amour",
+      "revoir-hiroshima",
+      "mutations-of-memory-editing-in-hiroshima-mon-amour",
+      "stan-lee-on-resnais"
     ],
-    "description": "Directed by Catherine Breillat • 2004 • France\nStarring Amira Casar, Rocco Siffredi\n\nAfter attempting suicide, a young woman (Amira Casar) makes a startling proposition to the man (Rocco Siffredi) who rescued her: she will pay him to watch her naked body over the course of four nights as long as he provides “impartial” commentary about what he sees. Thus ensues ANATOMY OF HELL, one of the most controversial films of Catherine Breillat’s career—a singularly daring meditation on the pleasures and horrors of the flesh. Buoyed by the two leads’ fearless performances, HELL is as much a philosophical treatise on the hidden traumas of sexuality as it is an increasingly unsettling battle of the sexes, with Breillat using a hushed chamber-play setup to show the spectator no quarter throughout the transgressive proceedings. The result is like nothing else, even within the director’s audacious oeuvre: her deepest expression of anguish over the unspeakable ecstasies and degradations of the body erotic."
+    "description": "Directed by Alain Resnais • 1959 • France, Japan\nStarring Emmanuelle Riva, Eiji Okada\n\nA cornerstone of the French New Wave, the first feature from Alain Resnais is one of the most influential films of all time. A French actress (Emmanuelle Riva) and a Japanese architect (Eiji Okada) engage in a brief, intense affair in postwar Hiroshima, their consuming mutual fascination impelling them to exorcise their own scarred memories of love and suffering. With an innovative flashback structure and an Academy Award–nominated screenplay by novelist Marguerite Duras, HIROSHIMA MON AMOUR (“Hiroshima My Love”) is a moody masterwork that delicately weaves past and present, personal pain and public anguish."
   },
   {
-    "id": "lucio-flavio",
-    "title": "Lúcio Flávio",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ec1b9ad2-b019-4004-958c-92fde6891ad8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/lucio-flavio",
+    "id": "mandabi",
+    "title": "Mandabi",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/44b6c388-58fe-430f-b3f6-e00239403fa1-fc84dc0a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/mandabi",
     "filmIds": [
-      "lucio-flavio"
+      "mandabi",
+      "aboubakar-sanogo-on-mandabi",
+      "boubakar-boris-diop-and-marie-angelique-savane-on-mandabi",
+      "tauw",
+      "praise-song"
     ],
-    "description": "Directed by Héctor Babenco • 1977 • Brazil\nStarring Reginaldo Faria, Ana Maria Magalhães, Paulo César Peréio\n\nAn enormous box-office success in Brazil, Héctor Babenco’s second feature electrified audiences with its gritty, gut-punching evocation of a corrupt world where the line between criminals and law enforcement has become virtually invisible. Based on the true story of an infamous bandit, LÚCIO FLÁVIO stars Reginaldo Faria as the titular outlaw, whose charisma and audacious bank-robbing exploits make him a media sensation. Throughout, Babenco entwines Flávio’s story with the operations of Brazil’s notorious Esquadrão da Morte (Death Squad), revealing the systemic violence operating on all levels of society."
+    "description": "Directed by Ousmane Sembène • 1968 • Senegal\nStarring Makuredia Guey, Yunus Ndiaye, Isseu Niang\n\nThis second feature by Ousmane Sembène was the first movie ever made in the Wolof language—a major step toward the realization of the trailblazing Senegalese filmmaker’s dream of creating a cinema by, about, and for Africans. After jobless Ibrahima Dieng receives a money order for 25,000 francs from a nephew who works in Paris, news of his windfall quickly spreads among his neighbors, who flock to him for loans even as he finds his attempts to cash the order stymied in a maze of bureaucracy, and new troubles rain down on his head. One of Sembène’s most coruscatingly funny and indignant films, MANDABI—an adaptation of a novella by the director himself—is a bitterly ironic depiction of a society scarred by colonialism and plagued by corruption, greed, and poverty."
   },
   {
-    "id": "la-marge",
-    "title": "La Marge",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5e99263f-b020-4cd4-a9f1-9737f99357fd.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/la-marge",
+    "id": "aguirre-the-wrath-of-god",
+    "title": "Aguirre, The Wrath Of God",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e89ff15c-8615-4799-a119-97d9db5a5661.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/aguirre-the-wrath-of-god",
     "filmIds": [
-      "la-marge"
+      "aguirre-the-wrath-of-god"
     ],
-    "description": "Directed by Walerian Borowczyk • 1976 • France\nStarring Sylvia Kristel, Joe Dallesandro, André Falcon\n\nOne of director Walerian Borowczyk’s most haunting and psychologically complex films, LA MARGE (“The Margin”) stars Joe Dallesandro as Sigismond, a happily married businessman who embarks on an intense affair with a sex worker (Sylvia Kristel of EMMANUELLE fame) while on a business trip to Paris. When he receives devastating news from back home, Sigismond throws himself further into a sordid world of sex, grief, and obsession. Borowczyk conjures gorgeous, dreamlike images set to an evocative soundtrack that includes Elton John, Pink Floyd, 10cc, and Chopin."
+    "description": "Directed by Werner Herzog • 1972 • West Germany, Mexico, Peru\nStarring Klaus Kinski, Ruy Guerra, Helena Roho\n\nThe first of Werner Herzog’s legendary—and notoriously tempestuous—collaborations with actor Klaus Kinski is a feverish account of sixteenth-century Spanish conquistador Lope de Aguirre’s obsessive quest through the South American rainforest to discover the fabled city of gold, El Dorado, a crazed delusion that leads him and his band of explorers into the heart of darkness. Kinski’s unhinged performance, the mystical score by Popol Vuh, and the lush, hallucinatory jungle images come together in one of the most haunting, deliriously inspired visions in all of 1970s cinema, a senses-shattering journey to the edge of madness."
   },
   {
-    "id": "a-better-tomorrow",
-    "title": "A Better Tomorrow",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/35b74b25-6a9f-4df3-823f-d7cf2b69aca7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/a-better-tomorrow",
+    "id": "death-watch",
+    "title": "Death Watch",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/475b25b7-726b-4fbb-856b-44b1d60b6469.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/death-watch",
     "filmIds": [
-      "a-better-tomorrow"
+      "death-watch"
     ],
-    "description": "Directed by John Woo • 1986 • Hong Kong\nStarring Ti Lung, Chow Yun-fat, Leslie Cheung\n\nThe box-office sensation that established director John Woo as the king of 1980s Hong Kong action cinema and set the standard for the heroic bloodshed genre, this electrifying gangster saga combines the director’s intricate bullet play with operatic emotion as it tracks the explosive relationship between two brothers, one a criminal trying to reform (Ti Lung), the other a cop (Leslie Cheung) who blames his brother for their father’s death. In the first of his celebrated collaborations with Woo, Chow Yun-fat radiates his matchless cool as a hit man who lives by his own code."
+    "description": "Directed by Bertrand Tavernier • 1980 • France, West Germany\nStarring Romy Schneider, Harvey Keitel, Harry Dean Stanton\n\nPart human drama, part sci-fi cautionary tale, Bertrand Tavernier’s DEATH WATCH unfolds in a future where death by disease has become extremely rare. When it is discovered that Katherine (Romy Schneider, in one of her final roles) has an incurable illness, she becomes an object of intense media fascination—so much so that Roddy (Harvey Keitel) has a camera implanted into his brain so that he can record, unbeknownst to Katherine, her final days for the reality television series “Death Watch.” By turns moving and unsettling, this cult classic is a chillingly prescient vision of a voyeuristic society in decay."
   },
   {
-    "id": "stroszek",
-    "title": "Stroszek",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6330245f-868c-4165-8504-36a150b36896.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/stroszek",
+    "id": "west-indies-the-fugitive-slaves-of-liberty",
+    "title": "West Indies: The Fugitive Slaves Of Liberty",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7bf337d7-21c6-469a-a11f-d518d76eee94.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/west-indies-the-fugitive-slaves-of-liberty",
     "filmIds": [
-      "stroszek"
+      "west-indies-the-fugitive-slaves-of-liberty"
     ],
-    "description": "Directed by Werner Herzog • 1977 • West Germany\nStarring Bruno S., Eva Mattes, Clemens Scheitz\n\nWerner Herzog’s tragically absurd tour through 1970s America stars the singular Bruno S. as an ostracized, alcoholic Berlin street musician who, joined by a prostitute (Eva Mattes) and his eccentric elderly neighbor (Clemens Scheitz), leaves Germany behind for the promise of a better life in the States—only to find himself lost in a surreal Wisconsin wasteland. By turns darkly comic and despairing, STROSZEK is a wondrously offbeat ballad of immigrant alienation graced with an unexpected and indelible ending."
+    "description": "Directed by Med Hondo • 1979 • Algeria, Mauritania, France\nStarring Robert Liensol, Roland Bertin, Hélène Vincent\n\nMauritanian French director Med Hondo’s staggering WEST INDIES: THE FUGITIVE SLAVES OF LIBERTY is a sui generis amalgam of historical epic, Broadway revue, Brechtian theater, and joyous agitprop. Using an enormous mock slave ship as the film’s only soundstage, Hondo mounts intricately choreographed reenactments and dance numbers across his multipurpose set to investigate more than three centuries of imperialist oppression. The story traverses the West Indies, Europe, and the Middle Passage; jumps across time to depict the effects of official French policy upon the colonized, the enslaved, and their descendants; and surveys the actions and motivations of the resigned, the revolutionary, and the powers that be (along with their lackeys). No mere extravaganza, WEST INDIES is a call to arms for a spectacular yet critical cinematic reimagining of an entire people’s history of resistance and struggle."
   },
   {
-    "id": "possession",
-    "title": "Possession",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/006a9dd0-fd85-4e0d-9fc4-45f562d36c13.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/possession",
+    "id": "werckmeister-harmonies",
+    "title": "Werckmeister Harmonies",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d1fc01cf-313f-4bba-a642-ebb29f8dff3c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/werckmeister-harmonies",
     "filmIds": [
-      "possession"
+      "werckmeister-harmonies",
+      "bela-tarr-on-werckmeister-harmonies",
+      "family-nest"
     ],
-    "description": "Directed by Andrzej Żuławski • 1981 • France, West Germany\nStarring Isabelle Adjani, Sam Neill, Heinz Bennent\n\nAndrzej Żuławski’s stunningly choreographed nightmare of a marriage unraveling is an experience unlike any other. Professional spy Mark (Sam Neill) returns to his West Berlin home to find his wife Anna (Isabelle Adjani, in a role that earned her Best Actress at both Cannes and the César Awards) intent on a divorce. As Anna’s frenzied behavior becomes ever more alarming, Mark discovers a truth far more sinister than his wildest suspicions. With its pulsating score, visceral imagery, and some of the most intense performances ever captured on-screen, POSSESSION is cinematic delirium at its most intoxicating."
+    "description": "Directed by Béla Tarr and Ágnes Hranitzky • 2000 • Hungary\nStarring Lars Rudolph, Peter Fitz, Hanna Schygulla\n\nThis mesmeric parable of societal collapse is an enigma of transcendent visual, philosophical, and mystical resonance. Adapted from a novel by László Krasznahorkai, WERCKMEISTER HARMONIES unfolds in an unknown time in an unnamed village, where, one day, a mysterious circus—complete with an enormous stuffed whale and a shadowy, demagogue-like figure known as the Prince—arrives and appears to awaken a kind of madness in the citizens that builds inexorably toward violence. In thirty-nine hypnotic long takes engraved in ghostly black and white, auteur Béla Tarr and codirector-editor Ágnes Hranitzky conjure an apocalyptic vision of dreamlike dread and fathomless beauty."
   },
   {
-    "id": "the-cassandra-cat",
-    "title": "The Cassandra Cat",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/cd0f5c9a-2dd3-47a6-9ea5-38f5fc82ba73.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-cassandra-cat",
+    "id": "when-a-woman-ascends-the-stairs",
+    "title": "When A Woman Ascends The Stairs",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/120be8d0-4386-490b-8fbf-9183ab29c22d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/when-a-woman-ascends-the-stairs",
     "filmIds": [
-      "the-cassandra-cat"
+      "when-a-woman-ascends-the-stairs",
+      "when-a-woman-ascends-the-stairs-commentary",
+      "imogen-sara-smith-on-mikio-naruse",
+      "tatsuya-nakadai-on-when-a-woman-ascends-the-stairs"
     ],
-    "description": "Directed by Vojtěch Jasný • 1963 • Czechoslovakia\nStarring Jan Werich, Emília Vášáryová, Vlastimil Brodský\n\nIn this modern-day fairy tale and rediscovered Czech New Wave cult classic, an ordinary Bohemian village is visited by a magician (Jan Werich), his beautiful assistant (Emília Vásáryová), and a magic cat with the power to reveal people in colors that indicate their true natures: yellow for the unfaithful, purple for liars, red for lovers like Robert (Vlastimil Brodský), a bighearted schoolteacher whose independence of thought places him at odds with the town’s conservative authorities. When the cat reveals the villagers as they really are and the town descends into whimsical chaos, humorless school principal Karel (Jiří Sovák) vows to hunt down the feline and put an end to its anarchic reign. Ahead of its time in experimenting with stylized color and extended political metaphor, THE CASSANDRA CAT is director Vojtěch Jasný’s triumphant excursion into fantasy as a mirror of real-life social divisions and hypocrisies."
+    "description": "Directed by Mikio Naruse • 1960 • Japan\nStarring Hideko Takamine, Masayuki Mori, Reiko Dan\n\nWHEN A WOMAN ASCENDS THE STAIRS might be Japanese filmmaker Mikio Naruse’s finest hour, a delicate, devastating study of a woman, Keiko (played heartbreakingly by Hideko Takamine), who works as a bar hostess in Tokyo’s very modern postwar Ginza district, who entertains businessmen after work. Sly, resourceful, but trapped, Keiko comes to embody the conflicts and struggles of a woman trying to establish her independence in a male-dominated society. WHEN A WOMAN ASCENDS THE STAIRS shows the largely unsung yet widely beloved master Naruse at his most socially exacting and profoundly emotional."
+  },
+  {
+    "id": "cairo-station",
+    "title": "Cairo Station",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/25059cc7-a374-4b4f-9db1-d4fb4e7d5967.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/cairo-station",
+    "filmIds": [
+      "cairo-station",
+      "richard-pena-on-youssef-chahine",
+      "joseph-fahim-on-cairo-station",
+      "chahine-why",
+      "cairo-as-seen-by-chahine",
+      "youssef-chahine-at-the-midnight-sun-film-festival"
+    ],
+    "description": "Directed by Youssef Chahine • 1958 • Egypt\nStarring Youssef Chahine, Farid Shawqi, Hind Rostom\n\nYoussef Chahine established his international reputation with this masterpiece, which, though initially a commercial failure in Egypt, would become one of the most influential and celebrated works in all of Arab cinema. The director himself stars as Kenawi, a disabled newspaper hawker whose obsession with a sultry drink seller (Hind Rostom, known as the “Marilyn Monroe of Arabia”) leads to tragedy of operatic proportions on the streets of Cairo. Blending elements of neorealism with provocative noir-melodrama, CAIRO STATION is a work of raw populist poetry that explores the individual’s search for a place in Egypt’s new postrevolutionary political order."
+  },
+  {
+    "id": "jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
+    "title": "Jeanne Dielman, 23, Quai Du Commerce, 1080 Bruxelles",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5995a246-483c-462a-8b9e-77e8f7dd45fd-737aa7d8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
+    "filmIds": [
+      "jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
+      "autour-de-jeanne-dielman",
+      "autor-replace-test",
+      "chantal-akerman-on-jeanne-dielman",
+      "chantal-akerman-on-filmmaking",
+      "chantal-akerman-and-delphine-seyrig",
+      "babette-mangolte-on-jeanne-dielman",
+      "natalia-akerman",
+      "saute-ma-ville",
+      "chantal-akerman-on-saute-ma-ville-2009",
+      "channel-c041197-amg-karynkusama-jeannedielman",
+      "jhumpa-lahiri-on-jeanne-dielman",
+      "sofia-coppola-on-jeanne-dielman"
+    ],
+    "description": "Directed by Chantal Akerman • 1975 • Belgium\nStarring Delphine Seyrig, Jan Decorte\n\nA singular work in film history, Chantal Akerman’s JEANNE DIELMAN, 23, QUAI DU COMMERCE, 1080 BRUXELLES meticulously details, with a sense of impending doom, the daily routine of a middle-aged widow, whose chores include making the beds, cooking dinner for her son, and turning the occasional trick. In its enormous spareness, Akerman’s film seems simple, but it encompasses an entire world. Whether seen as an exacting character study or as one of cinema’s most hypnotic and complete depictions of space and time, JEANNE DIELMAN is an astonishing, compelling movie experiment, one that has been analyzed and argued over for decades."
+  },
+  {
+    "id": "merry-christmas-mr-lawrence",
+    "title": "Merry Christmas Mr. Lawrence",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/51e31211-ac5d-4096-886e-f62d1309f4ed-5fc57fd4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/merry-christmas-mr-lawrence",
+    "filmIds": [
+      "merry-christmas-mr-lawrence",
+      "the-oshima-gang",
+      "merry-christmas-mr-lawrence-on-the-screenplay",
+      "merry-christmas-mr-lawrence-on-location",
+      "merry-christmas-mr-lawrence-on-the-music",
+      "hasten-slowly"
+    ],
+    "description": "Criterion Collection Edition #535\n\nDirected by Nagisa Oshima • 1983 • Japan\nStarring David Bowie, Ryuichi Sakamoto, Tom Conti\n\nIn this captivating, skewed World War II drama from Nagisa Oshima, David Bowie regally embodies Celliers, a British officer interned by the Japanese as a POW. Rock star Ryuichi Sakamoto (who also composed this film’s hypnotic score) plays the camp commander, obsessed with the mysterious blond major, while Tom Conti is the British lieutenant colonel Lawrence, who tries to bridge the emotional and language divides between captor and prisoner. Also featuring actor-director Takeshi Kitano in his first dramatic role, MERRY CHRISTMAS MR. LAWRENCE is a multilayered, brutal, at times erotic tale of culture clash, and one of Oshima’s greatest successes."
   },
   {
     "id": "kalpana",
@@ -3489,46 +3541,37 @@
     "description": "Directed by Miranda July • 2005 • United States\nStarring John Hawkes, Miranda July, Miles Thompson\n\nWith this compassionate, startling comedy that could have come from no other artistic sensibility, the brilliant Miranda July reveals a world both familiar and strange—an original vision of creativity, sexuality, childhood, and loneliness that emerges from a series of braided vignettes around a pair of potential lovers: Richard, a newly single shoe salesman and father of two (John Hawkes), and Christine, a lonely video artist and “Eldercab” driver (July). While they take hesitant steps toward romance, Richard’s sons follow their own curiosity toward their first sexual experiences, online and in real life, venturing into uncharted territories in their attempts to connect with others. Playful and profoundly transgressive, ME AND YOU AND EVERYONE WE KNOW is a poetic look at the tortuous routes we take to intimacy in an isolating world, and the moments of magic and redemption that unite us."
   },
   {
-    "id": "the-crime-of-monsieur-lange",
-    "title": "The Crime Of Monsieur Lange",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8397ac0d-b0c9-466d-8c3e-ab94fa2cf79f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-crime-of-monsieur-lange",
+    "id": "rashomon",
+    "title": "Rashomon",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/75503cb0-6850-4789-a1ef-3c42ef0205f7-dbb1ea3f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/rashomon",
     "filmIds": [
-      "the-crime-of-monsieur-lange",
-      "imogen-sara-smith-on-french-poetic-realism"
+      "rashomon",
+      "rashomon-commentary",
+      "spike-lee-on-rashomon",
+      "robert-altman-on-rashomon",
+      "paul-feig-on-rashomon",
+      "philip-kaufman-on-rashomon",
+      "julie-taymor-on-rashomon",
+      "the-world-of-kazuo-miyagawa",
+      "a-testimony-as-an-image"
     ],
-    "description": "Directed by Jean Renoir • 1936 • France\nStarring René Lefèvre, Florelle, Jules Berry\n\nAn oft-overlooked jewel from Jean Renoir, this exuberant ode to working-class solidarity is both one of the director’s most thoroughly charming works as well as one of his most sly political statements. Channeling the collectivist, utopian spirit of the Popular Front movement, THE CRIME OF MONSIEUR LANGE combines comedy with thriller elements to tell the story of a publishing house where the exploited employees form a collective following the sudden death of their tyrannical boss. When the supposedly dead man unexpectedly returns, a mild-mannered writer of Western serials (René Lefèvre) takes matters into his own hands."
+    "description": "Directed by Akira Kurosawa • 1950 • Japan\nStarring Toshiro Mifune, Machiko Kyo, Masayuki Mori\n\nA riveting psychological thriller that investigates the nature of truth and the meaning of justice, RASHOMON is widely considered one of the greatest films ever made. Four people give different accounts of a man’s murder and the rape of his wife, which director Akira Kurosawa presents with striking imagery and an ingenious use of flashbacks. This eloquent masterwork and international sensation revolutionized film language and introduced Japanese cinema, and a commanding new star by the name of Toshiro Mifune, to the Western world.\n\nRestored by the Academy Film Archive, the National Film Center of the National Museum of Modern Art, Tokyo, and Kadokawa Pictures, Inc. Funding provided by Kadokawa Culture Promotion Foundation and The Film Foundation."
   },
   {
-    "id": "an-angel-at-my-table",
-    "title": "An Angel At My Table",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/edea2d0b-fcc0-472b-8f71-736f5164c1e2-9335d677.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/an-angel-at-my-table",
+    "id": "black-narcissus",
+    "title": "Black Narcissus",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5b448298-bf8b-4850-bac7-f15fd34e7cf6-5470e698.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/black-narcissus",
     "filmIds": [
-      "an-angel-at-my-table",
-      "an-angel-at-my-table-commentary",
-      "the-making-of-an-angel-at-my-table",
-      "six-deleted-scenes",
-      "jane-campion-in-her-own-words",
-      "mira-nair-on-an-angel-at-my-table"
+      "black-narcissus",
+      "black-narcissus-commentary",
+      "edgar-wright-on-black-narcissus",
+      "bertrand-tavernier",
+      "the-audacious-adventurer",
+      "painting-with-light",
+      "color-motifs-in-black-narcissus"
     ],
-    "description": "Directed by Jane Campion • 1990 • New Zealand\nStarring Kerry Fox, Alexia Keogh, Karen Fergusson\n\nWith AN ANGEL AT MY TABLE, Academy Award–winning filmmaker Jane Campion brought to the screen the harrowing autobiography of Janet Frame, New Zealand’s most distinguished author. Three actors in turn take on the lead role (including Kerry Fox in a marvelous performance as the adult Frame), as the film describes a journey from an impoverished childhood marked by tragedy to a misdiagnosis of schizophrenia resulting in electroshock therapy and a narrowly escaped lobotomy to, finally, international literary fame. Unobtrusively capturing the beauty and power of the New Zealand landscape while maintaining the film’s focus on the figure at its center, Campion broke new ground for female filmmakers everywhere and earned a sweep of her country’s film awards, along with the Special Jury Prize at the Venice Film Festival."
-  },
-  {
-    "id": "the-devil-and-daniel-webster",
-    "title": "All That Money Can Buy",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/06090b9d-3b32-48cf-afe4-1c4cd584d632.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-devil-and-daniel-webster",
-    "filmIds": [
-      "the-devil-and-daniel-webster",
-      "the-devil-and-daniel-webster-commentary",
-      "the-devil-and-daniel-webster-and-here-is-a-man",
-      "continuity-editing-in-the-devil-and-daniel-webster",
-      "the-devil-and-daniel-webster-1",
-      "the-columbia-workshop-the-devil-and-daniel-webster-1938",
-      "the-columbia-workshop-daniel-webster-and-the-sea-serpent-1937",
-      "the-devil-and-daniel-webster-restoration-demonstration"
-    ],
-    "description": "Directed by William Dieterle • 1941 • United States\nStarring Edward Arnold, Walter Huston, James Craig\n\nJabez Stone is a hardworking farmer trying to make an honest living, but a streak of bad luck tempts him to do the unthinkable: bargain with the devil himself. In exchange for seven years of good fortune, Stone promises “Mr. Scratch” his soul. But when the troubled farmer begins to realize the error of his choice, he enlists the aid of the one man who might save him: the legendary orator and politician Daniel Webster. Directed with stylish flair by William Dieterle, ALL THAT MONEY CAN BUY (a.k.a. THE DEVIL AND DANIEL WEBSTER) brings the classic short story by Stephen Vincent Benét to life with inspired visuals, an unforgettable, Oscar-winning score by Bernard Herrmann, and a truly diabolical performance from Walter Huston as the devil."
+    "description": "Directed by Michael Powell and Emeric Pressburger • 1947 • United Kingdom\nStarring Deborah Kerr, Sabu, David Farrar\n\nThis explosive work about the conflict between the spirit and the flesh is the epitome of the sensuous style of Michael Powell and Emeric Pressburger. A group of nuns—played by some of Britain’s finest actresses, including Deborah Kerr, Kathleen Byron, and Flora Robson—struggle to establish a convent in the Himalayas, while isolation, extreme weather, altitude, and culture clashes all conspire to drive the well-intentioned missionaries mad. A darkly grand film that won Oscars for Alfred Junge's art direction and Jack Cardiff's cinematography, BLACK NARCISSUS is one of the greatest achievements by two of cinema’s true visionaries."
   }
 ]
