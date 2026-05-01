@@ -501,6 +501,16 @@
     "description": "The formally adventurous and psychologically intricate films of ever-fascinating Canadian auteur Atom Egoyan unfold according to complex, time-scrambling structures that heighten their searing emotional impact. Exploring issues of identity (including his own Armenian heritage), loss, alienation, and technology, Egoyan’s films frequently revolve around people struggling to make sense of their own shattered sense of self in the wake of profound personal tragedies. His provocative themes and elliptical style are on display in early critical triumphs like FAMILY VIEWING and SPEAKING PARTS and reach new heights of virtuosity in the riveting psychological dramas FELICIA’S JOURNEY, EXOTICA, and THE SWEET HEREAFTER, the last of which has been hailed as one of the greatest Canadian films of all time."
   },
   {
+    "id": "happyend",
+    "title": "Happyend",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d635f923-c053-4e9e-82c0-1d5d08d6a7c6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/happyend",
+    "filmIds": [
+      "happyend"
+    ],
+    "description": "Directed by Neo Sora • 2024 • Japan, United States\nStarring Hayato Kurihara, Yukito Hidaka, Yuta Hayashi\n\nA heartfelt coming-of-age anthem and a mesmerizing vision of resistance, rebellion, and the irrepressible spirit of youth, the at once humorous and incisive feature debut from director Neo Sora imagines the high school experience in a dystopian near-future Tokyo. There, after best friends Yuta (Hayato Kurihara) and Kou (Yukito Hidaka) pull an audacious prank on their principal, the school responds by installing an elaborate surveillance system. Between the oppressive new security measures, a darkening national political climate, and the omnipresent threat of catastrophic earthquakes, the increasingly disillusioned Kou finds himself inspired to take a stand as an activist, while the passive Yuta remains seemingly unaware of what is going on around him. For the first time in their lifelong friendship, the two are forced to reckon with differences they had never confronted before."
+  },
+  {
     "id": "peter-hujar-s-day",
     "title": "Peter Hujar’s Day",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c648c9bc-2819-4064-96d2-b26e8c7f5f9a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -530,16 +540,6 @@
       "megadoc"
     ],
     "description": "Directed by Mike Figgis • 2025 • United States\nStarring Francis Ford Coppola, Aubrey Plaza, Adam Driver\n\nA decades-in-the-making passion project financed by legendary director Francis Ford Coppola using $120 million of his own money, the audacious science-fiction epic MEGALOPOLIS stands as one of cinema history’s boldest auteur statements. Mike Figgis’ immersive documentary goes behind the scenes of the making of this singular spectacle, weaving together archival material; unfiltered interviews with stars Adam Driver, Giancarlo Esposito, Aubrey Plaza, and others; and a close-up view of how Coppola drew from Roman history, political allegory, and his own uncompromising vision to shape the world of MEGALOPOLIS. This isn’t just a record of a production on the brink—it’s an unmissable portrait of an artist staking everything on his ambition."
-  },
-  {
-    "id": "carol-joy",
-    "title": "Carol & Joy",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3e05bb02-5769-4461-8f19-b88b570056f4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/carol-joy",
-    "filmIds": [
-      "carol-joy"
-    ],
-    "description": "Directed by Nathan Silver • 2025 • United States\nStarring Carol Kane, Joy Kane\n\nShot on wonderfully warm, light-filled 16 mm with the intimacy of a home movie, this vibrant documentary snapshot captures beloved actor Carol Kane (reuniting with BETWEEN THE TEMPLES director Nathan Silver) and her mother, ninety-eight-year-old music teacher and former dancer Joy Kane, during a lively afternoon in the Upper West Side apartment they share. As visitors drop by and music fills the home, Joy reflects on nearly one hundred years of living on her own uncompromising terms, while Carol discusses the influence her mother’s iconoclastic spirit has had on her own life."
   },
   {
     "id": "magellan",
@@ -581,16 +581,6 @@
       "how-to-shoot-a-ghost"
     ],
     "description": "Directed by Charlie Kaufman • 2025 • United States, Greece\nStarring Jessie Buckley, Josef Akiki\n\nPart ghost story, part city symphony, this elegiac short directed by Charlie Kaufman traces the meeting of two recently deceased young people—a troubled photographer (Jessie Buckley) and a gay translator (Josef Akiki)—whose restless souls wander the streets of Athens, Greece, where they confront both the remnants of the city’s history and the wreckage of their own unresolved lives. Folding complex ideas around mortality, memory, and migration into exquisite, ethereal images, Kaufman arrives at a breathtakingly moving vision of two outsiders searching for connection and consolation beyond the bounds of life."
-  },
-  {
-    "id": "happyend",
-    "title": "Happyend",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d635f923-c053-4e9e-82c0-1d5d08d6a7c6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/happyend",
-    "filmIds": [
-      "happyend"
-    ],
-    "description": "Directed by Neo Sora • 2024 • Japan, United States\nStarring Hayato Kurihara, Yukito Hidaka, Yuta Hayashi\n\nA heartfelt coming-of-age anthem and a mesmerizing vision of resistance, rebellion, and the irrepressible spirit of youth, the at once humorous and incisive feature debut from director Neo Sora imagines the high school experience in a dystopian near-future Tokyo. There, after best friends Yuta (Hayato Kurihara) and Kou (Yukito Hidaka) pull an audacious prank on their principal, the school responds by installing an elaborate surveillance system. Between the oppressive new security measures, a darkening national political climate, and the omnipresent threat of catastrophic earthquakes, the increasingly disillusioned Kou finds himself inspired to take a stand as an activist, while the passive Yuta remains seemingly unaware of what is going on around him. For the first time in their lifelong friendship, the two are forced to reckon with differences they had never confronted before."
   },
   {
     "id": "high-noon",
@@ -693,61 +683,72 @@
     "description": "Criterion Collection Edition #304\n\nDirected by Nicolas Roeg • 1976 • United States\nStarring David Bowie, Rip Torn, Candy Clark\n\nTHE MAN WHO FELL TO EARTH is a daring exploration of science fiction as an art form. The story of an alien on an elaborate rescue mission provides the launching pad for Nicolas Roeg’s visual tour de force, a formally adventurous examination of alienation in contemporary life. Rock legend David Bowie, in his acting debut, completely embodies the title role, while Candy Clark, Buck Henry, and Rip Torn turn in pitch-perfect supporting performances. The film’s hallucinatory vision was obscured in the American theatrical release, which deleted nearly twenty minutes of crucial scenes and details. The Criterion Collection is proud to present Roeg’s full uncut version, in this director-approved high-­definition widescreen transfer."
   },
   {
-    "id": "all-that-heaven-allows",
-    "title": "All That Heaven Allows",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/212786d5-af0d-4cbb-a5ff-da843d9a19c3-6e0b20b1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/all-that-heaven-allows",
+    "id": "drive-my-car",
+    "title": "Drive My Car",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/daed4a99-84ac-4513-bdbc-77dd346d55a4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/drive-my-car",
     "filmIds": [
-      "all-that-heaven-allows",
-      "all-that-heaven-allows-commentary",
-      "rock-hudson-s-home-movies",
-      "william-reynolds-on-douglas-sirk",
-      "douglas-sirk-on-his-career"
+      "drive-my-car",
+      "ryusuke-hamaguchi",
+      "behind-the-scenes-3",
+      "cannes-press-conference-1"
     ],
-    "description": "Directed by Douglas Sirk • 1955 • United States\nStarring Jane Wyman, Rock Hudson, Agnes Moorehead\n\nThis heartbreakingly beautiful indictment of 1950s American mores by Douglas Sirk follows the blossoming love between a well-off widow (Jane Wyman) and her handsome and earthy younger gardener (Rock Hudson). When their romance prompts the scorn of her children and country club friends, she must decide whether to pursue her own happiness or carry on a lonely, hemmed-in existence for the sake of the approval of others. With the help of ace cinematographer Russell Metty, Sirk imbues nearly every shot with a vivid and distinct emotional tenor. A profoundly felt film about class and conformity in small-town America, ALL THAT HEAVEN ALLOWS is a pinnacle of expressionistic Hollywood melodrama."
+    "description": "Directed by Ryusuke Hamaguchi • 2021 • Japan\nStarring Hidetoshi Nishijima, Toko Miura, Reika Kirishima\n\nOnly Ryusuke Hamaguchi, with his extraordinary sensitivity to the mysterious resonances of human interactions, could sweep up international awards (including the Oscar for Best International Feature) and galvanize audiences everywhere with a pensive three-hour movie—presented in nine languages and adapted from Haruki Murakami stories—about an experimental staging of an Anton Chekhov play. With DRIVE MY CAR, the Japanese director has confirmed his place among contemporary cinema’s most vital voices. Two years after his wife’s unexpected death, Yusuke Kafuku (Hidetoshi Nishijima) arrives in Hiroshima to direct a production of Uncle Vanya for a theater festival and, through relationships with an actor (Masaki Okada) with whom he shares a tangled history and a chauffeur (Toko Miura) with whom he develops a surprising rapport, finds himself facing up to his emotional scars. This quietly mesmerizing tale of love, art, grief, and healing is ultimately a cathartic exploration of what it means to go on living when there seems to be no road ahead."
   },
   {
-    "id": "the-age-of-innocence",
-    "title": "The Age Of Innocence",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7d1c2f8e-3486-435b-b2c8-9fcd6d38c79e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-age-of-innocence",
+    "id": "desert-hearts",
+    "title": "Desert Hearts",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7aa7b38d-09fa-4ae6-824a-ad02d20874fc-c53d0e1f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/desert-hearts",
     "filmIds": [
-      "the-age-of-innocence",
-      "martin-scorsese-and-kent-jones-on-the-age-of-innocence",
-      "jay-cocks-on-the-age-of-innocence",
-      "dante-ferretti",
-      "gabriella-pescucci-on-the-age-of-innocence",
-      "innocence-and-experience"
+      "desert-hearts",
+      "desert-hearts-commentary",
+      "donna-deitch-and-jane-lynch-on-desert-hearts",
+      "women-in-love",
+      "remembering-reno",
+      "fiction-and-other-truths-a-film-about-jane-rule-1",
+      "fiction-and-other-truths-a-film-about-jane-rule-2",
+      "queersighted-the-ache-of-desire"
     ],
-    "description": "Directed by Martin Scorsese • 1993 • United States\nStarring Daniel Day-Lewis, Michelle Pfeiffer, Winona Ryder\n\nNo filmmaker captures the grandeur and energy of New York like Martin Scorsese. With this sumptuous romance, he meticulously adapted the work of another great New York artist, Edith Wharton, bringing to life her tragic novel set in the cloistered world of Gilded Age Manhattan. THE AGE OF INNOCENCE tells the story of Newland Archer (Daniel Day-Lewis), whose engagement to an innocent socialite (Winona Ryder) binds him to the codes and rituals of his upbringing. But when her cousin (Michelle Pfeiffer) arrives in town on a wave of scandal after separating from her husband, she ignites passions in Newland he never knew existed. Swelling with exquisite period detail, this film is an alternately heartbreaking and satirical look at the brutality of old-world America."
+    "description": "Criterion Collection Edition #902\n\nDirected by Donna Deitch • 1985 • United States\nStarring Helen Shaver, Patricia Charbonneau\n\nDonna Deitch's swooning and sensual first narrative feature, DESERT HEARTS, was groundbreaking upon its release in 1985: a love story about two women, made entirely independently, on a shoestring budget, by a woman. In this 1959-set film, adapted from a beloved novel by Jane Rule, straitlaced East Coast professor Vivian Bell (Helen Shaver) arrives in Reno to file for divorce but winds up catching the eye of someone new, the free-spirited young Cay (Patricia Charbonneau), touching off a slow seduction that unfolds against a breathtaking desert landscape. With undeniable chemistry between its two leads, an evocative jukebox soundtrack, and vivid cinematography by Robert Elswit, DESERT HEARTS beautifully exudes a sense of tender yearning and emotional candor."
   },
   {
-    "id": "drugstore-cowboy",
-    "title": "Drugstore Cowboy",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d841db69-31f5-4793-9575-d2fc54d66d36.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/drugstore-cowboy",
+    "id": "4-months-3-weeks-and-2-days",
+    "title": "4 Months, 3 Weeks And 2 Days",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0b0e093-37c3-4c5c-9816-61e61029e9fb-0cf2481d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/4-months-3-weeks-and-2-days",
     "filmIds": [
-      "drugstore-cowboy",
-      "drugstore-cowboy-commentary",
-      "the-making-of-drugstore-cowboy",
-      "kelly-lynch",
-      "robert-yeoman",
-      "deleted-scenes-23"
+      "4-months-3-weeks-and-2-days",
+      "cristian-mungiu-on-4-months-3-weeks-and-2-days",
+      "ethan-hawke-on-4-months-3-weeks-and-2-days",
+      "jay-weissberg-on-4-months-3-weeks-and-2-days",
+      "cannes-press-conference-for-4-months-3-weeks-and-2-days",
+      "the-romanian-tour",
+      "alternate-ending-1",
+      "alternate-ending-2",
+      "deleted-scene-12"
     ],
-    "description": "Directed by Gus Van Sant • 1989 • United States\nStarring Matt Dillon, Kelly Lynch, James Remar\n\nGus Van Sant’s dreamy, drifty, deadpan second feature—an addiction drama based on James Fogle’s autobiographical novel—captures the zonked-out textures and almost surreal absurdity of a life lived fix to fix. Swinging between dope-fueled disconnection and edgy paranoia, Matt Dillon plays the leader of a ragtag crew (also featuring Kelly Lynch, Heather Graham, and James Le Gros) that robs pharmacies for pills, coasting across the 1970s Pacific Northwest while trying to outrun sobriety and fate. With a brilliant supporting turn from counterculture high priest William S. Burroughs and a lyrical feeling for the streetscapes of Van Sant’s hometown of Portland, Oregon, DRUGSTORE COWBOY cemented the director’s status as a preeminent poet of outsiderhood."
+    "description": "Criterion Collection Edition #958\n\nRomanian filmmaker Cristian Mungiu shot to international prominence with this rigorously realistic Palme d’Or–winning second feature. In 1987, during the dictatorship of Nicolae Ceaușescu, college roommates Otilia (Anamaria Marinca) and Găbița (Laura Vasiliu) seek an illegal abortion for Găbița. In unflinching but empathetic detail, the film recounts the events of twenty-four perilous hours in their lives, culminating in their encounter with a manipulative and menacing abortionist (Vlad Ivanov). With powerful performances that accentuate the characters’ flawed humanity, 4 MONTHS, 3 WEEKS AND 2 DAYS is a gutting account of the impossible choices women face when taking control of their bodies means breaking the law."
   },
   {
-    "id": "kiss-of-the-spider-woman",
-    "title": "Kiss Of The Spider Woman",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a9cddf8d-6272-4724-bb46-1b1b07a6b315.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/kiss-of-the-spider-woman",
+    "id": "gomorrah",
+    "title": "Gomorrah",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5aa59957-7287-4852-8e23-33aebe9e0fc9-df4110d4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/gomorrah",
     "filmIds": [
-      "kiss-of-the-spider-woman",
-      "suzanne-jill-levine",
-      "tangled-web-making-kiss-of-the-spider-woman",
-      "manuel-puig"
+      "gomorrah",
+      "matteo-garrone-on-gomorrah",
+      "toni-servillo-on-gomorrah",
+      "gomorrah-actors",
+      "roberto-saviano-on-gomorrah",
+      "deleted-scene-toto",
+      "deleted-scene-don-ciro",
+      "deleted-scene-franco-1",
+      "deleted-scene-franco-2",
+      "deleted-scene-pasquale",
+      "deleted-scene-ciro-and-marco"
     ],
-    "description": "Directed by Héctor Babenco • 1985 • United States, Brazil\nStarring William Hurt, Raúl Juliá, Sônia Braga\n\nFeaturing indelible performances from Raul Julia and an Academy Award–winning William Hurt, KISS OF THE SPIDER WOMAN is a work of radical compassion that boldly expands notions of love, gender, and revolution. In the film—directed by Héctor Babenco following his international breakthrough with PIXOTE, and adapted from the novel by the iconoclastic writer Manuel Puig—Julia and Hurt play Valentin and Molina, a militant leftist activist and a queer, cinema-obsessed window dresser, imprisoned together under a repressive military dictatorship. The two gradually forge a bond that transforms the way they both understand politics, sexuality, and masculinity. Blending raw realism with Molina’s imaginative escapes into sumptuous movie fantasy, this searing human drama offers a powerful vision of personal liberation embedded within broader political struggle."
+    "description": "Directed by Matteo Garrone • 2008 • Italy\nStarring Toni Servillo, Salvatore Abruzzese, Gianfelice Imparato\n\nMatteo Garrone’s GOMORRAH—presented here in its 2020 New Edition director’s cut—is a stark, shocking vision of contemporary gangsterdom, and one of cinema’s most authentic depictions of organized crime. In this tour de force adaptation of undercover Italian reporter Roberto Saviano’s best-selling exposé of Naples’ Mafia underworld (known as the Camorra), Garrone links five disparate tales in which men and children are caught up in a corrupt system that extends from the housing projects to the world of haute couture. Filmed with an exquisite detachment interrupted by bursts of violence, GOMORROAH is a shattering, socially engaged true-crime story from a major new voice in Italian cinema."
   },
   {
     "id": "martha-graham-dance-on-film",
@@ -825,74 +826,6 @@
     "description": "Criterion Collection Edition #597\n\nLena Dunham got her start making YouTube videos, but she emerged as a major talent thanks to the breakthrough success of this exceptionally sharp comedy, which garnered the twenty-four-year-old writer-director-actor comparisons to the likes of Woody Allen. Dunham plays Aura, a recent college graduate who returns to New York and moves back in with her mother and sister (played by the filmmaker’s real-life mother and sister). Though Aura is gripped by stasis and confusion about her future, Dunham locates endless sources of refreshing humor in her plight. As painfully confessional as it is amusing, TINY FURNITURE is an authentic, incisive portrait of a young woman at a crossroads."
   },
   {
-    "id": "drive-my-car",
-    "title": "Drive My Car",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/daed4a99-84ac-4513-bdbc-77dd346d55a4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/drive-my-car",
-    "filmIds": [
-      "drive-my-car",
-      "ryusuke-hamaguchi",
-      "behind-the-scenes-3",
-      "cannes-press-conference-1"
-    ],
-    "description": "Directed by Ryusuke Hamaguchi • 2021 • Japan\nStarring Hidetoshi Nishijima, Toko Miura, Reika Kirishima\n\nOnly Ryusuke Hamaguchi, with his extraordinary sensitivity to the mysterious resonances of human interactions, could sweep up international awards (including the Oscar for Best International Feature) and galvanize audiences everywhere with a pensive three-hour movie—presented in nine languages and adapted from Haruki Murakami stories—about an experimental staging of an Anton Chekhov play. With DRIVE MY CAR, the Japanese director has confirmed his place among contemporary cinema’s most vital voices. Two years after his wife’s unexpected death, Yusuke Kafuku (Hidetoshi Nishijima) arrives in Hiroshima to direct a production of Uncle Vanya for a theater festival and, through relationships with an actor (Masaki Okada) with whom he shares a tangled history and a chauffeur (Toko Miura) with whom he develops a surprising rapport, finds himself facing up to his emotional scars. This quietly mesmerizing tale of love, art, grief, and healing is ultimately a cathartic exploration of what it means to go on living when there seems to be no road ahead."
-  },
-  {
-    "id": "desert-hearts",
-    "title": "Desert Hearts",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7aa7b38d-09fa-4ae6-824a-ad02d20874fc-c53d0e1f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/desert-hearts",
-    "filmIds": [
-      "desert-hearts",
-      "desert-hearts-commentary",
-      "donna-deitch-and-jane-lynch-on-desert-hearts",
-      "women-in-love",
-      "remembering-reno",
-      "fiction-and-other-truths-a-film-about-jane-rule-1",
-      "fiction-and-other-truths-a-film-about-jane-rule-2",
-      "queersighted-the-ache-of-desire"
-    ],
-    "description": "Criterion Collection Edition #902\n\nDirected by Donna Deitch • 1985 • United States\nStarring Helen Shaver, Patricia Charbonneau\n\nDonna Deitch's swooning and sensual first narrative feature, DESERT HEARTS, was groundbreaking upon its release in 1985: a love story about two women, made entirely independently, on a shoestring budget, by a woman. In this 1959-set film, adapted from a beloved novel by Jane Rule, straitlaced East Coast professor Vivian Bell (Helen Shaver) arrives in Reno to file for divorce but winds up catching the eye of someone new, the free-spirited young Cay (Patricia Charbonneau), touching off a slow seduction that unfolds against a breathtaking desert landscape. With undeniable chemistry between its two leads, an evocative jukebox soundtrack, and vivid cinematography by Robert Elswit, DESERT HEARTS beautifully exudes a sense of tender yearning and emotional candor."
-  },
-  {
-    "id": "4-months-3-weeks-and-2-days",
-    "title": "4 Months, 3 Weeks And 2 Days",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0b0e093-37c3-4c5c-9816-61e61029e9fb-0cf2481d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/4-months-3-weeks-and-2-days",
-    "filmIds": [
-      "4-months-3-weeks-and-2-days",
-      "cristian-mungiu-on-4-months-3-weeks-and-2-days",
-      "ethan-hawke-on-4-months-3-weeks-and-2-days",
-      "jay-weissberg-on-4-months-3-weeks-and-2-days",
-      "cannes-press-conference-for-4-months-3-weeks-and-2-days",
-      "the-romanian-tour",
-      "alternate-ending-1",
-      "alternate-ending-2",
-      "deleted-scene-12"
-    ],
-    "description": "Criterion Collection Edition #958\n\nRomanian filmmaker Cristian Mungiu shot to international prominence with this rigorously realistic Palme d’Or–winning second feature. In 1987, during the dictatorship of Nicolae Ceaușescu, college roommates Otilia (Anamaria Marinca) and Găbița (Laura Vasiliu) seek an illegal abortion for Găbița. In unflinching but empathetic detail, the film recounts the events of twenty-four perilous hours in their lives, culminating in their encounter with a manipulative and menacing abortionist (Vlad Ivanov). With powerful performances that accentuate the characters’ flawed humanity, 4 MONTHS, 3 WEEKS AND 2 DAYS is a gutting account of the impossible choices women face when taking control of their bodies means breaking the law."
-  },
-  {
-    "id": "gomorrah",
-    "title": "Gomorrah",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5aa59957-7287-4852-8e23-33aebe9e0fc9-df4110d4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/gomorrah",
-    "filmIds": [
-      "gomorrah",
-      "matteo-garrone-on-gomorrah",
-      "toni-servillo-on-gomorrah",
-      "gomorrah-actors",
-      "roberto-saviano-on-gomorrah",
-      "deleted-scene-toto",
-      "deleted-scene-don-ciro",
-      "deleted-scene-franco-1",
-      "deleted-scene-franco-2",
-      "deleted-scene-pasquale",
-      "deleted-scene-ciro-and-marco"
-    ],
-    "description": "Directed by Matteo Garrone • 2008 • Italy\nStarring Toni Servillo, Salvatore Abruzzese, Gianfelice Imparato\n\nMatteo Garrone’s GOMORRAH—presented here in its 2020 New Edition director’s cut—is a stark, shocking vision of contemporary gangsterdom, and one of cinema’s most authentic depictions of organized crime. In this tour de force adaptation of undercover Italian reporter Roberto Saviano’s best-selling exposé of Naples’ Mafia underworld (known as the Camorra), Garrone links five disparate tales in which men and children are caught up in a corrupt system that extends from the housing projects to the world of haute couture. Filmed with an exquisite detachment interrupted by bursts of violence, GOMORROAH is a shattering, socially engaged true-crime story from a major new voice in Italian cinema."
-  },
-  {
     "id": "the-international",
     "title": "The International",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ca7ce752-ec41-44eb-9245-6e87ed8f0a73.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -901,6 +834,21 @@
       "the-international"
     ],
     "description": "Directed by Tom Tykwer • 2009 • United States, Germany\nStarring Clive Owen, Naomi Watts, Armin Mueller-Stahl\n\nA high-stakes game of suspense, intrigue, and explosive action plays out against a succession of striking international locales from Milan to New York to Istanbul in this globe-trotting conspiracy thriller. Interpol agent Louis Salinger (Clive Owen) is determined to expose an arms-dealing ring responsible for facilitating acts of terrorism around the globe. But as his investigation leads Salinger and his partner, Manhattan Assistant District Attorney Eleanor Whitman (Naomi Watts), deeper into a secret world of greed, corruption and murder, they become targets of a deadly conspiracy so vast they soon find that the only people left to trust are each other."
+  },
+  {
+    "id": "the-age-of-innocence",
+    "title": "The Age Of Innocence",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7d1c2f8e-3486-435b-b2c8-9fcd6d38c79e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-age-of-innocence",
+    "filmIds": [
+      "the-age-of-innocence",
+      "martin-scorsese-and-kent-jones-on-the-age-of-innocence",
+      "jay-cocks-on-the-age-of-innocence",
+      "dante-ferretti",
+      "gabriella-pescucci-on-the-age-of-innocence",
+      "innocence-and-experience"
+    ],
+    "description": "Directed by Martin Scorsese • 1993 • United States\nStarring Daniel Day-Lewis, Michelle Pfeiffer, Winona Ryder\n\nNo filmmaker captures the grandeur and energy of New York like Martin Scorsese. With this sumptuous romance, he meticulously adapted the work of another great New York artist, Edith Wharton, bringing to life her tragic novel set in the cloistered world of Gilded Age Manhattan. THE AGE OF INNOCENCE tells the story of Newland Archer (Daniel Day-Lewis), whose engagement to an innocent socialite (Winona Ryder) binds him to the codes and rituals of his upbringing. But when her cousin (Michelle Pfeiffer) arrives in town on a wave of scandal after separating from her husband, she ignites passions in Newland he never knew existed. Swelling with exquisite period detail, this film is an alternately heartbreaking and satirical look at the brutality of old-world America."
   },
   {
     "id": "the-devil-s-advocate",
@@ -1012,64 +960,25 @@
     "description": "A singular, iconoclastic artist, Robert Bresson left behind an astonishing body of work, defined by the search for what he called “not beautiful images, but necessary images.” In a long, visionary career that began in the 1940s and ended in the 1980s, he continually refined the strict precision of his famously ascetic style—abolishing psychology, professional actors, and ornate camera work, and instead concentrating on the exactingly choreographed movements of his “models” (as he called his performers) and the anguished solitude of his martyred characters. In indelible visions of suffering and salvation like PICKPOCKET, AU HASARD BALTHAZAR, and MOUCHETTE, he stripped cinema to its essence to reveal nothing less than the very soul of his subjects."
   },
   {
-    "id": "the-ring-1",
-    "title": "The Ring",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2dece8d3-2ccc-420c-92d1-c7ea3a2b5ff8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-ring-1",
+    "id": "not-fade-away",
+    "title": "Not Fade Away",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/61542f83-2086-409f-bd1a-96168e59d4af.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/not-fade-away",
     "filmIds": [
-      "the-ring-1"
+      "not-fade-away-black-white",
+      "not-fade-away"
     ],
-    "description": "Directed by Gore Verbinski • 2002 • United States\nStarring Naomi Watts, Martin Henderson, David Dorfman\n\nAfter unsettling audiences across the world with its relentlessly creepy vision of VHS-generated terror, the Japanese horror hit RING received the Hollywood treatment—resulting in an equally chilling remake that generates fright not through blunt shocks but a pervasive sense of ambient dread. The bizarre death of a teenage girl leads journalist Rachel Keller (Naomi Watts) to investigate a mysterious urban legend: a videocassette containing disturbing imagery that is said to kill anyone who watches it within seven days. After Keller views the tape, she has one week to discover the source of the tape’s disturbing power before it’s too late."
+    "description": "Directed by David Chase • 2012 • United States\nStarring John Magaro, James Gandolfini, Bella Heathcote\n\nThe feature-film debut from David Chase, creator of “The Sopranos,” is a uniquely unsentimental, open-ended coming-of-age story set in the counterculture explosion of midcentury America. In 1960s New Jersey, teenager Doug Damiano (John Magaro), inspired by the English invasion of bands like the Rolling Stones and the Beatles, drops out of college to pursue his musical dreams by starting his own rock ’n’ roll band. As his ambitions clash with reality and tensions rise with both his bandmates and his disapproving father (James Gandolfini), what emerges is a complicated, bittersweet reflection on generational sea change and the formation of identity, all set to a perfect period soundtrack featuring greats ranging from Bo Diddley to Bob Dylan. NOT FADE AWAY is presented here in its black-and-white version, streaming exclusively on the Criterion Channel."
   },
   {
-    "id": "death-proof",
-    "title": "Death Proof",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9a87a719-ba2a-4df3-beaa-c4b3e107e8f2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/death-proof",
+    "id": "slc-punk",
+    "title": "Slc Punk!",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/15140db9-2b86-45bb-b303-47116969be6e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/slc-punk",
     "filmIds": [
-      "35623-death-proof"
+      "slc-punk"
     ],
-    "description": "Directed by Quentin Tarantino • 2007 • United States\nStarring Kurt Russell, Zoë Bell, Rosario Dawson\n\nQuentin Tarantino pays homage to the glory days of grindhouse cinema with this retro, gleefully subversive schlock shocker. Kurt Russell plays the psychotic movie stunt double Stuntman Mike, who uses his specially rigged, “death-proof” automobile to kill young women in grisly car crashes. But when he targets the wrong group of women—including a Hollywood stuntwoman (Zoë Bell, Uma Thurman’s stunt double in KILL BILL, playing herself)—he’s in for the ride of a lifetime."
-  },
-  {
-    "id": "phantom-thread",
-    "title": "Phantom Thread",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7114b004-60c0-48d2-bb5b-29623085f774.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/phantom-thread",
-    "filmIds": [
-      "phantom-thread"
-    ],
-    "description": "Directed by Paul Thomas Anderson • 2017 • United States\nStarring Daniel Day Lewis, Vicky Krieps, Lesley Manville\n\nAmid the the glamour of 1950s London, renowned dressmaker Reynolds Woodcock (Daniel Day-Lewis) and his sister Cyril (Lesley Manville) are at the center of British fashion, dressing royalty, movie stars, heiresses, socialites, debutantes, and dames with the distinctive style of the House of Woodcock. Women come and go through Woodcock’s life, providing the confirmed bachelor with inspiration and companionship, until he meets Alma (Vicky Krieps), a strong-willed young woman who soon becomes a fixture in his life as a muse and lover. Once rigid and controlled, Reynolds finds his carefully tailored life disrupted by a love that borders on perverse obsession. In his second collaboration with Daniel Day-Lewis, director Paul Thomas Anderson paints a sumptuous, wickedly comic portrait of both an artist on a creative journey and the women who keep his world running."
-  },
-  {
-    "id": "before-the-devil-knows-you-re-dead",
-    "title": "Before The Devil Knows You’re Dead",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/181587ff-6de1-4e91-90a6-e75bc6e93ea4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/before-the-devil-knows-you-re-dead",
-    "filmIds": [
-      "before-the-devil-knows-you-re-dead"
-    ],
-    "description": "Directed by Sidney Lumet • 2007 • United States\nStarring Philip Seymour Hoffman, Marisa Tomei, Ethan Hawke\n\nRenowned director Sidney Lumet brought five decades of cinematic mastery to bear in his final film, a riveting thriller that achieves the weight of Greek tragedy. A typically virtuosic Philip Seymour Hoffman stars as Andy, an overextended payroll executive who lures his younger brother, Hank (Ethan Hawke), into a larcenous scheme: the pair will rob a suburban mom-and-pop jewelry store that appears to be the quintessential easy target. The problem is, the store owners are Andy and Hank’s real mom and pop, and when the seemingly perfect crime goes awry, the damage sends them hurtling toward a shattering clash that may obliterate their already precarious family."
-  },
-  {
-    "id": "cruel-intentions",
-    "title": "Cruel Intentions",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ec7be44a-8f12-491e-865c-037d4baa78e0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/cruel-intentions",
-    "filmIds": [
-      "cruel-intentions"
-    ],
-    "description": "Directed by Roger Kumble • 1999 • United States\nStarring Sarah Michelle Gellar, Ryan Phillippe, Reese Witherspoon\n\nThe diabolical psychosexual machinations of Pierre Choderlos de Laclos’s classic novel “Les liaisons dangereuses” are audaciously transplanted to a rich-kid Manhattan prep school in this delectably debauched, startlingly corrupt reimagining—one of the most daring teen movies of the 1990s. Ryan Phillippe and Sarah Michelle Gellar are the duplicitous stepsiblings who draw everyone in their orbit into their devious games of erotic and emotional manipulation. Their latest, and most difficult, target: the virginal good-girl daughter (Reese Witherspoon) of their school’s new headmaster. With its arch dialogue, delicious performances, and air of hedonistic immorality, CRUEL INTENTIONS puts a fresh twist on its scandalous source material."
-  },
-  {
-    "id": "antitrust",
-    "title": "Antitrust",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9fa71472-bc1b-4607-8ab2-533c97d7fb0e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/antitrust",
-    "filmIds": [
-      "antitrust"
-    ],
-    "description": "Directed by Peter Howitt • 2001 • United States\nStarring Ryan Phillippe, Rachael Leigh Cook, Tim Robbins\n\nIn this slick Y2K-era technothriller, Milo Hoffman (Ryan Phillippe) thinks he’s found his dream job when he’s hired by Gary Winston (Tim Robbins), the CEO of the world’s largest computer company, to work on a project that will change the world. But when his best friend is murdered and clues point to Winston’s involvement, Milo sets out to uncover the truth. With his friends (Claire Forlani and Rachael Leigh Cook) to help him, Milo races to beat the killers at their own cybergame."
+    "description": "Directed by James Merendino • 1998 • United States\nStarring Matthew Lillard, Michael A. Goorjian, Annabeth Gish\n\nIt’s 1985 and Stevo (Matthew Lillard) is that rare animal: a punk rocker in the Mormon stronghold of Salt Lake City, Utah. Though he’s just graduated from college with honors, his life is a directionless roller coaster of rock shows, stealing cars, and nonstop partying with his buddy Heroin Bob (Michael A. Goorjian). But with the scene getting old and Stevo going nowhere fast, what’s a guy with blue hair supposed to do? Fueled by an energetic star performance by Lillard, a classic punk soundtrack, and kinetic visual verve, SLC PUNK! is the madcap story of one rebel’s search for a way to grow up without selling out."
   },
   {
     "id": "remote-control",
@@ -1090,16 +999,6 @@
       "we-re-all-going-to-the-world-s-fair"
     ],
     "description": "Directed by Jane Schoenbrun • 2021 • United States\nStarring Anna Cobb, Michael J. Rogers, May Leitz\n\n“I want to go to the World’s Fair.” Isolated teen Casey (Anna Cobb) repeats this cryptic mantra three times into the eerie glow of her laptop screen, initiating herself into the viral World’s Fair challenge—an online horror role-playing game taking place on the dark fringes of the internet. As she loses herself deeper in the increasingly disturbing subculture of the game and its other lonely, alienated players, the boundaries between reality and fantasy dissolve in a hallucinatory, Day-Glo digital blur. One of the few films to truly capture the uncanny texture and existential dread of the online void, the debut feature from Jane Schoenbrun blends horror, psychodrama, and an experimental video-art aesthetic into a truly visionary coming-of-age nightmare."
-  },
-  {
-    "id": "a-different-image",
-    "title": "A Different Image",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f05acae7-06ac-4eff-bd45-8ef3707e0ae6-bac2dcab.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/a-different-image",
-    "filmIds": [
-      "a-different-image"
-    ],
-    "description": "Directed by Alile Sharon Larkin • 1982 • United States\n\nIn this poetic, groundbreaking work from LA Rebellion trailblazer Alile Sharon Larkin, Alana (Margot Saxton-Federella), a Black art student, sets out to reclaim her body image and self-worth from Western, patriarchal beauty standards and, in the process, discover her true heritage. Through a sensitive and humorous story about Alana’s relationship with a man (Adisa Anderson), A DIFFERENT IMAGE—which was shot by Charles Burnett, director of KILLER OF SHEEP and TO SLEEP WITH ANGER—makes provocative connections between racism and sexual stereotyping."
   },
   {
     "id": "yeast",
@@ -1160,27 +1059,6 @@
       "two-lovers"
     ],
     "description": "Directed by James Gray • 2008 • United States\nStarring Joaquin Phoenix, Gwyneth Paltrow, Vinessa Shaw\n\nSet in the insular world of Brighton Beach, Brooklyn, this timeless romantic drama features a remarkably raw, vulnerable performance from Joaquin Phoenix as Leonard, a charismatic but troubled young man who moves back into his childhood home following a recent heartbreak. While recovering under the watchful eye of his parents (Isabella Rossellini and Moni Moshonov), Leonard meets two women in quick succession: Michelle (Gwyneth Paltrow), a mysterious and beautiful neighbor who is exotic and out-of-place in Leonard’s staid world, and Sandra (Vinessa Shaw), the caring daughter of a businessman who is buying out his family’s dry-cleaning business. Soon, Leonard is forced to make an impossible decision—between the impetuousness of desire and the comfort of love—or risk falling back into the darkness that nearly killed him."
-  },
-  {
-    "id": "not-fade-away",
-    "title": "Not Fade Away",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/61542f83-2086-409f-bd1a-96168e59d4af.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/not-fade-away",
-    "filmIds": [
-      "not-fade-away-black-white",
-      "not-fade-away"
-    ],
-    "description": "Directed by David Chase • 2012 • United States\nStarring John Magaro, James Gandolfini, Bella Heathcote\n\nThe feature-film debut from David Chase, creator of “The Sopranos,” is a uniquely unsentimental, open-ended coming-of-age story set in the counterculture explosion of midcentury America. In 1960s New Jersey, teenager Doug Damiano (John Magaro), inspired by the English invasion of bands like the Rolling Stones and the Beatles, drops out of college to pursue his musical dreams by starting his own rock ’n’ roll band. As his ambitions clash with reality and tensions rise with both his bandmates and his disapproving father (James Gandolfini), what emerges is a complicated, bittersweet reflection on generational sea change and the formation of identity, all set to a perfect period soundtrack featuring greats ranging from Bo Diddley to Bob Dylan. NOT FADE AWAY is presented here in its black-and-white version, streaming exclusively on the Criterion Channel."
-  },
-  {
-    "id": "slc-punk",
-    "title": "Slc Punk!",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/15140db9-2b86-45bb-b303-47116969be6e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/slc-punk",
-    "filmIds": [
-      "slc-punk"
-    ],
-    "description": "Directed by James Merendino • 1998 • United States\nStarring Matthew Lillard, Michael A. Goorjian, Annabeth Gish\n\nIt’s 1985 and Stevo (Matthew Lillard) is that rare animal: a punk rocker in the Mormon stronghold of Salt Lake City, Utah. Though he’s just graduated from college with honors, his life is a directionless roller coaster of rock shows, stealing cars, and nonstop partying with his buddy Heroin Bob (Michael A. Goorjian). But with the scene getting old and Stevo going nowhere fast, what’s a guy with blue hair supposed to do? Fueled by an energetic star performance by Lillard, a classic punk soundtrack, and kinetic visual verve, SLC PUNK! is the madcap story of one rebel’s search for a way to grow up without selling out."
   },
   {
     "id": "gatchaman-the-movie",
@@ -2004,81 +1882,45 @@
     "description": "One hundred years ago, Harold Lloyd gave the movies one of their most meme-able moments—the anxious, thrilling, clock-hanging climax of SAFETY LAST!, a film that still stands as a high-water mark of slapstick invention. Though often overlooked in favor of his more famous silent-clown contemporaries Charlie Chaplin and Buster Keaton, the bespectacled everyman was easily the equal of those legends in both hilarity and hair-raising derring-do. From the football-field antics of THE FRESHMAN to the freewheeling New York odyssey of SPEEDY, Lloyd’s innovative and endearing classics are packed wall-to-wall with some of the funniest and most unforgettable sight gags ever realized on film.\n\nPlease be advised: some of these films contain offensive racial stereotypes and scenes involving blackface."
   },
   {
-    "id": "actresses-unfiltered",
-    "title": "Actresses Unfiltered",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/86702b4b-fe66-40bb-93f7-2c60ea5fd34b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/actresses-unfiltered",
+    "id": "portrait-of-jason",
+    "title": "Portrait Of Jason",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b5231722-b47b-4022-a30b-b710d1393d14-64c24627.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/portrait-of-jason",
     "filmIds": [
-      "be-pretty-and-shut-up",
-      "tally-brown-new-york",
-      "romy-anatomy-of-a-face",
-      "all-by-myself-the-eartha-kitt-story",
-      "fassbinder-s-women"
+      "portrait-of-jason",
+      "mary-bronstein-on-portrait-of-jason"
     ],
-    "description": "Uniquely unguarded glimpses of some of the twentieth century’s most captivating personalities, these probing portraits of legendary actresses unfold as intimate exchanges between director and subject, offering rare behind-the-scenes access to their inner worlds. Capturing vulnerable, unpredictable, and reflective moments with pop-culture supernovas like Eartha Kitt (ALL BY MYSELF: THE EARTHA KITT STORY) and Romy Schneider (ROMY: ANATOMY OF A FACE) as well as underground legends like Factory scene icon Tally Brown (TALLY BROWN, NEW YORK), these candid documentaries look beyond industry-manufactured glamour to reveal deeper truths with genuine empathy and curiosity.\n\nProgrammed by Melissa Anderson"
+    "description": "Directed by Shirley Clarke • 1967 • United States\nStarring Jason Holliday\n\nOn the night of December 2, 1966, Shirley Clarke and a tiny crew convened in her apartment at the Hotel Chelsea to make a film. For twelve straight hours, they filmed the one-and-only Jason Holliday as he spun tales, sang, donned costumes, and reminisced about good times and bad behavior as a gay hustler and aspiring cabaret performer. The result is a mesmerizing portrait of a remarkable, charming, and tortured man who is by turns hilarious and heartbreaking."
   },
   {
-    "id": "100-years-of-olympic-films-1912-2012",
-    "title": "100 Years Of Olympic Films: 1912–2012",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/73962e48-53bd-4fc8-be2e-5ff59d17224d-6d1c956c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/100-years-of-olympic-films-1912-2012",
+    "id": "the-storms-of-jeremy-thomas",
+    "title": "The Storms Of Jeremy Thomas",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d04e66fd-16a6-4d00-be02-be64b9d002d6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-storms-of-jeremy-thomas",
     "filmIds": [
-      "the-games-of-the-v-olympiad-stockholm-1912",
-      "the-olympic-games-held-at-chamonix-in-1924",
-      "the-olympic-games-as-they-were-practiced-in-ancient-greece",
-      "the-olympic-games-in-paris-1924",
-      "the-white-stadium",
-      "the-ix-olympiad-in-amsterdam",
-      "the-olympic-games-amsterdam-1928",
-      "youth-of-the-world",
-      "olympia-part-one-festival-of-the-nations",
-      "olympia-part-two-festival-of-beauty",
-      "fight-without-hate",
-      "xivth-olympiad-the-glory-of-sport",
-      "the-vi-olympic-winter-games-oslo-1952",
-      "where-the-world-meets",
-      "gold-and-glory",
-      "memories-of-the-olympic-summer-of-1952",
-      "white-vertigo",
-      "olympic-games-1956",
-      "the-melbourne-rendez-vous",
-      "alain-mimoun",
-      "the-horse-in-focus",
-      "people-hopes-medals",
-      "the-grand-olympics",
-      "ix-olympic-winter-games-innsbruck-1964",
-      "tokyo-olympiad",
-      "sensation-of-the-century",
-      "13-days-in-france",
-      "snows-of-grenoble",
-      "the-olympics-in-mexico",
-      "sapporo-winter-olympics",
-      "visions-of-eight",
-      "white-rock",
-      "games-of-the-xxi-olympiad",
-      "olympic-spirit",
-      "o-sport-you-are-peace",
-      "a-turning-point",
-      "16-days-of-glory",
-      "calgary-88-16-days-of-glory",
-      "seoul-1988",
-      "hand-in-hand",
-      "beyond-all-barriers",
-      "one-light-one-world",
-      "marathon",
-      "lillehammer-94-16-days-of-glory",
-      "atlanta-s-olympic-glory",
-      "nagano-98-olympics-stories-of-honor-and-glory",
-      "olympic-glory",
-      "sydney-2000-stories-of-olympic-glory",
-      "salt-lake-city-2002-bud-greenspan-s-stories-of-olympic-glory",
-      "bud-greenspan-s-athens-2004-stories-of-olympic-glory",
-      "bud-greenspan-s-torino-2006-stories-of-olympic-glory",
-      "the-everlasting-flame",
-      "bud-greenspan-presents-vancouver-2010-stories-of-olympic-glory",
-      "first"
+      "the-storms-of-jeremy-thomas"
     ],
-    "description": "Spanning fifty-three movies and forty-one editions of the Olympic Games, 100 YEARS OF OLYMPIC FILMS: 1912–2012 is the culmination of a massive, award-winning archival project encompassing dozens of restorations by the International Olympic Committee. The documentaries collected here cast a cinematic eye on some of the most iconic moments in the history of modern sports, spotlighting athletes who embody the Olympic motto of “Faster, Higher, Stronger”: Jesse Owens shattering world records on the track in 1936 Berlin, Jean-Claude Killy dominating the Grenoble slopes in 1968, Joan Benoit breaking away to win the Games’ first women’s marathon in Los Angeles in 1984. In addition to the impressive ten-feature contribution of Bud Greenspan, this stirring collective chronicle of triumph and defeat includes such documentary landmarks as Leni Riefenstahl’s OLYMPIA and Kon Ichikawa’s TOKYO OLYMPIAD, along with captivating lesser-known works by major directors like Claude Lelouch, Carlos Saura, and Miloš Forman. It also offers a fascinating glimpse of the development of film itself, and of the technological progress that has brought viewers ever closer to the action. Traversing continents and decades, reflecting the social, cultural, and political changes that have shaped our recent history, this remarkable movie marathon showcases a hundred years of human endeavor."
+    "description": "Directed by Mark Cousins • 2021 • United Kingdom\n\nFor decades, legendary film producer Jeremy Thomas has driven from England to the Cannes Film Festival. This time, he’s joined by acclaimed filmmaker Mark Cousins. On their intimate five-day road trip through rural France, they remember some of the most acclaimed and controversial films ever made: THE LAST EMPEROR, which won nine Oscars, including a Best Picture award for Thomas when he was still in his thirties; David Cronenberg’s CRASH and its Cannes scandal; the masterpiece of sexual obsession BAD TIMING. Thomas introduces us to his remarkable world of movie stars—Marlon Brando, Jack Nicholson, David Bowie—and daring international cinema. Illustrated with a dazzling range of film clips and rich insights about creativity and survival, THE STORMS OF JEREMY THOMAS is a passionate ode to movies that get to the heart of life."
+  },
+  {
+    "id": "american-dharma",
+    "title": "American Dharma",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ee038e13-74b9-4707-837f-39a9dc5b9070.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/american-dharma",
+    "filmIds": [
+      "american-dharma"
+    ],
+    "description": "Directed by Errol Morris • 2018 • United States, United Kingdom\n\nThe legendary documentarian Errol Morris (THE THIN BLUE LINE) sits down with one of the most controversial political figures of our time: former Donald Trump campaign strategist and advisor Steve Bannon, the inflammatory ideologue who was instrumental in shaping the billionaire’s political rise. Adopting a typically oblique, multidimensional view of his subject, Morris engages Bannon in a wide-ranging conversation that touches on everything from his favorite movies to the complexities and contradictions of his populist-apocalyptic worldview and his belief in dharma—the sense of overriding duty and fate that drives him. What emerges is a by turns engrossing, unsettling, and enigmatic portrait of a man obsessed by delusions of grandeur and his own place in history."
+  },
+  {
+    "id": "talking-about-trees",
+    "title": "Talking About Trees",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ee3b34f2-9ddb-44f6-bb21-0e8ed22214b2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/talking-about-trees",
+    "filmIds": [
+      "talking-about-trees"
+    ],
+    "description": "Directed by Suhaib Gasmelbari • 2019 • Sudan\n\nIn 1989, the members of the Sudanese Film Group saw their dream of establishing a Sudanese cinema free from state censorship dashed by the military coup and repressive dictatorship of Omar al-Bashir. Now, reunited after decades of distance and exile, filmmakers Ibrahim Shadad, Manar Al Hilo, Suleiman Mohamed Ibrahim Elnour, and Eltayeb Mahdi seek to bring life back to their old dream, aiming to make cinema a reality in Sudan by reopening an outdoor movie theater in the city of Omdurman. Their uphill battle—as well as their reminiscences and images from the remarkable, daring films they created—reveal the beautiful and brutal faces of their country."
   },
   {
     "id": "jane-by-charlotte",
@@ -2119,47 +1961,6 @@
       "point-of-order"
     ],
     "description": "Directed by Emile de Antonio • 1964 • United States\n\nThis groundbreaking political documentary distills 188 hours of televised footage from the 1954 Army-McCarthy hearings into a compelling narrative that reveals the aggressive tactics employed by senator Joseph McCarthy in his paranoid investigations into supposed Communist infiltration of the American government. The film presents the proceedings without narration or added commentary, allowing the raw footage to speak for itself. The result is an unfiltered look at McCarthy’s confrontations with Army counsel Joseph Welch—including the pivotal moment when Welch famously questioned McCarthy’s decency—and a vivid window into a critical moment in American history."
-  },
-  {
-    "id": "portrait-of-jason",
-    "title": "Portrait Of Jason",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b5231722-b47b-4022-a30b-b710d1393d14-64c24627.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/portrait-of-jason",
-    "filmIds": [
-      "portrait-of-jason",
-      "mary-bronstein-on-portrait-of-jason"
-    ],
-    "description": "Directed by Shirley Clarke • 1967 • United States\nStarring Jason Holliday\n\nOn the night of December 2, 1966, Shirley Clarke and a tiny crew convened in her apartment at the Hotel Chelsea to make a film. For twelve straight hours, they filmed the one-and-only Jason Holliday as he spun tales, sang, donned costumes, and reminisced about good times and bad behavior as a gay hustler and aspiring cabaret performer. The result is a mesmerizing portrait of a remarkable, charming, and tortured man who is by turns hilarious and heartbreaking."
-  },
-  {
-    "id": "the-storms-of-jeremy-thomas",
-    "title": "The Storms Of Jeremy Thomas",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d04e66fd-16a6-4d00-be02-be64b9d002d6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-storms-of-jeremy-thomas",
-    "filmIds": [
-      "the-storms-of-jeremy-thomas"
-    ],
-    "description": "Directed by Mark Cousins • 2021 • United Kingdom\n\nFor decades, legendary film producer Jeremy Thomas has driven from England to the Cannes Film Festival. This time, he’s joined by acclaimed filmmaker Mark Cousins. On their intimate five-day road trip through rural France, they remember some of the most acclaimed and controversial films ever made: THE LAST EMPEROR, which won nine Oscars, including a Best Picture award for Thomas when he was still in his thirties; David Cronenberg’s CRASH and its Cannes scandal; the masterpiece of sexual obsession BAD TIMING. Thomas introduces us to his remarkable world of movie stars—Marlon Brando, Jack Nicholson, David Bowie—and daring international cinema. Illustrated with a dazzling range of film clips and rich insights about creativity and survival, THE STORMS OF JEREMY THOMAS is a passionate ode to movies that get to the heart of life."
-  },
-  {
-    "id": "american-dharma",
-    "title": "American Dharma",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ee038e13-74b9-4707-837f-39a9dc5b9070.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/american-dharma",
-    "filmIds": [
-      "american-dharma"
-    ],
-    "description": "Directed by Errol Morris • 2018 • United States, United Kingdom\n\nThe legendary documentarian Errol Morris (THE THIN BLUE LINE) sits down with one of the most controversial political figures of our time: former Donald Trump campaign strategist and advisor Steve Bannon, the inflammatory ideologue who was instrumental in shaping the billionaire’s political rise. Adopting a typically oblique, multidimensional view of his subject, Morris engages Bannon in a wide-ranging conversation that touches on everything from his favorite movies to the complexities and contradictions of his populist-apocalyptic worldview and his belief in dharma—the sense of overriding duty and fate that drives him. What emerges is a by turns engrossing, unsettling, and enigmatic portrait of a man obsessed by delusions of grandeur and his own place in history."
-  },
-  {
-    "id": "talking-about-trees",
-    "title": "Talking About Trees",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ee3b34f2-9ddb-44f6-bb21-0e8ed22214b2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/talking-about-trees",
-    "filmIds": [
-      "talking-about-trees"
-    ],
-    "description": "Directed by Suhaib Gasmelbari • 2019 • Sudan\n\nIn 1989, the members of the Sudanese Film Group saw their dream of establishing a Sudanese cinema free from state censorship dashed by the military coup and repressive dictatorship of Omar al-Bashir. Now, reunited after decades of distance and exile, filmmakers Ibrahim Shadad, Manar Al Hilo, Suleiman Mohamed Ibrahim Elnour, and Eltayeb Mahdi seek to bring life back to their old dream, aiming to make cinema a reality in Sudan by reopening an outdoor movie theater in the city of Omdurman. Their uphill battle—as well as their reminiscences and images from the remarkable, daring films they created—reveal the beautiful and brutal faces of their country."
   },
   {
     "id": "berlin-alexanderplatz",
@@ -2756,6 +2557,36 @@
     "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection."
   },
   {
+    "id": "limonov-the-ballad",
+    "title": "Limonov: The Ballad",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3ebaf898-366f-481e-89f1-50355a8fb31a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/limonov-the-ballad",
+    "filmIds": [
+      "limonov-the-ballad"
+    ],
+    "description": "Directed by Kirill Serebrennikov • 2024 • France, Italy, Spain\nStarring Ben Whishaw, Viktoriya Miroshnichenko, Masha Mashkova\n\nRebel, iconoclast, outlaw, and counterculture provocateur: controversial Russian writer and political dissident Eduard Limonov was all of these things and more. In Kirill Serebrennikov’s electrifying odyssey, Ben Whishaw delivers a bravura performance as the exiled Limonov as he goes from the 1970s New York punk underground to literary fame in Paris and, ultimately, back to Russia, where he undergoes yet another startling reinvention as the leader of his own extremist political party."
+  },
+  {
+    "id": "where-the-truth-lies",
+    "title": "Where The Truth Lies",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e95cfba9-814c-464f-ab8b-af337d349272.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/where-the-truth-lies",
+    "filmIds": [
+      "where-the-truth-lies"
+    ],
+    "description": "Directed by Atom Egoyan • 2005 • United Kingdom, Canada\nStarring Kevin Bacon, Colin Firth, Alison Lohman\n\nIn 1957, a young woman was found dead under mysterious circumstances in the hotel room of a superstar, Dean Martin and Jerry Lewis–esque comedy team. Now, fifteen years later, journalist Karen O’Connor (Alison Lohman) becomes obsessed with uncovering the truth behind the scandal that led Lanny Morris (Kevin Bacon) and Vince Collins (Colin Firth) to break up their hugely successful act. But the deeper she digs into the past, the more ambiguous and disturbing events become in this seductive, time-shifting noir puzzle from master director Atom Egoyan."
+  },
+  {
+    "id": "neighboring-sounds",
+    "title": "Neighboring Sounds",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/05f45d68-60ba-4605-891a-74ff6e4170c3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/neighboring-sounds",
+    "filmIds": [
+      "neighboring-sounds"
+    ],
+    "description": "Directed by Kleber Mendonça Filho • 2012 • Brazil\nStarring Irandhir Santos, Gustavo Jahn, Maeve Jinkings\n\nKleber Mendonça Filho’s masterful debut feature is an unsettlingly incisive study of class and simmering urban unrest in contemporary Brazil that unfolds with the gripping, slow-burn tension of a thriller. On a quiet city block in the coastal city of Recife, ruled by an aging patriarch and his sons, a recent spate of petty crime has rattled the nerves of the well-to-do residents. When a mysterious security firm is brought in to watch over the neighborhood, it sparks the fears and anxieties of a divided society still haunted by its past."
+  },
+  {
     "id": "thelma",
     "title": "Thelma",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1b561a5e-8161-4df8-be9d-e5616f917120.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -2766,34 +2597,34 @@
     "description": "Directed by Joachim Trier • 2017 • Norway\nStarring Eili Harboe, Kaya Wilkins, Henrik Rafaelsen\n\nSomething like Brian De Palma’s CARRIE filtered through a distinctively chilly, Nordic sensibility, this spellbinding supernatural thriller from director Joachim Trier follows Thelma (Eili Harboe), a lonely young woman whose repression is the result of a strict religious upbringing. When she moves to Oslo to attend university, Thelma finds herself troubled by her burgeoning attraction to a female friend—a desire that awakens terrifying and inexplicable powers and brings her face-to-face with her inner demons."
   },
   {
-    "id": "crosscurrent",
-    "title": "Crosscurrent",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0735d96b-d09f-491b-8b22-629b8ee6ca0b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/crosscurrent",
+    "id": "maya-give-me-a-title",
+    "title": "Maya, Give Me A Title",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/51e05e87-a1af-42b5-881c-5aa9c59affa9.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/maya-give-me-a-title",
     "filmIds": [
-      "crosscurrent"
+      "maya-give-me-a-title"
     ],
-    "description": "Directed by Yang Chao • 2016 • China\nStarring Qin Hao, Xin Zhilei, Wu Lipeng\n\nStunningly shot by master cinematographer Mark Lee Ping-Bing (IN THE MOOD FOR LOVE, THE ASSASSIN), this sublimely mysterious, elegiac odyssey blends breathtaking images of the river that has nurtured Chinese civilization with fantasy, poetry, and history to create a complex universe all its own. From the spinning Shanghai metropolis to snow-capped Tibetan mountains, Gao Chun (Qin Hao) steers a cargo up the Yangtze and comes across a mysterious woman named An Lu (Xin Zhilei), who seems to age in reverse, at every port. He wonders whether she is supernatural or he is traveling back in time. After passing a pagoda that reverberates with the Buddha’s voice, a flooded town that reappears elsewhere, and the grandiose Three Gorges Dam, he finally arrives at the start of the river and unveils the secret of both An Lu and his own past."
+    "description": "Directed by Michel Gondry • 2024 • France\nStarring Pierre Niney, Maya Gondry, Miriam Matejovsky\n\nThe limitless imagination of singular cinematic dream-spinner Michel Gondry (ETERNAL SUNSHINE OF THE SPOTLESS MIND) is unleashed in full force in this lovingly handmade, delightfully lunatic, cut-out-animated fantasia. Maya and her father, Michel Gondry, live in two different countries. In order to stay in touch, her dad asks her every evening, “Maya, give me a title.” Based on her answer, he creates a short animated film in which Maya is the hero, and which he brings to life through wondrously surreal stop-motion adventures that unfold with all the careening, offbeat unpredictability of a child’s mind at play."
   },
   {
-    "id": "meeting-with-pol-pot",
-    "title": "Meeting With Pol Pot",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0e181a18-fd86-4145-b37b-38b279a16576.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/meeting-with-pol-pot",
+    "id": "daughter-s-daughter",
+    "title": "Daughter’s Daughter",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d878e2c1-e78f-47a4-90a6-cceb243611b3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/daughter-s-daughter",
     "filmIds": [
-      "meeting-with-pol-pot"
+      "daughter-s-daughter"
     ],
-    "description": "Directed by Rithy Panh • 2024 • Cambodia, France, Turkey\nStarring Irène Jacob, Grégoire Colin, Cyril Gueï\n\nRenowned for his hauntingly personal documentaries on the Cambodian genocide and the devastating legacy of the Khmer Rouge, director Rithy Panh returns to narrative filmmaking for the first time in over a decade with this powerful historical drama inspired by journalist Elizabeth Becker’s book “When the War Was Over.” In 1978, three journalists are invited to Democratic Kampuchea (Cambodia) by the Khmer Rouge to conduct an exclusive interview with the regime’s leader, Pol Pot. The country seems idyllic. But under the eyes of the journalists, the beautiful picture begins to crack, revealing the hidden horrors."
+    "description": "Directed by Huang Xi • 2024 • Taiwan\nStarring Sylvia Chang, Karena Lam, Winston Chao\n\nA stunning performance by Taiwanese-cinema legend Sylvia Chang anchors this elegant exploration of motherhood, grief, and regret from rising director Huang Xi. Executive-produced by Chang and filmmaker Hou Hsiao-hsien, DAUGHTER’S DAUGHTER follows Jin (Sylvia Chang), a sixty-four-year-old, recently retired divorcee who has complicated relationships with her two daughters: Emma (Karena Lam), whom she gave up for adoption in New York, and the rebellious Zuer (Eugenie Liu), a lesbian pursuing IVF with her girlfriend. When Zuer and her partner die in a tragic accident and Jin becomes the guardian of their frozen embryo, she is forced to face both her fractured relationship with Emma and the fate of an unborn child."
   },
   {
-    "id": "pop-aye",
-    "title": "Pop Aye",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6f7665bc-91bc-45b9-9e94-c1bc2e9471f4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/pop-aye",
+    "id": "an-unfinished-film",
+    "title": "An Unfinished Film",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6c62776d-c312-4720-b5a5-aa24e9bd7898.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/an-unfinished-film",
     "filmIds": [
-      "pop-aye"
+      "an-unfinished-film"
     ],
-    "description": "Directed by Kirsten Tan • 2017 • Singapore, Thailand\nStarring Thaneth Warakulnukroh, Penpak Sirikul, Chaiwat Khumdee\n\nWith immense heart and a splash of surrealism, this wonderfully eccentric road movie traces a journey across Thailand like no other. When Thana (Thaneth Warakulnukroh), a successful Bangkok architect in the midst of a midlife crisis, is reunited with an elephant he knew growing up, he and the lumbering pachyderm embark on an odyssey back to his childhood home in the idyllic Thai countryside, along the way crossing paths with a pair of nonplussed local police officers, a forlorn transgender sex worker, and a mysteriously wise drifter. As the encounters multiply and the bond between man and elephant deepens, filmmaker Kirsten Tan weaves a by turns funny and curiously moving look at the universal search for meaning."
+    "description": "Directed by Lou Ye • 2024 • Singapore, Germany\nStarring Qin Hao, Mao Xiaorui, Qi Xi\n\nIn January 2020, director Xiaorui (Mao Xiaorui) reunites his cast and crew to complete a gay romance film that was abandoned during production ten years earlier. However, the team is suddenly placed into lockdown together during the onset of COVID-19. Confronted with the challenges of the pandemic, Xiaorui and his crew are forced to determine how to move forward in a rapidly changing world. Shape-shifting between fiction and documentary, this dizzyingly innovative, emotionally gripping meta-cinematic puzzle box from acclaimed director Lou Ye (SUZHOU RIVER, SUMMER PALACE) is one of the first truly major works of art yet made about the COVID pandemic and a moving commemoration to those we lost."
   },
   {
     "id": "stranger-eyes",
@@ -2834,36 +2665,6 @@
       "the-death-of-mr-lazarescu"
     ],
     "description": "Directed by Cristi Puiu • 2005 • Romania\nStarring Ion Fiscuteanu, Luminița Gheorghiu, Doru Ana\n\nHailed as one of the defining works of twenty-first-century cinema thus far, Cristi Puiu’s unflinching, darkly comic bureaucratic nightmare heralded the arrival of the Romanian New Wave as a major cinematic force. Suffering from severe headaches, cantankerous alcoholic Mr. Lazarescu (Ion Fiscuteanu) finds himself shuttled from hospital to hospital, as each doctor he sees refuses to treat him and no one can agree on a diagnosis. As the indignities and everyday absurdities pile up, Puiu transforms a seemingly modest human drama into a devastating indictment of institutional indifference."
-  },
-  {
-    "id": "limonov-the-ballad",
-    "title": "Limonov: The Ballad",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3ebaf898-366f-481e-89f1-50355a8fb31a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/limonov-the-ballad",
-    "filmIds": [
-      "limonov-the-ballad"
-    ],
-    "description": "Directed by Kirill Serebrennikov • 2024 • France, Italy, Spain\nStarring Ben Whishaw, Viktoriya Miroshnichenko, Masha Mashkova\n\nRebel, iconoclast, outlaw, and counterculture provocateur: controversial Russian writer and political dissident Eduard Limonov was all of these things and more. In Kirill Serebrennikov’s electrifying odyssey, Ben Whishaw delivers a bravura performance as the exiled Limonov as he goes from the 1970s New York punk underground to literary fame in Paris and, ultimately, back to Russia, where he undergoes yet another startling reinvention as the leader of his own extremist political party."
-  },
-  {
-    "id": "where-the-truth-lies",
-    "title": "Where The Truth Lies",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e95cfba9-814c-464f-ab8b-af337d349272.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/where-the-truth-lies",
-    "filmIds": [
-      "where-the-truth-lies"
-    ],
-    "description": "Directed by Atom Egoyan • 2005 • United Kingdom, Canada\nStarring Kevin Bacon, Colin Firth, Alison Lohman\n\nIn 1957, a young woman was found dead under mysterious circumstances in the hotel room of a superstar, Dean Martin and Jerry Lewis–esque comedy team. Now, fifteen years later, journalist Karen O’Connor (Alison Lohman) becomes obsessed with uncovering the truth behind the scandal that led Lanny Morris (Kevin Bacon) and Vince Collins (Colin Firth) to break up their hugely successful act. But the deeper she digs into the past, the more ambiguous and disturbing events become in this seductive, time-shifting noir puzzle from master director Atom Egoyan."
-  },
-  {
-    "id": "neighboring-sounds",
-    "title": "Neighboring Sounds",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/05f45d68-60ba-4605-891a-74ff6e4170c3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/neighboring-sounds",
-    "filmIds": [
-      "neighboring-sounds"
-    ],
-    "description": "Directed by Kleber Mendonça Filho • 2012 • Brazil\nStarring Irandhir Santos, Gustavo Jahn, Maeve Jinkings\n\nKleber Mendonça Filho’s masterful debut feature is an unsettlingly incisive study of class and simmering urban unrest in contemporary Brazil that unfolds with the gripping, slow-burn tension of a thriller. On a quiet city block in the coastal city of Recife, ruled by an aging patriarch and his sons, a recent spate of petty crime has rattled the nerves of the well-to-do residents. When a mysterious security firm is brought in to watch over the neighborhood, it sparks the fears and anxieties of a divided society still haunted by its past."
   },
   {
     "id": "grace-jones-bloodlight-and-bami",
@@ -2976,6 +2777,26 @@
     "description": "Directed by Stephen Kijak • 2007 • United Kingdom, United States\n\nSCOTT WALKER: 30 CENTURY MAN is a rare glimpse into the creative world of the most enigmatic figure in rock history. Tracing the undeniable impact Walker has had on popular music through interviews with some of his biggest, highest-profile fans, we explore his fascinating trajectory. From jobbing bass player on LA’s Sunset Strip to his domination of the British pop scene that began in the swinging summer of 1965 and his transformation into a boundary-pushing avant-garde composer of true genius, here is an uncompromising and serious musician working at the peak of his powers. At the age of sixty-three, Walker returns to the studio to create what would become his greatest artistic statement yet—his acclaimed 2005 album “The Drift”—and we are invited to experience this process with him."
   },
   {
+    "id": "rude",
+    "title": "Rude",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/40a3dd2c-ac37-4f52-bf39-2352d3763768.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/rude",
+    "filmIds": [
+      "rude"
+    ],
+    "description": "Directed by Clement Virgo • 1995 • Canada\nStarring Maurice Dean Wint, Rachael Crawford, Clark Johnson\n\nJamaican Canadian director Clement Virgo’s landmark debut—the first Canadian dramatic feature made by an entirely Black crew—is a searing, poetic portrait of marginalized souls fighting to overcome their demons. Over the course of one Easter weekend in a Toronto housing project, three desperate people—a drug dealer turned artist (Maurice Dean Wint) trying to go straight; a boxer (Richard Chevolleau) coming to terms with his sexuality; and a young woman (Rachael Crawford) coping with a breakup—confront the darkest parts of themselves while searching for a path forward."
+  },
+  {
+    "id": "girl-with-hyacinths",
+    "title": "Girl With Hyacinths",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9093a0b9-42d4-43bf-99d0-66c326454ce1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/girl-with-hyacinths",
+    "filmIds": [
+      "girl-with-hyacinths"
+    ],
+    "description": "Directed by Hasse Ekman • 1950 • Sweden\nStarring Eva Henning, Ulf Palme, Anders Ek\n\nOne of the most acclaimed Swedish films of all time (heralded as a masterpiece by no less than Ingmar Bergman), this moody, masterfully crafted psychological mystery unfolds in a tantalizing series of CITIZEN KANE–esque flashbacks as the neighbors of an enigmatic young woman (Eva Henning) who committed suicide attempt to piece together the truth about what drove her to such a tragic end. It builds to a startling final revelation that, in its sensitivity and daring empathy, marks this heartbreaking study of loneliness and isolation as an important milestone in queer cinema."
+  },
+  {
     "id": "mother-india",
     "title": "Mother India",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a44af78c-a238-4991-b7ca-b864cc90cc35.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -2996,14 +2817,24 @@
     "description": "Directed by Liv Ullmann • 2000 • Sweden\nStarring Lena Endre, Erland Josephson, Krister Henriksson\n\nScripted by Ingmar Bergman with the fearlessness of an artist taking stock of his life and masterfully directed one of his greatest collaborators, the actor Liv Ullmann, FAITHLESS is a wrenching, intensely psychological examination of infidelity in which the late Swedish auteur channels his personal demons into the character of “Bergman” (Erland Josephson), an aging director who summons the imaginary actress Marianne (an extraordinary Lena Endre) to help him write his latest script. With riveting emotional honesty, Marianne recounts the story of how she fell into an extramarital affair with a close family friend, a relationship that has devastating consequences not only for her and her husband, but their daughter as well."
   },
   {
-    "id": "duet-for-cannibals",
-    "title": "Duet For Cannibals",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/abb9c277-0d7a-4944-a1c6-c3b8c6ce3835.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/duet-for-cannibals",
+    "id": "the-tokyo-trial",
+    "title": "The Tokyo Trial",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ba52a3aa-7208-45f8-8777-ebd9fcdde2bf.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-tokyo-trial",
     "filmIds": [
-      "duet-for-cannibals"
+      "tokyo-trial"
     ],
-    "description": "Directed by Susan Sontag • 1969 • Sweden\nStarring Lars Ekborg, Gösta Ekman, Adriana Asti\n\nEssayist, novelist, critic, cinephile, and all-around intellectual dynamo Susan Sontag made her directorial debut with this definition-defying, dryly funny psychological serio-comedy, a project that began when a Swedish studio invited her to make a film in Stockholm. The result, revolving around the quadrangular relationship between an arrogant ex-revolutionist German intellectual exile, his elegant wife, their Swedish student secretary, and the earnest secretary’s bride-to-be, is a roundelay of partner-swapping that gradually drifts into gamesmanship that broaches the surreal and violent. Defying literal-minded interpretation, DUET FOR CANNIBALS is both an illustrative companion to Sontag’s criticism and an introduction to a startlingly original filmmaker."
+    "description": "Directed by Masaki Kobayashi • 1983 • Japan\n\nModeled after the Nuremberg trials, the International Military Tribunal for the Far East took place between 1946 and 1948 to prosecute war crimes committed by Japanese politicians and military leaders between 1928 and 1945. Powerfully assembled from over nine hundred reels of archival footage of the proceedings by renowned filmmaker Masaki Kobayashi (HARAKIRI, THE HUMAN CONDITION)—a pacifist, socialist, and former prisoner of war—THE TOKYO TRIAL is a work of monumental historical weight that exposes, with haunting clarity, the shattering moral consequences of war and the fraught, often elusive pursuit of justice."
+  },
+  {
+    "id": "the-spirit-of-45",
+    "title": "The Spirit Of ’45",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6ab12d24-ac61-4966-ab2a-1d276e66215f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-spirit-of-45",
+    "filmIds": [
+      "the-spirit-of-45"
+    ],
+    "description": "Dircted by Ken Loach • 2013 • United Kingdom\n\nCinematic champion of working-class solidarity Ken Loach (I, DANIEL BLAKE) looks back at the remarkable twentieth-century socialist surge that changed modern Britain forever. Through a vivid mix of interviews and archival footage, Loach brings to life the crucial postwar period that swept Prime Minister Clement Attlee’s insurgent Labour Party into power over Winston Churchill’s Conservative government, inaugurating a sweeping series of reforms—including the nationalization of railways, energy, housing, and health care—that marked the birth of the UK’s welfare state. Connecting the era’s hard-won populist triumphs with their present-day precarity, Loach offers both a stirring celebration of collective power and a sobering reminder of its fragility."
   },
   {
     "id": "stella-dallas-1",
@@ -3056,44 +2887,26 @@
     "description": "Directed by Robert Bresson • 1971 • France, Italy\nStarring Isabelle Weingarten, Guillaume des Forêts, Jean-Maurice Monnoyer\n\nFOUR NIGHTS OF A DREAMER is Robert Bresson’s great forgotten masterpiece, a stark yet haunting ode to romantic idealism and the capriciousness of love. Adapted from Fyodor Dostoevsky’s “White Nights,” the film follows Jacques (Guillaume des Forêts), a lonely artist who roams bohemian Paris in search of the girl of his dreams. One night he saves a beautiful young woman, Marthe (Isabelle Weingarten), from plunging into the Seine in despair over her rejection by an avoidant lover (Jean-Maurice Monnoyer). Jacques compassionately attempts to reunite Marthe with her beau, but his feelings for his new friend soon become less than platonic and his investment in her personal drama far from selfless. FOUR NIGHTS OF A DREAMER has been called the French master’s “loveliest” work: with his signature minimalism, Bresson films the shimmering beauty of nocturnal Paris as it enfolds his characters in endless possibility—subtly capturing the wonder of unexpected connection and the mystery of fate."
   },
   {
-    "id": "rude",
-    "title": "Rude",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/40a3dd2c-ac37-4f52-bf39-2352d3763768.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/rude",
+    "id": "the-enigma-of-kaspar-hauser",
+    "title": "The Enigma Of Kaspar Hauser",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1b535300-405d-4360-900d-8189e83c02c6-3b9d9cae.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-enigma-of-kaspar-hauser",
     "filmIds": [
-      "rude"
+      "the-enigma-of-kasper-hauser"
     ],
-    "description": "Directed by Clement Virgo • 1995 • Canada\nStarring Maurice Dean Wint, Rachael Crawford, Clark Johnson\n\nJamaican Canadian director Clement Virgo’s landmark debut—the first Canadian dramatic feature made by an entirely Black crew—is a searing, poetic portrait of marginalized souls fighting to overcome their demons. Over the course of one Easter weekend in a Toronto housing project, three desperate people—a drug dealer turned artist (Maurice Dean Wint) trying to go straight; a boxer (Richard Chevolleau) coming to terms with his sexuality; and a young woman (Rachael Crawford) coping with a breakup—confront the darkest parts of themselves while searching for a path forward."
+    "description": "Directed by Werner Herzog • 1974 • West Germany\nStarring Bruno S., Walter Ladengast, Brigitte Mira\n\nBased on real events, THE ENIGMA OF KASPAR HAUSER tells the story of a young man imprisoned in a basement dungeon for the first seventeen years of his life, devoid of human contact, until his captor suddenly drops him off in the town of Nuremberg. Unable to talk, barely able to walk, Hauser frightens the townspeople with his strange behaviors until he’s rescued by a man whose attempts to teach and reintegrate him into society result in a fascinating look at the resilience of the human mind."
   },
   {
-    "id": "girl-with-hyacinths",
-    "title": "Girl With Hyacinths",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9093a0b9-42d4-43bf-99d0-66c326454ce1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/girl-with-hyacinths",
+    "id": "personal-shopper",
+    "title": "Personal Shopper",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/de853b44-b655-4ca5-a8be-1e6f7d6cfb29.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/personal-shopper",
     "filmIds": [
-      "girl-with-hyacinths"
+      "personal-shopper",
+      "olivier-assayas-on-personal-shopper",
+      "personal-shopper-cannes-film-festival-2016"
     ],
-    "description": "Directed by Hasse Ekman • 1950 • Sweden\nStarring Eva Henning, Ulf Palme, Anders Ek\n\nOne of the most acclaimed Swedish films of all time (heralded as a masterpiece by no less than Ingmar Bergman), this moody, masterfully crafted psychological mystery unfolds in a tantalizing series of CITIZEN KANE–esque flashbacks as the neighbors of an enigmatic young woman (Eva Henning) who committed suicide attempt to piece together the truth about what drove her to such a tragic end. It builds to a startling final revelation that, in its sensitivity and daring empathy, marks this heartbreaking study of loneliness and isolation as an important milestone in queer cinema."
-  },
-  {
-    "id": "sliding-doors",
-    "title": "Sliding Doors",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5a06d4ec-8cdb-4a0f-b04b-5b6da4e0a98d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/sliding-doors",
-    "filmIds": [
-      "sliding-doors"
-    ],
-    "description": "Directed by Peter Howitt • 1998 • United States, United Kingdom\nStarring Gwyneth Paltrow, John Hannah, John Lynch\n\nThe split-second moments that can take a life down one path instead of another form the crux of this wonderfully fresh, existential twist on the romantic comedy. Gwyneth Paltrow delivers one of her most winning performances as London publicist Helen, effortlessly sliding between parallel storylines that show what happens if she does or doesn’t catch a morning train back to her apartment. Love. Romantic entanglements. Deception. Trust. Friendship. Comedy. All come into focus as the two stories shift back and forth, overlap, then surprisingly converge for a uniquely smart and original exploration of chance, fate, and the mysterious workings of love."
-  },
-  {
-    "id": "a-better-tomorrow",
-    "title": "A Better Tomorrow",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/35b74b25-6a9f-4df3-823f-d7cf2b69aca7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/a-better-tomorrow",
-    "filmIds": [
-      "a-better-tomorrow"
-    ],
-    "description": "Directed by John Woo • 1986 • Hong Kong\nStarring Ti Lung, Chow Yun-fat, Leslie Cheung\n\nThe box-office sensation that established director John Woo as the king of 1980s Hong Kong action cinema and set the standard for the heroic bloodshed genre, this electrifying gangster saga combines the director’s intricate bullet play with operatic emotion as it tracks the explosive relationship between two brothers, one a criminal trying to reform (Ti Lung), the other a cop (Leslie Cheung) who blames his brother for their father’s death. In the first of his celebrated collaborations with Woo, Chow Yun-fat radiates his matchless cool as a hit man who lives by his own code."
+    "description": "Directed by Olivier Assayas • 2016 • France\nStarring Kristen Stewart, Lars Eidinger, Sigrid Bouaziz\n\nWith this intimate supernatural drama, the celebrated French filmmaker Olivier Assayas conjures a melancholy ghost story set in the world of celebrity and haute couture. Starring Kristen Stewart, whose performance in Assayas’s CLOUDS OF SILS MARIA made her the first American actress to win a César Award, this evocative character study tells the story of a young fashion assistant and spiritual medium who is living in Paris and searching for signs of an afterlife following the sudden death of her twin brother. A stirring depiction of grief in the form of a psychological thriller, PERSONAL SHOPPER—which won Assayas the best director award at Cannes—is a chilling meditation on modern modes of communication and the way we mourn those we love."
   },
   {
     "id": "after-life",
@@ -3111,58 +2924,34 @@
     "description": "Directed by Hirokazu Kore-eda • 1998 • Japan\nStarring Arata, Erika Oda, Susumu Terajima\n\nIf you could choose only one memory to hold on to for eternity, what would it be? That’s the question at the heart of Hirokazu Kore-eda’s revelatory international breakthrough, a bittersweet fantasia in which the recently deceased find themselves in a limbo realm where they must select a single cherished moment from their life to be recreated on film for them to take into the next world. AFTER LIFE’s high-concept premise is grounded in Kore eda’s documentary-like approach to the material, which he shaped through interviews with hundreds of Japanese citizens. What emerges is a panoramic vision of the human experience—its ephemeral joys and lingering regrets—and a quietly profound meditation on memory, our interconnectedness, and the amberlike power of cinema to freeze time."
   },
   {
-    "id": "bleeder",
-    "title": "Bleeder",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d0e98b17-0fba-4deb-8263-00f3d3c3b5a6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/bleeder",
+    "id": "the-land",
+    "title": "The Land",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/77929fb4-b0f1-4d1e-b3fb-3bbc33d4376b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-land",
     "filmIds": [
-      "bleeder"
+      "the-land"
     ],
-    "description": "Directed by Nicolas Winding Refn • 1999 • Denmark\nStarring Mads Mikkelsen, Kim Bodnia, Liv Corfixen\n\nOn the gritty margins of Copenhagen, two friends drift apart as violence and obsession take hold. Disaffected alcoholic Leo (Kim Bodnia) struggles with a crumbling relationship and growing rage, while shy film nerd Lenny (Mads Mikkelsen) retreats into his world of VHS tapes and fantasy. Boundary-pushing director Nicolas Winding Refn’s follow-up to his bombshell debut PUSHER is equally raw and unflinching in its potent look at masculinity, alienation, and the point where repression turns to eruption."
+    "description": "Directed by Youssef Chahine • 1969 • Egypt\nStarring Mahmoud el-Meliguy, Ezzat el-Alaili, Nagwa Ibrahim\n\nAdapted from a classic novel by Abd al-Rahman Sharqawi, this howl of rage against social injustice is one of director Youssef Chahine’s most influential works, crowned by a career-best performance from its star Mahmoud el-Meliguy. Set in the early 1930s, THE LAND urgently portrays the struggle of rural peasants whose livelihood is threatened by a greedy landlord’s scheme to limit their water supply, showing both the power and limitations of resistance in the face of class exploitation. Composed in vivid, sensuous images and shot through with revolutionary fervor, this landmark of Arab cinema—the inaugural entry in Chahine’s so-dubbed Trilogy of Defeat—is a work of both immense humanism and searing political conviction, informed by the burning sensation of collective failure in the wake of the Six-Day War."
   },
   {
-    "id": "i-am-cuba",
-    "title": "I Am Cuba",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5c4448ea-4697-452b-92c7-a7f670a4a3af.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/i-am-cuba",
+    "id": "speaking-parts",
+    "title": "Speaking Parts",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2e1ca807-db17-455e-ac28-873e753e71da.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/speaking-parts",
     "filmIds": [
-      "i-am-cuba",
-      "russian-dubbed-version",
-      "the-siberian-mammoth",
-      "bradford-young-on-i-am-cuba",
-      "martin-scorsese-on-i-am-cuba"
+      "speaking-parts"
     ],
-    "description": "Directed by Mikhail Kalatozov • 1964 • Cuba, Soviet Union\nStarring Raquel Revuelta, Luz María Collazo, José Gallardo\n\nBoth a landmark of radical political cinema and one of the most visually ravishing films ever made, this legendary hymn to revolution shimmers across the screen like a fever dream of rebellion. The result of an extraordinarily ambitious collaboration between the Soviet and Cuban film industries, director Mikhail Kalatozov’s I AM CUBA unfolds in four explosive vignettes that capture Cuban life on the brink of transformation, as crushing economic exploitation and inequality give way to a working-class uprising. Backed by Carlos Fariñas’s stirring score, the dazzling camera work by Sergei Urusevsky—an inspiration for generations of filmmakers to follow—gives flight to the movie’s message of liberation."
+    "description": "Directed by Atom Egoyan • 1989 • Canada\nStarring Michael McManus, Arsinée Khanjian, Gabrielle Rose\n\nHaunting images and obsessive sexuality merge in this postmodern thriller about loss, love, power, and the distance that modern technology puts between us. The story of four people—an actor/gigolo (Michael McManus), a frustrated chambermaid (Arsinée Khanjian), an obsessed writer (Gabrielle Rose), and the film producer (David Hemblen) who manipulates them all—is filmed as if we were watching their power games through the lens of a surveillance camera. Disquieting and enthralling, SPEAKING PARTS confirmed Egoyan’s status as one of the most daring and original directors of his generation."
   },
   {
-    "id": "double-happiness",
-    "title": "Double Happiness",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0f2e061f-2b8c-487d-932c-abc09e7e0f71.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/double-happiness",
+    "id": "a-real-young-girl",
+    "title": "A Real Young Girl",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7ebc8188-43d0-4227-bbec-ab666deb01b3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/a-real-young-girl",
     "filmIds": [
-      "double-happiness"
+      "a-real-young-girl"
     ],
-    "description": "Directed by Mina Shum • 1994 • Canada\nStarring Sandra Oh, Stephen Chang, Alannah Ong\n\nAn irresistible, star-making performance from Sandra Oh lights up this warm, sharp-witted look at what it means to hold onto heritage while forging one’s own identity. She stars as Jade, a young Chinese Canadian aspiring actress whose most challenging role is playing the perfect daughter for her traditionalist parents, who want nothing more than for her to settle down with a nice Chinese boy. But when Jade secretly falls for Mark (Callum Keith Rennie), a white grad student, her carefully managed double life begins to crack—forcing her to decide how much of herself she’s willing to hide, and at what cost."
-  },
-  {
-    "id": "adieu-philippine",
-    "title": "Adieu Philippine",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f65784dc-bc0f-4ed7-922e-68678d10c066.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/adieu-philippine",
-    "filmIds": [
-      "adieu-philippine"
-    ],
-    "description": "Directed by Jacques Rozier • 1962 • France\nStarring Jean-Claude Aimini, Daniel Descamps, Stefania Sabatini\n\nIn his bold yet playful feature debut—an overlooked gem of the French New Wave—Jacques Rozier satirizes several major cultural currents of early-sixties France: political myopia, romantic escapism, and commercial corruption. Young Michel (Jean-Claude Aimini) works as a camera technician for a television studio, where he meets two would-be actresses, Liliane (Yveline Céry) and Juliette (Stefania Sabatini). The duo’s demeaning work in advertising allows them to connect Michel with an unscrupulous director (Vittorio Caprioli), who subsequently stiffs him on a job. Fed up with their exploitative industry, Michel, Liliane, and Juliette head to Corsica for a holiday—and to track down the director—all while a developing love triangle strains the girls’ friendship. With confidence and panache, Rozier expertly employs documentary-style shooting, improvisational acting (among a mostly nonprofessional cast), and kinetic montage sequences to capture the disparity between blithe youth and the societal pressures—especially Michel’s imminent military service in Algeria—that threaten its innocence."
-  },
-  {
-    "id": "the-world",
-    "title": "The World",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/014327c8-ec0f-4ea4-a152-959400819043.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-world",
-    "filmIds": [
-      "the-world"
-    ],
-    "description": "Directed by Jia Zhang-Ke • 2004 • China\nStarring Zhao Tao, Cheng Taishen, Jing Jue\n\nAn at once intimate and expansive exploration of globalization from visionary director Jia Zhang-Ke, THE WORLD takes place in the eponymous theme park on the outskirts of Beijing, where iconic monuments from the Eiffel Tower to the Taj Mahal are reproduced for tourists. It’s there that the park’s employees—including a dancer (Zhao Tao) and a security guard (Cheng Taishen)—drift together and are pulled apart in a cycle of connection and alienation that speaks eloquently to the effects of China’s rapid modernization."
+    "description": "Directed by Catherine Breillat • 1976 • France\nStarring Charlotte Alexandra, Hiram Keller, Rita Maiden\n\nFilmed in 1976 but not released until 2000, A REAL YOUNG GIRL is Catherine Breillat’s taboo-busting directorial debut and one of the boldest explorations of female sexuality ever committed to celluloid. In adapting her own novel, Breillat unflinchingly depicts the dark desires of Alice (Charlotte Alexandra), a rural adolescent whose uninhibited sexual experimentation troubles her parents (Rita Maiden and Bruno Balp) and augurs doom for her first lover (Hiram Keller). Originally withheld from theaters due to censorship concerns, GIRL proved itself to be not only ahead of its time but also an audacious trial run for Breillat’s core strategies and themes, including the connection between transgressive fantasy and sober reality."
   },
   {
     "id": "the-runner",
@@ -3180,28 +2969,20 @@
     "description": "Directed by Amir Naderi • 1984 • Iran\nStarring Madjid Niroumand, Moussa Torkizadeh, Abbas Nazeri\n\nChildhood takes on mythic dimensions in one of the defining works of postrevolutionary Iranian cinema. Inspired by director Amir Naderi’s own boyhood, THE RUNNER is lit from within by Madjid Niroumand’s electrifying performance as a young orphan fending for himself on the streets of a port city, determined to rise above his circumstances—working odd jobs, passing time with friends, learning to read—and running, always running, toward the future. Water, fire, the human body in motion: in hypnotic images of lyrical power, Naderi finds unexpected glory in the world of a boy suspended between modernity and elemental natural forces as he chases his own path forward."
   },
   {
-    "id": "a-real-young-girl",
-    "title": "A Real Young Girl",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7ebc8188-43d0-4227-bbec-ab666deb01b3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/a-real-young-girl",
+    "id": "ratcatcher",
+    "title": "Ratcatcher",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/721da764-b84c-4c7d-a5ee-7e1807312e8a-0e4248a2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/ratcatcher",
     "filmIds": [
-      "a-real-young-girl"
+      "ratcatcher",
+      "lynne-ramsay-on-ratcatcher-2002",
+      "lynne-ramsay-on-ratcatcher-2021",
+      "small-deaths",
+      "kill-the-day",
+      "gasman",
+      "alwin-kuchler-on-ratcatcher"
     ],
-    "description": "Directed by Catherine Breillat • 1976 • France\nStarring Charlotte Alexandra, Hiram Keller, Rita Maiden\n\nFilmed in 1976 but not released until 2000, A REAL YOUNG GIRL is Catherine Breillat’s taboo-busting directorial debut and one of the boldest explorations of female sexuality ever committed to celluloid. In adapting her own novel, Breillat unflinchingly depicts the dark desires of Alice (Charlotte Alexandra), a rural adolescent whose uninhibited sexual experimentation troubles her parents (Rita Maiden and Bruno Balp) and augurs doom for her first lover (Hiram Keller). Originally withheld from theaters due to censorship concerns, GIRL proved itself to be not only ahead of its time but also an audacious trial run for Breillat’s core strategies and themes, including the connection between transgressive fantasy and sober reality."
-  },
-  {
-    "id": "the-mother-and-the-whore",
-    "title": "The Mother And The Whore",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dc477961-46cf-465a-b017-4e47d27c51d2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-mother-and-the-whore",
-    "filmIds": [
-      "the-mother-and-the-whore",
-      "jean-pierre-gorin-and-rachel-kushner",
-      "francoise-lebrun",
-      "cannes-1973",
-      "the-mother-and-the-whore-the-restoration"
-    ],
-    "description": "Directed by Jean Eustache • 1973 • France\nStarring Jean-Pierre Léaud, Françoise Lebrun, Isabelle Weingarten\n\nAfter the French New Wave, the sexual revolution, and the upheavals of May 1968 came the near religiously revered magnum opus by Jean Eustache. In his long-unavailable body of work, ranging from documentaries about his native village to closely autobiographical narrative films, Eustache pioneered a forthright and fearless brand of realism. The pinnacle of this innovative style, THE MOTHER AND THE WHORE follows Alexandre (Jean-Pierre Léaud), a Parisian pseudo-intellectual who lives with his tempestuous girlfriend, Marie (Bernadette Lafont), even as he begins a dalliance with the sexually liberated Veronika (Françoise Lebrun), leading the three into an emotionally turbulent love triangle. Through daringly sustained long takes and confessional dialogue, Eustache captures a generation navigating the disillusionment of the 1970s, and in the process achieves an intimacy so deep it cuts."
+    "description": "Directed by Lynne Ramsay • 1999 • United Kingdom\nStarring Tommy Flanagan, Mandy Matthews, William Eadie\n\nIn her breathtaking and assured debut feature, Lynne Ramsay creates a haunting evocation of a troubled Glasgow childhood. Set during Scotland’s national garbage strike of the mid-1970s, RATCATCHER explores the experiences of a poor adolescent boy as he struggles to reconcile his dreams and his guilt with the abjection that surrounds him. Utilizing beautiful, elusive imagery, candid performances, and unexpected humor, Ramsay deftly contrasts urban decay with a rich interior landscape of hope and perseverance, resulting in a work at once raw and deeply poetic."
   },
   {
     "id": "look-back-in-anger",
@@ -3212,6 +2993,29 @@
       "look-back-in-anger"
     ],
     "description": "Directed by Tony Richardson • 1959 • United Kingdom\nStarring Richard Burton, Claire Bloom, Mary Ure\n\nBased on the smash-hit play by John Osborne that inaugurated Britain’s “angry young men” literary movement, this touchstone of the British New Wave features a searing performance from Richard Burton as Jimmy Porter, a university graduate and the husband of a woman of some means, who has rejected middle-class dreams and now operates a candy stall at the local flea market. During their two year marriage, Alison (Mary Ure) has carried the full brunt of Jimmy’s anger and frustration, as well as his intense love. When Alison’s friend Helena Charles (Claire Bloom), an actress, moves in with the couple, she becomes a witness to their turbulent relationship and a catalyst for further unrest within the household."
+  },
+  {
+    "id": "west-indies-the-fugitive-slaves-of-liberty",
+    "title": "West Indies: The Fugitive Slaves Of Liberty",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7bf337d7-21c6-469a-a11f-d518d76eee94.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/west-indies-the-fugitive-slaves-of-liberty",
+    "filmIds": [
+      "west-indies-the-fugitive-slaves-of-liberty"
+    ],
+    "description": "Directed by Med Hondo • 1979 • Algeria, Mauritania, France\nStarring Robert Liensol, Roland Bertin, Hélène Vincent\n\nMauritanian French director Med Hondo’s staggering WEST INDIES: THE FUGITIVE SLAVES OF LIBERTY is a sui generis amalgam of historical epic, Broadway revue, Brechtian theater, and joyous agitprop. Using an enormous mock slave ship as the film’s only soundstage, Hondo mounts intricately choreographed reenactments and dance numbers across his multipurpose set to investigate more than three centuries of imperialist oppression. The story traverses the West Indies, Europe, and the Middle Passage; jumps across time to depict the effects of official French policy upon the colonized, the enslaved, and their descendants; and surveys the actions and motivations of the resigned, the revolutionary, and the powers that be (along with their lackeys). No mere extravaganza, WEST INDIES is a call to arms for a spectacular yet critical cinematic reimagining of an entire people’s history of resistance and struggle."
+  },
+  {
+    "id": "when-a-woman-ascends-the-stairs",
+    "title": "When A Woman Ascends The Stairs",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/120be8d0-4386-490b-8fbf-9183ab29c22d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/when-a-woman-ascends-the-stairs",
+    "filmIds": [
+      "when-a-woman-ascends-the-stairs",
+      "when-a-woman-ascends-the-stairs-commentary",
+      "imogen-sara-smith-on-mikio-naruse",
+      "tatsuya-nakadai-on-when-a-woman-ascends-the-stairs"
+    ],
+    "description": "Directed by Mikio Naruse • 1960 • Japan\nStarring Hideko Takamine, Masayuki Mori, Reiko Dan\n\nWHEN A WOMAN ASCENDS THE STAIRS might be Japanese filmmaker Mikio Naruse’s finest hour, a delicate, devastating study of a woman, Keiko (played heartbreakingly by Hideko Takamine), who works as a bar hostess in Tokyo’s very modern postwar Ginza district, who entertains businessmen after work. Sly, resourceful, but trapped, Keiko comes to embody the conflicts and struggles of a woman trying to establish her independence in a male-dominated society. WHEN A WOMAN ASCENDS THE STAIRS shows the largely unsung yet widely beloved master Naruse at his most socially exacting and profoundly emotional."
   },
   {
     "id": "kalpana",
@@ -3423,92 +3227,5 @@
       "romanian-new-wave-teasaer"
     ],
     "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection."
-  },
-  {
-    "id": "ali-fear-eats-the-soul",
-    "title": "Ali: Fear Eats The Soul",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/359d4e68-c8a3-4391-b116-87f5a612f5d3-9eb54ef7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/ali-fear-eats-the-soul",
-    "filmIds": [
-      "ali-fear-eats-the-soul",
-      "todd-haynes-on-rainer-werner-fassbinder",
-      "angst-isst-seele-auf",
-      "brigitte-mira-on-ali-fear-eats-the-soul",
-      "thea-eymesz-on-rainer-werner-fassbinder",
-      "the-stripped-down-style-of-ali-fear-eats-the-soul",
-      "from-the-american-soldier-1970"
-    ],
-    "description": "Directed by Rainer Werner Fassbinder • 1974 • West Germany\nStarring Brigitte Mira, El Hedi ben Salem, Barbara Valentin\n\nThe wildly prolific German filmmaker Rainer Werner Fassbinder paid homage to his cinematic hero Douglas Sirk with this update of that filmmaker’s 1955 ALL THAT HEAVEN ALLOWS. A lonely widow (Brigitte Mira) meets a much younger Arab worker (El Hedi ben Salem) in a bar during a rainstorm. They fall in love, to their own surprise—and to the outright shock of their families, colleagues, and drinking buddies. In ALI: FEAR EATS THE SOUL, Fassbinder expertly wields the emotional power of classic Hollywood melodrama to expose the racial tensions underlying contemporary German culture."
-  },
-  {
-    "id": "losing-ground",
-    "title": "Losing Ground",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/aa1d8b14-388e-4f74-9f9d-db1be0f6aa27.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/losing-ground",
-    "filmIds": [
-      "losing-ground",
-      "kathleen-collins-interview",
-      "justin-simien-on-losing-ground"
-    ],
-    "description": "Directed by Kathleen Collins • 1982 • United States\nStarring Seret Scott, Bill Gunn, Duane Jones\n\nOne of the first feature films directed by an African American woman, Kathleen Collins’s LOSING GROUND tells the story of a marriage between two remarkable people, both at a crossroads in their lives. Sara Rogers (Seret Scott), a black professor of philosophy, is embarking on an intellectual quest to understand “ecstasy” just as her painter husband, Victor (Bill Gunn), sets off on a more earthy exploration of joy. Over the course of a summer idyll in upstate New York, the two each experience profound emotional and romantic awakenings. Applying a deft comic touch to a deeply personal exploration of love, race, and gender, Collins crafts a charming, complex tale of personal discovery that, after decades of neglect, has reemerged as a still-fresh landmark of independent cinema."
-  },
-  {
-    "id": "the-umbrellas-of-cherbourg",
-    "title": "The Umbrellas Of Cherbourg",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/646d5f81-4ed2-4425-a316-f448615a9e05-e1260342.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-umbrellas-of-cherbourg",
-    "filmIds": [
-      "the-umbrellas-of-cherbourg",
-      "adam-gopnik-on-the-umbrellas-of-cherbourg",
-      "once-upon-a-time-the-umbrellas-of-cherbourg",
-      "rodney-hill-on-the-umbrellas-of-cherbourg",
-      "cinepanorama-jacques-demy-and-michel-legrand",
-      "patton-oswalt-on-the-umbrellas-of-cherbourg",
-      "the-umbrellas-of-cherbourg-restoration-demo"
-    ],
-    "description": "Directed by Jacques Demy • 1964 • France\nStarring Catherine Deneuve, Nino Castelnuovo\n\nThe angelically beautiful Catherine Deneuve was launched to stardom by this dazzling musical heart-tugger from Jacques Demy. She plays an umbrella-shop owner’s delicate daughter, glowing with first love for a handsome garage mechanic, played by Nino Castelnuovo. When the boy is shipped off to fight in Algeria, the two lovers must grow up quickly. Exquisitely designed in a kaleidoscope of colors, and told entirely through lilting songs by the great composer Michel Legrand, THE UMBRELLAS OF CHERBOURG is one of the most revered and unorthodox movie musicals of all time."
-  },
-  {
-    "id": "days-of-being-wild",
-    "title": "Days Of Being Wild",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8fd439b2-a907-4e9c-a270-f3d3ed1c77c1-41e5a924.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/days-of-being-wild",
-    "filmIds": [
-      "days-of-being-wild",
-      "days-of-being-wild-alternate-version",
-      "christopher-doyle-on-days-of-being-wild",
-      "maggie-cheung-man-yuk-on-days-of-being-wild"
-    ],
-    "description": "Directed by Wong Kar Wai • 1990 • Hong Kong\nStarring Leslie Cheung Kwok Wing, Andy Lau Tak Wah, Maggie Cheung Man Yuk\n\nThe breakthrough sophomore feature by Wong Kar Wai represents the first full flowering of his swooning signature style. The initial entry in a loosely connected, ongoing cycle that includes IN THE MOOD FOR LOVE and 2046, this ravishing existential reverie is a dreamlike drift through the Hong Kong of the 1960s in which a band of wayward twentysomethings—including a disaffected playboy (Leslie Cheung Kwok Wing) searching for his birth mother, a lovelorn woman (Maggie Cheung Man Yuk) hopelessly enamored with him, and a policeman (Andy Lau Tak Wah) caught in the middle of their turbulent relationship—pull together and push apart in a dance of frustrated desire. The director’s inaugural collaboration with both cinematographer Christopher Doyle, who lends the film its gorgeously gauzy, hallucinatory texture, and actor Tony Leung Chiu Wai, who appears briefly in a tantalizing teaser for a never-realized sequel, DAYS OF BEING WILD is an exhilarating first expression of Wong’s trademark themes of time, longing, dislocation, and the restless search for human connection."
-  },
-  {
-    "id": "wuthering-heights",
-    "title": "Wuthering Heights",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c6dd9ace-913f-4e60-96ee-5fd500aab51c-279c2483.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/wuthering-heights",
-    "filmIds": [
-      "wuthering-heights"
-    ],
-    "description": "Directed by William Wyler • 1939 • United States\nStarring Laurence Olivier, Merle Oberon, David Niven\n\nOften cited as the definitive screen version of Emily Brontë’s classic novel, William Wyler’s moodily poetic adaptation casts Laurence Olivier and Merle Oberon as the immortal lovers Heathcliff and Cathy—he a brooding stable boy, she a willful beauty who spurns him by marrying into wealth—whose tragic, all-consuming love for one another transcends death itself. The spellbinding gothic atmosphere is enhanced by the sumptuous art direction and the deep-focus expressionism of Gregg Toland’s Oscar-winning cinematography."
-  },
-  {
-    "id": "preparations-to-be-together-for-an-unknown-period-of-time",
-    "title": "Preparations To Be Together For An Unknown Period Of Time",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0c81c8b-aa1c-4cbc-86a1-a1835bfa476a-e71dfc8b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/preparations-to-be-together-for-an-unknown-period-of-time",
-    "filmIds": [
-      "preparations-to-be-together-for-an-unknown-period-of-time"
-    ],
-    "description": "Directed by Lili Horvát • 2020 • Hungary\nStarring Natasa Stork, Viktor Bodó, Benett Vilmányi\n\nThe second feature by Hungarian director Lili Horvát is a slippery, seductive investigation of memory, obsession, and delusion. After twenty years in the United States, Hungarian neurosurgeon Márta (Natasa Stork) returns to Budapest for a romantic rendezvous with János (Viktor Bodó), a fellow doctor she met at a conference. The only problem: when she arrives, János is nowhere to be seen and, when she at last tracks him down, claims the two have never met. What ensues is a tantalizing psychological puzzle that toys brilliantly with the conventions of film noir and with the viewer’s own sense of reality."
-  },
-  {
-    "id": "the-daughter-of-dawn",
-    "title": "The Daughter Of Dawn",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/46024921-7064-492e-b2be-337b93488bab.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-daughter-of-dawn",
-    "filmIds": [
-      "the-daughter-of-dawn"
-    ],
-    "description": "Directed by Norbert A. Myles • 1920 • United States\nStarring Esther LeBarre, White Parker, Wanada Parker\n\nShot in 1920 in the Wichita Mountains of southwest Oklahoma with a cast entirely made up of members of the Comanche and Kiowa tribes, THE DAUGHTER OF DAWN screened publicly only twice before disappearing without a trace for nearly a century. Rediscovered and restored, this large-scale vision of Comanche and Kiowa life is a revelation. The story, played by a sprawling cast of three hundred Native Americans, includes a romantic rivalry, buffalo hunts, a battle, village scenes, dances, deceit, courage, hand-to-hand combat, and even a happy ending. The Indigenous actors, who in 1920 had been living on reservations for less than sixty years, brought with them their own tipis, horses, clothing, and material culture. Subtly acted, beautifully photographed, and directed without melodrama by Norbert A. Myles, this nearly lost landmark stands with the best films of the period."
   }
 ]
