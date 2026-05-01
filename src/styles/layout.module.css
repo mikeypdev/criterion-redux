@@ -36,8 +36,14 @@
   }
   
   .logo {
-    text-align: center;
+    justify-content: center;
     font-size: 20px;
+    gap: 10px;
+  }
+  
+  .logoIcon {
+    height: 32px;
+    width: 32px;
   }
   
   .nav {
@@ -63,6 +69,15 @@
   text-transform: uppercase;
   color: var(--text-primary);
   font-family: var(--font-serif);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logoIcon {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
 }
 
 .nav {

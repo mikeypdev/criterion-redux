@@ -2,7 +2,7 @@
 
 A modern, high-performance front-end redesign for the **Criterion Channel** streaming service. This project prioritizes film discovery and navigation through a metadata-rich interface.
 
-![Criterion Redux](https://placehold.co/1200x600/0a0a0a/ffffff?text=Criterion+Channel+Redux)
+![Criterion Redux](public/cr-logo.png)
 
 ## 🎥 Project Overview
 

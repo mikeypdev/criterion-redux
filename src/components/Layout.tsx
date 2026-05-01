@@ -29,7 +29,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className={styles.root}>
       <header className={styles.header}>
-        <NavLink to="/" className={styles.logo}>Criterion Redux</NavLink>
+        <NavLink to="/" className={styles.logo}>
+          <img src={`${import.meta.env.BASE_URL}cr-icon.png`} alt="" className={styles.logoIcon} />
+          Criterion Redux
+        </NavLink>
         <nav className={styles.nav}>
           <NavLink 
             to="/" 
