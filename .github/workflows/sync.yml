@@ -23,12 +23,12 @@ jobs:
         run: npx playwright install --with-deps chromium
         
       - name: "Run Sync (Pass 1: Criterion Deep-Crawl)"
-        run: LIMIT=100 npm run sync
+        run: LIMIT=200 npm run sync
         
       - name: "Run Sync (Pass 2: TMDB Gap-Filling)"
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: LIMIT=500 npm run sync
+        run: LIMIT=1000 npm run sync
         
       - name: Commit and Push (Updated Data)
         run: |

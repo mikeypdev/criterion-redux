@@ -116,11 +116,11 @@ async function scrapeFilms() {
           link,
           year: isNaN(year) ? 0 : year,
           runtime: existingFilm?.runtime || 0,
-          directors: existingFilm?.directors || [{
+          directors: existingFilm?.directors || (directorName ? [{
             id: directorName.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
             name: directorName,
             role: 'director'
-          }],
+          }] : []),
           cast: existingFilm?.cast || [],
           synopsis: existingFilm?.synopsis || '',
           genres: existingFilm?.genres || [],

@@ -41,6 +41,19 @@ async function enrichCatalog(maxItems = 10) {
   const originalCount = catalog.length;
   let attemptedCount = 0;
   
+  // Recovery: re-attempt TMDB for films with empty/generic directors
+  let recoveredCount = 0;
+  for (const film of catalog) {
+    const hasValidDirector = film.directors && film.directors.length > 0 && film.directors[0].name && film.directors[0].name.length >= 2;
+    if (film.tmdbAttempted && !hasValidDirector) {
+      film.tmdbAttempted = false;
+      recoveredCount++;
+    }
+  }
+  if (recoveredCount > 0) {
+    console.log(`>>> Recovery: ${recoveredCount} films queued for TMDB director re-attempt`);
+  }
+  
   if (TMDB_API_KEY) {
     console.log(`>>> Using TMDB API Enrichment (Speed: Fast)`);
     attemptedCount = await runTMDBEnrichment(catalog, maxItems);
@@ -78,8 +91,16 @@ async function runTMDBEnrichment(catalog, maxItems) {
     params: isBearer ? {} : { api_key: TMDB_API_KEY }
   });
 
-  for (let i = 0; i < catalog.length && updatedCount < maxItems; i++) {
-    const film = catalog[i];
+  // Sort: prioritize films missing key metadata (directors, synopsis) over partially enriched ones
+  const prioritized = catalog.map((f, i) => ({ film: f, origIndex: i }));
+  prioritized.sort((a, b) => {
+    const scoreA = (a.film.directors?.length > 0 ? 0 : 2) + (a.film.synopsis ? 0 : 1);
+    const scoreB = (b.film.directors?.length > 0 ? 0 : 2) + (b.film.synopsis ? 0 : 1);
+    return scoreB - scoreA || a.origIndex - b.origIndex;
+  });
+
+  for (let i = 0; i < prioritized.length && updatedCount < maxItems; i++) {
+    const film = prioritized[i].film;
     
     // Skip if we already tried TMDB in this cycle
     if (film.tmdbAttempted) continue;
@@ -104,10 +125,22 @@ async function runTMDBEnrichment(catalog, maxItems) {
 
       console.log(`    - Found ${results?.length || 0} results for ${film.title}`);
       if (results?.length > 0) {
-        const detailRes = await tmdbLimiter.schedule(() => apiClient.get(`/movie/${results[0].id}`, {
+        const tmdbMovieId = results[0].id;
+        const detailRes = await tmdbLimiter.schedule(() => apiClient.get(`/movie/${tmdbMovieId}`, {
           params: { append_to_response: 'credits,videos' }
         }));
         const data = detailRes.data;
+        
+        // Fallback: fetch credits separately if append_to_response didn't include them
+        if (!data.credits?.crew && !data.credits?.cast) {
+          console.log(`    - Credits missing from append_to_response, fetching separately...`);
+          try {
+            const creditsRes = await tmdbLimiter.schedule(() => apiClient.get(`/movie/${tmdbMovieId}/credits`));
+            data.credits = creditsRes.data;
+          } catch (e) {
+            console.log(`    - Separate credits fetch failed: ${e.message}`);
+          }
+        }
         
         // 1. Basic Info
         if (!film.synopsis || film.synopsis.includes(GENERIC_SYNOPSIS)) {
@@ -142,6 +175,12 @@ async function runTMDBEnrichment(catalog, maxItems) {
         if (data.credits?.crew) {
           const crew = data.credits.crew;
           const mainDirector = crew.find(c => c.job === 'Director');
+          if (!mainDirector) {
+            const directorJobs = crew.filter(c => c.department === 'Directing').map(c => `${c.name} (${c.job})`);
+            if (directorJobs.length > 0) {
+              console.log(`    - No crew with job='Director', but Directing dept: ${directorJobs.join(', ')}`);
+            }
+          }
           if (mainDirector) {
             const directorObj = {
               id: mainDirector.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
@@ -150,15 +189,11 @@ async function runTMDBEnrichment(catalog, maxItems) {
               tmdbId: mainDirector.id
             };
             
-            if (!film.directors || film.directors.length === 0) {
+            const hasValidDirector = film.directors && film.directors.length > 0 && film.directors[0].name && film.directors[0].name.length >= 2;
+            if (!hasValidDirector) {
               film.directors = [directorObj];
             } else {
               film.directors[0].tmdbId = mainDirector.id;
-              // Update name/id if they were missing or generic
-              if (!film.directors[0].name || film.directors[0].name.length < 2) {
-                film.directors[0].name = directorObj.name;
-                film.directors[0].id = directorObj.id;
-              }
             }
           }
           const dps = crew.filter(c => c.job === 'Director of Photography').map(c => ({
@@ -216,8 +251,16 @@ async function runDeepCrawl(catalog, maxItems) {
   let updatedCount = 0;
   let attemptedCount = 0;
 
-  for (let i = 0; i < catalog.length && updatedCount < maxItems; i++) {
-    const film = catalog[i];
+  // Prioritize films missing key metadata
+  const prioritized = catalog.map((f, i) => ({ film: f, origIndex: i }));
+  prioritized.sort((a, b) => {
+    const scoreA = (a.film.synopsis ? 0 : 1);
+    const scoreB = (b.film.synopsis ? 0 : 1);
+    return scoreB - scoreA || a.origIndex - b.origIndex;
+  });
+
+  for (let i = 0; i < prioritized.length && updatedCount < maxItems; i++) {
+    const film = prioritized[i].film;
     if (film.enriched) continue;
     if (!film.link) continue;
 
@@ -332,7 +375,8 @@ async function runDeepCrawl(catalog, maxItems) {
         }
 
         const directedByMatch = metaSynopsis.match(/Directed by\s+([^•\.\n]+)/i);
-        if (directedByMatch && (!film.directors || film.directors.length === 0)) {
+        const hasValidDirector = film.directors && film.directors.length > 0 && film.directors[0].name && film.directors[0].name.length >= 2;
+        if (directedByMatch && !hasValidDirector) {
           const names = decodeEntities(directedByMatch[1]).split(/,|\band\b/i);
           film.directors = names.map(n => ({
             id: normalizeString(n.trim()).replace(/[^a-z0-9]+/g, '-'),

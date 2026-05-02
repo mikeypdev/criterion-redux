@@ -6,7 +6,7 @@ const SCRIPTS_DIR = './scripts';
 const CATALOG_PATH = './public/data/catalog.json';
 
 async function runSync() {
-  const limit = process.env.LIMIT || '50';
+  const limit = process.env.LIMIT || '200';
   const fullScrape = process.env.FULL_SCRAPE === 'true';
 
   console.log('--- STARTING CRITERION DATA SYNC ---');
