@@ -54,18 +54,13 @@ const HomeView: React.FC = () => {
 
   const featuredFilms = getFeaturedFilms(workingFilms);
 
-  const newlyAdded = [...workingFilms]
-    .sort((a, b) => {
-      const dateA = a.dateAdded ? new Date(a.dateAdded).getTime() : 0;
-      const dateB = b.dateAdded ? new Date(b.dateAdded).getTime() : 0;
-      
-      if (dateB !== dateA) return dateB - dateA;
-      
-      // If same date, sort by release year (newer first) then ID
-      if (a.year !== b.year) return b.year - a.year;
-      return a.id.localeCompare(b.id);
-    })
-    .slice(0, 15);
+  const newlyAddedCollection = collections.find((c: Collection) => c.id === 'newly-added');
+  const newlyAdded = newlyAddedCollection
+    ? newlyAddedCollection.filmIds
+        .map((fId: string) => catalog.find((f: Film) => f.id === fId))
+        .filter((f: Film | undefined): f is Film => !!f)
+        .slice(0, 15)
+    : [];
 
   return (
     <>
@@ -93,10 +88,11 @@ const HomeView: React.FC = () => {
         </div>
       </section>
 
+      {newlyAdded.length > 0 && (
       <section className={styles.section}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>Newly Added</h2>
-          <Link to="/index" className={styles.seeAll}>See All Films</Link>
+          <Link to="/collections/newly-added" className={styles.seeAll}>See All</Link>
         </div>
         <div className={styles.carousel}>
           {newlyAdded.map(film => (
@@ -104,6 +100,7 @@ const HomeView: React.FC = () => {
           ))}
         </div>
       </section>
+      )}
 
       {collections.slice(0, 5).map((collection: Collection) => {
         const collectionFilms = collection.filmIds

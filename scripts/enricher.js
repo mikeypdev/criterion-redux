@@ -20,6 +20,84 @@ function normalizeString(str) {
     .toLowerCase();
 }
 
+function normalizePersonName(name) {
+  return name
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+}
+
+function personMatches(a, b) {
+  if (!a || !b) return false;
+  return normalizePersonName(a) === normalizePersonName(b);
+}
+
+function mergePeople(criterionList, tmdbList) {
+  if (!criterionList || criterionList.length === 0) return tmdbList || [];
+  if (!tmdbList || tmdbList.length === 0) return criterionList;
+
+  const result = criterionList.map(p => ({ ...p }));
+
+  for (const tmdbPerson of tmdbList) {
+    const existingIdx = result.findIndex(p => personMatches(p.name, tmdbPerson.name));
+    if (existingIdx >= 0) {
+      if (tmdbPerson.tmdbId && !result[existingIdx].tmdbId) {
+        result[existingIdx].tmdbId = tmdbPerson.tmdbId;
+      }
+    } else {
+      result.push({ ...tmdbPerson });
+    }
+  }
+  return result;
+}
+
+function extractDirectorFromSynopsis(synopsis) {
+  if (!synopsis) return null;
+  const match = synopsis.match(/Directed by\s+([^•\.\n]+)/i);
+  if (!match) return null;
+  return normalizeString(match[1].trim());
+}
+
+function pickBestResult(results, film) {
+  if (!results || results.length === 0) return null;
+  if (results.length === 1) return results[0];
+
+  const filmYear = film.year;
+  const synopsisDirector = extractDirectorFromSynopsis(film.synopsis);
+  const existingDirector = film.directors?.[0]?.name
+    ? normalizeString(film.directors[0].name)
+    : null;
+  const knownDirector = synopsisDirector || existingDirector;
+
+  const scored = results.map(r => {
+    let score = 0;
+    const releaseYear = r.release_date ? parseInt(r.release_date.substring(0, 4), 10) : null;
+    if (filmYear && releaseYear) {
+      const diff = Math.abs(filmYear - releaseYear);
+      if (diff === 0) score += 100;
+      else if (diff <= 1) score += 80;
+      else if (diff <= 2) score += 40;
+      else score -= diff;
+    }
+    if (knownDirector) {
+      const overview = (r.overview || '').toLowerCase();
+      const titleNorm = normalizeString(r.original_title || r.title || '');
+      if (overview.includes(knownDirector)) score += 60;
+      if (titleNorm.includes(knownDirector)) score += 60;
+    }
+    score += (r.popularity || 0) * 0.1;
+    score += (r.vote_count || 0) * 0.01;
+    return { result: r, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  if (scored[0].score > scored[1].score + 5) {
+    return scored[0].result;
+  }
+  return scored[0].result;
+}
+
 function decodeEntities(text) {
   if (!text) return '';
   return text
@@ -125,7 +203,12 @@ async function runTMDBEnrichment(catalog, maxItems) {
 
       console.log(`    - Found ${results?.length || 0} results for ${film.title}`);
       if (results?.length > 0) {
-        const tmdbMovieId = results[0].id;
+        const bestResult = pickBestResult(results, film);
+        const tmdbMovieId = bestResult.id;
+        if (bestResult !== results[0]) {
+          const bestYear = bestResult.release_date ? bestResult.release_date.substring(0, 4) : '?';
+          console.log(`    - Selected result: ${bestResult.title} (${bestYear}) over top result`);
+        }
         const detailRes = await tmdbLimiter.schedule(() => apiClient.get(`/movie/${tmdbMovieId}`, {
           params: { append_to_response: 'credits,videos' }
         }));
@@ -150,25 +233,31 @@ async function runTMDBEnrichment(catalog, maxItems) {
         if (!film.runtime || film.runtime === 0) {
           film.runtime = data.runtime || film.runtime;
         }
-        film.aspectRatio = film.aspectRatio || data.aspect_ratio; // TMDB doesn't usually have this but just in case
-        film.tagline = decodeEntities(data.tagline) || film.tagline;
-        film.originalTitle = data.original_title !== film.title ? data.original_title : undefined;
-        film.imdbId = data.imdb_id;
-
-        // 1.5 Genres
-        if (data.genres) {
-          film.genres = data.genres.map(g => g.name);
+        film.aspectRatio = film.aspectRatio || data.aspect_ratio;
+        film.tagline = film.tagline || decodeEntities(data.tagline);
+        if (!film.originalTitle) {
+          film.originalTitle = data.original_title !== film.title ? data.original_title : undefined;
+        }
+        if (!film.imdbId) {
+          film.imdbId = data.imdb_id;
         }
 
-        // 2. Cast
-        const needsCastEnrichment = !film.cast || film.cast.length === 0 || film.cast.some(c => !c.tmdbId);
-        if (needsCastEnrichment && data.credits?.cast) {
-          film.cast = data.credits.cast.slice(0, 10).map(c => ({
+        // 1.5 Genres - union merge, Criterion first
+        if (data.genres) {
+          const tmdbGenres = data.genres.map(g => g.name);
+          const existing = film.genres || [];
+          film.genres = Array.from(new Set([...existing, ...tmdbGenres]));
+        }
+
+        // 2. Cast - name-match enrich, preserve Criterion order
+        if (data.credits?.cast) {
+          const tmdbCast = data.credits.cast.slice(0, 10).map(c => ({
             id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
             name: c.name,
             role: 'actor',
             tmdbId: c.id
           }));
+          film.cast = mergePeople(film.cast, tmdbCast);
         }
 
         // 3. Technical Crew
@@ -188,12 +277,14 @@ async function runTMDBEnrichment(catalog, maxItems) {
               role: 'director',
               tmdbId: mainDirector.id
             };
-            
+
             const hasValidDirector = film.directors && film.directors.length > 0 && film.directors[0].name && film.directors[0].name.length >= 2;
             if (!hasValidDirector) {
               film.directors = [directorObj];
-            } else {
+            } else if (personMatches(film.directors[0].name, mainDirector.name)) {
               film.directors[0].tmdbId = mainDirector.id;
+            } else {
+              console.warn(`    - Director mismatch: Criterion has "${film.directors[0].name}", TMDB has "${mainDirector.name}". Keeping Criterion.`);
             }
           }
           const dps = crew.filter(c => c.job === 'Director of Photography').map(c => ({
@@ -202,14 +293,14 @@ async function runTMDBEnrichment(catalog, maxItems) {
             role: 'both',
             tmdbId: c.id
           }));
-          if (dps.length > 0) film.cinematographers = dps;
+          if (dps.length > 0) film.cinematographers = mergePeople(film.cinematographers, dps);
           const composers = crew.filter(c => c.job === 'Original Music Composer').map(c => ({
             id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
             name: c.name,
             role: 'both',
             tmdbId: c.id
           }));
-          if (composers.length > 0) film.composers = composers;
+          if (composers.length > 0) film.composers = mergePeople(film.composers, composers);
         }
 
         // 4. Technical Specs Fallback
