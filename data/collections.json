@@ -1,23 +1,5 @@
 [
   {
-    "id": "office-romances",
-    "title": "Office Romances",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d331b138-d58c-4528-a4c0-66c982c8b8e1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/office-romances",
-    "filmIds": [
-      "the-apartment",
-      "woman-of-the-year",
-      "his-girl-friday",
-      "the-whole-town-s-talking",
-      "desk-set",
-      "working-girls",
-      "the-office-wife",
-      "man-wanted",
-      "more-than-a-secretary"
-    ],
-    "description": "Beginning in the 1930s, the ever-growing number of working women inspired a new type of romantic comedy, where meet-cutes come amid desks and typewriters, and the course of true love is entangled with office politics and professional rivalry. The genre was tailor-made for stars like Jean Arthur, Katharine Hepburn, and Rosalind Russell who could dazzle with brainy repartee and make competence sexy. Elements of these films may be quaintly transgressive (boozy office parties! bosses dating their secretaries!), but they also tackle still-timely topics—work-life balance (HIS GIRL FRIDAY), gender equality (WOMAN OF THE YEAR), and even fears of jobs being eliminated by computers (DEST SET)—with crackling comic irreverence, finding laughter and romance in the nine-to-five."
-  },
-  {
     "id": "80s-remakes-and-their-originals",
     "title": "’80s Remakes (and Their Originals!)",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7539ff6b-e361-42ed-ab94-6f663e34f3f0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -43,6 +25,24 @@
       "the-man-who-loved-women"
     ],
     "description": "As a new generation of movie-mad directors emerged in the 1980s, they drew direct inspiration from the films they grew up watching and obsessing over. The result was a striking run of idiosyncratic Reagan-era remakes in which filmmakers such as John Carpenter (turning the Cold War sci-fi classic THE THING FROM ANOTHER WORLD into a glacial descent into existential terror), Paul Schrader (transforming the shadowy horror landmark CAT PEOPLE into a hypnotic vision of erotic obsession), and Jim McBride (reimagining Jean-Luc Godard’s French New Wave bombshell BREATHLESS as a neon-soaked rock ’n’ roll reverie) breathed new life into familiar stories. Viewed side by side, these films reveal a decade in provocative dialogue with the past, infusing timeless originals with the aesthetics, politics, and cultural permissiveness of a new era."
+  },
+  {
+    "id": "office-romances",
+    "title": "Office Romances",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d331b138-d58c-4528-a4c0-66c982c8b8e1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/office-romances",
+    "filmIds": [
+      "the-apartment",
+      "woman-of-the-year",
+      "his-girl-friday",
+      "the-whole-town-s-talking",
+      "desk-set",
+      "working-girls",
+      "the-office-wife",
+      "man-wanted",
+      "more-than-a-secretary"
+    ],
+    "description": "Beginning in the 1930s, the ever-growing number of working women inspired a new type of romantic comedy, where meet-cutes come amid desks and typewriters, and the course of true love is entangled with office politics and professional rivalry. The genre was tailor-made for stars like Jean Arthur, Katharine Hepburn, and Rosalind Russell who could dazzle with brainy repartee and make competence sexy. Elements of these films may be quaintly transgressive (boozy office parties! bosses dating their secretaries!), but they also tackle still-timely topics—work-life balance (HIS GIRL FRIDAY), gender equality (WOMAN OF THE YEAR), and even fears of jobs being eliminated by computers (DEST SET)—with crackling comic irreverence, finding laughter and romance in the nine-to-five."
   },
   {
     "id": "caribbean-activist-cinema",
@@ -3039,24 +3039,18 @@
     "description": "Directed by William A. Wellman • 1937 • United States\nStarring Fredric March, Carole Lombard, Charles Winninger\n\nHe’s an unscrupulous newspaperman eager to exploit the story of a young woman’s death by radium poisoning. She knows she’s not really dying but can’t pass up a free trip to New York with all the trimmings. Carole Lombard and Fredric March costar in this black-comedy classic nimbly directed by William A. Wellman. Taking caustic aim at how tabloid journalism feeds the morbid curiosity of a scandal-hungry public, Ben Hecht’s sharply satirical screenplay remains as fresh and biting as ever."
   },
   {
-    "id": "lilies",
-    "title": "Lilies",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6fb5c9df-2f9c-403b-8d41-5313906bb706.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/lilies",
+    "id": "i-am-cuba",
+    "title": "I Am Cuba",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5c4448ea-4697-452b-92c7-a7f670a4a3af.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/i-am-cuba",
     "filmIds": [
-      "lilies"
+      "i-am-cuba",
+      "russian-dubbed-version",
+      "the-siberian-mammoth",
+      "bradford-young-on-i-am-cuba",
+      "martin-scorsese-on-i-am-cuba"
     ],
-    "description": "Directed by John Greyson • 1996 • Canada\nStarring Brent Carver, Marcel Sabourin, Aubert Pallascio\n\nA visually intoxicating queer rhapsody of desire and repression, revenge and redemption unfolds as a deliriously stylized play-within-a-film in this sumptuous cinematic pageant adapted from the stage work by Michel Marc Bouchard. In a Quebec prison in 1952, an aging priest (Marcel Sabourin) sits down to hear the confession of a convict (Aubert Pallascio)—only to have the tables turned on him as the prisoner, aided by his fellow inmates, stages a time- and space-collapsing play that takes them both back to 1912, when they were young men engaged in a tragic love triangle with another boy (Danny Gilmore). Described by director John Greyson as a “strange, Genet-inflected-via-Fellini fable,” this entrancingly beautiful, gender-bending fantasia stands as one of the rapturous peaks of the New Queer Cinema."
-  },
-  {
-    "id": "possession",
-    "title": "Possession",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/006a9dd0-fd85-4e0d-9fc4-45f562d36c13.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/possession",
-    "filmIds": [
-      "possession"
-    ],
-    "description": "Directed by Andrzej Żuławski • 1981 • France, West Germany\nStarring Isabelle Adjani, Sam Neill, Heinz Bennent\n\nAndrzej Żuławski’s stunningly choreographed nightmare of a marriage unraveling is an experience unlike any other. Professional spy Mark (Sam Neill) returns to his West Berlin home to find his wife Anna (Isabelle Adjani, in a role that earned her Best Actress at both Cannes and the César Awards) intent on a divorce. As Anna’s frenzied behavior becomes ever more alarming, Mark discovers a truth far more sinister than his wildest suspicions. With its pulsating score, visceral imagery, and some of the most intense performances ever captured on-screen, POSSESSION is cinematic delirium at its most intoxicating."
+    "description": "Directed by Mikhail Kalatozov • 1964 • Cuba, Soviet Union\nStarring Raquel Revuelta, Luz María Collazo, José Gallardo\n\nBoth a landmark of radical political cinema and one of the most visually ravishing films ever made, this legendary hymn to revolution shimmers across the screen like a fever dream of rebellion. The result of an extraordinarily ambitious collaboration between the Soviet and Cuban film industries, director Mikhail Kalatozov’s I AM CUBA unfolds in four explosive vignettes that capture Cuban life on the brink of transformation, as crushing economic exploitation and inequality give way to a working-class uprising. Backed by Carlos Fariñas’s stirring score, the dazzling camera work by Sergei Urusevsky—an inspiration for generations of filmmakers to follow—gives flight to the movie’s message of liberation."
   },
   {
     "id": "a-better-tomorrow-the-trilogy",
@@ -3071,15 +3065,32 @@
     "description": "Released in 1986, John Woo’s A BETTER TOMORROW sent shockwaves through the Hong Kong film industry, launching a wave of so-called heroic bloodshed films that emulated its combination of balletic gunplay and emotionally charged storytelling. Tracing the relationship between two brothers on opposite sides of the law, A BETTER TOMORROW and its two sequels pushed action cinema to new heights of bullet-riddled excess, while establishing breakout star Chow Yun-fat as an international icon of cool."
   },
   {
-    "id": "the-magnificent-butcher",
-    "title": "The Magnificent Butcher",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3c53a0a2-a502-45a7-a55d-119e400721cf.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-magnificent-butcher",
+    "id": "boat-people",
+    "title": "Boat People",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c1ef607a-c0e5-4c41-a48c-290359198eec-13d365ca.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/boat-people",
     "filmIds": [
-      "the-magnificent-butcher",
-      "the-magnificent-butcher-english-dubbed-version"
+      "boat-people",
+      "ann-hui-and-stanley-kwan",
+      "boat-people-cannes-press-conference",
+      "as-time-goes-by"
     ],
-    "description": "Directed by Yuen Woo-ping • 1979 • Hong Kong\nStarring Sammo Hung, Kwan Tak-hing, Yuen Biao\n\nHot on the heels of his blockbuster Jackie Chan hit DRUNKEN MASTER, the legendary martial-arts director Yuen Woo-ping helmed another rollicking star vehicle. This time, rising talent Sammo Hung plays Lam Sai-wing, a mischievous student of fabled kung-fu hero Wong Fei-hung (Kwan Tak-hing), who lands in serious trouble when a rival clan frames him for murder. Alongside his costar and fellow Beijing opera “brother” Yuen Biao, Hung displays the slapstick brilliance and agile grace that would soon make him a genre hero."
+    "description": "Directed by Ann Hui • 1982 • Hong Kong\nStarring George Lam, Andy Lau Tak Wah, Cora Miao\n\nOne of the major films of the Hong Kong New Wave, Ann Hui’s BOAT PEOPLE is a work of indelible humanity and searing political resonance. Invited to document the progress of postwar Vietnamese society, a Japanese photojournalist (George Lam) initially finds a picture-perfect image of communist contentment. But when he begins looking beneath the idealized surface the government wants him to see, he discovers a world of poverty and brutality that shocks him into helping a desperate family escape. Winner of five Hong Kong Film Awards—including best picture and director—Hui’s masterpiece gives harrowing expression to the experiences of those living under authoritarian oppression."
+  },
+  {
+    "id": "europa-europa",
+    "title": "Europa Europa",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7e537966-5f63-4932-a30b-7ea38990d490-5cb8e81c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/europa-europa",
+    "filmIds": [
+      "europa-europa",
+      "europa-europa-commentary",
+      "agnieszka-holland-on-europa-europa",
+      "marco-hofschneider-on-europa-europa",
+      "on-europa-europa",
+      "salomon-perel-on-europa-europa"
+    ],
+    "description": "Criterion Collection Edition #985\n\nAs World War II splits Europe, sixteen-year-old German Jew Salomon (Marco Hofschneider) is separated from his family after fleeing with them to Poland, and finds himself reluctantly assuming various ideological identities in order to hide the deadly secret of his Jewishness. He is bounced from a Soviet orphanage, where he plays a dutiful Stalinist, to the Russian front, where he hides in plain sight as an interpreter for the German army, and back to his home country, where he takes on his most dangerous role: a member of the Hitler Youth. Based on the real-life experiences of Salomon Perel, Agnieszka Holland’s wartime tour de force EUROPA EUROPA is a breathless survival story told with the verve of a comic adventure, an ironic refutation of the Nazi idea of racial purity, and a complex portrait of a young man caught up in shifting historical calamities and struggling to stay alive."
   },
   {
     "id": "hiroshima-mon-amour",
@@ -3103,75 +3114,83 @@
     "description": "Directed by Alain Resnais • 1959 • France, Japan\nStarring Emmanuelle Riva, Eiji Okada\n\nA cornerstone of the French New Wave, the first feature from Alain Resnais is one of the most influential films of all time. A French actress (Emmanuelle Riva) and a Japanese architect (Eiji Okada) engage in a brief, intense affair in postwar Hiroshima, their consuming mutual fascination impelling them to exorcise their own scarred memories of love and suffering. With an innovative flashback structure and an Academy Award–nominated screenplay by novelist Marguerite Duras, HIROSHIMA MON AMOUR (“Hiroshima My Love”) is a moody masterwork that delicately weaves past and present, personal pain and public anguish."
   },
   {
-    "id": "boat-people",
-    "title": "Boat People",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c1ef607a-c0e5-4c41-a48c-290359198eec-13d365ca.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/boat-people",
+    "id": "peking-opera-blues",
+    "title": "Peking Opera Blues",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f788cd74-9665-48db-8aa0-01091e365989.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/peking-opera-blues",
     "filmIds": [
-      "boat-people",
-      "ann-hui-and-stanley-kwan",
-      "boat-people-cannes-press-conference",
-      "as-time-goes-by"
+      "peking-opera-blues"
     ],
-    "description": "Directed by Ann Hui • 1982 • Hong Kong\nStarring George Lam, Andy Lau Tak Wah, Cora Miao\n\nOne of the major films of the Hong Kong New Wave, Ann Hui’s BOAT PEOPLE is a work of indelible humanity and searing political resonance. Invited to document the progress of postwar Vietnamese society, a Japanese photojournalist (George Lam) initially finds a picture-perfect image of communist contentment. But when he begins looking beneath the idealized surface the government wants him to see, he discovers a world of poverty and brutality that shocks him into helping a desperate family escape. Winner of five Hong Kong Film Awards—including best picture and director—Hui’s masterpiece gives harrowing expression to the experiences of those living under authoritarian oppression."
+    "description": "Directed by Tsui Hark • 1986 • Hong Kong\nStarring Brigitte Lin, Sally Yeh, Cherie Chung\n\nIn the aftermath of China’s first democratic revolution, three high-spirited young women (Brigitte Lin, Cherie Chung, Sally Yeh) from very different backgrounds cross paths on a quest for liberation. Fate finds the trio joining forces to discover their respective warriors within. Elegantly blending action, comedy, and social satire into a sparkling, fast-paced whirlwind as bright and colorful as Peking opera itself, this classic of Hong Kong cinema showcases the charms of its three leads as well as the energetic filmmaking style of legendary director Tsui Hark at his height."
   },
   {
-    "id": "bleeder",
-    "title": "Bleeder",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d0e98b17-0fba-4deb-8263-00f3d3c3b5a6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/bleeder",
+    "id": "anatomy-of-hell",
+    "title": "Anatomy Of Hell",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/79441dcd-d6e3-4e56-b218-e307f9fb1ffc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/anatomy-of-hell",
     "filmIds": [
-      "bleeder"
+      "anatomy-of-hell"
     ],
-    "description": "Directed by Nicolas Winding Refn • 1999 • Denmark\nStarring Mads Mikkelsen, Kim Bodnia, Liv Corfixen\n\nOn the gritty margins of Copenhagen, two friends drift apart as violence and obsession take hold. Disaffected alcoholic Leo (Kim Bodnia) struggles with a crumbling relationship and growing rage, while shy film nerd Lenny (Mads Mikkelsen) retreats into his world of VHS tapes and fantasy. Boundary-pushing director Nicolas Winding Refn’s follow-up to his bombshell debut PUSHER is equally raw and unflinching in its potent look at masculinity, alienation, and the point where repression turns to eruption."
+    "description": "Directed by Catherine Breillat • 2004 • France\nStarring Amira Casar, Rocco Siffredi\n\nAfter attempting suicide, a young woman (Amira Casar) makes a startling proposition to the man (Rocco Siffredi) who rescued her: she will pay him to watch her naked body over the course of four nights as long as he provides “impartial” commentary about what he sees. Thus ensues ANATOMY OF HELL, one of the most controversial films of Catherine Breillat’s career—a singularly daring meditation on the pleasures and horrors of the flesh. Buoyed by the two leads’ fearless performances, HELL is as much a philosophical treatise on the hidden traumas of sexuality as it is an increasingly unsettling battle of the sexes, with Breillat using a hushed chamber-play setup to show the spectator no quarter throughout the transgressive proceedings. The result is like nothing else, even within the director’s audacious oeuvre: her deepest expression of anguish over the unspeakable ecstasies and degradations of the body erotic."
   },
   {
-    "id": "canoa-a-shameful-memory",
-    "title": "Canoa: A Shameful Memory",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1812ea82-b638-41d2-a4fb-b8bb47f7fcfa-e504b589.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/canoa-a-shameful-memory",
+    "id": "come-back-africa",
+    "title": "Come Back, Africa",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1a824d77-5783-44c8-922b-6aeddf1676c7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/come-back-africa",
     "filmIds": [
-      "canoa-a-shameful-memory",
-      "guillermo-del-toro-on-canoa",
-      "felipe-cazals-and-alfonso-cuaron-on-canoa"
+      "come-back-africa"
     ],
-    "description": "Directed by Felipe Cazals • 1976 • Mexico\nStarring Enrique Lucero, Ernesto Gómez Cruz, Rodrigo Puebla\n\nOne of Mexico's most highly regarded works of political cinema, CANOA: A SHAMEFUL MEMORY reimagines a real-life incident that had occurred just eight years before its release, when a group of urban university employees on a hiking trip were viciously attacked by residents of the village of San Miguel Canoa who had been manipulated by a corrupt priest into believing the travelers were communist revolutionaries. Director Felipe Cazals adopts a gritty documentary style to narrate the events in CANOA while referencing the climate of political repression that would lead to the massacre of student protesters in Mexico City shortly thereafter. The resulting film is a daring commentary on ideological manipulation, religious fanaticism, and mass violence, as well as a visceral expression of horror."
+    "description": "Directed by Lionel Rogosin • 1959 • United States\nStarring Miriam Makeba, Vinah Makeba, Zachria Makeba\n\nOne of the bravest and most powerful political films ever made, Lionel Rogosin’s urgent indictment of racial injustice—filmed in secret in 1950s Johannesburg, South Africa—follows a young Zulu man’s struggles to provide for his family under the crushing burden of apartheid. As in his previous docufiction landmark ON THE BOWERY, Rogosin immersed himself in the world of his subjects, in this case in the Black cultural hub of Sophiatown, a vibrant center of music, art, literature, and politics that was soon to be razed by the government to make way for a whites-only suburb. Largely improvised by a nonprofessional cast that includes legendary singer and activist Miriam Makeba, Come Back, Africa reveals both the cruelty of apartheid and the vitality of a community struggling for equality."
   },
   {
-    "id": "elvira-madigan",
-    "title": "Elvira Madigan",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b9a1a711-7ccd-4a0d-ab40-558cb6b47cea.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/elvira-madigan",
+    "id": "the-mother-and-the-whore",
+    "title": "The Mother And The Whore",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dc477961-46cf-465a-b017-4e47d27c51d2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-mother-and-the-whore",
     "filmIds": [
-      "elvira-madigan",
-      "elvira-madigan-behind-the-scenes",
-      "bo-widerberg-on-filmrutan-1967",
-      "jorgen-persson-on-bo-widerberg"
+      "the-mother-and-the-whore",
+      "jean-pierre-gorin-and-rachel-kushner",
+      "francoise-lebrun",
+      "cannes-1973",
+      "the-mother-and-the-whore-the-restoration"
     ],
-    "description": "Directed by Bo Widerberg • 1967 • Sweden\nStarring Pia Degermark, Thommy Berggren, Lennart Malmer\n\nBo Widerberg reached new heights of visual lyricism with this sublime retelling of a real-life nineteenth-century romantic tragedy. Bound by their all-consuming desire, a young circus tightrope walker (Pia Degermark, winner of the Cannes Best Actress prize) and a lieutenant (Tommy Berggren) with a wife and children forsake everything to be together and escape to the countryside—only to see their lovers’ idyll gradually give way to poverty and desperation. With its painterly, sun-dappled images and indelible use of Mozart’s Piano Concerto no. 21, this 1960s art-house sensation is the most ravishing expression of Widerberg’s recurring theme of the tension between individual freedom and social responsibility."
+    "description": "Directed by Jean Eustache • 1973 • France\nStarring Jean-Pierre Léaud, Françoise Lebrun, Isabelle Weingarten\n\nAfter the French New Wave, the sexual revolution, and the upheavals of May 1968 came the near religiously revered magnum opus by Jean Eustache. In his long-unavailable body of work, ranging from documentaries about his native village to closely autobiographical narrative films, Eustache pioneered a forthright and fearless brand of realism. The pinnacle of this innovative style, THE MOTHER AND THE WHORE follows Alexandre (Jean-Pierre Léaud), a Parisian pseudo-intellectual who lives with his tempestuous girlfriend, Marie (Bernadette Lafont), even as he begins a dalliance with the sexually liberated Veronika (Françoise Lebrun), leading the three into an emotionally turbulent love triangle. Through daringly sustained long takes and confessional dialogue, Eustache captures a generation navigating the disillusionment of the 1970s, and in the process achieves an intimacy so deep it cuts."
   },
   {
-    "id": "bushman",
-    "title": "Bushman",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4b67010f-1fad-4fa7-afe3-79a171770846.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/bushman",
+    "id": "when-a-woman-ascends-the-stairs",
+    "title": "When A Woman Ascends The Stairs",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/120be8d0-4386-490b-8fbf-9183ab29c22d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/when-a-woman-ascends-the-stairs",
     "filmIds": [
-      "bushman"
+      "when-a-woman-ascends-the-stairs",
+      "when-a-woman-ascends-the-stairs-commentary",
+      "imogen-sara-smith-on-mikio-naruse",
+      "tatsuya-nakadai-on-when-a-woman-ascends-the-stairs"
     ],
-    "description": "Directed by David Schickele • 1971 • United States\nStarring Paul Eyam Nzie Okpokam, Elaine Featherstone, James Earl Garrison\n\nWhen Paul Okpokam arrived in the U.S. in 1968, David Schickele decided to make a film about his Nigerian friend’s experience of coming to teach at San Francisco State College. Entering American society in a time of cultural upheaval and racial tension, Okpokam is seen by others through the prism of American racism and exoticism. Truth is stranger than fiction in BUSHMAN, a rare sort of film portrait, part document, part imagined, and poetic in its approach to real events."
+    "description": "Directed by Mikio Naruse • 1960 • Japan\nStarring Hideko Takamine, Masayuki Mori, Reiko Dan\n\nWHEN A WOMAN ASCENDS THE STAIRS might be Japanese filmmaker Mikio Naruse’s finest hour, a delicate, devastating study of a woman, Keiko (played heartbreakingly by Hideko Takamine), who works as a bar hostess in Tokyo’s very modern postwar Ginza district, who entertains businessmen after work. Sly, resourceful, but trapped, Keiko comes to embody the conflicts and struggles of a woman trying to establish her independence in a male-dominated society. WHEN A WOMAN ASCENDS THE STAIRS shows the largely unsung yet widely beloved master Naruse at his most socially exacting and profoundly emotional."
   },
   {
-    "id": "eric-rohmer-s-tales-of-the-four-seasons",
-    "title": "Eric Rohmer’s Tales Of The Four Seasons",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9a47d960-fe5c-44c1-9b4f-cad8bc9c65a3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/eric-rohmer-s-tales-of-the-four-seasons",
+    "id": "jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
+    "title": "Jeanne Dielman, 23, Quai Du Commerce, 1080 Bruxelles",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5995a246-483c-462a-8b9e-77e8f7dd45fd-737aa7d8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
     "filmIds": [
-      "a-tale-of-springtime",
-      "a-tale-of-winter",
-      "a-tale-of-summer",
-      "a-tale-of-autumn"
+      "jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
+      "autour-de-jeanne-dielman",
+      "autor-replace-test",
+      "chantal-akerman-on-jeanne-dielman",
+      "chantal-akerman-on-filmmaking",
+      "chantal-akerman-and-delphine-seyrig",
+      "babette-mangolte-on-jeanne-dielman",
+      "natalia-akerman",
+      "saute-ma-ville",
+      "chantal-akerman-on-saute-ma-ville-2009",
+      "channel-c041197-amg-karynkusama-jeannedielman",
+      "jhumpa-lahiri-on-jeanne-dielman",
+      "sofia-coppola-on-jeanne-dielman"
     ],
-    "description": "The seasons may change, but the follies of the heart are constant in this ineffably lovely quartet of films by Eric Rohmer, one of cinema’s most perceptive chroniclers of the pangs and perils of romance. Set throughout France, Tales of the Four Seasons is a cycle to stand alongside the director’s two earlier acclaimed film series, Six Moral Tales and Comedies and Proverbs. By turns comic and melancholic, breezy and richly philosophical, these bittersweet tales of love, longing, and the inevitable misunderstandings that shape human relationships probe the most complex of emotions with the utmost grace."
+    "description": "Directed by Chantal Akerman • 1975 • Belgium\nStarring Delphine Seyrig, Jan Decorte\n\nA singular work in film history, Chantal Akerman’s JEANNE DIELMAN, 23, QUAI DU COMMERCE, 1080 BRUXELLES meticulously details, with a sense of impending doom, the daily routine of a middle-aged widow, whose chores include making the beds, cooking dinner for her son, and turning the occasional trick. In its enormous spareness, Akerman’s film seems simple, but it encompasses an entire world. Whether seen as an exacting character study or as one of cinema’s most hypnotic and complete depictions of space and time, JEANNE DIELMAN is an astonishing, compelling movie experiment, one that has been analyzed and argued over for decades."
   },
   {
     "id": "kalpana",
@@ -3385,39 +3404,43 @@
     "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection."
   },
   {
-    "id": "i-know-where-i-m-going",
-    "title": "I Know Where I’m Going!",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/edcb0672-8593-4807-8880-9599e5d5d336-e523bc9c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/i-know-where-i-m-going",
+    "id": "the-deep-blue-sea",
+    "title": "The Deep Blue Sea",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/35a583ad-60d3-42c6-bf28-36012d0c7a05.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-deep-blue-sea",
     "filmIds": [
-      "i-know-where-i-m-going",
-      "i-know-where-i-m-going-commentary",
-      "jonathan-lethem-on-i-know-where-i-m-going",
-      "behind-the-scenes-stills",
-      "michael-powell-s-home-movies",
-      "the-edge-of-the-world",
-      "i-know-where-i-m-going-location-photo-essay",
-      "i-know-where-i-m-going-restoration-demonstration-with-commentary",
-      "i-know-where-i-m-going-restoration-demonstration"
+      "the-deep-blue-sea"
     ],
-    "description": "Directed by Michael Powell and Emeric Pressburger • 1945 • United Kingdom\nStarring Wendy Hiller, Roger Livesey\n\nIn Michael Powell and Emeric Pressburger’s stunningly photographed comedy, romance flourishes in an unlikely place—the bleak and moody Scottish Hebrides. Wendy Hiller stars as a headstrong young woman who travels to these remote isles to marry a rich lord. Stranded by stormy weather, she meets a handsome naval officer (Roger Livesey) who threatens to thwart her carefully laid-out life plans."
+    "description": "Directed by Terence Davies • 2011 • United Kingdom, United States\nStarring Rachel Weisz, Tom Hiddleston, Simon Russell Beale\n\nMaster chronicler of postwar England Terence Davies directs this ravishing adaptation of Terence Rattigan’s 1952 play about a woman whose overpowering love threatens her well-being and alienates the men in her life. In a deeply vulnerable performance, Rachel Weisz plays Hester Collyer, the wife of an upper-class judge (Simon Russell Beale) and a free spirit trapped in a passionless marriage. Her encounter with Freddie Page (Tom Hiddleston), a troubled former Royal Air Force pilot, throws her life into turmoil, as their erotic relationship leaves her emotionally stranded and physically isolated."
   },
   {
-    "id": "weekend-1",
-    "title": "Weekend",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d54dab05-9484-478e-bd6b-14082c0ad4e2-0a34c876.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/weekend-1",
+    "id": "wings-of-desire",
+    "title": "Wings Of Desire",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2fb6437b-6d34-4a4f-acd1-4d2d351fa10c-836f225a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/wings-of-desire",
     "filmIds": [
-      "weekend-1",
-      "andrew-haigh-s-weekend",
-      "the-sex-scenes-of-weekend",
-      "weekend-audition-tape",
-      "chris-new-s-weekend-footage",
-      "quinnford-scout-on-weekend",
-      "cahuenga-blvd",
-      "five-miles-out"
+      "wings-of-desire",
+      "wings-of-desire-commentary",
+      "wim-wenders-interview",
+      "the-angels-among-us",
+      "cinema-cinemas-wim-wenders-1987",
+      "alekan-85",
+      "deleted-scenes-1",
+      "outtakes-1",
+      "alekan-la-lumiere",
+      "remembrance"
     ],
-    "description": "Criterion Collection Edition #622\n\nDirected by Andrew Haigh • 2011 • United Kingdom\nStarring Tom Cullen, Chris New\n\nThis sensual, remarkably observed, beautifully acted wonder is the breakout feature from British writer-director-editor Andrew Haigh. Rarely has a film been as honest about sexuality—in both depiction and discussion—as this tale of a one-night stand that develops into a weekend-long idyll for two very different young men (exciting screen newcomers Tom Cullen and Chris New) in the English Midlands. It’s an emotionally naked film that’s at once an invaluable snapshot of the complexities of contemporary gay living and a universally resonant portrait of a love affair."
+    "description": "Directed by Wim Wenders • 1987 • Germany, France\nStarring Bruno Ganz, Solveig Dommartin, Peter Falk\n\nWINGS OF DESIRE is one of cinema’s loveliest city symphonies. Bruno Ganz is Damiel, an angel perched atop buildings high over Berlin who can hear the thoughts—fears, hopes, dreams—of all the people living below. But when he falls in love with a beautiful trapeze artist, he is willing to give up his immortality and come back to earth to be with her. Made not long before the fall of the Berlin wall, this stunning tapestry of sounds and images, shot in black and white and color by the legendary Henri Alekan, is movie poetry. And it forever made the name Wim Wenders synonymous with film art."
+  },
+  {
+    "id": "the-passionate-friends",
+    "title": "The Passionate Friends",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/956dbbc6-4a72-4f35-824f-41bac7cf846c-35688eb4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-passionate-friends",
+    "filmIds": [
+      "the-passionate-friends"
+    ],
+    "description": "Directed by David Lean • 1949 • United Kingdom\nStarring Ann Todd, Trevor Howard, Claude Rains\n\nFour years after David Lean crafted what may be the screen’s most piercing examination of extramarital romance with BRIEF ENCOUNTER, he returned to a similar subject in this exquisite tale of a woman torn between the stability of marriage and the thrill of an affair. Adapted from a novel by H. G. Wells, THE PASSIONATE FRIENDS follows Mary Justin (Ann Todd), who years ago gave up romance with Steven Stratton (Trevor Howard) for a comfortable but routine marriage to Howard (Claude Rains in one of his finest performances). When Mary unexpectedly meets Steven again while on vacation in the Swiss Alps, she finds herself forced to confront her unresolved feelings for the man she still loves."
   },
   {
     "id": "beauty-and-the-beast",
@@ -3437,69 +3460,53 @@
     "description": "Criterion Collection Edition #6\n\nJean Cocteau’s sublime adaptation of Mme. Leprince de Beaumont’s fairy-tale masterpiece—in which the pure love of a beautiful girl melts the heart of a feral but gentle beast—is a landmark of motion picture fantasy, with unforgettably romantic performances by Jean Marais and Josette Day. The spectacular visions of enchantment, desire, and death in BEAUTY AND THE BEAST (LA BELLE ET LA BÊTE) have become timeless icons of cinematic wonder."
   },
   {
-    "id": "days-of-being-wild",
-    "title": "Days Of Being Wild",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8fd439b2-a907-4e9c-a270-f3d3ed1c77c1-41e5a924.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/days-of-being-wild",
+    "id": "certified-copy",
+    "title": "Certified Copy",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/caf547a1-98d5-4a24-8d9d-cd882f17c269-cbe91e1d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/certified-copy",
     "filmIds": [
-      "days-of-being-wild",
-      "days-of-being-wild-alternate-version",
-      "christopher-doyle-on-days-of-being-wild",
-      "maggie-cheung-man-yuk-on-days-of-being-wild"
+      "certified-copy",
+      "abbas-kiarostami-on-certified-copy",
+      "let-s-see-copia-conforme",
+      "the-report"
     ],
-    "description": "Directed by Wong Kar Wai • 1990 • Hong Kong\nStarring Leslie Cheung Kwok Wing, Andy Lau Tak Wah, Maggie Cheung Man Yuk\n\nThe breakthrough sophomore feature by Wong Kar Wai represents the first full flowering of his swooning signature style. The initial entry in a loosely connected, ongoing cycle that includes IN THE MOOD FOR LOVE and 2046, this ravishing existential reverie is a dreamlike drift through the Hong Kong of the 1960s in which a band of wayward twentysomethings—including a disaffected playboy (Leslie Cheung Kwok Wing) searching for his birth mother, a lovelorn woman (Maggie Cheung Man Yuk) hopelessly enamored with him, and a policeman (Andy Lau Tak Wah) caught in the middle of their turbulent relationship—pull together and push apart in a dance of frustrated desire. The director’s inaugural collaboration with both cinematographer Christopher Doyle, who lends the film its gorgeously gauzy, hallucinatory texture, and actor Tony Leung Chiu Wai, who appears briefly in a tantalizing teaser for a never-realized sequel, DAYS OF BEING WILD is an exhilarating first expression of Wong’s trademark themes of time, longing, dislocation, and the restless search for human connection."
+    "description": "Directed by Abbas Kiarostami • 2010 • Italy\nStarring Juliette Binoche, William Shimell\n\nThe great Iranian director Abbas Kiarostami travels to Tuscany for a luminous and provocative romance in which nothing is as it appears. What seems at first to be a straightforward tale of two people—played by Oscar-winning actress Juliette Binoche and opera singer William Shimell—getting to know each other over the course of an afternoon gradually reveals itself as something richer, stranger, and trickier: a mind-bending reflection on authenticity, in art as well as in relationships. Both cerebrally and emotionally engaging, CERTIFIED COPY reminds us that love itself is an enigma."
   },
   {
-    "id": "chungking-express",
-    "title": "Chungking Express",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f1cbdaef-5077-43c8-a8f8-1154a118e4c3-caee8f8b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/chungking-express",
+    "id": "in-the-mood-for-love",
+    "title": "In The Mood For Love",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5f89e68b-2cb5-4ceb-a268-ec2feaeb2cb8-bb0014e7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/in-the-mood-for-love",
     "filmIds": [
-      "chungking-express",
-      "chungking-express-alternate-version",
-      "chungking-express-commentary",
-      "chungking-express-deleted-scene-the-star",
-      "chungking-express-deleted-scene-california-dreaming",
-      "chungking-express-deleted-scene-baroque",
-      "christopher-doyle-on-chungking-express",
-      "narrative-symmetry-in-chungking-express",
-      "barry-jenkins-on-wong-kar-wai"
+      "in-the-mood-for-love-alternate-version",
+      "in-the-mood-for-love",
+      "in-the-mood-for-love-1",
+      "sofia-coppola-on-in-the-mood-for-love",
+      "paul-schrader-on-in-the-mood-for-love",
+      "wyatt-cenac-on-in-the-mood-for-love",
+      "room-2046",
+      "postcards",
+      "the-seventies",
+      "a-last-encounter",
+      "wong-kar-wai-on-in-the-mood-for-love",
+      "cinema-lesson-by-wong-kar-wai",
+      "toronto-international-film-festival",
+      "on-in-the-mood-for-love",
+      "the-soundtrack",
+      "hong-kong-tv-spot",
+      "french-tv-spot",
+      "u-s-tv-spot"
     ],
-    "description": "Criterion Collection Edition #453\n\nDirected by Wong Kar Wai • 1994 • Hong Kong\nStarring Tony Leung Chiu Wai, Faye Wong, Takeshi Kaneshiro\n\nThe whiplash, double-pronged CHUNGKING EXPRESS is one of the defining works of 1990s cinema and the film that made Wong Kar Wai an instant icon. Two heartsick Hong Kong cops (Takeshi Kaneshiro and Tony Leung Chiu Wai), both jilted by ex-lovers, cross paths at the Midnight Express take-out food stand, where the ethereal pixie waitress Faye (Faye Wong) works. Anything goes in Wong’s gloriously shot and utterly unexpected charmer, which cemented the sex appeal of its gorgeous stars and forever turned canned pineapple and the Mamas & the Papas’ “California Dreamin’” into tokens of romantic longing."
+    "description": "Criterion Collection Edition #147\n\nDirected by Wong Kar Wai • 2000 • Hong Kong\nStarring Tony Leung Chiu-wai, Maggie Cheung Man-yuk\n\nHong Kong, 1962: Chow Mo-wan (Tony Leung Chiu-wai) and Su Li-zhen (Maggie Cheung Man-yuk) move into neighboring apartments on the same day. Their encounters are formal and polite—until a discovery about their spouses creates an intimate bond between them. At once delicately mannered and visually extravagant, Wong Kar Wai’s IN THE MOOD FOR LOVE is a masterful evocation of romantic longing and fleeting moments. With its aching musical soundtrack and exquisitely abstract cinematography by Christopher Doyle and Mark Lee Ping-bin, this film has been a major stylistic influence on the past decade of cinema, and is a milestone in Wong’s redoubtable career."
   },
   {
-    "id": "me-and-you-and-everyone-we-know",
-    "title": "Me And You And Everyone We Know",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/cbb4e204-6e90-44b0-bd66-843dba271a77-85fa2046.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/me-and-you-and-everyone-we-know",
+    "id": "the-daughter-of-dawn",
+    "title": "The Daughter Of Dawn",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/46024921-7064-492e-b2be-337b93488bab.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-daughter-of-dawn",
     "filmIds": [
-      "me-and-you-and-everyone-we-know",
-      "miranda-july-where-it-began",
-      "open-to-the-world",
-      "july-interviews-july-deauville-2005",
-      "me-and-you-and-everyone-we-know-at-the-sundance-director-s-lab",
-      "me-and-you-and-everyone-we-know-at-the-sundance-director-s-lab-with-commentary",
-      "me-and-you-and-everyone-we-know-deleted-scenes"
+      "the-daughter-of-dawn"
     ],
-    "description": "Directed by Miranda July • 2005 • United States\nStarring John Hawkes, Miranda July, Miles Thompson\n\nWith this compassionate, startling comedy that could have come from no other artistic sensibility, the brilliant Miranda July reveals a world both familiar and strange—an original vision of creativity, sexuality, childhood, and loneliness that emerges from a series of braided vignettes around a pair of potential lovers: Richard, a newly single shoe salesman and father of two (John Hawkes), and Christine, a lonely video artist and “Eldercab” driver (July). While they take hesitant steps toward romance, Richard’s sons follow their own curiosity toward their first sexual experiences, online and in real life, venturing into uncharted territories in their attempts to connect with others. Playful and profoundly transgressive, ME AND YOU AND EVERYONE WE KNOW is a poetic look at the tortuous routes we take to intimacy in an isolating world, and the moments of magic and redemption that unite us."
-  },
-  {
-    "id": "l-atalante",
-    "title": "L’atalante",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/516bb1f4-a664-44fa-a795-8a52b5b52366-06f7fba8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/l-atalante",
-    "filmIds": [
-      "l-atalante",
-      "audio-commentary-2",
-      "imogen-sara-smith-on-french-poetic-realism",
-      "david-chase-on-l-atalante",
-      "adam-gopnik-on-l-atalante",
-      "cineastes-de-notre-temps-jean-vigo-1",
-      "truffaut-and-rohmer-on-l-atalante",
-      "a-tribute-to-jean-vigo-by-michel-gondry-1",
-      "les-voyages-de-l-atalante",
-      "otar-iosseliana-on-jean-vigo"
-    ],
-    "description": "Directed by Jean Vigo • 1934 • France\nStarring Jean Dasté, Dita Parlo, Michel Simon\n\nIn Jean Vigo’s hands, an unassuming tale of conjugal love becomes an achingly romantic reverie of desire and hope. Jean (Jean Dasté), a barge captain, marries Juliette (Dita Parlo), an innocent country girl, and the two climb aboard Jean’s boat, the L’ATALANTE—otherwise populated by an earthy first mate (Michel Simon) and a multitude of mangy cats—and embark on their new life together. Both a surprisingly erotic idyll and a clear-eyed meditation on love, L’ATALANTE, Vigo’s only feature-length work, is a film like no other."
+    "description": "Directed by Norbert A. Myles • 1920 • United States\nStarring Esther LeBarre, White Parker, Wanada Parker\n\nShot in 1920 in the Wichita Mountains of southwest Oklahoma with a cast entirely made up of members of the Comanche and Kiowa tribes, THE DAUGHTER OF DAWN screened publicly only twice before disappearing without a trace for nearly a century. Rediscovered and restored, this large-scale vision of Comanche and Kiowa life is a revelation. The story, played by a sprawling cast of three hundred Native Americans, includes a romantic rivalry, buffalo hunts, a battle, village scenes, dances, deceit, courage, hand-to-hand combat, and even a happy ending. The Indigenous actors, who in 1920 had been living on reservations for less than sixty years, brought with them their own tipis, horses, clothing, and material culture. Subtly acted, beautifully photographed, and directed without melodrama by Norbert A. Myles, this nearly lost landmark stands with the best films of the period."
   }
 ]
