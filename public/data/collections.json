@@ -306,6 +306,17 @@
     "description": "William Klein’s explosive New York street photography made him one of the most heralded artists of the sixties. As an American expatriate in Paris, Klein also made bold, challenging cinema in a filmmaking career that spanned more than forty years. In his three colorful, surreal fiction features—WHO ARE YOU, POLLY MAGGOO?, MR. FREEDOM, and THE MODEL COUPLE—he skewers the fashion industry, American empire, and governmental mind control with hilarious, cutting aplomb, while his essential documentaries MUHAMMAD ALI, THE GREATEST and ELDRIDGE CLEAVER, BLACK PANTHER capture two of the most galvanizing personalities of his time with electrifying immediacy. Still largely overlooked in the United States, his films are audacious, iconoclastic antidotes to all forms of social oppression."
   },
   {
+    "id": "the-love-that-remains",
+    "title": "Watch Now",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e6f68865-4168-4863-bd7d-395e97e87215.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-love-that-remains",
+    "filmIds": [
+      "the-love-that-remains",
+      "hlynur-palmason-on-the-love-that-remains"
+    ],
+    "description": "COMING TO THE CRITERION CHANNEL ON MAY 12 AT 8 P.M. ET\n\nDirected by Hlynur Pálmason • 2025 • Iceland, Denmark, France\nStarring Saga Garðarsdóttir, Sverrir Gudnason, Ída Mekkín Hlynsdóttir\n\nSuffused with tenderness and deadpan humor, THE LOVE THAT REMAINS asks: What happens when a relationship ends but the bonds of caring endure? Moving unpredictably through four seasons in the lives of a separating couple—artist Anna (Saga Garðarsdóttir) and fisherman Magnus (Sverrir Guðnason)—and their three children, Hlynur Pálmason’s fourth feature is as vibrantly attuned to the ebb and flow of domestic routine as it is to the stark, spectacular landscape of coastal Iceland. Juggling intimate scenes of adults at work and children at play with wild intrusions of surrealism, this strange and poignant film is a rare study of family life in all its beauty and confusion."
+  },
+  {
     "id": "conbody-vs-everybody",
     "title": "Watch Now",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0f43015-6d3f-41c6-b67a-387af8c9105a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -506,17 +517,6 @@
       "the-ballad-of-suzanne-cesaire"
     ],
     "description": "Directed by Madeleine Hunt-Ehrlich • 2024 • United States\nStarring Zita Hanrot, Motell Gyn Foster, Josué Gutierrez\n\nA sumptuous, spellbinding anti-biopic as provocative and elusive as its subject, this hypnotic journey through the world of Caribbean surrealist writer and anticolonial activist Suzanne Césaire daringly deconstructs the process of bringing an actually lived life to film. In the sleepy palm groves of the tropics, a small group of filmmakers—including an actor and new mother (Zita Hanrot) haunted by voices as she embarks on inhabiting the title role—stage scenes from the enigmatic intellectual’s life, exploring her youth in Martinique, literary legacy, and relationship with her husband, the writer and politician Aimé Césaire. Inspired by the structures of Suzanne Césaire’s own writing, which often took a colonial convention and unraveled it, THE BALLAD OF SUZANNE CÉSAIRE plants us firmly in the darkness and desire of its subject while acknowledging the impossibility of resuscitating a legacy partially lost to time."
-  },
-  {
-    "id": "the-love-that-remains",
-    "title": "The Love That Remains",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e6f68865-4168-4863-bd7d-395e97e87215.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-love-that-remains",
-    "filmIds": [
-      "the-love-that-remains",
-      "hlynur-palmason-on-the-love-that-remains"
-    ],
-    "description": "COMING TO THE CRITERION CHANNEL ON MAY 12 AT 8 P.M. ET\n\nDirected by Hlynur Pálmason • 2025 • Iceland, Denmark, France\nStarring Saga Garðarsdóttir, Sverrir Gudnason, Ída Mekkín Hlynsdóttir\n\nSuffused with tenderness and deadpan humor, THE LOVE THAT REMAINS asks: What happens when a relationship ends but the bonds of caring endure? Moving unpredictably through four seasons in the lives of a separating couple—artist Anna (Saga Garðarsdóttir) and fisherman Magnus (Sverrir Guðnason)—and their three children, Hlynur Pálmason’s fourth feature is as vibrantly attuned to the ebb and flow of domestic routine as it is to the stark, spectacular landscape of coastal Iceland. Juggling intimate scenes of adults at work and children at play with wild intrusions of surrealism, this strange and poignant film is a rare study of family life in all its beauty and confusion."
   },
   {
     "id": "magellan",
@@ -3015,149 +3015,134 @@
     "description": "Directed by William A. Wellman • 1937 • United States\nStarring Fredric March, Carole Lombard, Charles Winninger\n\nHe’s an unscrupulous newspaperman eager to exploit the story of a young woman’s death by radium poisoning. She knows she’s not really dying but can’t pass up a free trip to New York with all the trimmings. Carole Lombard and Fredric March costar in this black-comedy classic nimbly directed by William A. Wellman. Taking caustic aim at how tabloid journalism feeds the morbid curiosity of a scandal-hungry public, Ben Hecht’s sharply satirical screenplay remains as fresh and biting as ever."
   },
   {
-    "id": "lucio-flavio",
-    "title": "Lúcio Flávio",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ec1b9ad2-b019-4004-958c-92fde6891ad8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/lucio-flavio",
+    "id": "possession",
+    "title": "Possession",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/006a9dd0-fd85-4e0d-9fc4-45f562d36c13.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/possession",
     "filmIds": [
-      "lucio-flavio"
+      "possession"
     ],
-    "description": "Directed by Héctor Babenco • 1977 • Brazil\nStarring Reginaldo Faria, Ana Maria Magalhães, Paulo César Peréio\n\nAn enormous box-office success in Brazil, Héctor Babenco’s second feature electrified audiences with its gritty, gut-punching evocation of a corrupt world where the line between criminals and law enforcement has become virtually invisible. Based on the true story of an infamous bandit, LÚCIO FLÁVIO stars Reginaldo Faria as the titular outlaw, whose charisma and audacious bank-robbing exploits make him a media sensation. Throughout, Babenco entwines Flávio’s story with the operations of Brazil’s notorious Esquadrão da Morte (Death Squad), revealing the systemic violence operating on all levels of society."
+    "description": "Directed by Andrzej Żuławski • 1981 • France, West Germany\nStarring Isabelle Adjani, Sam Neill, Heinz Bennent\n\nAndrzej Żuławski’s stunningly choreographed nightmare of a marriage unraveling is an experience unlike any other. Professional spy Mark (Sam Neill) returns to his West Berlin home to find his wife Anna (Isabelle Adjani, in a role that earned her Best Actress at both Cannes and the César Awards) intent on a divorce. As Anna’s frenzied behavior becomes ever more alarming, Mark discovers a truth far more sinister than his wildest suspicions. With its pulsating score, visceral imagery, and some of the most intense performances ever captured on-screen, POSSESSION is cinematic delirium at its most intoxicating."
   },
   {
-    "id": "bullet-in-the-head",
-    "title": "Bullet In The Head",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0ba7a73-968e-40b3-abcb-9b3f394dd48c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/bullet-in-the-head",
+    "id": "riki-oh-the-story-of-ricky",
+    "title": "Riki-oh: The Story Of Ricky",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0956c17d-3c70-4756-a3f3-0eae3130cfd0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/riki-oh-the-story-of-ricky",
     "filmIds": [
-      "bullet-in-the-head"
+      "riki-oh-the-story-of-ricky",
+      "riki-oh-english-dub"
     ],
-    "description": "Directed by John Woo • 1990 • Hong Kong\nStarring Tony Leung Chiu-wai, Jacky Cheung, Simon Yam\n\nOne of director John Woo’s most ambitious and emotionally charged films, this intense action epic follows the fates of three friends—gangsters Ben (Tony Leung Chiu-wai), Frank (Jacky Cheung), and Paul (Waise Lee)—as they leave behind 1960s Hong Kong to pull off a smuggling job in war-torn Vietnam, only to find their loyalties to one another tested when they are taken prisoner by the Vietcong. The most expensive Hong Kong film ever made at the time of its production—an arduous undertaking that drove Woo to the brink to realize his vision—BULLET IN THE HEAD blends the filmmaker’s celebrated action spectacle with a harrowing depiction of the POW experience that has earned it comparisons to THE DEER HUNTER."
+    "description": "Directed by Lam Nai-choi • 1991 • Hong Kong\nStarring Fan Siu-Wong, Gloria Yip, Yukari Oshima\n\nThe ultimate Hong Kong black-comic gorefest, this live-action adaptation of the cult manga is a blood feast of entrail-wreathed splatter and literally eye-popping ultraviolence. After he’s sentenced to a corrupt private prison for taking revenge on the shadowy gangsters who killed his girlfriend, the seemingly indestructible Ricky Ho (Fan Siu-wong) must fight his way out past a litany of enemies and unsavory figures using his superhuman ability to punch through any object (including the human body). Channeling the kinetic, hyperstylized spirit of the manga source material, writer-director Lam Nai-choi delivers a blast of pure cinema so outrageously over the top it’s nearly avant-garde."
   },
   {
-    "id": "eric-rohmer-s-tales-of-the-four-seasons",
-    "title": "Eric Rohmer’s Tales Of The Four Seasons",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9a47d960-fe5c-44c1-9b4f-cad8bc9c65a3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/eric-rohmer-s-tales-of-the-four-seasons",
+    "id": "europa-europa",
+    "title": "Europa Europa",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7e537966-5f63-4932-a30b-7ea38990d490-5cb8e81c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/europa-europa",
     "filmIds": [
-      "a-tale-of-springtime",
-      "a-tale-of-winter",
-      "a-tale-of-summer",
-      "a-tale-of-autumn"
+      "europa-europa",
+      "europa-europa-commentary",
+      "agnieszka-holland-on-europa-europa",
+      "marco-hofschneider-on-europa-europa",
+      "on-europa-europa",
+      "salomon-perel-on-europa-europa"
     ],
-    "description": "The seasons may change, but the follies of the heart are constant in this ineffably lovely quartet of films by Eric Rohmer, one of cinema’s most perceptive chroniclers of the pangs and perils of romance. Set throughout France, Tales of the Four Seasons is a cycle to stand alongside the director’s two earlier acclaimed film series, Six Moral Tales and Comedies and Proverbs. By turns comic and melancholic, breezy and richly philosophical, these bittersweet tales of love, longing, and the inevitable misunderstandings that shape human relationships probe the most complex of emotions with the utmost grace."
+    "description": "Criterion Collection Edition #985\n\nAs World War II splits Europe, sixteen-year-old German Jew Salomon (Marco Hofschneider) is separated from his family after fleeing with them to Poland, and finds himself reluctantly assuming various ideological identities in order to hide the deadly secret of his Jewishness. He is bounced from a Soviet orphanage, where he plays a dutiful Stalinist, to the Russian front, where he hides in plain sight as an interpreter for the German army, and back to his home country, where he takes on his most dangerous role: a member of the Hitler Youth. Based on the real-life experiences of Salomon Perel, Agnieszka Holland’s wartime tour de force EUROPA EUROPA is a breathless survival story told with the verve of a comic adventure, an ironic refutation of the Nazi idea of racial purity, and a complex portrait of a young man caught up in shifting historical calamities and struggling to stay alive."
   },
   {
-    "id": "jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
-    "title": "Jeanne Dielman, 23, Quai Du Commerce, 1080 Bruxelles",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5995a246-483c-462a-8b9e-77e8f7dd45fd-737aa7d8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
+    "id": "joan-the-maid",
+    "title": "Joan The Maid",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9fbda758-673d-4c36-b7a2-75c3adfa7517.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/joan-the-maid",
     "filmIds": [
-      "jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
-      "autour-de-jeanne-dielman",
-      "autor-replace-test",
-      "chantal-akerman-on-jeanne-dielman",
-      "chantal-akerman-on-filmmaking",
-      "chantal-akerman-and-delphine-seyrig",
-      "babette-mangolte-on-jeanne-dielman",
-      "natalia-akerman",
-      "saute-ma-ville",
-      "chantal-akerman-on-saute-ma-ville-2009",
-      "channel-c041197-amg-karynkusama-jeannedielman",
-      "jhumpa-lahiri-on-jeanne-dielman",
-      "sofia-coppola-on-jeanne-dielman"
+      "joan-the-maid-i-the-battles",
+      "joan-the-maid-ii-the-prisons"
     ],
-    "description": "Directed by Chantal Akerman • 1975 • Belgium\nStarring Delphine Seyrig, Jan Decorte\n\nA singular work in film history, Chantal Akerman’s JEANNE DIELMAN, 23, QUAI DU COMMERCE, 1080 BRUXELLES meticulously details, with a sense of impending doom, the daily routine of a middle-aged widow, whose chores include making the beds, cooking dinner for her son, and turning the occasional trick. In its enormous spareness, Akerman’s film seems simple, but it encompasses an entire world. Whether seen as an exacting character study or as one of cinema’s most hypnotic and complete depictions of space and time, JEANNE DIELMAN is an astonishing, compelling movie experiment, one that has been analyzed and argued over for decades."
+    "description": "Jacques Rivette puts his own inimitable stamp on the immortal story of Joan of Arc with this sprawling, two-part study, which brings a new perspective to her much-mythologized life by forgoing lofty spirituality in favor of a strikingly earthy, grounded approach. As Joan, an extraordinary Sandrine Bonnaire gets at the reality behind the legend, showing the matter-of-fact courage and vulnerability of a teenage girl thrust into extraordinary circumstances as she leads French forces into battle against the English only to find herself betrayed and accused of heresy."
   },
   {
-    "id": "look-back-in-anger",
-    "title": "Look Back In Anger",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/95ae2f3c-2056-4540-acaf-633660dd72a1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/look-back-in-anger",
+    "id": "the-beat-that-my-heart-skipped",
+    "title": "The Beat That My Heart Skipped",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/979a521c-2461-437e-9c6f-556134c3041f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-beat-that-my-heart-skipped",
     "filmIds": [
-      "look-back-in-anger"
+      "the-beat-that-my-heart-skipped",
+      "jacques-audiard-on-the-beat-that-my-heart-skipped",
+      "berlin-internation-film-festival",
+      "tonino-benacquista-on-the-beat-that-my-heart-skipped",
+      "alexandre-desplat-on-the-beat-that-my-heart-skipped",
+      "deleted-scenes-21",
+      "deleted-scenes-with-commentary-5",
+      "rehearsal-footage"
     ],
-    "description": "Directed by Tony Richardson • 1959 • United Kingdom\nStarring Richard Burton, Claire Bloom, Mary Ure\n\nBased on the smash-hit play by John Osborne that inaugurated Britain’s “angry young men” literary movement, this touchstone of the British New Wave features a searing performance from Richard Burton as Jimmy Porter, a university graduate and the husband of a woman of some means, who has rejected middle-class dreams and now operates a candy stall at the local flea market. During their two year marriage, Alison (Mary Ure) has carried the full brunt of Jimmy’s anger and frustration, as well as his intense love. When Alison’s friend Helena Charles (Claire Bloom), an actress, moves in with the couple, she becomes a witness to their turbulent relationship and a catalyst for further unrest within the household."
+    "description": "Directed by Jacques Audiard • 2005 • France\nStarring Romain Duris, Niels Arestrup, Jonathan Zaccaï\n\nA riveting character study in the guise of a gritty underworld thriller, Jacques Audiard’s international breakthrough features an explosive performance from Romain Duris as a real-estate broker torn between the dirty dealings of his slumlord father (Niels Arestrup) and his recently rekindled love for classical piano. Can music offer salvation from a life of sin? Winner of eight César Awards, including Best Film, this bold reimagining of the New Hollywood cult classic FINGERS showcases Audiard’s gift for balancing breathtaking tension with galvanic human drama."
   },
   {
-    "id": "victims-of-sin",
-    "title": "Victims Of Sin",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/77b7815f-7c27-4bce-bb29-76ced9b8784b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/victims-of-sin",
+    "id": "ratcatcher",
+    "title": "Ratcatcher",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/721da764-b84c-4c7d-a5ee-7e1807312e8a-0e4248a2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/ratcatcher",
     "filmIds": [
-      "victims-of-sin",
-      "viviana-garcia-besne",
-      "rodrigo-prieto-on-gabriel-figueroa",
-      "those-who-made-our-cinema"
+      "ratcatcher",
+      "lynne-ramsay-on-ratcatcher-2002",
+      "lynne-ramsay-on-ratcatcher-2021",
+      "small-deaths",
+      "kill-the-day",
+      "gasman",
+      "alwin-kuchler-on-ratcatcher"
     ],
-    "description": "Directed by Emilio Fernández • 1951 • Mexico\nStarring Ninón Sevilla, Tito Junco, Rodolfo Acosta\n\nA treasure of Mexico’s cinematic golden age, this deliriously plotted blend of gritty crime film, heart-tugging maternal melodrama, and mambo musical is a dazzling showcase for iconic star Ninón Sevilla. She brings fierce charisma and fiery strength to her role as a rumbera—a female nightclub dancer—who gives up everything to raise an abandoned boy, whom she must protect from his ruthless gangster father. Directed at a dizzying pace by filmmaking titan Emilio Fernández, and shot in stylish chiaroscuro by renowned cinematographer Gabriel Figueroa amid smoky dance halls and atmospherically seedy underworld haunts, VICTIMS OF SIN is a ferociously entertaining female-powered noir pulsing with the intoxicating rhythms of some of Latin America’s most legendary musical stars."
+    "description": "Directed by Lynne Ramsay • 1999 • United Kingdom\nStarring Tommy Flanagan, Mandy Matthews, William Eadie\n\nIn her breathtaking and assured debut feature, Lynne Ramsay creates a haunting evocation of a troubled Glasgow childhood. Set during Scotland’s national garbage strike of the mid-1970s, RATCATCHER explores the experiences of a poor adolescent boy as he struggles to reconcile his dreams and his guilt with the abjection that surrounds him. Utilizing beautiful, elusive imagery, candid performances, and unexpected humor, Ramsay deftly contrasts urban decay with a rich interior landscape of hope and perseverance, resulting in a work at once raw and deeply poetic."
   },
   {
-    "id": "the-world",
-    "title": "The World",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/014327c8-ec0f-4ea4-a152-959400819043.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-world",
+    "id": "merry-christmas-mr-lawrence",
+    "title": "Merry Christmas Mr. Lawrence",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/51e31211-ac5d-4096-886e-f62d1309f4ed-5fc57fd4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/merry-christmas-mr-lawrence",
     "filmIds": [
-      "the-world"
+      "merry-christmas-mr-lawrence",
+      "the-oshima-gang",
+      "merry-christmas-mr-lawrence-on-the-screenplay",
+      "merry-christmas-mr-lawrence-on-location",
+      "merry-christmas-mr-lawrence-on-the-music",
+      "hasten-slowly"
     ],
-    "description": "Directed by Jia Zhang-Ke • 2004 • China\nStarring Zhao Tao, Cheng Taishen, Jing Jue\n\nAn at once intimate and expansive exploration of globalization from visionary director Jia Zhang-Ke, THE WORLD takes place in the eponymous theme park on the outskirts of Beijing, where iconic monuments from the Eiffel Tower to the Taj Mahal are reproduced for tourists. It’s there that the park’s employees—including a dancer (Zhao Tao) and a security guard (Cheng Taishen)—drift together and are pulled apart in a cycle of connection and alienation that speaks eloquently to the effects of China’s rapid modernization."
+    "description": "Criterion Collection Edition #535\n\nDirected by Nagisa Oshima • 1983 • Japan\nStarring David Bowie, Ryuichi Sakamoto, Tom Conti\n\nIn this captivating, skewed World War II drama from Nagisa Oshima, David Bowie regally embodies Celliers, a British officer interned by the Japanese as a POW. Rock star Ryuichi Sakamoto (who also composed this film’s hypnotic score) plays the camp commander, obsessed with the mysterious blond major, while Tom Conti is the British lieutenant colonel Lawrence, who tries to bridge the emotional and language divides between captor and prisoner. Also featuring actor-director Takeshi Kitano in his first dramatic role, MERRY CHRISTMAS MR. LAWRENCE is a multilayered, brutal, at times erotic tale of culture clash, and one of Oshima’s greatest successes."
   },
   {
-    "id": "lan-yu",
-    "title": "Lan Yu",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/90973413-65e6-4b4c-9aeb-dc7d6b14f02a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/lan-yu",
+    "id": "golden-balls",
+    "title": "Golden Balls",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/721bdeb1-a5af-4fcf-8278-06be4867090c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/golden-balls",
     "filmIds": [
-      "lan-yu",
+      "golden-balls"
+    ],
+    "description": "Directed by Bigas Luna • 1993 • Spain, Italy, France\nStarring Javier Bardem, Maribel Verdú, Benicio Del Toro\n\nBigas Luna’s follow-up to his international hit JAMÓN JAMÓN is a deliriously libidinous, scathingly satirical takedown of toxic machismo and capitalist excess. A superbly earthy Javier Bardem stars as Benito González, the unabashedly tacky, supremely cocky womanizer and wannabe industrialist whose dreams of building an enormous skyscraper—an appropriately phallic ode to his monumental ego—come crashing down spectacularly. Luna cranks up the sexually supercharged hothouse atmosphere while gleefully cutting the “great man” myth down to size."
+  },
+  {
+    "id": "rouge",
+    "title": "Rouge",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c2658a24-6f7e-4f5a-99b8-83a60d8fc73b-fea736b1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/rouge",
+    "filmIds": [
+      "rouge",
+      "stanley-kwan-interview",
+      "still-love-you-after-all-these",
       "yang-yin-gender-in-chinese-cinema"
     ],
-    "description": "Directed by Stanley Kwan • 2001 • Hong Kong, China\nStarring Liu Ye, Hu Jun, Huatong Li\n\nFilmed in secret in Beijing, this tender gay romance by Stanley Kwan combines the timeless conventions of classic melodrama with a radically frank depiction of queer intimacy as it traces, over the course of years, the relationship between a wealthy businessman (Hu Jun) and a young architecture student (Liu Ye) as they come together, fall apart over the former’s fear of commitment, and gradually realize that they are fated to be together. Kwan’s expressive visuals and the sensitive lead performances yield a daring, deeply affecting love story that doubles as a haunting reflection on life in post-Mao China in the wake of the Tiananmen Square massacre."
+    "description": "Directed by Stanley Kwan • 1987 • Hong Kong\nStarring Anita Mui, Leslie Cheung, Alex Man Chi-leung\n\nCantopop superstars Anita Mui and Leslie Cheung display the androgynous magnetism that made them icons as doomed lovers in this emblematic film of Hong Kong’s Second New Wave, directed by pioneering queer melodrama master Stanley Kwan. ROUGE bridges past and present in its tragic romance between a humble courtesan and the wayward scion of a wealthy family, who embrace death by suicide pact amid the opulent teahouses of 1930s Hong Kong. Fifty years later, she returns to the city-state to find him, drawing a young contemporary couple (Alex Man and Emily Chu) into her quest to rekindle a passion that may be as illusory as time itself. With its lush mise-en-scène and transcendently melancholy mood, this sensuous ghost story is an exquisite, enduringly resonant elegy for both lost love and vanishing history."
   },
   {
-    "id": "the-asthenic-syndrome",
-    "title": "The Asthenic Syndrome",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f59032c9-e73b-4f55-ba6d-a3059b08a63d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-asthenic-syndrome",
+    "id": "a-better-tomorrow-the-trilogy",
+    "title": "A Better Tomorrow: The Trilogy",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5c2de7db-ea49-4475-8c35-93928596183a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/a-better-tomorrow-the-trilogy",
     "filmIds": [
-      "the-asthenic-syndrome"
+      "a-better-tomorrow",
+      "a-better-tomorrow-ii",
+      "a-better-tomorrow-iii-love-death-in-saigon"
     ],
-    "description": "Directed by Kira Muratova • 1989 • Ukraine, Soviet Union\nStarring Olga Antonova, Sergei Popov, Galina Zakhurdayeva\n\nWidely considered Kira Muratova’s masterpiece, THE ASTHENIC SYNDROME is also Soviet cinema’s grand avant-comic opus, a deconstructive portrait of the nation in the final, frenzied stages of the communist experiment. For its first forty minutes, shot in black and white, SYNDROME tells the story of a grieving widow (Olga Antonova) at wit’s end, lashing out at strangers on the street, impulsively quitting her nursing job, and sleeping with random men. Cut to a disastrous post-screening Q&A with Antonova: we’ve just watched a film-within-a-film as slept through by Nikolai (Sergei Popov, one of Muratova’s co-screenwriters), a narcoleptic schoolteacher whose subsequent wanderings lead to encounters (between sudden naps) with an expansive cross section of the failing Soviet Union’s beleaguered citizenry—digressive vignettes at once bizarre, disturbing, and hilarious. Deftly applying dizzying metafiction to her inimitable brand of humanistic farce, THE ASTHENIC SYNDROME is an ingenious fractal puzzle that captures the delirious death throes of an entire epoch."
-  },
-  {
-    "id": "the-adventures-of-antoine-doinel",
-    "title": "The Adventures Of Antoine Doinel",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2d0d714a-f2ba-440c-8de6-979ee54b428d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-adventures-of-antoine-doinel",
-    "filmIds": [
-      "the-400-blows",
-      "antoine-and-colette",
-      "stolen-kisses",
-      "bed-and-board",
-      "love-on-the-run"
-    ],
-    "description": "The irrepressible Jean-Pierre Léaud stars as François Truffaut’s alter ego across four landmark films of the French New Wave."
-  },
-  {
-    "id": "kenji-misumi-s-sword-trilogy",
-    "title": "Kenji Misumi’s Sword Trilogy",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/827c3c0f-2309-4f1a-a6cd-42bff4cf06f2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/kenji-misumi-s-sword-trilogy",
-    "filmIds": [
-      "kiru",
-      "ken",
-      "kenki"
-    ],
-    "description": "Originator of the hugely popular ZATOICHI and LONE WOLF AND CUB franchises, Kenji Misumi was a master of the chanbara (“sword fighting”) genre who brought thrilling stylistic flourishes and unique psychological and emotional depth to his many classic films. Among his finest achievements, the three thematically linked works that make up his so-called Sword Trilogy—all starring Raizo Ichikawa—combine breathtaking visuals with complex explorations of family, tradition, heroism, masculinity, and violence."
-  },
-  {
-    "id": "marriage-italian-style",
-    "title": "Marriage Italian Style",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/165e954a-f942-4027-a12a-ee13aadf2560.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/marriage-italian-style",
-    "filmIds": [
-      "marriage-italian-style"
-    ],
-    "description": "Directed by Vittorio De Sica • 1964 • Italy, France\nStarring Sophia Loren, Marcello Mastroianni, Aldo Puglisi\n\nMarcello Mastroianni and Sophia Loren cemented their status as one of the all-time great screen couples in Vittorio De Sica’s classic battle-of-the-sexes farce. He’s Domenico, a suave, bourgeois business owner; she’s Filumena, a rough-around-the-edges Neapolitan sex worker. In flashback, their tempestuous twenty-two-year relationship unfolds, right up to his impending marriage to another woman—but Filumena has other plans. Loren sizzles in an Oscar-nominated performance, while nobody plays the cad better than Mastroianni. Their chemistry propels what plays like a near-flawless boudoir comedy—until it develops into something disarmingly moving."
+    "description": "Released in 1986, John Woo’s A BETTER TOMORROW sent shockwaves through the Hong Kong film industry, launching a wave of so-called heroic bloodshed films that emulated its combination of balletic gunplay and emotionally charged storytelling. Tracing the relationship between two brothers on opposite sides of the law, A BETTER TOMORROW and its two sequels pushed action cinema to new heights of bullet-riddled excess, while establishing breakout star Chow Yun-fat as an international icon of cool."
   },
   {
     "id": "kalpana",
@@ -3371,36 +3356,29 @@
     "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection."
   },
   {
-    "id": "losing-ground",
-    "title": "Losing Ground",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/aa1d8b14-388e-4f74-9f9d-db1be0f6aa27.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/losing-ground",
+    "id": "mississippi-masala",
+    "title": "Mississippi Masala",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d3e6208b-9008-4ed4-aafb-a4924b7ea32e-5815a36c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/mississippi-masala",
     "filmIds": [
-      "losing-ground",
-      "kathleen-collins-interview",
-      "justin-simien-on-losing-ground"
+      "mississippi-masala",
+      "mississippi-masala-commentary",
+      "sarita-choudhury-and-devika-girish-on-mississippi-masala",
+      "sooni-taraporevala-on-mississippi-masala",
+      "ed-lachman-on-mississippi-masala",
+      "mitch-epstein-on-mississippi-masala"
     ],
-    "description": "Directed by Kathleen Collins • 1982 • United States\nStarring Seret Scott, Bill Gunn, Duane Jones\n\nOne of the first feature films directed by an African American woman, Kathleen Collins’s LOSING GROUND tells the story of a marriage between two remarkable people, both at a crossroads in their lives. Sara Rogers (Seret Scott), a black professor of philosophy, is embarking on an intellectual quest to understand “ecstasy” just as her painter husband, Victor (Bill Gunn), sets off on a more earthy exploration of joy. Over the course of a summer idyll in upstate New York, the two each experience profound emotional and romantic awakenings. Applying a deft comic touch to a deeply personal exploration of love, race, and gender, Collins crafts a charming, complex tale of personal discovery that, after decades of neglect, has reemerged as a still-fresh landmark of independent cinema."
+    "description": "Directed by Mira Nair • 1991 • United States, Uganda\nStarring Denzel Washington, Sarita Choudhury, Roshan Seth\n\nThe vibrant cultures of India, Uganda, and the American South come together in Mira Nair’s MISSISSIPPI MASALA, a luminous look at the complexities of love in the modern melting pot. Years after her Indian family was forced to flee their home in Uganda by the dictatorship of Idi Amin, twentysomething Mina (Sarita Choudhury) spends her days cleaning rooms in an Indian-run motel in Mississippi. When she falls for the charming Black carpet cleaner Demetrius (Denzel Washington), their passionate romance challenges the prejudices of both of their families and exposes the rifts between the region’s Indian and African American communities. Tackling thorny issues of racism, colorism, culture clash, and displacement with bighearted humor and keen insight, Nair serves up a sweet, sexy, and deeply satisfying celebration of love’s power."
   },
   {
-    "id": "the-passionate-friends",
-    "title": "The Passionate Friends",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/956dbbc6-4a72-4f35-824f-41bac7cf846c-35688eb4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-passionate-friends",
+    "id": "the-daughter-of-dawn",
+    "title": "The Daughter Of Dawn",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/46024921-7064-492e-b2be-337b93488bab.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-daughter-of-dawn",
     "filmIds": [
-      "the-passionate-friends"
+      "the-daughter-of-dawn"
     ],
-    "description": "Directed by David Lean • 1949 • United Kingdom\nStarring Ann Todd, Trevor Howard, Claude Rains\n\nFour years after David Lean crafted what may be the screen’s most piercing examination of extramarital romance with BRIEF ENCOUNTER, he returned to a similar subject in this exquisite tale of a woman torn between the stability of marriage and the thrill of an affair. Adapted from a novel by H. G. Wells, THE PASSIONATE FRIENDS follows Mary Justin (Ann Todd), who years ago gave up romance with Steven Stratton (Trevor Howard) for a comfortable but routine marriage to Howard (Claude Rains in one of his finest performances). When Mary unexpectedly meets Steven again while on vacation in the Swiss Alps, she finds herself forced to confront her unresolved feelings for the man she still loves."
-  },
-  {
-    "id": "preparations-to-be-together-for-an-unknown-period-of-time",
-    "title": "Preparations To Be Together For An Unknown Period Of Time",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0c81c8b-aa1c-4cbc-86a1-a1835bfa476a-e71dfc8b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/preparations-to-be-together-for-an-unknown-period-of-time",
-    "filmIds": [
-      "preparations-to-be-together-for-an-unknown-period-of-time"
-    ],
-    "description": "Directed by Lili Horvát • 2020 • Hungary\nStarring Natasa Stork, Viktor Bodó, Benett Vilmányi\n\nThe second feature by Hungarian director Lili Horvát is a slippery, seductive investigation of memory, obsession, and delusion. After twenty years in the United States, Hungarian neurosurgeon Márta (Natasa Stork) returns to Budapest for a romantic rendezvous with János (Viktor Bodó), a fellow doctor she met at a conference. The only problem: when she arrives, János is nowhere to be seen and, when she at last tracks him down, claims the two have never met. What ensues is a tantalizing psychological puzzle that toys brilliantly with the conventions of film noir and with the viewer’s own sense of reality."
+    "description": "Directed by Norbert A. Myles • 1920 • United States\nStarring Esther LeBarre, White Parker, Wanada Parker\n\nShot in 1920 in the Wichita Mountains of southwest Oklahoma with a cast entirely made up of members of the Comanche and Kiowa tribes, THE DAUGHTER OF DAWN screened publicly only twice before disappearing without a trace for nearly a century. Rediscovered and restored, this large-scale vision of Comanche and Kiowa life is a revelation. The story, played by a sprawling cast of three hundred Native Americans, includes a romantic rivalry, buffalo hunts, a battle, village scenes, dances, deceit, courage, hand-to-hand combat, and even a happy ending. The Indigenous actors, who in 1920 had been living on reservations for less than sixty years, brought with them their own tipis, horses, clothing, and material culture. Subtly acted, beautifully photographed, and directed without melodrama by Norbert A. Myles, this nearly lost landmark stands with the best films of the period."
   },
   {
     "id": "the-lovers",
@@ -3419,33 +3397,48 @@
     "description": "Directed by Louis Malle • 1958 • France\nStarring Jeanne Moreau, Jean-Marc Bory\n\nLouis Malle unveiled the natural beauty of Jeanne Moreau in his breakthrough, ELEVATOR TO THE GALLOWS. With his follow-up, the scandalous smash THE LOVERS (LES AMANTS), he made her a star once and for all. A deeply felt and luxuriously filmed fairy tale for grown-ups, perched on the edge between classical and New Wave cinemas, THE LOVERS presents Moreau as a restless bourgeois wife whose eye wanders from both her husband and her lover to an attractive passing stranger (Jean-Marc Bory). Thanks to its frank sexuality, THE LOVERS caused quite a stir, being censored and attacked for obscenity around the world. If today its shock has worn off, its glistening sensuality and seductive storytelling haven’t aged a day."
   },
   {
-    "id": "me-and-you-and-everyone-we-know",
-    "title": "Me And You And Everyone We Know",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/cbb4e204-6e90-44b0-bd66-843dba271a77-85fa2046.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/me-and-you-and-everyone-we-know",
+    "id": "the-passionate-friends",
+    "title": "The Passionate Friends",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/956dbbc6-4a72-4f35-824f-41bac7cf846c-35688eb4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-passionate-friends",
     "filmIds": [
-      "me-and-you-and-everyone-we-know",
-      "miranda-july-where-it-began",
-      "open-to-the-world",
-      "july-interviews-july-deauville-2005",
-      "me-and-you-and-everyone-we-know-at-the-sundance-director-s-lab",
-      "me-and-you-and-everyone-we-know-at-the-sundance-director-s-lab-with-commentary",
-      "me-and-you-and-everyone-we-know-deleted-scenes"
+      "the-passionate-friends"
     ],
-    "description": "Directed by Miranda July • 2005 • United States\nStarring John Hawkes, Miranda July, Miles Thompson\n\nWith this compassionate, startling comedy that could have come from no other artistic sensibility, the brilliant Miranda July reveals a world both familiar and strange—an original vision of creativity, sexuality, childhood, and loneliness that emerges from a series of braided vignettes around a pair of potential lovers: Richard, a newly single shoe salesman and father of two (John Hawkes), and Christine, a lonely video artist and “Eldercab” driver (July). While they take hesitant steps toward romance, Richard’s sons follow their own curiosity toward their first sexual experiences, online and in real life, venturing into uncharted territories in their attempts to connect with others. Playful and profoundly transgressive, ME AND YOU AND EVERYONE WE KNOW is a poetic look at the tortuous routes we take to intimacy in an isolating world, and the moments of magic and redemption that unite us."
+    "description": "Directed by David Lean • 1949 • United Kingdom\nStarring Ann Todd, Trevor Howard, Claude Rains\n\nFour years after David Lean crafted what may be the screen’s most piercing examination of extramarital romance with BRIEF ENCOUNTER, he returned to a similar subject in this exquisite tale of a woman torn between the stability of marriage and the thrill of an affair. Adapted from a novel by H. G. Wells, THE PASSIONATE FRIENDS follows Mary Justin (Ann Todd), who years ago gave up romance with Steven Stratton (Trevor Howard) for a comfortable but routine marriage to Howard (Claude Rains in one of his finest performances). When Mary unexpectedly meets Steven again while on vacation in the Swiss Alps, she finds herself forced to confront her unresolved feelings for the man she still loves."
   },
   {
-    "id": "rouge",
-    "title": "Rouge",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c2658a24-6f7e-4f5a-99b8-83a60d8fc73b-fea736b1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/rouge",
+    "id": "certified-copy",
+    "title": "Certified Copy",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/caf547a1-98d5-4a24-8d9d-cd882f17c269-cbe91e1d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/certified-copy",
     "filmIds": [
-      "rouge",
-      "stanley-kwan-interview",
-      "still-love-you-after-all-these",
-      "yang-yin-gender-in-chinese-cinema"
+      "certified-copy",
+      "abbas-kiarostami-on-certified-copy",
+      "let-s-see-copia-conforme",
+      "the-report"
     ],
-    "description": "Directed by Stanley Kwan • 1987 • Hong Kong\nStarring Anita Mui, Leslie Cheung, Alex Man Chi-leung\n\nCantopop superstars Anita Mui and Leslie Cheung display the androgynous magnetism that made them icons as doomed lovers in this emblematic film of Hong Kong’s Second New Wave, directed by pioneering queer melodrama master Stanley Kwan. ROUGE bridges past and present in its tragic romance between a humble courtesan and the wayward scion of a wealthy family, who embrace death by suicide pact amid the opulent teahouses of 1930s Hong Kong. Fifty years later, she returns to the city-state to find him, drawing a young contemporary couple (Alex Man and Emily Chu) into her quest to rekindle a passion that may be as illusory as time itself. With its lush mise-en-scène and transcendently melancholy mood, this sensuous ghost story is an exquisite, enduringly resonant elegy for both lost love and vanishing history."
+    "description": "Directed by Abbas Kiarostami • 2010 • Italy\nStarring Juliette Binoche, William Shimell\n\nThe great Iranian director Abbas Kiarostami travels to Tuscany for a luminous and provocative romance in which nothing is as it appears. What seems at first to be a straightforward tale of two people—played by Oscar-winning actress Juliette Binoche and opera singer William Shimell—getting to know each other over the course of an afternoon gradually reveals itself as something richer, stranger, and trickier: a mind-bending reflection on authenticity, in art as well as in relationships. Both cerebrally and emotionally engaging, CERTIFIED COPY reminds us that love itself is an enigma."
+  },
+  {
+    "id": "city-lights",
+    "title": "City Lights",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/02c34575-4bab-41b7-ac32-5ee331ce2573-bb4a48ac.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/city-lights",
+    "filmIds": [
+      "city-lights",
+      "city-lights-commentary",
+      "brad-bird-on-city-lights",
+      "adam-gopnik-on-city-lights",
+      "chaplin-today-city-lights",
+      "chaplin-studios-creative-freedom-by-design",
+      "city-lights-the-tramp-meets-the-flower-girl",
+      "city-lights-stick-stuck-in-the-grate",
+      "city-lights-the-duke",
+      "city-lights-window-shopping-rehearsal",
+      "chaplin-the-boxer-the-champion",
+      "chaplin-the-boxer-boxing-stars-visit-the-studio"
+    ],
+    "description": "Directed by Charles Chaplin • 1931 • United States\nStarring Charles Chaplin, Virginia Cherrill, Harry Myers\n\nCITY LIGHTS, the most cherished film by Charlie Chaplin, is also his ultimate Little Tramp chronicle. The writer-director-star achieved new levels of grace, in both physical comedy and dramatic poignancy, with this silent tale of a lovable vagrant falling for a young blind woman who sells flowers on the street (a magical Virginia Cherrill) and mistakes him for a millionaire. Though this Depression-era smash was made after the advent of sound, Chaplin remained steadfast in his love for the expressive beauty of the pre-talkie form. The result was the epitome of his art and the crowning achievement of silent comedy."
   },
   {
     "id": "in-the-mood-for-love",
@@ -3475,35 +3468,54 @@
     "description": "Criterion Collection Edition #147\n\nDirected by Wong Kar Wai • 2000 • Hong Kong\nStarring Tony Leung Chiu-wai, Maggie Cheung Man-yuk\n\nHong Kong, 1962: Chow Mo-wan (Tony Leung Chiu-wai) and Su Li-zhen (Maggie Cheung Man-yuk) move into neighboring apartments on the same day. Their encounters are formal and polite—until a discovery about their spouses creates an intimate bond between them. At once delicately mannered and visually extravagant, Wong Kar Wai’s IN THE MOOD FOR LOVE is a masterful evocation of romantic longing and fleeting moments. With its aching musical soundtrack and exquisitely abstract cinematography by Christopher Doyle and Mark Lee Ping-bin, this film has been a major stylistic influence on the past decade of cinema, and is a milestone in Wong’s redoubtable career."
   },
   {
-    "id": "the-umbrellas-of-cherbourg",
-    "title": "The Umbrellas Of Cherbourg",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/646d5f81-4ed2-4425-a316-f448615a9e05-e1260342.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-umbrellas-of-cherbourg",
+    "id": "i-know-where-i-m-going",
+    "title": "I Know Where I’m Going!",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/edcb0672-8593-4807-8880-9599e5d5d336-e523bc9c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/i-know-where-i-m-going",
     "filmIds": [
-      "the-umbrellas-of-cherbourg",
-      "adam-gopnik-on-the-umbrellas-of-cherbourg",
-      "once-upon-a-time-the-umbrellas-of-cherbourg",
-      "rodney-hill-on-the-umbrellas-of-cherbourg",
-      "cinepanorama-jacques-demy-and-michel-legrand",
-      "patton-oswalt-on-the-umbrellas-of-cherbourg",
-      "the-umbrellas-of-cherbourg-restoration-demo"
+      "i-know-where-i-m-going",
+      "i-know-where-i-m-going-commentary",
+      "jonathan-lethem-on-i-know-where-i-m-going",
+      "behind-the-scenes-stills",
+      "michael-powell-s-home-movies",
+      "the-edge-of-the-world",
+      "i-know-where-i-m-going-location-photo-essay",
+      "i-know-where-i-m-going-restoration-demonstration-with-commentary",
+      "i-know-where-i-m-going-restoration-demonstration"
     ],
-    "description": "Directed by Jacques Demy • 1964 • France\nStarring Catherine Deneuve, Nino Castelnuovo\n\nThe angelically beautiful Catherine Deneuve was launched to stardom by this dazzling musical heart-tugger from Jacques Demy. She plays an umbrella-shop owner’s delicate daughter, glowing with first love for a handsome garage mechanic, played by Nino Castelnuovo. When the boy is shipped off to fight in Algeria, the two lovers must grow up quickly. Exquisitely designed in a kaleidoscope of colors, and told entirely through lilting songs by the great composer Michel Legrand, THE UMBRELLAS OF CHERBOURG is one of the most revered and unorthodox movie musicals of all time."
+    "description": "Directed by Michael Powell and Emeric Pressburger • 1945 • United Kingdom\nStarring Wendy Hiller, Roger Livesey\n\nIn Michael Powell and Emeric Pressburger’s stunningly photographed comedy, romance flourishes in an unlikely place—the bleak and moody Scottish Hebrides. Wendy Hiller stars as a headstrong young woman who travels to these remote isles to marry a rich lord. Stranded by stormy weather, she meets a handsome naval officer (Roger Livesey) who threatens to thwart her carefully laid-out life plans."
   },
   {
-    "id": "ali-fear-eats-the-soul",
-    "title": "Ali: Fear Eats The Soul",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/359d4e68-c8a3-4391-b116-87f5a612f5d3-9eb54ef7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/ali-fear-eats-the-soul",
+    "id": "my-heart-is-that-eternal-rose",
+    "title": "My Heart Is That Eternal Rose",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/99020bb5-05a2-437a-998d-acc2dcae2a94.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/my-heart-is-that-eternal-rose",
     "filmIds": [
-      "ali-fear-eats-the-soul",
-      "todd-haynes-on-rainer-werner-fassbinder",
-      "angst-isst-seele-auf",
-      "brigitte-mira-on-ali-fear-eats-the-soul",
-      "thea-eymesz-on-rainer-werner-fassbinder",
-      "the-stripped-down-style-of-ali-fear-eats-the-soul",
-      "from-the-american-soldier-1970"
+      "my-heart-is-that-eternal-rose"
     ],
-    "description": "Directed by Rainer Werner Fassbinder • 1974 • West Germany\nStarring Brigitte Mira, El Hedi ben Salem, Barbara Valentin\n\nThe wildly prolific German filmmaker Rainer Werner Fassbinder paid homage to his cinematic hero Douglas Sirk with this update of that filmmaker’s 1955 ALL THAT HEAVEN ALLOWS. A lonely widow (Brigitte Mira) meets a much younger Arab worker (El Hedi ben Salem) in a bar during a rainstorm. They fall in love, to their own surprise—and to the outright shock of their families, colleagues, and drinking buddies. In ALI: FEAR EATS THE SOUL, Fassbinder expertly wields the emotional power of classic Hollywood melodrama to expose the racial tensions underlying contemporary German culture."
+    "description": "Directed by Patrick Tam • 1989 • Hong Kong\nStarring Kenny Bee, Joey Wong, Tony Leung Chiu-wai\n\nPatrick Tam, perhaps the Hong Kong New Wave’s most daring modernist and a crucial influence on Wong Kar Wai, teams with cinematographer Christopher Doyle, a regular Wong collaborator, for a stylish “heroic bloodshed” melodrama starring Tony Leung Chiu-wai, Kenny Bee, and Joey Wong as three friends bound together by ties both criminal and romantic. With deliriously pulpy plotting, a synth-heavy score, luxuriously expressionistic imagery, and a climactic bloodbath for the ages, MY HEART IS THAT ETERNAL ROSE exists somewhere at the intersection of Wong’s cinema of longing and John Woo’s cinema of wrathful vengeance, standing as one of the high-water marks of Hong Kong crime cinema."
+  },
+  {
+    "id": "let-the-sunshine-in",
+    "title": "Let The Sunshine In",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9565aa5a-6a78-45d5-ba05-792cbf678bac-4a17c12e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/let-the-sunshine-in",
+    "filmIds": [
+      "let-the-sunshine-in",
+      "claire-denis-on-let-the-sunshine-in",
+      "juliette-binoche-on-let-the-sunshine-in",
+      "voila-l-enchainement"
+    ],
+    "description": "Directed by Claire Denis • 2017 • France\nStarring Juliette Binoche, Xavier Beauvois, Philippe Katerine\n\nTwo luminaries of French cinema, Claire Denis and Juliette Binoche, unite for the first time in this piercing look at the elusive nature of true love, and the extent to which we are willing to betray ourselves in its pursuit. In a richly layered performance, Binoche plays Isabelle, a successful painter in Paris whose apparent independence belies what she desires most: real romantic fulfillment. Isabelle reveals deep wells of yearning, vulnerability, and resilience as she tumbles into relationships with all the wrong men. Shot in burnished tones by Denis’s longtime collaborator Agnès Godard and featuring a mischievous appearance by Gérard Depardieu, Let the Sunshine In finds bleak humor in a cutting truth: we are all, no matter our age, fools for love."
+  },
+  {
+    "id": "cane-river",
+    "title": "Cane River",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8f80e90c-148e-4cb6-be9b-9d81a224bc0e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/cane-river",
+    "filmIds": [
+      "cane-river"
+    ],
+    "description": "Directed by Horace Jenkins • 1982 • United States\nStarring Richard Romain, Tommye Myrick, Carol Sutton\n\nWritten, produced, and directed by the late, trailblazing director Horace B. Jenkins and crafted by an entirely African American cast and crew, this luminous, recently rediscovered landmark of American independent cinema is a charmingly laid-back, socially incisive love story set in the heart of Louisiana. It’s there that a forbidden romance between an aspiring writer (Richard Romain) and an ambitious, college-bound woman (Tommye Myrick) lays bare the tensions between two black communities: the wealthy Creoles and the working-class descendants of slaves. Featuring lyrical cinematography and strikingly naturalistic performances from its captivating leads, the long-lost CANE RIVER reemerges thanks to a brand new, state-of-the-art restoration by Indie Collect and Oscilloscope Laboratories."
   }
 ]
