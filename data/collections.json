@@ -306,19 +306,15 @@
     "description": "William Klein’s explosive New York street photography made him one of the most heralded artists of the sixties. As an American expatriate in Paris, Klein also made bold, challenging cinema in a filmmaking career that spanned more than forty years. In his three colorful, surreal fiction features—WHO ARE YOU, POLLY MAGGOO?, MR. FREEDOM, and THE MODEL COUPLE—he skewers the fashion industry, American empire, and governmental mind control with hilarious, cutting aplomb, while his essential documentaries MUHAMMAD ALI, THE GREATEST and ELDRIDGE CLEAVER, BLACK PANTHER capture two of the most galvanizing personalities of his time with electrifying immediacy. Still largely overlooked in the United States, his films are audacious, iconoclastic antidotes to all forms of social oppression."
   },
   {
-    "id": "conbody-vs-everybody",
+    "id": "the-love-that-remains",
     "title": "Watch Now",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0f43015-6d3f-41c6-b67a-387af8c9105a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/conbody-vs-everybody",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e6f68865-4168-4863-bd7d-395e97e87215.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-love-that-remains",
     "filmIds": [
-      "debra-granik-interview",
-      "conbody-vs-everybody-episode-1",
-      "conbody-vs-everybody-episode-2",
-      "conbody-vs-everybody-episode-3",
-      "conbody-vs-everybody-episode-4",
-      "conbody-vs-everybody-episode-5"
+      "the-love-that-remains",
+      "hlynur-palmason-on-the-love-that-remains"
     ],
-    "description": "Filmed over eight years, this five-part documentary series from director Debra Granik combines a remarkable, against-the-odds story of grit, survival, and redemption with an incisive look at the harms of America’s prison industrial complex. After years in and out of prison, former drug dealer turned entrepreneur Coss Marte is determined to take control of his future by building Conbody, a New York City gym with a unique social purpose: to employ formerly incarcerated people like himself in an attempt to combat the high rate of recidivism. As Marte wages an uphill battle against the stigma of incarceration and the realities of a relentlessly gentrifying city where second chances are hard to come by, what emerges is both an inspiring portrait of a man on a mission and a powerful examination of a system that continues to punish people even after they have served their time."
+    "description": "COMING TO THE CRITERION CHANNEL ON MAY 12 AT 8 P.M. ET\n\nDirected by Hlynur Pálmason • 2025 • Iceland, Denmark, France\nStarring Saga Garðarsdóttir, Sverrir Gudnason, Ída Mekkín Hlynsdóttir\n\nSuffused with tenderness and deadpan humor, THE LOVE THAT REMAINS asks: What happens when a relationship ends but the bonds of caring endure? Moving unpredictably through four seasons in the lives of a separating couple—artist Anna (Saga Garðarsdóttir) and fisherman Magnus (Sverrir Guðnason)—and their three children, Hlynur Pálmason’s fourth feature is as vibrantly attuned to the ebb and flow of domestic routine as it is to the stark, spectacular landscape of coastal Iceland. Juggling intimate scenes of adults at work and children at play with wild intrusions of surrealism, this strange and poignant film is a rare study of family life in all its beauty and confusion."
   },
   {
     "id": "point-break",
@@ -474,7 +470,7 @@
     "filmIds": [
       "mistress-dispeller"
     ],
-    "description": "COMING TO THE CRITERION CHANNEL ON 2/24 AT 8 P.M. ET\n\nDirected by Elizabeth Lo • 2024 • United States\n\nIn China, a new industry has emerged devoted to helping couples stay married in the face of infidelity. Wang Zhenxi is part of this growing profession, a “mistress dispeller” who is hired to maintain the bonds of marriage—and break up affairs—by any means necessary. Offering strikingly intimate access to private dramas usually hidden behind closed doors, Elizabeth Lo’s spellbinding documentary follows a real, unfolding case of infidelity as Teacher Wang attempts to bring a couple back from the edge of crisis. Their story shifts our sympathies between husband, wife, and mistress to explore the ways emotion, pragmatism and cultural norms collide to shape romantic relationships in contemporary China."
+    "description": "Directed by Elizabeth Lo • 2024 • United States\n\nIn China, a new industry has emerged devoted to helping couples stay married in the face of infidelity. Wang Zhenxi is part of this growing profession, a “mistress dispeller” who is hired to maintain the bonds of marriage—and break up affairs—by any means necessary. Offering strikingly intimate access to private dramas usually hidden behind closed doors, Elizabeth Lo’s spellbinding documentary follows a real, unfolding case of infidelity as Teacher Wang attempts to bring a couple back from the edge of crisis. Their story shifts our sympathies between husband, wife, and mistress to explore the ways emotion, pragmatism and cultural norms collide to shape romantic relationships in contemporary China."
   },
   {
     "id": "happyend",
@@ -508,15 +504,19 @@
     "description": "Directed by Madeleine Hunt-Ehrlich • 2024 • United States\nStarring Zita Hanrot, Motell Gyn Foster, Josué Gutierrez\n\nA sumptuous, spellbinding anti-biopic as provocative and elusive as its subject, this hypnotic journey through the world of Caribbean surrealist writer and anticolonial activist Suzanne Césaire daringly deconstructs the process of bringing an actually lived life to film. In the sleepy palm groves of the tropics, a small group of filmmakers—including an actor and new mother (Zita Hanrot) haunted by voices as she embarks on inhabiting the title role—stage scenes from the enigmatic intellectual’s life, exploring her youth in Martinique, literary legacy, and relationship with her husband, the writer and politician Aimé Césaire. Inspired by the structures of Suzanne Césaire’s own writing, which often took a colonial convention and unraveled it, THE BALLAD OF SUZANNE CÉSAIRE plants us firmly in the darkness and desire of its subject while acknowledging the impossibility of resuscitating a legacy partially lost to time."
   },
   {
-    "id": "the-love-that-remains",
-    "title": "The Love That Remains",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e6f68865-4168-4863-bd7d-395e97e87215.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-love-that-remains",
+    "id": "conbody-vs-everybody",
+    "title": "Conbody Vs Everybody",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0f43015-6d3f-41c6-b67a-387af8c9105a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/conbody-vs-everybody",
     "filmIds": [
-      "the-love-that-remains",
-      "hlynur-palmason-on-the-love-that-remains"
+      "debra-granik-interview",
+      "conbody-vs-everybody-episode-1",
+      "conbody-vs-everybody-episode-2",
+      "conbody-vs-everybody-episode-3",
+      "conbody-vs-everybody-episode-4",
+      "conbody-vs-everybody-episode-5"
     ],
-    "description": "COMING TO THE CRITERION CHANNEL ON MAY 12 AT 8 P.M. ET\n\nDirected by Hlynur Pálmason • 2025 • Iceland, Denmark, France\nStarring Saga Garðarsdóttir, Sverrir Gudnason, Ída Mekkín Hlynsdóttir\n\nSuffused with tenderness and deadpan humor, THE LOVE THAT REMAINS asks: What happens when a relationship ends but the bonds of caring endure? Moving unpredictably through four seasons in the lives of a separating couple—artist Anna (Saga Garðarsdóttir) and fisherman Magnus (Sverrir Guðnason)—and their three children, Hlynur Pálmason’s fourth feature is as vibrantly attuned to the ebb and flow of domestic routine as it is to the stark, spectacular landscape of coastal Iceland. Juggling intimate scenes of adults at work and children at play with wild intrusions of surrealism, this strange and poignant film is a rare study of family life in all its beauty and confusion."
+    "description": "Filmed over eight years, this five-part documentary series from director Debra Granik combines a remarkable, against-the-odds story of grit, survival, and redemption with an incisive look at the harms of America’s prison industrial complex. After years in and out of prison, former drug dealer turned entrepreneur Coss Marte is determined to take control of his future by building Conbody, a New York City gym with a unique social purpose: to employ formerly incarcerated people like himself in an attempt to combat the high rate of recidivism. As Marte wages an uphill battle against the stigma of incarceration and the realities of a relentlessly gentrifying city where second chances are hard to come by, what emerges is both an inspiring portrait of a man on a mission and a powerful examination of a system that continues to punish people even after they have served their time."
   },
   {
     "id": "magellan",
@@ -852,24 +852,14 @@
     "description": "Criterion Collection Edition #597\n\nLena Dunham got her start making YouTube videos, but she emerged as a major talent thanks to the breakthrough success of this exceptionally sharp comedy, which garnered the twenty-four-year-old writer-director-actor comparisons to the likes of Woody Allen. Dunham plays Aura, a recent college graduate who returns to New York and moves back in with her mother and sister (played by the filmmaker’s real-life mother and sister). Though Aura is gripped by stasis and confusion about her future, Dunham locates endless sources of refreshing humor in her plight. As painfully confessional as it is amusing, TINY FURNITURE is an authentic, incisive portrait of a young woman at a crossroads."
   },
   {
-    "id": "the-apartment",
-    "title": "The Apartment",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0f6aa8d6-9baf-42c2-a0a0-580d78b626e6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-apartment",
+    "id": "against-all-odds",
+    "title": "Against All Odds",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f8b8dd98-76a0-4be0-9165-7d6bdd6d68be.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/against-all-odds",
     "filmIds": [
-      "the-apartment"
+      "against-all-odds"
     ],
-    "description": "Directed by Billy Wilder • 1960 • United States\nStarring Jack Lemmon, Shirley MacLaine, Fred MacMurray\n\nJack Lemmon stars in one of Billy Wilder’s most beloved films as C. C. Baxter, a company man anxious to please his superiors at the New York insurance firm where he works—enough to let his bosses use his apartment for their affairs. Smitten with one of the building’s elevator operators (Shirley MacLaine), Baxter soon finds himself embroiled in a love triangle with dangerous consequences. Winner of five Academy Awards, including Best Picture and Best Director, THE APARTMENT expertly balances mirth and melancholy, finding romance amid the loneliness of corporate life in midcentury Manhattan."
-  },
-  {
-    "id": "cat-people-1",
-    "title": "Cat People",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9ee4e472-9174-4137-8d8d-c47df5484240.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/cat-people-1",
-    "filmIds": [
-      "cat-people-1"
-    ],
-    "description": "Directed by Paul Schrader • 1982 • United States\nStarring Nastassja Kinski, Malcolm McDowell, John Heard\n\nPaul Schrader’s kinky-stylish reworking of the 1942 Val Lewton classic transfers the action to a voodoo-spooky New Orleans, adds an incestuous undercurrent, and ups the sex and gore. Nastassja Kinski is stunning as a young woman with a unique problem: she’s the descendant of a race of people whose erotic desires turn them into man-eating leopards. John Bailey’s vivid cinematography and a synthy Giorgio Moroder score (with David Bowie on vocals) heighten the air of psychosexual unease."
+    "description": "Directed by Taylor Hackford • 1984 • United States\nStarring Jeff Bridges, Rachel Ward, James Woods\n\nBased on the same novel that inspired Jacques Tourneur’s dark noir diamond OUT OF THE PAST, this steamy update infuses the classic story of betrayal, murder, and doomed love with a vivid sensuality. Terry Brogan (Jeff Bridges), a cynical former football star, is hired to find Jessie Wyler (Rachel Ward), the runaway mistress of ruthless LA nightclub owner Jake Wise (James Woods). But trouble brews when he tracks down and falls in love with the beautiful Jessie on a Mexican island—and Jake dispatches his henchman to bring the lovers back."
   },
   {
     "id": "clockwatchers",
@@ -883,16 +873,6 @@
     "description": "Directed by Jill Sprecher • 1997 • United States\nStarring Toni Collette, Parker Posey, Lisa Kudrow\n\nSomething of a female-driven precursor to OFFICE SPACE, Jill Sprecher’s lost indie gem stars Parker Posey, Lisa Kudrow, Toni Collette, and Alanna Ubach as a quartet of temp workers who bond over the soul-sucking tedium of their jobs in a corporate-hell credit bureau. When a spate of office robberies cast suspicion on them, their camaraderie begins to crack under the pressures of the capitalist rat race. Costarring a perfectly cast Bob Balaban as a stressed-out middle manager, this deadpan time capsule of late-nineties corporate culture brilliantly captures the dead-eyed malaise and mind-numbing, muzak-set absurdity of life inside the cubicle."
   },
   {
-    "id": "wall-street",
-    "title": "Wall Street",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/52088638-f0b3-4dcb-95b3-1f520d439555.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/wall-street",
-    "filmIds": [
-      "wall-street"
-    ],
-    "description": "Directed by Oliver Stone • 1987 • United States\nStarring Michael Douglas, Charlie Sheen, Martin Sheen\n\nThe ultimate portrait of ’80s corporate excess, Oliver Stone’s hard-hitting, brilliantly entertaining look at the moral emptiness behind the era’s “greed is good” mentality features an iconically sleazy performance from an Academy Award–winning Michael Douglas as Gordon Gekko, a ruthless Wall Street power player whose high-rolling lifestyle makes him an idol to Bud Fox (Charlie Sheen), an ambitious up-and-coming broker from a working-class background. Desperate to win Gekko’s approval, Fox engages him in a shady insider trading deal—selling his soul in a Faustian bargain that will have shattering personal consequences."
-  },
-  {
     "id": "the-thing",
     "title": "The Thing",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/05f1ebf2-c29f-4628-8109-025d378c3907.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -903,14 +883,24 @@
     "description": "Directed by John Carpenter • 1982 • United States\nStarring Kurt Russell, Wilford Brimley, T. K. Carter\n\nJohn Carpenter’s terrifying remake of THE THING FROM ANOTHER WORLD boasts some of the most impressively gory special effects in all of horror cinema. When scientists at an Antarctic research station discover an extraterrestrial spacecraft under the thick ice, they thaw out the alien body found aboard. What they don’t know is that the strange creature can assume any human form, and before long the scientists can’t distinguish who’s real and who’s a deadly alien threat. Kurt Russell leads the battle against the terrifying intruder in this rare remake to have become a classic in its own right."
   },
   {
-    "id": "against-all-odds",
-    "title": "Against All Odds",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f8b8dd98-76a0-4be0-9165-7d6bdd6d68be.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/against-all-odds",
+    "id": "wall-street",
+    "title": "Wall Street",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/52088638-f0b3-4dcb-95b3-1f520d439555.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/wall-street",
     "filmIds": [
-      "against-all-odds"
+      "wall-street"
     ],
-    "description": "Directed by Taylor Hackford • 1984 • United States\nStarring Jeff Bridges, Rachel Ward, James Woods\n\nBased on the same novel that inspired Jacques Tourneur’s dark noir diamond OUT OF THE PAST, this steamy update infuses the classic story of betrayal, murder, and doomed love with a vivid sensuality. Terry Brogan (Jeff Bridges), a cynical former football star, is hired to find Jessie Wyler (Rachel Ward), the runaway mistress of ruthless LA nightclub owner Jake Wise (James Woods). But trouble brews when he tracks down and falls in love with the beautiful Jessie on a Mexican island—and Jake dispatches his henchman to bring the lovers back."
+    "description": "Directed by Oliver Stone • 1987 • United States\nStarring Michael Douglas, Charlie Sheen, Martin Sheen\n\nThe ultimate portrait of ’80s corporate excess, Oliver Stone’s hard-hitting, brilliantly entertaining look at the moral emptiness behind the era’s “greed is good” mentality features an iconically sleazy performance from an Academy Award–winning Michael Douglas as Gordon Gekko, a ruthless Wall Street power player whose high-rolling lifestyle makes him an idol to Bud Fox (Charlie Sheen), an ambitious up-and-coming broker from a working-class background. Desperate to win Gekko’s approval, Fox engages him in a shady insider trading deal—selling his soul in a Faustian bargain that will have shattering personal consequences."
+  },
+  {
+    "id": "the-apartment",
+    "title": "The Apartment",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0f6aa8d6-9baf-42c2-a0a0-580d78b626e6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-apartment",
+    "filmIds": [
+      "the-apartment"
+    ],
+    "description": "Directed by Billy Wilder • 1960 • United States\nStarring Jack Lemmon, Shirley MacLaine, Fred MacMurray\n\nJack Lemmon stars in one of Billy Wilder’s most beloved films as C. C. Baxter, a company man anxious to please his superiors at the New York insurance firm where he works—enough to let his bosses use his apartment for their affairs. Smitten with one of the building’s elevator operators (Shirley MacLaine), Baxter soon finds himself embroiled in a love triangle with dangerous consequences. Winner of five Academy Awards, including Best Picture and Best Director, THE APARTMENT expertly balances mirth and melancholy, finding romance amid the loneliness of corporate life in midcentury Manhattan."
   },
   {
     "id": "out-of-the-past",
@@ -921,6 +911,16 @@
       "out-of-the-past"
     ],
     "description": "Directed by Jacques Tourneur • 1947 • United States\nStarring Robert Mitchum, Jane Greer, Kirk Douglas\n\nEverything you want in a film noir you’ll find in OUT OF THE PAST: a tenacious detective (Robert Mitchum) spinning his wheels to make good, a drop-dead beauty (Jane Greer) up to no good, and a moneyed mobster (Kirk Douglas) with a shark’s grin, plus double crosses, fall guys, shadowy rooms, and bleak souls. Mitchum solidified his tough-guy persona in this archetypal film noir directed with memorable style by Jacques Tourneur. He plays Jeff Bailey, a one-time private investigator walking the straight and narrow of small-town life . . . until an acquaintance from his past pulls him back into the troubles he’d left behind."
+  },
+  {
+    "id": "before-the-devil-knows-you-re-dead",
+    "title": "Before The Devil Knows You’re Dead",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/181587ff-6de1-4e91-90a6-e75bc6e93ea4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/before-the-devil-knows-you-re-dead",
+    "filmIds": [
+      "before-the-devil-knows-you-re-dead"
+    ],
+    "description": "Directed by Sidney Lumet • 2007 • United States\nStarring Philip Seymour Hoffman, Marisa Tomei, Ethan Hawke\n\nRenowned director Sidney Lumet brought five decades of cinematic mastery to bear in his final film, a riveting thriller that achieves the weight of Greek tragedy. A typically virtuosic Philip Seymour Hoffman stars as Andy, an overextended payroll executive who lures his younger brother, Hank (Ethan Hawke), into a larcenous scheme: the pair will rob a suburban mom-and-pop jewelry store that appears to be the quintessential easy target. The problem is, the store owners are Andy and Hank’s real mom and pop, and when the seemingly perfect crime goes awry, the damage sends them hurtling toward a shattering clash that may obliterate their already precarious family."
   },
   {
     "id": "celebrate-black-history",
@@ -1046,6 +1046,16 @@
       "l-argent"
     ],
     "description": "A singular, iconoclastic artist, Robert Bresson left behind an astonishing body of work, defined by the search for what he called “not beautiful images, but necessary images.” In a long, visionary career that began in the 1940s and ended in the 1980s, he continually refined the strict precision of his famously ascetic style—abolishing psychology, professional actors, and ornate camera work, and instead concentrating on the exactingly choreographed movements of his “models” (as he called his performers) and the anguished solitude of his martyred characters. In indelible visions of suffering and salvation like PICKPOCKET, AU HASARD BALTHAZAR, and MOUCHETTE, he stripped cinema to its essence to reveal nothing less than the very soul of his subjects."
+  },
+  {
+    "id": "cat-people-1",
+    "title": "Cat People",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9ee4e472-9174-4137-8d8d-c47df5484240.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/cat-people-1",
+    "filmIds": [
+      "cat-people-1"
+    ],
+    "description": "Directed by Paul Schrader • 1982 • United States\nStarring Nastassja Kinski, Malcolm McDowell, John Heard\n\nPaul Schrader’s kinky-stylish reworking of the 1942 Val Lewton classic transfers the action to a voodoo-spooky New Orleans, adds an incestuous undercurrent, and ups the sex and gore. Nastassja Kinski is stunning as a young woman with a unique problem: she’s the descendant of a race of people whose erotic desires turn them into man-eating leopards. John Bailey’s vivid cinematography and a synthy Giorgio Moroder score (with David Bowie on vocals) heighten the air of psychosexual unease."
   },
   {
     "id": "the-thing-from-another-world",
@@ -3015,66 +3025,120 @@
     "description": "Directed by William A. Wellman • 1937 • United States\nStarring Fredric March, Carole Lombard, Charles Winninger\n\nHe’s an unscrupulous newspaperman eager to exploit the story of a young woman’s death by radium poisoning. She knows she’s not really dying but can’t pass up a free trip to New York with all the trimmings. Carole Lombard and Fredric March costar in this black-comedy classic nimbly directed by William A. Wellman. Taking caustic aim at how tabloid journalism feeds the morbid curiosity of a scandal-hungry public, Ben Hecht’s sharply satirical screenplay remains as fresh and biting as ever."
   },
   {
-    "id": "ring",
-    "title": "Ring",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b25afcb7-ba0a-40aa-ba68-880262a17922.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/ring",
+    "id": "lan-yu",
+    "title": "Lan Yu",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/90973413-65e6-4b4c-9aeb-dc7d6b14f02a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/lan-yu",
     "filmIds": [
-      "ring"
+      "lan-yu",
+      "yang-yin-gender-in-chinese-cinema"
     ],
-    "description": "Directed by Hideo Nakata • 1998 • Japan\nStarring Nanako Matsushima, Hiroyuki Sanada, Miki Nakatani\n\nThe film that launched the craze for J-horror in the West, director Hideo Nakata’s international sensation melded traditional Japanese folklore with contemporary anxieties about the spread of technology for a chilling experience unlike anything that had come before. A group of teenage friends are found dead, their bodies grotesquely contorted, their faces twisted in terror. Reiko (Nanako Matsushima), a journalist and the aunt of one of the victims, sets out to investigate the shocking phenomenon, and in the process uncovers a creepy urban legend about a supposedly cursed videotape, the contents of which cause anyone who views it to die within a week—unless they can persuade someone else to watch it, and, in so doing, pass on the curse."
+    "description": "Directed by Stanley Kwan • 2001 • Hong Kong, China\nStarring Liu Ye, Hu Jun, Huatong Li\n\nFilmed in secret in Beijing, this tender gay romance by Stanley Kwan combines the timeless conventions of classic melodrama with a radically frank depiction of queer intimacy as it traces, over the course of years, the relationship between a wealthy businessman (Hu Jun) and a young architecture student (Liu Ye) as they come together, fall apart over the former’s fear of commitment, and gradually realize that they are fated to be together. Kwan’s expressive visuals and the sensitive lead performances yield a daring, deeply affecting love story that doubles as a haunting reflection on life in post-Mao China in the wake of the Tiananmen Square massacre."
   },
   {
-    "id": "personal-shopper",
-    "title": "Personal Shopper",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/de853b44-b655-4ca5-a8be-1e6f7d6cfb29.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/personal-shopper",
+    "id": "xala",
+    "title": "Xala",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9681bb6b-108f-4dbe-bfff-f6fb46a123c8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/xala",
     "filmIds": [
-      "personal-shopper",
-      "olivier-assayas-on-personal-shopper",
-      "personal-shopper-cannes-film-festival-2016"
+      "xala"
     ],
-    "description": "Directed by Olivier Assayas • 2016 • France\nStarring Kristen Stewart, Lars Eidinger, Sigrid Bouaziz\n\nWith this intimate supernatural drama, the celebrated French filmmaker Olivier Assayas conjures a melancholy ghost story set in the world of celebrity and haute couture. Starring Kristen Stewart, whose performance in Assayas’s CLOUDS OF SILS MARIA made her the first American actress to win a César Award, this evocative character study tells the story of a young fashion assistant and spiritual medium who is living in Paris and searching for signs of an afterlife following the sudden death of her twin brother. A stirring depiction of grief in the form of a psychological thriller, PERSONAL SHOPPER—which won Assayas the best director award at Cannes—is a chilling meditation on modern modes of communication and the way we mourn those we love."
+    "description": "Directed by Ousmane Sembène • 1975 • Senegal\nStarring Thierno Leye, Myriam Niang, Seune Samb\n\nAn adaptation of Ousmane Sembène’s own 1973 novel, XALA is a hilarious, caustic satire of political corruption under an inept patriarchy. On the night of his wedding to his third bride, government official El Hadji (Thierno Leye) is rendered impotent and begins to suspect that one of his other wives has placed a curse on him. After seeking a cure from a local marabout, El Hadji must face the possibility that he deserves the infliction for his part in embezzling public funds and for helping to keep Senegal under French control. Adeptly combining elements of African folklore and popular cinema, Sembène indicts the hubris, entitlement, and opportunism of male authority figures."
   },
   {
-    "id": "adieu-philippine",
-    "title": "Adieu Philippine",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f65784dc-bc0f-4ed7-922e-68678d10c066.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/adieu-philippine",
+    "id": "werckmeister-harmonies",
+    "title": "Werckmeister Harmonies",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d1fc01cf-313f-4bba-a642-ebb29f8dff3c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/werckmeister-harmonies",
     "filmIds": [
-      "adieu-philippine"
+      "werckmeister-harmonies",
+      "bela-tarr-on-werckmeister-harmonies",
+      "family-nest"
     ],
-    "description": "Directed by Jacques Rozier • 1962 • France\nStarring Jean-Claude Aimini, Daniel Descamps, Stefania Sabatini\n\nIn his bold yet playful feature debut—an overlooked gem of the French New Wave—Jacques Rozier satirizes several major cultural currents of early-sixties France: political myopia, romantic escapism, and commercial corruption. Young Michel (Jean-Claude Aimini) works as a camera technician for a television studio, where he meets two would-be actresses, Liliane (Yveline Céry) and Juliette (Stefania Sabatini). The duo’s demeaning work in advertising allows them to connect Michel with an unscrupulous director (Vittorio Caprioli), who subsequently stiffs him on a job. Fed up with their exploitative industry, Michel, Liliane, and Juliette head to Corsica for a holiday—and to track down the director—all while a developing love triangle strains the girls’ friendship. With confidence and panache, Rozier expertly employs documentary-style shooting, improvisational acting (among a mostly nonprofessional cast), and kinetic montage sequences to capture the disparity between blithe youth and the societal pressures—especially Michel’s imminent military service in Algeria—that threaten its innocence."
+    "description": "Directed by Béla Tarr and Ágnes Hranitzky • 2000 • Hungary\nStarring Lars Rudolph, Peter Fitz, Hanna Schygulla\n\nThis mesmeric parable of societal collapse is an enigma of transcendent visual, philosophical, and mystical resonance. Adapted from a novel by László Krasznahorkai, WERCKMEISTER HARMONIES unfolds in an unknown time in an unnamed village, where, one day, a mysterious circus—complete with an enormous stuffed whale and a shadowy, demagogue-like figure known as the Prince—arrives and appears to awaken a kind of madness in the citizens that builds inexorably toward violence. In thirty-nine hypnotic long takes engraved in ghostly black and white, auteur Béla Tarr and codirector-editor Ágnes Hranitzky conjure an apocalyptic vision of dreamlike dread and fathomless beauty."
   },
   {
-    "id": "look-back-in-anger",
-    "title": "Look Back In Anger",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/95ae2f3c-2056-4540-acaf-633660dd72a1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/look-back-in-anger",
+    "id": "riki-oh-the-story-of-ricky",
+    "title": "Riki-oh: The Story Of Ricky",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0956c17d-3c70-4756-a3f3-0eae3130cfd0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/riki-oh-the-story-of-ricky",
     "filmIds": [
-      "look-back-in-anger"
+      "riki-oh-the-story-of-ricky",
+      "riki-oh-english-dub"
     ],
-    "description": "Directed by Tony Richardson • 1959 • United Kingdom\nStarring Richard Burton, Claire Bloom, Mary Ure\n\nBased on the smash-hit play by John Osborne that inaugurated Britain’s “angry young men” literary movement, this touchstone of the British New Wave features a searing performance from Richard Burton as Jimmy Porter, a university graduate and the husband of a woman of some means, who has rejected middle-class dreams and now operates a candy stall at the local flea market. During their two year marriage, Alison (Mary Ure) has carried the full brunt of Jimmy’s anger and frustration, as well as his intense love. When Alison’s friend Helena Charles (Claire Bloom), an actress, moves in with the couple, she becomes a witness to their turbulent relationship and a catalyst for further unrest within the household."
+    "description": "Directed by Lam Nai-choi • 1991 • Hong Kong\nStarring Fan Siu-Wong, Gloria Yip, Yukari Oshima\n\nThe ultimate Hong Kong black-comic gorefest, this live-action adaptation of the cult manga is a blood feast of entrail-wreathed splatter and literally eye-popping ultraviolence. After he’s sentenced to a corrupt private prison for taking revenge on the shadowy gangsters who killed his girlfriend, the seemingly indestructible Ricky Ho (Fan Siu-wong) must fight his way out past a litany of enemies and unsavory figures using his superhuman ability to punch through any object (including the human body). Channeling the kinetic, hyperstylized spirit of the manga source material, writer-director Lam Nai-choi delivers a blast of pure cinema so outrageously over the top it’s nearly avant-garde."
   },
   {
-    "id": "the-cassandra-cat",
-    "title": "The Cassandra Cat",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/cd0f5c9a-2dd3-47a6-9ea5-38f5fc82ba73.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/the-cassandra-cat",
+    "id": "lucio-flavio",
+    "title": "Lúcio Flávio",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ec1b9ad2-b019-4004-958c-92fde6891ad8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/lucio-flavio",
     "filmIds": [
-      "the-cassandra-cat"
+      "lucio-flavio"
     ],
-    "description": "Directed by Vojtěch Jasný • 1963 • Czechoslovakia\nStarring Jan Werich, Emília Vášáryová, Vlastimil Brodský\n\nIn this modern-day fairy tale and rediscovered Czech New Wave cult classic, an ordinary Bohemian village is visited by a magician (Jan Werich), his beautiful assistant (Emília Vásáryová), and a magic cat with the power to reveal people in colors that indicate their true natures: yellow for the unfaithful, purple for liars, red for lovers like Robert (Vlastimil Brodský), a bighearted schoolteacher whose independence of thought places him at odds with the town’s conservative authorities. When the cat reveals the villagers as they really are and the town descends into whimsical chaos, humorless school principal Karel (Jiří Sovák) vows to hunt down the feline and put an end to its anarchic reign. Ahead of its time in experimenting with stylized color and extended political metaphor, THE CASSANDRA CAT is director Vojtěch Jasný’s triumphant excursion into fantasy as a mirror of real-life social divisions and hypocrisies."
+    "description": "Directed by Héctor Babenco • 1977 • Brazil\nStarring Reginaldo Faria, Ana Maria Magalhães, Paulo César Peréio\n\nAn enormous box-office success in Brazil, Héctor Babenco’s second feature electrified audiences with its gritty, gut-punching evocation of a corrupt world where the line between criminals and law enforcement has become virtually invisible. Based on the true story of an infamous bandit, LÚCIO FLÁVIO stars Reginaldo Faria as the titular outlaw, whose charisma and audacious bank-robbing exploits make him a media sensation. Throughout, Babenco entwines Flávio’s story with the operations of Brazil’s notorious Esquadrão da Morte (Death Squad), revealing the systemic violence operating on all levels of society."
   },
   {
-    "id": "perfumed-nightmare",
-    "title": "Perfumed Nightmare",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/431f4c56-41ee-45c5-ac65-25856d636b66.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/perfumed-nightmare",
+    "id": "joan-the-maid",
+    "title": "Joan The Maid",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9fbda758-673d-4c36-b7a2-75c3adfa7517.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/joan-the-maid",
     "filmIds": [
-      "perfumed-nightmare"
+      "joan-the-maid-i-the-battles",
+      "joan-the-maid-ii-the-prisons"
     ],
-    "description": "Directed by Kidlat Tahimik • 1977 • Philippines Starring Kidlat Tahimik, Mang Fely, Dolores Santamaria\n\nAcclaimed by Werner Herzog as “one of the most original and poetic works of cinema made anywhere in the seventies,” this exhilaratingly imaginative DIY landmark of Filipino cinema stars director Kidlat Tahimik as a starry-eyed jitney driver obsessed with American culture (particularly its space program) who gets a crash course in the failures of globalization during a sojourn in Paris. Shot through with offbeat wit and invention, PERFUMED NIGHTMARE wraps a cogent critique of Western capitalism in the guise of a surreal, satiric picaresque."
+    "description": "Jacques Rivette puts his own inimitable stamp on the immortal story of Joan of Arc with this sprawling, two-part study, which brings a new perspective to her much-mythologized life by forgoing lofty spirituality in favor of a strikingly earthy, grounded approach. As Joan, an extraordinary Sandrine Bonnaire gets at the reality behind the legend, showing the matter-of-fact courage and vulnerability of a teenage girl thrust into extraordinary circumstances as she leads French forces into battle against the English only to find herself betrayed and accused of heresy."
+  },
+  {
+    "id": "la-marge",
+    "title": "La Marge",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5e99263f-b020-4cd4-a9f1-9737f99357fd.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/la-marge",
+    "filmIds": [
+      "la-marge"
+    ],
+    "description": "Directed by Walerian Borowczyk • 1976 • France\nStarring Sylvia Kristel, Joe Dallesandro, André Falcon\n\nOne of director Walerian Borowczyk’s most haunting and psychologically complex films, LA MARGE (“The Margin”) stars Joe Dallesandro as Sigismond, a happily married businessman who embarks on an intense affair with a sex worker (Sylvia Kristel of EMMANUELLE fame) while on a business trip to Paris. When he receives devastating news from back home, Sigismond throws himself further into a sordid world of sex, grief, and obsession. Borowczyk conjures gorgeous, dreamlike images set to an evocative soundtrack that includes Elton John, Pink Floyd, 10cc, and Chopin."
+  },
+  {
+    "id": "golden-balls",
+    "title": "Golden Balls",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/721bdeb1-a5af-4fcf-8278-06be4867090c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/golden-balls",
+    "filmIds": [
+      "golden-balls"
+    ],
+    "description": "Directed by Bigas Luna • 1993 • Spain, Italy, France\nStarring Javier Bardem, Maribel Verdú, Benicio Del Toro\n\nBigas Luna’s follow-up to his international hit JAMÓN JAMÓN is a deliriously libidinous, scathingly satirical takedown of toxic machismo and capitalist excess. A superbly earthy Javier Bardem stars as Benito González, the unabashedly tacky, supremely cocky womanizer and wannabe industrialist whose dreams of building an enormous skyscraper—an appropriately phallic ode to his monumental ego—come crashing down spectacularly. Luna cranks up the sexually supercharged hothouse atmosphere while gleefully cutting the “great man” myth down to size."
+  },
+  {
+    "id": "the-land",
+    "title": "The Land",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/77929fb4-b0f1-4d1e-b3fb-3bbc33d4376b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/the-land",
+    "filmIds": [
+      "the-land"
+    ],
+    "description": "Directed by Youssef Chahine • 1969 • Egypt\nStarring Mahmoud el-Meliguy, Ezzat el-Alaili, Nagwa Ibrahim\n\nAdapted from a classic novel by Abd al-Rahman Sharqawi, this howl of rage against social injustice is one of director Youssef Chahine’s most influential works, crowned by a career-best performance from its star Mahmoud el-Meliguy. Set in the early 1930s, THE LAND urgently portrays the struggle of rural peasants whose livelihood is threatened by a greedy landlord’s scheme to limit their water supply, showing both the power and limitations of resistance in the face of class exploitation. Composed in vivid, sensuous images and shot through with revolutionary fervor, this landmark of Arab cinema—the inaugural entry in Chahine’s so-dubbed Trilogy of Defeat—is a work of both immense humanism and searing political conviction, informed by the burning sensation of collective failure in the wake of the Six-Day War."
+  },
+  {
+    "id": "anatomy-of-hell",
+    "title": "Anatomy Of Hell",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/79441dcd-d6e3-4e56-b218-e307f9fb1ffc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/anatomy-of-hell",
+    "filmIds": [
+      "anatomy-of-hell"
+    ],
+    "description": "Directed by Catherine Breillat • 2004 • France\nStarring Amira Casar, Rocco Siffredi\n\nAfter attempting suicide, a young woman (Amira Casar) makes a startling proposition to the man (Rocco Siffredi) who rescued her: she will pay him to watch her naked body over the course of four nights as long as he provides “impartial” commentary about what he sees. Thus ensues ANATOMY OF HELL, one of the most controversial films of Catherine Breillat’s career—a singularly daring meditation on the pleasures and horrors of the flesh. Buoyed by the two leads’ fearless performances, HELL is as much a philosophical treatise on the hidden traumas of sexuality as it is an increasingly unsettling battle of the sexes, with Breillat using a hushed chamber-play setup to show the spectator no quarter throughout the transgressive proceedings. The result is like nothing else, even within the director’s audacious oeuvre: her deepest expression of anguish over the unspeakable ecstasies and degradations of the body erotic."
+  },
+  {
+    "id": "les-portes-de-la-nuit",
+    "title": "Les Portes De La Nuit",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f57affcc-31d8-461e-8490-1a470626a5ec.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/les-portes-de-la-nuit",
+    "filmIds": [
+      "les-portes-de-la-nuit",
+      "imogen-sara-smith-on-french-poetic-realism"
+    ],
+    "description": "Directed by Marcel Carné • 1946 • France\nStarring Yves Montand, Pierre Brasseur, Serge Reggiani\n\nThe last of the celebrated collaborations between director Marcel Carné and screenwriter Jacques Prévert (CHILDREN OF PARADISE) unfolds in a dreamily beautiful vision of a wintry, nocturnal Paris shortly after the city’s postwar liberation. It’s there that Jean Diego (Yves Montand in one of his first film roles), a former member of the French underground Resistance, has an encounter with destiny as he meets a long-lost comrade, villains of the war, a prophetic tramp, and a beautiful woman who will draw him into an inexorable tragedy. A richly allegorical evocation of a country reckoning with the guilt and national trauma of World War II and the occupation, LES PORTES DE LA NUIT (“The Gates of the Night”) was a tough sell for postwar audiences looking for escapism, but it can now be appreciated for both its haunting atmosphere and unique fusion of poetic fantasy and bitter reality."
   },
   {
     "id": "ceddo",
@@ -3085,55 +3149,6 @@
       "ceddo"
     ],
     "description": "Directed by Ousmane Sembène • 1977 • Senegal\nStarring Mamadou Dioumé, Ousmane Sembène, Tabata Ndiaye\n\nIn precolonial Senegal, members of the Ceddo (or “outsiders”) kidnap Princess Dior Yacine (Tabata Ndiaye) after her father, the king, pledges loyalty to an ascendant Islamic faction that plans to convert the entire clan to its faith. Attempts to recapture her fail, provoking further division and eventual war between the animistic Ceddo and the fundamentalist Muslims, with Christian missionaries and slave traders from Europe also playing a role in the conflict. Banned in Senegal upon its release, CEDDO is an ambitious, multilayered epic that explores the combustible tensions among ancient tradition, religious colonization, political expediency, and individual freedom."
-  },
-  {
-    "id": "van-gogh",
-    "title": "Van Gogh",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/bf4c3b52-bb16-43a1-bfe5-224d0def2810.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/van-gogh",
-    "filmIds": [
-      "van-gogh"
-    ],
-    "description": "Directed by Maurice Pialat • 1991 • France\nStarring Jacques Dutronc, Alexandra London, Bernard Le Coq\n\nMaurice Pialat’s visually stunning penultimate work is an epic, masterful dramatization of the final months in the life of the troubled painter (played by musician Jacques Dutronc in a César-winning performance) that focuses less on his creative genius and more on his complicated personal relationships with those in his orbit, including his brother Theo (Bernard Le Coq), doctor Paul Gachet (Gérard Séty), and the physician’s daughter Marguerite (Alexandra London) who becomes Vincent’s lover. Pialat’s sober, defiantly unsensational approach illuminates the human side of an artist whose legend has often obscured the complex, nuanced reality of his life."
-  },
-  {
-    "id": "when-a-woman-ascends-the-stairs",
-    "title": "When A Woman Ascends The Stairs",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/120be8d0-4386-490b-8fbf-9183ab29c22d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/when-a-woman-ascends-the-stairs",
-    "filmIds": [
-      "when-a-woman-ascends-the-stairs",
-      "when-a-woman-ascends-the-stairs-commentary",
-      "imogen-sara-smith-on-mikio-naruse",
-      "tatsuya-nakadai-on-when-a-woman-ascends-the-stairs"
-    ],
-    "description": "Directed by Mikio Naruse • 1960 • Japan\nStarring Hideko Takamine, Masayuki Mori, Reiko Dan\n\nWHEN A WOMAN ASCENDS THE STAIRS might be Japanese filmmaker Mikio Naruse’s finest hour, a delicate, devastating study of a woman, Keiko (played heartbreakingly by Hideko Takamine), who works as a bar hostess in Tokyo’s very modern postwar Ginza district, who entertains businessmen after work. Sly, resourceful, but trapped, Keiko comes to embody the conflicts and struggles of a woman trying to establish her independence in a male-dominated society. WHEN A WOMAN ASCENDS THE STAIRS shows the largely unsung yet widely beloved master Naruse at his most socially exacting and profoundly emotional."
-  },
-  {
-    "id": "elvira-madigan",
-    "title": "Elvira Madigan",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b9a1a711-7ccd-4a0d-ab40-558cb6b47cea.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/elvira-madigan",
-    "filmIds": [
-      "elvira-madigan",
-      "elvira-madigan-behind-the-scenes",
-      "bo-widerberg-on-filmrutan-1967",
-      "jorgen-persson-on-bo-widerberg"
-    ],
-    "description": "Directed by Bo Widerberg • 1967 • Sweden\nStarring Pia Degermark, Thommy Berggren, Lennart Malmer\n\nBo Widerberg reached new heights of visual lyricism with this sublime retelling of a real-life nineteenth-century romantic tragedy. Bound by their all-consuming desire, a young circus tightrope walker (Pia Degermark, winner of the Cannes Best Actress prize) and a lieutenant (Tommy Berggren) with a wife and children forsake everything to be together and escape to the countryside—only to see their lovers’ idyll gradually give way to poverty and desperation. With its painterly, sun-dappled images and indelible use of Mozart’s Piano Concerto no. 21, this 1960s art-house sensation is the most ravishing expression of Widerberg’s recurring theme of the tension between individual freedom and social responsibility."
-  },
-  {
-    "id": "eric-rohmer-s-tales-of-the-four-seasons",
-    "title": "Eric Rohmer’s Tales Of The Four Seasons",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9a47d960-fe5c-44c1-9b4f-cad8bc9c65a3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/eric-rohmer-s-tales-of-the-four-seasons",
-    "filmIds": [
-      "a-tale-of-springtime",
-      "a-tale-of-winter",
-      "a-tale-of-summer",
-      "a-tale-of-autumn"
-    ],
-    "description": "The seasons may change, but the follies of the heart are constant in this ineffably lovely quartet of films by Eric Rohmer, one of cinema’s most perceptive chroniclers of the pangs and perils of romance. Set throughout France, Tales of the Four Seasons is a cycle to stand alongside the director’s two earlier acclaimed film series, Six Moral Tales and Comedies and Proverbs. By turns comic and melancholic, breezy and richly philosophical, these bittersweet tales of love, longing, and the inevitable misunderstandings that shape human relationships probe the most complex of emotions with the utmost grace."
   },
   {
     "id": "kalpana",
@@ -3347,53 +3362,6 @@
     "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection."
   },
   {
-    "id": "hiroshima-mon-amour",
-    "title": "Hiroshima Mon Amour",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/39f58618-c676-4c3b-b4f8-9240e98da13a-dff65c3c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/hiroshima-mon-amour",
-    "filmIds": [
-      "hiroshima-mon-amour",
-      "hiroshima-mon-amour-commentary",
-      "alain-resnais-on-hiroshima-mon-amour",
-      "alain-resnais-on-hiroshima-mon-amour-1",
-      "ari-aster-on-hiroshima-mon-amour",
-      "emmanuelle-riva-on-hiroshima-mon-amour",
-      "emmanuelle-riva-on-hiroshima-mon-amour-1",
-      "francois-thomas-on-hiroshima-mon-amour",
-      "memory-and-meaning-the-music-of-hiroshima-mon-amour",
-      "revoir-hiroshima",
-      "mutations-of-memory-editing-in-hiroshima-mon-amour",
-      "stan-lee-on-resnais"
-    ],
-    "description": "Directed by Alain Resnais • 1959 • France, Japan\nStarring Emmanuelle Riva, Eiji Okada\n\nA cornerstone of the French New Wave, the first feature from Alain Resnais is one of the most influential films of all time. A French actress (Emmanuelle Riva) and a Japanese architect (Eiji Okada) engage in a brief, intense affair in postwar Hiroshima, their consuming mutual fascination impelling them to exorcise their own scarred memories of love and suffering. With an innovative flashback structure and an Academy Award–nominated screenplay by novelist Marguerite Duras, HIROSHIMA MON AMOUR (“Hiroshima My Love”) is a moody masterwork that delicately weaves past and present, personal pain and public anguish."
-  },
-  {
-    "id": "brief-encounter",
-    "title": "Brief Encounter",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/669fff7d-0305-46f4-a971-dbe51c24311d-44805194.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/brief-encounter",
-    "filmIds": [
-      "brief-encounter",
-      "brief-encounter-commentary",
-      "greta-gerwig-on-brief-encounter",
-      "barry-day-on-brief-encounter",
-      "david-lean-a-self-portrait",
-      "alan-cumming-on-brief-encounter",
-      "queersighted-stage-to-screen"
-    ],
-    "description": "Directed by David Lean • 1945 • United Kingdom\nStarring Celia Johnson, Trevor Howard\n\nAfter a chance meeting on a train platform, a married doctor (Trevor Howard) and a suburban housewife (Celia Johnson) begin a muted but passionate, and ultimately doomed, love affair. With its evocatively fog-enshrouded setting, swooning Rachmaninoff score, and pair of remarkable performances (Johnson was nominated for an Oscar), this film, directed by David Lean and based on Noël Coward’s play “Still Life” deftly explores the thrill, pain, and tenderness of an illicit romance, and has influenced many a cinematic brief encounter since its release."
-  },
-  {
-    "id": "cane-river",
-    "title": "Cane River",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8f80e90c-148e-4cb6-be9b-9d81a224bc0e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/cane-river",
-    "filmIds": [
-      "cane-river"
-    ],
-    "description": "Directed by Horace Jenkins • 1982 • United States\nStarring Richard Romain, Tommye Myrick, Carol Sutton\n\nWritten, produced, and directed by the late, trailblazing director Horace B. Jenkins and crafted by an entirely African American cast and crew, this luminous, recently rediscovered landmark of American independent cinema is a charmingly laid-back, socially incisive love story set in the heart of Louisiana. It’s there that a forbidden romance between an aspiring writer (Richard Romain) and an ambitious, college-bound woman (Tommye Myrick) lays bare the tensions between two black communities: the wealthy Creoles and the working-class descendants of slaves. Featuring lyrical cinematography and strikingly naturalistic performances from its captivating leads, the long-lost CANE RIVER reemerges thanks to a brand new, state-of-the-art restoration by Indie Collect and Oscilloscope Laboratories."
-  },
-  {
     "id": "beauty-and-the-beast",
     "title": "Beauty And The Beast",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3d517d13-0d6d-456b-8219-e2827383f3f3-610a4ba4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -3411,54 +3379,58 @@
     "description": "Criterion Collection Edition #6\n\nJean Cocteau’s sublime adaptation of Mme. Leprince de Beaumont’s fairy-tale masterpiece—in which the pure love of a beautiful girl melts the heart of a feral but gentle beast—is a landmark of motion picture fantasy, with unforgettably romantic performances by Jean Marais and Josette Day. The spectacular visions of enchantment, desire, and death in BEAUTY AND THE BEAST (LA BELLE ET LA BÊTE) have become timeless icons of cinematic wonder."
   },
   {
-    "id": "preparations-to-be-together-for-an-unknown-period-of-time",
-    "title": "Preparations To Be Together For An Unknown Period Of Time",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0c81c8b-aa1c-4cbc-86a1-a1835bfa476a-e71dfc8b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/preparations-to-be-together-for-an-unknown-period-of-time",
+    "id": "wings-of-desire",
+    "title": "Wings Of Desire",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2fb6437b-6d34-4a4f-acd1-4d2d351fa10c-836f225a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/wings-of-desire",
     "filmIds": [
-      "preparations-to-be-together-for-an-unknown-period-of-time"
+      "wings-of-desire",
+      "wings-of-desire-commentary",
+      "wim-wenders-interview",
+      "the-angels-among-us",
+      "cinema-cinemas-wim-wenders-1987",
+      "alekan-85",
+      "deleted-scenes-1",
+      "outtakes-1",
+      "alekan-la-lumiere",
+      "remembrance"
     ],
-    "description": "Directed by Lili Horvát • 2020 • Hungary\nStarring Natasa Stork, Viktor Bodó, Benett Vilmányi\n\nThe second feature by Hungarian director Lili Horvát is a slippery, seductive investigation of memory, obsession, and delusion. After twenty years in the United States, Hungarian neurosurgeon Márta (Natasa Stork) returns to Budapest for a romantic rendezvous with János (Viktor Bodó), a fellow doctor she met at a conference. The only problem: when she arrives, János is nowhere to be seen and, when she at last tracks him down, claims the two have never met. What ensues is a tantalizing psychological puzzle that toys brilliantly with the conventions of film noir and with the viewer’s own sense of reality."
+    "description": "Directed by Wim Wenders • 1987 • Germany, France\nStarring Bruno Ganz, Solveig Dommartin, Peter Falk\n\nWINGS OF DESIRE is one of cinema’s loveliest city symphonies. Bruno Ganz is Damiel, an angel perched atop buildings high over Berlin who can hear the thoughts—fears, hopes, dreams—of all the people living below. But when he falls in love with a beautiful trapeze artist, he is willing to give up his immortality and come back to earth to be with her. Made not long before the fall of the Berlin wall, this stunning tapestry of sounds and images, shot in black and white and color by the legendary Henri Alekan, is movie poetry. And it forever made the name Wim Wenders synonymous with film art."
   },
   {
-    "id": "in-the-mood-for-love",
-    "title": "In The Mood For Love",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5f89e68b-2cb5-4ceb-a268-ec2feaeb2cb8-bb0014e7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/in-the-mood-for-love",
+    "id": "breathless-1",
+    "title": "Breathless",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5246d26d-a131-48ac-aba0-322b1d76485b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/breathless-1",
     "filmIds": [
-      "in-the-mood-for-love-alternate-version",
-      "in-the-mood-for-love",
-      "in-the-mood-for-love-1",
-      "sofia-coppola-on-in-the-mood-for-love",
-      "paul-schrader-on-in-the-mood-for-love",
-      "wyatt-cenac-on-in-the-mood-for-love",
-      "room-2046",
-      "postcards",
-      "the-seventies",
-      "a-last-encounter",
-      "wong-kar-wai-on-in-the-mood-for-love",
-      "cinema-lesson-by-wong-kar-wai",
-      "toronto-international-film-festival",
-      "on-in-the-mood-for-love",
-      "the-soundtrack",
-      "hong-kong-tv-spot",
-      "french-tv-spot",
-      "u-s-tv-spot"
+      "breathless-1"
     ],
-    "description": "Criterion Collection Edition #147\n\nDirected by Wong Kar Wai • 2000 • Hong Kong\nStarring Tony Leung Chiu-wai, Maggie Cheung Man-yuk\n\nHong Kong, 1962: Chow Mo-wan (Tony Leung Chiu-wai) and Su Li-zhen (Maggie Cheung Man-yuk) move into neighboring apartments on the same day. Their encounters are formal and polite—until a discovery about their spouses creates an intimate bond between them. At once delicately mannered and visually extravagant, Wong Kar Wai’s IN THE MOOD FOR LOVE is a masterful evocation of romantic longing and fleeting moments. With its aching musical soundtrack and exquisitely abstract cinematography by Christopher Doyle and Mark Lee Ping-bin, this film has been a major stylistic influence on the past decade of cinema, and is a milestone in Wong’s redoubtable career."
+    "description": "Directed by Jim McBride • 1983 • United States\nStarring Richard Gere, Valérie Kaprisky, Art Metrano\n\nRemaking Jean-Luc Godard's French New Wave landmark (itself an homage to American gangster films) was surely one of the more audacious cinematic gambits of the 1980s, but director Jim McBride (DAVID HOLZMAN’S DIARY) approaches the challenge with a postmodern sensibility that makes for a fascinatingly self-reflexive, deliriously stylized update. Richard Gere plays the dirtbag Las Vegas car thief obsessed with comics and ’50s rock ’n’ roll who hightails it to a neon-dreamland LA after killing a cop. There, he hooks up with his French lover (Valérie Kaprisky) for a sexed-up crime spree that quickly spirals out of control."
   },
   {
-    "id": "history-is-made-at-night",
-    "title": "History Is Made At Night",
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/708f4aa7-e895-402b-8225-427395ecf670-59374a91.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "link": "https://www.criterionchannel.com/history-is-made-at-night",
+    "id": "wuthering-heights",
+    "title": "Wuthering Heights",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c6dd9ace-913f-4e60-96ee-5fd500aab51c-279c2483.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/wuthering-heights",
     "filmIds": [
-      "history-is-made-at-night",
-      "farran-nehme-smith-on-borzage",
-      "frank-borzage-on-history-is-made-at-night",
-      "history-is-made-at-night-restoration-demonstration",
-      "history-is-made-at-night-on-the-screen-guild-theater"
+      "wuthering-heights"
     ],
-    "description": "Directed by Frank Borzage • 1937 • United States\n\nSuffused with intoxicating romanticism, HISTORY IS MADE AT NIGHT is a sublime paean to love from Frank Borzage, classic Hollywood’s supreme poet of carnal and spiritual desire. On the run through Europe from her wealthy, cruelly possessive husband, an unhappy socialite (Jean Arthur) is thrown together by fate with a suave stranger (Charles Boyer)—and soon the two are bound in a consuming, seemingly impossible affair that stretches across continents and brings them to the very edge of catastrophe. Lent a palpable erotic charge by the chemistry between its leads, this delirious vision of lovers beset by the world passes through a dizzying array of tonal shifts—from melodrama to romantic comedy to noir to disaster thriller—smoothly guided by Borzage’s unwavering allegiance to the power of love."
+    "description": "Directed by William Wyler • 1939 • United States\nStarring Laurence Olivier, Merle Oberon, David Niven\n\nOften cited as the definitive screen version of Emily Brontë’s classic novel, William Wyler’s moodily poetic adaptation casts Laurence Olivier and Merle Oberon as the immortal lovers Heathcliff and Cathy—he a brooding stable boy, she a willful beauty who spurns him by marrying into wealth—whose tragic, all-consuming love for one another transcends death itself. The spellbinding gothic atmosphere is enhanced by the sumptuous art direction and the deep-focus expressionism of Gregg Toland’s Oscar-winning cinematography."
+  },
+  {
+    "id": "ali-fear-eats-the-soul",
+    "title": "Ali: Fear Eats The Soul",
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/359d4e68-c8a3-4391-b116-87f5a612f5d3-9eb54ef7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "link": "https://www.criterionchannel.com/ali-fear-eats-the-soul",
+    "filmIds": [
+      "ali-fear-eats-the-soul",
+      "todd-haynes-on-rainer-werner-fassbinder",
+      "angst-isst-seele-auf",
+      "brigitte-mira-on-ali-fear-eats-the-soul",
+      "thea-eymesz-on-rainer-werner-fassbinder",
+      "the-stripped-down-style-of-ali-fear-eats-the-soul",
+      "from-the-american-soldier-1970"
+    ],
+    "description": "Directed by Rainer Werner Fassbinder • 1974 • West Germany\nStarring Brigitte Mira, El Hedi ben Salem, Barbara Valentin\n\nThe wildly prolific German filmmaker Rainer Werner Fassbinder paid homage to his cinematic hero Douglas Sirk with this update of that filmmaker’s 1955 ALL THAT HEAVEN ALLOWS. A lonely widow (Brigitte Mira) meets a much younger Arab worker (El Hedi ben Salem) in a bar during a rainstorm. They fall in love, to their own surprise—and to the outright shock of their families, colleagues, and drinking buddies. In ALI: FEAR EATS THE SOUL, Fassbinder expertly wields the emotional power of classic Hollywood melodrama to expose the racial tensions underlying contemporary German culture."
   }
 ]
