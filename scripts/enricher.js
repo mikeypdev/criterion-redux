@@ -451,9 +451,9 @@ async function runDeepCrawl(catalog, maxItems) {
       if (landingData.trailerLink) film.trailerLink = landingData.trailerLink;
       if (landingData.posterUrl) film.posterUrl = landingData.posterUrl;
 
-      // Filter supplemental to remove the main film itself
+      // Filter supplemental to remove the main film itself and trailers
       if (landingData.supplemental && landingData.supplemental.length > 0) {
-        film.supplemental = landingData.supplemental.filter(s => s.id !== film.id);
+        film.supplemental = landingData.supplemental.filter(s => s.id !== film.id && !s.id.endsWith('-trailer') && !s.id.endsWith('-teaser'));
       }
 
       // Capture synopsis, director, cast from LANDING page metadata
