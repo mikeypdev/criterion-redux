@@ -159,6 +159,17 @@ const FilmDetailView: React.FC = () => {
               </div>
             )}
 
+            {film.writers && film.writers.length > 0 && (
+              <div className={styles.creditGroup}>
+                <h3 className={styles.creditLabel}>Written by</h3>
+                <div className={styles.creditNames}>
+                  {film.writers.map(w => (
+                    <PersonLink key={w.id} person={w} />
+                  ))}
+                </div>
+              </div>
+            )}
+
             {film.cinematographers && film.cinematographers.length > 0 && (
               <div className={styles.creditGroup}>
                 <h3 className={styles.creditLabel}>Cinematography</h3>

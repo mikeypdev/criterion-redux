@@ -84,7 +84,8 @@ const FilmIndexView: React.FC = () => {
                          film.directors.some(d => normalizeString(d.name).includes(normSearch)) ||
                          film.cast.some(c => normalizeString(c.name).includes(normSearch)) ||
                          film.cinematographers?.some(c => normalizeString(c.name).includes(normSearch)) ||
-                         film.composers?.some(c => normalizeString(c.name).includes(normSearch));
+                         film.composers?.some(c => normalizeString(c.name).includes(normSearch)) ||
+                         film.writers?.some(w => normalizeString(w.name).includes(normSearch));
       
       const matchesDecade = selectedDecade ? Math.floor(film.year / 10) * 10 === parseInt(selectedDecade) : true;
       const matchesCountry = selectedCountry ? film.countries.includes(selectedCountry) : true;

@@ -42,6 +42,7 @@ export interface Film {
   imdbId?: string;
   cinematographers?: Person[];
   composers?: Person[];
+  writers?: Person[];
   supplemental?: SupplementalContent[];
 }
 

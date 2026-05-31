@@ -301,6 +301,13 @@ async function runTMDBEnrichment(catalog, maxItems) {
             tmdbId: c.id
           }));
           if (composers.length > 0) film.composers = mergePeople(film.composers, composers);
+          const writers = crew.filter(c => c.job === 'Writer' || c.job === 'Screenplay' || c.job === 'Author').map(c => ({
+            id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+            name: c.name,
+            role: 'both',
+            tmdbId: c.id
+          }));
+          if (writers.length > 0) film.writers = mergePeople(film.writers, writers);
         }
 
         // 4. Technical Specs Fallback
@@ -486,6 +493,19 @@ async function runDeepCrawl(catalog, maxItems) {
               role: 'actor',
               tmdbId: undefined
             })).filter(c => c.name.length > 2);
+          }
+        }
+
+        if (metaSynopsis.toLowerCase().includes('written by') && (!film.writers || film.writers.length === 0)) {
+          const writerMatch = metaSynopsis.match(/written by\s+([^•\.\n]+)/i);
+          if (writerMatch) {
+            const decodedWriters = decodeEntities(writerMatch[1]);
+            film.writers = decodedWriters.split(/,|\band\b/i).map(n => ({
+              id: normalizeString(n.trim()).replace(/[^a-z0-9]+/g, '-'),
+              name: n.trim().replace(/\.$/, ''),
+              role: 'both',
+              tmdbId: undefined
+            })).filter(w => w.name.length > 2);
           }
         }
       }

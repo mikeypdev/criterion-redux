@@ -26,6 +26,9 @@ const PersonView: React.FC = () => {
     const foundCast = film.cast.find(c => c.id === id);
     if (foundCast) { person = foundCast; break; }
 
+    const foundWriter = film.writers?.find(w => w.id === id);
+    if (foundWriter) { person = foundWriter; break; }
+
     const foundDP = film.cinematographers?.find(c => c.id === id);
     if (foundDP) { person = foundDP; break; }
 
@@ -36,6 +39,7 @@ const PersonView: React.FC = () => {
   const films = catalog.filter(f => 
     f.directors.some(d => d.id === id) || 
     f.cast.some(c => c.id === id) ||
+    f.writers?.some(w => w.id === id) ||
     f.cinematographers?.some(c => c.id === id) ||
     f.composers?.some(c => c.id === id)
   );

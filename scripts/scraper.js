@@ -141,6 +141,7 @@ async function scrapeFilms() {
           imdbId: existingFilm?.imdbId,
           cinematographers: existingFilm?.cinematographers,
           composers: existingFilm?.composers,
+          writers: existingFilm?.writers,
           supplemental: existingFilm?.supplemental || []
         });
       }
