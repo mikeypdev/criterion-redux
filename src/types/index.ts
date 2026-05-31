@@ -66,4 +66,9 @@ export interface SupplementalResult {
   parentFilm: Film;
 }
 
-export type SearchResult = { type: 'film'; film: Film } | SupplementalResult;
+export interface CollectionResult {
+  type: 'collection';
+  collection: Collection;
+}
+
+export type SearchResult = { type: 'film'; film: Film } | SupplementalResult | CollectionResult;

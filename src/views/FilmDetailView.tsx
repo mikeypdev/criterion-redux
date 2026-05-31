@@ -9,7 +9,7 @@ const FilmDetailView: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { addToWatchlist, removeFromWatchlist, isInWatchlist } = useWatchlist();
-  const { catalog, isLoading } = useData();
+  const { catalog, collections, isLoading } = useData();
   const [showTrailer, setShowTrailer] = React.useState(false);
 
   const film = catalog.find(f => f.id === id);
@@ -270,6 +270,33 @@ const FilmDetailView: React.FC = () => {
             </div>
           </section>
         )}
+
+        {(() => {
+          const filmCollections = collections.filter(c => c.filmIds.includes(film.id));
+          if (filmCollections.length === 0) return null;
+          return (
+            <section className={styles.supplementalSection}>
+              <h3 className={styles.sectionTitle}>In Collections</h3>
+              <div className={styles.collectionsGrid}>
+                {filmCollections.map(col => (
+                  <Link
+                    key={col.id}
+                    to={`/collections/${col.id}`}
+                    className={styles.collectionCard}
+                  >
+                    <div className={styles.collectionCardImage}>
+                      {col.imageUrl ? <img src={col.imageUrl} alt="" /> : null}
+                    </div>
+                    <div className={styles.collectionCardInfo}>
+                      <div className={styles.collectionCardTitle}>{col.title}</div>
+                      <div className={styles.collectionCardMeta}>{col.filmIds.length} Titles</div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
       </div>
     </div>
   );

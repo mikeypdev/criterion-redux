@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useMemo, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import SupplementalCard from '../components/SupplementalCard';
 import { useData } from '../context/useData';
 import { normalizeString } from '../utils/searchUtils';
 import styles from '../styles/filmIndex.module.css';
-import type { Film, SupplementalResult } from '../types';
+import type { Film, SupplementalResult, CollectionResult } from '../types';
 
 const FilmIndexView: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { catalog, isLoading } = useData();
+  const { catalog, collections, isLoading } = useData();
   
   // Single source of truth from URL
   const searchTerm = searchParams.get('search') || '';
@@ -67,7 +67,7 @@ const FilmIndexView: React.FC = () => {
     };
   }, [catalog]);
 
-  const { filmResults, supplementalResults } = useMemo(() => {
+  const { filmResults, supplementalResults, collectionResults } = useMemo(() => {
     const films: Film[] = [];
     const supplements: SupplementalResult[] = [];
     const isSearching = searchTerm.trim().length > 0;
@@ -129,8 +129,18 @@ const FilmIndexView: React.FC = () => {
     // Sort supplements by title
     supplements.sort((a, b) => a.supplement.title.localeCompare(b.supplement.title));
 
-    return { filmResults: films, supplementalResults: supplements };
-  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedDuration, sortBy, catalog]);
+    // Matching collections
+    const matchedCollections: CollectionResult[] = [];
+    if (isSearching) {
+      collections.forEach(col => {
+        if (normalizeString(col.title).includes(normSearch) || normalizeString(col.description).includes(normSearch)) {
+          matchedCollections.push({ type: 'collection', collection: col });
+        }
+      });
+    }
+
+    return { filmResults: films, supplementalResults: supplements, collectionResults: matchedCollections };
+  }, [searchTerm, selectedDecade, selectedCountry, selectedGenre, selectedLanguage, selectedDuration, sortBy, catalog, collections]);
 
   // Infinite Scroll
   useEffect(() => {
@@ -163,7 +173,7 @@ const FilmIndexView: React.FC = () => {
       <header className={styles.header}>
         <h1 className={styles.title}>
           {searchTerm ? `Results for "${searchTerm}"` : 'All Films'}
-          <span className={styles.countBadge}>{filmResults.length + supplementalResults.length}</span>
+          <span className={styles.countBadge}>{filmResults.length + supplementalResults.length + collectionResults.length}</span>
         </h1>
         <div className={styles.searchWrapper}>
           <input 
@@ -243,6 +253,31 @@ const FilmIndexView: React.FC = () => {
           )}
         </div>
       </section>
+
+      {collectionResults.length > 0 && searchTerm && (
+        <section className={styles.resultsSection}>
+          <h2 className={styles.resultsSubTitle}>Collections</h2>
+          <div className={styles.collectionGrid}>
+            {collectionResults.map(result => (
+              <Link
+                key={result.collection.id}
+                to={`/collections/${result.collection.id}`}
+                className={styles.collectionCard}
+              >
+                <div className={styles.collectionCardImage}>
+                  {result.collection.imageUrl ? (
+                    <img src={result.collection.imageUrl} alt="" />
+                  ) : null}
+                </div>
+                <div className={styles.collectionCardInfo}>
+                  <div className={styles.collectionCardTitle}>{result.collection.title}</div>
+                  <div className={styles.collectionCardMeta}>{result.collection.filmIds.length} Titles</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {supplementalResults.length > 0 && searchTerm && (
         <section className={styles.resultsSection}>

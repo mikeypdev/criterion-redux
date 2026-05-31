@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/useData';
 import type { Collection, Film } from '../types';
 import styles from '../styles/collectionsView.module.css';
 
+const PAGE_SIZE = 30;
+
 const CollectionsView: React.FC = () => {
   const { collections, catalog, isLoading } = useData();
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   if (isLoading) {
     return <div className={styles.loading}>Curating collections...</div>;
@@ -30,13 +33,16 @@ const CollectionsView: React.FC = () => {
     return film ? film.thumbnailUrl : null;
   };
 
+  const visibleCollections = allCollections.slice(0, visibleCount);
+  const hasMore = visibleCount < allCollections.length;
+
   return (
     <div className={styles.root}>
       <h1 className={styles.title}>Collections</h1>
       <p className={styles.subtitle}>Curated cinematic experiences, exclusively for you.</p>
 
       <div className={styles.collectionsList}>
-        {allCollections.map((collection: Collection) => (
+        {visibleCollections.map((collection: Collection) => (
           <Link key={collection.id} to={`/collections/${collection.id}`} className={styles.collectionLink}>
             <section className={styles.collection}>
               <div className={styles.collectionInfo}>
@@ -63,6 +69,17 @@ const CollectionsView: React.FC = () => {
           </Link>
         ))}
       </div>
+
+      {hasMore && (
+        <div className={styles.loadMoreContainer}>
+          <button
+            className={styles.loadMoreButton}
+            onClick={() => setVisibleCount(prev => prev + PAGE_SIZE)}
+          >
+            Load More ({allCollections.length - visibleCount} remaining)
+          </button>
+        </div>
+      )}
     </div>
   );
 };

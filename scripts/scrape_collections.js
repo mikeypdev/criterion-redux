@@ -1,17 +1,58 @@
 import { chromium } from 'playwright';
+import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 
 const COLLECTIONS_OUTPUT = path.resolve('public/data/collections.json');
 const CATALOG_PATH = path.resolve('public/data/catalog.json');
 
-async function scrapeCollections() {
-  console.log('--- SCRAPING CRITERION NEW COLLECTIONS ---');
+const SKIP_IDS = new Set([
+  'browse', 'new-collections', 'search', 'sign-up', 'films',
+  'login', 'checkout', 'buy', 'terms', 'privacy', 'cookies', 'help',
+]);
 
-  // Load catalog to check for missing films
+async function discoverCollectionsFromSitemap() {
+  console.log('  - Fetching sitemap.xml for complete collection discovery...');
+  const { data } = await axios.get('https://www.criterionchannel.com/sitemap.xml', {
+    headers: { 'User-Agent': 'Mozilla/5.0' }
+  });
+
+  const allUrls = [...data.matchAll(/<loc>(https:\/\/www\.criterionchannel\.com\/[^<]+)<\/loc>/g)].map(m => m[1]);
+
+  const collections = [];
+  const seenIds = new Set();
+
+  for (const url of allUrls) {
+    if (url.includes('/videos/')) continue;
+    if (url.includes('/checkout') || url.includes('/buy/')) continue;
+
+    const id = url.split('/').filter(Boolean).pop();
+    if (!id || SKIP_IDS.has(id) || id.length < 2) continue;
+    if (seenIds.has(id)) continue;
+    seenIds.add(id);
+
+    const title = id
+      .replace(/-season-\d+$/, '')
+      .replace(/-/g, ' ')
+      .split(' ')
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+
+    collections.push({
+      id,
+      title,
+      link: url,
+      filmIds: []
+    });
+  }
+
+  return collections;
+}
+
+async function scrapeCollections() {
+  console.log('--- SCRAPING CRITERION COLLECTIONS ---');
+
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8'));
-  
-  // Reset leavingSoon status for all films - we'll re-apply it based on found "Leaving Soon" collections
   catalog.forEach(f => f.leavingSoon = false);
   const todayStr = new Date().toISOString().split('T')[0];
 
@@ -20,71 +61,43 @@ async function scrapeCollections() {
 
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
-  
+
   try {
-    const pagesToScrape = [
-      'https://www.criterionchannel.com/new-collections',
-      'https://www.criterionchannel.com/browse'
-    ];
+    const collections = await discoverCollectionsFromSitemap();
+    console.log(`Found ${collections.length} collections from sitemap.`);
     
-    let allCollectionLinks = [];
+    // Load existing collections to skip already-scraped ones
+    const existingCollections = fs.existsSync(COLLECTIONS_OUTPUT)
+      ? JSON.parse(fs.readFileSync(COLLECTIONS_OUTPUT, 'utf-8'))
+      : [];
+    const existingMap = new Map(existingCollections.map(c => [c.id, c]));
 
-    for (const url of pagesToScrape) {
-      console.log(`  - Navigating to ${url}...`);
-      await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
-      
-      // Scroll deep to ensure everything is loaded
-      for (let i = 0; i < 20; i++) {
-        await page.evaluate(() => window.scrollBy(0, 1500));
-        await page.waitForTimeout(400);
+    const collectionLimit = parseInt(process.env.COLLECTION_LIMIT || '0', 10);
+
+    for (const col of collections) {
+      if (collectionLimit > 0 && newFilmsAdded >= collectionLimit) break;
+
+      // Skip collections we already have with film data (unless forced)
+      const existing = existingMap.get(col.id);
+      if (existing && existing.filmIds && existing.filmIds.length > 0) {
+        col.title = existing.title;
+        col.imageUrl = existing.imageUrl;
+        col.description = existing.description;
+        col.filmIds = existing.filmIds;
+
+        // Still apply leavingSoon/newlyAdded flags
+        const lowerTitle = col.title.toLowerCase();
+        const isLeavingSoonColl = lowerTitle.includes('leaving') && (
+          lowerTitle.includes('january') || lowerTitle.includes('february') || lowerTitle.includes('march') ||
+          lowerTitle.includes('april') || lowerTitle.includes('may') || lowerTitle.includes('june') ||
+          lowerTitle.includes('july') || lowerTitle.includes('august') || lowerTitle.includes('september') ||
+          lowerTitle.includes('october') || lowerTitle.includes('november') || lowerTitle.includes('december')
+        );
+        if (isLeavingSoonColl) {
+          col.filmIds.forEach(fId => { const f = catalogMap.get(fId); if (f) f.leavingSoon = true; });
+        }
+        continue;
       }
-
-      const links = await page.evaluate(() => {
-        const anchors = Array.from(document.querySelectorAll('a[href*="criterionchannel.com/"]'));
-        const seenIds = new Set();
-        const results = [];
-
-        anchors.forEach(item => {
-          const href = item.getAttribute('href');
-          const id = href.split('/').filter(Boolean).pop();
-          
-          if (!id || href.includes('/videos/') || id === 'browse' || id === 'new-collections' || id === 'search') return;
-          
-          const title = item.innerText.trim();
-          if (title.length < 3) return;
-
-          const img = item.querySelector('img') || item.parentElement?.querySelector('img');
-          let imageUrl = img ? img.getAttribute('src') : null;
-
-          if (!seenIds.has(id)) {
-            seenIds.add(id);
-            results.push({
-              id,
-              title,
-              imageUrl: imageUrl || undefined,
-              link: item.href,
-              filmIds: []
-            });
-          }
-        });
-        return results;
-      });
-      
-      allCollectionLinks = [...allCollectionLinks, ...links];
-    }
-
-    // Deduplicate and filter links
-    const seenIds = new Set();
-    const collections = allCollectionLinks.filter(c => {
-      if (seenIds.has(c.id)) return false;
-      seenIds.add(c.id);
-      return true;
-    });
-
-    console.log(`Found ${collections.length} potential collection links across all index pages.`);
-    
-    // Increase limit and add proper fetching with scrolling
-    for (const col of collections.slice(0, 250)) {
       console.log(`  - Fetching films and artwork for: ${col.title}`);
       try {
         await page.goto(col.link, { waitUntil: 'networkidle', timeout: 60000 });
@@ -234,12 +247,8 @@ async function scrapeCollections() {
 
     const finalResults = collections.filter(c => 
       c.filmIds.length > 0 && 
-      !['films.criterionchannel.com', 'sign-up', 'films', 'browse', 'new-collections'].includes(c.id) &&
       !c.title.toUpperCase().includes('ALL FILMS')
-    ).map(c => ({
-      ...c,
-      title: c.title.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
-    }));
+    );
 
     fs.writeFileSync(COLLECTIONS_OUTPUT, JSON.stringify(finalResults, null, 2));
     console.log(`Saved ${finalResults.length} curated collections to ${COLLECTIONS_OUTPUT}`);

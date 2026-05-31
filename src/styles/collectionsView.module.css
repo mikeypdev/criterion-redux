@@ -248,6 +248,30 @@
   letter-spacing: 1px;
 }
 
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 40px;
+}
+
+.loadMoreButton {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 14px 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.loadMoreButton:hover {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
 .loading {
   padding: 100px;
   text-align: center;
