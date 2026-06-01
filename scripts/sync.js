@@ -1,71 +1,45 @@
 import { execSync } from 'child_process';
 import fs from 'fs';
-import path from 'path';
 
-const SCRIPTS_DIR = './scripts';
 const CATALOG_PATH = './public/data/catalog.json';
 
 async function runSync() {
-  const limit = process.env.LIMIT || '200';
-  const fullScrape = process.env.FULL_SCRAPE === 'true';
+  const limit = process.env.LIMIT || '1000'; // TMDB API extensive Stage 2
+  const deepCrawlLimit = process.env.DEEP_CRAWL_LIMIT || '30'; // Playwright slow Stage 1
 
   console.log('--- STARTING CRITERION DATA SYNC ---');
 
-  // 1. Base Scrape (Always run - it's fast and updates new arrivals)
+  // Step 1: Base Scrape (Always runs - fast HTML scrape of index pages)
   console.log('Step 1: Running base scraper to catch new arrivals...');
   execSync('node scripts/scraper.js', { stdio: 'inherit' });
 
-  // 2. Metadata Enrichment
-  const continuous = process.env.CONTINUOUS === 'true';
-  console.log(`Step 2: Enriching films... (Continuous: ${continuous})`);
-  
-  try {
-    if (continuous) {
-      console.log('Running in continuous mode. Press Ctrl+C to stop.');
-      while (true) {
-        try {
-          execSync(`LIMIT=${limit} node scripts/enricher.js`, { stdio: 'inherit' });
-          console.log('Finalizing batch with local enrichment...');
-          execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
-          console.log('Batch completed. Starting next batch in 5 seconds...');
-          execSync('sleep 5');
-        } catch (err) {
-          // If enricher.js exits with 0 (normal) but sync thinks it's an error,
-          // or if it explicitly signals completion, we can stop.
-          // For now, we'll just check if the catalog is full.
-          console.log('Enrichment loop signaled completion or was interrupted.');
-          break;
-        }
-      }
-    } else {
-      execSync(`LIMIT=${limit} node scripts/enricher.js`, { stdio: 'inherit' });
-      console.log('Step 3: Running local enrichment and cleanup...');
-      execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
-    }
-  } catch (err) {
-    if (continuous) {
-      console.log('Continuous sync interrupted.');
-    } else {
-      console.warn('Enrichment batch interrupted or failed, continuing to local sync...');
-      execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
-    }
-  }
-
-  // 3. Collections Sync
-  console.log('Step 3: Syncing curated collections...');
+  // Step 2: Sync Curated Collections (Discovers custom sitemap files and adds placeholders)
+  console.log('Step 2: Syncing curated collections from sitemap (Axios active checked)...');
   execSync('node scripts/scrape_collections.js', { stdio: 'inherit' });
 
-  // 4. Genre Sync
-  console.log('Step 4: Syncing Criterion genres...');
+  // Step 3: Metadata Enrichment (Run Stage 1 and Stage 2 with distinct bound limits)
+  console.log(`Step 3: Enriching films (TMDB API Limit: ${limit}, Playwright Limit: ${deepCrawlLimit})...`);
+  try {
+    execSync(`LIMIT=${limit} DEEP_CRAWL_LIMIT=${deepCrawlLimit} node scripts/enricher.js`, { stdio: 'inherit' });
+  } catch (err) {
+    console.warn('Enrichment batch failed, continuing to local sync...');
+  }
+
+  // Step 4: Local Enrichment (computes aspect ratio fallback, language defaults, indices)
+  console.log('Step 4: Running local enrichment and cleanup...');
+  execSync('node scripts/local_enrich.js', { stdio: 'inherit' });
+
+  // Step 5: Sync Criterion Genres
+  console.log('Step 5: Syncing Criterion genres...');
   execSync('node scripts/scrape_genres.js', { stdio: 'inherit' });
 
-  // 5. Update Status (Timestamp)
+  // Step 6: Update Sync Status
   const status = {
     lastUpdated: new Date().toISOString(),
     filmCount: JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8')).length
   };
   fs.writeFileSync('./public/data/status.json', JSON.stringify(status, null, 2));
-  console.log(`Step 5: Updated status.json with timestamp: ${status.lastUpdated}`);
+  console.log(`Step 6: Updated status.json with timestamp: ${status.lastUpdated}`);
 
   console.log('--- SYNC COMPLETED SUCCESSFULLY ---');
 }

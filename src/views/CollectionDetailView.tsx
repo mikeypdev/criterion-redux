@@ -18,7 +18,12 @@ const CollectionDetailView: React.FC = () => {
   }
 
   let collection: Collection | undefined = collections.find(c => c.id === id);
-  
+
+  // Fallback: Criterion uses clean URLs (without -season-N) but sitemap has season suffixes
+  if (!collection) {
+    collection = collections.find(c => c.id.startsWith(id + '-season-'));
+  }
+
   // Handle virtual 'Leaving Soon' collection
   if (!collection && id === 'leaving-soon') {
     const leavingSoonFilms = catalog.filter(f => f.leavingSoon);

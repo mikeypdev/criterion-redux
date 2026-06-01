@@ -49,6 +49,52 @@ async function discoverCollectionsFromSitemap() {
   return collections;
 }
 
+// Highly efficient parallel batch checker to prune stale redirects to /browse
+async function filterActiveCollections(collections) {
+  console.log('  - Performing fast HTTP pre-flight redirects validation on sitemap...');
+  const activeList = [];
+  const batchSize = 100;
+  
+  for (let i = 0; i < collections.length; i += batchSize) {
+    const queue = collections.slice(i, i + batchSize);
+    const checks = queue.map(async (col) => {
+      try {
+        const response = await axios.get(col.link, {
+          maxRedirects: 0,
+          timeout: 4000,
+          headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
+          validateStatus: (status) => status >= 200 && status < 400
+        });
+        
+        const loc = response.headers.location || '';
+        if (loc.endsWith('/browse') || loc.includes('/login')) {
+          return null; // Redirects to browse/login -> stale
+        }
+        return col;
+      } catch (err) {
+        if (err.response && (err.response.status === 301 || err.response.status === 302)) {
+          const loc = err.response.headers.location || '';
+          if (loc.endsWith('/browse') || loc.includes('/login')) {
+            return null; // Stale redirect
+          }
+        }
+        // Network/parsing timeout or standard page load error -> safely ignore or preserve
+        return col;
+      }
+    });
+    
+    const results = await Promise.all(checks);
+    results.forEach(col => { if (col) activeList.push(col); });
+    
+    if (i % 500 === 0 && i > 0) {
+      console.log(`    * Checked ${i}/${collections.length} URLs...`);
+    }
+  }
+  
+  console.log(`  - Pre-flight complete. Found ${activeList.length} active collection URLs out of ${collections.length}.`);
+  return activeList;
+}
+
 async function scrapeCollections() {
   console.log('--- SCRAPING CRITERION COLLECTIONS ---');
 
@@ -59,53 +105,82 @@ async function scrapeCollections() {
   const catalogMap = new Map(catalog.map(f => [f.id, f]));
   let newFilmsAdded = 0;
 
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage();
+  // Load existing collections to skip already-scraped ones
+  const existingCollections = fs.existsSync(COLLECTIONS_OUTPUT)
+    ? JSON.parse(fs.readFileSync(COLLECTIONS_OUTPUT, 'utf-8'))
+    : [];
+  const existingMap = new Map(existingCollections.map(c => [c.id, c]));
 
   try {
-    const collections = await discoverCollectionsFromSitemap();
-    console.log(`Found ${collections.length} collections from sitemap.`);
+    const rawCollections = await discoverCollectionsFromSitemap();
+    console.log(`Found ${rawCollections.length} collections raw from sitemap.`);
     
-    // Load existing collections to skip already-scraped ones
-    const existingCollections = fs.existsSync(COLLECTIONS_OUTPUT)
-      ? JSON.parse(fs.readFileSync(COLLECTIONS_OUTPUT, 'utf-8'))
-      : [];
-    const existingMap = new Map(existingCollections.map(c => [c.id, c]));
+    // Filter sitemap urls of stale entries by running fast HTTP checks
+    // ONLY check items we don't already have fully scraped with data
+    const toCheck = [];
+    const unchangedActive = [];
+    
+    for (const col of rawCollections) {
+      const cleanId = col.id.replace(/-season-\d+$/, '').replace(/-supplemental$/, '');
+      const existing = existingMap.get(col.id) || existingMap.get(cleanId);
+      
+      if (existing && existing.filmIds && existing.filmIds.length > 0) {
+        col.title = existing.title;
+        col.imageUrl = existing.imageUrl;
+        col.description = existing.description ?? '';
+        col.filmIds = existing.filmIds;
+        unchangedActive.push(col);
+      } else {
+        toCheck.push(col);
+      }
+    }
+    
+    console.log(`  * ${unchangedActive.length} collections are already cached. Verifying remaining ${toCheck.length} items...`);
+    const verifiedNewAndStale = await filterActiveCollections(toCheck);
+    
+    const collections = [...unchangedActive, ...verifiedNewAndStale];
+
+    // Still apply leavingSoon/newlyAdded flags for cached, active targets
+    for (const col of collections) {
+      const lowerTitle = col.title.toLowerCase();
+      const isLeavingSoonColl = lowerTitle.includes('leaving') && (
+        lowerTitle.includes('january') || lowerTitle.includes('february') || lowerTitle.includes('march') ||
+        lowerTitle.includes('april') || lowerTitle.includes('may') || lowerTitle.includes('june') ||
+        lowerTitle.includes('july') || lowerTitle.includes('august') || lowerTitle.includes('september') ||
+        lowerTitle.includes('october') || lowerTitle.includes('november') || lowerTitle.includes('december')
+      );
+      if (isLeavingSoonColl && col.filmIds) {
+        col.filmIds.forEach(fId => { const f = catalogMap.get(fId); if (f) f.leavingSoon = true; });
+      }
+    }
+
+    const browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage();
 
     const collectionLimit = parseInt(process.env.COLLECTION_LIMIT || '0', 10);
 
     for (const col of collections) {
-      if (collectionLimit > 0 && newFilmsAdded >= collectionLimit) break;
-
-      // Skip collections we already have with film data (unless forced)
-      const existing = existingMap.get(col.id);
-      if (existing && existing.filmIds && existing.filmIds.length > 0) {
-        col.title = existing.title;
-        col.imageUrl = existing.imageUrl;
-        col.description = existing.description;
-        col.filmIds = existing.filmIds;
-
-        // Still apply leavingSoon/newlyAdded flags
-        const lowerTitle = col.title.toLowerCase();
-        const isLeavingSoonColl = lowerTitle.includes('leaving') && (
-          lowerTitle.includes('january') || lowerTitle.includes('february') || lowerTitle.includes('march') ||
-          lowerTitle.includes('april') || lowerTitle.includes('may') || lowerTitle.includes('june') ||
-          lowerTitle.includes('july') || lowerTitle.includes('august') || lowerTitle.includes('september') ||
-          lowerTitle.includes('october') || lowerTitle.includes('november') || lowerTitle.includes('december')
-        );
-        if (isLeavingSoonColl) {
-          col.filmIds.forEach(fId => { const f = catalogMap.get(fId); if (f) f.leavingSoon = true; });
-        }
+      // If collection film list is already populated, skip Playwright crawl
+      if (col.filmIds && col.filmIds.length > 0) {
         continue;
       }
+      
+      if (collectionLimit > 0 && newFilmsAdded >= collectionLimit) break;
+
       console.log(`  - Fetching films and artwork for: ${col.title}`);
       try {
-        await page.goto(col.link, { waitUntil: 'networkidle', timeout: 60000 });
+        await page.goto(col.link, { waitUntil: 'domcontentloaded', timeout: 40000 });
+        
+        // Detect redirect to /browse (requires auth) — skip these collections
+        if (page.url().replace(/\/$/, '').endsWith('/browse')) {
+          console.log(`    - Skipped: redirects to /browse`);
+          continue;
+        }
         
         // Scroll to ensure lazy-loaded grids are populated
-        for (let i = 0; i < 10; i++) {
-          await page.evaluate(() => window.scrollBy(0, 2000));
-          await page.waitForTimeout(600);
+        for (let i = 0; i < 6; i++) {
+          await page.evaluate(() => window.scrollBy(0, 1500));
+          await page.waitForTimeout(400);
         }
 
         // 1. Get high-quality billboard image, description, and real title from the collection's own page
@@ -121,24 +196,26 @@ async function scrapeCollections() {
           const metaDesc = document.querySelector('meta[name="description"]')?.getAttribute('content');
           let description = pageDesc || metaDesc || '';
           
-          // Clean up "Show more" or other noise
           description = description.replace(/\s*Show more\s*$/i, '').trim();
-          
           return { imageUrl: src, description, title: pageTitle };
         });
         
         if (meta.imageUrl) col.imageUrl = meta.imageUrl;
         if (meta.description && meta.description.length > 5) col.description = meta.description;
         
-        // Use better title if the index one was generic or if we found a better one
         if (meta.title && (col.title.toLowerCase().includes('watch') || col.title.length < 3)) {
           col.title = meta.title;
         }
 
         // 2. Get film IDs and basic metadata from the cards
         const collectionsData = await page.evaluate(() => {
+          const headerText = document.body.innerText.match(/(\d+)\s*(?:Episodes?|Films?|Videos?|Titles?)/i);
+          const expectedCount = headerText ? parseInt(headerText[1], 10) : 0;
+
           const cards = Array.from(document.querySelectorAll('.browse-item-card'));
           const map = {};
+          const filmIds = [];
+          const seenIds = new Set();
           
           cards.forEach(card => {
             const linkEl = card.querySelector('a.browse-item-link');
@@ -147,7 +224,12 @@ async function scrapeCollections() {
             
             if (linkEl) {
               const id = linkEl.href.split('/').filter(Boolean).pop();
-              if (id) {
+              if (id && !seenIds.has(id)) {
+                const lower = id.toLowerCase();
+                if (lower.includes('-teaser') || lower.includes('-trailer') || 
+                    lower.includes('-series') || lower.includes('-intro') || lower.includes('-promo')) return;
+                seenIds.add(id);
+                filmIds.push(id);
                 map[id] = {
                   title: titleEl?.innerText.trim() || id,
                   thumbnailUrl: imgEl?.src || ''
@@ -155,31 +237,18 @@ async function scrapeCollections() {
               }
             }
           });
-          return map;
-        });
 
-        const filmIds = await page.evaluate(() => {
-          const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
-          return anchors.map(a => {
-            const url = new URL(a.href);
-            const pathParts = url.pathname.split('/').filter(Boolean);
-            return pathParts.pop();
-          })
-          .filter(id => {
-            if (!id) return false;
-            const lower = id.toLowerCase();
-            return !lower.includes('-teaser') && 
-                   !lower.includes('-trailer') && 
-                   !lower.includes('-series') && 
-                   !lower.includes('-intro') &&
-                   !lower.includes('-promo');
-          });
+          const finalIds = (expectedCount > 0 && filmIds.length > expectedCount) 
+            ? filmIds.slice(0, expectedCount) 
+            : filmIds;
+
+          return { cardData: map, filmIds: finalIds, expectedCount };
         });
         
-        col.filmIds = Array.from(new Set(filmIds));
-        console.log(`    - Found ${col.filmIds.length} unique films.`);
+        col.filmIds = collectionsData.filmIds;
+        console.log(`    - Found ${col.filmIds.length} unique films.${collectionsData.expectedCount ? ` (expected: ${collectionsData.expectedCount})` : ''}`);
 
-        // 3. Mark films as "Leaving Soon" or "Newly Added" based on collection titles
+        // 3. Mark films as leaving soon / newly added based on collection titles
         const lowerTitle = col.title.toLowerCase();
         const isLeavingSoonColl = lowerTitle.includes('leaving') && (
             lowerTitle.includes('january') || lowerTitle.includes('february') || lowerTitle.includes('march') || 
@@ -190,15 +259,15 @@ async function scrapeCollections() {
         const isNewlyAddedColl = lowerTitle.includes('newly added');
 
         if (isLeavingSoonColl) {
-            console.log(`    - Flagging ${col.filmIds.length} films as "Leaving Soon" based on collection title.`);
+            console.log(`    - Flagging ${col.filmIds.length} films as "Leaving Soon"`);
         }
         if (isNewlyAddedColl) {
-            console.log(`    - Flagging ${col.filmIds.length} films as "Newly Added" based on collection title.`);
+            console.log(`    - Flagging ${col.filmIds.length} films as "Newly Added"`);
         }
 
         // Auto-discover missing films and add placeholders to catalog
         for (const fId of col.filmIds) {
-          const cardData = collectionsData[fId];
+          const cardData = collectionsData.cardData[fId];
           let film = catalogMap.get(fId);
           
           if (!film) {
@@ -228,11 +297,11 @@ async function scrapeCollections() {
           } else {
             if (!film.thumbnailUrl && cardData?.thumbnailUrl) {
                 film.thumbnailUrl = cardData.thumbnailUrl;
-                newFilmsAdded++; // Trigger save
+                newFilmsAdded++;
             }
             if (isLeavingSoonColl) {
                 film.leavingSoon = true;
-                newFilmsAdded++; // Force a save to update flags
+                newFilmsAdded++;
             }
             if (isNewlyAddedColl) {
                 film.dateAdded = todayStr;
@@ -245,25 +314,44 @@ async function scrapeCollections() {
       }
     }
 
-    const finalResults = collections.filter(c => 
-      c.filmIds.length > 0 && 
-      !c.title.toUpperCase().includes('ALL FILMS')
+    await browser.close();
+
+    // Map all processed collections into a master dictionary to merge with existing data
+    const masterCollectionsMap = new Map();
+    
+    // 1. Pre-seed with existing fully populated collection data
+    for (const c of existingCollections) {
+      if (c.filmIds && c.filmIds.length > 0) {
+        masterCollectionsMap.set(c.id, c);
+      }
+    }
+    
+    // 2. Overwrite with newly processed/updated active sitemap collections
+    for (const c of collections) {
+      if (c.filmIds && c.filmIds.length > 0) {
+        masterCollectionsMap.set(c.id, c);
+      }
+    }
+    
+    const finalResults = Array.from(masterCollectionsMap.values()).filter(c => 
+      !c.title.toUpperCase().includes('ALL FILMS') &&
+      !(c.filmIds.length === 1 && c.filmIds[0] === c.id && (!c.description || c.description.length < 5))
     );
+
+    // Sort to keep it clean and predictable
+    finalResults.sort((a, b) => a.id.localeCompare(b.id));
 
     fs.writeFileSync(COLLECTIONS_OUTPUT, JSON.stringify(finalResults, null, 2));
     console.log(`Saved ${finalResults.length} curated collections to ${COLLECTIONS_OUTPUT}`);
 
     if (newFilmsAdded > 0) {
-      // Sort catalog to keep it clean
       catalog.sort((a, b) => a.id.localeCompare(b.id));
       fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2));
-      console.log(`Added ${newFilmsAdded} newly discovered films to the catalog.`);
+      console.log(`Added ${newFilmsAdded} newly discovered films/updates to the catalog.`);
     }
 
   } catch (err) {
     console.error('Scraping failed:', err.message);
-  } finally {
-    await browser.close();
   }
 }
 

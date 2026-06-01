@@ -41,14 +41,17 @@ npm run deploy
 ### 4. Data Sync (The Pipeline)
 The app uses runtime-fetched data from `public/data/`. To refresh or further enrich:
 ```bash
-# Basic enrichment (Criterion crawl only)
-npm run sync
-
-# Gap-filler enrichment (Uses TMDB for missing synopses, cast, and trailers)
+# Daily sync (deep-crawl new films + TMDB gap-filling)
 TMDB_API_KEY=your_key npm run sync
 
-# Continuous mode (Processes entire catalog in batches)
-CONTINUOUS=true npm run sync
+# Without TMDB (Criterion deep-crawl only)
+npm run sync
+
+# Re-enrich all films through TMDB (e.g. for newly added fields like writers)
+RE_ENRICH=tmdb TMDB_API_KEY=your_key npm run sync
+
+# Full re-enrichment (deep-crawl + TMDB for all films)
+RE_ENRICH=all TMDB_API_KEY=your_key npm run sync
 ```
 
 ## 📂 Project Structure

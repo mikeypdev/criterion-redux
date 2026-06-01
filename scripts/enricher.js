@@ -92,9 +92,6 @@ function pickBestResult(results, film) {
   });
 
   scored.sort((a, b) => b.score - a.score);
-  if (scored[0].score > scored[1].score + 5) {
-    return scored[0].result;
-  }
   return scored[0].result;
 }
 
@@ -114,45 +111,50 @@ function decodeEntities(text) {
     .replace(/&mdash;/g, '--');
 }
 
-async function enrichCatalog(maxItems = 10) {
+async function enrichCatalog(limit = 10, deepCrawlLimit = 10) {
   let catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8'));
   const originalCount = catalog.length;
-  let attemptedCount = 0;
-  
-  // Recovery: re-attempt TMDB for films with empty/generic directors
-  let recoveredCount = 0;
-  for (const film of catalog) {
-    const hasValidDirector = film.directors && film.directors.length > 0 && film.directors[0].name && film.directors[0].name.length >= 2;
-    if (film.tmdbAttempted && !hasValidDirector) {
-      film.tmdbAttempted = false;
-      recoveredCount++;
-    }
+  let totalAttempted = 0;
+
+  // RE_ENRICH support: selectively reset flags for re-processing
+  const reEnrich = process.env.RE_ENRICH;
+  if (reEnrich === 'all') {
+    const resetCount = catalog.filter(f => f.enriched || f.tmdbAttempted).length;
+    catalog.forEach(f => { f.enriched = false; f.tmdbAttempted = false; });
+    console.log(`>>> RE_ENRICH=all: Reset flags for ${resetCount} films`);
+  } else if (reEnrich === 'tmdb') {
+    const resetCount = catalog.filter(f => f.tmdbAttempted).length;
+    catalog.forEach(f => { f.tmdbAttempted = false; });
+    console.log(`>>> RE_ENRICH=tmdb: Reset TMDB flag for ${resetCount} films`);
   }
-  if (recoveredCount > 0) {
-    console.log(`>>> Recovery: ${recoveredCount} films queued for TMDB director re-attempt`);
-  }
-  
+
+  // Stage 1: Playwright Deep-Crawl for Criterion-authoritative assets (trailers, custom posters, supplemental features)
+  // ONLY run on a prioritized mini-batch limit to avoid timeout crashes in CI
+  console.log(`>>> Stage 1: Playwright Deep-Crawl (Criterion-authoritative data) - Limit: ${deepCrawlLimit}`);
+  const deepCrawlAttempted = await runDeepCrawl(catalog, deepCrawlLimit);
+  totalAttempted += deepCrawlAttempted;
+
+  // Stage 2: TMDB for extensive database fields (biographies, genres, missing cast, directors)
   if (TMDB_API_KEY) {
-    console.log(`>>> Using TMDB API Enrichment (Speed: Fast)`);
-    attemptedCount = await runTMDBEnrichment(catalog, maxItems);
+    console.log(`>>> Stage 2: TMDB API Enrichment (Structural backfilling + IDs) - Limit: ${limit}`);
+    const tmdbAttempted = await runTMDBEnrichment(catalog, limit);
+    totalAttempted += tmdbAttempted;
   } else {
-    console.log(`>>> Using Playwright Deep-Crawl (Speed: Respectful)`);
-    attemptedCount = await runDeepCrawl(catalog, maxItems);
+    console.log(`>>> Stage 2: Skipped TMDB API details (no TMDB_API_KEY provided)`);
   }
 
   // Prune films marked for removal (dead links/redirects)
   const finalCatalog = catalog.filter(f => !f._remove);
   const removedCount = originalCount - finalCatalog.length;
-  
+
   if (removedCount > 0) {
     console.log(`>>> Pruned ${removedCount} unavailable films from catalog.`);
   }
 
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(finalCatalog, null, 2));
-  
-  // Return true if we actually ATTEMPTED anything. 
-  // If attemptedCount is 0, it means the entire library is already enriched.
-  return attemptedCount > 0;
+
+  // Return true if we actually ATTEMPTED anything.
+  return totalAttempted > 0;
 }
 
 /**
@@ -187,13 +189,13 @@ async function runTMDBEnrichment(catalog, maxItems) {
       attemptedCount++;
       console.log(`[${i+1}/${catalog.length}] TMDB Search: ${film.title} (${film.year})`);
       let searchRes = await tmdbLimiter.schedule(() => apiClient.get('/search/movie', {
-        params: { query: film.title, primary_release_year: film.year }
+        params: { query: film.title, primary_release_year: film.year > 0 ? film.year : undefined }
       }));
 
       let results = searchRes.data.results;
       
       // Fallback: If no results with year, try without year
-      if (results?.length === 0) {
+      if (results?.length === 0 && film.year > 0) {
         console.log(`    - No results with year ${film.year}, trying without year...`);
         searchRes = await tmdbLimiter.schedule(() => apiClient.get('/search/movie', {
           params: { query: film.title }
@@ -205,10 +207,7 @@ async function runTMDBEnrichment(catalog, maxItems) {
       if (results?.length > 0) {
         const bestResult = pickBestResult(results, film);
         const tmdbMovieId = bestResult.id;
-        if (bestResult !== results[0]) {
-          const bestYear = bestResult.release_date ? bestResult.release_date.substring(0, 4) : '?';
-          console.log(`    - Selected result: ${bestResult.title} (${bestYear}) over top result`);
-        }
+        
         const detailRes = await tmdbLimiter.schedule(() => apiClient.get(`/movie/${tmdbMovieId}`, {
           params: { append_to_response: 'credits,videos' }
         }));
@@ -225,7 +224,7 @@ async function runTMDBEnrichment(catalog, maxItems) {
           }
         }
         
-        // 1. Basic Info
+        // 1. Basic Info - Only overwrite if empty or matches placeholder
         if (!film.synopsis || film.synopsis.includes(GENERIC_SYNOPSIS)) {
           film.synopsis = decodeEntities(data.overview) || film.synopsis;
           if (data.overview) film.synopsisSource = 'tmdb';
@@ -242,14 +241,14 @@ async function runTMDBEnrichment(catalog, maxItems) {
           film.imdbId = data.imdb_id;
         }
 
-        // 1.5 Genres - union merge, Criterion first
+        // Genres - union merge, Criterion first
         if (data.genres) {
           const tmdbGenres = data.genres.map(g => g.name);
           const existing = film.genres || [];
           film.genres = Array.from(new Set([...existing, ...tmdbGenres]));
         }
 
-        // 2. Cast - name-match enrich, preserve Criterion order
+        // Cast - name-match enrich, preserve Criterion order
         if (data.credits?.cast) {
           const tmdbCast = data.credits.cast.slice(0, 10).map(c => ({
             id: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
@@ -260,16 +259,10 @@ async function runTMDBEnrichment(catalog, maxItems) {
           film.cast = mergePeople(film.cast, tmdbCast);
         }
 
-        // 3. Technical Crew
+        // Technical Crew
         if (data.credits?.crew) {
           const crew = data.credits.crew;
           const mainDirector = crew.find(c => c.job === 'Director');
-          if (!mainDirector) {
-            const directorJobs = crew.filter(c => c.department === 'Directing').map(c => `${c.name} (${c.job})`);
-            if (directorJobs.length > 0) {
-              console.log(`    - No crew with job='Director', but Directing dept: ${directorJobs.join(', ')}`);
-            }
-          }
           if (mainDirector) {
             const directorObj = {
               id: mainDirector.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
@@ -283,8 +276,6 @@ async function runTMDBEnrichment(catalog, maxItems) {
               film.directors = [directorObj];
             } else if (personMatches(film.directors[0].name, mainDirector.name)) {
               film.directors[0].tmdbId = mainDirector.id;
-            } else {
-              console.warn(`    - Director mismatch: Criterion has "${film.directors[0].name}", TMDB has "${mainDirector.name}". Keeping Criterion.`);
             }
           }
           const dps = crew.filter(c => c.job === 'Director of Photography').map(c => ({
@@ -310,14 +301,13 @@ async function runTMDBEnrichment(catalog, maxItems) {
           if (writers.length > 0) film.writers = mergePeople(film.writers, writers);
         }
 
-        // 4. Technical Specs Fallback
         if (!film.languages || film.languages.length === 0) {
           if (data.spoken_languages) {
             film.languages = data.spoken_languages.map(l => l.english_name);
           }
         }
 
-        // 5. Trailers
+        // Trailers
         if (data.videos?.results && !film.trailerKey && !film.trailerLink) {
           const videos = data.videos.results;
           const trailer = videos.find(v => v.site === 'YouTube' && v.type === 'Trailer') ||
@@ -341,15 +331,21 @@ async function runTMDBEnrichment(catalog, maxItems) {
 }
 
 /**
- * Deep Crawl Mode: No key required, extracts exactly what's on Criterion Channel.
+ * Deep Crawl Mode: Extracts exactly what's on Criterion Channel's landing pages and video links.
  */
 async function runDeepCrawl(catalog, maxItems) {
+  const unenriched = catalog.filter(f => !f.enriched && f.link);
+  if (unenriched.length === 0) {
+    console.log('>>> Deep-crawl: No unenriched films, skipping.');
+    return 0;
+  }
+
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
   let updatedCount = 0;
   let attemptedCount = 0;
 
-  // Prioritize films missing key metadata
+  // Prioritize films missing key metadata (like synopses)
   const prioritized = catalog.map((f, i) => ({ film: f, origIndex: i }));
   prioritized.sort((a, b) => {
     const scoreA = (a.film.synopsis ? 0 : 1);
@@ -362,6 +358,20 @@ async function runDeepCrawl(catalog, maxItems) {
     if (film.enriched) continue;
     if (!film.link) continue;
 
+    // Fast pre-flight: check for redirects without loading the full page
+    if (!film.year || film.year === 0) {
+      try {
+        const resp = await axios.head(film.link, { maxRedirects: 0, timeout: 6000, validateStatus: () => true });
+        const location = resp.headers.location || '';
+        if (location.includes('/browse')) {
+          film.enriched = true;
+          continue;
+        }
+      } catch (e) {
+        // If pre-flight fails, fall through to full crawl
+      }
+    }
+
     try {
       attemptedCount++;
       console.log(`[${i+1}/${catalog.length}] Deep-Crawl: ${film.title}`);
@@ -369,28 +379,19 @@ async function runDeepCrawl(catalog, maxItems) {
       await page.waitForTimeout(1000);
 
       if (page.url().includes('/browse') && !film.link.includes('/browse')) {
-        if (film.year === 0 || !film.year) {
-          console.warn(`  - Redirect detected for ${film.title} (collection episode). Preserving without enrichment.`);
-          film.enriched = true;
-        } else {
-          console.warn(`  - Redirect detected for ${film.title}. Marking for removal.`);
-          film._remove = true;
-        }
+        console.warn(`  - Redirect to /browse for ${film.title}. Skipping (requires auth).`);
+        film.enriched = true;
         updatedCount++;
         continue;
       }
 
-      // 1. Check landing page for assets and supplemental content
+      // Check landing page for assets and supplemental content
       const landingData = await page.evaluate(() => {
         const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
         const trailerAnchor = anchors.find(a => a.href.includes('-trailer'));
-        
-        // Find all unique video links
         const videoLinks = anchors.map(a => a.href);
-        
         const supplementalMap = {};
         
-        // Use cards for better metadata if available
         const cards = Array.from(document.querySelectorAll('.browse-item-card'));
         cards.forEach(card => {
           const linkEl = card.querySelector('a.browse-item-link');
@@ -401,7 +402,6 @@ async function runDeepCrawl(catalog, maxItems) {
           if (!linkEl || !linkEl.href || !titleEl) return;
           
           const href = linkEl.href;
-          if (!href) return;
           const sid = href.split('/').filter(Boolean).pop();
           if (sid) {
             let runtime;
@@ -422,7 +422,6 @@ async function runDeepCrawl(catalog, maxItems) {
           }
         });
 
-        // Add any video links NOT in cards
         videoLinks.forEach(href => {
           const sid = href.split('/').filter(Boolean).pop();
           if (sid && !supplementalMap[sid]) {
@@ -435,7 +434,6 @@ async function runDeepCrawl(catalog, maxItems) {
         });
 
         const supplemental = Object.values(supplementalMap);
-
         const img = document.querySelector('.collection-img, .hero-img, img[src*="vhx.imgix.net/criterionchannelchartersu/assets/"]');
         let highResPoster = img ? img.getAttribute('src') : null;
         if (highResPoster) {
@@ -451,12 +449,10 @@ async function runDeepCrawl(catalog, maxItems) {
       if (landingData.trailerLink) film.trailerLink = landingData.trailerLink;
       if (landingData.posterUrl) film.posterUrl = landingData.posterUrl;
 
-      // Filter supplemental to remove the main film itself and trailers
       if (landingData.supplemental && landingData.supplemental.length > 0) {
         film.supplemental = landingData.supplemental.filter(s => s.id !== film.id && !s.id.endsWith('-trailer') && !s.id.endsWith('-teaser'));
       }
 
-      // Capture synopsis, director, cast from LANDING page metadata
       const metaSynopsis = await page.getAttribute('meta[name="description"]', 'content') || 
                            await page.getAttribute('meta[property="og:description"]', 'content');
 
@@ -490,8 +486,7 @@ async function runDeepCrawl(catalog, maxItems) {
             film.cast = decodedCast.split(/,|\band\b/i).map(n => ({
               id: normalizeString(n.trim()).replace(/[^a-z0-9]+/g, '-'),
               name: n.trim().replace(/\.$/, ''),
-              role: 'actor',
-              tmdbId: undefined
+              role: 'actor'
             })).filter(c => c.name.length > 2);
           }
         }
@@ -503,82 +498,59 @@ async function runDeepCrawl(catalog, maxItems) {
             film.writers = decodedWriters.split(/,|\band\b/i).map(n => ({
               id: normalizeString(n.trim()).replace(/[^a-z0-9]+/g, '-'),
               name: n.trim().replace(/\.$/, ''),
-              role: 'both',
-              tmdbId: undefined
+              role: 'both'
             })).filter(w => w.name.length > 2);
           }
         }
       }
 
-      // 2. Check for deeper video pages (plural)
+      // Check for deeper video pages (plural)
       const videoLinks = await page.evaluate(() => {
         const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
-        // Keep unique paths
         const paths = anchors.map(a => a.href);
         return Array.from(new Set(paths));
       });
 
       for (const videoLink of videoLinks) {
-        console.log(`  - Navigating to video page: ${videoLink}`);
         try {
           await page.goto(videoLink, { waitUntil: 'domcontentloaded', timeout: 30000 });
           await page.waitForTimeout(1000);
 
-          // Extract supplemental and metadata from EACH video page
           const pageData = await page.evaluate(() => {
             const hPattern = /(\d+)\s*h\s*(\d+)?\s*m/i;
-            const mPattern = /(\d+)\s*m(in)?/i;
-            const timePattern = /(?<!\d:)(?:(\d+):)?([0-5]?\d):([0-5]\d)(?!\d)/;
-            const aspectPattern = /\b(?:\d\.\d{2}:1|16:9|4:3|1\.37:1|1\.66:1|1\.85:1|2\.35:1|2\.39:1|2\.40:1)\b/;
+            const mPattern = /(\d+)\s*m/i;
+            const aspectPattern = /(1\.\d+:1)/;
+            const langPattern = /(?:language|spoken in|subtitles in):\s*([a-zA-Z\s,]+)/gi;
             
-            let rCandidates = [];
-            let aCandidates = [];
-            let langs = [];
-            const fullText = document.body.innerText;
-            const pAspect = fullText.match(aspectPattern);
-            if (pAspect) aCandidates.push(pAspect[0]);
-            if (fullText.includes('English')) langs.push('English');
-
-            const elements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, li, span, p, .time, .description'));
-            for (const el of elements) {
-              const t = el.innerText.trim();
-              const am = t.match(aspectPattern); if (am) aCandidates.push(am[0]);
-              const hm = t.match(hPattern); if (hm) rCandidates.push((parseInt(hm[1], 10) * 60) + parseInt(hm[2] || 0, 10));
-              const m = t.match(mPattern); if (m) rCandidates.push(parseInt(m[1], 10));
-              const tp = t.match(timePattern);
-              if (tp && !t.match(aspectPattern)) { 
-                rCandidates.push((parseInt(tp[1] || 0, 10) * 60) + parseInt(tp[2] || 0, 10));
-              }
+            const rCandidates = [];
+            const aCandidates = [];
+            const langs = [];
+            
+            const text = document.body.innerText;
+            const hMatch = text.match(hPattern);
+            if (hMatch) {
+              const h = parseInt(hMatch[1], 10);
+              const m = hMatch[2] ? parseInt(hMatch[2], 10) : 0;
+              rCandidates.push((h * 60) + m);
+            }
+            const mMatch = text.match(mPattern);
+            if (mMatch) {
+              rCandidates.push(parseInt(mMatch[1], 10));
+            }
+            const aMatch = text.match(aspectPattern);
+            if (aMatch) {
+              aCandidates.push(aMatch[1]);
+            }
+            
+            let lMatch;
+            while ((lMatch = langPattern.exec(text)) !== null) {
+              lMatch[1].split(/,|\band\b/i).forEach(l => {
+                const clean = l.trim();
+                if (clean.length > 2 && clean.length < 25) langs.push(clean);
+              });
             }
 
-            // Supplemental cards
             const sMap = {};
-            const cards = Array.from(document.querySelectorAll('.browse-item-card'));
-            cards.forEach(card => {
-              const linkEl = card.querySelector('a.browse-item-link');
-              const imgEl = card.querySelector('img');
-              const titleEl = card.querySelector('.browse-item-title strong') || card.querySelector('.browse-item-title');
-              const durationEl = card.querySelector('.duration-container');
-              if (linkEl && linkEl.href && titleEl) {
-                const sid = linkEl.href.split('/').filter(Boolean).pop();
-                let runtime;
-                if (durationEl) {
-                  const parts = durationEl.innerText.trim().split(':').map(p => parseInt(p.replace(/\D/g, ''), 10));
-                  if (parts.length === 3) runtime = (parts[0] * 60) + parts[1];
-                  else if (parts.length === 2) runtime = parts[0];
-                  else if (parts.length === 1) runtime = Math.round(parts[0] / 60);
-                  if (runtime === 0) runtime = 1;
-                }
-                sMap[sid] = {
-                  id: sid,
-                  title: titleEl.innerText.trim(),
-                  link: linkEl.href,
-                  thumbnailUrl: imgEl ? imgEl.src : '',
-                  runtime: runtime || undefined
-                };
-              }
-            });
-
             const anchors = Array.from(document.querySelectorAll('a[href*="/videos/"]'));
             const videoLinks = anchors.filter(a => !a.href.includes('-trailer'));
             videoLinks.forEach(a => {
@@ -630,9 +602,13 @@ async function runDeepCrawl(catalog, maxItems) {
 }
 
 const limit = parseInt(process.env.LIMIT || '10', 10);
-enrichCatalog(limit).then(hasMore => {
-  if (!hasMore) {
-    console.log('--- ENTIRE CATALOG COMPLETED ---');
-    process.exit(0);
+const deepCrawlLimit = parseInt(process.env.DEEP_CRAWL_LIMIT || '10', 10);
+
+enrichCatalog(limit, deepCrawlLimit).then((hasAttempted) => {
+  if (!hasAttempted) {
+    console.log('--- SYSTEM ENRICHMENT COMPLETE ---');
   }
+}).catch((err) => {
+  console.error('Enrichment failed:', err);
+  process.exit(1);
 });

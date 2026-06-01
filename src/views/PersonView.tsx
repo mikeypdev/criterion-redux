@@ -44,6 +44,15 @@ const PersonView: React.FC = () => {
     f.composers?.some(c => c.id === id)
   );
 
+  const roles = new Set<string>();
+  for (const f of films) {
+    if (f.directors.some(d => d.id === id)) roles.add('Director');
+    if (f.cast.some(c => c.id === id)) roles.add('Actor');
+    if (f.writers?.some(w => w.id === id)) roles.add('Writer');
+    if (f.cinematographers?.some(c => c.id === id)) roles.add('Cinematographer');
+    if (f.composers?.some(c => c.id === id)) roles.add('Composer');
+  }
+
   if (!person) {
     return (
       <div style={{ padding: '80px', textAlign: 'center' }}>
@@ -59,7 +68,7 @@ const PersonView: React.FC = () => {
         <div className={styles.info}>
           <h1 className={styles.name}>{person.name}</h1>
           <div className={styles.metaRow}>
-            <p className={styles.role}>{person.role.toUpperCase()}</p>
+            <p className={styles.role}>{[...roles].join(' · ')}</p>
             {person.tmdbId && (
               <a 
                 href={`https://www.themoviedb.org/person/${person.tmdbId}`} 

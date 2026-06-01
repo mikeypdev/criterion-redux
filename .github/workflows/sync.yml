@@ -11,35 +11,34 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          
+
       - name: Install dependencies
         run: npm install
-        
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
-        
-      - name: "Run Sync (Pass 1: Criterion Deep-Crawl)"
-        run: LIMIT=200 npm run sync
-        
-      - name: "Run Sync (Pass 2: TMDB Gap-Filling)"
+
+      - name: Run Sync
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: LIMIT=1000 npm run sync
-        
+          LIMIT: 1000
+          DEEP_CRAWL_LIMIT: 30
+        run: npm run sync
+
       - name: Commit and Push (Updated Data)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/*.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated daily data sync" && git push)
-          
+
       - name: Build
         run: npm run build
-        
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

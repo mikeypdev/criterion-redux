@@ -1,14 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/useData';
 import type { Collection, Film } from '../types';
 import styles from '../styles/collectionsView.module.css';
 
 const PAGE_SIZE = 30;
+const STORAGE_KEY = 'collections-visible-count';
+const SCROLL_KEY = 'collections-scroll-y';
 
 const CollectionsView: React.FC = () => {
   const { collections, catalog, isLoading } = useData();
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [visibleCount, setVisibleCount] = useState(() =>
+    parseInt(sessionStorage.getItem(STORAGE_KEY) || String(PAGE_SIZE), 10)
+  );
+
+  useEffect(() => {
+    sessionStorage.setItem(STORAGE_KEY, String(visibleCount));
+  }, [visibleCount]);
+
+  useEffect(() => {
+    const savedY = sessionStorage.getItem(SCROLL_KEY);
+    if (savedY) {
+      sessionStorage.removeItem(SCROLL_KEY);
+      requestAnimationFrame(() => window.scrollTo(0, parseInt(savedY, 10)));
+    }
+  }, []);
+
+  const handleClick = () => {
+    sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
+  };
 
   if (isLoading) {
     return <div className={styles.loading}>Curating collections...</div>;
@@ -43,7 +63,7 @@ const CollectionsView: React.FC = () => {
 
       <div className={styles.collectionsList}>
         {visibleCollections.map((collection: Collection) => (
-          <Link key={collection.id} to={`/collections/${collection.id}`} className={styles.collectionLink}>
+          <Link key={collection.id} to={`/collections/${collection.id}`} className={styles.collectionLink} onClick={handleClick}>
             <section className={styles.collection}>
               <div className={styles.collectionInfo}>
                 <h2 className={styles.collectionTitle}>{collection.title}</h2>
