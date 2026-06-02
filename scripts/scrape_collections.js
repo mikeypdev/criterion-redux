@@ -129,18 +129,27 @@ async function scrapeCollections() {
     // ONLY check items we don't already have fully scraped with data
     const toCheck = [];
     const unchangedActive = [];
+    const rescrape = process.env.RE_SCRAPE === 'true';
     
     for (const col of rawCollections) {
       const cleanId = col.id.replace(/-season-\d+$/, '').replace(/-supplemental$/, '');
       const existing = onlyColl ? null : (existingMap.get(col.id) || existingMap.get(cleanId));
       
-      if (existing && existing.filmIds && existing.filmIds.length > 0) {
+      if (existing && existing.filmIds && existing.filmIds.length > 0 && !rescrape) {
         col.title = existing.title;
         col.imageUrl = existing.imageUrl;
         col.description = existing.description ?? '';
         col.filmIds = existing.filmIds;
         unchangedActive.push(col);
       } else {
+        // If re-scraping, we still want to preserve existing data as a fallback 
+        // while we fetch the new title/description
+        if (existing && rescrape) {
+          col.filmIds = existing.filmIds;
+          col.title = existing.title;
+          col.imageUrl = existing.imageUrl;
+          col.description = existing.description;
+        }
         toCheck.push(col);
       }
     }
@@ -168,11 +177,21 @@ async function scrapeCollections() {
     const page = await browser.newPage();
 
     const collectionLimit = parseInt(process.env.COLLECTION_LIMIT || '0', 10);
+    const reScrapeLimit = parseInt(process.env.RE_SCRAPE_LIMIT || '50', 10);
+    let reScrapeCount = 0;
 
     for (const col of collections) {
-      // If collection film list is already populated, skip Playwright crawl
-      if (col.filmIds && col.filmIds.length > 0) {
+      // If collection film list is already populated AND we aren't re-scraping, skip Playwright crawl
+      if (col.filmIds && col.filmIds.length > 0 && !rescrape) {
         continue;
+      }
+      
+      // If we ARE re-scraping, apply a safety limit unless explicitly requested otherwise
+      if (rescrape && col.filmIds && col.filmIds.length > 0) {
+        if (reScrapeLimit > 0 && reScrapeCount >= reScrapeLimit) {
+            continue;
+        }
+        reScrapeCount++;
       }
       
       if (collectionLimit > 0 && newFilmsAdded >= collectionLimit) break;
