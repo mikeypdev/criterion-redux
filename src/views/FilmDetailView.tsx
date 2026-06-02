@@ -248,28 +248,32 @@ const FilmDetailView: React.FC = () => {
           )}
         </aside>
 
-        {film.supplemental && film.supplemental.length > 0 && (
-          <section className={styles.supplementalSection}>
-            <h3 className={styles.sectionTitle}>Special Features</h3>
-            <div className={styles.supplementalGrid}>
-              {film.supplemental.map(s => (
-                <a 
-                  key={s.id} 
-                  href={s.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className={styles.supplementalCard}
-                >
-                  <div className={styles.supplementalThumbWrapper}>
-                    <img src={s.thumbnailUrl} alt={s.title} className={styles.supplementalThumb} />
-                    {s.runtime && <span className={styles.supplementalRuntime}>{s.runtime} MIN</span>}
-                  </div>
-                  <div className={styles.supplementalTitle}>{s.title}</div>
-                </a>
-              ))}
-            </div>
-          </section>
-        )}
+        {(() => {
+          const validSupplemental = (film.supplemental || []).filter(s => s.thumbnailUrl);
+          if (validSupplemental.length === 0) return null;
+          return (
+            <section className={styles.supplementalSection}>
+              <h3 className={styles.sectionTitle}>Special Features</h3>
+              <div className={styles.supplementalGrid}>
+                {validSupplemental.map(s => (
+                  <a 
+                    key={s.id} 
+                    href={s.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className={styles.supplementalCard}
+                  >
+                    <div className={styles.supplementalThumbWrapper}>
+                      <img src={s.thumbnailUrl} alt={s.title} className={styles.supplementalThumb} />
+                      {s.runtime && <span className={styles.supplementalRuntime}>{s.runtime} MIN</span>}
+                    </div>
+                    <div className={styles.supplementalTitle}>{s.title}</div>
+                  </a>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
 
         {(() => {
           const filmCollections = collections.filter(c => c.filmIds.includes(film.id));

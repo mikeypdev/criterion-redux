@@ -451,7 +451,10 @@ async function runDeepCrawl(catalog, maxItems) {
       if (landingData.posterUrl) film.posterUrl = landingData.posterUrl;
 
       if (landingData.supplemental && landingData.supplemental.length > 0) {
-        film.supplemental = landingData.supplemental.filter(s => s.id !== film.id && !s.id.endsWith('-trailer') && !s.id.endsWith('-teaser'));
+        film.supplemental = landingData.supplemental.filter(s => 
+          s.id !== film.id && 
+          !s.id.match(/-(trailer|teaser)(-\d+)?$/)
+        );
       }
 
       const metaSynopsis = await page.getAttribute('meta[name="description"]', 'content') || 
@@ -584,7 +587,11 @@ async function runDeepCrawl(catalog, maxItems) {
           }
           if (pageData.supplemental.length > 0) {
             const existingIds = new Set((film.supplemental || []).map(s => s.id));
-            const newSupp = pageData.supplemental.filter(s => s.id !== film.id && !existingIds.has(s.id));
+            const newSupp = pageData.supplemental.filter(s => 
+              s.id !== film.id && 
+              !s.id.match(/-(trailer|teaser)(-\d+)?$/) &&
+              !existingIds.has(s.id)
+            );
             film.supplemental = [...(film.supplemental || []), ...newSupp];
           }
         } catch (e) {
