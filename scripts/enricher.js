@@ -10,20 +10,20 @@ const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
 // Rate limiters
 const deepCrawlLimiter = new Bottleneck({ minTime: 2000 }); // 2s for web scraping
-const tmdbLimiter = new Bottleneck({ minTime: 250 });      // 4 req/s for TMDB API
+const tmdbLimiter = new Bottleneck({ minTime: 40 });       // 25 req/s for TMDB API
 
 const GENERIC_SYNOPSIS = "Classics and discoveries from around the world";
 function normalizeString(str) {
   return str
     .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[̀-ͯ]/g, '')
     .toLowerCase();
 }
 
 function normalizePersonName(name) {
   return name
     .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[̀-ͯ]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9]/g, '');
 }
@@ -54,7 +54,7 @@ function mergePeople(criterionList, tmdbList) {
 
 function extractDirectorFromSynopsis(synopsis) {
   if (!synopsis) return null;
-  const match = synopsis.match(/Directed by\s+([^•\.\n]+)/i);
+  const match = synopsis.match(/Directed by\s+([^•.\n]+)/i);
   if (!match) return null;
   return normalizeString(match[1].trim());
 }
@@ -298,6 +298,7 @@ async function runTMDBEnrichment(catalog, maxItems) {
             role: 'both',
             tmdbId: c.id
           }));
+          console.log(`    - TMDB Writers for ${film.title}: ${JSON.stringify(writers.map(w => w.name))}`);
           if (writers.length > 0) film.writers = mergePeople(film.writers, writers);
         }
 
@@ -468,7 +469,7 @@ async function runDeepCrawl(catalog, maxItems) {
           film.synopsisSource = 'criterion';
         }
 
-        const directedByMatch = metaSynopsis.match(/Directed by\s+([^•\.\n]+)/i);
+        const directedByMatch = metaSynopsis.match(/Directed by\s+([^•.\n]+)/i);
         const hasValidDirector = film.directors && film.directors.length > 0 && film.directors[0].name && film.directors[0].name.length >= 2;
         if (directedByMatch && !hasValidDirector) {
           const names = decodeEntities(directedByMatch[1]).split(/,|\band\b/i);
@@ -480,7 +481,7 @@ async function runDeepCrawl(catalog, maxItems) {
         }
 
         if (metaSynopsis.toLowerCase().includes('starring') && (!film.cast || film.cast.length === 0)) {
-          const castMatch = metaSynopsis.match(/starring\s+([^•\.\n]+)/i);
+          const castMatch = metaSynopsis.match(/starring\s+([^•.\n]+)/i);
           if (castMatch) {
             const decodedCast = decodeEntities(castMatch[1]);
             film.cast = decodedCast.split(/,|\band\b/i).map(n => ({
@@ -492,7 +493,7 @@ async function runDeepCrawl(catalog, maxItems) {
         }
 
         if (metaSynopsis.toLowerCase().includes('written by') && (!film.writers || film.writers.length === 0)) {
-          const writerMatch = metaSynopsis.match(/written by\s+([^•\.\n]+)/i);
+          const writerMatch = metaSynopsis.match(/written by\s+([^•.\n-]+)/i);
           if (writerMatch) {
             const decodedWriters = decodeEntities(writerMatch[1]);
             film.writers = decodedWriters.split(/,|\band\b/i).map(n => ({

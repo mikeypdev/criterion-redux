@@ -26,22 +26,25 @@ async function discoverCollectionsFromSitemap() {
     if (url.includes('/videos/')) continue;
     if (url.includes('/checkout') || url.includes('/buy/')) continue;
 
-    const id = url.split('/').filter(Boolean).pop();
-    if (!id || SKIP_IDS.has(id) || id.length < 2) continue;
+    const rawId = url.split('/').filter(Boolean).pop();
+    if (!rawId || SKIP_IDS.has(rawId) || rawId.length < 2) continue;
+
+    const id = rawId.replace(/-season-\d+$/, '').replace(/-supplemental$/, '');
     if (seenIds.has(id)) continue;
     seenIds.add(id);
 
     const title = id
-      .replace(/-season-\d+$/, '')
       .replace(/-/g, ' ')
       .split(' ')
       .map(w => w.charAt(0).toUpperCase() + w.slice(1))
       .join(' ');
 
+    const cleanUrl = url.replace(/-season-\d+$/, '').replace(/-supplemental$/, '');
+
     collections.push({
       id,
       title,
-      link: url,
+      link: cleanUrl,
       filmIds: []
     });
   }
@@ -112,7 +115,14 @@ async function scrapeCollections() {
   const existingMap = new Map(existingCollections.map(c => [c.id, c]));
 
   try {
-    const rawCollections = await discoverCollectionsFromSitemap();
+    let rawCollections = await discoverCollectionsFromSitemap();
+    
+    const onlyColl = process.env.ONLY_COLLECTION;
+    if (onlyColl) {
+      rawCollections = rawCollections.filter(c => c.id === onlyColl || c.id.replace(/-season-\d+$/, '').replace(/-supplemental$/, '') === onlyColl);
+      console.log(`>>> ONLY_COLLECTION filter active. Targeting:`, rawCollections.map(c => c.id));
+    }
+    
     console.log(`Found ${rawCollections.length} collections raw from sitemap.`);
     
     // Filter sitemap urls of stale entries by running fast HTTP checks
@@ -122,7 +132,7 @@ async function scrapeCollections() {
     
     for (const col of rawCollections) {
       const cleanId = col.id.replace(/-season-\d+$/, '').replace(/-supplemental$/, '');
-      const existing = existingMap.get(col.id) || existingMap.get(cleanId);
+      const existing = onlyColl ? null : (existingMap.get(col.id) || existingMap.get(cleanId));
       
       if (existing && existing.filmIds && existing.filmIds.length > 0) {
         col.title = existing.title;
@@ -191,7 +201,7 @@ async function scrapeCollections() {
             src = src.replace(/h=\d+/, 'h=1080').replace(/w=\d+/, 'w=1920').replace(/q=\d+/, 'q=100').replace(/fit=[^&]+/, 'fit=max');
           }
           
-          const pageTitle = document.querySelector('.collection-title, .hero-title, h1')?.innerText.trim();
+          const pageTitle = document.querySelector('.collection-title, .hero-title, h1.collection-title')?.innerText.trim();
           const pageDesc = document.querySelector('.collection-description, .hero-description, .description-text')?.innerText.trim();
           const metaDesc = document.querySelector('meta[name="description"]')?.getAttribute('content');
           let description = pageDesc || metaDesc || '';
@@ -203,7 +213,7 @@ async function scrapeCollections() {
         if (meta.imageUrl) col.imageUrl = meta.imageUrl;
         if (meta.description && meta.description.length > 5) col.description = meta.description;
         
-        if (meta.title && (col.title.toLowerCase().includes('watch') || col.title.length < 3)) {
+        if (meta.title) {
           col.title = meta.title;
         }
 
@@ -238,11 +248,7 @@ async function scrapeCollections() {
             }
           });
 
-          const finalIds = (expectedCount > 0 && filmIds.length > expectedCount) 
-            ? filmIds.slice(0, expectedCount) 
-            : filmIds;
-
-          return { cardData: map, filmIds: finalIds, expectedCount };
+          return { cardData: map, filmIds, expectedCount };
         });
         
         col.filmIds = collectionsData.filmIds;
@@ -318,18 +324,47 @@ async function scrapeCollections() {
 
     // Map all processed collections into a master dictionary to merge with existing data
     const masterCollectionsMap = new Map();
-    
-    // 1. Pre-seed with existing fully populated collection data
+
+    function cleanCollectionId(id) {
+      return id.replace(/-season-\d+$/, '').replace(/-supplemental$/, '');
+    }
+
+    // 1. Pre-seed with existing fully populated collection data (merging any legacy duplicate seasons)
     for (const c of existingCollections) {
       if (c.filmIds && c.filmIds.length > 0) {
-        masterCollectionsMap.set(c.id, c);
+        const id = cleanCollectionId(c.id);
+        const existing = masterCollectionsMap.get(id);
+        if (existing) {
+          existing.filmIds = Array.from(new Set([...existing.filmIds, ...c.filmIds]));
+          if (!existing.description && c.description) existing.description = c.description;
+          if (!existing.imageUrl && c.imageUrl) existing.imageUrl = c.imageUrl;
+        } else {
+          masterCollectionsMap.set(id, {
+            ...c,
+            id: id,
+            link: c.link.replace(/-season-\d+$/, '').replace(/-supplemental$/, '')
+          });
+        }
       }
     }
-    
-    // 2. Overwrite with newly processed/updated active sitemap collections
+
+    // 2. Overwrite / merge with newly processed/updated active sitemap collections
     for (const c of collections) {
       if (c.filmIds && c.filmIds.length > 0) {
-        masterCollectionsMap.set(c.id, c);
+        const id = cleanCollectionId(c.id);
+        const existing = masterCollectionsMap.get(id);
+        if (existing) {
+          existing.filmIds = Array.from(new Set([...existing.filmIds, ...c.filmIds]));
+          if (c.title && !c.title.toLowerCase().includes('season')) existing.title = c.title;
+          if (c.imageUrl) existing.imageUrl = c.imageUrl;
+          if (c.description) existing.description = c.description;
+        } else {
+          masterCollectionsMap.set(id, {
+            ...c,
+            id: id,
+            link: c.link.replace(/-season-\d+$/, '').replace(/-supplemental$/, '')
+          });
+        }
       }
     }
     

@@ -289,7 +289,9 @@ const FilmDetailView: React.FC = () => {
                     </div>
                     <div className={styles.collectionCardInfo}>
                       <div className={styles.collectionCardTitle}>{col.title}</div>
-                      <div className={styles.collectionCardMeta}>{col.filmIds.length} Titles</div>
+                      <div className={styles.collectionCardMeta}>
+                        {col.filmIds.filter(fId => catalog.some(f => f.id === fId)).length} Titles
+                      </div>
                     </div>
                   </Link>
                 ))}

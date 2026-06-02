@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/useData';
-import type { Collection, Film } from '../types';
+import type { Collection } from '../types';
 import styles from '../styles/collectionsView.module.css';
 
 const PAGE_SIZE = 30;
@@ -36,9 +36,17 @@ const CollectionsView: React.FC = () => {
 
   const leavingSoonFilms = catalog.filter(f => f.leavingSoon);
   
-  const allCollections: Collection[] = [...collections];
+  // Create high-performance constant-time lookup Sets/Maps
+  // This reduces complexity from O(C * C * N) quadratic lookups down to O(1) constant lookups!
+  const catalogIds = new Set(catalog.map(f => f.id));
+  const filmDateMap = new Map(catalog.map(f => [f.id, f.dateAdded || '1970-01-01']));
+  const filmThumbMap = new Map(catalog.map(f => [f.id, f.thumbnailUrl]));
+
+  // Exclude empty collections to ensure only active, populated collections are displayed
+  const activeCollections = collections.filter(c => c.filmIds.some(id => catalogIds.has(id)));
+  const allCollections: Collection[] = [...activeCollections];
   if (leavingSoonFilms.length > 0) {
-    allCollections.unshift({
+    allCollections.push({
       id: 'leaving-soon',
       title: 'Leaving Soon',
       description: 'Your last chance to catch these titles before they leave the service at the end of the month.',
@@ -48,9 +56,33 @@ const CollectionsView: React.FC = () => {
     });
   }
 
+  // Get dynamic collection age based on the newest film dateAdded inside it
+  const getCollectionDate = (col: Collection) => {
+    if (col.id === 'leaving-soon') return '9999-99-99';
+    if (col.id === 'newly-added') return '9999-99-98';
+    
+    let maxDate = '1970-01-01';
+    for (const fId of col.filmIds) {
+      const dateAdded = filmDateMap.get(fId);
+      if (dateAdded && dateAdded > maxDate) {
+        maxDate = dateAdded;
+      }
+    }
+    return maxDate;
+  };
+
+  // Sort: Active/sticky top first, then newest collections by film added date descending
+  allCollections.sort((a, b) => {
+    const dateA = getCollectionDate(a);
+    const dateB = getCollectionDate(b);
+    if (dateA !== dateB) {
+      return dateB.localeCompare(dateA); // Newest first
+    }
+    return (a.title || '').localeCompare(b.title || ''); // Alphabetical fallback with safe access
+  });
+
   const getFilmThumbnail = (filmId: string) => {
-    const film = catalog.find((f: Film) => f.id === filmId);
-    return film ? film.thumbnailUrl : null;
+    return filmThumbMap.get(filmId) || null;
   };
 
   const visibleCollections = allCollections.slice(0, visibleCount);
@@ -68,7 +100,9 @@ const CollectionsView: React.FC = () => {
               <div className={styles.collectionInfo}>
                 <h2 className={styles.collectionTitle}>{collection.title}</h2>
                 <p className={styles.collectionDesc}>{collection.description}</p>
-                <div className={styles.count}>{collection.filmIds.length} Titles</div>
+                <div className={styles.count}>
+                  {collection.filmIds.filter(id => catalogIds.has(id)).length} Titles
+                </div>
               </div>
               
               <div className={styles.visualWrapper}>

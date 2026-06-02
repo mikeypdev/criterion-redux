@@ -102,28 +102,33 @@ const HomeView: React.FC = () => {
       </section>
       )}
 
-      {collections.slice(0, 5).map((collection: Collection) => {
-        const collectionFilms = collection.filmIds
-          .map((fId: string) => catalog.find((f: Film) => f.id === fId))
-          .filter((f: Film | undefined): f is Film => !!f)
-          .slice(0, 15);
+      {(() => {
+        // Pre-filter substantial collections (>= 3 films) to avoid sparse/broken 1-film rows on Homepage
+        const substantialCollections = collections
+          .map(col => {
+            const films = col.filmIds
+              .map((fId: string) => catalog.find((f: Film) => f.id === fId))
+              .filter((f: Film | undefined): f is Film => !!f)
+              .slice(0, 15);
+            return { col, films };
+          })
+          .filter(item => item.films.length >= 3 && !item.col.title.toLowerCase().includes('newly added'))
+          .slice(0, 5);
 
-        if (collectionFilms.length === 0) return null;
-
-        return (
-          <section key={collection.id} className={styles.section}>
+        return substantialCollections.map(({ col, films }) => (
+          <section key={col.id} className={styles.section}>
             <div className={styles.sectionHeader}>
-              <h2 className={styles.sectionTitle}>{collection.title}</h2>
-              <Link to={`/collections/${collection.id}`} className={styles.seeAll}>More from this series</Link>
+              <h2 className={styles.sectionTitle}>{col.title}</h2>
+              <Link to={`/collections/${col.id}`} className={styles.seeAll}>More from this series</Link>
             </div>
             <div className={styles.carousel}>
-              {collectionFilms.map((film: Film) => (
+              {films.map((film: Film) => (
                 <FilmCard key={film.id} film={film} />
               ))}
             </div>
           </section>
-        );
-      })}
+        ));
+      })()}
     </>
   );
 };
