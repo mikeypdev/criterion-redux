@@ -4,6 +4,7 @@ import type { Film } from '../types';
 import PersonLink from './PersonLink';
 import styles from '../styles/filmCard.module.css';
 import { useWatchlist } from '../context/WatchlistContext';
+import { useData } from '../context/useData';
 
 interface FilmCardProps {
   film: Film;
@@ -12,9 +13,12 @@ interface FilmCardProps {
 const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
   const [isHovered, setIsHovered] = useState(false);
   const { addToWatchlist, removeFromWatchlist, isInWatchlist } = useWatchlist();
+  const { leavingSoonFilmIds } = useData();
   const navigate = useNavigate();
 
   const isSaved = isInWatchlist(film.id);
+  // Derive from the collections-derived set (computed once in DataContext).
+  const isLeavingSoon = leavingSoonFilmIds.has(film.id);
 
   const toggleWatchlist = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -39,7 +43,7 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
     >
       <div className={styles.thumbnailWrapper}>
         <img src={film.thumbnailUrl} alt={film.title} className={styles.thumbnail} />
-        {film.leavingSoon && <div className={styles.badge}>Leaving Soon</div>}
+        {isLeavingSoon && <div className={styles.badge}>Leaving Soon</div>}
         {isSaved && <div className={`${styles.badge} ${styles.watchlistBadge}`}>Watchlist</div>}
         
         <div className={`${styles.overlay} ${isHovered ? styles.overlayVisible : ''}`}>

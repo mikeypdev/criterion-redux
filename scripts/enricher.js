@@ -359,17 +359,25 @@ async function runDeepCrawl(catalog, maxItems) {
     if (film.enriched) continue;
     if (!film.link) continue;
 
-    // Fast pre-flight: check for redirects without loading the full page
-    if (!film.year || film.year === 0) {
+    // Pre-flight: validate the link is still live before spending a Playwright session.
+    // Catches 404/410 (truly removed) and 30x to /browse (auth wall for unavailable titles).
+    if (film.link) {
       try {
-        const resp = await axios.head(film.link, { maxRedirects: 0, timeout: 6000, validateStatus: () => true });
+        const resp = await axios.head(film.link, { maxRedirects: 5, timeout: 6000, validateStatus: () => true });
+        const status = resp.status;
         const location = resp.headers.location || '';
-        if (location.includes('/browse')) {
+        if (status === 404 || status === 410) {
+          film._remove = true;
+          film.enriched = true;
+          continue;
+        }
+        if (location.includes('/browse') || location.includes('/login')) {
+          film._remove = true;
           film.enriched = true;
           continue;
         }
       } catch (e) {
-        // If pre-flight fails, fall through to full crawl
+        // If pre-flight fails (network error), fall through to the full crawl.
       }
     }
 
@@ -379,8 +387,20 @@ async function runDeepCrawl(catalog, maxItems) {
       await deepCrawlLimiter.schedule(() => page.goto(film.link, { waitUntil: 'domcontentloaded', timeout: 30000 }));
       await page.waitForTimeout(1000);
 
-      if (page.url().includes('/browse') && !film.link.includes('/browse')) {
-        console.warn(`  - Redirect to /browse for ${film.title}. Skipping (requires auth).`);
+      // After navigation: detect 404 pages (URL unchanged but content is an error page)
+      // or redirects to /browse / /login (auth wall for unavailable titles).
+      const finalUrl = page.url();
+      const responseStatus = (await page.evaluate(() => {
+        const navEntry = performance.getEntriesByType('navigation')[0];
+        return navEntry ? navEntry.responseStatus : 0;
+      })) || 0;
+      const looksStale = (finalUrl.includes('/browse') && !film.link.includes('/browse'))
+        || finalUrl.includes('/login')
+        || responseStatus === 404
+        || responseStatus === 410;
+      if (looksStale) {
+        console.warn(`  - Stale (status ${responseStatus} or auth redirect) for ${film.title}. Marking for removal.`);
+        film._remove = true;
         film.enriched = true;
         updatedCount++;
         continue;

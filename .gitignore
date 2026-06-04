@@ -32,3 +32,6 @@ coverage
 # TypeScript
 *.tsbuildinfo
 out-tsc
+
+# Tool configs
+.crush.json

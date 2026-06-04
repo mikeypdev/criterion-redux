@@ -9,11 +9,14 @@ const FilmDetailView: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { addToWatchlist, removeFromWatchlist, isInWatchlist } = useWatchlist();
-  const { catalog, collections, isLoading } = useData();
+  const { catalog, collections, isLoading, leavingSoonFilmIds } = useData();
   const [showTrailer, setShowTrailer] = React.useState(false);
 
   const film = catalog.find(f => f.id === id);
   const isSaved = film ? isInWatchlist(film.id) : false;
+
+  // Derive leaving-soon status from the collections-derived set computed in DataContext.
+  const isLeavingSoon = film ? leavingSoonFilmIds.has(film.id) : false;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -227,7 +230,7 @@ const FilmDetailView: React.FC = () => {
           <div className={styles.editionInfo}>
             <h3 className={styles.sidebarTitle}>Criterion Redux</h3>
             <p>
-              {film.leavingSoon ? (
+              {isLeavingSoon ? (
                 <>This title is a <strong>Limited Engagement</strong>. </>
               ) : (
                 <>This title is available as part of Criterion Channel's permanent library. </>
@@ -240,7 +243,7 @@ const FilmDetailView: React.FC = () => {
               )}
             </p>
           </div>
-          {film.leavingSoon && (
+          {isLeavingSoon && (
             <div className={styles.urgencyBox}>
               <strong>Leaving Soon</strong>
               <p>This film is scheduled to leave the service at the end of the month.</p>

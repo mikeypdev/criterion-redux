@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useData } from '../context/useData';
 import type { Film, Collection } from '../types';
 import FilmCard from '../components/FilmCard';
+import { getLeavingSoonFilms, getLeavingSoonImage } from '../utils/collections';
 import styles from '../styles/collectionsView.module.css';
 
 const CollectionDetailView: React.FC = () => {
@@ -24,16 +25,17 @@ const CollectionDetailView: React.FC = () => {
     collection = collections.find(c => c.id.startsWith(id + '-season-'));
   }
 
-  // Handle virtual 'Leaving Soon' collection
+  // Handle virtual 'Leaving Soon' collection — derived from collections list,
+  // not the per-film flag, so it survives stale data and partial syncs.
   if (!collection && id === 'leaving-soon') {
-    const leavingSoonFilms = catalog.filter(f => f.leavingSoon);
+    const leavingSoonFilms = getLeavingSoonFilms(collections, catalog);
     if (leavingSoonFilms.length > 0) {
       collection = {
         id: 'leaving-soon',
         title: 'Leaving Soon',
         description: 'Your last chance to catch these titles before they leave the service at the end of the month.',
         filmIds: leavingSoonFilms.map(f => f.id),
-        imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl,
+        imageUrl: getLeavingSoonImage(leavingSoonFilms),
         link: '#'
       };
     }

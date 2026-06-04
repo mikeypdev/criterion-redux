@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import FilmCard from '../components/FilmCard';
 import { useData } from '../context/useData';
 import type { Film, Collection } from '../types';
+import { getLeavingSoonFilms, isLeavingSoonCollection } from '../utils/collections';
 import styles from '../styles/app.module.css';
 
 const HomeView: React.FC = () => {
@@ -26,7 +27,10 @@ const HomeView: React.FC = () => {
     workingFilms = catalog.slice(0, 50);
   }
 
-  const leavingSoon = workingFilms.filter(film => film.leavingSoon).slice(0, 15);
+  // Derive "leaving soon" from collections (not from the per-film flag, which
+  // depends on scrape_collections.js having run a recent sync). This is more
+  // robust against stale data and survives partial sync failures.
+  const leavingSoonFilms = getLeavingSoonFilms(collections, workingFilms).slice(0, 15);
 
   // Daily-stable shuffle for featured films (rotates every 6 hours)
   const getFeaturedFilms = (films: Film[]) => {
@@ -64,14 +68,14 @@ const HomeView: React.FC = () => {
 
   return (
     <>
-      {leavingSoon.length > 0 && (
+      {leavingSoonFilms.length > 0 && (
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>Leaving Soon</h2>
-            <Link to="/collections" className={styles.seeAll}>See All Collections</Link>
+            <Link to="/collections/leaving-soon" className={styles.seeAll}>See All</Link>
           </div>
           <div className={styles.carousel}>
-            {leavingSoon.map(film => <FilmCard key={film.id} film={film} />)}
+            {leavingSoonFilms.map(film => <FilmCard key={film.id} film={film} />)}
           </div>
         </section>
       )}
@@ -103,7 +107,8 @@ const HomeView: React.FC = () => {
       )}
 
       {(() => {
-        // Pre-filter substantial collections (>= 3 films) to avoid sparse/broken 1-film rows on Homepage
+        // Pre-filter substantial collections (>= 3 films) to avoid sparse/broken 1-film rows on Homepage.
+        // Skip "newly added" (rendered above) and "leaving" collections (rendered above as "Leaving Soon").
         const substantialCollections = collections
           .map(col => {
             const films = col.filmIds
@@ -112,7 +117,9 @@ const HomeView: React.FC = () => {
               .slice(0, 15);
             return { col, films };
           })
-          .filter(item => item.films.length >= 3 && !item.col.title.toLowerCase().includes('newly added'))
+          .filter(item => item.films.length >= 3
+            && !item.col.title.toLowerCase().includes('newly added')
+            && !isLeavingSoonCollection(item.col.title))
           .slice(0, 5);
 
         return substantialCollections.map(({ col, films }) => (

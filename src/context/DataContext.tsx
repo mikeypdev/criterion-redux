@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { DataContext } from './DataContextType';
 import type { Film, Collection, SyncStatus } from '../types';
+import { getLeavingSoonFilmIds } from '../utils/collections';
 
 export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [catalog, setCatalog] = useState<Film[]>([]);
@@ -29,7 +30,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         if (!Array.isArray(catalogData) || catalogData.length === 0) {
           throw new Error('Catalog data is empty or invalid.');
         }
-        
+
         setCatalog(catalogData);
         setCollections(collectionsData);
         setStatus(statusData);
@@ -45,14 +46,22 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     fetchData();
   }, []);
 
+  // Derived once per collections change. O(collections × filmIds) — fast enough
+  // (~30k ops) to run on every state update, but memoized anyway so consumers
+  // get a stable Set reference.
+  const leavingSoonFilmIds = useMemo(
+    () => getLeavingSoonFilmIds(collections),
+    [collections]
+  );
+
   if (error) {
     return (
-      <div style={{ 
-        height: '100vh', 
-        display: 'flex', 
-        flexDirection: 'column', 
-        alignItems: 'center', 
-        justifyContent: 'center', 
+      <div style={{
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
         color: '#A0A0A0',
         backgroundColor: '#0A0A0A',
         textAlign: 'center',
@@ -60,14 +69,14 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }}>
         <h2 style={{ color: 'white', marginBottom: '20px' }}>Connection Interrupted</h2>
         <p>{error}</p>
-        <button 
-          onClick={() => window.location.reload()} 
-          style={{ 
-            marginTop: '30px', 
-            padding: '12px 24px', 
-            backgroundColor: 'white', 
-            color: 'black', 
-            border: 'none', 
+        <button
+          onClick={() => window.location.reload()}
+          style={{
+            marginTop: '30px',
+            padding: '12px 24px',
+            backgroundColor: 'white',
+            color: 'black',
+            border: 'none',
             borderRadius: '4px',
             cursor: 'pointer',
             fontWeight: 'bold'
@@ -80,7 +89,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }
 
   return (
-    <DataContext.Provider value={{ catalog, collections, status, isLoading, error }}>
+    <DataContext.Provider value={{ catalog, collections, status, isLoading, error, leavingSoonFilmIds }}>
       {children}
     </DataContext.Provider>
   );

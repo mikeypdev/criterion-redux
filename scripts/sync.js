@@ -17,6 +17,10 @@ async function runSync() {
   console.log('Step 2: Syncing curated collections from sitemap (Axios active checked)...');
   execSync('node scripts/scrape_collections.js', { stdio: 'inherit' });
 
+  // Step 2.5: Liveness Sweep (Mark 404'd films and fully-stale collections for removal)
+  console.log('Step 2.5: Running liveness sweep to prune films no longer on Criterion...');
+  execSync('node scripts/prune_stale_films.js', { stdio: 'inherit' });
+
   // Step 3: Metadata Enrichment (Run Stage 1 and Stage 2 with distinct bound limits)
   console.log(`Step 3: Enriching films (TMDB API Limit: ${limit}, Playwright Limit: ${deepCrawlLimit})...`);
   try {

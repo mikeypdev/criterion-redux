@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/useData';
 import type { Collection } from '../types';
+import { getLeavingSoonFilms, getLeavingSoonImage } from '../utils/collections';
 import styles from '../styles/collectionsView.module.css';
 
 const PAGE_SIZE = 30;
@@ -34,8 +35,10 @@ const CollectionsView: React.FC = () => {
     return <div className={styles.loading}>Curating collections...</div>;
   }
 
-  const leavingSoonFilms = catalog.filter(f => f.leavingSoon);
-  
+  // Derive "leaving soon" directly from the collections list. Survives stale
+  // data, partial syncs, and any future changes to per-film metadata.
+  const leavingSoonFilms = getLeavingSoonFilms(collections, catalog);
+
   // Create high-performance constant-time lookup Sets/Maps
   // This reduces complexity from O(C * C * N) quadratic lookups down to O(1) constant lookups!
   const catalogIds = new Set(catalog.map(f => f.id));
@@ -51,7 +54,7 @@ const CollectionsView: React.FC = () => {
       title: 'Leaving Soon',
       description: 'Your last chance to catch these titles before they leave the service at the end of the month.',
       filmIds: leavingSoonFilms.map(f => f.id),
-      imageUrl: leavingSoonFilms[0].posterUrl || leavingSoonFilms[0].thumbnailUrl,
+      imageUrl: getLeavingSoonImage(leavingSoonFilms),
       link: '#'
     });
   }

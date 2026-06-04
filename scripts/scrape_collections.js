@@ -102,7 +102,6 @@ async function scrapeCollections() {
   console.log('--- SCRAPING CRITERION COLLECTIONS ---');
 
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8'));
-  catalog.forEach(f => f.leavingSoon = false);
   const todayStr = new Date().toISOString().split('T')[0];
 
   const catalogMap = new Map(catalog.map(f => [f.id, f]));
@@ -158,20 +157,6 @@ async function scrapeCollections() {
     const verifiedNewAndStale = await filterActiveCollections(toCheck);
     
     const collections = [...unchangedActive, ...verifiedNewAndStale];
-
-    // Still apply leavingSoon/newlyAdded flags for cached, active targets
-    for (const col of collections) {
-      const lowerTitle = col.title.toLowerCase();
-      const isLeavingSoonColl = lowerTitle.includes('leaving') && (
-        lowerTitle.includes('january') || lowerTitle.includes('february') || lowerTitle.includes('march') ||
-        lowerTitle.includes('april') || lowerTitle.includes('may') || lowerTitle.includes('june') ||
-        lowerTitle.includes('july') || lowerTitle.includes('august') || lowerTitle.includes('september') ||
-        lowerTitle.includes('october') || lowerTitle.includes('november') || lowerTitle.includes('december')
-      );
-      if (isLeavingSoonColl && col.filmIds) {
-        col.filmIds.forEach(fId => { const f = catalogMap.get(fId); if (f) f.leavingSoon = true; });
-      }
-    }
 
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage();
@@ -273,28 +258,21 @@ async function scrapeCollections() {
         col.filmIds = collectionsData.filmIds;
         console.log(`    - Found ${col.filmIds.length} unique films.${collectionsData.expectedCount ? ` (expected: ${collectionsData.expectedCount})` : ''}`);
 
-        // 3. Mark films as leaving soon / newly added based on collection titles
+        // 3. Detect "newly added" collections — affects dateAdded for member films.
+        // Note: "leaving soon" status is no longer tracked as a per-film flag;
+        // it is derived at render time from collections whose title matches.
         const lowerTitle = col.title.toLowerCase();
-        const isLeavingSoonColl = lowerTitle.includes('leaving') && (
-            lowerTitle.includes('january') || lowerTitle.includes('february') || lowerTitle.includes('march') || 
-            lowerTitle.includes('april') || lowerTitle.includes('may') || lowerTitle.includes('june') || 
-            lowerTitle.includes('july') || lowerTitle.includes('august') || lowerTitle.includes('september') || 
-            lowerTitle.includes('october') || lowerTitle.includes('november') || lowerTitle.includes('december')
-        );
         const isNewlyAddedColl = lowerTitle.includes('newly added');
 
-        if (isLeavingSoonColl) {
-            console.log(`    - Flagging ${col.filmIds.length} films as "Leaving Soon"`);
-        }
         if (isNewlyAddedColl) {
-            console.log(`    - Flagging ${col.filmIds.length} films as "Newly Added"`);
+            console.log(`    - Marking ${col.filmIds.length} films as "Newly Added"`);
         }
 
         // Auto-discover missing films and add placeholders to catalog
         for (const fId of col.filmIds) {
           const cardData = collectionsData.cardData[fId];
           let film = catalogMap.get(fId);
-          
+
           if (!film) {
             console.log(`      * NEW FILM DISCOVERED: ${fId}`);
             film = {
@@ -313,7 +291,6 @@ async function scrapeCollections() {
               dateAdded: isNewlyAddedColl ? todayStr : new Date().toISOString().split('T')[0],
               enriched: false,
               tmdbAttempted: false,
-              leavingSoon: isLeavingSoonColl,
               supplemental: []
             };
             catalog.push(film);
@@ -322,10 +299,6 @@ async function scrapeCollections() {
           } else {
             if (!film.thumbnailUrl && cardData?.thumbnailUrl) {
                 film.thumbnailUrl = cardData.thumbnailUrl;
-                newFilmsAdded++;
-            }
-            if (isLeavingSoonColl) {
-                film.leavingSoon = true;
                 newFilmsAdded++;
             }
             if (isNewlyAddedColl) {

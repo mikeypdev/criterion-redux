@@ -24,54 +24,42 @@ async function scrapeFilms() {
       },
     });
 
-    // 0. Pre-fetch the home page to see what is TRULY new
+    // Pre-fetch the home page to see what is TRULY new
     const homeUrl = 'https://www.criterionchannel.com/';
     console.log(`Checking Criterion home page with Playwright...`);
-    
+
     const page = await browser.newPage();
     await page.goto(homeUrl, { waitUntil: 'networkidle' });
-    
+
     // Scroll a bit to trigger lazy loading
     for (let i = 0; i < 5; i++) {
         await page.evaluate(() => window.scrollBy(0, 1000));
         await page.waitForTimeout(500);
     }
 
-    const { newlyAddedIds, leavingSoonIds } = await page.evaluate(() => {
+    const { newlyAddedIds } = await page.evaluate(() => {
         const newlyAdded = new Set();
-        const leavingSoon = new Set();
-        
+
         const sections = Array.from(document.querySelectorAll('section'));
         sections.forEach(section => {
             const h2 = section.querySelector('h2');
             if (!h2) return;
             const title = h2.innerText.toLowerCase();
-            
+
             if (title.includes('newly added')) {
                 section.querySelectorAll('a[href*="/videos/"]').forEach(link => {
                     const id = link.getAttribute('href').split('/').filter(Boolean).pop();
                     if (id) newlyAdded.add(id);
                 });
             }
-            
-            if (title.includes('leaving') && title.includes('month')) {
-                section.querySelectorAll('a[href*="/videos/"]').forEach(link => {
-                    const id = link.getAttribute('href').split('/').filter(Boolean).pop();
-                    if (id) leavingSoon.add(id);
-                });
-            }
         });
-        
-        return { 
-            newlyAddedIds: Array.from(newlyAdded), 
-            leavingSoonIds: Array.from(leavingSoon) 
-        };
+
+        return { newlyAddedIds: Array.from(newlyAdded) };
     });
 
     const newlyAddedSet = new Set(newlyAddedIds);
-    const leavingSoonSet = new Set(leavingSoonIds);
 
-    console.log(`Found ${newlyAddedSet.size} truly new films and ${leavingSoonSet.size} films leaving soon.`);
+    console.log(`Found ${newlyAddedSet.size} truly new films.`);
 
     const $ = cheerio.load(indexData);
     const films = [];
@@ -128,7 +116,6 @@ async function scrapeFilms() {
           languages: existingFilm?.languages || [],
           thumbnailUrl: thumbnailUrl || existingFilm?.thumbnailUrl || '',
           dateAdded,
-          leavingSoon: leavingSoonSet.has(id),
           enriched: existingFilm?.enriched || false,
           tmdbAttempted: existingFilm?.tmdbAttempted || false,
           posterUrl: existingFilm?.posterUrl,

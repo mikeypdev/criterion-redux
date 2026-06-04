@@ -7,6 +7,8 @@ export interface DataContextType {
   status: SyncStatus | null;
   isLoading: boolean;
   error: string | null;
+  /** Set of film IDs that are in any "leaving [month]" collection. */
+  leavingSoonFilmIds: Set<string>;
 }
 
 export const DataContext = createContext<DataContextType | undefined>(undefined);
