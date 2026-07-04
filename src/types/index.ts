@@ -58,6 +58,7 @@ export interface Collection {
   imageUrl: string;
   link: string;
   filmIds: string[];
+  isNew?: boolean;
 }
 
 export interface SupplementalResult {

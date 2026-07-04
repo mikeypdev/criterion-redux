@@ -63,6 +63,7 @@ const CollectionsView: React.FC = () => {
   const getCollectionDate = (col: Collection) => {
     if (col.id === 'leaving-soon') return '9999-99-99';
     if (col.id === 'newly-added') return '9999-99-98';
+    if (col.isNew) return '9999-99-97';
     
     let maxDate = '1970-01-01';
     for (const fId of col.filmIds) {

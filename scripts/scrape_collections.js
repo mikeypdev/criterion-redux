@@ -99,6 +99,40 @@ async function filterActiveCollections(collections) {
   return activeList;
 }
 
+async function scrapeNewCollections() {
+  console.log('  - Fetching Criterion /new-collections page...');
+  try {
+    const browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage();
+    await page.goto('https://www.criterionchannel.com/new-collections', { waitUntil: 'domcontentloaded', timeout: 40000 });
+
+    for (let i = 0; i < 4; i++) {
+      await page.evaluate(() => window.scrollBy(0, 1500));
+      await page.waitForTimeout(400);
+    }
+
+    const ids = await page.evaluate(() => {
+      const links = Array.from(document.querySelectorAll('a[href*="/"]'));
+      const set = new Set();
+      const skip = new Set(['browse', 'login', 'checkout', 'subscribe', 'new-collections', 'search', 'sign-up']);
+      links.forEach(a => {
+        const id = a.href.split('/').filter(Boolean).pop();
+        if (id && !skip.has(id) && !id.includes('criterion.com') && id.length > 2) {
+          set.add(id);
+        }
+      });
+      return Array.from(set);
+    });
+
+    await browser.close();
+    console.log(`    - Found ${ids.length} collections marked as new by Criterion.`);
+    return new Set(ids);
+  } catch (err) {
+    console.warn(`    - Failed to scrape /new-collections: ${err.message}`);
+    return new Set();
+  }
+}
+
 async function scrapeCollections() {
   console.log('--- SCRAPING CRITERION COLLECTIONS ---');
 
@@ -319,6 +353,9 @@ async function scrapeCollections() {
 
     await browser.close();
 
+    // Scrape Criterion's /new-collections page to get editorial "new" flags
+    const newCollectionIds = await scrapeNewCollections();
+
     // Map all processed collections into a master dictionary to merge with existing data
     const masterCollectionsMap = new Map();
 
@@ -369,6 +406,15 @@ async function scrapeCollections() {
       !c.title.toUpperCase().includes('ALL FILMS') &&
       !(c.filmIds.length === 1 && c.filmIds[0] === c.id && (!c.description || c.description.length < 5))
     );
+
+    // Apply editorial "new" flags from Criterion's /new-collections page
+    for (const c of finalResults) {
+      c.isNew = newCollectionIds.has(c.id);
+    }
+    const newCount = finalResults.filter(c => c.isNew).length;
+    if (newCount > 0) {
+      console.log(`  - Marked ${newCount} collections as editorially new.`);
+    }
 
     // Sort to keep it clean and predictable
     finalResults.sort((a, b) => a.id.localeCompare(b.id));

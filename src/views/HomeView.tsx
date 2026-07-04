@@ -107,10 +107,38 @@ const HomeView: React.FC = () => {
       )}
 
       {(() => {
+        const newCols = collections
+          .filter(col => col.isNew)
+          .map(col => {
+            const films = col.filmIds
+              .map((fId: string) => catalog.find((f: Film) => f.id === fId))
+              .filter((f: Film | undefined): f is Film => !!f)
+              .slice(0, 15);
+            return { col, films };
+          })
+          .filter(item => item.films.length >= 1);
+
+        return newCols.map(({ col, films }) => (
+          <section key={col.id} className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <h2 className={styles.sectionTitle}>{col.title}</h2>
+              <Link to={`/collections/${col.id}`} className={styles.seeAll}>More from this series</Link>
+            </div>
+            <div className={styles.carousel}>
+              {films.map((film: Film) => (
+                <FilmCard key={film.id} film={film} />
+              ))}
+            </div>
+          </section>
+        ));
+      })()}
+
+      {(() => {
         const filmDateMap = new Map(catalog.map(f => [f.id, f.dateAdded || '1970-01-01']));
 
         // Pre-filter substantial collections (>= 3 films) to avoid sparse/broken 1-film rows on Homepage.
-        // Skip "newly added" (rendered above) and "leaving" collections (rendered above as "Leaving Soon").
+        // Skip "newly added" (rendered above), "leaving" collections (rendered above as "Leaving Soon"),
+        // and editorially new collections (rendered above as their own sections).
         // Sort by newest member film dateAdded (descending) so recent collections surface first.
         const substantialCollections = collections
           .map(col => {
@@ -127,6 +155,7 @@ const HomeView: React.FC = () => {
           })
           .filter(item => item.films.length >= 3
             && !item.col.title.toLowerCase().includes('newly added')
+            && !item.col.isNew
             && !isLeavingSoonCollection(item.col.title))
           .sort((a, b) => b.maxDate.localeCompare(a.maxDate) || (a.col.title || '').localeCompare(b.col.title || ''))
           .slice(0, 5);
