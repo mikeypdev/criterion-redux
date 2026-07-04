@@ -2,7 +2,6 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import fs from 'fs';
 import path from 'path';
-import { chromium } from 'playwright';
 
 const TARGET_URL = 'https://films.criterionchannel.com/';
 const OUTPUT_PATH = path.resolve('public/data/catalog.json');
@@ -15,7 +14,6 @@ function normalizeString(str) {
 }
 
 async function scrapeFilms() {
-  const browser = await chromium.launch({ headless: true });
   try {
     console.log(`Fetching ${TARGET_URL}...`);
     const { data: indexData } = await axios.get(TARGET_URL, {
@@ -23,43 +21,6 @@ async function scrapeFilms() {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
       },
     });
-
-    // Pre-fetch the home page to see what is TRULY new
-    const homeUrl = 'https://www.criterionchannel.com/';
-    console.log(`Checking Criterion home page with Playwright...`);
-
-    const page = await browser.newPage();
-    await page.goto(homeUrl, { waitUntil: 'networkidle' });
-
-    // Scroll a bit to trigger lazy loading
-    for (let i = 0; i < 5; i++) {
-        await page.evaluate(() => window.scrollBy(0, 1000));
-        await page.waitForTimeout(500);
-    }
-
-    const { newlyAddedIds } = await page.evaluate(() => {
-        const newlyAdded = new Set();
-
-        const sections = Array.from(document.querySelectorAll('section'));
-        sections.forEach(section => {
-            const h2 = section.querySelector('h2');
-            if (!h2) return;
-            const title = h2.innerText.toLowerCase();
-
-            if (title.includes('newly added')) {
-                section.querySelectorAll('a[href*="/videos/"]').forEach(link => {
-                    const id = link.getAttribute('href').split('/').filter(Boolean).pop();
-                    if (id) newlyAdded.add(id);
-                });
-            }
-        });
-
-        return { newlyAddedIds: Array.from(newlyAdded) };
-    });
-
-    const newlyAddedSet = new Set(newlyAddedIds);
-
-    console.log(`Found ${newlyAddedSet.size} truly new films.`);
 
     const $ = cheerio.load(indexData);
     const films = [];
@@ -91,11 +52,10 @@ async function scrapeFilms() {
         const id = link ? link.split('/').pop() : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
         const existingFilm = existingMap.get(id);
 
-        // Date Logic: If it's on the home page as 'Newly Added', force a fresh date
-        let dateAdded = existingFilm?.dateAdded || new Date().toISOString().split('T')[0];
-        if (newlyAddedSet.has(id)) {
-          dateAdded = new Date().toISOString().split('T')[0];
-        }
+        // Date Logic: Preserve existing first-seen date, or stamp today for genuinely new films.
+        // Do NOT overwrite for "Newly Added" carousel films — that re-stamps the same films every
+        // sync and poisons the collection sort (which derives collection age from member film dates).
+        const dateAdded = existingFilm?.dateAdded || new Date().toISOString().split('T')[0];
 
         // Map to our Film type (ensuring we merge EVERYTHING from enrichment)
         films.push({
@@ -142,8 +102,6 @@ async function scrapeFilms() {
 
   } catch (error) {
     console.error('Scraping failed:', error.message);
-  } finally {
-    await browser.close();
   }
 }
 

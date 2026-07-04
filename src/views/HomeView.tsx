@@ -107,19 +107,28 @@ const HomeView: React.FC = () => {
       )}
 
       {(() => {
+        const filmDateMap = new Map(catalog.map(f => [f.id, f.dateAdded || '1970-01-01']));
+
         // Pre-filter substantial collections (>= 3 films) to avoid sparse/broken 1-film rows on Homepage.
         // Skip "newly added" (rendered above) and "leaving" collections (rendered above as "Leaving Soon").
+        // Sort by newest member film dateAdded (descending) so recent collections surface first.
         const substantialCollections = collections
           .map(col => {
             const films = col.filmIds
               .map((fId: string) => catalog.find((f: Film) => f.id === fId))
               .filter((f: Film | undefined): f is Film => !!f)
               .slice(0, 15);
-            return { col, films };
+            let maxDate = '1970-01-01';
+            for (const fId of col.filmIds) {
+              const d = filmDateMap.get(fId);
+              if (d && d > maxDate) maxDate = d;
+            }
+            return { col, films, maxDate };
           })
           .filter(item => item.films.length >= 3
             && !item.col.title.toLowerCase().includes('newly added')
             && !isLeavingSoonCollection(item.col.title))
+          .sort((a, b) => b.maxDate.localeCompare(a.maxDate) || (a.col.title || '').localeCompare(b.col.title || ''))
           .slice(0, 5);
 
         return substantialCollections.map(({ col, films }) => (
