@@ -5,6 +5,7 @@ import path from 'path';
 
 const COLLECTIONS_OUTPUT = path.resolve('public/data/collections.json');
 const CATALOG_PATH = path.resolve('public/data/catalog.json');
+const SUPPLEMENTAL_RECRAWL_PATH = path.resolve('public/data/.supplemental-recrawl.json');
 
 const SKIP_IDS = new Set([
   'browse', 'new-collections', 'search', 'sign-up', 'films',
@@ -106,6 +107,7 @@ async function scrapeCollections() {
 
   const catalogMap = new Map(catalog.map(f => [f.id, f]));
   let newFilmsAdded = 0;
+  const supplementalRecrawlIds = new Set();
 
   // Load existing collections to skip already-scraped ones
   const existingCollections = fs.existsSync(COLLECTIONS_OUTPUT)
@@ -297,6 +299,9 @@ async function scrapeCollections() {
             catalogMap.set(fId, film);
             newFilmsAdded++;
           } else {
+            if (film.enriched) {
+              supplementalRecrawlIds.add(fId);
+            }
             if (!film.thumbnailUrl && cardData?.thumbnailUrl) {
                 film.thumbnailUrl = cardData.thumbnailUrl;
                 newFilmsAdded++;
@@ -375,6 +380,14 @@ async function scrapeCollections() {
       catalog.sort((a, b) => a.id.localeCompare(b.id));
       fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2));
       console.log(`Added ${newFilmsAdded} newly discovered films/updates to the catalog.`);
+    }
+
+    if (supplementalRecrawlIds.size > 0) {
+      const ids = Array.from(supplementalRecrawlIds);
+      fs.writeFileSync(SUPPLEMENTAL_RECRAWL_PATH, JSON.stringify(ids, null, 2));
+      console.log(`Queued ${ids.length} enriched films for supplemental re-crawl.`);
+    } else {
+      fs.rmSync(SUPPLEMENTAL_RECRAWL_PATH, { force: true });
     }
 
   } catch (err) {

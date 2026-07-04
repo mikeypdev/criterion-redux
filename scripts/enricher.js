@@ -128,6 +128,10 @@ async function enrichCatalog(limit = 10, deepCrawlLimit = 10) {
     console.log(`>>> RE_ENRICH=tmdb: Reset TMDB flag for ${resetCount} films`);
   }
 
+  // Stage 0: Supplemental Re-crawl for enriched films found in newly crawled collections
+  console.log(`>>> Stage 0: Supplemental Re-crawl (existing films in new collections)`);
+  await runSupplementalRecrawl(catalog);
+
   // Stage 1: Playwright Deep-Crawl for Criterion-authoritative assets (trailers, custom posters, supplemental features)
   // ONLY run on a prioritized mini-batch limit to avoid timeout crashes in CI
   console.log(`>>> Stage 1: Playwright Deep-Crawl (Criterion-authoritative data) - Limit: ${deepCrawlLimit}`);
@@ -627,6 +631,101 @@ async function runDeepCrawl(catalog, maxItems) {
   }
   await browser.close();
   return attemptedCount;
+}
+
+/**
+ * Supplemental Re-crawl: Re-visits already-enriched films that appeared in newly crawled
+ * collections, extracting only supplemental content (discussion videos, interviews, etc.)
+ * that Criterion may have added since the initial enrichment.
+ */
+async function runSupplementalRecrawl(catalog) {
+  const recrawlPath = path.resolve('public/data/.supplemental-recrawl.json');
+  if (!fs.existsSync(recrawlPath)) {
+    return 0;
+  }
+
+  const targetIds = new Set(JSON.parse(fs.readFileSync(recrawlPath, 'utf-8')));
+  fs.rmSync(recrawlPath, { force: true });
+
+  if (targetIds.size === 0) return 0;
+
+  const targets = catalog.filter(f => targetIds.has(f.id) && f.link && f.enriched);
+  if (targets.length === 0) return 0;
+
+  console.log(`>>> Supplemental Re-crawl: ${targets.length} enriched films from new collections`);
+
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
+  let updatedCount = 0;
+
+  for (let i = 0; i < targets.length; i++) {
+    const film = targets[i];
+    try {
+      console.log(`  [${i + 1}/${targets.length}] Supplemental re-crawl: ${film.title}`);
+      await deepCrawlLimiter.schedule(() => page.goto(film.link, { waitUntil: 'domcontentloaded', timeout: 30000 }));
+      await page.waitForTimeout(1000);
+
+      const finalUrl = page.url();
+      if (finalUrl.includes('/browse') || finalUrl.includes('/login')) {
+        continue;
+      }
+
+      const landingData = await page.evaluate(() => {
+        const cards = Array.from(document.querySelectorAll('.browse-item-card'));
+        const supplementalMap = {};
+
+        cards.forEach(card => {
+          const linkEl = card.querySelector('a.browse-item-link');
+          const imgEl = card.querySelector('img');
+          const titleEl = card.querySelector('.browse-item-title strong') || card.querySelector('.browse-item-title');
+          const durationEl = card.querySelector('.duration-container');
+
+          if (!linkEl || !linkEl.href || !titleEl) return;
+
+          const sid = linkEl.href.split('/').filter(Boolean).pop();
+          if (sid) {
+            let runtime;
+            if (durationEl) {
+              const parts = durationEl.innerText.trim().split(':').map(p => parseInt(p.replace(/\D/g, ''), 10));
+              if (parts.length === 3) runtime = (parts[0] * 60) + parts[1];
+              else if (parts.length === 2) runtime = parts[0];
+              else if (parts.length === 1) runtime = Math.round(parts[0] / 60);
+              if (runtime === 0) runtime = 1;
+            }
+            supplementalMap[sid] = {
+              id: sid,
+              title: titleEl.innerText.trim(),
+              link: linkEl.href,
+              thumbnailUrl: imgEl ? imgEl.src : '',
+              runtime: runtime || undefined
+            };
+          }
+        });
+
+        return { supplemental: Object.values(supplementalMap) };
+      });
+
+      if (landingData.supplemental && landingData.supplemental.length > 0) {
+        const existingIds = new Set((film.supplemental || []).map(s => s.id));
+        const newSupp = landingData.supplemental.filter(s =>
+          s.id !== film.id &&
+          !s.id.match(/-(trailer|teaser)(-\d+)?$/) &&
+          !existingIds.has(s.id)
+        );
+        if (newSupp.length > 0) {
+          film.supplemental = [...(film.supplemental || []), ...newSupp];
+          updatedCount++;
+          console.log(`    - Found ${newSupp.length} new supplemental items`);
+        }
+      }
+    } catch (err) {
+      console.warn(`    - Error re-crawling ${film.title}: ${err.message}`);
+    }
+  }
+
+  await browser.close();
+  console.log(`>>> Supplemental Re-crawl complete: ${updatedCount} films updated.`);
+  return updatedCount;
 }
 
 const limit = parseInt(process.env.LIMIT || '10', 10);
