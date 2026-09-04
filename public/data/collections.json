@@ -1131,6 +1131,17 @@
     "isNew": false
   },
   {
+    "id": "a-horseshoe-for-luck",
+    "title": "A Horseshoe for Luck",
+    "link": "https://www.criterionchannel.com/a-horseshoe-for-luck",
+    "filmIds": [
+      "29654-invention-for-destruction-horseshoe"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fd1e6fc6-dc81-4be8-8659-15e9fee36405-f63354e4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Karel Zeman • 1946 • Czechoslovakia\n\nThis early short from 1946 showcases the technical skill, wit, and creativity of director Karel Zeman.",
+    "isNew": false
+  },
+  {
     "id": "a-human-certainty",
     "title": "A Human Certainty",
     "link": "https://www.criterionchannel.com/a-human-certainty",
@@ -3157,6 +3168,17 @@
     "isNew": false
   },
   {
+    "id": "an-oversimplification-of-her-beauty",
+    "title": "An Oversimplification of Her Beauty",
+    "link": "https://www.criterionchannel.com/an-oversimplification-of-her-beauty",
+    "filmIds": [
+      "an-oversimplification-of-her-beauty"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/92535a3a-a1e9-4e25-9bca-371664d225d9.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Terence Nance • 2012 • United States\nStarring Terence Nance, Namik Minter, Chanelle Aponte Pearson\n\nTerence Nance announced his arrival as one of the most exciting voices in American independent cinema with his bracingly original, endlessly inventive debut feature. With arresting insight, vulnerability, and a playful sense of humor, this one-of-a-kind, confessional multimedia collage uses a kaleidoscopic mix of live action, animation, and unchained surrealism to capture the relationship between Terence (Nance) and a young woman (Namik Minter) as it teeters on the divide between platonic and romantic.",
+    "isNew": false
+  },
+  {
     "id": "an-unfinished-film",
     "title": "An Unfinished Film",
     "link": "https://www.criterionchannel.com/an-unfinished-film",
@@ -3281,6 +3303,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f427fc3e-9208-4f10-940d-892c4a91b443.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Sara Gómez • 1967 • Cuba\n\nLegendary rumba musician Alberto Zayas serves as a guide for this vibrant journey through Cuban musical history and culture.",
+    "isNew": false
+  },
+  {
+    "id": "and-you-act-like-one-too",
+    "title": "And You Act Like One Too",
+    "link": "https://www.criterionchannel.com/and-you-act-like-one-too",
+    "filmIds": [
+      "and-you-act-like-one-too-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9cec1194-3984-4e14-aee3-9e8b1777f667.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Susan Seidelman • 1976 • United States\n\nThis short was made by SMITHEREENS director Susan Seidelman when she was a film student at New York University in 1976.",
     "isNew": false
   },
   {
@@ -3645,6 +3678,18 @@
     "isNew": false
   },
   {
+    "id": "aqua",
+    "title": "Aqua",
+    "link": "https://www.criterionchannel.com/aqua",
+    "filmIds": [
+      "aqua-commentary",
+      "aqua"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/86f5cb27-bd09-4a8e-ae2a-32be207a9e4e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Gints Zilbalodis • 2012 • Latvia\n\nA cat wakes up surrounded by water and must learn to survive.",
+    "isNew": false
+  },
+  {
     "id": "aqui-y-alla",
     "title": "Aquí y allá",
     "link": "https://www.criterionchannel.com/aqui-y-alla",
@@ -3751,6 +3796,28 @@
     "isNew": false
   },
   {
+    "id": "aria-diva",
+    "title": "Aria Diva",
+    "link": "https://www.criterionchannel.com/aria-diva",
+    "filmIds": [
+      "aria-diva-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/048e7738-dc25-4272-a382-b745ea0c1e9a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Agnieszka Smoczyńska • 2007 • Poland\n\nIn this short film, directed by Agnieszka Smoczyńska in 2007 while she was a student at the Wajda School in Warsaw, a housewife falls under the spell of her new upstairs neighbor, an opera diva.",
+    "isNew": false
+  },
+  {
+    "id": "ariel",
+    "title": "Ariel",
+    "link": "https://www.criterionchannel.com/ariel",
+    "filmIds": [
+      "ariel-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3a455d84-4bb5-4f04-b477-cd1eb477b814.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Aki Kaurismäki • 1988 • Finland\n\nIn Kaurismäki's drolly existential crime drama, a coal miner named Taisto (Turo Pajala) attempts to leave behind a provincial life of inertia and economic despair, only to get into ever deeper trouble. Yet a minor-key romance with a hilariously dispassionate meter maid (Susanna Haavisto) might provide a light at the end of a very dark tunnel. Ariel, which boasts a terrific soundtrack of Finnish tango and Baltic pop music and lovely cinematography by Kaurismäki's longtime cameraman Timo Salmimen, put its director on the international map.",
+    "isNew": false
+  },
+  {
     "id": "army",
     "title": "Army",
     "link": "https://www.criterionchannel.com/army",
@@ -3770,17 +3837,6 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c5b36e14-35d0-47f5-bbe6-1d3a42cc0331-a1283527.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by James P. Hogan • 1938 • United States\n\nCaptain Hugh 'Bulldog' Drummond, a former British officer in World War I, grows bored with civilian life and decides to become a private investigator. Part James Bond, part Sherlock Holmes, Bulldog Drummond is never short on excitement.",
-    "isNew": false
-  },
-  {
-    "id": "ars-1",
-    "title": "Ars",
-    "link": "https://www.criterionchannel.com/ars-1",
-    "filmIds": [
-      "ars"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3591f02c-c0e9-438c-8c09-3d73f91bb852.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by Jacques Demy • 1959 • France\n\nThe following 1959 short by Jacques Demy tells the story of Jean-Marie Baptiste Vianney, the strict and pious pastor of the village of Ars.",
     "isNew": false
   },
   {
@@ -3977,6 +4033,17 @@
     "isNew": false
   },
   {
+    "id": "assassin-1",
+    "title": "Assassin",
+    "link": "https://www.criterionchannel.com/assassin-1",
+    "filmIds": [
+      "assassin"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9357e304-725f-46ac-b529-79c66b8f2b02.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Masahiro Shinoda • 1964 • Japan\n\nMasahiro Shinoda's Assassin (aka Ansatsu) was the director's first period film - but it is hardly set in the \"safety\" of a past era, as its story, of a masterless samurai (Tetsuro Tamba) making his way amid the chaotic aftermath of Commodore Perry's forcible contact with Japan in 1853, seems to resonate clearly in Japan's post-World War II era. Shinoda presents a stark picture of social and political upheaval, spreading duplicity and dishonor, and the consequences of up-ending the established order in a society built on expectations of a rigid social order.",
+    "isNew": false
+  },
+  {
     "id": "assassin-s",
     "title": "Assassin(s)",
     "link": "https://www.criterionchannel.com/assassin-s",
@@ -4008,6 +4075,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b9cc0786-0cd4-4803-b7e1-3c215723ee6a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Xiaolu Wang • 2024 • United States\n\nA one-take recording captures a family’s visit to the bamboo green at the foot of the Helan Mountains.",
+    "isNew": false
+  },
+  {
+    "id": "athina-rachel-tsangari-1",
+    "title": "Athina Rachel Tsangari: Cinema on the Edges",
+    "link": "https://www.criterionchannel.com/athina-rachel-tsangari-1",
+    "filmIds": [
+      "meet-the-filmmakers-athina-rachel-tsangari"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3ab48399-332c-47a5-a559-b5ca0cddecf2-d088036f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "“Since I don’t do psychoanalysis, I do cinema,” explains Athina Rachel Tsangari, who, over the last decade, has become one of the foremost figures of the so-called “Greek Weird Wave”—a movement characterized by its fascination with human behavior, bitingly absurdist humor, and arresting visual style—both as a director and as a producer for contemporaries such as Yorgos Lanthimos. Her films, however, showcase a bold vision that goes way beyond the merely “weird,” offering a provocative perspective on family, sexuality, power dynamics, and the inherent strangeness of human interaction. In this original documentary, David Thompson travels to the Greek island of Hydra to meet up with Tsangari and discuss her directorial philosophy and what it means to “live cinema.”",
     "isNew": false
   },
   {
@@ -4175,6 +4253,17 @@
     "isNew": false
   },
   {
+    "id": "away",
+    "title": "Away",
+    "link": "https://www.criterionchannel.com/away",
+    "filmIds": [
+      "away"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1ec9c6c5-44b5-42a0-9cd7-0e0b2ad2a662.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Gints Zilbalodis • 2019 • Latvia\nStarring Bille Caról\n\nWritten, animated, and scored by director Gints Zilbalodis (whose FLOW won the Academy Award for Best Animated Feature) in a remarkable feat of solo creation, AWAY takes viewers on a magical journey through a perilous landscape in which the greatest danger is one’s own. After his plane crashes on an island a teenage boy must outrun a giant that chases him across its strangely beautiful landscapes: a forbidden oasis, a mirror lake, a dream well, and a cloud harbor. Along the way, he and a small yellow bird help each other as they encounter vertiginous gorges, powerful geysers, and treacherous waterfalls—obstacles that force the pair to call upon untapped reserves of bravery and invention. Infusing each environment with surreal details and the boy’s quest with a mesmerizing dream logic, Zilbalodis fashions an epic of universal resonance—an adventure as inspiring to the spirit as it is dazzling to the senses.",
+    "isNew": false
+  },
+  {
     "id": "baal",
     "title": "Baal",
     "link": "https://www.criterionchannel.com/baal",
@@ -4227,6 +4316,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/758a2133-8939-451f-a3f4-588acb678d6f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Robert Downey Sr. • 1964 • United States\n\nTaylor Mead plays the president of the United Status, who, when he isn't at the White House, a dilapidated Victorian, conducts his top-secret affairs on a deserted beach. Robert Downey Sr.’s first feature is a rollicking, slapstick, ultra-low-budget 16 mm comedy experiment that introduced a twisted new voice to the New York underground.\n\nPreserved by Anthology Film Archives, with funding provided by The Film Foundation.",
+    "isNew": false
+  },
+  {
+    "id": "baby-1",
+    "title": "Baby",
+    "link": "https://www.criterionchannel.com/baby-1",
+    "filmIds": [
+      "baby"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/35239a42-5bec-4a93-9aef-755b2446afbc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by D. A. Pennebaker • 1954 • United States\n\nD. A. Pennebaker credits this 1954 film with clarifying his focus. He took his daughter, Stacy, to the zoo with a short film scenario in mind: shots of Stacy running intercut with shots of the animals responding to her. But Stacy was more interested in the carousel, and when her father observed her joy as she rode it, he knew he had found his film.",
     "isNew": false
   },
   {
@@ -4700,6 +4800,20 @@
     "isNew": false
   },
   {
+    "id": "bergman-island-1",
+    "title": "Bergman Island",
+    "link": "https://www.criterionchannel.com/bergman-island-1",
+    "filmIds": [
+      "bergman-island-2",
+      "mia-hansen-love",
+      "vicky-krieps",
+      "bergman-s-ghosts"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4e156433-f0d2-42b8-a71d-4c479be5b0e0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Mia Hansen-Løve • 2021 • France\nStarring Vicky Krieps, Tim Roth, Mia Wasikowska\n\nWriter-director Mia Hansen-Løve embarks on a luminous summertime odyssey to the home of Ingmar Bergman for her seventh feature, a graceful, shape-shifting tale about the interplay of life and art and the ways in which stories are born. In search of inspiration for their current filmmaking projects, Chris (Vicky Krieps) and her partner (Tim Roth) travel to the remote island of Fårö, Sweden, where Bergman lived and worked for decades. There, the spirit of the cinema master looms as Chris confronts her complicated relationships to work, men, motherhood, and her artistic influences. Also featuring radiant performances from Mia Wasikowska and Anders Danielsen Lie, BERGMAN ISLAND is a rich deconstruction of the mysteries of the creative process and the journey that every film takes from thought to page to screen.",
+    "isNew": false
+  },
+  {
     "id": "berlin-alexanderplatz",
     "title": "Berlin Alexanderplatz",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9871fbda-daa5-4ac1-bec3-54bcf8d6b37d-22de5239.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -5115,6 +5229,21 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2261784b-ef7c-40cf-9b4b-2ac515e51457-a17fbfab.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Martin Scorsese’s World Cinema Project\n\nDirected by Ousmane Sembène • 1966 • Senegal, France\nStarring M'Bissine Thérèse Diop\n\nOusmane Sembène was one of the greatest and most groundbreaking filmmakers who ever lived, as well as the most renowned African director of the twentieth century—and yet his name still deserves to be better known in the rest of the world. He made his feature debut in 1966 with the brilliant and stirring BLACK GIRL. Sembène, who was also an acclaimed novelist in his native Senegal, transforms a deceptively simple plot—about a young Senegalese woman who moves to France to work for a wealthy white family and finds that life in their small apartment becomes a prison, both figuratively and literally—into a complexly layered critique of the lingering colonialist mind-set of a supposedly postcolonial world. Featuring a moving central performance by M’Bissine Thérèse Diop, BLACK GIRL is a harrowing human drama as well as a radical political statement—and one of the essential films of the 1960s.\n\nRestored by the Cineteca di Bologna/L’Immagine Ritrovata laboratory, in association with the Sembène Estate; INA, Institut National de l’Audiovisuel; Éclair; and the Centre National de Cinématographie. Restoration funded by The Film Foundation’s World Cinema Project.",
+    "isNew": false
+  },
+  {
+    "id": "black-god-white-devil",
+    "title": "Black God, White Devil",
+    "link": "https://www.criterionchannel.com/black-god-white-devil",
+    "filmIds": [
+      "trailer-8",
+      "black-god-white-devil-commentary",
+      "richard-pena-on-white-god-black-devil",
+      "memoria-do-cangaco",
+      "glauber-the-movie-labyrinth-of-brazil"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dc70d3c0-bbb4-40af-b213-415cbfc3c364.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Glauber Rocha • 1964 • Brazil Starring Geraldo Del Rey, Yoná Magalhães, Othon Bastos\n\nMyth, mysticism, and revolution collide in a blistering existential western from Glauber Rocha, a pioneer of Brazil’s socially committed Cinema Novo movement. After killing his swindling boss, ranch hand Manoel (Geraldo Del Rey) goes on the run with his wife, Rosa (Yoná Magalhães). In the stark hinterlands, they join forces with armed bandits and pledge allegiance to a self-styled holy man who preaches revolt against rich landowners while perpetrating unspeakable acts of violence against the innocent. Suffused with antiauthoritarian fervor and the intensity of life in the desert, this landmark work of radical cinema is a scorched-earth allegory about mindless fanaticism and the allure of dead-end ideologies.",
     "isNew": false
   },
   {
@@ -5843,6 +5972,17 @@
     "isNew": false
   },
   {
+    "id": "boy-1",
+    "title": "Boy",
+    "link": "https://www.criterionchannel.com/boy-1",
+    "filmIds": [
+      "boy"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/49fb8190-26e2-4a13-99e1-e52a91bd67f3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Nagisa Oshima • 1969 • Japan\nStarring Tetsuo Abe, Fumio Watanabe, Akiko Koyama\n\nFirebrand auteur Nagisa Oshima offers a devastating vision of moral rot within postwar Japanese society in the form of a hauntingly sad family tragedy. Inspired by a scandalous true story, BOY follows ten-year-old Toshio (Tetsuo Abe, an orphan whose real life mirrored the tumultuous upbringing of his character) whose grifter parents use him as a pawn in a scheme to stage car accidents and then extort money from the drivers. As the family crisscrosses Japan in an increasingly desperate attempt to elude the law, Toshio escapes into an imaginary world of science-fiction fantasy and space aliens that he dreams will deliver him from his harrowing existence. Applying the blistering stylistic experimentation of his earlier Japanese New Wave touchstones with newfound restraint, Oshima adopts a relatively sober docudrama approach that proves no less shocking and subversive in its emotionally annihilating portrait of a stolen childhood.",
+    "isNew": false
+  },
+  {
     "id": "boy-meets-girl",
     "title": "Boy Meets Girl",
     "link": "https://www.criterionchannel.com/boy-meets-girl",
@@ -6134,6 +6274,33 @@
     "isNew": false
   },
   {
+    "id": "brute-force",
+    "title": "Brute Force",
+    "link": "https://www.criterionchannel.com/brute-force",
+    "filmIds": [
+      "brute-force",
+      "brute-force-commentary",
+      "john-turturro-on-brute-force",
+      "paul-mason-on-brute-force",
+      "brute-force-the-actor-s-toolkit"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7e17d765-c31e-46ce-b803-5c13268ba0a4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Jules Dassin • 1947 • United States\nStarring Burt Lancaster, Hume Cronyn, Charles Bickford\n\nAs hard-hitting as its title, BRUTE FORCE was the first of Jules Dassin’s forays into the crime genre, a prison melodrama that takes a critical look at American society as well. Burt Lancaster is the timeworn Joe Collins, who, along with his fellow inmates, lives under the heavy thumb of the sadistic, power-tripping guard Captain Munsey (a riveting Hume Cronyn). Only Collins’s dreams of escape keep him going, but how can he possibly bust out of Munsey’s chains? Matter-of-fact and ferocious, BRUTE FORCE builds to an explosive climax that shows the lengths men will go to when fighting for their freedom.",
+    "isNew": false
+  },
+  {
+    "id": "brute-force-the-actor-s-toolkit",
+    "title": "BRUTE FORCE: The Actor’s Tool Kit",
+    "link": "https://www.criterionchannel.com/brute-force-the-actor-s-toolkit",
+    "filmIds": [
+      "brute-force-the-actor-s-toolkit",
+      "brute-force"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/eab17f94-5dc8-4e16-858a-fb2c4507e42a-96230112.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Observations on Film Art No. 12\n\nWhat do actors do when they act? Few aspects of film craft are as widely discussed—and as little understood.",
+    "isNew": false
+  },
+  {
     "id": "bud-greenspan-presents-vancouver-2010-stories-of-olympic-glory",
     "title": "Bud Greenspan Presents Vancouver 2010: Stories of Olympic Glory",
     "link": "https://www.criterionchannel.com/bud-greenspan-presents-vancouver-2010-stories-of-olympic-glory",
@@ -6293,6 +6460,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0ba7a73-968e-40b3-abcb-9b3f394dd48c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by John Woo • 1990 • Hong Kong\nStarring Tony Leung Chiu-wai, Jacky Cheung, Simon Yam\n\nOne of director John Woo’s most ambitious and emotionally charged films, this intense action epic follows the fates of three friends—gangsters Ben (Tony Leung Chiu-wai), Frank (Jacky Cheung), and Paul (Waise Lee)—as they leave behind 1960s Hong Kong to pull off a smuggling job in war-torn Vietnam, only to find their loyalties to one another tested when they are taken prisoner by the Vietcong. The most expensive Hong Kong film ever made at the time of its production—an arduous undertaking that drove Woo to the brink to realize his vision—BULLET IN THE HEAD blends the filmmaker’s celebrated action spectacle with a harrowing depiction of the POW experience that has earned it comparisons to THE DEER HUNTER.",
+    "isNew": false
+  },
+  {
+    "id": "bullfight-1",
+    "title": "Bullfight",
+    "link": "https://www.criterionchannel.com/bullfight-1",
+    "filmIds": [
+      "bullfight"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/56eaceda-faad-44b2-aa29-5551a80934d9.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Shirley Clarke • 1955 • United States\nStarring Anna Sokolow\n\nShirley Clarke’s fascination with dance is on full display in this short film featuring a moving performance by Anna Sokolow. A reinterpretation of a bullfight, Sokolow’s choreographed piece illustrates the dramatic exchange between a bovine beast and a matador. Clarke further charges the routine by intercutting it with footage from an actual bullfight.",
     "isNew": false
   },
   {
@@ -6848,17 +7026,6 @@
       "sweet-sugar-rage"
     ],
     "description": "Born from a period of intense political upheaval, these radical Caribbean films spotlight vital stories of workers’ movements, decolonial struggle, and liberation from economic exploitation and violent oppression. Including urgent, on-the-ground accounts of revolutionary movements (HAITI: THE WAY TO FREEDOM, GRENADA: THE FUTURE COMING TOWARDS US), dynamic portraits of women on the frontlines of resistance (WOMEN OF SURINAME, SWEET SUGAR RAGE), and a one-of-a-kind diasporic musical revue (WEST INDIES: THE FUGITIVE SLAVES OF LIBERTY), they blend agitprop and grassroots pedagogy with living folk traditions to forge a collective counter-cinema built around the fight for freedom.\n\nGuest-curated by Jonathan Ali of Third Horizon Film Festival, who presented a version of this program entitled You Don’t Get Freedom, You Take Freedom: Caribbean Activist Cinema 1978–1985 at THFF in 2025.\n\nFeaturing:\nHAITI: THE WAY TO FREEDOM (Arnold Antonin, 1973)\nTHE TERROR AND THE TIME (Rupert Roonaraine, 1978)\nWOMEN OF SURINAME (At van Praag, 1978)\nWEST INDIES: THE FUGITIVE SLAVES OF LIBERTY (Med Hondo, 1979)\nBITTER CANE (Ben Dupuy and Kim Ives, 1983)\nGRENADA: THE FUTURE COMING TOWARDS US (Carmen Ashhurst, Samori Marksman, and John Douglas, 1983)\nSWEET SUGAR RAGE (Harclyde Walcott and Honor Ford-Smith, 1985)",
-    "isNew": false
-  },
-  {
-    "id": "caring-cabin",
-    "title": "Caring Cabin",
-    "link": "https://www.criterionchannel.com/caring-cabin",
-    "filmIds": [
-      "35149-caring-cabin"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a26c6ec6-805d-4622-bed2-c63510972436.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by Chelsea McMullan and Douglas Nayler Jr. • 2025 • Canada\nStarring Beverly Glenn-Copeland\n\nStarring electronic-music pioneer Beverly Glenn-Copeland and conceived by his wife and creative partner Elizabeth, this never-before-seen pilot for an unproduced children’s show is a joyous, colorful kaleidoscope of handmade puppets, eye-whirling archival montage, and Glenn-Copeland’s transcendent music. Though the planned series ultimately never came to fruition due to Glenn-Copeland’s subsequent dementia diagnosis, this small treasure is a testament to the radiant imagination of a singularly serene, inspirational life force who is a beacon to both underground music and the trans community.",
     "isNew": false
   },
   {
@@ -8332,48 +8499,6 @@
     "isNew": false
   },
   {
-    "id": "commentaries",
-    "title": "Commentaries",
-    "link": "https://www.criterionchannel.com/commentaries",
-    "filmIds": [
-      "the-silence-of-the-lambs-commentary",
-      "high-art-commentary",
-      "terry-gilliam-commentary",
-      "bigger-than-life-commentary",
-      "ghost-world-commentary",
-      "hunter-s-thompson-commentary",
-      "the-man-who-fell-to-earth-commentary",
-      "killer-of-sheep-commentary",
-      "hard-boiled-commentary",
-      "compensation-commentary",
-      "safety-last-commentary",
-      "8-commentary",
-      "eve-s-bayou-director-s-cut-commentary",
-      "a-woman-under-the-influence-commentary",
-      "burden-of-dreams-commentary",
-      "the-killer-commentary",
-      "grey-gardens-commentary",
-      "sean-baker-commentary",
-      "thirty-two-short-films-about-glenn-gould-commentary",
-      "eastern-condors-commentary",
-      "monterey-pop-commentary",
-      "gimme-shelter-commentary",
-      "basquiat-commentary",
-      "audio-commentary",
-      "nowhere-commentary",
-      "the-last-emperor-commentary",
-      "sweet-sweetback-s-baadasssss-song-commentary",
-      "celine-and-julie-go-boating-commentary",
-      "hearts-and-minds-commentary",
-      "the-celebration-commentary",
-      "zero-de-conduite-commentary",
-      "the-trial-commentary"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/50e11e56-5a77-45c3-a497-5418fb191a02-3f1da5a6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
-    "isNew": false
-  },
-  {
     "id": "common-threads-stories-from-the-quilt",
     "title": "Common Threads: Stories from the Quilt",
     "link": "https://www.criterionchannel.com/common-threads-stories-from-the-quilt",
@@ -8478,6 +8603,17 @@
     "isNew": false
   },
   {
+    "id": "contras-city",
+    "title": "Contras’ City",
+    "link": "https://www.criterionchannel.com/contras-city",
+    "filmIds": [
+      "contras-city"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d0ab318e-1344-45fd-8738-9a922589bf25.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Djibril Diop Mambéty • 1969 • Senegal\n\nDjibril Diop Mambéty’s first short film is a tour of the city of Dakar and the postcolonial contrasts of its people, architecture, and culture.",
+    "isNew": false
+  },
+  {
     "id": "control",
     "title": "Control",
     "link": "https://www.criterionchannel.com/control",
@@ -8486,6 +8622,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f495c31b-af4f-414e-a1a9-b5934e89deac.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Anton Corbijn • 2007 • United Kingdom, United States\nStarring Sam Riley, Samantha Morton, Alexandra Maria Lara\n\nWith this bleakly beautiful immersion into the legendary 1970s Manchester postpunk scene, photographer-turned-filmmaker Anton Corbijn evokes the agony and ecstasy of Ian Curtis—the Joy Division frontman whose plaintive vocals and death by suicide at age twenty-three made him an icon of outsiderhood. In a fully embodied performance that transcends imitation, Sam Riley stars as the sensitive Curtis, who electrifies audiences with his intense, live-wire stage presence—even as a failing marriage and his increasingly troubling epileptic episodes send him spiraling towards oblivion.",
+    "isNew": false
+  },
+  {
+    "id": "convergences-and-re-encounters",
+    "title": "Convergences and Re-Encounters",
+    "link": "https://www.criterionchannel.com/convergences-and-re-encounters",
+    "filmIds": [
+      "convergences-and-reunions"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/82837a59-e929-4f52-8eab-ac1950b6785c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Lina Rodriguez • 2008 • Canada\n\nPart of a series of experimental short films by Lina Rodriguez exploring her sensorial relationship to tourist sites and how their history can be perceived, CONVERGENCES AND RE-ENCOUNTERS is a collection of impressions of an afternoon at the labyrinthine Montparnasse Cemetery in Paris.",
     "isNew": false
   },
   {
@@ -8719,6 +8866,89 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/1c6f2a38-9991-4c74-9a40-e77081f351df.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Legendary filmmaker D. A. Pennebaker, writer Frank Rich, and expert Jill Drew joined us at New York’s Metrograph theater to celebrate The Kennedy Films of Robert Drew & Associates. Here’s how it went.",
+    "isNew": false
+  },
+  {
+    "id": "criterion-live-split-screen-20th-anniversary-walter-reade-theater-2",
+    "title": "Criterion Live! SPLIT SCREEN 20th Anniversary, Walter Reade Theater",
+    "link": "https://www.criterionchannel.com/criterion-live-split-screen-20th-anniversary-walter-reade-theater-2",
+    "filmIds": [
+      "prodcriterionchannel-29063-splitscreen-live-mezzanine",
+      "split-screen-christopher-walken-cooks",
+      "split-screen-direction-man",
+      "split-screen-the-blair-witch-project",
+      "split-screen-selective-service-system-story",
+      "split-screen-big-miss-moviola",
+      "split-screen-making-northwestern",
+      "split-screen-the-fiji-stooges"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/88a4ea2d-ff24-4bb2-9c69-f0f665f04aaf-39b55677.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "On May 10, 2017, we teamed up with the Film Society of Lincoln Center to celebrate John Pierson’s landmark series with a live conversation featuring Pierson and filmmakers Richard Linklater, Kevin Smith, Miranda July, Chris Smith, Don Ward, and Dan Myrick.",
+    "isNew": false
+  },
+  {
+    "id": "criterion-originals",
+    "title": "Criterion Originals",
+    "link": "https://www.criterionchannel.com/criterion-originals",
+    "filmIds": [
+      "sean-fennessey-on-abel-ferrara",
+      "marlon-james-s-adventures-in-moviegoing",
+      "the-craft-of-acting-paul-dano",
+      "gints-zilbalodis-interview",
+      "fred-armisen-and-carrie-brownstein-in-conversation",
+      "daniel-clowes-in-conversation",
+      "sergei-loznitsa-interview",
+      "patton-oswalt-on-the-umbrellas-of-cherbourg",
+      "tessa-thompson-on-touki-bouki",
+      "alain-guiraudie-interview",
+      "debra-granik-interview",
+      "david-chase-in-conversation",
+      "thierry-fremaux-interview",
+      "mary-bronstein-s-adventures-in-moviegoing",
+      "cheryl-dunye-interview",
+      "ethan-hawke-on-4-months-3-weeks-and-2-days",
+      "paul-dano-on-a-man-escaped",
+      "richard-linklater-on-l-argent",
+      "the-craft-of-acting-ethan-hawke",
+      "joachim-trier-interview",
+      "buddy-joe-hooker-interview",
+      "ira-sachs-interview",
+      "spotlight-on-within-our-gates-with-racquel-gates",
+      "yakima-canutt-on-stagecoach",
+      "wyatt-cenac-on-in-the-mood-for-love",
+      "noah-baumbach-s-adventures-in-moviegoing",
+      "the-safdie-brothers-in-conversation",
+      "queersighted-sick-and-dirty",
+      "grady-hendrix-on-ringo-lam",
+      "spotlight-on-jessie-maple",
+      "sofia-coppola-in-conversation",
+      "richard-linklater-on-the-nouvelle-vague",
+      "rebecca-miller-in-conversation",
+      "josh-brolin-s-adventures-in-moviegoing",
+      "spotlight-on-breathless",
+      "imogen-sara-smith-on-howard-hawks",
+      "richard-pena-on-youssef-chahine",
+      "bill-hader-on-the-brood",
+      "dennis-lim-on-edward-yang",
+      "grey-gardens-at-50-birthday",
+      "grey-gardens-at-50-costumes",
+      "the-altman-apartment",
+      "sammo-hung-interview",
+      "30-years-of-the-film-foundation-martin-scorsese-and-ari-aster-in-conversation",
+      "david-cronenberg-interview",
+      "the-craft-of-acting-brian-cox",
+      "bette-gordon-interview",
+      "queersighted-coming-of-age",
+      "spike-lee-s-adventures-in-moviegoing",
+      "tim-blake-nelson-interview",
+      "payal-kapadia-interview",
+      "imogen-sara-smith-on-french-poetic-realism",
+      "john-water-s-adventures-in-moviegoing",
+      "spotlight-on-kinuyo-tanaka",
+      "greta-gerwig-s-adventures-in-moviegoing"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/94c462aa-3fde-4b34-be63-6ad6b5970831-cd7fa730.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
     "isNew": false
   },
   {
@@ -9235,6 +9465,28 @@
     "isNew": false
   },
   {
+    "id": "day-of-wrath",
+    "title": "Day of Wrath",
+    "link": "https://www.criterionchannel.com/day-of-wrath",
+    "filmIds": [
+      "day-of-wrath"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/75f4cd8a-340b-4f91-a01b-5ecbf5df8a45.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Carl Th. Dreyer • 1943 • Denmark\nStarring Thorkild Roose, Lisbeth Movin, Sigrid Neiiendam\n\nFilmed during the Nazi occupation of Denmark, Carl Dreyer’s DAY OF WRATH (VREDENS DAG) is a harrowing account of individual helplessness in the face of growing social repression and paranoia. Anna, the young second wife of a well-respected but much older pastor, falls in love with her stepson when he returns to their small seventeenth-century village. Stepping outside the bounds of the village’s harsh moral code has disastrous results. Exquisitely photographed and passionately acted, DAY OF WRATH remains an intense, unforgettable experience.",
+    "isNew": false
+  },
+  {
+    "id": "day-of-wrath-1",
+    "title": "Day of Wrath",
+    "link": "https://www.criterionchannel.com/day-of-wrath-1",
+    "filmIds": [
+      "day-of-wrath"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3113d33e-587a-41e6-80e8-8385b6a57dbd.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Carl Th. Dreyer • 1943 • Denmark\n\nFilmed during the Nazi occupation of Denmark, Carl Dreyer's Day of Wrath (Vredens dag) is a harrowing account of individual helplessness in the face of growing social repression and paranoia. Anna, the young second wife of a well respected but much older pastor, falls in love with her stepson when he returns to their small seventeenth-century village. Stepping outside the bounds of the village's harsh moral code has disastrous results. Exquisitely photographed and passionately acted, Day of Wrath remains an intense, unforgettable experience.",
+    "isNew": false
+  },
+  {
     "id": "daybreak-express",
     "title": "Daybreak Express",
     "link": "https://www.criterionchannel.com/daybreak-express",
@@ -9244,6 +9496,20 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c684bf64-0cd8-4fe1-ab2f-f8460e57cb90.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by D. A. Pennebaker • 1953 • United States\n\nShot in 1953, though not completed until 1957, Daybreak Express was the first film D. A. Pennebaker made, a mad rush of images of New York City captured from a train and edited to the rhythm of Duke Ellington's song of the same name. A jazz aficionado, Pennebaker thought his career would continue along this path, making short films cut to songs.",
+    "isNew": false
+  },
+  {
+    "id": "days-and-nights-in-the-forest",
+    "title": "Days and Nights in the Forest",
+    "link": "https://www.criterionchannel.com/days-and-nights-in-the-forest",
+    "filmIds": [
+      "days-and-nights-in-the-forest",
+      "introduction-by-wes-anderson",
+      "remembering-days-and-nights-in-the-forest",
+      "restoration-premiere-at-cannes"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/adb81fce-9c04-464f-af8d-3635970dc2f2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Satyajit Ray • 1970 • India\nStarring Soumitra Chatterjee, Subhendu Chatterjee, Samit Bhanja\n\nOne of director Satyajit Ray’s greatest achievements begins with the deceptively easy grace of a buddy comedy—only to give way to darker moral shading. Seeking a weekend escape from the city, four friends from Kolkata embark on a driving trip to the countryside, where their urban entitlement and prejudices are gradually exposed. Among these young bachelors is the overconfident Ashim (Soumitra Chatterjee), who finds his self-assurance shaken by Aparna (the radiant Sharmila Tagore), an enigmatic young woman whose cool intellect conceals turbulent emotional depths. Filmed luminously amid the sun-dappled splendor of the woodlands of India’s Palamu region, DAYS AND NIGHTS IN THE FOREST deconstructs the masculine ego and India’s fraught class divisions with elegant complexity.",
     "isNew": false
   },
   {
@@ -9530,6 +9796,17 @@
     "isNew": true
   },
   {
+    "id": "desire-1",
+    "title": "Desire",
+    "link": "https://www.criterionchannel.com/desire-1",
+    "filmIds": [
+      "desire"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3587f0b1-b869-4bc4-9bcc-643203aaeaa2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Sacha Guitry • 1937 • France\n\nSacha Guitry exchanges his usual top hat for a uniform in Désiré, playing a cavalier valet embroiled in an awkward flirtation with his new employer (played by the actor-director's real-life wife, Jacqueline Delubac), who is involved with a stuffy politician. A carefree class farce filled with memorable supporting characters, Désiré blurs the distinction between upstairs and downstairs.",
+    "isNew": false
+  },
+  {
     "id": "desperate-teenage-lovedolls",
     "title": "Desperate Teenage Lovedolls",
     "link": "https://www.criterionchannel.com/desperate-teenage-lovedolls",
@@ -9598,6 +9875,19 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/eafc0ee1-34bb-4cce-91f8-e68d5b90e0fd-3f1604d5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Criterion Collection Edition #966\n\nDirected by Edgar G. Ulmer • 1945 • United States\nStarring Tom Neal, Ann Savage\n\nFrom Poverty Row came a movie that, perhaps more than any other, epitomizes the dark fatalism at the heart of film noir. As he hitchhikes his way from New York to Los Angeles, a down-on-his-luck nightclub pianist (Tom Neal) finds himself with a dead body on his hands and nowhere to run—a waking nightmare that goes from bad to worse when he picks up the most vicious femme fatale in cinema history, Ann Savage’s snarling, monstrously conniving drifter Vera. Working with no-name stars on a bargain-basement budget, B auteur Edgar G. Ulmer turned threadbare production values and seedy, low-rent atmosphere into indelible pulp poetry. Long unavailable in a format in which its hard-boiled beauty could be fully appreciated, DETOUR haunts anew in its first major restoration.\n\nRestored by the Academy Film Archive and The Film Foundation in collaboration with the Cinémathèque Royale de Belgique, The Museum of Modern Art, and the Cinémathèque Française. Restoration funding provided by the George Lucas Family Foundation.",
+    "isNew": false
+  },
+  {
+    "id": "devi-1",
+    "title": "Devi",
+    "link": "https://www.criterionchannel.com/devi-1",
+    "filmIds": [
+      "devi",
+      "sharmila-tagore-and-soumitra-chatterjee",
+      "a-goddess-in-close-up-satyajit-ray-s-devi"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ba0a9278-1d51-4598-ab85-b21b0d1549a9.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Satyajit Ray • 1960 • India\nStarring Sharmila Tagore, Chhabi Biswas, Soumitra Chatterjee\n\nMaster filmmaker Satyajit Ray explores the conflict between fanaticism and free will in DEVI (“The Goddess”), issuing a subversively modern challenge to religious orthodoxy and patriarchal power structures. In rural India in the second half of the nineteenth century, after his son (Soumitra Chatterjee) leaves for Kolkata to complete his studies, a wealthy feudal landlord (Chhabi Biswas) is seized by the notion that his beloved daughter-in-law (a hauntingly sad-eyed Sharmila Tagore) is an incarnation of the Mother Goddess—a delusion that proves devastating to the young woman and those around her. The elegantly stylized compositions and the chiaroscuro lighting by cinematographer Subrata Mitra heighten the expressionistic intensity of this domestic tragedy, making for an experience that is both sublime and shattering.",
     "isNew": false
   },
   {
@@ -10722,6 +11012,19 @@
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8c477cdb-fc0d-4c6d-85c1-a3780535999e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "With their intricately choreographed bullet play, supercharged emotion, and hard-hitting themes of loyalty and honor in the criminal underworld, the films of John Woo jolted Hong Kong action cinema to new life. With his breakthrough, A BETTER TOMORROW, Woo set the standard for what would become known as the heroic bloodshed genre, a mix of kinetic violence and operatic macho angst that he would continue to refine in hugely influential thrillers like THE KILLER and HARD BOILED, cementing his status as a legend among action aficionados the world over.",
     "isNew": false
+  },
+  {
+    "id": "directed-by-jonathan-demme",
+    "title": "Directed by Jonathan Demme",
+    "link": "https://www.criterionchannel.com/directed-by-jonathan-demme",
+    "filmIds": [
+      "the-silence-of-the-lambs",
+      "married-to-the-mob",
+      "something-wild-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3f87df69-a50e-4450-9beb-57cb710e3928.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Jonathan Demme moved fluidly across genres while maintaining an unmistakably humanist sensibility, from the kinetic screwball anarchy of SOMETHING WILD and MARRIED TO THE MOB to the restrained terror of THE SILENCE OF THE LAMBS to the overwhelming emotions of RACHEL GETTING MARRIED. Animated by unforgettable characters in states of reinvention, his films overflow with warmth and affection for even the most damaged souls, as well as an easygoing grace that gave his extraordinary actors space to shine.",
+    "isNew": true
   },
   {
     "id": "directed-by-joyce-chopra",
@@ -12457,6 +12760,17 @@
     "isNew": false
   },
   {
+    "id": "downhill",
+    "title": "Downhill",
+    "link": "https://www.criterionchannel.com/downhill",
+    "filmIds": [
+      "downhill-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a49019d0-a843-4369-ab83-630b58aed3a9.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Alfred Hitchcock • 1927 • United Kingdom\nStarring Ivor Novello, Ben Webster, Norman McKinnel\n\nThat’s the direction things go for boarding-school student and star rugby player Roddy Berwick (celebrated songwriter and matinee idol Ivor Novello) when he falls from golden boy to public disgrace and bottoms out as a Parisian gigolo after accepting the blame for a friend’s scandalous indiscretion. In his fourth film as director, also known as WHEN BOYS LEAVE HOME, Alfred Hitchcock puts forth the earliest expressions of what would become his recurring themes: the “wrong man” and the transference of guilt.",
+    "isNew": false
+  },
+  {
     "id": "downpour",
     "title": "Downpour",
     "link": "https://www.criterionchannel.com/downpour",
@@ -13276,6 +13590,17 @@
     "isNew": false
   },
   {
+    "id": "eno",
+    "title": "Eno",
+    "link": "https://www.criterionchannel.com/eno",
+    "filmIds": [
+      "eno-4"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/43ab3cf2-cd79-469a-92b3-54747ae4c4c9.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "A NEW VERSION OF ENO WILL BE FEATURED EACH MONTH\n\nDirected by Gary Hustwit • 2024 • United States, United Kingdom\n\nA documentary as innovative as its subject, this kaleidoscopic portrait of visionary musician, producer, and self-described “sonic landscaper” Brian Eno is a different experience every time it’s shown. Using custom non-AI software, director Gary Hustwit and digital artist Brendan Dawes created the world’s first generative feature film, which endlessly reedits and resequences hundreds of hours of never-before-seen footage, interviews, and unreleased music into 52 quintillion (or 52 billion billion) possible permutations. Chronicling Eno’s legendary contributions to the band Roxy Music, his influential work as a pioneer of ambient music, and his producing career for artists like David Bowie, U2, and Talking Heads, ENO is a fittingly form-breaking tribute to an artist who changed the way modern music is made.",
+    "isNew": false
+  },
+  {
     "id": "entr-acte",
     "title": "Entr’acte",
     "link": "https://www.criterionchannel.com/entr-acte",
@@ -13908,6 +14233,22 @@
     "isNew": false
   },
   {
+    "id": "faces-1",
+    "title": "Faces",
+    "link": "https://www.criterionchannel.com/faces-1",
+    "filmIds": [
+      "faces",
+      "ethan-hawke-on-faces",
+      "alternate-opening",
+      "cineastes-de-notre-temps-faces",
+      "making-faces",
+      "al-ruban-on-lighting-and-shooting-faces"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/76e8da98-f0be-465a-9162-5dbd8ddd4176.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by John Cassavetes • 1968 • United States\nStarring John Marley, Lynn Carlin, Gena Rowlands\n\nJohn Cassavetes puts a disintegrating marriage under the microscope in the searing FACES. Shot in high-contrast 16 mm black and white, the film follows the futile attempts of the captain of industry Richard (John Marley) and his wife, Maria (Lynn Carlin), to escape the anguish of their empty relationship in the arms of others. Featuring astonishingly nervy performances from Marley, Carlin, and Cassavetes regulars Gena Rowlands and Seymour Cassel, FACES confronts modern alienation and the battle of the sexes with a brutal honesty and compassion rarely matched in cinema.",
+    "isNew": false
+  },
+  {
     "id": "faces-displays-and-other-imaginary-things",
     "title": "Faces, Displays, and Other Imaginary Things",
     "link": "https://www.criterionchannel.com/faces-displays-and-other-imaginary-things",
@@ -13927,6 +14268,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4b27a3d8-3a61-4265-8ead-45ca5a0eeb10.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Robert Drew • 1964 • United States\n\nAn intimate portrait of President John F. Kennedy's funeral in November of 1963, this short work crafted by documentarian Robert Drew captures one of the most solemn moments in U.S. history.",
+    "isNew": false
+  },
+  {
+    "id": "factory-1",
+    "title": "Factory",
+    "link": "https://www.criterionchannel.com/factory-1",
+    "filmIds": [
+      "factory"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8ca4b4bb-c4ad-48c7-89d2-eb18a2ded64c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Krzysztof Kieślowski • 1970 • Poland\n\nKrzysztof Kieślowski began his career making documentaries. Presented here is FACTORY, one of his nonfiction shorts.",
     "isNew": false
   },
   {
@@ -14005,6 +14357,19 @@
     "isNew": false
   },
   {
+    "id": "fanny-1",
+    "title": "Fanny",
+    "link": "https://www.criterionchannel.com/fanny-1",
+    "filmIds": [
+      "fanny",
+      "marcel-pagnol-morceaux-choisis-episode-3",
+      "marcel-pagnol-morceaux-choisis-episode-4"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c879e848-e215-4a26-9920-a0778cfa24ad.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Marc Allégret • 1932 • France\n\nThe delicate romanticism of The Marseille Trilogy's opening installment encounters harsh reality in this sequel, which picks up moments after Marius has left his would-be wife, Fanny, for a sailor's existence. Soon after his departure, Fanny learns that she is pregnant with his child, to the disappointment of her mother and of Marius's father, César. To secure a better life for her unborn child, she accepts a marriage proposal from the aging widower Honoré Panisse. By turns moving and disarmingly funny, this portrait of heartbreak and its aftermath is buoyed by Pagnol's openheartedness toward his characters, and by director Marc Allégret's vivid and assured depiction of colorful Marseille.",
+    "isNew": false
+  },
+  {
     "id": "fanny-and-alexander-television-version",
     "title": "FANNY AND ALEXANDER: Television Version",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7972b9de-edb3-446b-aa9c-93eb2f2d6fe3-2967c175.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -14017,6 +14382,22 @@
       "the-making-of-fanny-and-alexander"
     ],
     "description": "Through the eyes of ten-year-old Alexander, we witness the delights and conflicts of the Ekdahl family, a sprawling bourgeois clan in turn-of-the-twentieth-century Sweden. Ingmar Bergman intended FANNY AND ALEXANDER as his swan song, and it is the director’s warmest and most autobiographical film, an Academy Award–winning triumph that combines his trademark melancholy and emotional intensity with immense joy and sensuality. Bergman described FANNY AND ALEXANDER, presented here in the five-hour television version, as “the sum total of my life as a filmmaker.” And in this, the full-length (312-minute) version of his triumphant valediction, his vision is expressed at its fullest.",
+    "isNew": false
+  },
+  {
+    "id": "fanny-and-alexander-theatrical-version",
+    "title": "FANNY AND ALEXANDER: Theatrical Version",
+    "link": "https://www.criterionchannel.com/fanny-and-alexander-theatrical-version",
+    "filmIds": [
+      "fanny-and-alexander-the-theatrical-version",
+      "fanny-and-alexander-commentary",
+      "a-bergman-tapestry",
+      "ingmar-bergman-bids-farewell-to-film",
+      "fanny-and-alexander-set-models",
+      "channel-c041199-amg-karynkusama-fannyandalexander"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/cedb60ad-39e6-438e-80c9-d1e01784fb0f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Ingmar Bergman • 1982 • Sweden\nStarring Pernilla Allwin, Bertil Guve, Ewa Fröling\n\nThrough the eyes of ten-year-old Alexander, we witness the delights and conflicts of the Ekdahl family, a sprawling bourgeois clan in turn-of-the-twentieth-century Sweden. Ingmar Bergman intended FANNY AND ALEXANDER as his swan song, and it is the legendary director’s warmest and most autobiographical film, a four-time Academy Award-winning triumph that combines his trademark melancholy and emotional intensity with immense joy and sensuality. Bergman described Fanny and Alexander as “the sum total of my life as a filmmaker.”",
     "isNew": false
   },
   {
@@ -14034,6 +14415,22 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c7cdc755-7a31-4e55-bb47-ed6e6a999996-2f53b527.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by René Laloux • 1973 • France\n\nNothing else has ever looked or felt like director René Laloux's animated marvel FANTASTIC PLANET, a politically minded and visually inventive work of science fiction. The film is set on a distant planet called Ygam, where enslaved humans (Oms) are the playthings of giant blue native inhabitants (Draags). After Terr, kept as a pet since infancy, escapes from his gigantic child captor, he is swept up by a band of radical fellow Oms who are resisting the Draags' oppression and violence. With its eerie, coolly surreal cutout animation by Roland Topor; brilliant psychedelic jazz score by Alain Goraguer; and wondrous creatures and landscapes, this Cannes-awarded 1973 counterculture classic is a perennially compelling statement against conformity and violence.",
+    "isNew": false
+  },
+  {
+    "id": "farewell-amor",
+    "title": "Farewell Amor",
+    "link": "https://www.criterionchannel.com/farewell-amor",
+    "filmIds": [
+      "farwell-amor-commentary",
+      "farewell-meu-amor",
+      "the-market-king",
+      "suspense-1",
+      "ntare-guma-mbaho-mwine-zainab-jah-and-jayme-lawson-on-farewell-amor",
+      "farewell-amor-deleted-scenes"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8ce9e555-0b8e-4838-b3af-82e721864b78.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Ekwa Msangi • 2020 • United States\nStarring Ntare Guma Mbaho Mwine, Zainab Jah, Jayme Lawson\n\nIn her luminous feature debut, filmmaker Ekwa Msangi chronicles a broken family’s journey to wholeness with empathy and insight. Seventeen years after his family was separated by the civil war in Angola, a New York taxi driver (Ntare Guma Mbaho Mwine) is reunited with his now devoutly religious wife (Zainab Jah) and teenage daughter (Jayme Lawson) when they are finally able to follow him to America. But after living thousands of miles apart for so long, the three find they must discover one another’s strengths, forgive one another’s weaknesses, and bridge cultural and generational divides in order to build a life together. Told in three perspective-shifting chapters that honor the multitude of struggles and emotions that make up the immigrant experience, FAREWELL AMOR is a bittersweet, compassionate evocation of how it feels when your heart and your home are in different places.",
     "isNew": false
   },
   {
@@ -14144,6 +14541,17 @@
     "isNew": false
   },
   {
+    "id": "father-1",
+    "title": "Father",
+    "link": "https://www.criterionchannel.com/father-1",
+    "filmIds": [
+      "father"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/48747304-e7bc-40a7-8e6e-5267a2886da0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Keisuke Kinoshita • 1988 • Japan\n\nA middle-aged man's family loses patience with him as he struggles with his seemingly directionless life. Directed by Keisuke Kinoshita.",
+    "isNew": false
+  },
+  {
     "id": "father-amin",
     "title": "Father Amin",
     "link": "https://www.criterionchannel.com/father-amin",
@@ -14179,6 +14587,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3b9811c3-1616-4c85-8ad1-ae320ba09e95.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Jessica Beshir • 2021 • Ethiopia, United States, Qatar\n\nA sublime work of trance-state cinema, the debut feature by the Mexican Ethiopian filmmaker Jessica Beshir is a hypnotic immersion in the world of rural Ethiopia, a place where one commodity—khat, a euphoria-inducing plant once prized for its supposedly mystical properties—holds sway over the rituals and rhythms of everyday life. As if under the intoxicating influence of the drug itself, FAYA DAYI unfurls as a hallucinogenic cinematic reverie, capturing hushed, intimate moments in the existences of everyone from the harvesters of the crop to people lost in its narcotic haze to a desperate but determined younger generation searching for an escape from the region’s political strife. The film’s exquisite monochrome cinematography—each frame a masterpiece sculpted from light and shadow—and time-bending, elliptical editing create a ravishing sensory experience that hovers between consciousness and dreaming.",
+    "isNew": false
+  },
+  {
+    "id": "fear-1",
+    "title": "Fear",
+    "link": "https://www.criterionchannel.com/fear-1",
+    "filmIds": [
+      "fear"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/226ba2e3-2eee-4d0d-a546-9fcfc73b5f2c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Roberto Rossellini • 1954 • Italy, West Germany\nStarring Ingrid Bergman, Mathias Wieman, Renate Mannhardt\n\nTinged with brooding noir atmosphere, the last of the celebrated collaborations between Roberto Rossellini and Ingrid Bergman is a tense portrait of the psychology of an extramarital relationship that, in many ways, fascinatingly mirrors the furor surrounding the director and star’s own scandalous affair. In postwar Germany, Irene Wagner (Bergman) conceals an adulterous affair from her prominent husband (Mathias Wieman). When her lover’s jealous ex-girlfriend (Renate Mannhardt) begins blackmailing her, Irene finds herself plunged into a vortex of guilt, anxiety, and paranoia.",
     "isNew": false
   },
   {
@@ -14488,6 +14907,19 @@
     "isNew": false
   },
   {
+    "id": "fires-on-the-plain",
+    "title": "Fires on the Plain",
+    "link": "https://www.criterionchannel.com/fires-on-the-plain",
+    "filmIds": [
+      "fires-on-the-plain-1",
+      "donald-richie-on-fires-on-the-plain",
+      "ichikawa-and-curtis-on-fires-on-the-plain"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0e82e6bb-9a5e-47d4-8a51-db7b40122205.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Kon Ichikawa • 1959 • Japan\nStarring Eiji Funakoshi, Osamu Takizawa, Mickey Curtis\n\nAn agonizing portrait of desperate Japanese soldiers stranded in a strange land during World War II, Kon Ichikawa’s FIRES ON THE PLAIN is a compelling descent into psychological and physical oblivion. Denied hospital treatment for tuberculosis and cast off into the unknown, Private Tamura treks across an unfamiliar Philippine landscape, encountering an increasingly debased cross section of Imperial Army soldiers, who eventually give in to the most terrifying craving of all. Grisly yet poetic, FIRES ON THE PLAIN is one of the most powerful works from one of Japanese cinema’s most versatile filmmakers.",
+    "isNew": false
+  },
+  {
     "id": "fireworks-over-the-sea",
     "title": "Fireworks Over the Sea",
     "link": "https://www.criterionchannel.com/fireworks-over-the-sea",
@@ -14496,6 +14928,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a9a851bd-6b93-442f-86cc-756d5a90f07f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Keisuke Kinoshita • 1951 • Japan\n\nA fishing union depends on two brothers to make up the losses caused by the dishonest captains they replaced. Keisuke Kinoshita directs.",
+    "isNew": false
+  },
+  {
+    "id": "first-1",
+    "title": "First",
+    "link": "https://www.criterionchannel.com/first-1",
+    "filmIds": [
+      "first"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ac109ea1-cea2-4764-ad79-3595aadef842-fb98668c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Caroline Rowland • 2012 • United Kingdom\n\nCaroline Rowland's FIRST is influenced by Bud Greenspan's method of profiling selected competitors in depth and continuing with an account of how they performed at the Games, often in their own words. Rowland's twist is that she chooses all first-time Olympians.",
     "isNew": false
   },
   {
@@ -15521,6 +15964,30 @@
     "isNew": false
   },
   {
+    "id": "gap-toothed-women",
+    "title": "Gap-Toothed Women",
+    "link": "https://www.criterionchannel.com/gap-toothed-women",
+    "filmIds": [
+      "gap-toothed-women",
+      "gap-toothed-women-mind-the-gap"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a3d4689b-10bf-4e5d-8e33-1c79588580da-d475c77a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Les Blank • 1987 • United States\n\nFilmmaker Les Blank breezily questions our commonly accepted standards of beauty with this paean to women with extra-wide dental spaces.",
+    "isNew": false
+  },
+  {
+    "id": "gap-toothed-women-1",
+    "title": "Gap-Toothed Women",
+    "link": "https://www.criterionchannel.com/gap-toothed-women-1",
+    "filmIds": [
+      "gap-toothed-women",
+      "gap-toothed-women-mind-the-gap"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/66852eaf-1a0c-45cf-b2be-6f72265986e7-2bd15311.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "“If you are also shocked that Michael Strahan closed the gap in his teeth, may I suggest this Les Blank film to process. It is a light, joyful romp that emphasizes that the small characteristics in people are worth celebrating.” —Sam L, restoration\n\nDirected by Les Blank • 1987 • United States\n\nFilmmaker Les Blank breezily questions our commonly accepted standards of beauty with this paean to women with extra-wide dental spaces.",
+    "isNew": false
+  },
+  {
     "id": "garlic-is-as-good-as-ten-mothers",
     "title": "Garlic Is as Good as Ten Mothers",
     "link": "https://www.criterionchannel.com/garlic-is-as-good-as-ten-mothers",
@@ -15958,6 +16425,20 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9093a0b9-42d4-43bf-99d0-66c326454ce1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Hasse Ekman • 1950 • Sweden\nStarring Eva Henning, Ulf Palme, Anders Ek\n\nOne of the most acclaimed Swedish films of all time (heralded as a masterpiece by no less than Ingmar Bergman), this moody, masterfully crafted psychological mystery unfolds in a tantalizing series of CITIZEN KANE–esque flashbacks as the neighbors of an enigmatic young woman (Eva Henning) who committed suicide attempt to piece together the truth about what drove her to such a tragic end. It builds to a startling final revelation that, in its sensitivity and daring empathy, marks this heartbreaking study of loneliness and isolation as an important milestone in queer cinema.",
+    "isNew": false
+  },
+  {
+    "id": "girlfight",
+    "title": "Girlfight",
+    "link": "https://www.criterionchannel.com/girlfight",
+    "filmIds": [
+      "girlfight-commentary",
+      "karyn-kusama-on-girlfight",
+      "theodore-shapiro-and-plummy-tucker-on-girlfight",
+      "storyboarding-girlfight"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d18139bd-f6e3-4992-9919-cd30f47e19b8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Karyn Kusama • 2000 • United States\nStarring Michelle Rodriguez, Jaime Tirelli, Paul Calderon\n\nBullied by her father at home and feeling adrift at school, Diana Guzman (Michelle Rodriguez) finds refuge in an unexpected pocket of her native Brooklyn—a timeworn boxing gym, where she learns to channel her strength, discovers a sense of community, and falls for a rival fighter. In Karyn Kusama’s raw, understated feature debut, Rodriguez commands the screen with both tightly coiled intensity and deep wells of vulnerability as a young woman hitting back at society’s expectations and her own personal demons. Capturing the full emotional weight of Diana’s journey and the kinetic thrill of bodies in motion, Kusama crafts a singularly uncompromising story of self-realization.",
     "isNew": false
   },
   {
@@ -17351,6 +17832,18 @@
     "isNew": false
   },
   {
+    "id": "henry-v-1",
+    "title": "Henry V",
+    "link": "https://www.criterionchannel.com/henry-v-1",
+    "filmIds": [
+      "henry-v",
+      "laurence-olivier-and-dick-cavett-in-conversation"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c7ccc620-4e30-4c52-9f52-2cbac8d3a1bd-5b2c1f5b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Laurence Olivier • 1944 • United Kingdom\nStarring Laurence Olivier, Leslie Banks, Robert Newton\n\nOlivier mustered out of the navy to film this adaptation of Shakespeare’s history. Embroiled in World War II, Britons took courage from this tale of a king who surmounts overwhelming odds and emerges victorious. This sumptuous Technicolor rendering features a thrilling re-creation of the battle of Agincourt, and Sir Laurence in his prime as director and actor.",
+    "isNew": false
+  },
+  {
     "id": "her-brother",
     "title": "Her Brother",
     "link": "https://www.criterionchannel.com/her-brother",
@@ -17419,6 +17912,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9ccb551f-526a-445d-aa7d-c49fbdc9e2ca.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Jessica Beshir • 2017 • United States\nStarring Karin Gunzenhauser, Maite Iracheta, Victor Rodriguez\n\nIn 2017, Jessica Beshir directed this short film about a portrait painter whose sole subject is his ex-wife.",
+    "isNew": false
+  },
+  {
+    "id": "herschell-gordon-lewis-the-godfather-of-gore-1",
+    "title": "Herschell Gordon Lewis: The Godfather of Gore",
+    "link": "https://www.criterionchannel.com/herschell-gordon-lewis-the-godfather-of-gore-1",
+    "filmIds": [
+      "meet-the-filmmaker-herschell-gordon-lewis"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f835d4e5-3b9f-41ab-9c1c-3a3728f79c87-ce43bb2e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "“Someone once asked, ‘Are you an artist?’ And my answer was, ‘Am I an artist? Did you see that movie?!’” In 2009, Sean Baker (THE FLORIDA PROJECT, TANGERINE) sat down with the late Godfather of Gore himself, Herschell Gordon Lewis, to discuss his legendary career as an exploitation pioneer and creator of the splatter movie. As entertaining and unpretentious as his own movies, Lewis dishes on everything from his filmmaking philosophy (fast, cheap, and made to sell) to perfecting the perfect onscreen blood to the making of his landmark drive-in classic BLOOD FEAST, nothing less than the urtext of the entire gore genre.",
     "isNew": false
   },
   {
@@ -18298,6 +18802,17 @@
     "isNew": false
   },
   {
+    "id": "i-am-wanda",
+    "title": "I Am Wanda",
+    "link": "https://www.criterionchannel.com/i-am-wanda",
+    "filmIds": [
+      "i-am-wanda"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a336d1d0-b7bf-4e8c-b664-f65aa56ff20e-1934ab2f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Katja Raganelli • 1980 • United States\nStarring Barbara Loden\n\nThis documentary by Katja Raganelli, filmed in 1980, features an interview with WANDA director Barbara Loden and brief interviews with cinematographer Nicholas T. Proferes and acting teacher Paul Mann.",
+    "isNew": false
+  },
+  {
     "id": "i-fidanzati",
     "title": "I fidanzati",
     "link": "https://www.criterionchannel.com/i-fidanzati",
@@ -18946,6 +19461,31 @@
     "isNew": false
   },
   {
+    "id": "india-song",
+    "title": "India Song",
+    "link": "https://www.criterionchannel.com/india-song",
+    "filmIds": [
+      "india-song"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c8470ae9-c5cb-4662-ad5e-143194765196-81d2e05a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Marguerite Duras • 1975 • France\nStarring Delphine Seyrig, Michael Lonsdale, Mathieu Carrière\n\nMarguerite Duras’s most celebrated work is a mesmerizing, almost incantatory experience with few stylistic precedents in the history of cinema. Within the insular walls of a lavish, decaying embassy in 1930s India, the French ambassador’s wife (Delphine Seyrig) staves off ennui through affairs with multiple men—with the overpowering torpor broken only by a startling eruption of madness. Setting her evocatively decadent visuals to a desynchronized chorus of disembodied voices that comment on and counterpoint the action, with INDIA SONG Duras creates a haunted-house movie unlike any other.",
+    "isNew": false
+  },
+  {
+    "id": "india-song-1",
+    "title": "India Song",
+    "link": "https://www.criterionchannel.com/india-song-1",
+    "filmIds": [
+      "india-song",
+      "alternate-english-language-audio",
+      "shooting-india-song-a-story-in-four-voices",
+      "delphine-seyrig-on-marguerite-duras"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5e2c684f-2745-422b-8446-dcaba3240789.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Marguerite Duras • 1975 • France\nStarring Delphine Seyrig, Michael Lonsdale, Mathieu Carrière\n\nThe most celebrated of writer-filmmaker Marguerite Duras’s singular features unfolds within the decaying decadence of an embassy in 1930s India, where a French diplomat’s wife (Delphine Seyrig) pursues multiple love affairs while succumbing to a sense of overpowering ennui. Sex, madness, and colonial guilt are interwoven into a hauntingly beautiful, almost incantatory experience with few stylistic precedents in the history of cinema.",
+    "isNew": false
+  },
+  {
     "id": "infernal-affairs",
     "title": "Infernal Affairs",
     "link": "https://www.criterionchannel.com/infernal-affairs",
@@ -19433,6 +19973,17 @@
     "isNew": false
   },
   {
+    "id": "islands-1",
+    "title": "Islands",
+    "link": "https://www.criterionchannel.com/islands-1",
+    "filmIds": [
+      "islands-2"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/94a1c058-a4ef-4ac9-9bc5-2a4d105271a1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Yann Gonzalez • 2017 • France\nStarring Sarah-Megan Allouch, Mathilde Mennetrier, Alphonse Maîtrepierre\n\nIn Yann Gonzalez’s hypnotic, neon-drenched erotic monster movie, an array of loosely connected queer outsiders wander through a maze of love and desire.",
+    "isNew": false
+  },
+  {
     "id": "islands-of-fire",
     "title": "Islands of Fire",
     "link": "https://www.criterionchannel.com/islands-of-fire",
@@ -19622,6 +20173,19 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3da0d5e9-dbf8-419d-aa8b-d306b92570f5-0fb365ee.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Navigating the deadly waters of Stalinist politics, Eisenstein was able to film two parts of his planned trilogy about the troubled sixteenth-century tsar who united Russia. Visually stunning and powerfully acted, IVAN THE TERRIBLE charts the rise to power and descent into terror of this veritable dictator. Though pleased with the first installment, Stalin detected the portrait in the second film, with its summary executions and secret police, and promptly banned it.",
+    "isNew": false
+  },
+  {
+    "id": "ivan-the-terrible-part-i-1",
+    "title": "Ivan the Terrible, Part I",
+    "link": "https://www.criterionchannel.com/ivan-the-terrible-part-i-1",
+    "filmIds": [
+      "ivan-the-terrible-part-i",
+      "the-history-of-ivan",
+      "ivan-the-terrible-deleted-scenes"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e83f2cdc-bba7-43f4-a623-a0c3cec68d07.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Sergei Eisenstein • 1944 • Soviet Union\nStarring Nikolai Cherkasov, Lyudmila Tselikovskaya, Serafima Birman\n\nNavigating the deadly waters of Stalinist politics, Eisenstein was able to film two parts of his planned trilogy about the troubled sixteenth-century tsar who united Russia. Visually stunning and powerfully acted, IVAN THE TERRIBLE charts the rise to power and descent into terror of this veritable dictator. Though pleased with the first installment, Stalin detected the portrait in the second film, with its summary executions and secret police, and promptly banned it.",
     "isNew": false
   },
   {
@@ -20739,6 +21303,17 @@
     "isNew": false
   },
   {
+    "id": "kill-1",
+    "title": "Kill!",
+    "link": "https://www.criterionchannel.com/kill-1",
+    "filmIds": [
+      "kill"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/55b4e054-e9f4-41ed-b491-674fee1aa8a8.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Kihachi Okamoto • 1968 • Japan\nStarring Tatsuya Nakadai, Etsushi Takahashi, Yuriko Hoshi\n\nIn this pitch-black action comedy by Kihachi Okamoto, a pair of down-on-their-luck swordsmen arrive in a dusty, windblown town, where they become involved in a local clan dispute. One, previously a farmer, longs to become a noble samurai. The other, a former samurai haunted by his past, prefers living anonymously with gangsters. But when both men discover the wrongdoings of the nefarious clan leader, they side with a band of rebels who are under siege at a remote mountain cabin. Based on the same source novel as Akira Kurosawa’s SANJURO, KILL! playfully tweaks samurai film convention, borrowing elements from established chanbara classics and seasoning them with a little Italian western.",
+    "isNew": false
+  },
+  {
     "id": "kill-the-day",
     "title": "Kill the Day",
     "link": "https://www.criterionchannel.com/kill-the-day",
@@ -21409,6 +21984,18 @@
     "isNew": false
   },
   {
+    "id": "la-llorona-1",
+    "title": "La Llorona",
+    "link": "https://www.criterionchannel.com/la-llorona-1",
+    "filmIds": [
+      "jayro-bustamante-on-la-llorona",
+      "making-la-llorona"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5a2d8ad6-7717-463d-b7d9-a4411f1854d5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Jayro Bustamante • 2019 • Guatemala\nStarring María Mercedes Coroy, Margarita Kénefic, Sabrina de la Hoz\n\nA country’s bloody history stains the present in the Guatemalan auteur Jayro Bustamante’s transfixing fusion of folk horror and searing political commentary, inspired by the real-life indictment of the authoritarian Efraín Ríos Montt for crimes against humanity. A notorious, now aging former military dictator stands trial for atrocities committed against Guatemala’s Maya communities. While battling legal repercussions and the people’s demands for justice, he and his family are plagued by a series of increasingly strange and disturbing occurrences, seemingly brought on by an enigmatic new housekeeper (María Mercedes Coroy). With a restraint that renders the film’s shocks all the more potent, Bustamante crafts a chilling vision of a nation reckoning with collective harms and the restless ghosts of a past that refuses to die.",
+    "isNew": false
+  },
+  {
     "id": "la-luxure",
     "title": "La luxure",
     "link": "https://www.criterionchannel.com/la-luxure",
@@ -21679,6 +22266,20 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4770bb36-b6dc-416e-85a1-04040acc76ab.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Aki Kaurismäki • 1992 • France\nStarring André Wilms, Matti Pellonpää, Karl Väänänen\n\nThis deadpan tragicomedy about a group of impoverished, outcast artists living the bohemian life in Paris is among the most beguiling films by Finnish director Aki Kaurismäki. Based on stories from Henri Murger’s influential mid-nineteenth-century book “Scènes de la vie de bohème” (the basis for the opera “La bohème”), the film features a marvelous trio of Kaurismäki regulars—André Wilms, Matti Pellonpää, and Karl Väänänen—as a writer, painter, and composer who scrape by together, sharing in life’s daily absurdities. Gorgeously shot in black and white, LA VIE DE BOHÈME is a vibrantly scrappy rendition of a beloved tale.",
+    "isNew": false
+  },
+  {
+    "id": "la-vie-de-jesus",
+    "title": "La vie de Jésus",
+    "link": "https://www.criterionchannel.com/la-vie-de-jesus",
+    "filmIds": [
+      "the-life-of-jesus",
+      "bruno-dumont-1",
+      "le-cercle-de-minuit-2",
+      "philippe-rouyer-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0d99cd28-1e39-4033-acfd-1fab315d9787-6032e773.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Bruno Dumont • 1997 • France\nStarring David Douche, Marjorie Cottreel\n\nWith his stunning debut feature, the risk-taking auteur Bruno Dumont immediately established his reputation as an uncompromising iconoclast on the cutting edge of French cinema. Blending unflinching realism with moments of startling, light-filled beauty, LA VIE DE JÉSUS finds unexpected philosophical richness in the quotidian, small-town existence of Freddy (nonprofessional David Douche in a revelatory, one-off performance), an aimless young man with epilepsy who, in his childlike simplicity, embodies both great tenderness and terrifying brutality. Leaving the film’s cryptic title tantalizingly open to interpretation, Dumont dares viewers to see the divine in a seemingly dead-end world.",
     "isNew": false
   },
   {
@@ -22102,6 +22703,21 @@
     "isNew": false
   },
   {
+    "id": "le-deuxieme-souffle",
+    "title": "Le deuxième souffle",
+    "link": "https://www.criterionchannel.com/le-deuxieme-souffle",
+    "filmIds": [
+      "le-deuxieme-souffle-1",
+      "le-deuxieme-souffle-commentary",
+      "bertrand-tavernier-on-le-deuxieme-souffle",
+      "archival-interviews",
+      "jean-pierre-melville-on-le-deuxieme-souffle"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dc76c9f7-0b27-4497-9752-323c8a58958b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Jean-Pierre Melville • 1966 • France\n\nWith his customary restraint and ruthless attention to detail, director Jean-Pierre Melville follows the parallel tracks of French underworld criminal Gu (the inimitable Lino Ventura), escaped from prison and roped into one last robbery, and the suave inspector, Blot, relentlessly seeking him. The implosive LE DEUXIEME SOUFFLE captures the pathos, loneliness, and excitement of a life in the shadows with methodical suspense and harrowing authenticity.",
+    "isNew": false
+  },
+  {
     "id": "le-garcu",
     "title": "Le garçu",
     "link": "https://www.criterionchannel.com/le-garcu",
@@ -22298,6 +22914,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/be3d12f4-f49c-416b-a85d-ba839132c6df.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Jean-Pierre Melville • 1949 • France\nStarring Howard Vernon, Nicole Stéphane, Jean-Marie Robain\n\nJean-Pierre Melville began his superb feature filmmaking career with this powerful adaptation of an influential underground novel written during the Nazi occupation of France. A cultured, naively idealistic German officer is billeted in the home of a middle-aged man and his grown niece; their response to his presence—their only form of resistance—is complete silence. Constructed with elegant minimalism and shot, by the legendary Henri Decaë, with hushed eloquence, LE SILENCE DE LA MER points the way toward Melville’s later films about resistance and the occupation (LEON MORIN, PRIEST; ARMY OF SHADOWS) yet remains a singularly eerie masterwork in its own right.",
+    "isNew": false
+  },
+  {
+    "id": "le-trou-1",
+    "title": "Le trou",
+    "link": "https://www.criterionchannel.com/le-trou-1",
+    "filmIds": [
+      "le-trou"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d9c271c7-6243-4adf-88fb-78169eaabe55-406e8915.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Jacques Becker • 1960 • France\nStarring Michel Constantin, Jean Keraudy, Philippe Leroy\n\nIn a Paris prison cell, five inmates use every ounce of their tenacity and ingenuity in an elaborate attempt to tunnel to freedom. Based on the novel by José Giovanni, Jacques Becker’s LE TROU balances lyrical humanism with a tense, unshakable air of imminent danger.",
     "isNew": false
   },
   {
@@ -23049,6 +23676,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5fbf6e4d-1343-44f1-a0e9-66524ad0deb5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Edwin Middleton and T. Hayes Hunter • 1913 • United States\nStarring Bert Williams, Odessa Warren Grey\n\nThe oldest known surviving film starring an entirely Black cast, this unfinished 1913 romantic comedy—the footage of which was miraculously recovered from the vaults of the bankrupt Biograph film studio, alongside outtakes and a trove of still images from the production—stars legendary Bahamian-American vaudeville performer Bert Williams as a dandy competing with two rivals for the love of a woman (played by Harlem entrepreneur and actress Odessa Warren Grey). Williams—wearing blackface makeup in a concession to entertainment standards of the day—proves to be a leading man of striking depth, blending impressive slapstick gifts with emotional range. Reconstructed by the Museum of Modern Art from the extant fragments, LIME KILN CLUB FIELD DAY is a remarkable living vision of Black love, joy, and comic creativity.",
+    "isNew": false
+  },
+  {
+    "id": "lime-kiln-club-field-day-outtakes",
+    "title": "LIME KILN CLUB FIELD DAY Outtakes",
+    "link": "https://www.criterionchannel.com/lime-kiln-club-field-day-outtakes",
+    "filmIds": [
+      "lime-kiln-club-field-day-outtakes"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d94c389d-00eb-43c3-bd65-74aba8c3f9bb.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Edwin Middleton and T. Hayes Hunter • 1913 • United States\nStarring Bert Williams, Odessa Warren Grey",
     "isNew": false
   },
   {
@@ -23975,30 +24613,6 @@
     "isNew": false
   },
   {
-    "id": "lydia-1",
-    "title": "Lydia",
-    "link": "https://www.criterionchannel.com/lydia-1",
-    "filmIds": [
-      "lydia",
-      "lydia-and-the-power-of-flashbacks"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/395867ca-f99e-471c-b158-24521f4ae48b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by Julien Duvivier • 1941 • United Kingdom\n\nA woman spends her whole life holding out against the advances of three men in the hopes that her first love will return to her.",
-    "isNew": false
-  },
-  {
-    "id": "lydia-and-the-power-of-flashbacks-1",
-    "title": "LYDIA and the Power of Flashbacks",
-    "link": "https://www.criterionchannel.com/lydia-and-the-power-of-flashbacks-1",
-    "filmIds": [
-      "lydia-and-the-power-of-flashbacks",
-      "lydia"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fbeda2ca-6827-4dcc-8d34-980168c7ac6c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Observations on Film Art No. 25\n\nProfessor David Bordwell illuminates how Julien Duvivier’s haunting, exquisitely bittersweet romantic drama deploys intricate, subjective flashback sequences to enhance its sublime emotional impact.",
-    "isNew": false
-  },
-  {
     "id": "lynch-one",
     "title": "LYNCH (one)",
     "link": "https://www.criterionchannel.com/lynch-one",
@@ -24030,6 +24644,35 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/daf78aa9-ab58-467c-8b7a-0c4d426a663a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by blackANDwhite • 2007 • United States\nStarring David Lynch\n\nThis 2007 short film by blackANDwhite, the makers of DAVID LYNCH: THE ART LIFE, features behind-the-scenes footage from the making of INLAND EMPIRE.",
+    "isNew": false
+  },
+  {
+    "id": "m-1",
+    "title": "M",
+    "link": "https://www.criterionchannel.com/m-1",
+    "filmIds": [
+      "m",
+      "m-commentary",
+      "mastering-a-new-medium-sound-in-m",
+      "claude-chabrol-on-m",
+      "m-le-maudit-1",
+      "harold-nebenzal",
+      "paul-falkenberg-s-classroom-tapes",
+      "a-physical-history-of-m"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/efcc3d7d-5a03-48ac-9e2d-144fc8863877-a8a6e434.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Criterion Collection Edition #30\n\nDirected by Fritz Lang • 1931 • Germany\n\nA simple, haunting musical phrase whistled offscreen tells us that a young girl will be killed. “Who Is the Murderer?” pleads a nearby placard as serial killer Hans Beckert (Peter Lorre) closes in on little Elsie Beckmann . . . In his harrowing masterwork M, Fritz Lang merges trenchant social commentary with chilling suspense, creating a panorama of private madness and public hysteria that to this day remains the blueprint for the psychological thriller.",
+    "isNew": false
+  },
+  {
+    "id": "m-le-maudit",
+    "title": "M le maudit",
+    "link": "https://www.criterionchannel.com/m-le-maudit",
+    "filmIds": [
+      "m-le-maudit-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/49b42b5a-6abd-48ec-82d1-67214c797fcc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Claude Chabrol • 1982 • France\n\nFor the television program “Ciné parade” in 1982, Claude Chabrol was asked to inaugurate a series of contemporary homages to classic cinema. Chabrol—himself often a director of tense psychosexual dramas—chose the ur-thriller M. In this short, a sort of M in ten minutes, Maurice Risch plays Peter Lorre playing Hans Beckert.",
     "isNew": false
   },
   {
@@ -24470,17 +25113,6 @@
     "isNew": false
   },
   {
-    "id": "marathon-1",
-    "title": "Marathon",
-    "link": "https://www.criterionchannel.com/marathon-1",
-    "filmIds": [
-      "marathon"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c0fd644a-0672-4ccc-a013-af3baca80b4b-f757c253.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by Carlos Saura • 1993 • Spain\n\nCarlos Saura's film of the Games of the XXV Olympiad Barcelona 1992 brings a visual flair and humanism that paid excellent tribute to the Games and to the Catalan capital. The title event, the men's marathon, was chosen both as symbol and leitmotif, in part because the race took place in the streets of Barcelona, but also because of the effort and endurance required in this most arduous of Olympic events. Saura was excited at the prospect of delivering a film that would run approximately the same length as the time a men's marathon winner might achieve, hence this director's cut of MARATHON at two hours and ten minutes.",
-    "isNew": false
-  },
-  {
     "id": "marc-and-ann",
     "title": "Marc and Ann",
     "link": "https://www.criterionchannel.com/marc-and-ann",
@@ -24720,6 +25352,38 @@
     "isNew": false
   },
   {
+    "id": "martin-scorsese-on-the-movies",
+    "title": "Martin Scorsese on the Movies",
+    "link": "https://www.criterionchannel.com/martin-scorsese-on-the-movies",
+    "filmIds": [
+      "30-years-of-the-film-foundation-martin-scorsese-and-ari-aster-in-conversation",
+      "martin-scorsese-on-after-the-curfew",
+      "martin-scorsese-1",
+      "martin-scorsese-7",
+      "martin-scorsese-on-limite",
+      "martin-scorsese-on-dos-monjes",
+      "martin-scorsese-on-the-river",
+      "martin-scorsese-on-a-river-called-titas",
+      "martin-scorsese-and-farran-smith-nehme",
+      "martin-scorsese",
+      "martin-scorsese-on-taipei-story",
+      "martin-scorsese-5",
+      "martin-scorsese-on-insiang",
+      "martin-scorsese-on-law-of-the-border",
+      "martin-scorsese-on-journey-to-italy",
+      "martin-scorsese-sambizanga",
+      "on-trances",
+      "martin-scorsese-on-downpour",
+      "martin-scorsese-3",
+      "black-narcissus-commentary",
+      "francis-ford-coppola-and-martin-scorsese-commentary",
+      "the-life-and-death-of-colonel-blimp-commentary"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a720ce58-560a-4d01-9052-a701f0616325.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Martin Scorsese is one of the movies’ most tireless and enthusiastic champions. In addition to his own acclaimed body of work, he has endeavored to preserve cinema history through his nonprofit The Film Foundation. In these interviews and introductions, Scorsese offers insights into his films and keen appreciations of masterpieces from around the world.",
+    "isNew": false
+  },
+  {
     "id": "mary-bronstein-s-adventures-in-moviegoing",
     "title": "Mary Bronstein’s Adventures in Moviegoing",
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/66821477-9763-48c1-aa9f-4d6a087389cf.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
@@ -24872,6 +25536,18 @@
     "isNew": false
   },
   {
+    "id": "mastering-a-new-medium-sound-in-m",
+    "title": "Mastering a New Medium: Sound in M",
+    "link": "https://www.criterionchannel.com/mastering-a-new-medium-sound-in-m",
+    "filmIds": [
+      "mastering-a-new-medium-sound-in-m",
+      "m"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2fa54511-8065-44d7-8589-f1cdf41a3f7c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Observations on Film Art No. 11\n\nListen closely: Fritz Lang’s claustrophobic thriller has one of the densest, most skillfully layered soundtracks in all of early sound film.",
+    "isNew": false
+  },
+  {
     "id": "matango",
     "title": "Matango",
     "link": "https://www.criterionchannel.com/matango",
@@ -25011,6 +25687,87 @@
     "isNew": false
   },
   {
+    "id": "meet-the-filmmakers",
+    "title": "Meet the Filmmakers",
+    "link": "https://www.criterionchannel.com/meet-the-filmmakers",
+    "filmIds": [
+      "gints-zilbalodis-interview",
+      "sophy-romvari-interview",
+      "sergei-loznitsa-interview",
+      "debra-granik-interview",
+      "bi-gan-interview",
+      "lav-diaz-interview",
+      "ira-sachs-interview",
+      "joachim-trier-interview",
+      "hlynur-palmason-interview",
+      "david-cronenberg-interview",
+      "kiyoshi-kurosawa-interview",
+      "alain-guiraudie-interview",
+      "jia-zhangke-interview",
+      "sammo-hung-interview",
+      "maura-delpero-interview",
+      "payal-kapadia-interview",
+      "tim-blake-nelson-interview",
+      "jem-cohen-interview",
+      "leos-carax-interview",
+      "lubna-playoust-interview",
+      "catherine-breillat-interview",
+      "isabella-rossellini-interview",
+      "ryusuke-hamaguchi-interview",
+      "meet-the-filmmaker-jerzy-skolimowski",
+      "bertrand-bonello-interview-1",
+      "neo-sora-and-bill-kirstein-interview",
+      "bette-gordon-interview",
+      "nuri-bilge-ceylan-interview",
+      "joanna-arnow-on-bad-at-dancing",
+      "lila-aviles-interview",
+      "isabel-sandoval-interview",
+      "christian-petzold-interview",
+      "lina-rodriguez-interview",
+      "alexandre-o-philippe-interview",
+      "terence-davies-interview",
+      "diana-peralta-interview",
+      "hal-hartley-interview",
+      "felix-van-groeningen-and-charlotte-vandermeersch-interview",
+      "dustin-guy-defa-interview",
+      "cheryl-dunye-interview",
+      "jean-pierre-and-luc-dardenne-interview",
+      "louis-garrel-interview",
+      "ngozi-onwurah-interview",
+      "ruben-ostlund-interview",
+      "guy-maddin-interview",
+      "jessica-beshir-on-hairat",
+      "joyce-chopra-on-smooth-talk-2020",
+      "sky-hopinka-interview",
+      "laura-moss-on-fry-day",
+      "leslie-harris-on-just-another-girl-on-the-i-r-t",
+      "rick-alverson-interview",
+      "ashley-mckenzie-interview",
+      "ronnie-bronstein-on-frownland",
+      "leah-shore-on-old-man",
+      "sean-mccoy-on-the-beaning",
+      "janicza-bravo-interview",
+      "nadav-lapid-interview",
+      "martin-bell-interview",
+      "introduction-4",
+      "introducing-lynne-sachs",
+      "zeinabu-irene-davis-interview",
+      "pable-trapero-interview",
+      "mia-hansen-love-interview",
+      "stephen-cone-interview",
+      "jenni-olson-interview",
+      "rebecca-miller-on-her-films",
+      "mahamat-saleh-haroun-interview",
+      "ron-mann-interview",
+      "introducing-lynn-hershman-leeson",
+      "joanna-hogg-interview",
+      "arthur-dong-interview"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a5de4492-a995-4736-b1d7-338e7cc31b68-e7415d6b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
     "id": "meet-the-filmmakers-paul-schrader",
     "title": "Paul Schrader: Man In a Room",
     "link": "https://www.criterionchannel.com/meet-the-filmmakers-paul-schrader",
@@ -25043,6 +25800,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0e181a18-fd86-4145-b37b-38b279a16576.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Rithy Panh • 2024 • Cambodia, France, Turkey\nStarring Irène Jacob, Grégoire Colin, Cyril Gueï\n\nRenowned for his hauntingly personal documentaries on the Cambodian genocide and the devastating legacy of the Khmer Rouge, director Rithy Panh returns to narrative filmmaking for the first time in over a decade with this powerful historical drama inspired by journalist Elizabeth Becker’s book “When the War Was Over.” In 1978, three journalists are invited to Democratic Kampuchea (Cambodia) by the Khmer Rouge to conduct an exclusive interview with the regime’s leader, Pol Pot. The country seems idyllic. But under the eyes of the journalists, the beautiful picture begins to crack, revealing the hidden horrors.",
+    "isNew": false
+  },
+  {
+    "id": "megadoc",
+    "title": "Megadoc",
+    "link": "https://www.criterionchannel.com/megadoc",
+    "filmIds": [
+      "megadoc"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/79d51f6c-67c6-4ad7-a3cd-4e185945aa45.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Mike Figgis • 2025 • United States\nStarring Francis Ford Coppola, Aubrey Plaza, Adam Driver\n\nA decades-in-the-making passion project financed by legendary director Francis Ford Coppola using $120 million of his own money, the audacious science-fiction epic MEGALOPOLIS stands as one of cinema history’s boldest auteur statements. Mike Figgis’ immersive documentary goes behind the scenes of the making of this singular spectacle, weaving together archival material; unfiltered interviews with stars Adam Driver, Giancarlo Esposito, Aubrey Plaza, and others; and a close-up view of how Coppola drew from Roman history, political allegory, and his own uncompromising vision to shape the world of MEGALOPOLIS. This isn’t just a record of a production on the brink—it’s an unmissable portrait of an artist staking everything on his ambition.",
     "isNew": false
   },
   {
@@ -25647,6 +26415,17 @@
     "isNew": false
   },
   {
+    "id": "mistress-dispeller",
+    "title": "Mistress Dispeller",
+    "link": "https://www.criterionchannel.com/mistress-dispeller",
+    "filmIds": [
+      "mistress-dispeller"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/01fd20b9-cecd-49f7-ba84-f6ee58a4813b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Elizabeth Lo • 2024 • United States\n\nIn China, a new industry has emerged devoted to helping couples stay married in the face of infidelity. Wang Zhenxi is part of this growing profession, a “mistress dispeller” who is hired to maintain the bonds of marriage—and break up affairs—by any means necessary. Offering strikingly intimate access to private dramas usually hidden behind closed doors, Elizabeth Lo’s spellbinding documentary follows a real, unfolding case of infidelity as Teacher Wang attempts to bring a couple back from the edge of crisis. Their story shifts our sympathies between husband, wife, and mistress to explore the ways emotion, pragmatism and cultural norms collide to shape romantic relationships in contemporary China.",
+    "isNew": false
+  },
+  {
     "id": "mnm",
     "title": "MnM",
     "link": "https://www.criterionchannel.com/mnm",
@@ -25679,6 +26458,25 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/75545d8d-a7dc-44b1-b2eb-2a381eedf964.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Charles Chaplin • 1936 • United States\nStarring Charles Chaplin, Paulette Goddard, Henry Bergman\n\nMODERN TIMES, Charlie Chaplin’s last outing as the Little Tramp, puts the iconic character to work as a giddily inept factory employee who becomes smitten with a gorgeous gamine (Paulette Goddard). With its barrage of unforgettable gags and sly commentary on class struggle during the Great Depression, MODERN TIMES—though made almost a decade into the talkie era and containing moments of sound (even song!)—is a timeless showcase of Chaplin’s untouchable genius as a director of silent comedy.",
+    "isNew": false
+  },
+  {
+    "id": "mon-oncle-1",
+    "title": "Mon oncle",
+    "link": "https://www.criterionchannel.com/mon-oncle-1",
+    "filmIds": [
+      "mon-oncle",
+      "terry-jones-1",
+      "my-uncle",
+      "once-upon-a-time-mon-oncle",
+      "everything-is-beautiful-lines-signs-designs",
+      "everything-is-beautiful-fashion",
+      "everything-is-beautiful-please-have-a-seat",
+      "everything-s-connected",
+      "30-millions-d-amis-le-hasard-de-jacques-tati"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fa3a14e9-81a6-4969-b477-2c40b12c1ea3-3ed03045.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Criterion Collection Edition #111\n\nDirected by Jacques Tati • 1958 • France, Italy\nStarring Jacques Tati, Jean-Pierre Zola, Adrienne Servantie\n\nSlapstick prevails again when Jacques Tati’s eccentric, old-fashioned hero, Monsieur Hulot, is set loose in Villa Arpel, the geometric, oppressively ultramodern home of his brother-in-law, and in the antiseptic plastic hose factory where he gets a job. The second Hulot movie and Tati’s first color film, MON ONCLE is a supremely amusing satire of mechanized living and consumer society that earned the director the Academy Award for best foreign-language film.",
     "isNew": false
   },
   {
@@ -25832,6 +26630,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d954b861-dfd4-4921-b1ed-9c05d69da7c6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Masahiro Shinoda • 1997 • Japan\n\nAfter the 1995 Kobe earthquake, a writer remembers travelling with his family to bury his brother after World War II. Directed by Masahiro Shinoda.",
+    "isNew": false
+  },
+  {
+    "id": "more-1",
+    "title": "More",
+    "link": "https://www.criterionchannel.com/more-1",
+    "filmIds": [
+      "more"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fe6a0225-df45-4b11-894c-e81aa875a9e3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Barbet Schroeder • 1969 • Germany\n\nA naive student follows a young woman to Ibiza before developing a heroin dependency. Barbet Schroeder's debut film features an unrelenting view of 1960s culture and an original score by Pink Floyd.",
     "isNew": false
   },
   {
@@ -26168,6 +26977,17 @@
     "isNew": false
   },
   {
+    "id": "murder-2",
+    "title": "Murder",
+    "link": "https://www.criterionchannel.com/murder-2",
+    "filmIds": [
+      "murder-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c07752db-4c01-4dae-92ca-074f84fa427b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Roman Polanski • 1957 • Poland\n\nThe following is the first complete student short Roman Polanski made at the State Film School in Lodz, Poland. A story told in almost total darkness and in one room, the film introduces themes the director has revisited throughout his career.",
+    "isNew": false
+  },
+  {
     "id": "murderous-melodramas",
     "title": "Murderous Melodramas",
     "link": "https://www.criterionchannel.com/murderous-melodramas",
@@ -26331,6 +27151,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9418a3a8-3c7b-46be-af5d-75c6670da9fa.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Bill Douglas • 1973 • United Kingdom\n\nIn the second installment in his autobiographical coming-of-age trilogy, director Bill Douglas continues the story of Jamie (Stephen Archibald) as he is shuffled between relatives, ultimately being sent to live with his stern, emotionally distant paternal grandmother. Facing rejection and instability at home, he seeks moments of escape and fleeting transcendence through cinema.",
+    "isNew": false
+  },
+  {
+    "id": "my-architect",
+    "title": "My Architect",
+    "link": "https://www.criterionchannel.com/my-architect",
+    "filmIds": [
+      "my-architect-a-son-s-journey"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/356570cb-5814-40c0-a4e3-d36f0579d0c4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Nathaniel Kahn • 2003 • United States\n\nLouis I. Kahn, who died in 1974, was one of the greatest architects of the twentieth century, but he left behind an illegitimate son, Nathaniel, and a personal life of secrets and broken promises. MY ARCHITECT takes us on a heartbreaking yet humorous journey as Nathaniel attempts to reconnect with his deceased father. The riveting narrative takes us from the men’s room in Penn Station, where Kahn died bankrupt and alone, to the bustling streets of Bangladesh, the inner sanctums of Jerusalem politics, and unforgettable encounters with the world’s most celebrated architects. In a documentary with all the emotional impact of a dramatic feature film, Nathaniel’s journey becomes a universal investigation of identity—and a celebration of art and, ultimately, life itself.",
     "isNew": false
   },
   {
@@ -27245,6 +28076,20 @@
     "isNew": false
   },
   {
+    "id": "night-and-fog-1",
+    "title": "Night and Fog",
+    "link": "https://www.criterionchannel.com/night-and-fog-1",
+    "filmIds": [
+      "night-and-fog",
+      "alain-resnais-on-night-and-fog",
+      "joshua-oppenheimer-on-night-and-fog",
+      "face-aux-fantomes"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/b1ecf85d-7db5-483b-b3c9-9e87ed4b49eb.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Alain Resnais • 1955 • France\n\nTen years after the liberation of the Nazi concentration camps, filmmaker Alain Resnais documented the abandoned grounds of Auschwitz and Majdanek in NIGHT AND FOG (NUIT ET BROUILLARD), one of the first cinematic reflections on the Holocaust. Juxtaposing the stillness of the abandoned camps’ empty buildings with haunting wartime footage, Resnais investigates humanity’s capacity for violence, and presents the devastating suggestion that such horrors could occur again.",
+    "isNew": false
+  },
+  {
     "id": "night-and-fog-in-japan",
     "title": "Night and Fog in Japan",
     "link": "https://www.criterionchannel.com/night-and-fog-in-japan",
@@ -27674,6 +28519,17 @@
     "isNew": false
   },
   {
+    "id": "northwest-film-forum",
+    "title": "Northwest Film Forum",
+    "link": "https://www.criterionchannel.com/northwest-film-forum",
+    "filmIds": [
+      "northwest-film-forum"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a0d325b3-853e-458e-a020-2e8521914450.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Art-House America\n\nArt-House America heads to Seattle, where Northwest Film Forum’s executive director Courtney Sheehan introduces us to the theater’s community-focused approach to film culture.",
+    "isNew": false
+  },
+  {
     "id": "nostalgia",
     "title": "(nostalgia)",
     "link": "https://www.criterionchannel.com/nostalgia",
@@ -27891,6 +28747,76 @@
     "isNew": false
   },
   {
+    "id": "observations-on-film-art",
+    "title": "Observations on Film Art",
+    "link": "https://www.criterionchannel.com/observations-on-film-art",
+    "filmIds": [
+      "rock-and-roll-style-costumes-and-props-in-quadrophenia",
+      "motifs-of-destruction-in-daisies",
+      "associative-editing-in-the-sweet-hereafter",
+      "reflections-in-and-on-yi-yi",
+      "beyond-the-costume-picture-the-taking-of-power-by-louis-xiv",
+      "aspect-ratio-in-vivre-sa-vie-2",
+      "flash-cuts-and-long-takes-in-le-bonheur",
+      "paths-and-roads-in-pather-panchali",
+      "the-viewer-who-knew-just-enough-point-of-view-in-blood-simple",
+      "telling-details-in-steve-mcqueen-s-hunger",
+      "language-and-power-in-black-girl",
+      "visual-strategies-in-la-cienaga",
+      "ozu-s-space-adventures-editing-in-passing-fancy",
+      "musical-motifs-in-the-battle-of-algiers",
+      "in-the-service-of-horror-the-lyrical-cinematography-of-picnic-at-hanging-rock",
+      "vampyr-the-genre-film-as-experimental-film",
+      "feminist-mise-en-scene-in-my-brilliant-career",
+      "withholding-and-revealing-in-an-angel-at-my-table",
+      "comedy-suspense-and-three-point-lighting-in-to-be-or-not-to-be",
+      "the-long-take-in-shock-corridor",
+      "plotting-in-vagabond",
+      "spontaneous-play-in-parade-1",
+      "games-of-vision-in-street-of-shame-2",
+      "the-revolutionary-subjectivity-of-memories-of-underdevelopment-1",
+      "lydia-and-the-power-of-flashbacks-1",
+      "widescreen-composition-in-shoot-the-piano-player",
+      "mutations-of-memory-editing-in-hiroshima-mon-amour",
+      "dissolves-in-the-long-day-closes",
+      "continuity-editing-in-the-devil-and-daniel-webster",
+      "color-motifs-in-black-narcissus",
+      "staging-and-performance-in-ivan-the-terrible-part-2",
+      "narrative-symmetry-in-chungking-express",
+      "the-darkness-of-war-in-wooden-crosses",
+      "genre-play-in-the-player",
+      "girl-shy-harold-lloyd-meets-classical-hollywood",
+      "flashbacks-in-the-phantom-carriage",
+      "brute-force-the-actor-s-toolkit",
+      "mastering-a-new-medium-sound-in-m",
+      "the-stripped-down-style-of-ali-fear-eats-the-soul",
+      "chaplin-s-comedy-of-murders",
+      "offscreen-sound-in-la-ceremonie",
+      "staging-in-the-rules-of-the-game",
+      "camera-movement-in-three-colors-red",
+      "the-spirit-of-the-beehive-a-child-s-point-of-view",
+      "the-restraint-of-l-avventura",
+      "abbas-kiarostami-the-character-of-landscape-the-landscape-of-character",
+      "quicker-than-the-eye-editing-in-sanshiro-sugata",
+      "musical-motifs-in-foreign-correspondent"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ae414474-eb32-40c2-afdd-5de88cb66520-25ea71f1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "obsession-1",
+    "title": "Obsession",
+    "link": "https://www.criterionchannel.com/obsession-1",
+    "filmIds": [
+      "obsession",
+      "spotlight-obsession"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/71a7fb78-3abf-476f-8532-94781ab8aef2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Edward Dmytryk • 1949 • United Kingdom\nStarring Robert Newton, Sally Gray, Naunton Wayne\n\nThe first film director Edward Dmytryk made in England after being blacklisted from Hollywood is a wittily inventive blend of black comedy and suspense in which the investigation by a Scotland Yard detective (Naunton Wayne) into a London psychiatrist (Robert Newton) and his diabolical revenge against his adulterous wife’s lover becomes a most entertaining battle of wits. Making vivid use of the rubble-strewn landscapes of bombed-out postwar England, OBSESSION toys playfully with the well-worn genre convention of the “perfect crime.”",
+    "isNew": false
+  },
+  {
     "id": "octogod",
     "title": "OctoGod",
     "link": "https://www.criterionchannel.com/octogod",
@@ -28097,17 +29023,6 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6090dc55-e6b9-46a1-ac42-9d3b2100076f-fbba1933.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Peter Whitchurch • 1956 • Australia\n\nOLYMPIC GAMES, 1956, directed by the documentarist Peter Whitchurch, was commissioned by the Organizing Committee for these Olympic Games. Historically, the film points to some encouraging situations in international affairs, with Hungary taking part in the Games in the immediate wake of the ill-fated uprising in Budapest, and East and West Germany sending a combined team.",
-    "isNew": false
-  },
-  {
-    "id": "olympic-glory-2",
-    "title": "Olympic Glory",
-    "link": "https://www.criterionchannel.com/olympic-glory-2",
-    "filmIds": [
-      "olympic-glory"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/23c897af-0f22-473a-9d25-81930192db0d-7e46a765.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by Kieth Merrill • 1999 • United States\n\nOLYMPIC GLORY, produced by the experienced Hollywood enterprise the Kennedy/Marshall Company and directed by seasoned documentarist Kieth Merrill, was made in large format for release on the IMAX. The crisp photography and engrossing sound combine with the energetic score to present events like the bobsleigh races in spectacular, thrilling fashion.",
     "isNew": false
   },
   {
@@ -28808,6 +29723,17 @@
     "isNew": false
   },
   {
+    "id": "padre-pio",
+    "title": "Padre Pio",
+    "link": "https://www.criterionchannel.com/padre-pio",
+    "filmIds": [
+      "padre-pio"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/01ac7cf0-e83f-4af4-85b9-64fd48f636c7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Abel Ferrara • 2022 • Italy, Germany, United Kingdom\nStarring Shia LaBeouf, Marco Leonardi, Salvatore Ruocco\n\nWith this impassioned biography of revered Catholic mystic Padre Pio, director Abel Ferrara brings the spiritual dimensions long inherent in his work to the fore. In post–World War I Italy, Franciscan monk Padre Pio (Shia LaBeouf) arrives in the small town of San Giovanni Rotondo, where he wrestles with the divine torment of his faith—culminating in a confrontation with the devil and the appearance of the stigmata—as well as the human evils of corruption and inequality.",
+    "isNew": false
+  },
+  {
     "id": "painters-painting",
     "title": "Painters Painting",
     "link": "https://www.criterionchannel.com/painters-painting",
@@ -28945,6 +29871,17 @@
     "isNew": false
   },
   {
+    "id": "paparazzi",
+    "title": "Paparazzi",
+    "link": "https://www.criterionchannel.com/paparazzi",
+    "filmIds": [
+      "paparazzi-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ae2f312a-7050-4618-b91e-a14a70b20d8c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Jacques Rozier • 1964 • France\n\nOne of two documentaries Jacques Rozier made chronicling the making of Jean-Luc Godard’s CONTEMPT (along with LE PARTI DES CHOSES), PAPARAZZI focuses on the intense media frenzy that accompanied star Brigitte Bardot’s every move, offering a revealing look at the nature of modern celebrity culture.",
+    "isNew": false
+  },
+  {
     "id": "parade",
     "title": "Parade",
     "link": "https://www.criterionchannel.com/parade",
@@ -28983,6 +29920,23 @@
     "isNew": false
   },
   {
+    "id": "paris-is-burning",
+    "title": "Paris Is Burning",
+    "link": "https://www.criterionchannel.com/paris-is-burning",
+    "filmIds": [
+      "paris-is-burning-1",
+      "paris-is-burning-commentary",
+      "discussing-paris-is-burning",
+      "paris-is-burning-outtakes",
+      "jenni-olson-on-paris-is-burning",
+      "gisele-xtravaganza-on-paris-is-burning",
+      "paris-is-burning-on-the-joan-rivers-show"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/caa10e48-edb9-4b58-a4fa-7aaac48420bb-24a795ba.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Jennie Livingston • 1990 • United States\nStarring Dorian Corey, Pepper LaBeija, Angie Xtravaganza\n\nWhere does voguing come from, and what, exactly, is throwing shade? This landmark documentary provides a vibrant snapshot of the 1980s through the eyes of New York City’s African American and Latinx Harlem drag-ball scene. Made over seven years, PARIS IS BURNING offers an intimate portrait of rival fashion “houses,” from fierce contests for trophies to house mothers offering sustenance in a world rampant with homophobia, transphobia, racism, AIDS, and poverty. Featuring legendary voguers, drag queens, and trans women—including Willi Ninja, Pepper LaBeija, Dorian Corey, and Venus Xtravaganza—PARIS IS BURNING brings it, celebrating the joy of movement, the force of eloquence, and the draw of community.",
+    "isNew": false
+  },
+  {
     "id": "paris-texas",
     "title": "Paris, Texas",
     "link": "https://www.criterionchannel.com/paris-texas",
@@ -29014,6 +29968,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/59c219eb-611e-480f-a0be-7b1d9aecf982.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Mariano Blatt and Eduardo Williams • 2019 • Argentina\n\nInnovatively shot on a 360-degree camera by young people from Guinea-Bissau’s queer and trans community, this breathlessly immersive work from the director THE HUMAN SURGE sets a perpetually expanding poem by Mariano Blatt to a kinetic vision of their world.",
+    "isNew": false
+  },
+  {
+    "id": "party-on-the-caps-parts-i-ii",
+    "title": "Life on the CAPS: Parts 1&2",
+    "link": "https://www.criterionchannel.com/party-on-the-caps-parts-i-ii",
+    "filmIds": [
+      "life-on-the-caps-parts-i-ii"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5c826407-8b2f-46b8-a061-8fc4110c3007.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Meriem Bennani • 2018–2021 • Morocco\n\nMeriem Bennani conjures an immersive augmented-reality world in the first two parts of a trilogy that issues a wild, up-to-the-minute commentary on diasporic cultures and the West’s dystopian immigration policies. A talking crocodile named Fiona acts as our guide though the CAPS, an island refugee camp in a future where teleportation has replaced airplanes.",
     "isNew": false
   },
   {
@@ -30332,6 +31297,18 @@
     "isNew": false
   },
   {
+    "id": "priorities",
+    "title": "Priorities",
+    "link": "https://www.criterionchannel.com/priorities",
+    "filmIds": [
+      "priorities-commentary",
+      "priorities"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/797aea45-1037-473c-9d81-e83b8c5a8c14.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Gints Zilbalodis • 2014 • Latvia\n\nAfter his plane crashes on a small uninhabited island, a young man and his dog must find a way home.",
+    "isNew": false
+  },
+  {
     "id": "prisioneros-de-la-tierra",
     "title": "Prisioneros de la tierra",
     "link": "https://www.criterionchannel.com/prisioneros-de-la-tierra",
@@ -30665,6 +31642,18 @@
     "isNew": false
   },
   {
+    "id": "quicker-than-the-eye-editing-in-sanshiro-sugata",
+    "title": "Quicker Than the Eye: Editing in SANSHIRO SUGATA",
+    "link": "https://www.criterionchannel.com/quicker-than-the-eye-editing-in-sanshiro-sugata",
+    "filmIds": [
+      "sanshiro-sugata",
+      "quicker-than-the-eye-editing-in-sanshiro-sugata"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3ee2d8c5-28e4-4133-94ad-1558858024fc-5ec7bcae.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Observations on Film Art No. 2\n\nOur home film school continues with David Bordwell’s analysis of Akira Kurosawa’s first film, a showcase for the powerhouse director’s range of talents.",
+    "isNew": false
+  },
+  {
     "id": "quiet-as-it-s-kept",
     "title": "Quiet as It’s Kept",
     "link": "https://www.criterionchannel.com/quiet-as-it-s-kept",
@@ -30673,6 +31662,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/252c8458-4469-4b4e-8d5a-a30715e375ea.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Ja’Tovia Gary • 2023 • United States\n\nThrough a bold amalgamation of original and archival footage—of everything from Toni Morrison discussing her novel THE BLUEST EYE to TikTok videos to abstract animation—director Ja’Tovia Gary untangles complex ideas around beauty and Black womanhood.",
+    "isNew": false
+  },
+  {
+    "id": "quiet-as-kept",
+    "title": "Quiet as Kept",
+    "link": "https://www.criterionchannel.com/quiet-as-kept",
+    "filmIds": [
+      "quiet-as-kept-1"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0e88bd17-fafc-4817-afc3-a547de4bf510-965cb7ed.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Charles Burnett • 2007 • United States\n\nA squabble reveals the anxieties and generational differences within a New Orleans family displaced by Hurricane Katrina in this alternately comedic and casually profound video work.",
     "isNew": false
   },
   {
@@ -31093,6 +32093,17 @@
     "isNew": false
   },
   {
+    "id": "rendez-vous-1",
+    "title": "Rendez-vous",
+    "link": "https://www.criterionchannel.com/rendez-vous-1",
+    "filmIds": [
+      "rendez-vous"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/990a21eb-2148-4237-bcb6-a3d9e92c86bf.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by André Téchiné • 1985 • France\nStarring Juliette Binoche, Lambert Wilson, Wadeck Stanczak\n\nJuliette Binoche illuminates the screen in her star-making breakthrough performance in this provocative backstage tale of art, sex, and stardom. She is transfixing as Nina, a young, carefree wannabe actress who arrives in Paris in search of her big break. There she finds drama both on- and offstage as she becomes involved with three men: a mild-mannered real-estate agent (Wadeck Stanczak) who offers her stability, a bad-boy actor (Lambert Wilson) who lives dangerously on the edge, and an intense theater director (Jean-Louis Trintignant) who casts her in a production of “Romeo and Juliet.” As opening night approaches, the emotional extremes of Nina’s love life begin to serve as fuel for her art.",
+    "isNew": false
+  },
+  {
     "id": "rene-clair-s-inventive-enchantments",
     "title": "Directed by René Clair",
     "link": "https://www.criterionchannel.com/rene-clair-s-inventive-enchantments",
@@ -31263,6 +32274,19 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4cb164ed-3ae4-45b6-8a0d-ca2f2eabcc2a-4a6051a0.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Götz Spielmann • 2008 • Austria\nStarring Johannes Krisch, Irina Potapenko, Ursula Strauss\n\nA gripping thriller and a tragic drama of nearly Greek proportions, REVANCHE is the stunning, Oscar-nominated international breakthrough of Austrian filmmaker Götz Spielmann. In a ragged section of Vienna, hardened ex-con Alex (the mesmerizing Johannes Krisch) works in a brothel, where he falls for Ukrainian hooker Tamara. Their desperate plans for escape unexpectedly intersect with the lives of a rural cop and his seemingly content wife. With meticulous, elegant direction, Spielmann creates a tense, existential, and surprising portrait of vengeance and redemption, and a journey into the darkest forest of human nature, in which violence and beauty exist side by side.",
+    "isNew": false
+  },
+  {
+    "id": "revenge-1",
+    "title": "Revenge",
+    "link": "https://www.criterionchannel.com/revenge-1",
+    "filmIds": [
+      "revenge",
+      "martin-scorsese-on-revenge",
+      "ermek-shinarbaev-interview"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d6ee5184-e86e-4b04-9af1-01d52065119a-cc714ba7.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Martin Scorsese’s World Cinema Project\n\nDirected by Ermek Shinarbaev • 1989 • Kazakhstan\nStarring Aleksandr Pan, Valentina Tyo, Kasym Zhakibayev\n\nA child is raised in Korea to avenge the death of his father’s first child in this decades-spanning tale of obsession and violence, the third collaboration between director Ermek Shinarbaev and writer Anatoli Kim. A study of everyday evil infused with philosophy and poetry, this haunting allegory was the first Soviet film to look at the Korean diaspora in central Asia, and a founding work of the Kazakh New Wave. Rigorous and complex, REVENGE weaves luminous imagery with inventive narrative elements in an unforgettable meditation on the way trauma is passed down through generations.\n\nRestored in 2010 by the Cineteca di Bologna/L’Immagine Ritrovata laboratory, in association with The Film Foundation’s World Cinema Project, the Kazakhfilm Studio, the State Archive of the Republic of Kazakhstan, and Ermek Shinarbaev. Restoration funded by Armani, Cartier, Qatar Airways, and Qatar Museum Authority.",
     "isNew": false
   },
   {
@@ -31451,6 +32475,17 @@
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7dd3dfc6-1e96-4952-abb5-6dc00803dae5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Heralded as “the Godfather of Asian American media,” Robert A. Nakamura was profoundly shaped by his childhood incarceration in a Japanese American internment camp during World War II, an experience that informed his lifelong exploration of identity, memory, and belonging through activist filmmaking. In landmark works like the intimate documentary MANZANAR—one of the first films to confront Japanese internment from a personal perspective—the lyrical WATARIDORI: BIRDS OF PASSAGE, and the groundbreaking epic HITO HATA: RAISE THE BANNER, Nakamura told stories long excluded from the American narrative, paving the way for the vibrant Asian American independent cinema movement that would flourish in the 1980s. His life and legacy are explored from an intimate vantage in THIRD ACT, a moving documentary by his son Tadashi Nakamura, also presented here.",
     "isNew": true
+  },
+  {
+    "id": "robert-downey-moment-to-moment",
+    "title": "Robert Downey: Moment to Moment",
+    "link": "https://www.criterionchannel.com/robert-downey-moment-to-moment",
+    "filmIds": [
+      "robert-downey-moment-to-moment"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8ed910d6-0479-4fec-975e-aace41f6d9e8-e3fb6bf4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Sean Price Williams • 2021 • United States\n\nTo pay tribute to one of his filmmaking heroes, Sean Price Willams adopts a style that’s just as out there as his subject, mixing new material and never-before-seen archival footage in this portrait of the underground film titan Robert Downey (A Prince).",
+    "isNew": false
   },
   {
     "id": "robert-frost-a-lover-s-quarrel-with-the-world",
@@ -32310,6 +33345,18 @@
     "isNew": false
   },
   {
+    "id": "sanshiro-sugata-1",
+    "title": "Sanshiro Sugata",
+    "link": "https://www.criterionchannel.com/sanshiro-sugata-1",
+    "filmIds": [
+      "sanshiro-sugata",
+      "quicker-than-the-eye-editing-in-sanshiro-sugata"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c60215d3-1fcc-46d6-a1eb-c05ca5648da4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Akira Kurosawa • 1943 • Japan\n\nKurosawa's effortless debut is based on a novel by Tsuneo Tomita about the rivalry between judo and jujitsu. Starring Susumu Fujita as the title character, Sanshiro Sugata is a thrilling martial arts action tale, but it's also a moving story of moral education that's quintessential Kurosawa.",
+    "isNew": false
+  },
+  {
     "id": "sanshiro-sugata-part-two",
     "title": "Sanshiro Sugata, Part Two",
     "link": "https://www.criterionchannel.com/sanshiro-sugata-part-two",
@@ -32776,17 +33823,6 @@
     "isNew": false
   },
   {
-    "id": "secrets-from-the-hollywood-archives-action-in-the-north-atlantic",
-    "title": "Secrets of the Hollywood Archives: ACTION IN THE NORTH ATLANTIC",
-    "link": "https://www.criterionchannel.com/secrets-from-the-hollywood-archives-action-in-the-north-atlantic",
-    "filmIds": [
-      "secrets-of-the-hollywood-archives-action-in-the-north-atlantic"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/abf856d4-1409-4527-9848-908124264708-06070fbb.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "How did classic Hollywood’s special-effects artists create the extraordinary illusions that thrilled and delighted generations of moviegoers long before the advent of digital technology? In this new original series, visual-effects artist Craig Barron and sound designer Ben Burtt dig into the studio vaults to uncover the rare, behind-the-scenes footage that reveals the process behind movie magic. First up, learn the surprising tricks used to create the realistic torpedo footage seen in the 1943 Humphrey Bogart submarine thriller ACTION IN THE NORTH ATLANTIC.",
-    "isNew": false
-  },
-  {
     "id": "secrets-lies",
     "title": "Secrets & Lies",
     "link": "https://www.criterionchannel.com/secrets-lies",
@@ -32798,6 +33834,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0eeb91d-4b59-476b-98da-5a9c078104ed.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Mike Leigh • 1996 • United Kingdom\nStarring Brenda Blethyn, Marianne Jean-Baptiste, Timothy Spall\n\nMike Leigh’s Palme d’Or–winning masterpiece charts the shockwaves that ripple through an already-fractured London family when Hortense (Marianne Jean-Baptiste), a successful, adopted black optometrist, makes contact with Cynthia (Brenda Blethyn, winner of the best actress prize at Cannes), her desperately dysfunctional white birth mother, who is woefully unprepared to deal with the situation. With unexpected humor and gripping emotional realism, Leigh crafts an intricate, richly human exploration of the buried tensions and heartaches that run beneath the surface of family life.",
+    "isNew": false
+  },
+  {
+    "id": "secrets-of-the-hollywood-archives-forbidden-planet",
+    "title": "Secrets of the Hollywood Archives: FORBIDDEN PLANET",
+    "link": "https://www.criterionchannel.com/secrets-of-the-hollywood-archives-forbidden-planet",
+    "filmIds": [
+      "secrets-of-the-hollywood-archives-forbidden-planet"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/3f57b1a4-2e62-40b1-8432-72e18b721cde-6e1cca54.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "One of the most influential science-fiction films of the 1950s, FORBIDDEN PLANET shaped the evolution of the genre for decades to come with its groundbreaking production design, special effects, and electronic score. In this edition of Secrets of the Hollywood Archives, Oscar-winning visual-effects artist Craig Barron and sound designer Ben Burtt pull back the curtain to reveal the movie magic behind what they describe as the most iconic spaceship-landing scene in film history.",
     "isNew": false
   },
   {
@@ -32960,6 +34007,17 @@
     "isNew": false
   },
   {
+    "id": "several-friends",
+    "title": "Several Friends",
+    "link": "https://www.criterionchannel.com/several-friends",
+    "filmIds": [
+      "several-friends"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/090ba9df-1b65-4ae8-b051-94c29270e424-f6c820de.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Charles Burnett • 1969 • United States\n\nCharles Burnett’s first film already displays the director’s neorealist, poetry-of-the-everyday style as it follows a group of friends over the course of an aimless day in Los Angeles.",
+    "isNew": false
+  },
+  {
     "id": "sex",
     "title": "Sex",
     "link": "https://www.criterionchannel.com/sex",
@@ -33015,6 +34073,32 @@
     "isNew": false
   },
   {
+    "id": "shadows-1",
+    "title": "Shadows",
+    "link": "https://www.criterionchannel.com/shadows-1",
+    "filmIds": [
+      "shadows",
+      "lelia-goldoni-on-shadows",
+      "seymour-cassel-on-shadows",
+      "cassavetes-lane-drama-workshop-footage",
+      "restoration-demonstration-shadows"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e0c500b5-b21d-4c34-adee-20b0ee07b790-c5c6d42e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by John Cassavetes • 1959 • United States\nStarring Lelia Goldoni, Anthony Ray, Hugh Hurd\n\nJohn Cassavetes’s directorial debut revolves around a romance in New York City between Lelia (Lelia Goldoni), a light- skinned black woman, and Tony (Anthony Ray), a white man. The relationship is put in jeopardy when Tony meets Lelia’s darker-skinned jazz singer brother, Hugh (Hugh Hurd), and discovers that her racial heritage is not what he thought it was. Shot on location in Manhattan with a mostly nonprofessional cast and crew, SHADOWS is a penetrating work that is widely considered the forerunner of the American independent film movement.",
+    "isNew": false
+  },
+  {
+    "id": "shadows-in-paradise",
+    "title": "Shadows in Paradise",
+    "link": "https://www.criterionchannel.com/shadows-in-paradise",
+    "filmIds": [
+      "shadowsinparadise"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/55ed1533-f185-4048-a471-4842f7eecf77.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Aki Kaurismäki • 1986 • Finland\n\nLonely garbageman Nikkander (Matti Pellonpää) finds himself directionless after losing his friend and co-worker to a sudden heart attack; unlikely redemption comes in the form of plain supermarket cashier Ilona (Kati Outinen, in her first of many performances for Kaurismäki), with whom he begins a tentative love affair. Boiling down what is essentially a romantic comedy to a series of spare and beautiful gestures, Kaurismäki conjures an unexpected delight that finds hope blossoming even amid gray surroundings.",
+    "isNew": false
+  },
+  {
     "id": "shake-otis-at-monterey",
     "title": "Shake! Otis at Monterey",
     "link": "https://www.criterionchannel.com/shake-otis-at-monterey",
@@ -33051,6 +34135,21 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4950c244-cb27-4aba-8cbb-806edb73a7a5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Lasse Hallström • 1973 • Sweden\n\nThis 52-minute film, made by Lasse Hallström in 1973, represents his first effort working with actors in an improvisational style.",
+    "isNew": false
+  },
+  {
+    "id": "shame-1",
+    "title": "Shame",
+    "link": "https://www.criterionchannel.com/shame-1",
+    "filmIds": [
+      "shame",
+      "jonathan-lethem-on-shame",
+      "shame-in-the-news",
+      "ingmar-bergman-4",
+      "liv-ullmann"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/aea4ef77-4fcb-4c9d-9c2c-e7fdf6c159a1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Ingmar Bergman • 1968 • Sweden\nStarring Liv Ullmann, Max von Sydow\n\nDirected by Ingmar Bergman, SHAME (SKAMMEN) is at once an examination of the violent legacy of World War II and a scathing response to the escalation of the conflict in Vietnam. Max von Sydow and Liv Ullmann star as musicians living in quiet retreat on a remote island farm, until the civil war that drove them from the city catches up with them there. Amid the chaos of the military struggle, vividly evoked by pyrotechnics and by cinematographer Sven Nykvist’s handheld camera work, the two are faced with impossible moral choices that tear at the fabric of their relationship. This film, which contains some of the most devastating scenes in Bergman’s oeuvre, shows the impact of war on individual lives.",
     "isNew": false
   },
   {
@@ -33535,6 +34634,17 @@
     "isNew": false
   },
   {
+    "id": "silence-1",
+    "title": "Silence",
+    "link": "https://www.criterionchannel.com/silence-1",
+    "filmIds": [
+      "silence"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/003c2693-08a2-44a0-9aa6-178446dc3fdb.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Masahiro Shinoda • 1971 • Japan\nStarring David Lampson, Don Kenny, Tetsuro Tanba\n\nTwo Portuguese priests go to Japan to help Christian sects, driven underground by a ruthless magistracy, to regain a foothold. Quickly drawn into a mire of persecution, the missionaries learn the fate of an earlier mission. This film by Masahiro Shinoda was based on Shusaku Endo’s celebrated novel, which Martin Scorsese would also adapt decades later.",
+    "isNew": false
+  },
+  {
     "id": "similarities-between-length-and-speed",
     "title": "Similarities Between Length and Speed",
     "link": "https://www.criterionchannel.com/similarities-between-length-and-speed",
@@ -33601,6 +34711,24 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e7d14dcb-84b7-4919-b02b-ec07378402f2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Keisuke Kinoshita • 1963 • Japan\n\nA college student receives a surprising offer to be a movie star. Directed by Keisuke Kinoshita.",
+    "isNew": false
+  },
+  {
+    "id": "sisters-1",
+    "title": "Sisters",
+    "link": "https://www.criterionchannel.com/sisters-1",
+    "filmIds": [
+      "sisters",
+      "jennifer-salt-on-sisters",
+      "the-autopsy",
+      "brian-de-palma-at-the-afi-1973",
+      "margot-kidder-on-the-dick-cavett-show-1973",
+      "megan-abbot-on-sisters",
+      "radio-spots-2",
+      "photo-gallery"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c803ac28-a702-401e-a1ec-43a9a40a539e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Brian De Palma • 1973 • United States\nStarring Margot Kidder, Jennifer Salt, Charles Durning\n\nMargot Kidder is Danielle, a beautiful model separated from her Siamese twin, Dominique. When a hotshot reporter (Jennifer Salt) suspects Dominique of a brutal murder, she becomes dangerously ensnared in the sisters’ insidious sibling bond. A scary and stylish dissection of female crisis, Brian De Palma’s first foray into horror voyeurism is a stunning amalgam of split-screen effects, bloody birthday cakes, and a chilling score by frequent Alfred Hitchcock collaborator Bernard Herrmann.",
     "isNew": false
   },
   {
@@ -34202,6 +35330,183 @@
     "isNew": false
   },
   {
+    "id": "split-screen-1",
+    "title": "Split Screen",
+    "link": "https://www.criterionchannel.com/split-screen-1",
+    "filmIds": [
+      "split-screen-s1-e1-spike-lee-the-real-fargo-waters-shocks",
+      "split-screen-s1-e2-linklater-and-bogosian-in-nyc-duct-town",
+      "split-screen-s1-e3-kevin-and-crumb-at-the-quick-stop",
+      "split-screen-s1-e4-sundance-on-the-hudson",
+      "split-screen-s1-e5-breakthrough-screenwriting",
+      "split-screen-s1-e6-projections-harmony-korine"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/f551f350-9c49-4a8b-8e27-a591ef58b19d-d7b2b5ca.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Your wild ride through the indie film world—by filmmakers, for everyone. From 1997 to 2001, producer and author John Pierson and his band of cinephiles roved the U.S. seeking pockets of movie madness, for this irreverent sixty-episode series.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-eight-1",
+    "title": "SPLIT SCREEN: Season Eight",
+    "link": "https://www.criterionchannel.com/split-screen-season-eight-1",
+    "filmIds": [
+      "split-screen-s8-e1-the-simpsons-in-korea",
+      "split-screen-s8-e2-godzilla-revealed",
+      "split-screen-s8-e3-the-fabulous-stains",
+      "split-screen-s8-e4-waiting-for-star-wars",
+      "split-screen-s8-e5-tinseltown-and-vaudeville",
+      "split-screen-s8-e6-projections-walter-bernstein"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/90925ac4-7201-4679-bd63-1c7b09236556-2a7f5b14.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-five-1",
+    "title": "SPLIT SCREEN: Season Five",
+    "link": "https://www.criterionchannel.com/split-screen-season-five-1",
+    "filmIds": [
+      "split-screen-s5-e1-damon-and-norton-play-poker",
+      "split-screen-s5-e2-todd-haynes-s-goldmine",
+      "split-screen-s5-e3-animal-talent",
+      "split-screen-s5-e4-lars-von-trier-is-dogmatic",
+      "split-screen-s5-e5-crispin-glover-s-syndrome",
+      "split-screen-s5-e6-projections-christine-vachon"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/4e99d4b7-a4f1-4388-859b-d8c1eafa4c5e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-four-1",
+    "title": "SPLIT SCREEN: Season Four",
+    "link": "https://www.criterionchannel.com/split-screen-season-four-1",
+    "filmIds": [
+      "split-screen-s4-e1-keep-austin-weird",
+      "split-screen-s4-e2-the-real-dude-abides",
+      "split-screen-s4-e3-all-that-kc-jazz",
+      "split-screen-s4-e4-selective-service-in-aspen",
+      "split-screen-s4-e5-mr-moviefone-s-message",
+      "split-screen-s4-e6-projections-david-o-russell"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e1e89085-b7e5-452b-b23e-c3fda4d35fd5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-nine-1",
+    "title": "SPLIT SCREEN: Season Nine",
+    "link": "https://www.criterionchannel.com/split-screen-season-nine-1",
+    "filmIds": [
+      "split-screen-s9-e1-christopher-walken-cooks",
+      "split-screen-s9-e2-ross-mcelwee-101",
+      "split-screen-s9-e3-scorsese-imperioli-and-ventimiglia",
+      "split-screen-s9-e4-hangin-with-how-s-your-news",
+      "split-screen-s9-e5-cinemaniac",
+      "split-screen-s9-e6-projections-kevin-smith-uncensored"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2da53aeb-2018-4d6b-b458-fd133271f660.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-one-2",
+    "title": "SPLIT SCREEN: Season One",
+    "link": "https://www.criterionchannel.com/split-screen-season-one-2",
+    "filmIds": [
+      "split-screen-s1-e1-spike-lee-the-real-fargo-waters-shocks",
+      "split-screen-s1-e2-linklater-and-bogosian-in-nyc-duct-town",
+      "split-screen-s1-e3-kevin-and-crumb-at-the-quick-stop",
+      "split-screen-s1-e4-sundance-on-the-hudson",
+      "split-screen-s1-e5-breakthrough-screenwriting",
+      "split-screen-s1-e6-projections-harmony-korine"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fb50ed06-50c8-4d3b-9e02-97d5f822901d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-seven-1",
+    "title": "SPLIT SCREEN: Season Seven",
+    "link": "https://www.criterionchannel.com/split-screen-season-seven-1",
+    "filmIds": [
+      "split-screen-s7-e1-run-jesse-ventura-run",
+      "split-screen-s7-e2-reverse-speech",
+      "split-screen-s7-e3-mr-kinski-miranda-july-and-big-miss-moviola",
+      "split-screen-s7-e4-thanksgiving-is-not-for-turkeys",
+      "split-screen-s7-e5-tommy-lee-meets-bolexbrothers",
+      "split-screen-s7-e6-projections-ted-hope-and-james-schamus"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/aa1940d0-9988-4207-a8d9-515f124d1ad7-2fe0e3e1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-six-1",
+    "title": "SPLIT SCREEN: Season Six",
+    "link": "https://www.criterionchannel.com/split-screen-season-six-1",
+    "filmIds": [
+      "split-screen-s6-e1-from-homicide-to-ho-chi-minh",
+      "split-screen-s6-e2-billy-wilder-s-shoes",
+      "split-screen-s6-e3-kuchar-kuts-loose",
+      "split-screen-s6-e4-guy-maddin-mystifies",
+      "split-screen-s6-e5-almost-heaven-west-virginia-the-jacob-young-special",
+      "split-screen-s6-e6-projections-jonas-mekas"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2f121917-ed13-47d8-8438-22ea04cd1a43-f1588e39.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-ten-1",
+    "title": "SPLIT SCREEN: Season Ten",
+    "link": "https://www.criterionchannel.com/split-screen-season-ten-1",
+    "filmIds": [
+      "split-screen-s10-e1-jesus-is-in-the-mailbox-atom-egoyan",
+      "split-screen-s10-e2-field-of-feuds",
+      "split-screen-s10-e3-the-fiji-stooges",
+      "split-screen-s10-e4-animating-waking-life",
+      "split-screen-s10-e5-woodworking-with-bill",
+      "split-screen-s10-e6-focus-group-from-hell",
+      "split-screen-s10-e7-projections-buck-henry"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a894052e-33f5-40d6-9a3a-82cda4151411-ede64555.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-three-1",
+    "title": "SPLIT SCREEN: Season Three",
+    "link": "https://www.criterionchannel.com/split-screen-season-three-1",
+    "filmIds": [
+      "split-screen-s3-e1-the-blair-witch-i-want-to-believe",
+      "split-screen-s3-e2-john-wayne-s-hairpiece",
+      "split-screen-s3-e3-grizzly-walks-orson-talks",
+      "split-screen-s3-e4-carl-franklin-breaks-it-down",
+      "split-screen-s3-e5-the-tin-drum-banned-in-ok",
+      "split-screen-s3-e6-projections-david-picker"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/05d14809-91cd-4e90-ae1c-fbc52c8ef077-4476c7d4.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
+    "id": "split-screen-season-two-1",
+    "title": "SPLIT SCREEN: Season Two",
+    "link": "https://www.criterionchannel.com/split-screen-season-two-1",
+    "filmIds": [
+      "split-screen-s2-e1-lurie-fishes-gilliam-monkeys",
+      "split-screen-s2-e2-errol-rocks-gators-chomp",
+      "split-screen-s2-e3-buscemi-and-turturro-on-the-block",
+      "split-screen-s2-e4-meet-the-skolnicks-sisters",
+      "split-screen-s2-e5-enter-blair-witch-hands-on-a-hardbody",
+      "split-screen-s2-e6-projections-wes-anderson"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/6ab05be7-1842-450c-92b9-5f1bda5db319-64303bcb.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
+    "isNew": false
+  },
+  {
     "id": "spoiled-children",
     "title": "Spoiled Children",
     "link": "https://www.criterionchannel.com/spoiled-children",
@@ -34249,6 +35554,17 @@
     "isNew": false
   },
   {
+    "id": "spotlight-on-mikio-naruse-with-imogen-sara-smith",
+    "title": "Spotlight on Mikio Naruse",
+    "link": "https://www.criterionchannel.com/spotlight-on-mikio-naruse-with-imogen-sara-smith",
+    "filmIds": [
+      "imogen-sara-smith-on-mikio-naruse"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/7d354141-476c-495b-ab7c-6b352b719b8b.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "In this new program, critic Imogen Sara Smith introduces one of Japanese cinema’s classical masters—a virtuoso of melodrama who specialized in portraying the personal and social struggles of women with supreme sensitivity. In a career that spanned four decades, he directed nearly ninety films, including silent dramas like APART. FROM YOU, EVERY-NIGHT DREAMS, and STREET WITHOUT END, in which he poignantly etched the experiences of working women carrying on in the face of everyday disappointments and compromises in an often cruelly sexist society. Continuing to explore these themes throughout his career, Naruse’s artistry reached its zenith in the 1950s, when, working with renowned leads like Hideko Takamine, Kinuyo Tanaka, and Setsuko Hara, he directed a string of devastating melodramas—including LATE CHRYSANTHEMUMS, FLOATING CLOUDS, FLOWING, and WHEN A WOMAN ASCENDS THE STAIRS—that elevated the genre to heartrending new heights, abetted by a feeling for delicate, rhythmic editing that could build with subtle but shattering emotional force.",
+    "isNew": false
+  },
+  {
     "id": "spotlight-on-modern-times-with-racquel-j-gates",
     "title": "Spotlight on MODERN TIMES with Racquel J. Gates",
     "link": "https://www.criterionchannel.com/spotlight-on-modern-times-with-racquel-j-gates",
@@ -34258,6 +35574,18 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/de8b6f9c-781c-49da-b294-3c8edc271707-0628740d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "In the following introduction recorded in 2022, film scholar Racquel J. Gates unpacks how Charlie Chaplin’s 1936 masterpiece explores anxieties around technology and bids farewell to the silent era.",
+    "isNew": false
+  },
+  {
+    "id": "spotlight-on-obsession-with-imogen-sara-smith",
+    "title": "Spotlight on OBSESSION with Imogen Sara Smith",
+    "link": "https://www.criterionchannel.com/spotlight-on-obsession-with-imogen-sara-smith",
+    "filmIds": [
+      "spotlight-obsession",
+      "obsession"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/033fd40d-0f9a-4dbf-93a2-6d04996d12e2-024350a9.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "In the following introduction recorded in 2021, critic Imogen Sara Smith champions a hidden gem from blacklisted director Edward Dmytryk, who deftly balances suspense and black comedy in this British thriller.",
     "isNew": false
   },
   {
@@ -34342,6 +35670,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2f73ab9a-0ec4-4547-ad1f-49d603c60279-95398506.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "In the latest installment of our Spotlight series, critic Imogen Sara Smith pays tribute to the great Ukrainian filmmaker Larisa Shepitko, whose early feature WINGS brilliantly evokes a former fighter fighter pilot’s inner life.",
+    "isNew": false
+  },
+  {
+    "id": "spotlight-on-youssef-chahine-with-richard-pena",
+    "title": "Spotlight on Youssef Chahine",
+    "link": "https://www.criterionchannel.com/spotlight-on-youssef-chahine-with-richard-pena",
+    "filmIds": [
+      "richard-pena-on-youssef-chahine"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/06a2f373-0c91-4096-8cee-f128754d6bb3.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "In this program, film scholar Richard Peña introduces the legendary Egyptian director Youssef Chahine, who drew from the multicultural, cosmopolitan spirit of his home city of Alexandria to forge a passionate, extravagant, iconoclastic oeuvre that merged a quintessentially Egyptian sensibility with international influences ranging from Hollywood musicals and melodramas to European neorealism. With films like his international breakthrough, the florid psychosexual noir CAIRO STATION, and the searing portrait of rural class struggle THE LAND, Chahine displayed his willingness to court controversy through daring social and political critique, while in works like ALEXANDRIA . . . WHY? (the first in a quartet of autobiographical films centered around the city) he turned inwards to examine his own life, sexuality, and fluctuating position toward the political establishment. Replete with vibrant visuals, color, and music and shot through with an unwavering humanist spirit, Chahine’s films—which feature some of the Arab world’s biggest talents of their day, including a young Omar Sharif—are bold expressions of the many sides of the Egyptian soul.",
     "isNew": false
   },
   {
@@ -34455,6 +35794,22 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e824dc32-a4ca-4b4f-a5fa-e68d1ebc619f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Yoshitaro Nomura • 1958 • Japan\nStarring Minoru Oki, Seiji Miyaguchi, Hideko Takamine\n\nWhen a pair of a detectives lose the trail of a murder suspect, they camp out across the street from his ex-lover (Hideko Takamine) in hopes that she will lead them to their man. It’s the beginning of an extended surveillance operation that gradually reveals as much about the woman they are watching—and the oppressive marriage she is trapped in—as the case they are investigating. Adapted by regular Kurosawa screenwriter Shinobu Hashimoto (RASHOMON, SEVEN SAMURAI) from a story by Seicho Matsumoto and directed with cool precision by noir specialist Yoshitaro Nomura, this slow-burn procedural blends a Hitchcockian study of voyeurism with an empathetic look at the circumstances of women in postwar Japan.",
+    "isNew": false
+  },
+  {
+    "id": "stalker",
+    "title": "Stalker",
+    "link": "https://www.criterionchannel.com/stalker",
+    "filmIds": [
+      "stalker-1",
+      "geoff-dyer-on-stalker-1",
+      "prodcriterionchannel-28150-stalker-artemyev-mezzanine",
+      "rashit-safiullin-on-stalker-1",
+      "alexander-knyazhinsky-on-stalker-1",
+      "rian-johnson-on-stalker"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/d5ac968e-c008-42db-afa3-f7f188032450-c79baf1a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Criterion Collection Edition #888\n\nDirected by Andrei Tarkovsky • 1979 • Soviet Union\nStarring Alisa Freindlikh, Aleksandr Kaidnovsky, Anatoly Solonitsyn\n\nAndrei Tarkovsky’s final Soviet feature is a metaphys­ical journey through an enigmatic postapocalyptic landscape, and a rarefied cinematic experience like no other. A hired guide—the Stalker—leads a writer and a professor into the heart of the Zone, the restricted site of a long-ago disaster, where the three men eventually zero in on the Room, a place rumored to fulfill one’s most deeply held desires. Adapting a science-fiction novel by Arkady and Boris Strugatsky, Tarkovsky created an immersive world with a wealth of material detail and a sense of organic atmosphere. A religious allegory, a reflection of contemporaneous political anxieties, a meditation on film itself—STALKER envelops the viewer by opening up a multitude of possible meanings.",
     "isNew": false
   },
   {
@@ -35154,6 +36509,17 @@
     "isNew": false
   },
   {
+    "id": "streets-of-fire",
+    "title": "Streets of Fire",
+    "link": "https://www.criterionchannel.com/streets-of-fire",
+    "filmIds": [
+      "streets-of-fire"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/15aad591-ce8f-4dbd-abd4-1c271b90d1f2.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Walter Hill • 1984 • United States\nStarring Michael Paré, Amy Madigan, Diane Lane\n\nWalter Hill’s turbocharged “rock & roll fable” unfolds in an ultrastylized, neon-soaked dystopia where 1950s-style greasers and bikers run wild amid ’80s gloss. Ex-soldiers Tom Cody (Michael Paré) and McCoy (Amy Madigan) descend into an outlaw underworld of rain-splattered streets, hot cars, and deadly assassins to rescue Cody’s rock singer ex-girlfriend Ellen (Diane Lane) from a motorcycle gang led by Willem Dafoe’s memorably snarling, leather-clad villain Raven Shaddock. Infusing his action classicism with a jolt of new-wave excess, Hill delivers a propulsive spectacle of sound and fury.",
+    "isNew": false
+  },
+  {
     "id": "streetwise",
     "title": "Streetwise",
     "link": "https://www.criterionchannel.com/streetwise",
@@ -35306,6 +36672,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/9852c9c4-69c9-4f42-8584-f1c0acef5a55.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Carla Simón • 2017 • Spain\nStarring Laia Artigas, Bruna Cusí, David Verdaguer\n\nSix-year-old Frida (Laia Artigas) looks on in silence as the last objects from her recently deceased mother’s apartment in Barcelona are placed in boxes. Although her aunt, uncle, and younger cousin Anna (Paula Robles) welcome her with open arms, it’s only very slowly that Frida begins to get used to her new home in the countryside. Bathed in light-filled summery hues and anchored by remarkable performances from its two young stars, Carla Simón’s touching, autobiographical coming-of-age drama balances youthful exuberance with mature rumination to create a moving snapshot of childhood in an adult world.",
+    "isNew": false
+  },
+  {
+    "id": "summer-interlude",
+    "title": "Summer Interlude",
+    "link": "https://www.criterionchannel.com/summer-interlude",
+    "filmIds": [
+      "summerinterlude"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a6d6a182-fbdf-4dd2-b21c-4989e7c1160a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Ingmar Bergman • 1951 • Sweden\nStarring Maj-Britt Nilsson, Birger Malmsten\n\nTouching on many of the themes that would define the rest of his career—isolation, performance, the inescapability of the past— Ingmar Bergman’s tenth film was a gentle drift toward true mastery. Maj-Britt Nilsson beguiles as an accomplished ballet dancer haunted by her tragic youthful affair with a shy, handsome student (Birger Malmsten). Her memories of the sunny, rocky shores of Stockholm’s outer archipelago mingle with scenes from her gloomy present at the theater where she performs. A film that the director considered a creative turning point, SUMMER INTERLUDE is a reverie about life and death that unites Bergman’s love of theater and cinema.",
     "isNew": false
   },
   {
@@ -35817,6 +37194,49 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c39aa164-ba28-48c2-a78f-d4481e8832bf.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Juzo Itami • 1990 • Japan\nStarring Nobuko Miyamoto, Masahiko Tsugawa, Hiroshi Ohkochi\n\nThis thorny sex satire stars the great Nobuko Miyamoto (star of nearly all of director Juzo Itami’s films) as Nayoko, a good-hearted geisha who brings luck to the men she sleeps with—even though most are scoundrels who don’t deserve it. Costarring another Itami regular, Masahiko Tsugawa, as Nayoko’s faithless playboy lover, TALES OF A GOLDEN GEISHA pulls off a tricky blend of humor and drama to comment pointedly on the skewed gender politics of Japanese society.",
+    "isNew": false
+  },
+  {
+    "id": "talking-about-movies",
+    "title": "Talking About Movies",
+    "link": "https://www.criterionchannel.com/talking-about-movies",
+    "filmIds": [
+      "yakima-canutt-on-stagecoach",
+      "peter-bogdanovich-on-la-bete-humaine",
+      "terry-gilliam-1",
+      "lee-chang-dong-on-secret-sunshine",
+      "cauleen-smith-and-michael-b-gillespie",
+      "introducing-marlon-riggs",
+      "jonathan-demme-on-something-wild",
+      "our-paul-remembering-paul-robeson",
+      "marianne-jean-baptiste-on-secrets-lies",
+      "1988",
+      "david-lynch-on-lost-highway",
+      "david-lynch-on-the-grandmother-1",
+      "1997",
+      "david-lynch-on-the-amputee",
+      "2001",
+      "1979",
+      "david-lynch-on-the-alphabet-1",
+      "david-lynch-on-six-men-getting-sick-1",
+      "david-lynch-on-premonitions-following-an-evil-deed",
+      "cast-and-crew-on-take-out",
+      "toni-servillo-on-the-great-beauty",
+      "merry-christmas-mr-lawrence-on-the-music",
+      "twin-peaks-fire-walk-with-me-actors-roundtable",
+      "hirokazu-kore-eda-on-still-walking",
+      "steve-mcqueen-on-hunger",
+      "jean-pierre-gorin-on-la-jetee",
+      "constance-towers-on-the-naked-kiss",
+      "shooting-blood-simple",
+      "catherine-breillat-on-fat-girl-2004",
+      "delighting-in-contrasts",
+      "jacques-audiard-on-dheepan",
+      "gena-rowlands-and-peter-falk-on-a-woman-under-the-influence",
+      "an-appreciation-by-werner-herzog"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a77d5f6c-8423-4fb6-9b87-c942a7768424.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Classics and discoveries from around the world, thematically programmed with special features, on a streaming service brought to you by the Criterion Collection.",
     "isNew": false
   },
   {
@@ -37256,6 +38676,18 @@
     "isNew": false
   },
   {
+    "id": "the-castle-1",
+    "title": "The Castle",
+    "link": "https://www.criterionchannel.com/the-castle-1",
+    "filmIds": [
+      "the-castle",
+      "michael-cera-on-the-castle"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/e70b50fa-2a95-4f8a-a24e-3c79c56b8041.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Michael Haneke • 1997 • Austria\n\nMichael Haneke's adaptation of Franz Kafka's absurdist novel follows a land surveyor as he struggles with the increasingly difficult and bureaucratic practices of the local authorities.",
+    "isNew": false
+  },
+  {
     "id": "the-castle-of-sand",
     "title": "The Castle of Sand",
     "link": "https://www.criterionchannel.com/the-castle-of-sand",
@@ -37331,17 +38763,6 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a60a80bd-4fa9-4f22-a82a-ac449664c72e.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Cauleen Smith • 2001 • United States\n\nIn this experimental hybrid between science fiction and noir, Cauleen Smith explores Black alienation and outsiderhood via the story of two aliens stationed on Earth searching for kinship and a sense of purpose.",
-    "isNew": false
-  },
-  {
-    "id": "the-chicken-1",
-    "title": "The Chicken",
-    "link": "https://www.criterionchannel.com/the-chicken-1",
-    "filmIds": [
-      "the-chicken-2"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8709e5e0-afd4-46a6-9c0e-1ad6e64f35e1.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by Neo Sora • 2020 • United States\nStarring Junshin Soga, Taiju Nakane, Sandra Maren Schneider\n\nAfter mishandling a medical emergency he witnesses on the streets of New York City, a young Japanese immigrant cannot bring himself to butcher the live chicken he bought for dinner. Adapted from a short story by Naoya Shiga, Neo Sora’s THE CHICKEN expands on the ways that structural violence insidiously permeates daily life.",
     "isNew": false
   },
   {
@@ -37633,6 +39054,18 @@
     "isNew": false
   },
   {
+    "id": "the-crazy-ray",
+    "title": "The Crazy Ray",
+    "link": "https://www.criterionchannel.com/the-crazy-ray",
+    "filmIds": [
+      "paris-qui-dort-1",
+      "paris-qui-dort"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/8098cb87-a96b-4354-9dbb-250d459e9a9f.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by René Clair • 1924 • France\nStarring Charles Martinelli, Louis Pré Fils, Albert Préjean\n\nPARIS QUI DORT represented a delightfully entertaining feature debut for the young René Clair. Also known as THE CRAZY RAY, Clair’s 1924 film humorously combines the new art of the cinema with other modern symbols: the airplane and the Eiffel Tower. Clair re-edited the film in the ’50s to the concise featurette presented here. The pilot is actor Albert Prejean, who would later play the lead character Albert in UNDER THE ROOFS OF PARIS.",
+    "isNew": false
+  },
+  {
     "id": "the-cremator",
     "title": "The Cremator",
     "link": "https://www.criterionchannel.com/the-cremator",
@@ -37827,17 +39260,6 @@
     "isNew": false
   },
   {
-    "id": "the-demon",
-    "title": "The Demon",
-    "link": "https://www.criterionchannel.com/the-demon",
-    "filmIds": [
-      "the-demon"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/56e71b8f-3c69-4633-8c5c-52e49185a789.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by Yoshitaro Nomura • 1978 • Japan\n\nWhen Sokichi's abandoned mistress shows up on his doorstep with their three children, she is as surprised to discover he has a wife as his wife is to discover that he has a mistress.",
-    "isNew": false
-  },
-  {
     "id": "the-devil-and-daniel-webster",
     "title": "All That Money Can Buy",
     "link": "https://www.criterionchannel.com/the-devil-and-daniel-webster",
@@ -37958,6 +39380,17 @@
     "isNew": false
   },
   {
+    "id": "the-doris-duke",
+    "title": "The Doris Duke",
+    "link": "https://www.criterionchannel.com/the-doris-duke",
+    "filmIds": [
+      "art-house-america-doris-duke-theatre"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/2b3ab4a2-ab5a-4e32-8927-501934f6cd2b-1031e903.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Art-House America\n\nLocated in the heart of Honolulu, Hawaii, the Doris Duke Theatre began operating out of the Honolulu Museum of Art in 1977 and has become a fixture of Hawaiian film culture. Through their annual Surf Film Festival and series that highlight the perspectives of Hawaii’s Native, Asian, and Black communities, the Doris Duke has dedicated itself to championing films that reflect the diversity, complexity, and cultural richness of the island, challenging long-standing cinematic depictions of Hawaii as an exoticized paradise. The theater’s commitment to showcasing homegrown stories and amplifying marginalized voices is on display in the Hawaiian-focused lineup of films they have selected.\n\nFrom programmer Taylour Chang:\n“Tourism and Hollywood have shaped the perception of Hawai‘i as a paradise destination since the early twentieth century. A rising tide of Native Hawaiian and Hawai‘i-based filmmakers challenge those colonial stereotypes and present a worldview of Hawai‘i that is rooted in the land and its people. This slate is a snapshot of a genealogy of filmmakers who express Hawai‘i’s spirit and resilience. Pioneers like Victoria Keith (THE SAND ISLAND STORY) and Nā Maka o ka ‘Āina (MAUNA KEA: TEMPLE UNDER SIEGE) captured an awakening of Native Hawaiian political consciousness and set a foundation for current generations—from Ty Sanga (STONES), who inspired a wave of Native Hawaiian filmmakers to embrace narrative fiction, to talents like Ciara Lacy (OUT OF STATE). These storytellers, among many others, provoke an innovative understanding of a Hawai‘i-specific visual language.”",
+    "isNew": false
+  },
+  {
     "id": "the-double-life-of-veronique",
     "title": "The Double Life of Véronique",
     "link": "https://www.criterionchannel.com/the-double-life-of-veronique",
@@ -38033,6 +39466,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a0d730f5-48fb-413d-84c3-db30f20b3944-77577229.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "“Deliriously absurd martial-arts madcappery produced by Wong Kar Wai. Avoid if you’re allergic to fun.” —Curtis, production\n\nDirected by Jeffrey Lau • 1993 • China\nStarring Tony Leung Chiu-wai, Brigitte Lin, Leslie Cheung\n\nA classic of Hong Kong “mo lei tau” (nonsense comedy) that blends slapstick hijinks, musical numbers, and zippy martial-arts wire work, Jeffrey Lau’s THE EAGLE SHOOTING HEROES launches an all-star cast on a madcap quest for a mystical tome of kung fu. Its ensemble of Hong Kong legends—including Tony Leung Chiu-wai, Brigitte Lin, Leslie Cheung, Maggie Cheung, Karina Lau, Tony Leung Ka-fai, and Jacky Cheung—will be familiar to fans of Wong Kar Wai, who produced this film as a companion to his wuxia epic ASHES OF TIME, a radically different take on the source novel by Jin Yong.\n\nA power struggle between the Queen's treasonous lover and a princess occurs amid musical numbers, slapstick battles, and martial arts acrobatics in this over-the-top action comedy produced by Wong Kar Wai.",
+    "isNew": false
+  },
+  {
+    "id": "the-ear-1",
+    "title": "The Ear",
+    "link": "https://www.criterionchannel.com/the-ear-1",
+    "filmIds": [
+      "theear"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/860a2be1-e1ea-4b0c-856b-8cf8f0e0838c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Karel Kachyňa • 1970 • Czechoslovakia\n\nThis paranoid surveillance thriller unfolds over the course of a tense, turbulent night in the life of Ludvík (Radoslav Brzobohatý), a Communist party official, and his wife Anna (Jiřina Bohdalová). Returning home from a party one evening, the pair discover that their house has been broken into and bugged—and that the state may be listening in on their every word. A number of Ludvík’s colleagues have already been terminated in an ongoing purge: could he be next? Completed in 1970 but banned for twenty years, THE EAR masterfully evokes the ever-present sense of dread that defines life under authoritarianism.",
     "isNew": false
   },
   {
@@ -38342,6 +39786,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/df44b2c7-55d3-43b9-92b7-197f0b051873-1f390947.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Karel Zeman • 1962 • Czechoslovakia\nStarring Milos Kopecký, Rudolf Jelínek\n\nIn THE FABULOUS BARON MUNCHAUSEN, Karel Zeman conjures the adventures of the legendary, boastful baron, whose whirlwind exploits take him from the moon to eighteenth-century Turkey to the belly of a whale and beyond. A kaleidoscopic marvel that blends live action with techniques including stop-motion, cutout collage, puppetry, painted backdrops, and antique tinting, Zeman’s film is an exhilarating visual delight and a warmhearted whirl through a bygone age too entrancing to have existed.",
+    "isNew": false
+  },
+  {
+    "id": "the-face-1",
+    "title": "The Face",
+    "link": "https://www.criterionchannel.com/the-face-1",
+    "filmIds": [
+      "the-face"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c1e94dc4-8d99-4831-9b90-6b45a86e76fd.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Piotr Studzinski • 1966 • Poland\n\nWhile a film student in Łódź, Krzysztof Kieślowski portrayed a tortured artist in his classmate Piotr Studzinski’s short THE FACE.",
     "isNew": false
   },
   {
@@ -39022,6 +40477,19 @@
     "isNew": false
   },
   {
+    "id": "the-hawks-and-the-sparrows",
+    "title": "The Hawks and the Sparrows",
+    "link": "https://www.criterionchannel.com/the-hawks-and-the-sparrows",
+    "filmIds": [
+      "the-hawks-and-the-sparrows-1",
+      "toto-at-the-circus",
+      "ninetto-the-messenger"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/dbe5ca86-5f9f-4780-b156-e85d0b53ee9d-5ffd1f54.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Pier Paolo Pasolini • 1966 • Italy\nStarring Totò, Ninetto Davoli, Femi Benussi\n\nWhile wandering the countryside, a pair of father-and-son vagabonds (played respectively by Italian cinema legend Totò, in his final major film role, and Ninetto Davoli) happen upon a talking crow who spouts philosophy and launches them on a freewheeling picaresque through time, space, and the margins of a rapidly modernizing Italy. A comic Marxist fable that balances heady ideas about religion, poverty, and class struggle with irreverent slapstick sight gags, THE HAWKS AND THE SPARROWS finds Pasolini at his lightest yet as stingingly subversive as ever.",
+    "isNew": false
+  },
+  {
     "id": "the-hero",
     "title": "The Hero",
     "link": "https://www.criterionchannel.com/the-hero",
@@ -39117,6 +40585,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5fcf5859-88ab-405d-a81e-5901c9c01874.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Ladislav Rychman • 1964 • Czechoslovakia\nStarring Vladimír Pucholt, Irena Kačírková, Ivana Pavlová\n\nThis beloved musical—one of the Czechoslovak film industry’s first and most important forays into the genre—is a spirited ode to young love and rebellion. Set amid the bucolic splendor of the countryside during the annual hop harvest, it revolves around two students—the intellectual Filip (Vladimír Pucholt) and the free-spirited Hanka (Ivana Pavlová)—whose budding romance leads to tensions among their peers. Putting a distinctly Eastern Bloc spin on the MGM-style spectacular, this tuneful charmer features a parade of sunny songs that have embedded themselves into Czech pop culture.",
+    "isNew": false
+  },
+  {
+    "id": "the-horse-1",
+    "title": "The Horse",
+    "link": "https://www.criterionchannel.com/the-horse-1",
+    "filmIds": [
+      "the-horse"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/89947e83-8759-491f-8608-ea6468155a94-4786186a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Charles Burnett • 1973 • United States\n\nA young boy keeps a horse company during its last moments of life in Charles Burnett’s spare, lyrical student film, which poignantly contrasts the callousness of adults with the empathy of children.",
     "isNew": false
   },
   {
@@ -39546,19 +41025,6 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a982e5b1-b9f7-4b5e-a2d3-5a82a93dca06.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Ted Wilde • 1927 • United States\nStarring Harold Lloyd, Jobyna Ralston\n\nSilent-comedy legend Harold Lloyd goes west in this irresistible blend of action, romance, and slapstick invention. The bespec­tacled everyman is at his inimitable best as Harold Hickory, the gentle son of a prominent lawman who lives in the shadow of his rough-and-tumble brothers. When a traveling medicine show rolls into town, it brings with it excitement, the possibility of love, and a chance for Harold to prove his mettle. Deftly balancing Lloyd’s brilliant sight gags and thrilling set pieces—including an epic, knock-down, drag-out fight aboard an abandoned ship—with one of the actor-filmmaker’s most fully realized, root-for-the-underdog narratives, THE KID BROTHER is a hilarious and heartwarming high-water mark of early screen comedy.",
-    "isNew": false
-  },
-  {
-    "id": "the-killer",
-    "title": "The Killer",
-    "link": "https://www.criterionchannel.com/the-killer",
-    "filmIds": [
-      "trailer-9",
-      "the-killer-commentary",
-      "the-killer-deleted-scenes"
-    ],
-    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/a5266ed4-7902-480b-b237-426b5d57cca5.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
-    "description": "Directed by John Woo • 1989 • Hong Kong\nStarring Chow Yun-fat, Danny Lee, Sally Yeh\n\nHong Kong’s preeminent director, John Woo, transforms genres from both the East and the West to create this explosive and masterful action film. Featuring Hong Kong’s greatest star, Chow Yun-fat, as a killer with a conscience, the film is an exquisite dissection of morals in a corrupt society, highlighted with slow-motion sequences of brilliantly choreographed gun battles on the streets of Hong Kong.",
     "isNew": false
   },
   {
@@ -40410,6 +41876,17 @@
     "isNew": false
   },
   {
+    "id": "the-match-factory-girl",
+    "title": "The Match Factory Girl",
+    "link": "https://www.criterionchannel.com/the-match-factory-girl",
+    "filmIds": [
+      "thematchfactorygirl"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/282e8269-66b2-41fb-913a-0e48008206cc.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Aki Kaurismäki • 1990 • Finland, Sweden\n\nKaurismäki took his penchant for despairing character studies to unspeakably grim depths in the shockingly entertaining The Match Factory Girl. Kati Outinen is memorably impenetrable as Iris, whose grinding days as a cog in a factory wheel, and nights as a neglected daughter living with her parents, ultimately send her over the edge. Yet despite her transgressions, Kaurismäki makes Iris a compelling, even sympathetic figure. Bleak yet suffused with comic irony, The Match Factory Girl closes out the \"Proletariat Trilogy\" with a bang, and a whimper.",
+    "isNew": false
+  },
+  {
     "id": "the-melbourne-rendez-vous",
     "title": "The Melbourne Rendez-vous",
     "link": "https://www.criterionchannel.com/the-melbourne-rendez-vous",
@@ -40760,6 +42237,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/fbd06f21-c0d9-4780-a209-2037f0053394-605a311a.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Liliana Cavani • 1974 • Italy\nStarring Charlotte Rampling, Dirk Bogarde\n\nIn this unsettling drama from Italian filmmaker Liliana Cavani, a concentration camp survivor (Charlotte Rampling) discovers her former torturer and lover (Dirk Bogarde) working as a porter at a hotel in postwar Vienna. When the couple attempt to re-create their sadomasochistic relationship, his former SS comrades begin to stalk them. Operatic and disturbing, THE NIGHT PORTER deftly examines the lasting social and psychological effects of the Nazi regime.",
+    "isNew": false
+  },
+  {
+    "id": "the-octopus-1",
+    "title": "The Octopus",
+    "link": "https://www.criterionchannel.com/the-octopus-1",
+    "filmIds": [
+      "the-octopus"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/5ff4e83b-7742-4636-af50-4b5ad1eb1f0d.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Jean Painlevé • 1927 • France\n\nFrom 1927 to 1928, Jean Painlevé made his first three films aimed at the general public. Shown in ‘ciné-clubs’ and avant-garde movie theaters of Paris, these films were written and edited to entertain as well as educate. THE OCTOPUS, one of these educational films, is presented here in its original silent version. (Presented without score.)",
     "isNew": false
   },
   {
@@ -42765,6 +44253,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/ce3de233-796c-460a-b883-0b8250e118f6.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Jiří Krejčík • 1967 • Czechoslovakia\nStarring Iva Janžurová, Vladimír Pucholt, Pavel Landovský\n\nThis subversive small-town comedy centers on the investigation into an alleged rape purportedly committed by a man (Jiří Hrzán) on the eve of his wedding. As the bumbling investigators (Vladimír Pucholt and Jan Vostrčil) dig into the case, they deduce that not all is as it seems. With an array of colorful characters and a sly take on human foibles and relationships, this tragicomic farce proved to be one of the most popular Czech films of the 1960s.",
+    "isNew": false
+  },
+  {
+    "id": "the-universe-is-out-there-josh-and-benny-safdie-1",
+    "title": "The Universe Is Out There: Josh and Benny Safdie",
+    "link": "https://www.criterionchannel.com/the-universe-is-out-there-josh-and-benny-safdie-1",
+    "filmIds": [
+      "josh-and-benny-safdie"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/117f2081-a34b-4c4c-b1aa-57d3a33fd473.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Michael Chaiken • 2017 • United States\n\nGet to know the siblings whose films have captured the frenetic pulse of New York’s city streets. An original documentary featuring footage from the making of their new thriller, GOOD TIME, along with several of the brothers’ early shorts.",
     "isNew": false
   },
   {
@@ -46093,6 +47592,17 @@
     "isNew": false
   },
   {
+    "id": "we-work-again",
+    "title": "We Work Again",
+    "link": "https://www.criterionchannel.com/we-work-again",
+    "filmIds": [
+      "we-work-again"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/06a401ea-4db5-4e67-a33b-6ec4df3bcf7f-b912337c.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Director Unknown • 1937 • United States\n\nThe role of African Americans in the recovery years of the Great Depression is the subject of this informational short, which offers an idealized depiction of life in a segregated society. The highlight, by far, is rare footage of Orson Welles’s “Voodoo Macbeth,” produced in 1935 for the New York Negro Unit of the WPA’s Federal Theatre Project.",
+    "isNew": false
+  },
+  {
     "id": "wedding-in-white",
     "title": "Wedding in White",
     "link": "https://www.criterionchannel.com/wedding-in-white",
@@ -46862,6 +48372,17 @@
     ],
     "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/c820216f-039f-4148-b697-86a1da97b169.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
     "description": "Directed by Fernando Saldivia Yáñez • 2024 • Chile\n\nA misty afternoon brings a Mapuche couple back to their wedding video. In their civil ceremony, they are noted as one of only two couples married in the Indigenous language of Mapudungun.",
+    "isNew": false
+  },
+  {
+    "id": "winter-solstice",
+    "title": "Winter Solstice",
+    "link": "https://www.criterionchannel.com/winter-solstice",
+    "filmIds": [
+      "winter-solstice"
+    ],
+    "imageUrl": "https://vhx.imgix.net/criterionchannelchartersu/assets/0f814e28-4a58-4e4d-be68-5746b57ae950.jpg?auto=format%2Ccompress&fit=max&h=1080&q=100&w=1920",
+    "description": "Directed by Hollis Frampton • 1974 • United States\n\nSUMMER EQUINOX, AUTUMNAL EQUINOX, and WINTER SOLSTICE, all of which appear in Straits of Magellan, make up Hollis Frampton’s film cycle SOLARIUMAGELANI (1974). In each film, Frampton included complementary color leader to represent what is missing from the season. For STRAITS OF MAGELLAN: WINTER SOLSTICE, he once referred to it as “the clear blue of the summer sky.”",
     "isNew": false
   },
   {
