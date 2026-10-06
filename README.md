@@ -1,5 +1,7 @@
 # Criterion Redux
 
+> **⚠️ Project Archived** — As of Oct 2026, Criterion has deployed a welcome and much-improved web site for Criterion Channel. Since their new site mostly resolves the usability and info concerns that Criterion Redux addressed, this project is no longer needed and will be archived. Congrats to Criterion, and see you at the movies!
+
 A modern, high-performance front-end redesign for the **Criterion Channel** streaming service. This project prioritizes film discovery and navigation through a metadata-rich interface.
 
 ![Criterion Redux](public/cr-logo.png)
